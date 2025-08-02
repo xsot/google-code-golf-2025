@@ -1,0 +1,1 @@
+p=lambda m,R=range(5):[[m[23-(i:=sum(m,[]).index(1))//24-r][23-i%24-c]for c in R]for r in R]

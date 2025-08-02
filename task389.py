@@ -1,0 +1,1 @@
+p=lambda m:eval(str(m).translate({(e:=48+max(set(sum(m,[]))-{5})):48,53:e}))

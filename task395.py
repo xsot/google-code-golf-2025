@@ -1,0 +1,1 @@
+p=lambda m,r=range(3):[[2*(m[i][j]+m[i+3][j]<1)for j in r]for i in r]
