@@ -41,8 +41,9 @@ cp $GLOB_PATTERN "$TEMP_DIR/"
 # 4. Remove all lines that start with '#' and empty lines from each file in the temp folder
 echo "✏️  Removing commented lines from copies..."
 for file in "$TEMP_DIR"/$GLOB_PATTERN; do
-    sed -i '/^#/,$d' "$file"
-    sed -i '/^[[:space:]]*$/d' "$file"
+    tmpfile=$(mktemp)
+    python code_golf_utils/compile.py < "$file" > "$tmpfile"
+    mv "$tmpfile" "$file"
     echo "   - Processed $(basename "$file")"
 done
 
@@ -51,7 +52,9 @@ echo "📦 Zipping files into $OUTPUT_ZIP..."
 # We use a subshell ( ... ) to change directories temporarily.
 # This way, the zip file contains clean filenames (e.g., "task1.py")
 # instead of full paths (e.g., "tmp/tmp.XyZaBc/task1.py").
-(cd "$TEMP_DIR" && zip "$OLDPWD/$OUTPUT_ZIP" *.py)
+cd "$TEMP_DIR"
+wc -c *.py | grep -v total | python "$OLDPWD/format_scores.py" > "$OLDPWD/scores.txt"
+zip "$OLDPWD/$OUTPUT_ZIP" *.py
 
 # The trap will automatically run now to remove the temporary folder.
 echo "🎉 Done! Your submission file is ready: $OUTPUT_ZIP"

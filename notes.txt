@@ -1,0 +1,5 @@
+applying binary operation over 2 halves:
+  372, 386
+
+BFS:
+  369

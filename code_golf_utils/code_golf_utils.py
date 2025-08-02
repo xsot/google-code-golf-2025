@@ -20,6 +20,7 @@ import json
 import os
 import sys
 import tempfile
+import subprocess
 
 import matplotlib.pyplot as plt
 import numpy as np
@@ -191,22 +192,9 @@ def show_examples(examples, bgcolor=(255, 255, 255)):
   ax.set_yticks([])
 
 def preprocess(file_path: str) -> str:
-    temp_f = tempfile.NamedTemporaryFile(
-        mode='w+', encoding='utf-8', suffix='.py', delete=False
-    )
+    temp_f = tempfile.NamedTemporaryFile(mode='w+', encoding='utf-8', suffix='.py', delete=False)
     temp_file_path = temp_f.name
-
-    with open(file_path, 'r', encoding='utf-8') as f:
-      new_lines = []
-      for line in f:
-        if line.startswith('#'):
-          break
-        line = line.rstrip()
-        if line:
-          new_lines.append(line)
-      temp_f.write('\n'.join(new_lines))
-
-    temp_f.close()
+    subprocess.run([f'python code_golf_utils/compile.py < {file_path} > {temp_file_path}'], shell=True)
     return temp_file_path
 
 def verify_program(task_num, examples=None):
@@ -247,3 +235,4 @@ def verify_program(task_num, examples=None):
     print("The expected result is shown in green; your actual result is shown in red.")
     show_examples([first_failure], bgcolor=(200, 255, 200))
     show_examples([actual], bgcolor=(255, 200, 200))
+  os.unlink(task_path)
