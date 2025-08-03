@@ -1,12 +1,13 @@
-def p(m,R=range):
- d,b,_=sorted(set(a:=sum(m,[])),key=a.count);r,c=len(m),len(m[0]);z=0,
- for i in R(r*c):
-  Y=y=i%r;X=x=i//r
-  while-~Y<r!=m[Y+1][x]==b:Y+=1
-  while-~X<c!=m[y][X+1]==b:X+=1;z=max(z,(sum(sum(a:=[[d*(e>0)for e in m[i][x:X+1]]for i in R(y,Y+1)],[]))//d,a))
+def p(m):
+ d,b,*z=sorted(set(a:=sum(m,[])),key=a.count);N,M=len(m),len(m[0])
+ for i in range(N*M):
+  Y=y=i%N;X=x=i//N
+  while-~X<M!=m[y][X+1]==b:X+=1
+  while-~Y<N!=m[Y+1][x]==b:Y+=1;z=max(z,[sum(sum(a:=[[d*(e>0)for e in l[x:X+1]]for l in m[y:Y+1]],[]))//d,a])
  return z[1]
 
 ########
+# NOTE to self: cannot use index as we need to find the next non-box color
 def p(m):
     """
     Finds the hollow rectangular box of 2s that contains the most 1s.

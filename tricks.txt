@@ -1,0 +1,2 @@
+tricks:
+- instead of looping over an entire 10x10 grid with range(100), 99 might work

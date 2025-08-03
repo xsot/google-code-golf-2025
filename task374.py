@@ -1,6 +1,6 @@
 def p(m):
  a=[]
- for k in range(100):
+ for k in range(99):
   w=(r:=k//10,c:=k%10),
   if m[r][c]>4:
    for x,y in[(0,1),(1,0)]:

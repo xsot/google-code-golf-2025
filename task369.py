@@ -1,7 +1,7 @@
 def p(m):
  M,N=len(m),len(m[0])
  for i in range(M*N):
-  z=0;q=(m[r:=i//N][c:=i%N]<1)*[(r,c)];s=[]
+  z,*s=0,;q=(m[r:=i//N][c:=i%N]<1)*[(r,c)]
   while q:
    m[r][c]=9;(y,x),*q=q;z+=1;s+=(y,x),
    for i,j in[(y,x+1),(y,x-1),(y+1,x),(y-1,x)]:
@@ -10,6 +10,8 @@ def p(m):
  return m
 
 ####
+# TODO: how to avoid doing m[r][c]=9 twice?
+
 def p(matrix):
     """
     Finds regions of 0s in a matrix and fills each region with its size.

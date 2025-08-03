@@ -1,0 +1,1 @@
+p=lambda m,s=sorted:s(map(s,m))

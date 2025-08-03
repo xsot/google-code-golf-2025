@@ -21,6 +21,7 @@ import os
 import sys
 import tempfile
 import subprocess
+import glob
 
 import matplotlib.pyplot as plt
 import numpy as np
@@ -200,7 +201,8 @@ def preprocess(file_path: str) -> str:
 def verify_program(task_num, examples=None):
   if examples is None:
     examples = load_examples(task_num)
-  task_name, task_path = "task_with_imports", f"/home/wh/google-code-golf/task{task_num}.py"
+  task_name = "task_with_imports"
+  task_path = (glob.glob(f"/home/wh/google-code-golf/**/task{task_num:03}.py") + glob.glob(f"/home/wh/google-code-golf/task{task_num:03}.py"))[0]
   task_path = preprocess(task_path)
   spec = importlib.util.spec_from_file_location(task_name, task_path)
   if spec is None:
@@ -219,7 +221,10 @@ def verify_program(task_num, examples=None):
   def verify(example_subset):
     for example in example_subset:
       example_copy = copy.deepcopy(example)
-      if not program(example_copy["input"]) == example_copy["output"]:
+      try:
+        if not program(example_copy["input"]) == example_copy["output"]:
+          return copy.deepcopy(example)
+      except:
         return copy.deepcopy(example)
     return None
   all_examples = examples["train"] + examples["test"] + examples["arc-gen"]
@@ -231,8 +236,8 @@ def verify_program(task_num, examples=None):
     print("Fail!")
     actual = {}
     actual["input"] = first_failure["input"]
-    actual["output"] = program(copy.deepcopy(first_failure["input"]))
     print("The expected result is shown in green; your actual result is shown in red.")
     show_examples([first_failure], bgcolor=(200, 255, 200))
+    actual["output"] = program(copy.deepcopy(first_failure["input"]))
     show_examples([actual], bgcolor=(255, 200, 200))
   os.unlink(task_path)
