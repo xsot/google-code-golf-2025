@@ -1,1 +1,1 @@
-p=lambda m:[l[:2]for l in m[:2]]
+p=lambda m:[m[0][:2],m[1][:2]]

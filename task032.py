@@ -1,0 +1,1 @@
+p=lambda m:[*map(list,zip(*map(sorted,zip(*m))))]

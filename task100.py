@@ -1,3 +1,19 @@
+p=lambda m:[[sorted(set(a:=sum(m,[])),key=a.count)[1]]*2]*2
+
+###
+
+# doesn't work??
+p=lambda m:[[max(set(a:=sum(m,[]))-{0},key=a.count)]*2]*2
+
+# apparently just finding the second most common element is enough
+# this version has no cheese:
+import re
+def p(m,z=[0]):
+ for d in range(1,10):
+  if g:=re.search(f"{d}((, {d})*)(.*{d})",str(m)):s,_,t=g.groups();z=max(z,[(len(s)//3+1)*-~t.count(']'),d])
+ return[z[1:]*2]*2
+
+###
 def p(m):
  N,M=len(m),len(m[0]);z=0,
  for i in range(N*M):

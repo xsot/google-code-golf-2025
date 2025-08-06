@@ -1,0 +1,1 @@
+p=lambda m:[[*filter(int,sum(m,[]))]]

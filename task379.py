@@ -5,7 +5,7 @@ def p(m,R=range):
    for e in R(*a):
     if m[r][e]>7:
      for j in R(min(c,e),max(c,e)+1):m[r][j]=2
-     for i in b'GHIPRYZ[':m[r-1+-~i%9][e+-~i//9-9]=8
+     for i in b' @`!a"Bb':m[r+i//32-2][e+i%4-1]=8
      break
   r=i//n;a[i]==2!=g(c:=i%n,0,-1)!=g(c+1,n)
  return[f(m),m][t]

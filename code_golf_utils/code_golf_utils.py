@@ -128,21 +128,21 @@ def load_examples(task_num):
   """Loads relevant data from ARC-AGI and ARC-GEN."""
   if not task_num:
     return task_zero
-  with open(code_golf_dir + f"task{task_num:03d}.json") as f:
+  with open(code_golf_dir + f"inputs/task{task_num:03d}.json") as f:
     examples = json.load(f)
   return examples
 
 
 def show_legend():
-  image = [[(255, 255, 255) for _ in range(21)] for _ in range(3)]
+  image = [[(255, 255, 255) for _ in range(10)]]
   for idx, color in enumerate(colors):
-    image[1][2 * idx + 1] = color
-  fig = plt.figure(figsize=(10, 5))
+    image[0][idx] = color
+  fig = plt.figure(figsize=(4, 2))
   ax = fig.add_axes([0, 0, 1, 1])
   ax.imshow(np.array(image))
   for idx, _ in enumerate(colors):
     color = "white" if idx in [0, 9] else "black"
-    ax.text(2 * idx + 0.9, 1.1, str(idx), color=color)
+    ax.text(idx-.1, .1, str(idx), color=color)
   ax.set_xticks([])
   ax.set_yticks([])
 

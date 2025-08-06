@@ -7,44 +7,23 @@ BFS:
   Fill with count: 330, 369
   count CC: 325
 
-find vertical/horizontal lines:
-  374
-
-find rectangles:
-  365
-
-find bounding box:
-  216, 378, 384
-
-find box outline:
-  100, 310, 396
-
-find cross:
-  362
-
-join collinear points:
-  350, 356
-
-fill in hole using symmetry:
-  242, 351, 400
-
-iterate over 4 neighbours:
-  272
-
-iterate over 8 neighbours:
-  346, 379
-
-output identity matrix:
-  325
-
-local transformation:
-  230
-
-hash fixed location pattern:
-  235
-
-scale up:
-  223, 289, 307
+find vertical/horizontal lines: 374
+find rectangles: 365
+find bounding box: 216, 378, 384
+find box outline: 100, 310, 396
+find cross: 362
+find 3x3 squares: 162
+join collinear points: 350, 356
+fill in hole using symmetry: 242, 351, 400
+iterate over 4 neighbours: 272
+iterate over 8 neighbours: 346, 379
+output identity matrix: 325
+local transformation: 230
+hash fixed location pattern: 235
+scale up: 223, 289, 307, 384
+filter zeros: 339
+rotate 180: 87(U)
+check symmetry: 103
 
 very hard:
 - 308
