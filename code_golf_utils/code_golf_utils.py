@@ -27,7 +27,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 
-code_golf_dir = "/home/wh/google-code-golf/"
+code_golf_dir = "/home/wh/google-code-golf-2025/"
 libraries = ["collections", "itertools", "math", "operator", "re", "string",
              "struct"]
 colors = [
@@ -202,7 +202,7 @@ def verify_program(task_num, examples=None):
   if examples is None:
     examples = load_examples(task_num)
   task_name = "task_with_imports"
-  task_path = (glob.glob(f"/home/wh/google-code-golf/**/task{task_num:03}.py") + glob.glob(f"/home/wh/google-code-golf/task{task_num:03}.py"))[0]
+  task_path = (glob.glob(f"/home/wh/google-code-golf-2025/**/task{task_num:03}.py") + glob.glob(f"/home/wh/google-code-golf-2025/task{task_num:03}.py"))[0]
   task_path = preprocess(task_path)
   spec = importlib.util.spec_from_file_location(task_name, task_path)
   if spec is None:
