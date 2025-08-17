@@ -1,0 +1,1 @@
+p=lambda m:[[min({*r[i:i+3]}-{5})for i in[0,3,6]]for r in m[::3]]
