@@ -1,0 +1,1 @@
+p=lambda m:[3*[-r.index(5)%3+2]for r in m]

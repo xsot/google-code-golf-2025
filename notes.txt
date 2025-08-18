@@ -1,5 +1,5 @@
 applying binary operation over 2 halves:
-  372, 386, 360(U), 321(U), 325(U)
+  372, 386, 360, 321(U), 325(U)
 
 BFS:
   002
