@@ -1,6 +1,6 @@
-p=lambda m:[[(v==5)*max({*m[0]+m[1]}-{5})for v in l]for l in m]
-
+p=lambda m:[[sum({*m[0]+m[1]})-5-v*(v!=5)for v in l]for l in m]
 ##
+p=lambda m:[[v==5and sum({*m[0]+m[1]})-5for v in l]for l in m]
 p=lambda m:[[(v==5)*max({*m[0]+m[1]}-{5})for v in l]for l in m]
 p=lambda m:[[(v==5)*max({*sum(m,[])}-{5})for v in l]for l in m]
 p=lambda m:[[v==5and max({*sum(m,[])}-{5})for v in l]for l in m]
