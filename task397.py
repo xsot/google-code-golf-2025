@@ -1,6 +1,8 @@
+p=lambda m,k=0:exec('r=k//9;c=k%9;i=r+2;exec("m[i][c:c+2]=3,3;i+=1;"*len(a:={*m[r][c:c+2],*m[r+1][c:c+2]})*(not{0,3}&a));k+=1;'*81)or m
+
+##
 def p(m):k=0;exec('r=k//9;c=k%9;i=r+2;exec("m[i][c:c+2]=3,3;i+=1;"*len(a:={*m[r][c:c+2],*m[r+1][c:c+2]})*(not{0,3}&a));k+=1;'*81);return m
 
-######
 def p(m):
     """
     Finds 2x2 non-zero, non-overlapping submatrices in a 10x10 matrix and
