@@ -17,6 +17,7 @@ join collinear points: 350, 356
 fill in hole using symmetry: 242, 351, 400
 iterate over 4 neighbours: 272
 iterate over 8 neighbours: 346, 379
+  color 8 neighbours: 352
 output identity matrix: 325
 local transformation: 230
 hash fixed location pattern: 235

@@ -1,0 +1,1 @@
+p=lambda m:[[3-3*any(c)for c in zip(*r)]for r in zip(m,m[5:])]

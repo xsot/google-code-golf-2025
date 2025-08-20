@@ -4,3 +4,8 @@ tricks:
 ' @`!a"Bb'
 encoder: [(i+2)<<5|(j+1) for i,j in [(-1,-1),(0,-1),(1,-1),(-1,0),(1,0),(-1,1),(0,1),(1,1)]]
 decoder: (i//32-2, i%8-1)
+
+bytes between two vertically adjacent cells:
+  (len(m[0])-1)*3+4
+
+if finding coordinates, use sum(m,[]).index and divmod. See task353
