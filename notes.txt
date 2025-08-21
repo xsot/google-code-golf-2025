@@ -25,6 +25,7 @@ scale up: 223, 289, 307, 384
 filter zeros: 339
 rotate 180: 87(U)
 check symmetry: 103
+or-chain: 180, 321
 
 very hard:
 - 308
