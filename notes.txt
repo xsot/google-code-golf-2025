@@ -21,11 +21,13 @@ iterate over 8 neighbours: 346, 379
 output identity matrix: 325
 local transformation: 230
 hash fixed location pattern: 235
-scale up: 223, 289, 307, 384
+scale up: 223, 269, 289, 307, 384
 filter zeros: 339
 rotate 180: 87(U)
 check symmetry: 103
 or-chain: 180, 321
+deduplicate rows and columns: 377(U)
+juxtapose quadrants: 207
 
 very hard:
 - 308

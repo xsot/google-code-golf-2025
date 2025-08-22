@@ -1,0 +1,7 @@
+p=lambda m:[[min(a,key=a.count)for a in zip(x,y,x[3:],y[3:])]for x,y in zip(m,m[3:])]
+###
+p=lambda m:[[min(a,key=a.count)for a in zip(x,y,x[3:],y[3:])]for x,y in zip(m,m[3:])]
+p=lambda m:[[min(a,key=a.count)for a in zip(x,m[3],m.pop(3)[3:],x[3:])]for x in m[:2]]
+p=lambda m:[[min(a:=(x+[0]+y)[c::3],key=a.count)for c in[0,1]]for x,y in zip(m,m[3:])]
+p=lambda m:[[min(a:=[*x,0,*y][c::3],key=a.count)for c in[0,1]]for x,y in zip(m,m[3:])]
+p=lambda m:[[min(a:=x[c::3]+y[c::3],key=a.count)for c in[0,1]]for x,y in zip(m,m[3:])]

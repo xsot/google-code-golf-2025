@@ -1,0 +1,1 @@
+p=lambda m:[(r[:6]*9)[:len(r)*2]for r in m]
