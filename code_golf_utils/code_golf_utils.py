@@ -17,8 +17,11 @@
 import copy
 import importlib.util
 import json
+import numpy
 import os
+import re
 import sys
+import traceback
 import tempfile
 import subprocess
 import glob
@@ -219,25 +222,42 @@ def verify_program(task_num, examples=None):
     return
   print()
   def verify(example_subset):
+    right, wrong, expected, error = 0, 0, None, ""
     for example in example_subset:
       example_copy = copy.deepcopy(example)
       try:
-        if not program(example_copy["input"]) == example_copy["output"]:
-          return copy.deepcopy(example)
+        result = program(example_copy["input"])
+        result = json.dumps(result)
+        result = result.replace("true", "1").replace("false", "0")
+        unsafe_chars = re.compile(r"[^0-9,\[\]\s\.]")
+        if unsafe_chars.search(result):
+          raise ValueError(f"Invalid output from user code: {result[:500]}")
+        result = json.loads(result)
+        user_output = np.array(result)
+        label_output = np.array(example_copy["output"])
+        if numpy.array_equal(user_output, label_output):
+          right += 1
+        else:
+          expected = copy.deepcopy(example)
+          wrong += 1
       except:
-        return copy.deepcopy(example)
-    return None
+        error = traceback.format_exc()
+        print(f"Error: {error}")
+        wrong += 1
+        return right, wrong, expected
+    return right, wrong, expected
   all_examples = examples["train"] + examples["test"] + examples["arc-gen"]
-  first_failure = verify(all_examples)
-  if not first_failure:
+  right, wrong, expected = verify(all_examples)
+  if wrong == 0:
     task_length = os.path.getsize(task_path)
     print(f"Success! Passed {len(all_examples)} test cases. Length = {task_length} bytes")
   else:
     print("Fail!")
+    if not expected: return
     actual = {}
-    actual["input"] = first_failure["input"]
+    actual["input"] = expected["input"]
+    actual["output"] = program(copy.deepcopy(expected["input"]))
     print("The expected result is shown in green; your actual result is shown in red.")
-    show_examples([first_failure], bgcolor=(200, 255, 200))
-    actual["output"] = program(copy.deepcopy(first_failure["input"]))
+    show_examples([expected], bgcolor=(200, 255, 200))
     show_examples([actual], bgcolor=(255, 200, 200))
   os.unlink(task_path)

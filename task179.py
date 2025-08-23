@@ -1,1 +1,1 @@
-p=lambda m:[*map(list,zip(*m))]
+p=lambda m:[*zip(*m)]

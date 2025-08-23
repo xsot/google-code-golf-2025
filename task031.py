@@ -1,5 +1,6 @@
-p=lambda m,i=1:-i*m or[[*l]for l in zip(*p(m,i-1))if sum(l)]
+p=lambda m,i=1:-i*m or p([*filter(sum,zip(*m))],i-1)
 ###
+p=lambda m,i=1:-i*m or p([*filter(sum,zip(*m))],i-1)
 p=lambda m,i=1:-i*m or[[*l]for l in zip(*p(m,i-1))if sum(l)]
 p=lambda m,i=2:i and[[*l]for l in zip(*p(m,i-1))if sum(l)]or m
 p=lambda m,i=2:i and p([[*l]for l in zip(*m)if sum(l)],i-1)or m

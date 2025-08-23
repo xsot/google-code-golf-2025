@@ -26,7 +26,8 @@ filter zeros: 339
 rotate 180: 87(U)
 check symmetry: 103
 or-chain: 180, 321
-deduplicate rows and columns: 377(U)
+deduplicate rows and columns: 178, 377(U)
+remove empty rows and columns: 31, 57(U), 177
 juxtapose quadrants: 207
 
 very hard:
