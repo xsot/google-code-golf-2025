@@ -7,7 +7,8 @@ BFS:
   Fill with count: 330, 369
   count CC: 325
 
-find vertical/horizontal lines: 374
+copy rectangle: 368
+find verticalj/horizontal lines: 374
 find rectangles: 365
 find bounding box: 216, 378, 384
 find box outline: 100, 310, 396
