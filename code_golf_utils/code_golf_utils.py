@@ -242,6 +242,7 @@ def verify_program(task_num, examples=None):
           wrong += 1
       except:
         error = traceback.format_exc()
+        expected = copy.deepcopy(example)
         print(f"Error: {error}")
         wrong += 1
         return right, wrong, expected
