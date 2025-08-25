@@ -1,4 +1,4 @@
-p=lambda m,R=range(9):[[m[r//3][c//3]and m[r%3][c%3]for c in R]for r in R]
+p=lambda m,R=range(9):[[m[r//3][c//3]&m[r%3][c%3]for c in R]for r in R]
 
 ##
 p=lambda m,R=range(9):[[m[r//3][c//3]and m[r%3][c%3]for c in R]for r in R]

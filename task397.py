@@ -1,7 +1,8 @@
-p=lambda m,k=0:exec('r=k//9;c=k%9;i=r+2;exec("m[i][c:c+2]=3,3;i+=1;"*len(a:={*m[r][c:c+2],*m[r+1][c:c+2]})*(not{0,3}&a));k+=1;'*81)or m
+# uses exec scoping bug to avoid copying r
+p=lambda m,k=0:exec('r=k//9;c=k%9;exec("m[r+2][c:c+2]=3,3;r+=1;"*len(a:={*m[r][c:c+2]+m[r+1][c:c+2]})*(not{0,3}&a));k+=1;'*81)or m
 
 ##
-def p(m):k=0;exec('r=k//9;c=k%9;i=r+2;exec("m[i][c:c+2]=3,3;i+=1;"*len(a:={*m[r][c:c+2],*m[r+1][c:c+2]})*(not{0,3}&a));k+=1;'*81);return m
+def p(m):k=0;exec('r=k//9;c=k%9;i=r+2;exec("m[i][c:c+2]=3,3;i+=1;"*len(a:={*m[r][c:c+2]+m[r+1][c:c+2]})*(not{0,3}&a));k+=1;'*81);return m
 
 def p(m):
     """
