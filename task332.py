@@ -1,5 +1,10 @@
-p=lambda m:[eval("[x:=r.pop(0),3][x*~len(r)%2],"*len(r))for r in m]
+p=lambda m:[[len(r)*r.pop(0)%2*3or x for x in[*r]]for r in m]
 ##
+p=lambda m:[[len(r)%2*r.pop(0)*.6or x for x in[*r]]for r in m]
+p=lambda m:[[len(r)*r.pop(0)%2*3or x for x in[*r]]for r in m]
+p=lambda m:[[(1-len(r)%2*.4)*r.pop(0)for _ in[*r]]for r in m]
+p=lambda m:[eval("(1-len(r)%2*.4)*r.pop(0),"*len(r))for r in m]
+p=lambda m:[eval("[x:=r.pop(0),3][x*~len(r)%2],"*len(r))for r in m]
 p=lambda m:[eval("len(r)*(x:=r.pop(0))%2*3or x,"*len(r))for r in m]
 p=lambda m:[eval("[x:=r.pop(0),3][x*~len(r)%2],"*len(r))for r in m]
 p=lambda m:[eval("[x:=r.pop(0),3][~len(r)&(x>0)],"*len(r))for r in m]
