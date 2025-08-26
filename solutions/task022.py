@@ -1,3 +1,7 @@
+R=-1,0,1
+p=lambda g:[[max(f[I+i*11+j]for I in range(121)if(f:=sum(g,[]))[I]==5)for j in R]for i in R]
+
+### xsot (103 bytes)
 p=lambda m:[[max(a[i+r+c]for i in range(121)if(a:=sum(m,[]))[i]==5)for c in[-1,0,1]]for r in[-11,0,11]]
 ##
 p=lambda m:[[max(a[i+r+c]for i in range(121)if(a:=sum(m,[]))[i]==5)for c in[-1,0,1]]for r in[-11,0,11]]

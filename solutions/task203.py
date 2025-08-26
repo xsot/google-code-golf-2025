@@ -1,0 +1,1 @@
+def p(g):f=sum(g,[]);C=sorted({*f},key=f.count);return[[C[~C.index(c)]for c in r]for r in g]

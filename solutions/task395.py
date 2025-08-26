@@ -1,3 +1,6 @@
+p=lambda g:[[a-9+b&2for a,b in zip(*r)]for r in zip(g,g[3:])]
+
+### xsot (63 bytes)
 p=lambda m:[[2*(i+j<1)for i,j in zip(*u)]for u in zip(m,m[3:])]
 
 ###

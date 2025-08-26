@@ -1,3 +1,6 @@
+p=lambda g:[[*map(max,*r)]for r in zip(g,g[6:])]
+
+### xsot (54 bytes)
 p=lambda m:[[*map(sum,zip(r,m.pop(6)))]for r in m[:5]]
 
 ##

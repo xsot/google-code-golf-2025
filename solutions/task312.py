@@ -1,3 +1,6 @@
+p=lambda g:[[v and r[0]for v in r]for r in g]
+
+### xsot (51 bytes)
 p=lambda m:[[(c==5)*l[0]or c for c in l]for l in m]
 ##
 p=lambda m:[[(c==5)*l[0]or c for c in l]for l in m]

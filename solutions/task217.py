@@ -1,0 +1,1 @@
+def p(g):exec("g[:]=zip(*filter(any,g));"*2);return[[v*(w>0)for w in l for v in k]for l in g for k in g]

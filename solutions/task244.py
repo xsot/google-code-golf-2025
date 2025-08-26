@@ -1,0 +1,1 @@
+p=lambda g:[r[::(w:=~[len({*r})for r in g].index(1))]for r in g][::-w]

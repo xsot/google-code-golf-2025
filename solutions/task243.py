@@ -1,3 +1,6 @@
+p=lambda g:[g:=[[v<q<2or(q:=v)for v in r]for*r,in zip(*g)if[q:=2]][::-1]for _ in g*4][-1]
+
+### xsot (99 bytes)
 import re
 p=lambda m:eval(eval('re.sub("0(?=..1|..{%d}1)","1",'%len(m*3)*98+f'"{m}"'+')[::-1]'*98))
 ##

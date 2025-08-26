@@ -1,0 +1,2 @@
+E=enumerate
+def p(g):u,U=divmod(sum(g,[]).index(3),10);C=g[u][U:].index(0);T=lambda y,x,Y,X:((y-u)//C-(Y-u)//C)**2+((x-U)//C-(X-U)//C)**2;return[[v or any(T(i,j,I,J)==5==T(i,j,o,O)>2==T(I,J,o,O)for I,R in E(g)for J,V in E(R)if V for o,k in E(g)for O,K in E(k)if K)*8for j,v in E(r)]for i,r in E(g)]

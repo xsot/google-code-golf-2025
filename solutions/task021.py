@@ -1,3 +1,7 @@
+H=lambda w:1+min(map(w.count,w))
+p=lambda g:[g[0][:1]*H(g[0])]*H(g)
+
+### xsot (78 bytes)
 p=lambda m:-~m.count(len(r:=m[0])*(a:=[*set(r)-{r[0]}]))*[-~r.count(*a)*r[:1]]
 ###
 p=lambda m:-~m.count(len(r:=m[0])*(a:=[min(r,key=r.count)]))*[-~r.count(*a)*r[:1]]

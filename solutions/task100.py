@@ -1,3 +1,6 @@
+p=lambda g:[[max(range(1,10),key=lambda c:sum(c in{*r}&{*C}for r in g for*C,in zip(*g)))]*2]*2
+
+### xsot (176 bytes)
 import re
 def p(m,z=[0]):
  for d in range(1,10):

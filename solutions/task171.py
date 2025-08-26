@@ -1,3 +1,6 @@
+p=lambda g,k=-1:g*k or p([[8,*r,8]for _,*r,_ in zip(*g)],k+1)
+
+### xsot (66 bytes)
 p=lambda m:[[8,*[x]*(len(m[0])-2),8]for x in[8,*[0]*(len(m)-2),8]]
 
 ##

@@ -1,0 +1,2 @@
+E=enumerate
+def p(g):*t,=zip(*g);*f,=E(sum(g,[]));(y,*_,Y),(x,*_,X)=map(sorted,zip(*[divmod(i,len(t))for i,v in f if v]));return[[v or 2*any(x<=j<=X and y<=i<=Y and (sum(q)>1 or j in(x,X) or i in (y,Y)) for q in[l[x+1:X],t[j][y+1:Y]])for j,v in E(l)]for i,l in E(g)]

@@ -1,0 +1,1 @@
+p=lambda g:[[[*{1,3}&{*r},*{2}&{*c},0][0]for c in zip(*g)]for r in g]

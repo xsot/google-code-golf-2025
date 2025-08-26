@@ -1,3 +1,6 @@
+p=lambda g:[[5^(g[0][0]>0)-3*~(g[0][2]>0)]]
+
+### xsot (46 bytes)
 p=lambda m:[[hash((*map(bool,m[0]),))%1653%7]]
 ###
 p=lambda m:[[hash((*map(bool,m[0]),))%1653%7]]

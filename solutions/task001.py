@@ -1,3 +1,6 @@
+p=lambda g:[[v&V for v in l for V in L]for l in g for L in g]
+
+### xsot (71 bytes)
 p=lambda m,R=range(9):[[m[r//3][c//3]&m[r%3][c%3]for c in R]for r in R]
 
 ##

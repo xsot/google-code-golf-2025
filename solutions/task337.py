@@ -1,3 +1,6 @@
+p=lambda g:[[x^84%x%3*13for x in r]for r in g]
+
+### xsot (48 bytes)
 p=lambda m:eval(str(m).translate({53:56,56:53}))
 
 ##

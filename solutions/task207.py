@@ -5,3 +5,6 @@ p=lambda m:[[min(a,key=a.count)for a in zip(x,m[3],m.pop(3)[3:],x[3:])]for x in 
 p=lambda m:[[min(a:=(x+[0]+y)[c::3],key=a.count)for c in[0,1]]for x,y in zip(m,m[3:])]
 p=lambda m:[[min(a:=[*x,0,*y][c::3],key=a.count)for c in[0,1]]for x,y in zip(m,m[3:])]
 p=lambda m:[[min(a:=x[c::3]+y[c::3],key=a.count)for c in[0,1]]for x,y in zip(m,m[3:])]
+
+### ovs (86 bytes)
+p=lambda g:min(T:=[[l[x:x+2]for l in g[y:y+2]]for y in(0,3)for x in(0,3)],key=T.count)

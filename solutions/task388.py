@@ -1,3 +1,6 @@
+p=lambda g:[2*[v or 8*any(c)for*c,v in zip(*g,r)]for r in g]*2
+
+### xsot (67 bytes)
 p=lambda m:[2*[c or any(d)*8for c,d in zip(r,zip(*m))]for r in m]*2
 
 ##

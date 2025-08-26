@@ -1,0 +1,1 @@
+p=lambda g:[[6-j%3&v%~5for j,v in enumerate(r)]for r in g]
