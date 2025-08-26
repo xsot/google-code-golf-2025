@@ -16,7 +16,7 @@ OUTPUT_ZIP="submission.zip"
 # Check if any files match the glob pattern.
 # 'shopt -s nullglob' makes the glob expand to nothing if no files match.
 shopt -s nullglob
-files=($GLOB_PATTERN)
+files=(solutions/$GLOB_PATTERN)
 if [ ${#files[@]} -eq 0 ]; then
     echo "Warning: No files found matching '$GLOB_PATTERN'. Exiting."
     exit 0
@@ -36,7 +36,7 @@ trap 'echo "🧹 Cleaning up temporary folder..."; rm -r "$TEMP_DIR"' EXIT
 
 # 3. Copy all matching files to the temporary folder
 echo "📂 Copying files..."
-cp $GLOB_PATTERN "$TEMP_DIR/"
+cp solutions/$GLOB_PATTERN "$TEMP_DIR/"
 
 # 4. Remove all lines that start with '#' and empty lines from each file in the temp folder
 echo "✏️  Removing commented lines from copies..."
