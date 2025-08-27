@@ -1,0 +1,1 @@
+p=lambda a:[[(d:=a[l:=len(a)//2])[l+d.index(c)]for c in b]for b in a]
