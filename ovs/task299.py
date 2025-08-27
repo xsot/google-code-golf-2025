@@ -1,0 +1,1 @@
+p=lambda g:[[26%(c+C+R-~r)for c,*_,C in zip(*g)]for r,*_,R in g]

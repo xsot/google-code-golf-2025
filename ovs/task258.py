@@ -1,0 +1,1 @@
+p=lambda g:[[v|a+b&2for a,b,v in zip([0]+r,r[1:]+[0],r)]for r in g]

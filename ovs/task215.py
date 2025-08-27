@@ -1,0 +1,1 @@
+p=lambda g,i=2:[max(g[(i:=i+1)%3::3])for _ in g]

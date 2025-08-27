@@ -1,0 +1,1 @@
+p=lambda g,p=0:[[v|(p:=v^p)for v in r]for r in g]

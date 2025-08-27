@@ -1,0 +1,1 @@
+def p(g):f=sum(g,[]);R=range(s:=9-f.count(max(f)));return[[c*(i*s+j<9-s)for j in R for c in r]for i in R for r in g]

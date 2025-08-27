@@ -1,0 +1,1 @@
+p=lambda g:[[v for*c,v in zip(*g,r)if any(c)][:3]for r in g if any(r)][:3]

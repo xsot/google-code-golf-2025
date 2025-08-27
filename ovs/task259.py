@@ -1,0 +1,1 @@
+def p(g):g=[[v*(v!=max(f:=sum(g,[]),key=f.count))for v in r]for r in g];exec("g[:]=zip(*g[any(g[0])<1:][::-1]);"*40);return g

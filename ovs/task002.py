@@ -1,0 +1,1 @@
+def p(g):g=eval(str(g).replace(*'04'));[g:=[[v%(q+4)for v,q in zip(r,[0]+r)]for*r,in zip(*g)][::-1]for _ in g*4];return g

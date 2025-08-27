@@ -1,0 +1,1 @@
+p=lambda g,c=[0]*9:[c:=[V or v%2*-~max(c)for V,v in zip(c,r)]for r in g]

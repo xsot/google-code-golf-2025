@@ -1,0 +1,1 @@
+p=lambda g,k=-1:g*k or p([y for*y,in zip(*g)if g!=(g:=y)],k+1)

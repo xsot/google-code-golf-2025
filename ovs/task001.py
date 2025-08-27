@@ -1,0 +1,1 @@
+p=lambda g:[[v&V for v in l for V in L]for l in g for L in g]

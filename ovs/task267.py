@@ -1,0 +1,1 @@
+p=lambda g:[[sum({*[g[-1][0]]*v}-{v})for v in r]for r in g]

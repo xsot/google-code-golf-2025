@@ -1,0 +1,1 @@
+p=lambda g:[R[::-1][r.index(3):][:5]for r,R in zip(g,g[::-1])if 3in r]
