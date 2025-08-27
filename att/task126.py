@@ -1,0 +1,1 @@
+p=lambda a:a[:-1]+[[4*(sum(c)<2*max(c))for c in zip(*a)]]

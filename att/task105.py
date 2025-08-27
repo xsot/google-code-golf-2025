@@ -1,0 +1,1 @@
+p=lambda a,n=7,i=3:-n*a or a[:(b:=[*map(any,a)].index(1))]+[*zip(*p([*zip(*[[[c or~-i|sum(-d&2for d in b)//len(b)*2for c in b]*(i:=1)for b in a],a[b:]][n>3][::-1])],n-1))][::-1]

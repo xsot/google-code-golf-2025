@@ -1,0 +1,1 @@
+p=lambda a:[[2*c*b.pop(0)for c in b[4:]]for b in a]

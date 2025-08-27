@@ -1,0 +1,1 @@
+p=lambda a:[[d//2*e for d in b for e in c]for b in a for c in a]

@@ -1,0 +1,1 @@
+p=lambda a,b=[0]*9:[b:=[*map(max,b,r)]for r in a]

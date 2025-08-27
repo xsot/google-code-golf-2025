@@ -1,0 +1,1 @@
+p=lambda a:[[(d:=a[-1][0])*(0<c!=d)for c in b]for b in a]

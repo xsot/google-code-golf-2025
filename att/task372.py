@@ -1,0 +1,1 @@
+p=lambda a:[b for*b,in map(map,[max]*5,a,a[6:])]

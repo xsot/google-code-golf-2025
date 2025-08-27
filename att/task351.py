@@ -1,0 +1,1 @@
+p=lambda a:[d[::-1]for*b,in[*a]if(d:=[c for c in a.pop()if b.pop()==3])]

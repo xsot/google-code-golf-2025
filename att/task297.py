@@ -1,0 +1,1 @@
+p=lambda a:a[:2]+[[b]*len(a[0])for b in a[0]]*2

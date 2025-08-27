@@ -1,0 +1,1 @@
+p=lambda a:[*map(f:=lambda b,c=a[0]:b and(d:=[*b,0].index(0)or 1)*[b[0]and max(c[:d])]+f(b[d:],c[d:]),a)]

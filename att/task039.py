@@ -1,0 +1,1 @@
+p=lambda a:[b[:3]for*b,in zip(*filter(any,zip(*a)))if any(b)][:3]

@@ -1,0 +1,1 @@
+p=lambda a:[max((a:=a[:2]+a)[2::3])for _ in a]

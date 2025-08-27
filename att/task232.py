@@ -1,0 +1,1 @@
+p=lambda a:[(c:=0)or[c:=e or c and 5^c^sum(b)for e in b]for b in a]

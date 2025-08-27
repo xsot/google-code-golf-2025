@@ -1,0 +1,1 @@
+p=lambda a,i=0:[[4*i<(i:=i+1)%2*s(s(a,[]))for _ in[0]*3]for s in[sum]*3]
