@@ -1,0 +1,10 @@
+p=lambda a:[3*[1//len({*b})*5]for b in a]
+
+### ovs (tied, 41 bytes)
+p=lambda g:[3*[1//len({*r})*5]for r in g]
+
+### xsot (tied, 41 bytes)
+p=lambda m:[3*[1//len({*r})*5]for r in m]
+
+##
+p=lambda m:[3*[5*(len({*r})<2)]for r in m]

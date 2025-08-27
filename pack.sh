@@ -8,6 +8,7 @@
 set -e
 
 # --- Configuration ---
+SOLUTION_DIR="merged/"
 GLOB_PATTERN="task*.py"
 OUTPUT_ZIP="submission.zip"
 
@@ -16,7 +17,7 @@ OUTPUT_ZIP="submission.zip"
 # Check if any files match the glob pattern.
 # 'shopt -s nullglob' makes the glob expand to nothing if no files match.
 shopt -s nullglob
-files=($GLOB_PATTERN)
+files=($SOLUTION_DIR/$GLOB_PATTERN)
 if [ ${#files[@]} -eq 0 ]; then
     echo "Warning: No files found matching '$GLOB_PATTERN'. Exiting."
     exit 0
@@ -36,7 +37,7 @@ trap 'echo "🧹 Cleaning up temporary folder..."; rm -r "$TEMP_DIR"' EXIT
 
 # 3. Copy all matching files to the temporary folder
 echo "📂 Copying files..."
-cp $GLOB_PATTERN "$TEMP_DIR/"
+cp $SOLUTION_DIR/$GLOB_PATTERN "$TEMP_DIR/"
 
 # 4. Remove all lines that start with '#' and empty lines from each file in the temp folder
 echo "✏️  Removing commented lines from copies..."
@@ -54,6 +55,7 @@ echo "📦 Zipping files into $OUTPUT_ZIP..."
 # instead of full paths (e.g., "tmp/tmp.XyZaBc/task1.py").
 cd "$TEMP_DIR"
 wc -c *.py | grep -v total | python "$OLDPWD/format_scores.py" > "$OLDPWD/scores.txt"
+rm -f "$OLDPWD/$OUTPUT_ZIP"
 zip "$OLDPWD/$OUTPUT_ZIP" *.py
 
 # The trap will automatically run now to remove the temporary folder.

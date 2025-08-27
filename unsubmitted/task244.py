@@ -1,1 +1,0 @@
-p=lambda m:(n:=???)and [l[::n][::-1] for l in m[::n]]

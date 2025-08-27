@@ -1,0 +1,1 @@
+p=lambda m,i=1:-i*m or p([*zip(*[r*(sum(r)>4)or[2]*len(r)for r in m])],i-1)

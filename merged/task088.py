@@ -1,0 +1,1 @@
+p=lambda a,n=-3:n*a[1:-1]or p((b:=max(a[n%2]))and[[b*(d>0)for d in c]for c in zip(*a[:0:-1])]or a[1:],n+(b>0))

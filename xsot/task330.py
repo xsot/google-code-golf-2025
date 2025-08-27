@@ -1,0 +1,11 @@
+def p(m):
+ for i in range(99):
+  z,*s=0,;q=(m[r:=i//10][c:=i%10]==5)*[(r,c)]
+  while q:
+   m[r][c]=9;(y,x),*q=q;z+=1;s+=(y,x),
+   for i,j in[(y,x+1),(y,x-1),(y+1,x),(y-1,x)]:
+    if-1<i<10>j>-1<5==m[i][j]:m[i][j]=9;q+=(i,j),
+  for r,c in s:m[r][c]=1+(z==6)
+ return m
+
+# very similar to 369, but shorter since input size is constant
