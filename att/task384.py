@@ -1,0 +1,1 @@
+p=lambda a,*n:[b for*b,in zip(*n or p(a,*a))for _ in'  'if 4in b]

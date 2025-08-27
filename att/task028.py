@@ -1,0 +1,2 @@
+h=lambda a:[(d:=[max(a)])*10,c:=d+[0]*8+d]*2+[c]
+p=lambda a:h(a[2])+h(a[7])[::-1]

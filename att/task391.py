@@ -1,0 +1,1 @@
+p=lambda a:[[sorted(range(10),key=sum(a,a).count)[i]]for i in(7,6,5)]

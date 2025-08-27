@@ -1,0 +1,1 @@
+p=eval('lambda a:[[a '+'for a in-~min(map(a.count,a))*a[:1]]'*2)

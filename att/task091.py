@@ -1,0 +1,1 @@
+p=lambda a,n=-3:a*n or p([a[1:],[b[::-1]for*b,in zip(*a)]][c:=5in a[n%2]],n+c)

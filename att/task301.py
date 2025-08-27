@@ -1,0 +1,1 @@
+p=lambda a:sorted(map(sorted,a))

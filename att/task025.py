@@ -1,0 +1,1 @@
+p=lambda a,n=-3:n*a or p([*map(lambda*b,i=0,n=[*map(min,a)]:[b:=[c*(m!=c in({*n}-{0}or b))for c in b[:i]]+[b[i]+(m in b[:i])*m,*b[(i:=i+1):]]for m in n[1:]][-1][::-1],*a)],n+1)

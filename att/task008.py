@@ -1,0 +1,1 @@
+p=lambda a,n=-35:n*a or p([*zip(a.pop(-~-any(a[b:=[*map(max,a)].index(8,1)-1])*b),*a)][::-1],n+1)

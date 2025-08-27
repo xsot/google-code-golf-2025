@@ -1,0 +1,1 @@
+p=lambda a:max([[c]]for c in sum(a,a)if[*{b.count(c)for b in a}][2:])
