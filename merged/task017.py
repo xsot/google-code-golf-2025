@@ -1,4 +1,4 @@
-p=lambda a,n=1:[*map(f:=lambda*b:[max(b[i%n::n])for i in range(len(b))],*map(f,*a))]*any(b[n:]==b[:-n]for b in a)or p(a,n+1)
+p=lambda a,n=1:[*map(f:=lambda*b:[max(b[i%n::n])for i in range(21)],*map(f,*a))]*any(b[n:]==b[:-n]for b in a)or p(a,n+1)
 
 ### ovs (143 bytes)
 R=range(21)

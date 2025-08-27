@@ -24,9 +24,9 @@ def writelines_with_newline(file, lines):
 
 # Configuration: add player directories here
 players = [
-    ('xsot', '/home/wh/google-code-golf-2025/xsot/'),
-    ('ovs', '/home/wh/ovs-google-code-golf-2025/submission/'),
-    ('att', '/home/wh/att-google-code-golf-2025/att/')
+    ('xsot', 'xsot/'),
+    ('ovs', 'ovs/'),
+    ('att', 'att/')
 ]
 
 # Output directory

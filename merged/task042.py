@@ -1,2 +1,2 @@
-E=enumerate
-def p(g):u,U=divmod(sum(g,[]).index(3),10);C=g[u][U:].index(0);T=lambda y,x,Y,X:((y-u)//C-(Y-u)//C)**2+((x-U)//C-(X-U)//C)**2;return[[v or any(T(i,j,I,J)==5==T(i,j,o,O)>2==T(I,J,o,O)for I,R in E(g)for J,V in E(R)if V for o,k in E(g)for O,K in E(k)if K)*8for j,v in E(r)]for i,r in E(g)]
+Q=range(10)
+def p(g):C=sum(b'%r'%g)//38%4;return[[g[i][j]|any(all(((g+g[:1]*3)[i+y*s]+g[0])[j+(3-y)*S]for y in(1,2))for s in(-C,C)for S in(-C,C))*8for j in Q]for i in Q]
