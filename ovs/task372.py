@@ -1,0 +1,1 @@
+p=lambda g:[[*map(max,*r)]for r in zip(g,g[6:])]

@@ -1,0 +1,1 @@
+p=lambda g:(r:=lambda x:[v for v in x for _ in{*sum(g,[])}-{0}])(map(r,g))

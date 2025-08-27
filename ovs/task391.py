@@ -1,0 +1,1 @@
+p=lambda g:[[int(v)]for v in sorted({*str(g)},key=str(g).count)[2::-1]]

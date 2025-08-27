@@ -1,0 +1,1 @@
+p=lambda g:min(T:=[[l[x:x+2]for l in g[y:y+2]]for y in(0,3)for x in(0,3)],key=T.count)

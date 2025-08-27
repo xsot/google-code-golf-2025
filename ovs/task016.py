@@ -1,0 +1,1 @@
+p=lambda g:[[(v^792>>v&53)%10for v in l]for l in g]

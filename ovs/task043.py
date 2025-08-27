@@ -1,0 +1,1 @@
+p=lambda g:[[v+c*r[-1]//12for c,v in zip(g[0],r)]for r in g]

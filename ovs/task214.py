@@ -1,0 +1,1 @@
+p=lambda g:[a[:3]+[5,*b,5]+c[2::-1]for a,*b,c in zip(g,*g[::-1],g[::-1])]

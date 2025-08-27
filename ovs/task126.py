@@ -1,0 +1,1 @@
+p=lambda g:g[:-1]+[[1//r.count(max(r))*4for r in zip(*g)]]

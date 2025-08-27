@@ -1,0 +1,1 @@
+p=lambda g,l=0:[[k:=k|v for v in r[:-1]]+[l:=max(r)or l]for r in g if[k:=0]]

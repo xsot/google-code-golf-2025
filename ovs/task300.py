@@ -1,0 +1,1 @@
+p=lambda g:max(c*(sum(map(bool,sum(a:=[[c*(c==q)for*v,q in zip(*g,r)if c in v]for r in g if c in r],[]))),a)for c in sum(g,[]))[1]

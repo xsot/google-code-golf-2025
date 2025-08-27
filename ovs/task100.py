@@ -1,0 +1,1 @@
+p=lambda g:[[max(range(1,10),key=lambda c:sum(c in{*r}&{*C}for r in g for*C,in zip(*g)))]*2]*2

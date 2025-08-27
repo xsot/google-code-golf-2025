@@ -1,0 +1,1 @@
+p=lambda q:[*zip(*q)]

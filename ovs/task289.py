@@ -1,0 +1,1 @@
+def p(g):c={*sum(g,[])}-{0};return[[v for v in r for _ in c]for r in g for _ in c]

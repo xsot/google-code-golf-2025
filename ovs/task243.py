@@ -1,0 +1,1 @@
+p=lambda g:[g:=[[v<q<2or(q:=v)for v in r]for*r,in zip(*g)if[q:=2]][::-1]for _ in g*4][-1]

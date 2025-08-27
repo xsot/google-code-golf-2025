@@ -1,0 +1,1 @@
+p=lambda g:[(r[:6]*4)[:len(r*2)]for r in g]

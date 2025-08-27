@@ -1,0 +1,1 @@
+p=lambda g:[[max({*sum(g,[])}-{5})*(v==5)for v in r]for r in g]

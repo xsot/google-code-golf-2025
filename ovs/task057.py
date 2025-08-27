@@ -1,0 +1,1 @@
+p=lambda g,k=-1:k*g[:3]or p([r for*r,in zip(*g*2)if any(r)],k+1)

@@ -1,0 +1,1 @@
+p=lambda g:[[v//2*V for v in r for V in R]for r in g for R in g]

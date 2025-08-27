@@ -1,0 +1,1 @@
+p=lambda g:[[v|V and 3for v,V in zip(*r)]for r in zip(g,g[5:])]

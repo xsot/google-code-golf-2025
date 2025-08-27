@@ -1,0 +1,1 @@
+p=lambda g:[[*filter(abs,r)][::-1]for r in g if any(r)]
