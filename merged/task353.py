@@ -1,13 +1,14 @@
 p=lambda a,n=-3,i=0:n*a or 3in a[i]and p([*zip(a.pop(('4'in'%s'%a[:i])*i-1),*a[::-1])],n+1)or p(a,n,i+1)
 
-### xsot (229 bytes)
+### xsot (126 bytes)
 def p(m):a=sum(m,[]).index;R,C=divmod(a(4),N:=len(m[0]));m[r:=a(3)//N][c:=a(3)%N]=0;m[r+(R>r)-(R<r)][c+(C>c)-(C<c)]=3;return m
-p=lambda a,n=-3,i=0:n*a or 3in a[i]and p([*zip(a.pop(('4'in'%s'%a[:i])-1),*a[::-1])],n+1)or p(a,n,i+1)
 
 ###
 # att's
-# i = current row with green
-# find i, check if 4 appears in a[:i]
+# i = current row
+# i+=1 until we find the row with green
+# if the yellow appeared in an earlier row, extract the row just before the green and put it at the end
+# otherwise, this is the wrong orientation so we rotate and reset i
 p=lambda a,n=-3,i=0:n*a or 3in a[i]and p([*zip(a.pop(('4'in'%s'%a[:i])*i-1),*a[::-1])],n+1)or p(a,n,i+1)
 
 ##

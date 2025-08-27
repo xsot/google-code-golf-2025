@@ -35,6 +35,9 @@ echo "✅ Created temporary folder: $TEMP_DIR"
 # This runs whether the script succeeds, fails, or is interrupted (Ctrl+C).
 trap 'echo "🧹 Cleaning up temporary folder..."; rm -r "$TEMP_DIR"' EXIT
 
+# 2.5 merge
+python merge.py
+
 # 3. Copy all matching files to the temporary folder
 echo "📂 Copying files..."
 cp $SOLUTION_DIR/$GLOB_PATTERN "$TEMP_DIR/"
