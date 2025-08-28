@@ -1,3 +1,6 @@
+p=lambda g:[r[~r.index(0)::-1][:3]for r in g if 0in r]
+
+### ovs (56 bytes)
 p=lambda g:[r[::-1][r.index(0):][:3]for r in g if 0in r]
 
 ### xsot (81 bytes)

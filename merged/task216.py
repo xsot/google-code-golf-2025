@@ -1,3 +1,11 @@
+r=range(661)
+p=lambda a:max([-(c:=sum(b:=[b[x>>5:y>>5]for b in a[x%32:y%32]],a).count)(0),c(2),-x,b]for x in r for y in r)[3]
+# slow bruteforce
+
+## fast
+p=lambda a:max([d:=1,str(b:=[d for b in a[x%32:]if(d:=[c for c in b[x>>5:]if(d:=d*c)])]).count('2'),-x,b]for x in range(661))[3]
+
+### xsot (182 bytes)
 def p(m):
  z=0,;a=sum(m,[])
  for i in range(400):y=i//20;x=i%20;z=max(z,(sum(z:=[l[x:x+[*a[i:],0].index(0)]for l in m[y:y+[*a[i::20],0].index(0)]],[]).count(2),-x,-y,z))

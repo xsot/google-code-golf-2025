@@ -1,3 +1,6 @@
+p=lambda m,i=31:-i*m or p(eval(re.sub(f'({7>>i%3})([^(]*)0(?=, {i%3%2+1})',r'0\2\1',str([*zip(*m)][::-1]))),i-1)
+
+### xsot (125 bytes)
 import re
 p=lambda m,i=31:-i*m or p([*zip(*eval(re.sub(f'({7>>i%3})([^[(]*) 0, ({i%3%2+1})',r'0\2\1,\3',str(m))))][::-1],i-1)
 

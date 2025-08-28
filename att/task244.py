@@ -1,1 +1,1 @@
-p=lambda a,*n:[*zip(*n or p(a,*a)[::-1])][::1+[b!=a[0]for b in a].index(1)]
+p=lambda a,n=1:(a[n]!=a[0])*[b[::~n]for b in a][::1+n]or p(a,n+1)

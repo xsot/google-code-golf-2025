@@ -1,1 +1,1 @@
-p=lambda a:[[r[j]or r[j+5]or s[j]or s[j+5]for j in(0,1,2,3)]for r,s in zip(a,a[5:])]
+p=eval('lambda a:[[next(filter(int,sum(a,())),0)'+'for*a,in map(zip,a,a[5:])]'*2)

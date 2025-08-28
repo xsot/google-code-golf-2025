@@ -1,1 +1,4 @@
+p=lambda a,i=0:[b:=sum(a,[]),c:=b.count]*any(r:=sorted([e*(c(e)>i)for e in{*b}],key=c)[::-1])and[r]+p(a,i+1)
+
+### ovs (111 bytes)
 def p(g):f=sum(g,[]);q=f.count;C=sorted({*f},key=q)[::-1];return[[c*(q(c)>i)for c in C]for i in range(q(C[0]))]
