@@ -29,7 +29,7 @@ check symmetry: 103
 or-chain: 180, 321
 deduplicate rows and columns: 178, 377
 remove empty rows and columns: 31, 57(U), 177
-juxtapose quadrants: 207
+juxtapose grid: 149, 207
 gradually enclose area maintaining some property: 91
 
 very hard:
