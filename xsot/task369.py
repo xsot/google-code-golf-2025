@@ -1,3 +1,12 @@
+p=lambda m,i=91:-i*m or p([*zip(*eval(str(m).replace("3220,,,,    331"[i%7%4::4],"2113,,,,211"[i%7%4::4])))][::-1],i-1)
+
+##
+p=lambda m,i=91:-i*m or p([*zip(*eval(str(m).replace("3220,,,,    331"[i%7%4::4],"2113,,,,211"[i%7%4::4])))][::-1],i-1)
+p=lambda m,i=91:-i*m or p([*zip(*eval(str(m).replace(["3, 3","2, 3","2, 1","0, "][i%7%4],["2,2","1,1","1,1","3, "][i%7%4])))][::-1],i-1)
+p=lambda m,i=91:-i*m or p([*zip(*eval(str(m).replace(["0","3, 3","2, 3","2, 1"][i%7%4],["3","2,2","1,1","1,1"][i%7%4])))][::-1],i-1)
+p=lambda m,i=7:-i*m or p([*zip(*eval(str(m).replace("0","3").replace("3, 3","2,2").replace("2, 3","1,1").replace("2, 1","1,1")))][::-1],i-1)
+
+##
 def p(m):
  M,N=len(m),len(m[0])
  for i in range(M*N):
