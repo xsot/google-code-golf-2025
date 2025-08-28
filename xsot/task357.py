@@ -1,6 +1,12 @@
-p=lambda m,x=1,d=-1:m and(l:=len(m[0])-1)and p(m[1:],x:=x+d,d*2*(0<x<l)-d)+[[8]*x+[1]+[8]*(l-x)]
+p=lambda m,x=1,d=-1:m and p(m[1:],x:=x+d,x%(l:=len(m[0])-1)and d or-d)+[[8]*x+[1]+[8]*(l-x)]
 
 ##
+p=lambda m,x=1,d=-1:m and p(m[1:],x:=x+d,x%(l:=len(m[0])-1)and d or-d)+[[8]*x+[1]+[8]*(l-x)]
+p=lambda m,x=1,d=-1:m and p(m[1:],x:=x+d,d*2*(x%(l:=len(m[0])-1)>0)-d)+[[8]*x+[1]+[8]*(l-x)]
+p=lambda m,x=1,d=-1:m and p(m[1:],x:=x+d,d*2*((l:=len(m[0])-1)>x>0)-d)+[[8]*x+[1]+[8]*(l-x)]
+
+p=lambda m,x=1,d=-1:m and(l:=len(m[0])-1)and p(m[1:],x:=x+d,d*2*(0<x<l)-d)+[[8]*x+[1]+[8]*(l-x)]
+
 p=lambda m,d=1,x=0:m and(l:=len(m[0]))and p(m[1:],d:=d*2*(0<=x+d<l)-d,x+d)+[[8]*x+[1]+[8]*(l+~x)]
 
 p=lambda m,d=1,c=0:m and p(m[1:],d:=d*(~-(0<=c+d<len(m[0]))|1),c+d)+[[8]*c+[1]+[8]*(len(m[0])+~c)]

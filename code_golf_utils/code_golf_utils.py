@@ -201,11 +201,11 @@ def preprocess(file_path: str) -> str:
     subprocess.run([f'python code_golf_utils/compile.py < {file_path} > {temp_file_path}'], shell=True)
     return temp_file_path
 
-def verify_program(task_num, examples=None):
+def verify_program(task_num, who='xsot', examples=None):
   if examples is None:
     examples = load_examples(task_num)
   task_name = "task_with_imports"
-  task_path = (glob.glob(code_golf_dir + f"/xsot/task{task_num:03}.py") + glob.glob(code_golf_dir + f"/task{task_num:03}.py"))[0]
+  task_path = (glob.glob(code_golf_dir + f"/{who}/task{task_num:03}.py") + glob.glob(code_golf_dir + f"/task{task_num:03}.py"))[0]
   task_path = preprocess(task_path)
   spec = importlib.util.spec_from_file_location(task_name, task_path)
   if spec is None:
