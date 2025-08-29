@@ -1,2 +1,2 @@
-# att (69 vs 63 bytes for gold)
-p=lambda a,n=-3:a*n or p([a[1:],[*zip(*a)][::-1]][c:=5in a[n%2]],n+c)
+# att (63 bytes, gold)
+p=lambda a,n=46:a*~n or p([*zip(*a[(5in a[n%2-2])-2::-1])],n-1)
