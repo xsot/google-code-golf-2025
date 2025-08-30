@@ -1,4 +1,7 @@
-# xsot (113 vs 105 bytes for gold)
+# combined (113 vs 105 bytes for gold)
+p=lambda i,k=19,r=range(10):-k*i or p([[i[~b][~a]or(a*b>0)*i[-b][-a]&2-k%2&i[1-b][1-a]for b in r]for a in r],k-1)
+
+### xsot (tied, 113 bytes)
 import re
 p=lambda m,S=re.sub:eval(eval('S("(?<=(2.{34}){2})0","2",S("0(?=(.{34}1){2})","1",'*9+f'"{m}"'+'))'*9))
 

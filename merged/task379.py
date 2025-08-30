@@ -1,4 +1,8 @@
-# xsot (341 vs 142 bytes for gold)
+# combined (142 bytes, gold)
+import re
+p=lambda i,k=7,r=re.sub:-k*i or p(eval(r(", 4, ","|8,8,8|",r("0, 8, ((0, )+)2","4,2,4,*[2]*len([\\1])",str([*zip(*i[::-1])])))),k-1)
+
+### xsot (341 bytes)
 def p(m,R=range):
  f=lambda m:[*map(list,zip(*m))];a=sum(m:=[f(m),m][t:=8 in m[0]],[]);n=len(m[0])
  for i in R(n*len(m)):

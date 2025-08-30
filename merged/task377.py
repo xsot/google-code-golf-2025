@@ -1,4 +1,7 @@
-# xsot (57 vs 55 bytes for gold)
+# combined (57 vs 55 bytes for gold)
+p=lambda g,*a:[y for*y,in zip(*a or p(g,*g))if g!=(g:=y)]
+
+### xsot (tied, 57 bytes)
 # ovs + att
 p=lambda g,*a:[y for*y,in zip(*a or p(g,*g))if g!=(g:=y)]
 

@@ -4,6 +4,12 @@ def p(a):
 	for i in[l:=len(a[0]),~l,1,1,~l]:d+=i;a[d//l][d%l]=3
 	return a
 
+### combined (tied, 115 bytes)
+def p(a):
+	b=sum(a,[]).index;c=b(1);d=b(1,c+1)+c>>1
+	for i in[l:=len(a[0]),~l,1,1,~l]:d+=i;a[d//l][d%l]=3
+	return a
+
 ### xsot (155 bytes)
 def p(m,E=enumerate):
  (a,b),(c,d)=[(r,c)for r,l in E(m)for c,v in E(l)if v]

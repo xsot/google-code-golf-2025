@@ -1,4 +1,12 @@
-# xsot (281 vs 145 bytes for gold)
+# combined (250 vs 145 bytes for gold)
+def p(g):
+ for y in(u:=range(1,h:=len(g)-1)):
+  for x in u:
+   c=g[y][x];A,B,C,D=[c==g[y+Y][x+X]for Y,X in[[0,1],[0,-1],[1,0],[-1,0]]];a,b,p,q=2*C-1,2*A-1,x,y
+   while(A^B)*(C^D)*(g[y+a][x+b]^c)*c>0<p<h>q>0:q-=a;p-=b;g[q][p]=g[y+2*a][x+2*b]
+ return g
+
+### xsot (281 bytes)
 def p(m):
  n=len(m);(x,*_,X),(y,*_,Y)=map(sorted,zip(*[(r,c)for i in range(n*n)if m[r:=i//n][c:=i%n]]));a=[(x,y,-1,-1),(x,Y,-1,1),(X,y,1,-1),(X,Y,1,1)]
  for r,c,i,j in a:

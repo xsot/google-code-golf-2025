@@ -1,4 +1,7 @@
-# xsot (90 vs 67 bytes for gold)
+# combined (67 bytes, gold)
+p=lambda i,l=[0]*3:[l:=[*map(max,x+[0]*3,[0]+l*2)]for x in i+[l]*3]
+
+### xsot (90 bytes)
 p=lambda m,R=range(6):[[max(3>r-k>-1<c-k<3and m[r-k][c-k]for k in R)for c in R]for r in R]
 
 ###

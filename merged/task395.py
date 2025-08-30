@@ -1,6 +1,9 @@
 # att (57 vs 53 bytes for gold)
 p=lambda a:[[2>>c+c+b.pop(0)for c in a.pop(3)]for b in a]
 
+### combined (tied, 57 bytes)
+p=lambda a:[[2>>c+c+b.pop(0)for c in a.pop(3)]for b in a]
+
 ### ovs (61 bytes)
 p=lambda g:[[a-9+b&2for a,b in zip(*r)]for r in zip(g,g[3:])]
 

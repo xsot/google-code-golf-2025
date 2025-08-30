@@ -1,4 +1,7 @@
-# xsot (293 vs 184 bytes for gold)
+# combined (184 bytes, gold)
+p=lambda i,k=39,z=0:-k*[r:=range(len({*sum(i,[])})-1)]and[[(y==x)*8for y in r]for x in r]or p([[(k<39)*h[0]and max(*h)or(z:=z+1)*h[0]for h in zip(x,[0,*x])]for x in zip(*i[::-1])],k-1)
+
+### xsot (293 bytes)
 def p(m,R=range):
  z=0;M,N=len(m),len(m[0])
  for i in R(M*N):

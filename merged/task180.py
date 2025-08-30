@@ -1,4 +1,7 @@
-# ovs (82 vs 79 bytes for gold)
+# combined (82 vs 79 bytes for gold)
+p=lambda g:[[max(a,key=bool)for a in zip(x[4:],e,e[4:],x)]for x,e in zip(g,g[4:])]
+
+### ovs (tied, 82 bytes)
 p=lambda g:[[max(x,key=bool)for x in zip(r[4:],R,R[4:],r)]for r,R in zip(g,g[4:])]
 
 ### xsot (84 bytes)

@@ -1,4 +1,7 @@
-# att (132 vs 97 bytes for gold)
+# combined (107 vs 97 bytes for gold)
+import re;p=lambda i,k=2:-k*i or p(eval(re.sub("0, 0, 0(.{55})?"*3,r"1,1,1\1 1,1,1\2 1,1,1\3",str(i))),k-1)
+
+### att (132 bytes)
 r=range(324)
 def p(a):
 	for i in r:

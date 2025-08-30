@@ -1,4 +1,7 @@
-# ovs (31 bytes, gold)
+# combined (31 bytes, gold)
+p=lambda i,s=sorted:s(map(s,i))
+
+### ovs (tied, 31 bytes)
 p=lambda g,S=sorted:S(map(S,g))
 
 ### xsot (tied, 31 bytes)

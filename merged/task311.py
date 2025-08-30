@@ -1,6 +1,9 @@
 # att (32 bytes, gold)
 p=lambda a:[r+r[::-1]for r in a]
 
+### combined (tied, 32 bytes)
+p=lambda i:[x+x[::-1]for x in i]
+
 ### ovs (tied, 32 bytes)
 p=lambda g:[x+x[::-1]for x in g]
 

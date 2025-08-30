@@ -1,4 +1,13 @@
-# ovs (381 vs 280 bytes for gold)
+# combined (313 vs 274 bytes for gold)
+def p(g):
+ R=range(30);g=[[g[y][x]+10*any(sum(s[x-(x>0):x+2])for s in g[y-(y>0):y+2])for x in R]for y in R]
+ for _ in'_'*8:
+  g=*map(list,zip(*g[::-1])),;w=[r for r in g if{*r[:10]}<={0,3}]
+  for x in R:
+   for r in w:w*=all(r[x]%3<1for r in w);r[x]|=3*(len(w)>3or 3in r[x+1:])
+ return[[c%10for c in r]for r in g]
+
+### ovs (381 bytes)
 def p(g):
  for R in[lambda x:[r[::-1]for*r,in zip(*x)]]*4:
   c,={*sum(g:=R(g),[])}-{0,3};D=*[[*r,c].index(c)for r in g],99,0;j=-1

@@ -1,4 +1,7 @@
-# xsot (111 vs 58 bytes for gold)
+# combined (94 vs 58 bytes for gold)
+import re;p=lambda i:[[n for n in{*sum(i,[])}-{0}if re.sub(f".*{n}, {n}, {n}.*"*2,"",str(i))]]
+
+### xsot (111 bytes)
 import re
 p=lambda m:[[int(re.findall(r'([1-9], )\1\1.{%d}\1(.), \1.{%d}'%((len(m[0])*3-7,)*2),str(m))[0][1])]]
 

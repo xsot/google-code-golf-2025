@@ -1,4 +1,7 @@
-# ovs (43 vs 40 bytes for gold)
+# combined (40 bytes, gold)
+p=lambda i:[[0**i[0][0]+0**i[0][2]*3^2]]
+
+### ovs (43 bytes)
 p=lambda g:[[5^(g[0][0]>0)-3*~(g[0][2]>0)]]
 
 ### xsot (46 bytes)

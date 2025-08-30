@@ -1,4 +1,7 @@
-# ovs (84 vs 67 bytes for gold)
+# combined (69 vs 67 bytes for gold)
+p=lambda i:[[sum({*sum(i,x)},-y)for y in x if y]for x in i if any(x)]
+
+### ovs (84 bytes)
 p=lambda g:[[sum({*sum(g,[])})-v for*c,v in zip(*g,r)if any(c)]for r in g if any(r)]
 
 

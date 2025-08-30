@@ -1,6 +1,9 @@
 # att (39 bytes, gold)
 p=lambda a:[*zip(*map(sorted,zip(*a)))]
 
+### combined (tied, 39 bytes)
+p=lambda i:[*zip(*map(sorted,zip(*i)))]
+
 ### ovs (tied, 39 bytes)
 p=lambda g:[*zip(*map(sorted,zip(*g)))]
 

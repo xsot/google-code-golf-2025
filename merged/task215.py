@@ -1,4 +1,7 @@
-# att (46 bytes, gold)
+# combined (45 bytes, gold)
+p=lambda g:([max(g[::3]),*g[4:6]]*9)[:len(g)]
+
+### att (46 bytes)
 p=lambda a:[max((a:=a[:2]+a)[2::3])for _ in a]
 
 ### ovs (48 bytes)

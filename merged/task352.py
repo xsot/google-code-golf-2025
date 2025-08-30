@@ -1,4 +1,7 @@
-# xsot (114 vs 84 bytes for gold)
+# combined (90 vs 84 bytes for gold)
+p=lambda i,k=3:-k*i or[[y or 6>>t&9for y,t in zip(x,[0,*x])]for x in zip(*p(i,k-1)[::-1])]
+
+### xsot (114 bytes)
 import re
 p=lambda m,i=3:-i*m or p([*zip(*eval(re.sub(r"0(?=..2|.{%d}2)"%(len(m[0]*3)+4),'1',str(m)))[::-1])],i-1)
 

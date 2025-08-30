@@ -28,7 +28,8 @@ def writelines_with_newline(file, lines):
 players = [
     ('xsot', 'xsot/'),
     ('ovs', 'ovs/'),
-    ('att', 'att/')
+    ('att', 'att/'),
+    ('combined', 'combined_solutions/')
 ]
 
 # Output directory

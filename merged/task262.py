@@ -1,8 +1,11 @@
-# att (42 vs 39 bytes for gold)
+# combined (39 bytes, gold)
+p=lambda i:[[~b//~a^2]*3for a,b,_ in i]
+
+### att (42 bytes)
 p=lambda a:[3*[-b.index(5)%3+2]for b in a]
 
-### ovs (tied, 42 bytes)
+### ovs (42 bytes)
 p=lambda g:[3*[2+-r.index(5)%3]for r in g]
 
-### xsot (tied, 42 bytes)
+### xsot (42 bytes)
 p=lambda m:[3*[-r.index(5)%3+2]for r in m]

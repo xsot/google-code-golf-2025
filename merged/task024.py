@@ -1,4 +1,7 @@
-# att (65 vs 62 bytes for gold)
+# combined (62 bytes, gold)
+p=lambda i:[[3%-~sum(x)or(2in y)*2for y in zip(*i)]for x in i]
+
+### att (65 bytes)
 p=lambda a:[[max({*r}-{2})or(2in c)*2for c in zip(*a)]for r in a]
 
 ### ovs (69 bytes)

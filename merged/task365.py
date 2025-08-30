@@ -1,4 +1,7 @@
-# xsot (181 vs 112 bytes for gold)
+# combined (138 vs 112 bytes for gold)
+p=lambda i:max([[x[a%11:11-a//11%11]for x in i[a//121%11:11-a//1331]]for a in range(14641)],key=lambda p:"0"in str(p)or str(p).count("2"))
+
+### xsot (181 bytes)
 def p(m,b=[0]*3):
  for k in range(99):
   R=r=k//10

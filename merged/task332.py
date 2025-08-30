@@ -1,4 +1,7 @@
-# xsot (61 vs 58 bytes for gold)
+# combined (61 vs 58 bytes for gold)
+p=lambda m:[[len(r)*r.pop(0)%2*3or x for x in[*r]]for r in m]
+
+### xsot (tied, 61 bytes)
 p=lambda m:[[len(r)*r.pop(0)%2*3or x for x in[*r]]for r in m]
 ##
 p=lambda m:[[len(r)%2*r.pop(0)*.6or x for x in[*r]]for r in m]

@@ -1,4 +1,7 @@
-# ovs (70 vs 68 bytes for gold)
+# combined (68 bytes, gold)
+p=lambda i:[s[~x.index(3)::-1][:5]for x,s in zip(i,i[::-1])if 3in x]
+
+### ovs (70 bytes)
 p=lambda g:[R[::-1][r.index(3):][:5]for r,R in zip(g,g[::-1])if 3in r]
 
 ### att (72 bytes)

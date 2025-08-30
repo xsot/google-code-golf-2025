@@ -1,4 +1,7 @@
-# ovs (224 vs 139 bytes for gold)
+# combined (145 vs 139 bytes for gold)
+p=lambda i,k=3,r=range(6):-k*i or[[p([*zip(*i[::-1])],k-1)[b][~a]+max([*[s for t in i[a%3:a]for s in t[b%3:b]if s][:-3],0])for b in r]for a in r]
+
+### ovs (224 bytes)
 def p(g):
  o=eval(str(g));R={*range(6)}
  for i in R:

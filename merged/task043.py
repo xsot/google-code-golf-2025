@@ -1,6 +1,9 @@
 # att (57 bytes, gold)
 p=lambda a:[[c*b[-1]//9|b.pop(0)for c in a[0]]for*b,in a]
 
+### combined (tied, 57 bytes)
+p=lambda a:[[c*b[-1]//9|b.pop(0)for c in a[0]]for*b,in a]
+
 ### xsot (58 bytes)
 p=lambda m:[[x|y*r[9]%23for x,y in zip(r,m[0])]for r in m]
 ##

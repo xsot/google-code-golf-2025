@@ -1,4 +1,8 @@
-# xsot (96 vs 78 bytes for gold)
+# combined (96 vs 78 bytes for gold)
+import re
+p=lambda m:[*map(eval,re.findall((c:=min(s:=str(m)+'[]'*8,key=s.count))+"[^[]*"+c,s))]
+
+### xsot (tied, 96 bytes)
 import re
 p=lambda m:[*map(eval,re.findall((c:=min(s:=str(m)+'[]'*8,key=s.count))+"[^[]*"+c,s))]
 

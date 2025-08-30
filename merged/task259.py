@@ -1,4 +1,7 @@
-# att (86 vs 85 bytes for gold)
+# combined (85 bytes, gold)
+p=lambda i,k=39:-k*i or p([*zip(*eval(str(i).replace(*"10"))[any(i[-1])-2::-1])],k-1)
+
+### att (86 bytes)
 p=lambda a,n=-23:n*a or p([[d*(d>1)for d in c]for c in zip(*a[a<[[0]*9]:])][::-1],n+1)
 
 ### ovs (125 bytes)

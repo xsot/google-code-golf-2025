@@ -1,4 +1,7 @@
-# ovs (144 vs 115 bytes for gold)
+# combined (126 vs 115 bytes for gold)
+p=lambda i,k=3,e=enumerate:-k*i or p([[y or-7**k%5*(i[-b][a-1]*i[1-b][a-2]>9)for b,y in e(x)]for a,x in e(zip(*i[::-1]))],k-1)
+
+### ovs (144 bytes)
 E=enumerate
 p=lambda g:[[v+sum(k*((t:=(g+g)[i-(~-k&2)+1]+[0])[s:=j-(-1)**k]>t[j]|[*g[i],0][s])for k in(1,2,3,4))for j,v in E(r)]for i,r in E(g)]
 

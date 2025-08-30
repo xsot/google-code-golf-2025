@@ -1,4 +1,7 @@
-# xsot (46 vs 43 bytes for gold)
+# combined (46 vs 43 bytes for gold)
+p=lambda g:[[b" 	"[c]for c in g[0]]]*3
+
+### xsot (tied, 46 bytes)
 # note: edit in vim, not vscode 
 p=lambda m:[[b'AA	'[i]for i in m[0]]]*3
 ##

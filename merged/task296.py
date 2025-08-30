@@ -1,4 +1,7 @@
-# ovs (63 bytes, gold)
+# combined (63 bytes, gold)
+p=lambda i:[[*map(max,x,s,x[4:],s[4:])]for x,s in zip(i,i[2:])]
+
+### ovs (tied, 63 bytes)
 p=lambda g:[[*map(max,a,b,a[4:],b[4:])]for a,b in zip(g,g[2:])]
 
 ### xsot (85 bytes)

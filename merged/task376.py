@@ -1,6 +1,9 @@
 # att (30 bytes, gold)
 p=lambda a:(a+a[1:-1])*2+a[:1]
 
+### combined (tied, 30 bytes)
+p=lambda a:(a+a[1:-1])*2+a[:1]
+
 ### xsot (tied, 30 bytes)
 p=lambda x:(x+x[1:-1])*2+x[:1]
 ##

@@ -1,6 +1,9 @@
 # att (39 bytes, gold)
 p=lambda a:[b:=[*map(max,a)]*3,b[::-1]]
 
+### combined (tied, 39 bytes)
+p=lambda a:[b:=[*map(max,a)]*3,b[::-1]]
+
 ### xsot (tied, 39 bytes)
 p=lambda m:[l:=[*zip(*m)][0]*3,l[::-1]]
 

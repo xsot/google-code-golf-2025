@@ -1,4 +1,7 @@
-# att (63 vs 54 bytes for gold)
+# combined (62 vs 54 bytes for gold)
+p=lambda i:[[-y%5^s*3for s,y in zip(*x)]for x in zip(i,i[5:])]
+
+### att (63 bytes)
 p=lambda a:[[3*c^b.pop(0)*3//2for c in a.pop(0)]for b in a[5:]]
 
 ### ovs (64 bytes)

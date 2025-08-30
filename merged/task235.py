@@ -1,4 +1,7 @@
-# ovs (66 vs 62 bytes for gold)
+# combined (62 bytes, gold)
+p=lambda g:[[g[1][x]*sum(g[2][x:x+3])%13^8]*3for x in[1,6,11]]
+
+### ovs (66 bytes)
 p=lambda g:[[1-g[2][s+1]*2-g[1][s]&g[3][s+2]+6]*3for s in(0,5,10)]
 
 ### xsot (69 bytes)

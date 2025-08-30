@@ -1,4 +1,7 @@
-# ovs (48 bytes, gold)
+# combined (48 bytes, gold)
+p=lambda g:[A[::-1]+A for A in(g[::-1]+g)*9][:9]
+
+### ovs (tied, 48 bytes)
 p=lambda g:[l[::-1]+l for l in(g[::-1]+g)*2][:9]
 
 ### xsot (tied, 48 bytes)
