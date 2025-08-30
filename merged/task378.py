@@ -1,3 +1,4 @@
+# xsot (281 vs 145 bytes for gold)
 def p(m):
  n=len(m);(x,*_,X),(y,*_,Y)=map(sorted,zip(*[(r,c)for i in range(n*n)if m[r:=i//n][c:=i%n]]));a=[(x,y,-1,-1),(x,Y,-1,1),(X,y,1,-1),(X,Y,1,1)]
  for r,c,i,j in a:

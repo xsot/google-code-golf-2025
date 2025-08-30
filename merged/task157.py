@@ -1,3 +1,4 @@
+# ovs (391 vs 296 bytes for gold)
 t=b'\n'
 def p(g):
  def Q(o,p):

@@ -1,3 +1,4 @@
+# xsot (181 vs 112 bytes for gold)
 def p(m,b=[0]*3):
  for k in range(99):
   R=r=k//10

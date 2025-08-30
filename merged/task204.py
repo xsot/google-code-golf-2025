@@ -1,3 +1,4 @@
+# ovs (142 vs 96 bytes for gold)
 def p(g):
  for r in g:
   I=0

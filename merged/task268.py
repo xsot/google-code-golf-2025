@@ -1,3 +1,4 @@
+# ovs (341 vs 265 bytes for gold)
 E=enumerate
 def p(g):
  for _ in[G:=[*g]]*4:

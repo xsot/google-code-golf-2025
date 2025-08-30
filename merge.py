@@ -69,39 +69,34 @@ for i in range(1, 401):
 
     output_path = os.path.join(output_dir, fname)
 
-    if len(solutions) == 1:
-        # Only one solution exists, just copy it
-        _, _, source_path, code = solutions[0]
-        shutil.copy(source_path, output_path)
-    else:
-        # Multiple solutions exist, merge them
-        lines = []
+    # Multiple solutions exist, merge them
+    lines = []
 
-        # Add the best solution first
-        best_score, best_player, best_path, code = solutions[0]
-        with open(best_path) as f:
-            if best_score == gold_score[i-1]:
-                score_string = f"{best_score} bytes, gold"
-            else:
-                score_string = f"{best_score} vs {gold_score[i-1]} bytes for gold"
-            # append the raw source file (it will be cleaned up again by pack.sh)
-            lines.append(f"# {best_player} ({score_string})")
+    # Add the best solution first
+    best_score, best_player, best_path, code = solutions[0]
+    with open(best_path) as f:
+        if best_score == gold_score[i-1]:
+            score_string = f"{best_score} bytes, gold"
+        else:
+            score_string = f"{best_score} vs {gold_score[i-1]} bytes for gold"
+        # append the raw source file (it will be cleaned up again by pack.sh)
+        lines.append(f"# {best_player} ({score_string})")
+        lines.extend(f.readlines())
+        single_file_view.append(f"# task {i}: {score_string}, https://arcprize.org/play?task={task_ids[i-1]}:\n" + code)
+
+    # Add other solutions with comments
+    for score, player_name, path, _ in solutions[1:]:
+        if score == best_score:
+            lines.extend(["", f"### {player_name} (tied, {score} bytes)"])
+        else:
+            lines.extend(["", f"### {player_name} ({score} bytes)"])
+
+        with open(path) as f:
             lines.extend(f.readlines())
-            single_file_view.append(f"# task {i}: {score_string}, https://arcprize.org/play?task={task_ids[i-1]}:\n" + code)
 
-        # Add other solutions with comments
-        for score, player_name, path, _ in solutions[1:]:
-            if score == best_score:
-                lines.extend(["", f"### {player_name} (tied, {score} bytes)"])
-            else:
-                lines.extend(["", f"### {player_name} ({score} bytes)"])
-
-            with open(path) as f:
-                lines.extend(f.readlines())
-
-        # Write merged file
-        with open(output_path, 'w') as f:
-            writelines_with_newline(f, lines)
+    # Write merged file
+    with open(output_path, 'w') as f:
+        writelines_with_newline(f, lines)
 
     with open(f"{output_dir}/all_tasks.py", 'w') as f:
         writelines_with_newline(f, single_file_view)

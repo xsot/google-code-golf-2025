@@ -1,3 +1,4 @@
+# ovs (220 vs 160 bytes for gold)
 def p(g):
  f=sum(g,[]);C,={*f}-{0,2};i=min(map(f.index,(2,C)))
  for d in-1,1:

@@ -1,3 +1,4 @@
+# ovs (187 vs 176 bytes for gold)
 def p(g):
  R=F=sum(g,[])
  while C:=[*{*F}][-2]:

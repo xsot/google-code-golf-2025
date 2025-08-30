@@ -1,3 +1,4 @@
+# xsot (162 vs 94 bytes for gold)
 def p(m,E=enumerate):N=len(m[0]);a=sum(m,[]);return[[[v,v or 8][1 in m[r][:c]!=1 in m[r][c:]or 1 in a[c::N][:r]!=1 in a[c::N][r:]]for c,v in E(l)]for r,l in E(m)]
 
 ########

@@ -1,3 +1,4 @@
+# ovs (224 vs 139 bytes for gold)
 def p(g):
  o=eval(str(g));R={*range(6)}
  for i in R:

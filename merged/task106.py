@@ -1,1 +1,2 @@
+# ovs (76 vs 67 bytes for gold)
 p=lambda g,*x:[x:=[w:=a+b[::-1],*x,w[::-1]]for*b,a in[*zip(*g,g)][::-1]][-1]

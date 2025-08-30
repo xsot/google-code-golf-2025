@@ -1,3 +1,4 @@
+# ovs (392 vs 199 bytes for gold)
 E=enumerate
 def p(g):
  f=sum(g,[]);*r,b=sorted({*f},key=f.count);W,H=len(g[0]),len(g);T={C:{(i,j)for i,r in E(g)for j,v in E(r)if C==v}for C in r}

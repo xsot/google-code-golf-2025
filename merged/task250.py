@@ -1,3 +1,4 @@
+# ovs (205 vs 127 bytes for gold)
 T=10
 def p(g):
  *E,=enumerate(f:=sum(g,[]))

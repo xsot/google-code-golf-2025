@@ -1,3 +1,4 @@
+# xsot (197 vs 142 bytes for gold)
 def p(m):s=sum(m,[]);a=[x%5>0for x in s];x=a.index(1);w=a[x:].index(i:=0);exec("for j in range((a[x:][::10]+a).index(0)*(m[r:=i//10][c:=i%10]==5)):m[r+j][c:c+w]=s[x+10*j:][:w]\ni+=1\n"*99);return m
 
 ##

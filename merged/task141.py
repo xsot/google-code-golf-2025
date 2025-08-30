@@ -1,3 +1,4 @@
+# xsot (119 vs 96 bytes for gold)
 p=lambda m:(R:=range(N:=len(m)))and[[(a:=sum(m,[]))[i:=a.index(max(a))]*(abs(r-i//N)==abs(c-i%N))for c in R]for r in R]
 
 ##

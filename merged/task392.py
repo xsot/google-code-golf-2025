@@ -1,3 +1,4 @@
+# ovs (320 vs 161 bytes for gold)
 R=range(10)
 J=1j
 def p(g):

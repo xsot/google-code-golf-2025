@@ -1,3 +1,4 @@
+# xsot (199 vs 126 bytes for gold)
 def p(m):
  I=sum(m,[]).index;N=len(m[0])
  for c in range(min(x:=I(2)%N,X:=I(8)%N),max(x,X)+1):m[y:=I(2)//N][c]=4

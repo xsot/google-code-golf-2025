@@ -1,3 +1,4 @@
+# xsot (279 vs 130 bytes for gold)
 def p(m):
  a=[]
  for k in range(99):

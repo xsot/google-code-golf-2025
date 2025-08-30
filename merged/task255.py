@@ -1,3 +1,4 @@
+# ovs (381 vs 280 bytes for gold)
 def p(g):
  for R in[lambda x:[r[::-1]for*r,in zip(*x)]]*4:
   c,={*sum(g:=R(g),[])}-{0,3};D=*[[*r,c].index(c)for r in g],99,0;j=-1

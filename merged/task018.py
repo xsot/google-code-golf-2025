@@ -1,3 +1,4 @@
+# ovs (374 bytes, gold)
 E=enumerate
 def p(g):
  def S(i,v):g[int(i.imag)][int(i.real)]=v

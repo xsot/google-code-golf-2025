@@ -1,3 +1,4 @@
+# xsot (341 vs 142 bytes for gold)
 def p(m,R=range):
  f=lambda m:[*map(list,zip(*m))];a=sum(m:=[f(m),m][t:=8 in m[0]],[]);n=len(m[0])
  for i in R(n*len(m)):

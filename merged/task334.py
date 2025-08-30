@@ -1,3 +1,4 @@
+# xsot (76 vs 66 bytes for gold)
 p=lambda m:[[x:=[0,5,0],y:=[5]*3,x],[y,x,x],[z:=[0,0,5],z,y]][max(max(m))-1]
 ##
 p=lambda m:[[x:=[0,5,0],y:=[5]*3,x],[y,x,x],[z:=[0,0,5],z,y]][max(max(m))-1]

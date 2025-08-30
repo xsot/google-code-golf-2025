@@ -1,3 +1,4 @@
+# xsot (96 vs 78 bytes for gold)
 import re
 p=lambda m:[*map(eval,re.findall((c:=min(s:=str(m)+'[]'*8,key=s.count))+"[^[]*"+c,s))]
 

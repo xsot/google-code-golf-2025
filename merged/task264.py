@@ -1,3 +1,4 @@
+# ovs (237 vs 216 bytes for gold)
 def p(g):
  w=len(g[0]);I=0,1,2,w,w+1,w+2,2*w,w-~w,2*w+2;O=[[*I]for _ in I];f=sum(g,[]);i=0
  for v in f:

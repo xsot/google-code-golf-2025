@@ -1,3 +1,4 @@
+# xsot (293 vs 184 bytes for gold)
 def p(m,R=range):
  z=0;M,N=len(m),len(m[0])
  for i in R(M*N):

@@ -1,1 +1,2 @@
+# ovs (65 bytes, gold)
 p=lambda g:[[0,*g[0],0],*[r[:1]+r+r[-1:]for r in g],[0,*g[-1],0]]

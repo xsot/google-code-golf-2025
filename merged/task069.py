@@ -1,3 +1,4 @@
+# att (251 vs 153 bytes for gold)
 def p(a):
 	f=lambda b:[c for*c,in zip(*b)if{*c}-{0,8}];s=f(f(a));n=len(s[0])
 	for i in range(99):

@@ -1,1 +1,2 @@
+# att (101 vs 63 bytes for gold)
 p=lambda a:min([*map(f:=lambda*b:[max(b[i%n::n])for i in range(18)],*map(f,*a))]for n in range(5,10))

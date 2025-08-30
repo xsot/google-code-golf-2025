@@ -1,3 +1,4 @@
+# xsot (136 vs 69 bytes for gold)
 p=lambda m,R=range(10):[[(d:=min(set(a:=sum(m,[]))-{0,5}))*(r==a[::10].index(d)+(s:=a.count(5))or c==a.index(d)-s)for c in R]for r in R]
 
 ####

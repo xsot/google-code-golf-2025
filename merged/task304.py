@@ -1,1 +1,2 @@
+# ovs (93 vs 92 bytes for gold)
 p=lambda g:[[V*(v==max(f:=sum(g,[]),key=f.count))for v in r for V in R]for r in g for R in g]

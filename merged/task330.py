@@ -1,3 +1,4 @@
+# xsot (266 vs 137 bytes for gold)
 def p(m):
  for i in range(99):
   z,*s=0,;q=(m[r:=i//10][c:=i%10]==5)*[(r,c)]
