@@ -260,6 +260,9 @@ if do_compress:
    improvement = len(task_src) - len(zipped_src)
 
    if improvement > 0:
+    # make sure zipped program still passes
+    # TODO: in the merge phase, we could have passed over a longer, but correct
+    # zipped program that is shorter than this program unzipped
     with open(f"{temp_dir}/{task_name}", "wb") as file:
      file.write(zipped_src)
     if test_task(task_name[:-3], temp_dir, subsets=('train',)):
