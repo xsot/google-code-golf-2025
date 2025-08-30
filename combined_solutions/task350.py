@@ -1,1 +1,1 @@
-p=lambda i,k=0:[[y or(1in x[b:]!=1in x[:b])*8for b,y in enumerate(x)]for x in zip(*k*i or p(i,1))]
+p=lambda i,*n:[[y or(1in x[b:]!=1in x[:b])*8for b,y in enumerate(x)]for x in zip(*n or p(i,*i))]
