@@ -1,4 +1,9 @@
-# ovs (209 vs 153 bytes for gold)
+# joking+mwi (209 vs 153 bytes for gold)
+def p(a,i=-1):
+ for i in(I:={i//10+i:v*(v!=8)for v in sum(a,[])if[i:=i+1]*v}):s={i};[s.add(y)for y in[*I]*6if{y,y+1,y-1,y+11,y-11}&s];a[i//11][i%11]=I[[s for s in I if I[s]][sorted(s).index(i)]]-I[i]
+ return a
+
+### ovs (tied, 209 bytes)
 def p(a,i=-1):
  for i in(I:={i//10+i:v*(v!=8)for v in sum(a,[])if[i:=i+1]*v}):s={i};[s.add(y)for y in[*I]*6if{y,y+1,y-1,y+11,y-11}&s];a[i//11][i%11]=I[[s for s in I if I[s]][sorted(s).index(i)]]-I[i]
  return a
@@ -12,14 +17,6 @@ def p(a):
  return a
 
 ### att (251 bytes)
-def p(a):
-	f=lambda b:[c for*c,in zip(*b)if{*c}-{0,8}];s=f(f(a));n=len(s[0])
-	for i in range(99):
-		j=i%10;i//=10;t=[c[j:j+n]for c in a[i:i+len(s)]]
-		for c,d in zip(s,a[i:]*(t in[s,[[d and 8for d in c]for c in s]])):d[j:j+n]=c*(t!=s)or[0]*n
-	return a
-
-### joking+mwi (251 bytes)
 def p(a):
 	f=lambda b:[c for*c,in zip(*b)if{*c}-{0,8}];s=f(f(a));n=len(s[0])
 	for i in range(99):

@@ -319,7 +319,10 @@ if do_compress:
    zipped_src = compress(task_src)
    improvement = len(task_src) - len(zipped_src)
 
-   if improvement > 0 and test_task(task_name[:-3], temp_dir):
+   if improvement > 0:
+    with open(f"{temp_dir}/{task_name}", "wb") as file:
+     file.write(zipped_src)
+    if test_task(task_name[:-3], temp_dir):
      task_src = zipped_src
    with open(f"{temp_dir}/{task_name}", "wb") as file:
     file.write(task_src)
