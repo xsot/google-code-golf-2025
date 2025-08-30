@@ -1,4 +1,4 @@
-# joking+mwi (286 (327 unzipped) vs 265 bytes for gold)
+# joking+mwi (286 (327 unzipped) vs 250 bytes for gold)
 def p(g,k=3,v=range):
  l=v(len(g));B=[sum(A>0for A in A)for A in g if any(A)]
  if B[0]==max(B)>0<B.count(B[0])<2:

@@ -102,11 +102,12 @@ def sub_vars(src):
 
 import os
 import shutil
+import pandas as pd
 
 
 def preprocess(source):
     new_lines = []
-    for line in source.splitlines():
+    for line in source.replace("\r\n", "\n").split("\n"):
         if "nomerge" in line:
             return None
         if line.startswith('##'):
@@ -127,7 +128,6 @@ def writelines_with_newline(file, lines):
 
 
 try:
-    import pandas as pd
     df = pd.read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vQ7RUqwrtwRD2EJbgMRrccAHkwUQZgFe2fsROCR1WV5LA1naxL0pU2grjQpcWC2HU3chdGwIOUpeuoK/pub?gid=1427788625&single=true&output=csv")
     gold_score = df.loc[7:,"BEST"].reset_index(drop=True).astype(int)
 except:
@@ -194,9 +194,9 @@ for i in range(1, 401):
         with open(path) as f:
             lines.extend(f.readlines())
 
-# Write merged file
-with open(output_path, 'w') as f:
-    writelines_with_newline(f, lines)
+    # Write merged file
+    with open(output_path, 'w') as f:
+        writelines_with_newline(f, lines)
 
 with open(f"{output_dir}/all_tasks.py", 'w') as f:
     writelines_with_newline(f, single_file_view)
