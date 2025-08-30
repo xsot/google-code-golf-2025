@@ -1,4 +1,4 @@
-# att (70 vs 63 bytes for gold)
+# ovs (70 vs 63 bytes for gold)
 p=lambda g:[((j%11*[max(g[j%8])]+[0]*8)*2)[:10]for j in b'b"b""ooWoW']
 
 ### att (81 bytes)

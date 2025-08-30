@@ -85,7 +85,7 @@ for i in range(1, 401):
             else:
                 score_string = f"{best_score} vs {gold_score[i-1]} bytes for gold"
             # append the raw source file (it will be cleaned up again by pack.sh)
-            lines.append(f"# {player_name} ({score_string})")
+            lines.append(f"# {best_player} ({score_string})")
             lines.extend(f.readlines())
             single_file_view.append(f"# task {i}: {score_string}, https://arcprize.org/play?task={task_ids[i-1]}:\n" + code)
 

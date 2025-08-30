@@ -1,4 +1,4 @@
-# att (50 bytes, gold)
+# ovs (50 bytes, gold)
 p=lambda g:[f:=g[0],[*map(max,[0]+f,f[1:]+[0])]]*3
 
 ### att (55 bytes)

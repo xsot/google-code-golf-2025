@@ -1,4 +1,4 @@
-# att (179 vs 118 bytes for gold)
+# ovs (179 vs 118 bytes for gold)
 def p(g):E=enumerate;L=abs;S={(i,j)for i,r in E(g)for j,v in E(r)if v};return[[v or 3*any(L(a-I)+L(A-J)==1==L(i-I)|L(j-J)for a,A in S for I,J in S)for j,v in E(r)]for i,r in E(g)]
 
 ### xsot (257 bytes)

@@ -1,4 +1,4 @@
-# att (94 bytes, gold)
+# ovs (94 bytes, gold)
 p=lambda g:[g:=sorted(zip(*g[::-1]),key=lambda x,P={0}:any((P.add(8in x),*P)+x))for _ in g][3]
 
 ### att (97 bytes)

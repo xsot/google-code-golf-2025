@@ -1,4 +1,4 @@
-# att (43 vs 40 bytes for gold)
+# ovs (43 vs 40 bytes for gold)
 p=lambda g:[[5^(g[0][0]>0)-3*~(g[0][2]>0)]]
 
 ### xsot (46 bytes)
