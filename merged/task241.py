@@ -1,3 +1,4 @@
+# att (21 bytes, gold)
 p=lambda a:[*zip(*a)]
 
 ### ovs (tied, 21 bytes)

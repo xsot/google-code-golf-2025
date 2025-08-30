@@ -1,3 +1,4 @@
+# att (49 bytes, gold)
 p=lambda a,*n:[*filter(any,zip(*n or p(a,*a)*2))]
 
 ### ovs (64 bytes)

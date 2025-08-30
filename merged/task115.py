@@ -1,3 +1,4 @@
+# att (54 bytes, gold)
 s={}.fromkeys
 p=lambda a:[*s(zip(*s(zip(*map(s,a)))))]
 

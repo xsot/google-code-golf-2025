@@ -1,3 +1,4 @@
+# att (80 vs 77 bytes for gold)
 def p(a):l=25-5*a[0].count(0);return[((~-l*[0]+a[0])*2)[i:i+l]for i in range(l)]
 
 ### xsot (84 bytes)

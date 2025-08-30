@@ -1,3 +1,4 @@
+# att (50 bytes, gold)
 p=lambda a:[[6^6>>e+r.pop(3)for e in r]for r in a]
 
 ### ovs (tied, 50 bytes)

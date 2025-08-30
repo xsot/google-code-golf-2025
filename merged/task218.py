@@ -1,3 +1,4 @@
+# att (58 bytes, gold)
 p=lambda a,*n:[*{b:0for b in zip(*n or p(a,*a))if any(b)}]
 
 ### ovs (129 bytes)

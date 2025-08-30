@@ -1,3 +1,4 @@
+# att (57 vs 53 bytes for gold)
 p=lambda a:[[2>>c+c+b.pop(0)for c in a.pop(3)]for b in a]
 
 ### ovs (61 bytes)

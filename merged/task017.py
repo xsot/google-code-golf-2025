@@ -1,3 +1,4 @@
+# att (120 bytes, gold)
 p=lambda a,n=1:[*map(f:=lambda*b:[max(b[i%n::n])for i in range(21)],*map(f,*a))]*any(b[n:]==b[:-n]for b in a)or p(a,n+1)
 
 ### ovs (143 bytes)

@@ -1,3 +1,4 @@
+# att (49 bytes, gold)
 p=lambda a,b=0:[[e|(b:=b^e)for e in r]for r in a]
 
 ### ovs (tied, 49 bytes)

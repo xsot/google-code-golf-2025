@@ -1,3 +1,4 @@
+# att (66 vs 62 bytes for gold)
 p=lambda g:[[1-g[2][s+1]*2-g[1][s]&g[3][s+2]+6]*3for s in(0,5,10)]
 
 ### xsot (69 bytes)

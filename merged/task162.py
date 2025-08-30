@@ -1,3 +1,4 @@
+# att (132 vs 97 bytes for gold)
 r=range(324)
 def p(a):
 	for i in r:

@@ -1,3 +1,4 @@
+# att (69 vs 61 bytes for gold)
 p=lambda a:max([[c]]for c in sum(a,a)if[*{b.count(c)for b in a}][2:])
 
 ### xsot (71 bytes)

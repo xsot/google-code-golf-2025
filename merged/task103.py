@@ -1,3 +1,4 @@
+# att (29 bytes, gold)
 p=lambda a:[[a==a[::-1]or 7]]
 
 ### ovs (tied, 29 bytes)

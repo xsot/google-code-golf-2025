@@ -1,3 +1,4 @@
+# att (30 bytes, gold)
 p=lambda a:(a+a[1:-1])*2+a[:1]
 
 ### xsot (tied, 30 bytes)

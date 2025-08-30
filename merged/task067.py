@@ -1,3 +1,4 @@
+# att (33 bytes, gold)
 p=lambda a:[b[:len(a)]for b in a]
 
 ### ovs (tied, 33 bytes)

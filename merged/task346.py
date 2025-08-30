@@ -1,3 +1,4 @@
+# att (111 vs 58 bytes for gold)
 import re
 p=lambda m:[[int(re.findall(r'([1-9], )\1\1.{%d}\1(.), \1.{%d}'%((len(m[0])*3-7,)*2),str(m))[0][1])]]
 

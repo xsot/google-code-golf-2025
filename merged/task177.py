@@ -1,3 +1,4 @@
+# att (55 vs 53 bytes for gold)
 p=lambda g:[[*filter(abs,r)][::-1]for r in g if any(r)]
 
 ### xsot (tied, 55 bytes)

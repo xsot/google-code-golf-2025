@@ -1,3 +1,4 @@
+# att (61 bytes, gold)
 p=lambda a:[[d&e for d in b for e in c]for b in a for c in a]
 
 ### ovs (tied, 61 bytes)

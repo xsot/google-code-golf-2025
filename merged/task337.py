@@ -1,3 +1,4 @@
+# att (46 bytes, gold)
 p=lambda g:[[x^84%x%3*13for x in r]for r in g]
 
 ### att (48 bytes)

@@ -1,3 +1,4 @@
+# att (64 vs 57 bytes for gold)
 p=eval('lambda a:[[a '+'for a in-~min(map(a.count,a))*a[:1]]'*2)
 
 ### ovs (67 bytes)

@@ -1,3 +1,4 @@
+# att (82 vs 81 bytes for gold)
 p=lambda a:[*map(f:=lambda*b:[max(b[i%10::10])for i in range(len(b))],*map(f,*a))]
 
 ### ovs (126 bytes)

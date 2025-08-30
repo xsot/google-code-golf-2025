@@ -1,3 +1,4 @@
+# att (218 vs 205 bytes for gold)
 def p(g,*S):
  w=len(g[0])
  for c in-6&len(S)+4,5:

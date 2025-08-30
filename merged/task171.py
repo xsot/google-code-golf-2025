@@ -1,3 +1,4 @@
+# att (54 bytes, gold)
 p=lambda a:[*map(f:=lambda*b:[8,*b[2:],8],*map(f,*a))]
 
 ### ovs (61 bytes)

@@ -1,3 +1,4 @@
+# att (65 bytes, gold)
 p=lambda a:[[sum({*b[c:c+3]}-{5})for c in(0,3,6)]for b in a[::3]]
 
 ### ovs (tied, 65 bytes)

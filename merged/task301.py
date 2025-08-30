@@ -1,3 +1,4 @@
+# att (31 bytes, gold)
 p=lambda g,S=sorted:S(map(S,g))
 
 ### xsot (tied, 31 bytes)

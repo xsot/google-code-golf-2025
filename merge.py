@@ -5,6 +5,8 @@ import shutil
 def comp(path):
     new_lines = []
     for line in open(path):
+        if "nomerge" in line:
+            return None
         if line.startswith('##'):
             break
         if line.startswith('#'):
@@ -32,6 +34,17 @@ players = [
 # Output directory
 output_dir = 'merged/'
 
+try:
+    import pandas as pd
+    df = pd.read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vQ7RUqwrtwRD2EJbgMRrccAHkwUQZgFe2fsROCR1WV5LA1naxL0pU2grjQpcWC2HU3chdGwIOUpeuoK/pub?gid=1427788625&single=true&output=csv")
+    gold_score = df.loc[7:,"BEST"].reset_index(drop=True).astype(int)
+except:
+    gold_score = ['???'] * 400
+
+task_ids = [s.strip() for s in open("task_ids.txt")]
+
+single_file_view = []
+
 for i in range(1, 401):
     fname = f"task{i:03}.py"
 
@@ -42,6 +55,8 @@ for i in range(1, 401):
         path = os.path.join(player_dir, fname)
         if os.path.exists(path):
             code = comp(path)
+            if not code:
+                continue
             score = len(code.encode('utf-8'))
             solutions.append((score, player_name, path, code))
 
@@ -56,16 +71,23 @@ for i in range(1, 401):
 
     if len(solutions) == 1:
         # Only one solution exists, just copy it
-        _, _, source_path, _ = solutions[0]
+        _, _, source_path, code = solutions[0]
         shutil.copy(source_path, output_path)
     else:
         # Multiple solutions exist, merge them
         lines = []
 
         # Add the best solution first
-        best_score, best_player, best_path, _ = solutions[0]
+        best_score, best_player, best_path, code = solutions[0]
         with open(best_path) as f:
+            if best_score == gold_score[i-1]:
+                score_string = f"{best_score} bytes, gold"
+            else:
+                score_string = f"{best_score} vs {gold_score[i-1]} bytes for gold"
+            # append the raw source file (it will be cleaned up again by pack.sh)
+            lines.append(f"# {player_name} ({score_string})")
             lines.extend(f.readlines())
+            single_file_view.append(f"# task {i}: {score_string}, https://arcprize.org/play?task={task_ids[i-1]}:\n" + code)
 
         # Add other solutions with comments
         for score, player_name, path, _ in solutions[1:]:
@@ -80,5 +102,8 @@ for i in range(1, 401):
         # Write merged file
         with open(output_path, 'w') as f:
             writelines_with_newline(f, lines)
+
+    with open(f"{output_dir}/all_tasks.py", 'w') as f:
+        writelines_with_newline(f, single_file_view)
 
 print("Merging complete!")

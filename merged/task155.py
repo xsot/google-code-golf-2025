@@ -1,3 +1,4 @@
+# att (18 bytes, gold)
 p=lambda a:a[::-1]
 
 ### ovs (tied, 18 bytes)

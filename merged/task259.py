@@ -1,3 +1,4 @@
+# att (86 vs 85 bytes for gold)
 p=lambda a,n=-23:n*a or p([[d*(d>1)for d in c]for c in zip(*a[a<[[0]*9]:])][::-1],n+1)
 
 ### ovs (125 bytes)

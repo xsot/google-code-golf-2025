@@ -1,3 +1,4 @@
+# att (63 vs 54 bytes for gold)
 p=lambda a:[[3*c^b.pop(0)*3//2for c in a.pop(0)]for b in a[5:]]
 
 ### ovs (64 bytes)

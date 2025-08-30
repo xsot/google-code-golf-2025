@@ -1,3 +1,4 @@
+# att (47 bytes, gold)
 p=lambda a:[[max(b:=sum(a,a),key=b.count)]*3]*3
 
 ### ovs (48 bytes)

@@ -1,3 +1,4 @@
+# att (45 bytes, gold)
 p=lambda a:[[*map(max,b,b[:4:-1])]for b in a]
 
 ### ovs (tied, 45 bytes)
