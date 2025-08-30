@@ -730,7 +730,7 @@ def p(g):
  return[[c%10for c in r]for r in g]
 # task 256: 96 vs 95 bytes for gold, https://arcprize.org/play?task=a65b410d
 def p(g):s=sum(m:=max(g))//2;i=s-~g.index(m);return[[2-((i:=i+i%~i)<s)+(i>s)]*i+r[i:]for r in g]
-# task 257: 75 vs 81 bytes for gold, https://arcprize.org/play?task=a68b268e
+# task 257: 75 bytes, gold, https://arcprize.org/play?task=a68b268e
 p=eval('lambda a:[[max(sum(a,()),key=bool)'+'for*a,in map(zip,a,a[5:])]'*2)
 # task 258: 61 bytes, gold, https://arcprize.org/play?task=a699fb00
 import re
@@ -798,7 +798,7 @@ def p(a,n=3,i=0):
 # task 281: 146 bytes, gold, https://arcprize.org/play?task=b548a754
 import re
 p=lambda i,k=39:-k*i or p(eval(re.sub(r"(\((?=[^)]+[1-9])[^)]+., )(\([^)]+.), \((?=.*8)[08, ]+\)",r"\1\1\2",str([*zip(*i[::-1])]))),k-1)
-# task 282: 83 vs 86 bytes for gold, https://arcprize.org/play?task=b60334d2
+# task 282: 83 bytes, gold, https://arcprize.org/play?task=b60334d2
 p=lambda a:[*map(f:=lambda d,*b,c=0:[c|(c:=d)>>2|(d:=e)for e in[*b,0]],*map(f,*a))]
 # task 283: 94 vs 86 bytes for gold, https://arcprize.org/play?task=b6afb2da
 z=0,
@@ -1033,8 +1033,8 @@ def p(g):
     if E in A and all(len(g[0])>C+B-H>-1<I+A-G<len(g)and(J!=g[A][B]==g[A+I-G][B+C-H]!=E or J==g[A][B]and g[A+I-G][B+C-H]==E)for(A,B)in D):
      for(O,P)in D:g[I+O-G][C+P-H]=g[O][P]
  g=[A for A in g if E in A];return[g,[*zip(*g)]][Q]
-# task 367: 225 vs 130 bytes for gold, https://arcprize.org/play?task=e73095fd
-p=lambda g,k=59,e=enumerate:-k*g or p([*zip(*[[max(c,x+y<1,(v:=(*g[y-(y>0)][x-1:x+1],r[x-1]))==(5,0,0),y>1<x<sum(v)>10>4<g[y-1][x-2]+g[y-2][x-1]or[0,*r][x]%5)if k else c-c%5+0**c*4for x,c in e(r)]for y,r in e(g)][::-1])],k-1)
+# task 367: 223 vs 130 bytes for gold, https://arcprize.org/play?task=e73095fd
+p=lambda g,k=59,e=enumerate:-k*g or p([*zip(*[[[c-c%5+0**c*4,max(c,x+y<1,(v:=(*g[y-(y>0)][x-1:x+1],r[x-1]))==(5,0,0),y>1<x<sum(v)>10>4<g[y-1][x-2]+g[y-2][x-1]or[0,*r][x]%5)][k>0]for x,c in e(r)]for y,r in e(g)][::-1])],k-1)
 # task 368: 160 vs 142 bytes for gold, https://arcprize.org/play?task=e76a88a6
 import re
 def p(i):
@@ -1077,7 +1077,7 @@ def p(g):
    c=g[y][x];A,B,C,D=[c==g[y+Y][x+X]for Y,X in[[0,1],[0,-1],[1,0],[-1,0]]];a,b,p,q=2*C-1,2*A-1,x,y
    while(A^B)*(C^D)*(g[y+a][x+b]^c)*c>0<p<h>q>0:q-=a;p-=b;g[q][p]=g[y+2*a][x+2*b]
  return g
-# task 379: 141 vs 142 bytes for gold, https://arcprize.org/play?task=ecdecbb3
+# task 379: 141 bytes, gold, https://arcprize.org/play?task=ecdecbb3
 import re
 p=lambda i,k=7,r=re.sub:-k*i or[*zip(*eval(r(", 4, ","|8,8,8|",r("0, 8, ((0, )+)2","4,2,4,*[2]*len([\\1])",str(p(i,k-1)[::-1])))))]
 # task 380: 27 bytes, gold, https://arcprize.org/play?task=ed36ccf7
