@@ -1,0 +1,1 @@
+p=lambda i:[x[~x.index(0)::-1][:3]for x in i if 0in x]

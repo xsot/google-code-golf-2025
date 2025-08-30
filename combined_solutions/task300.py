@@ -1,0 +1,1 @@
+p=lambda i,k=0:[x for x in zip(*k*i or p(i,1))if max(range(1,10),key=sum(i,i).count)in x]

@@ -1,0 +1,1 @@
+p=lambda i:[[i[x][0],i[1-x][0]]*3for x in[0,1]]

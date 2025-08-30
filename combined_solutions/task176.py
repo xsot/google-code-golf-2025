@@ -1,0 +1,1 @@
+p=lambda i,x=0,k=2:i[x:]and[[-k+(k:=k+y)or k%3-1&4for y in i[x]]]+p(i,x+1,0)

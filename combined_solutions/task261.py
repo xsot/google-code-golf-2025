@@ -1,0 +1,1 @@
+p=lambda i:i[-1:]+eval(str(i[:-1]).replace(*"82"))

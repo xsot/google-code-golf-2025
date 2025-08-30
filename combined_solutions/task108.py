@@ -1,0 +1,1 @@
+p=lambda g,R=range(20):[[g[y//4*2+1][x//4*2+1]for x in R]for y in R]

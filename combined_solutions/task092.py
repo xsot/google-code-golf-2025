@@ -1,0 +1,1 @@
+p=lambda i,k=0:[[y or max({*x[b:],0}&{*x[:b],0})for b,y in enumerate(x)]for x in zip(*i*k or p(i,1))]

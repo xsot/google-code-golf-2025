@@ -1,0 +1,1 @@
+p=lambda i,k=2,r=range(10):-k*i or p([[i[a][b]or((i*2)[(q:=[t for t in r if max(i[t])][0])+(u:=[t for t in r if[*map(max,*i)][t]][0])+4-b]*2)[u-q+a]for b in r]for a in r],k-1)

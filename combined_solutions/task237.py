@@ -1,0 +1,1 @@
+p=lambda i,n=0,s=0:[[n:=n|y for y in x[:-1]]+[s:=n+(n:=0)or s]for x in i]

@@ -1,0 +1,1 @@
+p=lambda i:[x*2for x in i]

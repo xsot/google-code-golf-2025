@@ -1,0 +1,1 @@
+p=lambda i:[[x[y]*x[y+4]*2for y in[0,1,2]]for x in i]

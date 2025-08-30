@@ -1,0 +1,1 @@
+p=lambda i,k=1919,e=[[]]:-k*i or p([[[k:=k-1][:y==8]or[]!=y!=0and{*y,*q,*s}or[]if k else-sorted({*map(len,sum(i,[]))}).index(len(y))%3for y,q,s in zip(x,e+x,e+[*w])]for*x,w in zip(*i,[e*9,*zip(*i)])][::-1],k-1)

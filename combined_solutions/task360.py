@@ -1,0 +1,1 @@
+p=lambda i:[[*map(max,x,x[:4:-1])]for x in i]

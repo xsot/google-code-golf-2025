@@ -1,0 +1,1 @@
+p=lambda i,k=3,n=[]:-k*i or p([x for x in zip(*i[::-1])if n==(n:=n+[x]*(8in(i:=i+[*x]))*-~-any(x))]+n,k-1)

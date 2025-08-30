@@ -1,0 +1,1 @@
+p=lambda i:eval(str(i).replace(*"62"))

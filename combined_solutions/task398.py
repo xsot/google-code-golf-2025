@@ -1,0 +1,1 @@
+p=lambda i:(k:=5*len({*i[0],0})-5)and[([0]*n+i[0]+[0]*k)[:k]for n in range(k)][::-1]

@@ -1,0 +1,1 @@
+import re;p=lambda i:[[n for n in{*sum(i,[])}-{0}if re.sub(f".*{n}, {n}, {n}.*"*2,"",str(i))]]

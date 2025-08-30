@@ -1,0 +1,1 @@
+p=lambda i,e=enumerate:[[y or i[a%6][b%6]and x[5]for b,y in e(x)]for a,x in e(i)]

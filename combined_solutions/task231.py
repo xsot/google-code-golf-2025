@@ -1,0 +1,1 @@
+p=lambda i:[(x[:6]*4)[:len(x)*2]for x in i]

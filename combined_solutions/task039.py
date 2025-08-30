@@ -1,0 +1,1 @@
+p=lambda i,k=1:-k*[x[:3]for x in i[:3]]or p([*filter(sum,zip(*i))],k-1)

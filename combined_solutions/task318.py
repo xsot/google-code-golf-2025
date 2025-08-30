@@ -1,0 +1,1 @@
+p=lambda i:[[any(y)*3for y in zip(*x)]for x in zip(i,i[5:])]

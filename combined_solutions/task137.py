@@ -1,0 +1,1 @@
+def p(i):r=range(len(i));a,b,_=[(x,y,i[x][y])for y in r for x in r if i[x][y]];return[[(max(abs(x-b[0]),abs(y-b[1]))%(b[1]-a[1])<1)*a[2]for y in r]for x in r]

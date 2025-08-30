@@ -1,0 +1,1 @@
+p=lambda i:[[y+x.pop(3)and 6for y in x]for x in i]

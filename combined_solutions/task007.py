@@ -1,0 +1,1 @@
+p=lambda i,k=range(7):[[max(sum(i,[])[(x+y)%3::3])for y in k]for x in k]

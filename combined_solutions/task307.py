@@ -1,0 +1,1 @@
+p=lambda i:[sum(zip(x,x),())for x in i for _ in".."]

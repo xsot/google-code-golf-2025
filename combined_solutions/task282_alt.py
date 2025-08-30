@@ -1,0 +1,1 @@
+p=lambda i,k=7:-k*i or p([[y or(t-(t>0))*(k>3)if k else-~y%5^1for y,t in zip(x,[0,*x])]for x in zip(*i[::-1])],k-1)

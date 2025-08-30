@@ -1,0 +1,1 @@
+p=lambda i:[i:=[f:=y*(x!=i or f<y)for y in x]for x in i]

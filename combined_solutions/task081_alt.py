@@ -1,0 +1,1 @@
+p=lambda i,k=range(7):[[i[x][y]or i[x-(x>0)][y]+i[x+(x<6)][y]&i[x][y-(y>0)]+i[x][y+(y<6)]==8for y in k]for x in k]

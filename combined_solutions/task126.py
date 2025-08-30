@@ -1,0 +1,1 @@
+p=lambda i:i[:-1]+[[(0<max(s)==sum(s))*4for s in zip(*i)]]

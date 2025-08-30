@@ -1,0 +1,1 @@
+p=lambda i:i+[i[0][:1]*a+i[0][:-a]for a in range(1,len(i[0])//2)]

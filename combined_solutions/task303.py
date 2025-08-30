@@ -1,0 +1,1 @@
+p=lambda i:[[y|2>>2*max(x)*max(n)for*n,y in zip(*i,x)]for x in i]

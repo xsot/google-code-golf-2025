@@ -1,0 +1,1 @@
+p=lambda i,k=2,r=range(30):-k*i or p([[min(i[a][b],i[b][a],(i+i[1::-1])[~b][a])for b in r]for a in r],k-1)

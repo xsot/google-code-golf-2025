@@ -1,0 +1,1 @@
+p=lambda i,u=[[0]*99]:[[k*(sum(t)>k)for*t,k in zip(*s,[0]+h,h[1:]+[0],h)]for*s,h in zip(u+i,i[1:]+u,i)]

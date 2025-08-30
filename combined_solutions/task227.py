@@ -1,0 +1,1 @@
+p=lambda i:[[~y+t&2for y,t in zip(x,i.pop(4))]for x in i]

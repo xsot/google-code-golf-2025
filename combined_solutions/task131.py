@@ -1,0 +1,1 @@
+p=lambda i:5<len(i)>(u:=(t:=[*map(max,i)].index)(2))>t(3)and sorted(i[:u-1]+[[8]*len(i[0])],key=lambda e:max(e)%6)+i[u:]or[*zip(*p([*zip(*i[::-1])]))][::-1]

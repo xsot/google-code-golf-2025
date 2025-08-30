@@ -1,0 +1,1 @@
+p=lambda g:[3*[1//len({*A})*5]for A in g]

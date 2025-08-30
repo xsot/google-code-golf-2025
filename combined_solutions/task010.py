@@ -1,0 +1,1 @@
+p=lambda i:(t:={})or[[x[k]and t.setdefault(k,len(t)+1)for k in range(9)]for x in i]

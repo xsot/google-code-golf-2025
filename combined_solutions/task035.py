@@ -1,0 +1,1 @@
+p=lambda i,k=3:-k*i or[[x[0**n<=y^8]or y for y,n in zip(x,[0,*x])]for x in zip(*p(i,k-1)[::-1])]

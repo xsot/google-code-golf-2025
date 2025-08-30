@@ -1,0 +1,1 @@
+p=lambda i:[sorted((sum(y!=n in x!=n in s for x in i for*s,y in zip(*i,x)),n)for n in range(10))[-2][1:]]

@@ -1,0 +1,1 @@
+p=lambda i,k=-1:[x[::k]for x in zip(*k*i or p(i,1))if sum(x)]

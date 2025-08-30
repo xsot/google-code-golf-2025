@@ -1,0 +1,1 @@
+p=lambda i,k=3,e=enumerate:-k*i or[[y+(i[a-2][b-1]&i[a-1][b-2]and i[a-1][b-1]+i[a-2][b-2]or i[a][b-3]&i[a][b-1])for b,y in e(x)]for a,x in e(zip(*(p([*zip(*i)][::-1],k-1)[::-1])))]

@@ -1,0 +1,1 @@
+p=lambda i:[[~y*max({*x}&{*t})%10for*t,y in zip(*i,x)]for x in i]

@@ -1,0 +1,1 @@
+p=lambda i:[[y^e^x[0]or y for y,e in zip(x,i[0])]for x in i]

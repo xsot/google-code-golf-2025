@@ -1,0 +1,1 @@
+p=lambda i,k=39:-k*i or p([[y-y*(len({*x})>2>1>s==y-max(t))for y,s,t in zip(x,[0,*x],[[0]]+i)]for x in zip(*i)][::-1],k-1)

@@ -1,0 +1,1 @@
+p=lambda g:[[x,*[(x==y)*x]*8,y]for x,*_,y in g]

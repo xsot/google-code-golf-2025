@@ -1,0 +1,1 @@
+p=lambda i,k=4,e=enumerate:-k*i or p(k//4*[x*2for x in i*2]or[[y or(a>0<b)*i[-b][a-1]%8and 8for b,y in e(x)]for a,x in e(zip(*i[::-1]))],k-1)

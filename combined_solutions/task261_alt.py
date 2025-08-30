@@ -1,0 +1,1 @@
+p=lambda i:[[y/4for y in x]for x in i[-1:]+i[:-1]]

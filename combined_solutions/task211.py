@@ -1,0 +1,1 @@
+p=lambda g:[A[::-1]+A for A in(g[::-1]+g)*9][:9]

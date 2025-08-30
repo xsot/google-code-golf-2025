@@ -1,0 +1,1 @@
+p=lambda i,k=39:-k*i or p([[y&2or-b*y<k//39for y,b in zip(x,[0,*x])]for x in zip(*i[::-1])],k-1)

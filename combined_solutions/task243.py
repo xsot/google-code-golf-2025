@@ -1,0 +1,1 @@
+p=lambda i,k=79:-k*i or[*zip(*eval(str(p(i,k-1)[::-1]).replace("1, 0","1,1")))]

@@ -1,0 +1,1 @@
+def p(i):t=sum(i,[]).index(8)-14;n=[x[t%13:][:3]for x in i][t//13:][:3];n[1][1]=max(n[0]);return n

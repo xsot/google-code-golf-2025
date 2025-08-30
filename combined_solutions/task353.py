@@ -1,0 +1,1 @@
+import re;p=lambda i,k=3:-k*i or p(eval(re.sub(f"3(.{ {len(i)*3+1}})0(.*4)",r"0\1 3\2",str([*zip(*i[::-1])]))),k-1)

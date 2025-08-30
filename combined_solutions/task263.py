@@ -1,0 +1,1 @@
+p=lambda i,k=1:-k*i or p([*zip(*i[(x:=[[s>0for e in i[h*3:][:3]for s in e]for h in range(9)]).index(min(x,key=x.count))*3:][:3])],k-1)

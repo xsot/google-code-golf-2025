@@ -1,0 +1,1 @@
+p=lambda i,a=0,z=1:max([x[a%20:][:[*x[a%20:],0].index(0)]for x in i[a//20:]if(z:=z*x[a%20])],a>400or p(i,a+1),key=lambda l:str(l).count("2"))

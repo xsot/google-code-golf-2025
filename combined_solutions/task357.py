@@ -1,0 +1,1 @@
+p=lambda i,x=0,_=0:i and p(i[1:],x+1,k:=len(i[0])-1)+[[k-y==abs(k-x%(2*k))or 8for y in range(k+1)]]

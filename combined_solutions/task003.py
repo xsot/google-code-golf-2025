@@ -1,0 +1,1 @@
+p=lambda j:eval(str(j+j[(j[0]!=j[3])*2:][:3]).replace(*"12"))

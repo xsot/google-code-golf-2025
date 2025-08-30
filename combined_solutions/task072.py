@@ -1,0 +1,1 @@
+p=lambda i:[[-(y^t)%5for y,t in zip(*x)]for x in zip(i,i[7:])]

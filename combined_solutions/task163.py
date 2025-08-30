@@ -1,0 +1,1 @@
+p=lambda i,r=range(11):[[(i[a][b]==5)*5or((t:=sum(i,[]).index(4))//11%4==a//4<9>t%11%4==b//4)*i[t//44*4+a%4][t%11//4*4+b%4]for b in r]for a in r]

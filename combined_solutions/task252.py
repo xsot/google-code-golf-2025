@@ -1,0 +1,1 @@
+p=lambda i:[[y and b%2*4or y for b,y in enumerate(x)]for x in i]

@@ -1,0 +1,1 @@
+p=lambda i:min([[[n]*x.count(n)for x in i if n in x]for n in{*sum(i,[])}-{0}],key=lambda r:len(sum(r,[])))

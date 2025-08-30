@@ -1,0 +1,1 @@
+p=lambda i:min([[l[x%7:][:3]for l in i[x//7:][:3]]for x in range(49)],key=lambda t:sum(sum(t,[]))-99*all(min(t)))

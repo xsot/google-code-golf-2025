@@ -1,0 +1,1 @@
+p=lambda i,k=3,e=enumerate:-k*i or p([[y*(i[b%3*3][a%3*3]>=0**k)for b,y in e(x)]for a,x in e(zip(*i))if max(x)],k-1)

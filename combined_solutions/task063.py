@@ -1,0 +1,1 @@
+p=lambda i,k=0:[[y or({*x[1:-1]}<={0,3})*3for y in x]for x in zip(*i*k or p(i,1))]

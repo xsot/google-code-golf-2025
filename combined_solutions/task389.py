@@ -1,0 +1,1 @@
+p=lambda i:[[y==5and sum({*sum(i,[])})-5for y in x]for x in i]

@@ -1,0 +1,1 @@
+p=lambda i,k=range(4):[[max(i[x][y::5]+i[x+5][y::5],key=bool)for y in k]for x in k]

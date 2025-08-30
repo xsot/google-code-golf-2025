@@ -1,0 +1,1 @@
+p=lambda i,k=3:-k*i or p([[(l:=min(i[b-(b>0)]))*(l in x[b:])or(y not in map(min,i[:b])!=sum(i,[]).count(y)>5)*y for b,y in enumerate(x)]for x in zip(*i)][::-1],k-1)

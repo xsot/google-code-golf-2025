@@ -1,0 +1,1 @@
+p=lambda i:[x+x[::-1]for x in i]

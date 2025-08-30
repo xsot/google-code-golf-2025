@@ -1,0 +1,1 @@
+p=lambda i:[[y[0]for y in zip(x,*i)if r in y]for x in i if(r:=min(g:=sum(i,[]),key=g.count))in x]

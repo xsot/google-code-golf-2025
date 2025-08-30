@@ -1,0 +1,1 @@
+p=lambda i:[[sum({*x,*y})%13for y in zip(*i)]for x in i]

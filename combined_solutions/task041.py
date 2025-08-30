@@ -1,0 +1,1 @@
+p=lambda i,l=0:[[y|(l:=l^y)for y in x]for x in i]

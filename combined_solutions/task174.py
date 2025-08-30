@@ -1,0 +1,1 @@
+p=lambda i,n=1:(l:=[[y[0]for y in zip(x,*i)if n in y]for x in i if n in x])*all(x==x[::-1]for x in l)or p(i,n+1)

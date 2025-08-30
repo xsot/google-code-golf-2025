@@ -1,0 +1,1 @@
+p=lambda i:[[y or(t>0)*x[5]for y,t in zip(x,s[:6]*3)]for x,s in zip(i,i[:6]*3)]

@@ -1,0 +1,1 @@
+p=lambda i,u=[[0]*9]:[[y-(y>sum(h))for*h,y in zip(*l,[0]+x,x[1:]+[0],x)]for*l,x in zip(u+i,i[1:]+u,i)]

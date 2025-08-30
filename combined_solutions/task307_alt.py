@@ -1,0 +1,1 @@
+p=lambda i:[*map(f:=lambda x:sum(zip(x,x),()),f(i))]

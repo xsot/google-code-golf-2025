@@ -1,0 +1,1 @@
+p=lambda i:[[q[a]<<2*(sum(q)//2>=sum(q[a:]))for q in zip(*i)]for a in range(len(i))]

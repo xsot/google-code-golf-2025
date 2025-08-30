@@ -1,0 +1,1 @@
+p=lambda i,k=59:-k*i or[[y*(y!=3)or(x[b-1]==x[b-2]not in[0,3,4]or x[b-(b>0)]==4)+3for b,y in enumerate(x)]for x in zip(*p(i,k-1)[::-1])]

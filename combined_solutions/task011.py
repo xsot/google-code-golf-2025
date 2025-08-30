@@ -1,0 +1,1 @@
+p=lambda i,e=enumerate,k=[0,1,2]:[[y==5and 5or min([sum([i[d*4+e][c*4:][:3]for e in k],[])for d in k for c in k],key=sum)[a//4*3+b//4]for b,y in e(x)]for a,x in e(i)]

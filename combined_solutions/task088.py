@@ -1,0 +1,1 @@
+p=lambda i,k=3,z=0:-k*i[1:-1]or p([k and x or[y and z for y in x][1:-1]for x in zip(*i[::-1])if(z:=z or max(x))],k-1)

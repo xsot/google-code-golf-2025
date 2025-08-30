@@ -1,0 +1,6 @@
+p=lambda i:[[x[y]*x[y+4]*2for y in[0,1,2]]for x in i]
+p=lambda i:[[a*b*2for a,b in zip(x,x[4:])]for x in i]
+p=lambda i:[[2*all(x[y::4])for y in[0,1,2]]for x in i]
+p=lambda i:[[2*all(a)for a in zip(x,x[4:])]for x in i]
+p=lambda i:[[2&sum(a)for a in zip(x,x[4:])]for x in i]
+p=lambda i:[[*map(2 .__mul__,map(all,zip(x,x[4:])))]for x in i]

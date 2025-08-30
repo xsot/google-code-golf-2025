@@ -1,0 +1,1 @@
+p=lambda i,k=79:-k*i or p([[y%(4<<s)or k//79*4for y,s in zip(x,[0,*x])]for x in zip(*i[::-1])],k-1)

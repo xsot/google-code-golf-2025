@@ -1,0 +1,1 @@
+p=lambda i:[((x*3)[:8]*2+x*3)[::3]for x in i for _ in i]

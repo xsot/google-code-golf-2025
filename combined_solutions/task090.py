@@ -1,0 +1,1 @@
+p=lambda i,r=range:max([[[i[t][s]or(x<=t<x+a>0<y+b>s>=y)*6for s in r(len(i[0]))]for t in r(len(i))]for a in r(2,9)for x in r(len(i)-a+1)for b in r(9)for y in r(30)if sum(sum(s[y:y+b])for s in i[x:x+a])<1],key=lambda s:sum(sum(s,[])))

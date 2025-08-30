@@ -1,0 +1,1 @@
+p=lambda i:[l[1:-1]for n in sum(i,[])if{*(l:=[[y[0]for y in zip(x,*i)if n in y][1:-1]for x in i if n in x])[0]}=={n}][0]

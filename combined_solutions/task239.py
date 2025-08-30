@@ -1,0 +1,1 @@
+def p(i):z=sum(i,[]);c=z.count;return[*filter(sum,zip(*[[y]*c(y)+[0]*11for y in sorted({*z},key=c)][::-1]))]

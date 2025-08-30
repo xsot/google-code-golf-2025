@@ -1,0 +1,1 @@
+p=lambda i,k=3:-k*i or[[x[b]or(3in x[:b])*max(x[b:])for b in range(10)]for x in zip(*p(i,k-1)[::-1])]

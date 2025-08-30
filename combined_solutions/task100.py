@@ -1,0 +1,1 @@
+p=lambda i:[[max(sum(i,[]),key=lambda n:sum(n>0for x in i for y in zip(*i)if{*x}&{*y}&{n}))]*2]*2

@@ -1,0 +1,1 @@
+p=lambda i,b=1:i and[[0<sum(sum(i,[]))/7>abs(h:=i[0].index(7)+(b:=b-1))and h%2+7for _ in i[0]]]+p(i[1:])

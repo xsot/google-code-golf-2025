@@ -1,0 +1,1 @@
+p=lambda i,r=range(10):[[i[a][b]or i[b][~a+sum([*map(max,*i)][7:])-sum(map(any,i[:3]))]*2for b in r]for a in r]

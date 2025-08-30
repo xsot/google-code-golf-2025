@@ -1,0 +1,1 @@
+p=lambda i:[[max(s:=x+[*p],key=s.count)for p in zip(*i)]for x in i]

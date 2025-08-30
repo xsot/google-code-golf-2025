@@ -1,0 +1,1 @@
+p=lambda g:[[g[A][B]|g[A+6][B]for B in range(11)]for A in range(5)]

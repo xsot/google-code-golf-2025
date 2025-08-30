@@ -1,0 +1,1 @@
+p=lambda i:[[0**sum(x[y::4])*3for y in[0,1,2]]for x in i]

@@ -1,0 +1,1 @@
+p=lambda i:[[(x[y]^y)-y&7for y in range(-len(x),0)]for x in i]

@@ -1,0 +1,1 @@
+p=lambda i,k=0:sum(zip(*[[*zip(*k*i or p(i,1))]]*(len({*str(i)})-5)),())

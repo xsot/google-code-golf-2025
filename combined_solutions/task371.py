@@ -1,0 +1,1 @@
+p=lambda i,r=0,e=enumerate:[[r*(a*y,b*y)or y or(sum(abs(sum(u))for u in zip((-a*2,-b*2),*sum(p(i,1),[])))<3)*3for b,y in e(x)]for a,x in e(i)]

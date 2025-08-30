@@ -1,0 +1,1 @@
+p=lambda g,n=-1:n*g or p([[r[x>>1]for x in range(len(r)*2)]for r in zip(*g)if any(r)],-~n)

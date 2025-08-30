@@ -1,0 +1,1 @@
+p=lambda i:[[(y>0)*x[0]for y in x]for x in i]

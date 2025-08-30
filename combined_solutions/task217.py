@@ -1,0 +1,1 @@
+p=lambda i,A=any:[[y[0]&t[0]for y in zip(x,*i)for t in zip(s,*i)if A(t)&A(y)]for x in i for s in i if A(x)&A(s)]

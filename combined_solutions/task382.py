@@ -1,0 +1,1 @@
+p=lambda i,k=3,e=enumerate:-k*i or[[y or(sum(x)<9)*(i+[[0]]*9)[a+i[-1][b:].count(2)-i[0][b:].count(2)][-1]&8for b,y in e(x)]for a,x in e(zip(*p([*zip(*i)][::-1],k-1)[::-1]))]

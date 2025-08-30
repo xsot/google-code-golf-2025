@@ -1,0 +1,1 @@
+p=lambda i,u=[[0]*10]:[[72%~sum(t)*3%5for t in zip(x,*s,[0]+x,x[1:]+[0])]for*s,x in zip(u+i,i[1:]+u,i)]

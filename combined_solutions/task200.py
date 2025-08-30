@@ -1,0 +1,1 @@
+p=lambda i,e=enumerate:[[-2<(l:=b+~i[9].index(n:=max(i[9])))and l%2*n+(l%4==a/4.5)*5for b,y in e(x)]for a,x in e(i)]

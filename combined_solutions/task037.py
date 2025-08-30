@@ -1,0 +1,1 @@
+p=lambda i,k=1,r=range(10):-k*i or p([[i[a][b]or max({*(h:=sum(i,[])[max((a-b)*10,b-a)::11])[:(f:=min(b,a))]}&{*h[f:]}|{0})for b in r]for a in r][::-1],k-1)

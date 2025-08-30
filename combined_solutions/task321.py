@@ -1,0 +1,1 @@
+p=lambda i:[[max(x[r::5],key=bool)for r in range(4)]for x in i]

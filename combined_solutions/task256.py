@@ -1,0 +1,1 @@
+p=lambda i,a=1:[((sum(t:=max(i))//2+(j:=i.index(t)+(a:=a-1)))*[2+(0<j)-(0>j)]+[0]*99)[:len(x)]for x in i]

@@ -1,0 +1,1 @@
+p=lambda i,h=3:1//len({*i[-h]})*[x[::-h]for x in i[::h]]or p(i,h+1)

@@ -1,0 +1,1 @@
+p=lambda i:[[8%~y&6-b%3for b,y in enumerate(x)]for x in i]

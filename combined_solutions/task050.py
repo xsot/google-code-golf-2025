@@ -1,0 +1,1 @@
+p=lambda i,k=0:[[x[b]or(8in{*x[:b]}&{*x[b:]})*3for b in range(len(x))]for x in zip(*k*i or p(i,1))]

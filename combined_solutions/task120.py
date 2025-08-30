@@ -1,0 +1,1 @@
+p=lambda i,u=[[0]*99]:[[all(t)*8or t[0]for t in zip(*s,x,[0]+x,x[1:]+[0])]for*s,x in zip(i,u+i,i[1:]+u)]

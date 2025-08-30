@@ -1,0 +1,1 @@
+p=lambda g,k=-3:k*g or p([*zip(*[r for r,R in zip(g,g[1:]+[[]])if{*r}^{*R}])],-~k)

@@ -1,0 +1,1 @@
+p=lambda i,r=range(10):[[(y%9*(x%7&5)<1)*sum(i[x-x%5+2])for y in r]for x in r]

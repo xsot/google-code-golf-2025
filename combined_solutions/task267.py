@@ -1,0 +1,1 @@
+p=lambda i:[[i[-y>>8][x==i[6]]for y in x]for x in i]

@@ -1,0 +1,1 @@
+p=lambda i,e=enumerate:[[y-min([*x[b-1:b+2],i[a-1][b],y and i[a+1][b]])for b,y in e(x)]for a,x in e(i)]
