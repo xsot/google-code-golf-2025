@@ -1,1 +1,1 @@
-p=lambda i:[[3>>a+b for a,b in zip(*s)]for s in zip(i,i[5:])]
+p=lambda a:[[3>>c+b.pop(0)for c in a.pop(0)]for b in a[5:]]

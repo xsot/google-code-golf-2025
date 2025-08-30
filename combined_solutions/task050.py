@@ -1,1 +1,1 @@
-p=lambda i,k=0:[[x[b]or(8in{*x[:b]}&{*x[b:]})*3for b in range(len(x))]for x in zip(*k*i or p(i,1))]
+p=lambda g,*G:[[v or(8in{*r[:j]}&{*r[j:]})*3for j,v in enumerate(r)]for*r,in zip(*G or p(g,*g))]

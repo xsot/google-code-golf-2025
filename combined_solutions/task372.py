@@ -1,1 +1,1 @@
-p=lambda g:[[g[A][B]|g[A+6][B]for B in range(11)]for A in range(5)]
+p=lambda a:[b for*b,in map(map,[max]*5,a,a[6:])]

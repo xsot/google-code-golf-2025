@@ -1,1 +1,2 @@
-p=lambda g,k=-3:k*g or p([*zip(*[r for r,R in zip(g,g[1:]+[[]])if{*r}^{*R}])],-~k)
+s={}.fromkeys
+p=lambda a:[*s(zip(*s(zip(*map(s,a)))))]

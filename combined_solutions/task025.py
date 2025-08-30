@@ -1,1 +1,2 @@
-p=lambda i,k=3:-k*i or p([[(l:=min(i[b-(b>0)]))*(l in x[b:])or(y not in map(min,i[:b])!=sum(i,[]).count(y)>5)*y for b,y in enumerate(x)]for x in zip(*i)][::-1],k-1)
+E=enumerate
+p=lambda g,k=-1:g*k or p([[max([k*(2>i*i<=k in[r,r[:j],r[j:]][i])for i,k in E(map(min,g),-j)if k]or[v])for j,v in E(r)]for r in zip(*g)],k+1)

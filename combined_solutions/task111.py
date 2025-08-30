@@ -1,1 +1,1 @@
-p=lambda i:[x[i[0].index(5)-1:][:3]for x in(5in i[0])*i[1:4]]or p(i[1:])
+p=lambda g:[(f:=sum(g,[]))[f.index(5)+d:][:3]for d in b'	']

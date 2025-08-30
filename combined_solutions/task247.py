@@ -1,1 +1,1 @@
-p=lambda i:(h:=max(map(l:=(z:=sum(zip(*i),())).count,{*z}-{0})))*[[x for x in dict.fromkeys(z)if l(x)==h]]
+p=lambda a:(m:=max(map(c:=(b:=sum(zip(*a),())).count,{*b}-{0})))*[[*{d:0for d in b if c(d)==m}]]

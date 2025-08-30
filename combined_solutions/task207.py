@@ -1,1 +1,1 @@
-p=lambda i:min(p:=[[t[y:y+2]for t in i[x:x+2]]for y in[0,3]for x in[0,3]],key=p.count)
+p=eval('lambda a:[[min(b:=sum(a,()),key=b.count)'+'for*a,in map(zip,a,a[3:])]'*2)

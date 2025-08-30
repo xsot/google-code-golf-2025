@@ -1,1 +1,2 @@
-p=lambda i,k=9,r=range(10):-k*i or p([[(k<3!=i[b][a:a+3]==[0,0,5])*max({*sum(i,[])}-{5})or(h:=i[b][a]|i[~a][~b]|(b>0<a)*i[b-1][a-1])*(h!=5or k>0)for b in r]for a in r],k-1)
+r=range(10)
+p=lambda a:[[(c:=max({*max(a)}-{5}))*(c==a[i][j]or sum(m-n-i+j+k%5-2==0<a[m][n]for m in r for n in r for k in r)==2)for j in r]for i in r]

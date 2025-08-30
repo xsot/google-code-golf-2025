@@ -1,1 +1,1 @@
-p=lambda i,k=2:k*(t:=sum(i,[]).index(5))and p([x[t%len(i[0]):][::-1]for x in i[t//len(i[0])-1:][::-1]],k-1)or i
+p=lambda a,n=46:a*~n or p([*zip(*a[(5in a[n%2-2])-2::-1])],n-1)

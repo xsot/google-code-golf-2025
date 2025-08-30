@@ -1,1 +1,2 @@
-p=lambda i,u=[[0]*10]:[[72%~sum(t)*3%5for t in zip(x,*s,[0]+x,x[1:]+[0])]for*s,x in zip(u+i,i[1:]+u,i)]
+z=0,
+p=lambda a:[*map(f:=lambda*b:[c[0]*sum(c,7)%32%6for c in zip(b,z+b,b[1:]+z)],*map(f,*a))]

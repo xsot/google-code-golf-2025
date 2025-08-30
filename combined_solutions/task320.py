@@ -1,1 +1,1 @@
-p=lambda i:[[q[a]<<2*(sum(q)//2>=sum(q[a:]))for q in zip(*i)]for a in range(len(i))]
+p=lambda a:[[c<<b.pop(0)for c in a.pop(0)]for*b,in(a[:1]*len(a)+a)[::2]]

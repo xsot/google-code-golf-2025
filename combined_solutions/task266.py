@@ -1,1 +1,1 @@
-p=lambda i,k=3:-k*i or p([*zip(*[[y*(y-2|k>0)+(t==2)*(8-k*5%8%6)for y,t in zip(x,[0,*s])]for x,s in zip(i,[[0]*5]+i)][::-1])],k-1)
+p=lambda g:[([0,0,0,r%9,0,r//9]*2)[4-max(g).index(2):][:5]for r in b'\09\0G\0'[2-g.index(max(g)):][:3]]

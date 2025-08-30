@@ -1,1 +1,1 @@
-p=lambda i,k=-1:[x[::k]for x in zip(*k*i or p(i,1))if sum(x)]
+p=lambda g:[[*filter(abs,r)][::-1]for r in g if any(r)]

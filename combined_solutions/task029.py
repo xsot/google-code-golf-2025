@@ -1,1 +1,1 @@
-p=lambda i:[l[1:-1]for n in sum(i,[])if{*(l:=[[y[0]for y in zip(x,*i)if n in y][1:-1]for x in i if n in x])[0]}=={n}][0]
+p=lambda a:min([d in sum(i:=[b[1:-1]for*b,in zip(*[b for*b,in zip(*a)if d in b])if{d}<{*b}],a),i]for d in sum(a,a))[1]

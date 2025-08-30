@@ -1,1 +1,1 @@
-p=lambda i:(k:=5*len({*i[0],0})-5)and[([0]*n+i[0]+[0]*k)[:k]for n in range(k)][::-1]
+def p(a):l=25-5*a[0].count(0);return[((~-l*[0]+a[0])*2)[i:i+l]for i in range(l)]

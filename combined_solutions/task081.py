@@ -1,1 +1,2 @@
-p=lambda i,k=3:-k*i or p([[y or s&t>7for y,s,t in zip(x,q,[0,*x])]for*x,q in zip(*i,[[0]*9,*zip(*i)])][::-1],k-1)
+import re
+p=lambda m,i=3:-i*m or[*zip(*eval(re.sub("0(?=, 8.{19}8)","1",str(p(m,i-1)[::-1]))))]

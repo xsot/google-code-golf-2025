@@ -1,1 +1,1 @@
-p=lambda i:[[y|2>>2*max(x)*max(n)for*n,y in zip(*i,x)]for x in i]
+p=lambda a:[[d^2^2*any(b)*any(c)for*c,d in zip(*a,b)]for b in a]

@@ -1,1 +1,1 @@
-p=lambda i,x=0,_=0:i and p(i[1:],x+1,k:=len(i[0])-1)+[[k-y==abs(k-x%(2*k))or 8for y in range(k+1)]]
+p=lambda m,x=1,d=-1:m and p(m[1:],x:=x+d,x%(l:=len(m[0])-1)and d or-d)+[[8]*x+[1]+[8]*(l-x)]

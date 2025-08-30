@@ -1,1 +1,1 @@
-p=lambda i,e=enumerate:sum(i[0]+i[-1])<1and[[(f:=[k for k,d in e(i)if max(d)>0])[0]<=a and max(i[f[0]+(a-f[0])%(2*f[1]-2*f[0])])]*len(x)for a,x in e(i)]or[*zip(*p([*zip(*i)]))]
+def p(g):h=len(g);w=len(g[0]);*q,=filter(any,g);i,*j=map(g.index,q);return h<w and[*zip(*p([*zip(*g)]))]or[w*[(y>=y%(a:=j[0]-i)<1)*max(q[y//a%2])]for y in range(-i,h-i)]

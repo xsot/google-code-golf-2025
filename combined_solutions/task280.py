@@ -1,2 +1,4 @@
-import re
-p=lambda i,k=7:-k*i or p(eval(re.sub(r"(((0, )*0), \[\2], \2)",r"*[2+(y==0)for y in[\1]]",re.sub("((0, )+)2, ((3, )*3)",r"*[[0]*len([\3])]*len([\1]),2,\3",str([*zip(*i[::-1])])))),k-1)
+def p(a,n=3,i=0):
+	for b in a:
+		for e in a[i-(d:=[0,*b][(c:=bytes(b).find(b'\0'))::-1].index(0)):(i:=i+1)+d]:e[c:]=[e[c]]*len(e[c:])
+	return-n*a or p([b[::-1]for*b,in zip(*a)],n-1)

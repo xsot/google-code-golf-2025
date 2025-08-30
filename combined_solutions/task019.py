@@ -1,1 +1,2 @@
-p=lambda i,k=4,e=enumerate:-k*i or p(k//4*[x*2for x in i*2]or[[y or(a>0<b)*i[-b][a-1]%8and 8for b,y in e(x)]for a,x in e(zip(*i[::-1]))],k-1)
+E=enumerate
+p=lambda g:[[v or 8*any([*[*g*2,[0]*9][y+d%5-1]*2,0][x+d%3-1]for d in b'-/29')for x,v in E(l*2)]for y,l in E(g*2)]

@@ -1,1 +1,1 @@
-p=lambda i,k=3:-k*i or[[x[b]or(3in x[:b])*max(x[b:])for b in range(10)]for x in zip(*p(i,k-1)[::-1])]
+p=lambda a,n=-23:n*a or[(d:=0)or[d:=b.pop()|d*(3in b[:-1])for _ in a]for*b,in zip(*p(a,n+1))]

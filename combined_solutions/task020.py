@@ -1,1 +1,2 @@
-p=lambda i,k=2,r=range(10):-k*i or p([[i[a][b]or((i*2)[(q:=[t for t in r if max(i[t])][0])+(u:=[t for t in r if[*map(max,*i)][t]][0])+4-b]*2)[u-q+a]for b in r]for a in r],k-1)
+r=range(10)
+def p(g):i=complex(*[[*map(any,G)].index(1)+2for*G,in(zip(*g),g)]);return[[max((abs(y*1j+x-i)==abs(I*1j+J-i))*g[y][x]for y in r for x in r)for J in r]for I in r]

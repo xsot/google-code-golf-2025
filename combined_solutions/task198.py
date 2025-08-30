@@ -1,1 +1,1 @@
-p=lambda i,k=59:-k*i or[[y*(y!=3)or(x[b-1]==x[b-2]not in[0,3,4]or x[b-(b>0)]==4)+3for b,y in enumerate(x)]for x in zip(*p(i,k-1)[::-1])]
+p=lambda a,n=-23:n*a or p([*map(lambda*b,d=1:[[c,4-(sum(25>>e&d for e in b)>9)][9>>c&(d:=c!=4)]for c in b][::-1],*a)],n+1)

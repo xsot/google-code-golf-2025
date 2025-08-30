@@ -1,1 +1,1 @@
-p=lambda i:i[-1:]+eval(str(i[:-1]).replace(*"82"))
+p=lambda a:[[e%3for e in r]for r in[a.pop()]+a]

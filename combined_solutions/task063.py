@@ -1,1 +1,1 @@
-p=lambda i,k=0:[[y or({*x[1:-1]}<={0,3})*3for y in x]for x in zip(*i*k or p(i,1))]
+p=lambda g:[[v or(any(c)*any(r[1:-1])<1)*3for _,*c,_,v in zip(*g,r)]for r in g]

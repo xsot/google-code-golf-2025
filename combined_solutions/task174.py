@@ -1,1 +1,1 @@
-p=lambda i,n=1:(l:=[[y[0]for y in zip(x,*i)if n in y]for x in i if n in x])*all(x==x[::-1]for x in l)or p(i,n+1)
+p=lambda g,c=1:(k:=(f:=lambda g:[r for*r,in zip(*g)if c in r])(f(g)))*(k==[x[::-1]for x in k])or p(g,c+1)

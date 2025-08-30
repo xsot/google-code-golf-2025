@@ -1,1 +1,1 @@
-p=lambda g:[[8>>A[y]+A[y+4]for y in[0,1,2]]for A in g]
+p=lambda a:[[8>>i+b.pop(0)for i in b[4:]]for b in a]

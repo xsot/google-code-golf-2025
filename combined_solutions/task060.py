@@ -1,1 +1,1 @@
-p=lambda i:[x[:1]*5+[any(x)*5]+x[-1:]*5for x in i]
+p=lambda g:[r[:1]*5+[5*(l>0)]+5*[l]for*r,l in g]

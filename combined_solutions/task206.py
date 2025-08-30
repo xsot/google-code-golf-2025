@@ -1,4 +1,4 @@
 def p(g):
- e=enumerate;(y,x),(Y,X)=[min((y,x)for y,r in e(g)for x,c in e(zip(*g))if{*r}&k and{*c}&k)for k in({5},{*b"	"})]
- for n in[0,1,2]:g[y+n-1][x-1:x+2]=g[Y+n][X:X+3]
+ r,c=[min(i for i,r in enumerate(k)if{*r}-{0,5})for k in(g,zip(*g))];I=sum(g,[]).index(5);W=len(g[0])
+ for i in 0,1,2:g[I//W-1+i][I%W-1:I%W+2]=g[r+i][c:c+3]
  return g

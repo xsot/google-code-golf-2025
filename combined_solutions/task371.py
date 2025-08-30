@@ -1,1 +1,4 @@
-p=lambda i,r=0,e=enumerate:[[r*(a*y,b*y)or y or(sum(abs(sum(u))for u in zip((-a*2,-b*2),*sum(p(i,1),[])))<3)*3for b,y in e(x)]for a,x in e(i)]
+def p(a):
+	b=sum(a,[]).index;c=b(1);d=b(1,c+1)+c>>1
+	for i in[l:=len(a[0]),~l,1,1,~l]:d+=i;a[d//l][d%l]=3
+	return a

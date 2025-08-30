@@ -1,1 +1,1 @@
-p=lambda i:min([[l[x%7:][:3]for l in i[x//7:][:3]]for x in range(49)],key=lambda t:sum(sum(t,[]))-99*all(min(t)))
+p=eval(f"lambda a:max([str(a).count('1'),a]{'for*a,in map(zip,a,a[1:],a[2:])'*2})[1]")

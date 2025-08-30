@@ -1,1 +1,1 @@
-p=lambda i,k=0:[x for x in zip(*i*k or p(i,1))if i!=(i:=x)]
+p=lambda a:a*-1*-1or[p(b)for b in a if a!=(a:=b)]

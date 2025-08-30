@@ -1,1 +1,1 @@
-p=lambda i:[x[:4]+s[::-1]+t[3::-1]for*s,x,t in zip(*i,i,i[::-1])]
+p=lambda a:[b[:4]+c[::-1]+a.pop()[3::-1]for*c,b in[*zip(*a,a)]]

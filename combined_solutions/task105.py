@@ -1,1 +1,2 @@
-p=lambda i,k=3,E=enumerate:-k*i or p([[y or(sum(y>0for y in x)-any([*map(max,*i)][:a])>2==any((m:=[*map(max,i)])[:b+1])+any(m[b:]))*2for b,y in E(x)]for a,x in E(zip(*i))][::-1],k-1)
+A=any
+p=lambda g,k=-3:k*g or p([[v or A([r*(m:=[*map(A,g)])[j],sum(map(bool,r))//4*m[j:]][A(m[:j])])*2for j,v in enumerate(r)]for r in zip(*g)][::-1],k+1)

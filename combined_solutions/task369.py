@@ -1,1 +1,1 @@
-p=lambda g:[g:=eval(str([r[::-1]for r in zip(*g)]).replace(*c.split("/")))for c in["/","0/3","3, 3/2, 2","3, 2/1, 1","1, 2/1, 1"]*8][-1]
+p=lambda m,i=91:-i*m or[*zip(*eval(str(p(m,i-1)[::-1]).replace("3220,,,,    331"[i%7%4::4],"2113,,,,211"[i%7%4::4])))]

@@ -1,1 +1,2 @@
-p=lambda i,r=range(10):[[i[a][b]or i[b][~a+sum([*map(max,*i)][7:])-sum(map(any,i[:3]))]*2for b in r]for a in r]
+R=range(10)
+p=lambda g:[[(g[i][j]^-g[~i+(C:=sum(map(max,*g,*zip(*g)))%2)][~j+C])%3for j in R]for i in R]

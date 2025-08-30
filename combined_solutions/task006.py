@@ -1,1 +1,1 @@
-p=lambda i:[[x[y]*x[y+4]*2for y in[0,1,2]]for x in i]
+p=lambda a:[[2*c*b.pop(0)for c in b[4:]]for b in a]

@@ -1,1 +1,3 @@
-p=lambda i,k=1919,e=[[]]:-k*i or p([[[k:=k-1][:y==8]or[]!=y!=0and{*y,*q,*s}or[]if k else-sorted({*map(len,sum(i,[]))}).index(len(y))%3for y,q,s in zip(x,e+x,e+[*w])]for*x,w in zip(*i,[e*9,*zip(*i)])][::-1],k-1)
+def p(g,*M):
+ for i in(A:=[i+i//10*20for i,v in enumerate(sum(g,[]))if v])*2:s={0};[s.add(y-i)for y in A*3for I in[*s]if abs(y-i-I)in[*b'\0']];M+=s,;g[i//30][i%10]=3-M[:len(A)].count(s)
+ return g

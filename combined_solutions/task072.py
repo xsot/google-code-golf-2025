@@ -1,1 +1,1 @@
-p=lambda i:[[-(y^t)%5for y,t in zip(*x)]for x in zip(i,i[7:])]
+p=lambda a:[[3*(c!=b.pop(0))for c in a.pop(0)]for b in a[7:]]

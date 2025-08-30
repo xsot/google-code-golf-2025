@@ -1,1 +1,1 @@
-p=lambda i:(z:=i[:(l:=len(i))//2])*([*i[0][l:]]+i==z*2)or[*zip(*p([*zip(*i)]))]
+p=lambda a:[a[:len(a)//2],c:=[b[:len(b)//2]for b in a]][a==[b*2for b in c]]

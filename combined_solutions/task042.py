@@ -1,1 +1,2 @@
-p=lambda i,k=3,r=range(10):-k*i or p([*zip(*[[i[a][b]or i[max(0,a-(h:=sum(i,i[0]).count(3)+8>>3)*2)][max(b-h,0)]*i[max(a-h,0)][max(b-h*2,0)]%8*8for b in r]for a in r][::-1])],k-1)
+Q=range(10)
+def p(g):C=sum(b'%r'%g)//38%4;return[[g[i][j]|any(all(((g+g[:1]*3)[i+y*s]+g[0])[j+(3-y)*S]for y in(1,2))for s in(-C,C)for S in(-C,C))*8for j in Q]for i in Q]

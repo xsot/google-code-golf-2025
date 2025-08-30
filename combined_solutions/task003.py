@@ -1,1 +1,1 @@
-p=lambda j:eval(str(j+j[(j[0]!=j[3])*2:][:3]).replace(*"12"))
+p=lambda g:[[v*2for v in l]for l in g+g[g[:2]!=g[4:]:][2:5]]

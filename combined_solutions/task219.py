@@ -1,5 +1,5 @@
-def p(i,n=0,k=0,t=2):
- f=len(r:=[x[k:]for x in i if(t:=~any(x)%3%-~t)*any(x)])
- for l in range(3,len(i)-f):
-  for x in range(f*all(sum(q:=[[0**a+b*(a!=1)for a,b in zip(s[n:],t)]for s,t in zip(i[l:],r)],[~-any(9in x[:2]for x in q),~-any(i[l-1])]))*(len(i[0])-n-k)):i[l+x%f][n+x//f]=(-q[x%f][x//f]&9)%9
- return k*i or p(i,-~n%3,n>1)
+Z=zip
+def p(a,h=0):
+	b=[*map(any,a)].index;d=b(0,c:=b(1));q=a[c:d];k=h//4;j=h%4>2;i=h%4%3;u,*r,v=a[k:k+d-c+2];*s,=Z(*r);l=-[*map(any,s[::-1]),1].index(1);s=s[:l];e=[*Z(*q)][j:l+j-i]==s[i:]!=s[:i]==s[i:i+i]!=u==v
+	for m,n in Z(q,r):n[l:]=[x+(e*y>x)for x,y in Z(n[l:],m[l+j-i:]+u)]
+	return h//52*a or p(a,h+1)

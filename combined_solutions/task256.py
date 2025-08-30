@@ -1,1 +1,1 @@
-p=lambda i,a=1:[((sum(t:=max(i))//2+(j:=i.index(t)+(a:=a-1)))*[2+(0<j)-(0>j)]+[0]*99)[:len(x)]for x in i]
+def p(g):s=sum(m:=max(g))//2;i=s-~g.index(m);return[[2-((i:=i+i%~i)<s)+(i>s)]*i+r[i:]for r in g]

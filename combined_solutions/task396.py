@@ -1,8 +1,7 @@
-def p(g):
- e=enumerate;C=[]
- for c in[[[c for c in r[:x+1]]for r in g[:y+1]]for y,r in e(g)for x,c in e(r)if c==r[x-1]==g[y-1][x]>0]:
-  for _ in'--':
-   c=[*zip(*c)]
-   while any(c[-1][-1]^r[-1]for r in c):c=c[1:]
-  C+=[[sum(a:=[c for r in c[1:-1]for c in r[1:-1]]),[[c and max([*a,0])for c in r]for r in c]]]
- return max(C)[1]
+def p(m):
+ d,b,*z=sorted(set(a:=sum(m,[])),key=a.count);N,M=len(m),len(m[0])
+ for i in range(N*M):
+  Y=y=i%N;X=x=i//N
+  while(m[y]*2)[X]==b<M>X:X+=1
+  while Y<N!=(m[Y]*2)[x]==b:Y+=1;z=max(z,[sum(sum(a:=[[d*(e>0)for e in l[x:X]]for l in m[y:Y]],[]))//d,a])
+ return z[1]

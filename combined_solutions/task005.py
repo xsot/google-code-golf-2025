@@ -1,11 +1,3 @@
-def p(g,e=enumerate,d=[(r//3-1,r%3-1)for r in range(9)]):
- for a,r in e(g):
-  for b,c in e(r[:-1]):
-   if r[b-1]==r[b+1]==g[a-1][b]==g[a+1][b]>0 or g[a-1][b-1]==g[a+1][b-1]==g[a-1][b+1]==g[a+1][b+1]>0:
-    for h,w in d:
-     Y,X=a+h*4,b+w*4
-     for y,r in d:
-      for y,r in d:
-       if len(g)>y+Y>-1<r+X<len(g[0]):g[y+Y][r+X]=g[a+y][b+r]and max(g[y+a+h*4][r+b+w*4]for y,r in d)
-      Y+=h*4;X+=w*4
-    return g
+W=range(21)
+t=-4,0,4
+def p(g):R=max([{(i,j)for i in W[I:I+3]for j in W[J:J+3]if g[i][j]}for I in W for J in W],key=len);return[[max((c==(y-k*d,x-k*D))*g[i+d][j+D]for i,j in R for d in t for D in t for k in W[1:]for c in R)for x in W]for y in W]

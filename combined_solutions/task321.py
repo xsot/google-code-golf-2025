@@ -1,1 +1,1 @@
-p=lambda i:[[max(x[r::5],key=bool)for r in range(4)]for x in i]
+p=lambda m:[[r.pop(0)or r[4]or r[9]for _ in m]for r in m]

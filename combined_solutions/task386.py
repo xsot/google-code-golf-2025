@@ -1,1 +1,1 @@
-p=lambda i:[[0**sum(x[y::4])*3for y in[0,1,2]]for x in i]
+p=lambda a:[[3>>e+r.pop(0)for e in r[4:]]for r in a]

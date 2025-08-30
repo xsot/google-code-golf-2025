@@ -1,1 +1,1 @@
-p=lambda i,k=99:-k*i or[[k==60and y-y*3%s&9or(8<s-y^s)*s or y for y,s in zip(x,[k//61-1,*x])]for x in zip(*p(i,k-1)[::-1])]
+p=lambda g,f=126:~f*g or p([*map(lambda*r,a=0:[[b+7*(a>1==b),b%(9+a),(a:=b)or 9][f>>6]for b in r],*g[::-1])],f-1)

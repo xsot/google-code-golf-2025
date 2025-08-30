@@ -1,1 +1,1 @@
-p=lambda i:[[sum({*x,*y})%13for y in zip(*i)]for x in i]
+p=lambda g:[[sum({*r+c})%13for*c,in zip(*g)]for r in g]

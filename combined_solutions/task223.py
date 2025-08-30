@@ -1,1 +1,1 @@
-p=lambda i:[((x*3)[:8]*2+x*3)[::3]for x in i for _ in i]
+p=lambda a:eval("[[a "+"for a in a for _ in%s]"%a*2)

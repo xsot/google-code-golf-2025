@@ -1,1 +1,2 @@
-p=lambda i,k=3,e=enumerate:-k*i or[[y or(sum(x)<9)*(i+[[0]]*9)[a+i[-1][b:].count(2)-i[0][b:].count(2)][-1]&8for b,y in e(x)]for a,x in e(zip(*p([*zip(*i)][::-1],k-1)[::-1]))]
+f=lambda b,*a:[b:=(*b[d>0:-1],*{0,d})for*_,d in[b,*a]]
+p=lambda a,n=-3:n*a or p([b:=(c:=[*zip(*a)])[::-1],max(f(*c)[::-1],f(*b))][2in a[-1]],n+1)

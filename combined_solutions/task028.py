@@ -1,1 +1,1 @@
-p=lambda i,r=range(10):[[(y%9*(x%7&5)<1)*sum(i[x-x%5+2])for y in r]for x in r]
+p=lambda g:[((j%11*[max(g[j%8])]+[0]*8)*2)[:10]for j in b'b"b""ooWoW']

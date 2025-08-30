@@ -1,1 +1,1 @@
-p=lambda g:[[c|r[-1]+x&2for x,c in zip(g[0],r)]for r in g]
+p=lambda a:[[c*b[-1]//9|b.pop(0)for c in a[0]]for*b,in a]

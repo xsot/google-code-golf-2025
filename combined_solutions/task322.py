@@ -1,1 +1,1 @@
-p=lambda i:[[*map(sum,zip(*i[:x]))]for x in[1,2,3]]
+p=lambda a,b=[0]*9:[b:=[*map(max,b,r)]for r in a]

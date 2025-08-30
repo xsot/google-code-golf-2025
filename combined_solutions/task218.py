@@ -1,1 +1,1 @@
-p=lambda i,k=0:[x for x in zip(*k*i or p(i,1))if(i!=(i:=x))*any(x)]
+p=lambda a,*n:[*{b:0for b in zip(*n or p(a,*a))if any(b)}]

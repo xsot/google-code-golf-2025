@@ -1,1 +1,1 @@
-p=lambda i,a=0:i[0][a*2:]and[i[0][:1]*a+[*i[0],0][:~a]]+p(i,a+1)
+p=lambda a:[b:=a[0]]+[b:=b[:1]+b[:-1]for _ in b[2::2]]

@@ -1,1 +1,2 @@
-p=lambda i,r=range:max([[[i[t][s]or(x<=t<x+a>0<y+b>s>=y)*6for s in r(len(i[0]))]for t in r(len(i))]for a in r(2,9)for x in r(len(i)-a+1)for b in r(9)for y in r(30)if sum(sum(s[y:y+b])for s in i[x:x+a])<1],key=lambda s:sum(sum(s,[])))
+e=enumerate
+p=lambda a:min(['7'in str(g:=[[s|6*(i<=m<=j)*(k<=n<=l)for n,s in e(r)]for m,r in e(a)]),-str(g).count('6'),g]for i,b in e(a)for j,_ in e(a)for k,_ in e(b)for l,_ in e(b)if j-i>0<l-k)[2]

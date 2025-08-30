@@ -1,1 +1,1 @@
-p=lambda i:[[y and b%2*4or y for b,y in enumerate(x)]for x in i]
+p=lambda a:[(i:=1)*[[c,c and 4][i:=1-i]for c in b]for b in a]

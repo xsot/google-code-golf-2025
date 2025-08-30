@@ -1,1 +1,1 @@
-import re;p=lambda i,k=3:-k*i or p(eval(re.sub(f"3(.{ {len(i)*3+1}})0(.*4)",r"0\1 3\2",str([*zip(*i[::-1])]))),k-1)
+p=lambda a,n=-3,i=0:n*a or 3in a[i]and p([*zip(a.pop(('4'in'%s'%a[:i])*i-1),*a[::-1])],n+1)or p(a,n,i+1)

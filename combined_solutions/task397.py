@@ -1,3 +1,1 @@
-def p(g,Q=80):
- for C in range(((D:={*g[A:=Q%9][(B:=Q//9):B+2],*g[A+1][B:B+2]})-{0,3}==D)*len(D)):g[A+2+C][B:B+2]=[3,3]
- return-~-Q*g or p(g,Q-1)
+p=lambda m,k=0:exec('r=k//9;c=k%9;exec("m[r+2][c:c+2]=3,3;r+=1;"*len(a:={*m[r][c:c+2]+m[r+1][c:c+2]})*(not{0,3}&a));k+=1;'*81)or m

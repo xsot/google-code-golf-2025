@@ -1,1 +1,1 @@
-p=lambda i:[[i[x][0],i[1-x][0]]*3for x in[0,1]]
+p=lambda a:[b:=[*map(max,a)]*3,b[::-1]]

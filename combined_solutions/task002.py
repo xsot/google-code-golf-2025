@@ -1,1 +1,1 @@
-p=lambda i,k=79:-k*i or p([[y%(4<<s)or k//79*4for y,s in zip(x,[0,*x])]for x in zip(*i[::-1])],k-1)
+p=lambda a,n=-62:[*map(lambda*b,d=0:[(c%2|d//3)*(d:=c+(n>c)*4)for c in b][::-1],*n*a or p(a,n+1))]

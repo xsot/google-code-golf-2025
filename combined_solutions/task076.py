@@ -1,9 +1,6 @@
-def p(g,e=enumerate):
- G=g
- for _ in' '*96:G=[[*r][::-1]for r in zip(*G[[0]*len(G[0])in G[:min(y for y,r in e(G)if 3in r)]or{*sum(G[:5],[])}<={0,2,4}:])]
- for o in[0,1,1]*8:
-  G=([[*r]for r in zip(*G[::-1])],G[::-1])[o];w=len(G[0])
-  for y,r in e(g[:1-len(G)]):
-   for x,c in e(r[:1-w]):
-    for Y,R in e(G*all(C==g[Y+y][X+x]or C%2for Y,R in e(G)for X,C in e(R))):g[Y+y][x:x+w]=R
+E=enumerate
+def p(g):
+ G={j+i*1j:v^2for i,r in E(g)for j,v in E(r)if v};[abs(I-J)<2!=s.add(J)for P in G if G[P]%2if[s:={P}]for J in[*G]*6for I in[*s]]
+ for a in range(8):
+  for I in G:i=min(r:={(x-a//4*x.real*2)*1j**a:G[x]for x in s},key=r.get)-I;g=g*any(13%-~r[y]^G.get(y-i,1)for y in r)or[[r.get(I*1j+j+i,v^2)^2for j,v in E(R)]for I,R in E(g)]
  return g

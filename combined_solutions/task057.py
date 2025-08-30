@@ -1,1 +1,1 @@
-p=lambda i,k=0:[x for x in zip(*i*k or p(i,1)*2)if any(x)]
+p=lambda a,*n:[*filter(any,zip(*n or p(a,*a)*2))]

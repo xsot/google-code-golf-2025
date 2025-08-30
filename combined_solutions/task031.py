@@ -1,1 +1,1 @@
-p=lambda i,k=0:[*filter(sum,zip(*k*i or p(i,1)))]
+p=lambda a,*n:[*filter(any,zip(*n or p(a,*a)))]

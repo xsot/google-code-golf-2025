@@ -1,1 +1,2 @@
-p=lambda i,u=[[0]*99]:[[k*(sum(t)>k)for*t,k in zip(*s,[0]+h,h[1:]+[0],h)]for*s,h in zip(u+i,i[1:]+u,i)]
+import re
+p=lambda m,*a:eval(re.sub(r"(?<=[0 ,]..)\d(?=..[0 ])",'0',f" {[*zip(*a or p(m,*m))]} "))

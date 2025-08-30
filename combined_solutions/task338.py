@@ -1,1 +1,2 @@
-p=lambda i,k=79:-k*i or[[[0**k*3+s//2*y,(k<79)*2][y==2]for y,s in zip(x,[0,*x])]for x in zip(*p(i,k-1)[::-1])]
+import re
+p=lambda a:[[c*3%6for c in re.sub(b'\0(?=\0*(\0+(\0*|+))*\0*$)',b'1',bytes(b))]for b in a]

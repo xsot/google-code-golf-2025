@@ -1,1 +1,1 @@
-p=lambda i,u=[[0]*9]:[[y-(y>sum(h))for*h,y in zip(*l,[0]+x,x[1:]+[0],x)]for*l,x in zip(u+i,i[1:]+u,i)]
+p=lambda a,n=7:-n*a or[*map(lambda*b,d=0:[2*(d*(d:=c)>0)or c-(c>n)for c in b][::-1],*p(a,n-1))]

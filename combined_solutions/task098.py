@@ -1,1 +1,2 @@
-p=lambda i,e=enumerate:[[y-min([*x[b-1:b+2],i[a-1][b],y and i[a+1][b]])for b,y in e(x)]for a,x in e(i)]
+E=enumerate
+p=lambda g:[[v*(0in[*r[j-1:j+2],*[*zip(*g)][j][i-1:i+2]])for j,v in E(r)]for i,r in E(g)]

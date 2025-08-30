@@ -1,1 +1,1 @@
-p=lambda i:[k:=[8]*len(i[0]),*[[8,*i[0][2:],8]]*(len(i)-2),k]
+p=lambda a:[*map(f:=lambda*b:[8,*b[2:],8],*map(f,*a))]

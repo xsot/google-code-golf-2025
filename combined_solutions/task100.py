@@ -1,1 +1,1 @@
-p=lambda i:[[max(sum(i,[]),key=lambda n:sum(n>0for x in i for y in zip(*i)if{*x}&{*y}&{n}))]*2]*2
+p=lambda a:[[max(range(1,10),key=[sum({*b}&{*c})for c in zip(*a)for b in a].count)]*2]*2

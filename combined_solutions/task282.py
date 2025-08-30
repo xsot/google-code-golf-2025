@@ -1,1 +1,2 @@
-p=lambda i,k=3,r=range(9):-k*i or p([[-6**0**k%-~(i[~b][a]+i[-b][a]%2*6+i[-b][a-1]%2*10)for b in r]for a in r],k-1)
+z=0,
+p=lambda a:[*map(f:=lambda*b:[c|e|d>>2for c,d,e in zip(z+b,b,b[1:]+z)],*map(f,*a))]

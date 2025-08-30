@@ -1,1 +1,2 @@
-p=lambda i,k=3,e=enumerate:-k*i or[[y+(i[a-2][b-1]&i[a-1][b-2]and i[a-1][b-1]+i[a-2][b-2]or i[a][b-3]&i[a][b-1])for b,y in e(x)]for a,x in e(zip(*(p([*zip(*i)][::-1],k-1)[::-1])))]
+E=enumerate
+p=lambda g:[[v or max({*zip(b'\0',[v]+sorted(f:=sum(g,[]),key=f.count))}&{((I//12-i)**2+(I%12-j)**2,V)for I,V in E(f)})[1]for j,v in E(r)]for i,r in E(g)]

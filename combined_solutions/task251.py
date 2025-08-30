@@ -1,1 +1,1 @@
-p=lambda i,k=39:-k*i or p([[y&2or-b*y<k//39for y,b in zip(x,[0,*x])]for x in zip(*i[::-1])],k-1)
+p=lambda a,n=-42:[*map(lambda*b,d=0:[max(n,c*(d+(d:=c)>1))for c in b][::-1],*n*a or p(a,n+1))]

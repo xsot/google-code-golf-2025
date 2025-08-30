@@ -1,1 +1,1 @@
-p=lambda i:[[2-y-s&2for y,s in zip(x,i.pop(3))]for x in i]
+p=lambda a:[[2>>c+c+b.pop(0)for c in a.pop(3)]for b in a]

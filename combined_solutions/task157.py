@@ -1,16 +1,9 @@
+t=b'\n'
 def p(g):
- E=enumerate;z=[]
- for r,R in E(g):
-  for c,e in E(R):
-   x={(r,c)}
-   for s in[*z]*(e>4):
-    if{(r-1,c),(r,c-1)}&s:z.remove(s);x|=s
-   z+=[x]*(e>4)
- for r,R in E(g[:3]):
-  for c,e in E(R):
-   for s in[*z]:
-    Y,X=min(s);G=eval(str(g))
-    if all(w-X+c<15>g[h-Y+r][w-X+c]<1for h,w in s):
-     for h,w in s:G[h-Y+r][w-X+c]=1;G[h][w]=0
-     if("2, 0, 1"in str([*zip(*G[:3])]))+("1, 0"in str(G[:3]+G[:3][::-1]))<1:z.remove(s);g=G
- return g
+ def Q(o,p):
+  c=C[o:];(3,)<=c!=Q(o+1,p)
+  for A in S:
+   h=len(A);A in p or h==sum(x-y-4%y<=min(map(int.__sub__,A,c))for x,y in zip(A,c))!=Q(o+h,p|{A:o})
+   for I in 6,7,8,9:
+    for J in range(o//15*h):g[I-A[0]+C[p[A]]][J+p[A]]|=g[I][m:=J+K.find(t+A+t)]>0;g[I][m]=0
+ K,C=zip(*[([*c,5].index(5),c.count(2))for c in zip(*g)]);K=t+bytes(K)+t;S={*K.split(t)};Q(0,{});return g
