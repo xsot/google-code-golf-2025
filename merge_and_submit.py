@@ -155,12 +155,12 @@ merges = []
 total_save = 0
 sys.path.insert(0, os.path.abspath('./'))
 
-def test_task(task_name):
+def test_task(task_name, dir):
  test_filename = f'inputs/{task_name}.json'
  with open(test_filename) as test_file:
   test_data = json.load(test_file)
   try:
-   s = importlib.import_module(f'{submission_dir}.{task_name}')
+   s = importlib.import_module(f'{dir}.{task_name}')
    importlib.reload(s)
   except:
    return
@@ -195,7 +195,7 @@ for diff in repo.index.diff(None):
  if len(new_src) > len(old_src):
   too_long += [task_name]
   continue
- if not test_task(task_name):
+ if not test_task(task_name, submission_dir):
   failing += [task_name]
   continue
  passing += [task_name]
@@ -293,21 +293,23 @@ if promptYN("Calculate score with zlib compression?", default_compress):
   with open(path_in, "rb") as task_in:
    task_src = task_in.read().replace(b"\r\n", b"\n")
 
-  task_src = sub_vars(task_src)
-
-  zipped_src = zip_src(task_src, -9)
+  task_src_2 = sub_vars(task_src)
+  zipped_src = zip_src(task_src_2, -9)
   if len(zipped_src) < len(task_src):
    for pre in [b"",b"\n", b"\r",b"\f",b"\n\f",b"\r\f"] + [bytes([c,ne]) for c in b"\t\n\f\r 0123456789#" for ne in b"\n\r"]:
     for post in [b"",b" ",b"\t",b"\n",b"\r",b"\f",b"#",b";",b"\t ",b" \t",b"\np"] + [b"#"+bytes([n]) for n in range(32,127)]:
      if len(pre+post) > 3: continue
      for window in (-9, -15):
-      z_src = zip_src(pre+task_src+post, window)
+      z_src = zip_src(pre+task_src_2+post, window)
       if len(z_src)<len(zipped_src):zipped_src = z_src
 
-  improvement = len(task_src) - len(zipped_src)
+   improvement = len(task_src) - len(zipped_src)
 
-  if improvement > 0:
-   task_src = zipped_src
+   if improvement > 0:
+    with open(f"{temp_dir}/{task_name}", "wb") as file:
+     file.write(zipped_src)
+    if test_task(task_name[:-3], temp_dir):
+     task_src = zipped_src
 
   score -= len(task_src)
   with open(f"{temp_dir}/{task_name}", "wb") as file:
