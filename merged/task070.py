@@ -1,0 +1,2 @@
+# combined (114 vs 78 bytes for gold)
+p=lambda i:[[y%8*(8in{*x}&{*(u:=[*zip(*i)])[b],*{*u[b-1]}&{*u[-~b%17]}})*3or y for b,y in enumerate(x)]for x in i]
