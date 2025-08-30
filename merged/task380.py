@@ -1,7 +1,7 @@
 # att (27 bytes, gold)
 p=lambda a:[*zip(*a)][::-1]
 
-### combined (tied, 27 bytes)
+### joking+mwi (tied, 27 bytes)
 p=lambda i:[*zip(*i)][::-1]
 
 ### ovs (tied, 27 bytes)

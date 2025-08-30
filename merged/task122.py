@@ -1,4 +1,4 @@
-# combined (94 vs 88 bytes for gold)
+# joking+mwi (94 vs 88 bytes for gold)
 p=lambda i:sum(map(max,i))<8and[[x[0]%2*3,x[1]%2*3,*x[:-2]]for x in i]or[*zip(*p([*zip(*i)]))]
 
 ### ovs (102 bytes)

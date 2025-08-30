@@ -1,4 +1,4 @@
-# combined (359 vs 251 bytes for gold)
+# joking+mwi (267 (359 unzipped) vs 251 bytes for gold)
 def p(g):
  B=enumerate;A=[[c[0]for c in zip(r,*g)if 1in c]for r in g if 1in r]
  for E in[0,1]*4:

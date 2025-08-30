@@ -1,4 +1,4 @@
-# combined (128 vs 91 bytes for gold)
+# joking+mwi (128 vs 91 bytes for gold)
 p=lambda i,n=1:all(len({*x[::n],0})<3for x in i)and[[max(x[b%n::n])for b,y in enumerate(x)if y<1]for x in i if 0in x]or p(i,n+1)
 
 ### xsot (249 bytes)

@@ -1,2 +1,2 @@
-# combined (155 vs 111 bytes for gold)
+# joking+mwi (155 vs 111 bytes for gold)
 p=lambda i,u=[[0]*99]:[[[max(t)*(2*f"{max(t)}, "in str(t*2)),k][sum(i,i).count(k)>30]for*t,k in zip(m,[0]+l,n,l[1:]+[0],l)]for l,m,n in zip(i,u+i,i[1:]+u)]

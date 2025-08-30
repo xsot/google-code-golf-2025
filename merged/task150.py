@@ -1,4 +1,4 @@
-# combined (30 bytes, gold)
+# joking+mwi (30 bytes, gold)
 p=lambda i:[x[::-1]for x in i]
 
 ### ovs (tied, 30 bytes)

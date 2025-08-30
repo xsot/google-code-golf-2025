@@ -1,4 +1,4 @@
-# combined (52 vs 46 bytes for gold)
+# joking+mwi (52 vs 46 bytes for gold)
 p=lambda i:[[i[-y>>8][x==i[6]]for y in x]for x in i]
 
 ### att (57 bytes)

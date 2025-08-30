@@ -1,4 +1,4 @@
-# combined (343 vs 306 bytes for gold)
+# joking+mwi (291 (343 unzipped) bytes, gold)
 def p(g,e=enumerate):
  s=sum(g,[]);k,K,b,B=sorted({*s},key=s.count)
  if any({*r}in({k,B},{K,b})for r in[*zip(*g)]+g):b,B=B,b

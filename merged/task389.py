@@ -1,7 +1,7 @@
 # att (57 bytes, gold)
 p=lambda a:[[sum({*sum(a,r)}-{e,5})for e in r]for r in a]
 
-### combined (tied, 57 bytes)
+### joking+mwi (tied, 57 bytes)
 p=lambda a:[[sum({*sum(a,r)}-{e,5})for e in r]for r in a]
 
 ### xsot (62 bytes)

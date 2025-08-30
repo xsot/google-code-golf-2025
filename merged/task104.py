@@ -1,4 +1,4 @@
-# combined (94 vs 84 bytes for gold)
+# joking+mwi (94 vs 84 bytes for gold)
 p=lambda g,R=range(9):[[3*(B//4==A//4<2)for B in R][::~-g[1][0]//2]for A in R][::~-g[0][1]//2]
 
 ### ovs (116 bytes)

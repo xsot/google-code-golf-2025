@@ -1,7 +1,7 @@
 # att (65 vs 64 bytes for gold)
 p=lambda a,*n:[b for*b,in zip(*n or p(a,*a))for _ in'  'if 4in b]
 
-### combined (tied, 65 bytes)
+### joking+mwi (tied, 65 bytes)
 p=lambda a,*n:[b for*b,in zip(*n or p(a,*a))for _ in'  'if 4in b]
 
 ### xsot (160 bytes)

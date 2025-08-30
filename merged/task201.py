@@ -1,4 +1,4 @@
-# combined (306 vs 217 bytes for gold)
+# joking+mwi (255 (306 unzipped) vs 217 bytes for gold)
 def p(g):
  B=enumerate;H,I=divmod(sum(p:=g,[]).index(4),len(g))
  for _ in'_'*4:x=();p=[[*A][::-1]for A in zip(*p)if 4in(x:=x+A)]

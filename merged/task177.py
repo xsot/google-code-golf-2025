@@ -1,4 +1,4 @@
-# combined (55 vs 53 bytes for gold)
+# joking+mwi (55 vs 53 bytes for gold)
 p=lambda g:[[*filter(abs,r)][::-1]for r in g if any(r)]
 
 ### ovs (tied, 55 bytes)

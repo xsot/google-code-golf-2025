@@ -1,4 +1,4 @@
-# combined (391 vs 296 bytes for gold)
+# joking+mwi (342 (391 unzipped) vs 296 bytes for gold)
 t=b'\n'
 def p(g):
  def Q(o,p):
@@ -9,7 +9,7 @@ def p(g):
     for J in range(o//15*h):g[I-A[0]+C[p[A]]][J+p[A]]|=g[I][m:=J+K.find(t+A+t)]>0;g[I][m]=0
  K,C=zip(*[([*c,5].index(5),c.count(2))for c in zip(*g)]);K=t+bytes(K)+t;S={*K.split(t)};Q(0,{});return g
 
-### ovs (tied, 391 bytes)
+### ovs (391 bytes)
 t=b'\n'
 def p(g):
  def Q(o,p):

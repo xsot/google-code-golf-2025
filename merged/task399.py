@@ -6,7 +6,7 @@ p=lambda m:[[1,0,(c:=sum(sum(m,[]))/8)>1],[0,c>2,0],[c>3,0,c>4]]
 ### ovs (65 bytes)
 p=lambda g:[(w:=sum(sum(g,[]))//8*[1,0]+[0]*9)[:3],w[3:6],w[6:9]]
 
-### combined (67 bytes)
+### joking+mwi (67 bytes)
 p=lambda i:[[(k:=sum(sum(i,[]))//8)>0,0,k>1],[0,k>2,0],[k>3,0,k>4]]
 
 ### att (72 bytes)

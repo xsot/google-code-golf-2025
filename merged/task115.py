@@ -2,7 +2,7 @@
 s={}.fromkeys
 p=lambda a:[*s(zip(*s(zip(*map(s,a)))))]
 
-### combined (tied, 54 bytes)
+### joking+mwi (tied, 54 bytes)
 s={}.fromkeys
 p=lambda a:[*s(zip(*s(zip(*map(s,a)))))]
 

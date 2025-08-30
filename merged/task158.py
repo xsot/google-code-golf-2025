@@ -1,4 +1,4 @@
-# combined (441 vs 306 bytes for gold)
+# joking+mwi (322 (441 unzipped) vs 306 bytes for gold)
 def p(g):
  o=g[0][-1];e=enumerate;_,t=max((len({*sum(a:=[R[x:x+3]for R in g[y:y+3]],[])}),a)for y,r in e(g)for x,c in e(r))
  for s in[1,2,3]:

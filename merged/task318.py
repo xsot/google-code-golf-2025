@@ -1,4 +1,4 @@
-# combined (60 vs 54 bytes for gold)
+# joking+mwi (60 vs 54 bytes for gold)
 p=lambda i:[[any(y)*3for y in zip(*x)]for x in zip(i,i[5:])]
 
 ### att (61 bytes)

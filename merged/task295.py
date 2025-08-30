@@ -1,7 +1,7 @@
 # att (54 bytes, gold)
 p=lambda a:[b:=a[0]]+[b:=b[:1]+b[:-1]for _ in b[2::2]]
 
-### combined (tied, 54 bytes)
+### joking+mwi (tied, 54 bytes)
 p=lambda a:[b:=a[0]]+[b:=b[:1]+b[:-1]for _ in b[2::2]]
 
 ### xsot (59 bytes)

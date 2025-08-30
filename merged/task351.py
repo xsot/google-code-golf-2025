@@ -1,4 +1,4 @@
-# combined (68 bytes, gold)
+# joking+mwi (68 bytes, gold)
 p=lambda i:[s[~x.index(3)::-1][:5]for x,s in zip(i,i[::-1])if 3in x]
 
 ### ovs (70 bytes)

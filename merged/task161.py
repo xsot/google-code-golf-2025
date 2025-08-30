@@ -1,2 +1,2 @@
-# combined (109 vs 82 bytes for gold)
+# joking+mwi (109 vs 82 bytes for gold)
 p=lambda i:[[sum(({x[0]}&{x[-1]}|{s[0]}&{s[-1]})&{min(k:=sum(i,[]),key=k.count)})for s in zip(*i)]for x in i]

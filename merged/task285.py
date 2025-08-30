@@ -1,4 +1,4 @@
-# combined (400 vs 306 bytes for gold)
+# joking+mwi (317 (400 unzipped) vs 306 bytes for gold)
 def p(g,k=7):
  I=[]
  for A,r in enumerate(g):

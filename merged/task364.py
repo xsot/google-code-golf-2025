@@ -1,4 +1,4 @@
-# combined (163 vs 166 bytes for gold)
+# joking+mwi (163 bytes, gold)
 p=lambda i,k=39:-k*i or p([[y and(u>0<t)*2**(k%4+2)|y|u if k else y.bit_count()*5%14%9for y,t,u in zip(x,[0,*x],s)]for*x,s in zip(*i,[[0]*99,*zip(*i)])][::-1],k-1)
 
 ### xsot (315 bytes)

@@ -12,7 +12,7 @@ players = [
     ('xsot', 'xsot/'),
     ('ovs', 'ovs/'),
     ('att', 'att/'),
-    ('combined', 'combined_solutions/')
+    ('joking+mwi', 'combined_solutions/')
 ]
 
 # Output directory
@@ -20,6 +20,81 @@ output_dir = 'merged/'
 
 submission_dir = "combined_solutions"
 
+import git, json, importlib, zlib, zipfile, os, shutil, random, sys, os, re
+import warnings
+
+def promptYN(prompt, default = ""):
+ response = default or input(prompt+" ")[0].upper()
+ while response not in "YN":
+  response = input("Improper input, try Y or N")[0].upper()
+ return response == "Y"
+
+def compress(task_src):
+ task_src_2 = sub_vars(task_src)
+ zipped_src = zip_src(task_src_2, -9)
+
+ if len(zipped_src) < len(task_src):
+  for pre in [b"",b"\n", b"\r",b"\f",b"\n\f",b"\r\f"] + [bytes([c,ne]) for c in b"\t\n\f\r 0123456789#" for ne in b"\n\r"]:
+   for post in [b"",b" ",b"\t",b"\n",b"\r",b"\f",b"#",b";",b"\t ",b" \t",b"\np"] + [b"#"+bytes([n]) for n in range(32,127)]:
+    if len(pre+post) > 3: continue
+    for window in (-9, -15):
+     z_src = zip_src(pre+task_src_2+post, window)
+     if len(z_src)<len(zipped_src):zipped_src = z_src
+
+ return min(zipped_src, task_src, key=len)
+
+def zip_src(src, window):
+ compression_level = 9 # Max Compression
+
+ # Save on import re
+ header = b"#coding:L1\nimport zlib"
+ if src[:10]==b"import re\n":
+  header+=b",re"
+  src=src[10:]
+ # We prefer that compressed source not end in a quotation mark
+ while (compressed := zlib.compress(src, compression_level, window))[-1] == ord('"'): src += b"#"
+
+ def sanitize(b_in):
+  """Clean up problematic bytes in compressed b-string"""
+  b_out = bytearray()
+  for ch,ch1 in zip(b_in,b_in[1:]+b"'"):
+   if   ch==0  : b_out+=b"\\x00" if ch1 in b"01234567" else b"\\0"
+   elif ch==13 : b_out+=b"\\r"
+   elif ch==92 and ch1 in b"\\\n\"\'01234567NUabfnrtvxu": b_out+=b"\\\\"
+   else:         b_out.append(ch)
+  return b_out
+
+ compressed = sanitize(compressed)
+
+ delim = b'"""'
+
+ newlines = compressed.count(ord("\n"))
+ single = compressed.count(ord("'")) + newlines
+ double = compressed.count(ord('"')) + newlines
+ if 4 > single < double:
+  delim = b"'"
+  compressed = compressed.replace(b"'", b"\\'").replace(b"\n", b"\\n")
+ elif 4 > double < single:
+  delim = b'"'
+  compressed = compressed.replace(b'"', b'\\"').replace(b"\n", b"\\n")
+
+ return header+b"\nexec(zlib.decompress(bytes(" + \
+  delim + compressed + delim + \
+  b',"L1")'+(b',%d'%window if window<15 else b'')+b'))'
+
+def sub_vars(src):
+ # all letters except lowercase p
+ var_names = b"abcdefghijklmnoqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+ var_regex = br"(?<!\\)\b[%b]\b(?!['\"])" % var_names
+
+ vars_prev = sorted(set(re.findall(var_regex,src)))
+ varless = re.sub(var_regex,b"_", src)
+ rest = set(re.findall(br"[%b]" % var_names, varless))
+
+ # TODO: Optimize sorting method, could probably save 10-30 bytes
+ trans = dict(zip(vars_prev,sorted(sorted(rest), key=varless.count)[::-1] + sorted(set(bytes([v]) for v in var_names) - rest)))
+
+ return re.sub(var_regex, lambda c:trans[c.group()], src)
 
 #################
 # STEP 1: merge #
@@ -29,7 +104,7 @@ import os
 import shutil
 
 
-def comp(path):
+def preprocess(path):
     new_lines = []
     for line in open(path):
         if "nomerge" in line:
@@ -61,6 +136,9 @@ except:
 task_ids = [s.strip() for s in open("task_ids.txt")]
 
 single_file_view = []
+scores = []
+
+do_compress = promptYN("Calculate score with zlib compression?", default_compress)
 
 for i in range(1, 401):
     fname = f"task{i:03}.py"
@@ -71,18 +149,20 @@ for i in range(1, 401):
     for player_name, player_dir in players:
         path = os.path.join(player_dir, fname)
         if os.path.exists(path):
-            code = comp(path)
+            code = preprocess(path)
             if not code:
                 continue
-            score = len(code.encode('utf-8'))
-            solutions.append((score, player_name, path, code))
+            zipped_code = compress(code.encode()) if do_compress else ""
+            zipped_score = len(zipped_code)
+            score = len(code)
+            solutions.append((zipped_score, score, player_name, path, zipped_code, code))
 
     # Skip if no solutions found
     if not solutions:
-        continue
+        scores.append(99999)
 
-    # Sort by score (shortest first), then by player name for tie-breaking
-    solutions.sort(key=lambda x: (x[0], x[1]))
+    # Sort by zipped score (shortest first), score, then by player name for tie-breaking
+    solutions.sort(key=lambda x: (x[0], x[1], x[2]))
 
     output_path = os.path.join(output_dir, fname)
 
@@ -90,19 +170,22 @@ for i in range(1, 401):
     lines = []
 
     # Add the best solution first
-    best_score, best_player, best_path, code = solutions[0]
+    zipped_score, score, best_player, best_path, _, code = solutions[0]
     with open(best_path) as f:
-        if best_score == gold_score[i-1]:
-            score_string = f"{best_score} bytes, gold"
+        z = f" ({score} unzipped)" * (zipped_score != score)
+        if zipped_score == gold_score[i-1]:
+            score_string = f"{zipped_score}{z} bytes, gold"
         else:
-            score_string = f"{best_score} vs {gold_score[i-1]} bytes for gold"
-        # append the raw source file (it will be cleaned up again by pack.sh)
+            score_string = f"{zipped_score}{z} vs {gold_score[i-1]} bytes for gold"
+        # append the raw source file (it will be cleaned up again in step 2)
         lines.append(f"# {best_player} ({score_string})")
         lines.extend(f.readlines())
-        single_file_view.append(f"# task {i}: {score_string}, https://arcprize.org/play?task={task_ids[i-1]}:\n" + code)
+        single_file_view.append(f"# task {i}: {score_string}, https://arcprize.org/play?task={task_ids[i-1]}\n" + code)
+    best_score = zipped_score
+    scores.append(best_score)
 
     # Add other solutions with comments
-    for score, player_name, path, _ in solutions[1:]:
+    for zipped_score, score, player_name, path, _, _ in solutions[1:]:
         if score == best_score:
             lines.extend(["", f"### {player_name} (tied, {score} bytes)"])
         else:
@@ -118,13 +201,16 @@ for i in range(1, 401):
     with open(f"{output_dir}/all_tasks.py", 'w') as f:
         writelines_with_newline(f, single_file_view)
 
+    with open(f"{output_dir}/scores.txt", 'w') as f:
+        for score in scores:
+            print(score, file=f)
+
 print("Merging complete!")
 
 ############################################
 # STEP 2: Copy raw into combined_solutions #
 ############################################
 
-import re
 for n in range(1,401):
  name = f"task{n:03d}.py"
  with open(f"merged/{name}", "r") as file:
@@ -141,8 +227,6 @@ for n in range(1,401):
 #######################
 
 
-import git, json, importlib, kaggle, zlib, zipfile, os, shutil, random, sys, os, re
-import warnings
 warnings.filterwarnings("ignore")
 
 repo = git.Repo('.')
@@ -185,7 +269,7 @@ for diff in repo.index.diff(None):
  if output_dir in path:
   merges += [path]
   continue
- if "combined_solutions/task" not in path: 
+ if "combined_solutions/task" not in path:
   continue
  if "alt" in path:
   passing += [path[-14:-3]]
@@ -207,12 +291,6 @@ if too_long:
  print(f"{len(too_long)} SOLUTION{'S'*(len(too_long)!=1)} ARE WORST THAN CURRENT BEST:", too_long)
 print(f"{len(passing)} improved solution{'s'*(len(passing)!=1)}, saving {total_save}b")
 
-def promptYN(prompt, default = ""):
- response = default or input(prompt)[0].upper()
- while response not in "YN":
-  response = input("Improper input, try Y or N")[0].upper()
- return response == "Y"
-
 if (passing or merges) and promptYN("Commit changes? [Y]es/[N]o", default_commit):
  if passing:
   for task in passing:
@@ -227,61 +305,7 @@ if (passing or merges) and promptYN("Commit changes? [Y]es/[N]o", default_commit
 if promptYN("Push improved solutions to remote? [Y]es/[N]o", default_push):
  repo.remote(name='origin').push()
 
-if promptYN("Calculate score with zlib compression?", default_compress):
- def zip_src(src, window):
-  compression_level = 9 # Max Compression
-
-  # Save on import re
-  header = b"#coding:L1\nimport zlib"
-  if src[:10]==b"import re\n":
-   header+=b",re"
-   src=src[10:]
-  # We prefer that compressed source not end in a quotation mark
-  while (compressed := zlib.compress(src, compression_level, window))[-1] == ord('"'): src += b"#"
-  
-  def sanitize(b_in):
-   """Clean up problematic bytes in compressed b-string"""
-   b_out = bytearray()
-   for ch,ch1 in zip(b_in,b_in[1:]+b"'"):
-    if   ch==0  : b_out+=b"\\x00" if ch1 in b"01234567" else b"\\0"
-    elif ch==13 : b_out+=b"\\r"
-    elif ch==92 and ch1 in b"\\\n\"\'01234567NUabfnrtvxu": b_out+=b"\\\\"
-    else:         b_out.append(ch)
-   return b_out
-
-  compressed = sanitize(compressed)
-  
-  delim = b'"""'
-
-  newlines = compressed.count(ord("\n"))
-  single = compressed.count(ord("'")) + newlines
-  double = compressed.count(ord('"')) + newlines
-  if 4 > single < double:
-   delim = b"'"
-   compressed = compressed.replace(b"'", b"\\'").replace(b"\n", b"\\n")
-  elif 4 > double < single:
-   delim = b'"'
-   compressed = compressed.replace(b'"', b'\\"').replace(b"\n", b"\\n")
-
-  return header+b"\nexec(zlib.decompress(bytes(" + \
-   delim + compressed + delim + \
-   b',"L1")'+(b',%d'%window if window<15 else b'')+b'))'
- 
- def sub_vars(src):
- 
-  # all letters except lowercase p
-  var_names = b"abcdefghijklmnoqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
-  var_regex = br"(?<!\\)\b[%b]\b(?!['\"])" % var_names
-
-  vars_prev = sorted(set(re.findall(var_regex,src)))
-  varless = re.sub(var_regex,b"_", src)
-  rest = set(re.findall(br"[%b]" % var_names, varless))
-
-  # TODO: Optimize sorting method, could probably save 10-30 bytes
-  trans = dict(zip(vars_prev,sorted(sorted(rest), key=varless.count)[::-1] + sorted(set(bytes([v]) for v in var_names) - rest)))
-
-  return re.sub(var_regex, lambda c:trans[c.group()], src)
- 
+if do_compress:
  score = 1_000_000
  temp_dir = "submission_temp"
  os.makedirs(temp_dir, exist_ok=True)
@@ -289,20 +313,10 @@ if promptYN("Calculate score with zlib compression?", default_compress):
  for task_num in range(1, 401):
   task_name = f"task{task_num:03d}.py"
   path_in  = f"{submission_dir}/{task_name}"
-  
   with open(path_in, "rb") as task_in:
    task_src = task_in.read().replace(b"\r\n", b"\n")
 
-  task_src_2 = sub_vars(task_src)
-  zipped_src = zip_src(task_src_2, -9)
-  if len(zipped_src) < len(task_src):
-   for pre in [b"",b"\n", b"\r",b"\f",b"\n\f",b"\r\f"] + [bytes([c,ne]) for c in b"\t\n\f\r 0123456789#" for ne in b"\n\r"]:
-    for post in [b"",b" ",b"\t",b"\n",b"\r",b"\f",b"#",b";",b"\t ",b" \t",b"\np"] + [b"#"+bytes([n]) for n in range(32,127)]:
-     if len(pre+post) > 3: continue
-     for window in (-9, -15):
-      z_src = zip_src(pre+task_src_2+post, window)
-      if len(z_src)<len(zipped_src):zipped_src = z_src
-
+   zipped_src = compress(task_src)
    improvement = len(task_src) - len(zipped_src)
 
    if improvement > 0:
@@ -328,6 +342,7 @@ if promptYN("Calculate score with zlib compression?", default_compress):
 
  print("Score:", score)
  if promptYN("Submit to Kaggle? [Y]es/[No]", default_kaggle):
+  import kaggle
   kaggle.api.authenticate()
   kaggle.api.competition_submit("submission.zip", f"Est. Score: {score} " + "".join([random.choice("⬛🟦🟥🟩🟨⬜🟪🟧🟫")for _ in[0]*9]), "google-code-golf-2025")
 

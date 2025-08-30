@@ -1,4 +1,4 @@
-# combined (61 vs 58 bytes for gold)
+# joking+mwi (61 vs 58 bytes for gold)
 p=lambda m:[[len(r)*r.pop(0)%2*3or x for x in[*r]]for r in m]
 
 ### xsot (tied, 61 bytes)

@@ -1,4 +1,4 @@
-# combined (82 vs 75 bytes for gold)
+# joking+mwi (82 vs 75 bytes for gold)
 p=lambda i,r=[0,4,8]:[[9<sum(sum(z[b:b+3])for z in i[a:a+3])for b in r]for a in r]
 
 ### xsot (83 bytes)

@@ -1,4 +1,4 @@
-# combined (81 vs 74 bytes for gold)
+# joking+mwi (81 vs 74 bytes for gold)
 p=lambda i,k=7:-k*i or[[*x[:10],*map(max,x,x[10:])]for x in zip(*p(i,k-1))][::-1]
 
 ### att (82 bytes)

@@ -1,4 +1,4 @@
-# combined (58 vs 56 bytes for gold)
+# joking+mwi (58 vs 56 bytes for gold)
 p=lambda i:[[8%~y&6-b%3for b,y in enumerate(x)]for x in i]
 
 ### ovs (tied, 58 bytes)

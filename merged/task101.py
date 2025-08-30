@@ -1,4 +1,4 @@
-# combined (447 vs 355 bytes for gold)
+# joking+mwi (335 (447 unzipped) bytes, gold)
 def p(g,R=range,l=len):
  G=g
  for _ in' '*96:G=[r[::-1]for r in zip(*G[(0,)*l(G[0])in G[:min(y for y in R(l(G))if 1in G[y])]:])];h,w=l(G),l(G[0])

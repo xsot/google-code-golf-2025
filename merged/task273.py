@@ -1,4 +1,4 @@
-# combined (116 bytes, gold)
+# joking+mwi (116 bytes, gold)
 p=lambda i,k=3:-k*i or p([[(y%2<=k)*(y or~-max({*x[:b],1}&{*x[b:],1}))for b,y in enumerate(x)]for x in zip(*i)],k-1)
 
 ### ovs (tied, 116 bytes)

@@ -1,4 +1,4 @@
-# combined (64 vs 62 bytes for gold)
+# joking+mwi (64 vs 62 bytes for gold)
 def p(i,x=1):i[-1][x]=4;i[~x][x]=2;return i[:~x]and p(i,x+1)or i
 
 ### ovs (65 bytes)

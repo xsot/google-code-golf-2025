@@ -1,4 +1,4 @@
-# combined (316 vs 254 bytes for gold)
+# joking+mwi (269 (316 unzipped) vs 254 bytes for gold)
 def p(g):
  D=enumerate;E=sum(g,[]);*L,M=sorted({*E},key=E.count);A=[[M]*len(A)for A in g]
  for N in L:

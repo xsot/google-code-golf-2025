@@ -1,4 +1,4 @@
-# combined (279 vs 211 bytes for gold)
+# joking+mwi (243 (279 unzipped) vs 211 bytes for gold)
 def p(g):
  e=enumerate;I,J=i,j=max(t:=[(y,x)for y,r in e(g)for x,c in e(r)if c])
  while g[i-1][j-1]:i-=1;j-=1

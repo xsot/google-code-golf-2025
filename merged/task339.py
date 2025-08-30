@@ -1,7 +1,7 @@
 # att (37 bytes, gold)
 p=lambda a:[[*filter(int,sum(a,[]))]]
 
-### combined (tied, 37 bytes)
+### joking+mwi (tied, 37 bytes)
 p=lambda i:[[*filter(int,sum(i,[]))]]
 
 ### ovs (tied, 37 bytes)

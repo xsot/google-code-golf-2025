@@ -1,7 +1,7 @@
 # att (52 vs 50 bytes for gold)
 p=eval('lambda a:[[a '+"for a in a for _ in'  ']"*2)
 
-### combined (tied, 52 bytes)
+### joking+mwi (tied, 52 bytes)
 p=lambda i:[sum(zip(x,x),())for x in i for _ in".."]
 
 ### xsot (tied, 52 bytes)

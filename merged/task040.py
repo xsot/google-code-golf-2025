@@ -1,4 +1,4 @@
-# combined (97 vs 69 bytes for gold)
+# joking+mwi (97 vs 69 bytes for gold)
 p=lambda i,k=1:-k*i or p([[x[y]and min(i[-(4<y)])or x[y]for y in range(10)]for x in zip(*i)],k-1)
 
 ### ovs (tied, 97 bytes)

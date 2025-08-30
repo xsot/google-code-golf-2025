@@ -1,4 +1,4 @@
-# combined (118 vs 113 bytes for gold)
+# joking+mwi (118 vs 113 bytes for gold)
 p=lambda m,i=91:-i*m or[*zip(*eval(str(p(m,i-1)[::-1]).replace("3220,,,,    331"[i%7%4::4],"2113,,,,211"[i%7%4::4])))]
 
 ### xsot (tied, 118 bytes)

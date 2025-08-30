@@ -1,4 +1,4 @@
-# combined (31 bytes, gold)
+# joking+mwi (31 bytes, gold)
 p=lambda i,s=sorted:s(map(s,i))
 
 ### ovs (tied, 31 bytes)

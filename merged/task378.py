@@ -1,4 +1,4 @@
-# combined (250 vs 145 bytes for gold)
+# joking+mwi (244 (250 unzipped) vs 145 bytes for gold)
 def p(g):
  for y in(u:=range(1,h:=len(g)-1)):
   for x in u:

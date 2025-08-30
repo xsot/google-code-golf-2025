@@ -1,7 +1,7 @@
 # att (38 bytes, gold)
 p=lambda a:eval(str(a).replace(*'62'))
 
-### combined (tied, 38 bytes)
+### joking+mwi (tied, 38 bytes)
 p=lambda i:eval(str(i).replace(*"62"))
 
 ### ovs (tied, 38 bytes)

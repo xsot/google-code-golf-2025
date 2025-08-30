@@ -1,4 +1,4 @@
-# combined (126 vs 115 bytes for gold)
+# joking+mwi (126 vs 115 bytes for gold)
 p=lambda i,k=3,e=enumerate:-k*i or p([[y or-7**k%5*(i[-b][a-1]*i[1-b][a-2]>9)for b,y in e(x)]for a,x in e(zip(*i[::-1]))],k-1)
 
 ### ovs (144 bytes)

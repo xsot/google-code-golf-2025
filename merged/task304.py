@@ -1,4 +1,4 @@
-# combined (92 bytes, gold)
+# joking+mwi (92 bytes, gold)
 p=lambda i:[[t*(y==max(z:=sum(i,i),key=z.count))for y in x for t in s]for x in i for s in i]
 
 ### ovs (93 bytes)

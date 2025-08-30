@@ -1,7 +1,7 @@
 # att (62 vs 61 bytes for gold)
 p=lambda a:2*[2*[d or any(c)*8for*c,d in zip(*a,b)]for b in a]
 
-### combined (tied, 62 bytes)
+### joking+mwi (tied, 62 bytes)
 p=lambda i:2*[2*[c or 8*any(y)for*y,c in zip(*i,r)]for r in i]
 
 ### ovs (tied, 62 bytes)

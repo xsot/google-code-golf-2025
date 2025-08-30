@@ -1,7 +1,7 @@
 # att (58 vs 56 bytes for gold)
 p=eval('lambda a:[[a '+"for a in a[1::2]for _ in' '*4]"*2)
 
-### combined (tied, 58 bytes)
+### joking+mwi (tied, 58 bytes)
 p=eval('lambda a:[[a '+"for a in a[1::2]for _ in' '*4]"*2)
 
 ### ovs (72 bytes)

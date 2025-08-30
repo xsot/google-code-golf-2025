@@ -1,4 +1,4 @@
-# combined (65 vs 63 bytes for gold)
+# joking+mwi (65 vs 63 bytes for gold)
 p=lambda g,x=1:[(g[x:=x^1][1:len({*g[0]})]*9)[:len(g)]for _ in g]
 
 ### ovs (74 bytes)

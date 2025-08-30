@@ -1,4 +1,4 @@
-# combined (76 vs 75 bytes for gold)
+# joking+mwi (76 vs 75 bytes for gold)
 p=lambda i,k=range(10):[[i[0][max(y,x)%(5-0**i[0][4])]for y in k]for x in k]
 
 ### ovs (tied, 76 bytes)

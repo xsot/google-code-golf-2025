@@ -1,4 +1,4 @@
-# combined (48 bytes, gold)
+# joking+mwi (48 bytes, gold)
 p=lambda g:[A[::-1]+A for A in(g[::-1]+g)*9][:9]
 
 ### ovs (tied, 48 bytes)

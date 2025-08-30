@@ -1,4 +1,4 @@
-# combined (479 vs 299 bytes for gold)
+# joking+mwi (351 (479 unzipped) vs 299 bytes for gold)
 def p(g):
  def F(y,x,A,B,V,g,C=0):
   if C>2:return

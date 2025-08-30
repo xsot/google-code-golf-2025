@@ -1,7 +1,7 @@
 # att (61 vs 57 bytes for gold)
 p=lambda a:[(i:=1)*[[c,c and 4][i:=1-i]for c in b]for b in a]
 
-### combined (tied, 61 bytes)
+### joking+mwi (tied, 61 bytes)
 p=lambda a:[(i:=1)*[[c,c and 4][i:=1-i]for c in b]for b in a]
 
 ### ovs (79 bytes)
