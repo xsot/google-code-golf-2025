@@ -1,10 +1,17 @@
-# Commit changes? Y[es]/[No]/Leave string empty to be prompted
+import git, json, importlib, zipfile, os, shutil, random, sys, os
+import warnings
+
+import pandas as pd
+
+from utils.compression import compress
+
+# Commit changes? [Y]es/[N]o/Leave string empty to be prompted
 default_commit = ""
-# Push to remote? Y[es]/[No]/Leave string empty to be prompted
+# Push to remote? [Y]es/[N]o/Leave string empty to be prompted
 default_push = ""
-# Calculate score with zlib compression? [Y]es/[No]/Leave string empty to be prompted
+# Calculate score with zlib compression? [Y]es/[N]o/Leave string empty to be prompted
 default_compress = ""
-# Submit to Kaggle? [Y]es/[No]/Leave string empty to be prompted
+# Submit to Kaggle? [Y]es/[N]o/Leave string empty to be prompted
 default_kaggle = ""
 
 # Configuration: add player directories here
@@ -20,89 +27,16 @@ output_dir = 'merged/'
 
 submission_dir = "combined_solutions"
 
-import git, json, importlib, zlib, zipfile, os, shutil, random, sys, os, re
-import warnings
-
 def promptYN(prompt, default = ""):
- response = default or input(prompt+" ")[0].upper()
- while response not in "YN":
-  response = input("Improper input, try Y or N")[0].upper()
- return response == "Y"
+    response = default or input(prompt+" ")[0].upper()
+    while response not in "YN":
+        response = input("Improper input, try Y or N")[0].upper()
+    return response == "Y"
 
-def compress(task_src):
- task_src_2 = sub_vars(task_src)
- zipped_src = zip_src(task_src_2, -9)
-
- if len(zipped_src) < len(task_src):
-  for pre in [b"",b"\n", b"\r",b"\f",b"\n\f",b"\r\f"] + [bytes([c,ne]) for c in b"\t\n\f\r 0123456789#" for ne in b"\n\r"]:
-   for post in [b"",b" ",b"\t",b"\n",b"\r",b"\f",b"#",b";",b"\t ",b" \t",b"\np"] + [b"#"+bytes([n]) for n in range(32,127)]:
-    if len(pre+post) > 3: continue
-    for window in (-9, -15):
-     z_src = zip_src(pre+task_src_2+post, window)
-     if len(z_src)<len(zipped_src):zipped_src = z_src
-
- return min(zipped_src, task_src, key=len)
-
-def zip_src(src, window):
- compression_level = 9 # Max Compression
-
- # Save on import re
- header = b"#coding:L1\nimport zlib"
- if src[:10]==b"import re\n":
-  header+=b",re"
-  src=src[10:]
- # We prefer that compressed source not end in a quotation mark
- while (compressed := zlib.compress(src, compression_level, window))[-1] == ord('"'): src += b"#"
-
- def sanitize(b_in):
-  """Clean up problematic bytes in compressed b-string"""
-  b_out = bytearray()
-  for ch,ch1 in zip(b_in,b_in[1:]+b"'"):
-   if   ch==0  : b_out+=b"\\x00" if ch1 in b"01234567" else b"\\0"
-   elif ch==13 : b_out+=b"\\r"
-   elif ch==92 and ch1 in b"\\\n\"\'01234567NUabfnrtvxu": b_out+=b"\\\\"
-   else:         b_out.append(ch)
-  return b_out
-
- compressed = sanitize(compressed)
-
- delim = b'"""'
-
- newlines = compressed.count(ord("\n"))
- single = compressed.count(ord("'")) + newlines
- double = compressed.count(ord('"')) + newlines
- if 4 > single < double:
-  delim = b"'"
-  compressed = compressed.replace(b"'", b"\\'").replace(b"\n", b"\\n")
- elif 4 > double < single:
-  delim = b'"'
-  compressed = compressed.replace(b'"', b'\\"').replace(b"\n", b"\\n")
-
- return header+b"\nexec(zlib.decompress(bytes(" + \
-  delim + compressed + delim + \
-  b',"L1")'+(b',%d'%window if window<15 else b'')+b'))'
-
-def sub_vars(src):
- # all letters except lowercase p
- var_names = b"abcdefghijklmnoqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
- var_regex = br"(?<!\\)\b[%b]\b(?!['\"])" % var_names
-
- vars_prev = sorted(set(re.findall(var_regex,src)))
- varless = re.sub(var_regex,b"_", src)
- rest = set(re.findall(br"[%b]" % var_names, varless))
-
- # TODO: Optimize sorting method, could probably save 10-30 bytes
- trans = dict(zip(vars_prev,sorted(sorted(rest), key=varless.count)[::-1] + sorted(set(bytes([v]) for v in var_names) - rest)))
-
- return re.sub(var_regex, lambda c:trans[c.group()], src)
 
 #################
 # STEP 1: merge #
 #################
-
-import os
-import shutil
-import pandas as pd
 
 
 def preprocess(source):
@@ -212,15 +146,15 @@ print("Merging complete!")
 ############################################
 
 for n in range(1,401):
- name = f"task{n:03d}.py"
- with open(f"merged/{name}", "r") as file:
-    src = file.read()
- src = preprocess(src)
- with open(f"combined_solutions/{name}", "r") as file:
-    l = len(file.read())
- if l > len(src):
-    with open(f"combined_solutions/{name}", "w") as file:
-        file.write(src)
+    name = f"task{n:03d}.py"
+    with open(f"merged/{name}", "r") as file:
+        src = file.read()
+    src = preprocess(src)
+    with open(f"combined_solutions/{name}", "r") as file:
+        l = len(file.read())
+    if l > len(src):
+        with open(f"combined_solutions/{name}", "w") as file:
+            file.write(src)
 
 #######################
 # STEP 3: auto_submit #
@@ -239,29 +173,35 @@ merges = []
 total_save = 0
 sys.path.insert(0, os.path.abspath('./'))
 
-def test_task(task_name, dir):
- test_filename = f'inputs/{task_name}.json'
- with open(test_filename) as test_file:
-  test_data = json.load(test_file)
-  try:
-   s = importlib.import_module(f'{dir}.{task_name}')
-   importlib.reload(s)
-  except:
-   return
-  if hasattr(s,'p'):
-   submission = s.p
-   for name in test_data:
-    for test_case in test_data[name]:
-     try:
-      repr = lambda i:json.dumps(eval(str(i).replace("False","0").replace("True","1").replace(".0","")))
-      if not repr(submission(test_case['input'])) == repr(test_case['output']):
-       return False
-     except KeyboardInterrupt as e:
-      print('break')
-      return
-     except:
-      return False
-    return True
+
+def test_task(task_name, dir, subsets=('train', 'test', 'arc-gen')):
+    test_filename = f'inputs/{task_name}.json'
+    with open(test_filename) as test_file:
+        test_data = json.load(test_file)
+    try:
+        s = importlib.import_module(f'{dir}.{task_name}')
+        importlib.reload(s)
+    except:
+        # python file not found
+        return False
+    if hasattr(s,'p'):
+        submission = s.p
+        for subset in subsets:
+            for test_case in test_data[subset]:
+                try:
+                    repr = lambda i:json.dumps(eval(str(i).replace("False","0").replace("True","1").replace(".0","")))
+                    if not repr(submission(test_case['input'])) == repr(test_case['output']):
+                        # incorrect result
+                        return False
+                except KeyboardInterrupt as e:
+                    # user interrupt
+                    print('break')
+                    return False
+                except:
+                    # error caused by solution
+                    return False
+        # passed all tests
+        return True
 
 for diff in repo.index.diff(None):
  path = diff.a_path
@@ -322,7 +262,7 @@ if do_compress:
    if improvement > 0:
     with open(f"{temp_dir}/{task_name}", "wb") as file:
      file.write(zipped_src)
-    if test_task(task_name[:-3], temp_dir):
+    if test_task(task_name[:-3], temp_dir, subsets=('train',)):
      task_src = zipped_src
    with open(f"{temp_dir}/{task_name}", "wb") as file:
     file.write(task_src)
