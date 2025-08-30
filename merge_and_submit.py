@@ -151,7 +151,7 @@ last_commit = repo.head.commit
 too_long = []
 failing = []
 passing = []
-other_commits = []
+merges = []
 total_save = 0
 sys.path.insert(0, os.path.abspath('./'))
 
@@ -182,8 +182,10 @@ def test_task(task_name):
 for diff in repo.index.diff(None):
  path = diff.a_path
  task_name = path[-10:-3]
+ if "merge/" in path:
+  merges += [path]
+  continue
  if "combined_solutions/task" not in path: 
-  other_commits += [path]
   continue
  if "alt" in path:
   passing += [path[-14:-3]]
@@ -211,12 +213,16 @@ def promptYN(prompt, default = ""):
   response = input("Improper input, try Y or N")[0].upper()
  return response == "Y"
 
-if promptYN("Commit changes? [Y]es/[N]o", default_commit):
- for task in passing:
-  repo.git.add(f"{submission_dir}/{task}.py")
- for path in other_commits:
-  repo.git.add(path)
- repo.git.commit([f'-m Saved {total_save}b on: {passing}'])
+if (passing or merges) and promptYN("Commit changes? [Y]es/[N]o", default_commit):
+ if passing:
+  for task in passing:
+   repo.git.add(f"{submission_dir}/{task}.py")
+  repo.git.commit([f'-m Saved {total_save}b on: {passing}'])
+ if merges:
+  for path in merges:
+   repo.git.add(path)
+  repo.git.commit([f'-m auto-merged'])
+
 
 if promptYN("Push improved solutions to remote? [Y]es/[N]o", default_push):
  repo.remote(name='origin').push()
