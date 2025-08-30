@@ -25,6 +25,8 @@ import traceback
 import tempfile
 import subprocess
 import glob
+import warnings
+warnings.filterwarnings("ignore")
 
 import matplotlib.pyplot as plt
 import numpy as np

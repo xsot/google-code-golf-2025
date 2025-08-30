@@ -104,9 +104,9 @@ import os
 import shutil
 
 
-def preprocess(path):
+def preprocess(source):
     new_lines = []
-    for line in open(path):
+    for line in source.splitlines():
         if "nomerge" in line:
             return None
         if line.startswith('##'):
@@ -149,10 +149,10 @@ for i in range(1, 401):
     for player_name, player_dir in players:
         path = os.path.join(player_dir, fname)
         if os.path.exists(path):
-            code = preprocess(path)
+            code = preprocess(open(path).read())
             if not code:
                 continue
-            zipped_code = compress(code.encode()) if do_compress else ""
+            zipped_code = compress(code.encode()) if do_compress else code.encode()
             zipped_score = len(zipped_code)
             score = len(code)
             solutions.append((zipped_score, score, player_name, path, zipped_code, code))
@@ -194,16 +194,16 @@ for i in range(1, 401):
         with open(path) as f:
             lines.extend(f.readlines())
 
-    # Write merged file
-    with open(output_path, 'w') as f:
-        writelines_with_newline(f, lines)
+# Write merged file
+with open(output_path, 'w') as f:
+    writelines_with_newline(f, lines)
 
-    with open(f"{output_dir}/all_tasks.py", 'w') as f:
-        writelines_with_newline(f, single_file_view)
+with open(f"{output_dir}/all_tasks.py", 'w') as f:
+    writelines_with_newline(f, single_file_view)
 
-    with open(f"{output_dir}/scores.txt", 'w') as f:
-        for score in scores:
-            print(score, file=f)
+with open(f"{output_dir}/scores.txt", 'w') as f:
+    for score in scores:
+        print(score, file=f)
 
 print("Merging complete!")
 
@@ -215,7 +215,7 @@ for n in range(1,401):
  name = f"task{n:03d}.py"
  with open(f"merged/{name}", "r") as file:
     src = file.read()
- src =  re.sub(r"#.*\n", "",re.sub(r"\s*##[\s\S]*", "", src))
+ src = preprocess(src)
  with open(f"combined_solutions/{name}", "r") as file:
     l = len(file.read())
  if l > len(src):
@@ -313,26 +313,22 @@ if do_compress:
  for task_num in range(1, 401):
   task_name = f"task{task_num:03d}.py"
   path_in  = f"{submission_dir}/{task_name}"
-  with open(path_in, "rb") as task_in:
-   task_src = task_in.read().replace(b"\r\n", b"\n")
+  with open(path_in) as task_in:
+   task_src = preprocess(task_in.read()).encode()
 
    zipped_src = compress(task_src)
    improvement = len(task_src) - len(zipped_src)
 
-   if improvement > 0:
-    with open(f"{temp_dir}/{task_name}", "wb") as file:
-     file.write(zipped_src)
-    if test_task(task_name[:-3], temp_dir):
+   if improvement > 0 and test_task(task_name[:-3], temp_dir):
      task_src = zipped_src
-
-  score -= len(task_src)
-  with open(f"{temp_dir}/{task_name}", "wb") as file:
-   file.write(task_src)
+   with open(f"{temp_dir}/{task_name}", "wb") as file:
+    file.write(task_src)
+   score -= len(task_src)
 
  with zipfile.ZipFile(f"submission.zip", "w") as zipf:
   for task_num in range(1, 401):
    task_name = f"task{task_num:03d}.py"
-   src_path = f"{temp_dir}/{task_name}."
+   src_path = f"{temp_dir}/{task_name}"
    if os.path.exists(src_path):
     zipf.write(src_path, arcname=task_name)
  try:
@@ -345,5 +341,3 @@ if do_compress:
   import kaggle
   kaggle.api.authenticate()
   kaggle.api.competition_submit("submission.zip", f"Est. Score: {score} " + "".join([random.choice("⬛🟦🟥🟩🟨⬜🟪🟧🟫")for _ in[0]*9]), "google-code-golf-2025")
-
- os.remove("submission.zip")

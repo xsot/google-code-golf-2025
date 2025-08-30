@@ -1,1 +1,1 @@
-p=lambda i:[[x]for x in sorted({*sum(i,[])},key=sum(i,[]).count)[-3::-1]]
+p=lambda m:[*zip(sorted({*(a:=sum(m,[]))},key=a.count))][2::-1]
