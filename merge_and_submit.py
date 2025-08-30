@@ -291,8 +291,8 @@ if promptYN("Calculate score with zlib compression?", default_compress):
   path_in  = f"{submission_dir}/{task_name}"
   
   with open(path_in, "rb") as task_in:
-   task_src = bytes([b for b in task_in.read() if b != 13])
-  
+   task_src = task_in.read().replace(b"\r\n", b"\n")
+
   task_src = sub_vars(task_src)
 
   zipped_src = zip_src(task_src, -9)
