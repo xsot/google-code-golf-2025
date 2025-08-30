@@ -1,4 +1,4 @@
-# combined (216 bytes, gold)
+# combined (216 vs 222 bytes for gold)
 p=lambda g,R=range:[[sorted([sum([s[x:x+3]for s in g[y:y+3]],[])for y in R(len(g)-2)for x in R(len(g[0])-2)],key=lambda v:[-all(v)]+[A==5for A in v])[b"\0"[B//3*3+C//3]][B%3*3+C%3]for C in R(9)]for B in R(9)]
 
 ### ovs (237 bytes)

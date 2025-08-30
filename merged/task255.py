@@ -1,4 +1,4 @@
-# combined (313 vs 274 bytes for gold)
+# combined (313 vs 280 bytes for gold)
 def p(g):
  R=range(30);g=[[g[y][x]+10*any(sum(s[x-(x>0):x+2])for s in g[y-(y>0):y+2])for x in R]for y in R]
  for _ in'_'*8:

@@ -1,4 +1,4 @@
-# combined (45 bytes, gold)
+# combined (45 vs 46 bytes for gold)
 p=lambda g:([max(g[::3]),*g[4:6]]*9)[:len(g)]
 
 ### att (46 bytes)

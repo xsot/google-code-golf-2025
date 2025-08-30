@@ -1,4 +1,4 @@
-# combined (342 vs 277 bytes for gold)
+# combined (342 vs 320 bytes for gold)
 def p(g,k=3):
  y,*_,Y=[y for y,r in enumerate(g)if 0in r];x,*_,X=[y for y,r in enumerate(zip(*g))if 0in r];h=Y+1-y;V=g[y][x];v=V>0
  for s in range(10):

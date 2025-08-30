@@ -1,4 +1,4 @@
-# combined (146 bytes, gold)
+# combined (146 vs 152 bytes for gold)
 import re
 p=lambda i,k=39:-k*i or p(eval(re.sub(r"(\((?=[^)]+[1-9])[^)]+., )(\([^)]+.), \((?=.*8)[08, ]+\)",r"\1\1\2",str([*zip(*i[::-1])]))),k-1)
 

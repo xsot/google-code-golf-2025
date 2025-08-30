@@ -1,4 +1,4 @@
-# combined (475 vs 330 bytes for gold)
+# combined (475 vs 344 bytes for gold)
 def p(g):
  C=[];e=enumerate
  for A,r in e(g):
