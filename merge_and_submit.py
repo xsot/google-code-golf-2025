@@ -182,7 +182,7 @@ def test_task(task_name, dir):
 for diff in repo.index.diff(None):
  path = diff.a_path
  task_name = path[-10:-3]
- if "merge/" in path:
+ if output_dir in path:
   merges += [path]
   continue
  if "combined_solutions/task" not in path: 
