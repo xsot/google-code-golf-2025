@@ -1,7 +1,10 @@
-# joking+mwi (118 vs 113 bytes for gold)
+# att (114 vs 113 bytes for gold)
+p=lambda m,i=95:-i*m or[*zip(*eval(str(p(m,i-1)[::-1]).replace("2320,,,,    133"[i%5::4],"1213,,,,121"[i%5::4])))]
+
+### joking+mwi (118 bytes)
 p=lambda m,i=91:-i*m or[*zip(*eval(str(p(m,i-1)[::-1]).replace("3220,,,,    331"[i%7%4::4],"2113,,,,211"[i%7%4::4])))]
 
-### xsot (tied, 118 bytes)
+### xsot (118 bytes)
 p=lambda m,i=91:-i*m or[*zip(*eval(str(p(m,i-1)[::-1]).replace("3220,,,,    331"[i%7%4::4],"2113,,,,211"[i%7%4::4])))]
 
 ##
