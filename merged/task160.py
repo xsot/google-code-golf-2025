@@ -1,5 +1,5 @@
-# combined (117 vs 116 bytes for gold)
-import re;p=lambda i,k=0:eval(re.sub("1, 1, 1(.{26}), 0, 1(.{26}), 1,",r"0,2,0\1*2,2,2\2*0,2,0*",str(k*i or p(i,1))))
+# combined (115 vs 116 bytes for gold)
+import re;p=lambda i,*n:eval(re.sub("1, 1, 1(.{26}), 0, 1(.{26}), 1,",r"0,2,0\1*2,2,2\2*0,2,0*",str(n or p(i,*i))))
 
 ### xsot (123 bytes)
 import re
