@@ -1,4 +1,4 @@
-# combined (292 (376 unzipped) vs 289 bytes for gold)
+# combined (292 (376 unzipped) vs 272 bytes for gold)
 def p(g):
  B=[];e=enumerate
  for A,r in e(g):

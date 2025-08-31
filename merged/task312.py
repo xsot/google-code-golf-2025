@@ -1,11 +1,11 @@
 # att (45 vs 44 bytes for gold)
 p=lambda a:[[e and r[0]for e in r]for r in a]
 
-### combined (tied, 45 bytes)
-p=lambda i:[[(y>0)*x[0]for y in x]for x in i]
-
 ### ovs (tied, 45 bytes)
 p=lambda g:[[v and r[0]for v in r]for r in g]
+
+### combined (tied, 45 bytes)
+p=lambda i:[[(y>0)*x[0]for y in x]for x in i]
 
 ### xsot (51 bytes)
 p=lambda m:[[(c==5)*l[0]or c for c in l]for l in m]

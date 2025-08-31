@@ -1,7 +1,7 @@
-# combined (46 bytes, gold)
+# ovs (46 bytes, gold)
 p=lambda g:[[x^84%x%3*13for x in r]for r in g]
 
-### ovs (tied, 46 bytes)
+### combined (tied, 46 bytes)
 p=lambda g:[[x^84%x%3*13for x in r]for r in g]
 
 ### att (48 bytes)

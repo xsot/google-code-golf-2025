@@ -1,4 +1,4 @@
-# combined (187 vs 176 bytes for gold)
+# ovs (187 vs 176 bytes for gold)
 def p(g):
  R=F=sum(g,[])
  while C:=[*{*F}][-2]:
@@ -7,7 +7,7 @@ def p(g):
   if~-C:R,W=N,C
  return g
 
-### ovs (tied, 187 bytes)
+### combined (tied, 187 bytes)
 def p(g):
  R=F=sum(g,[])
  while C:=[*{*F}][-2]:

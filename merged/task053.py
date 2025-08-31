@@ -1,9 +1,6 @@
 # att (21 bytes, gold)
 p=lambda a:(a+a)[2:5]
 
-### combined (tied, 21 bytes)
-p=lambda i:(i*2)[2:5]
-
 ### ovs (tied, 21 bytes)
 p=lambda g:(g*2)[2:5]
 
@@ -11,3 +8,6 @@ p=lambda g:(g*2)[2:5]
 p=lambda m:(m*2)[2:5]
 ##
 p=lambda m:[m.pop()]+m
+
+### combined (tied, 21 bytes)
+p=lambda i:(i*2)[2:5]
