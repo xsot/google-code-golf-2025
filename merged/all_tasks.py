@@ -1065,7 +1065,7 @@ p=lambda a,*n:[b for*b,in zip(*n or p(a,*a))for _ in'  'if 4in b]
 p=lambda a:a[:4:-1]+a[5:]
 # task 386: 52 bytes, gold, https://arcprize.org/play?task=f2829549
 p=lambda a:[[3>>e+r.pop(0)for e in r[4:]]for r in a]
-# task 387: 234 vs 222 bytes for gold, https://arcprize.org/play?task=f35d900a
+# task 387: 233 (234 unzipped) vs 222 bytes for gold, https://arcprize.org/play?task=f35d900a
 p=lambda i,k=3,e=enumerate:-k*i or p([[(y<1>k)*([*{*sum(i,[])}-{*sum([*zip(*i[b-(b>0):b+2])][a-(a>0):a+2],()),5},0]*2)[2]+(sum(x[b+1:])%5>0<sum(x[:b])%5>x[b-1]+x[b+1]==0<x[b-2]+x[b+2])*5or y for b,y in e(x)]for a,x in e(zip(*i))],k-1)
 # task 388: 62 vs 61 bytes for gold, https://arcprize.org/play?task=f5b8619d
 p=lambda a:2*[2*[d or any(c)*8for*c,d in zip(*a,b)]for b in a]
