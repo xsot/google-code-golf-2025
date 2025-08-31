@@ -8,3 +8,6 @@ p=lambda g:(g*2)[2:5]
 p=lambda m:(m*2)[2:5]
 ##
 p=lambda m:[m.pop()]+m
+
+### combined (tied, 21 bytes)
+p=lambda i:(i*2)[2:5]

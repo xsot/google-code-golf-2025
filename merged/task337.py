@@ -1,6 +1,9 @@
 # ovs (46 bytes, gold)
 p=lambda g:[[x^84%x%3*13for x in r]for r in g]
 
+### combined (tied, 46 bytes)
+p=lambda g:[[x^84%x%3*13for x in r]for r in g]
+
 ### att (48 bytes)
 p=lambda a:eval(str(a).translate({53:56,56:53}))
 

@@ -1,6 +1,9 @@
 # att (57 bytes, gold)
 p=lambda a:[[sum({*sum(a,r)}-{e,5})for e in r]for r in a]
 
+### combined (tied, 57 bytes)
+p=lambda a:[[sum({*sum(a,r)}-{e,5})for e in r]for r in a]
+
 ### xsot (62 bytes)
 p=lambda m:[[v==5and sum({*sum(m,[])})-5for v in l]for l in m]
 

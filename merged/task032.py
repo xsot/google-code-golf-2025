@@ -6,3 +6,6 @@ p=lambda g:[*zip(*map(sorted,zip(*g)))]
 
 ### xsot (tied, 39 bytes)
 p=lambda m:[*zip(*map(sorted,zip(*m)))]
+
+### combined (tied, 39 bytes)
+p=lambda i:[*zip(*map(sorted,zip(*i)))]
