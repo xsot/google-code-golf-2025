@@ -1,1 +1,1 @@
-p=lambda i,n=1:all(len({*x[::n],0})<3for x in i)and[[max(x[b%n::n])for b,y in enumerate(x)if y<1]for x in i if 0in x]or p(i,n+1)
+p=lambda i,n=1:all(len({*x[::n],0})<3for x in i)*[[max(x[b%n::n])for b,y in enumerate(x)if y<1]for x in i if 0in x]or p(i,n+1)
