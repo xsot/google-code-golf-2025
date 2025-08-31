@@ -1,7 +1,7 @@
 # att (54 bytes, gold)
 p=lambda g:[r[~r.index(0)::-1][:3]for r in g if 0in r]
 
-### joking+mwi (tied, 54 bytes)
+### combined (tied, 54 bytes)
 p=lambda i:[x[~x.index(0)::-1][:3]for x in i if 0in x]
 
 ### ovs (56 bytes)

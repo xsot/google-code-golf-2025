@@ -1,4 +1,4 @@
-# joking+mwi (106 vs 96 bytes for gold)
+# combined (106 vs 96 bytes for gold)
 p=lambda i,e=enumerate:[[max((k:=z+[0]*99)[t+b-a]|k[a+b-t]for t,z in e(i))for b,y in e(x)]for a,x in e(i)]
 
 ### xsot (119 bytes)

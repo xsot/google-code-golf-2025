@@ -1,4 +1,4 @@
-# joking+mwi (69 vs 67 bytes for gold)
+# combined (69 vs 67 bytes for gold)
 p=lambda i:[[sum({*sum(i,x)},-y)for y in x if y]for x in i if any(x)]
 
 ### ovs (84 bytes)

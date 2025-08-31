@@ -1,7 +1,7 @@
 # att (52 vs 51 bytes for gold)
 p=lambda a:eval("[[a "+"for a in a for _ in%s]"%a*2)
 
-### joking+mwi (tied, 52 bytes)
+### combined (tied, 52 bytes)
 p=lambda a:eval("[[a "+"for a in a for _ in%s]"%a*2)
 
 ### xsot (tied, 52 bytes)

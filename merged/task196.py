@@ -1,2 +1,2 @@
-# joking+mwi (135 vs 123 bytes for gold)
+# combined (135 vs 123 bytes for gold)
 p=lambda i,k=79:-k*i or p([[(k<32>y==1<s)*3or~-(k<32>y==4)*y*~-(s<1>y%2)or k//79*4for s,y in zip([0,*x],x)]for x in zip(*i[::-1])],k-1)

@@ -1,4 +1,4 @@
-# joking+mwi (108 bytes, gold)
+# combined (108 bytes, gold)
 def p(g):
  x=y=0
  for _ in g:x+=1>g[0][x];y+=0in g[y]

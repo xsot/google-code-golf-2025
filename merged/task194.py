@@ -1,4 +1,4 @@
-# joking+mwi (74 vs 73 bytes for gold)
+# combined (74 vs 73 bytes for gold)
 p=lambda g:(t:=[a+b for*b,a in zip(*g[::-1],g)])+[e[::-1]for e in t[::-1]]
 
 ### xsot (92 bytes)

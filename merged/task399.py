@@ -1,4 +1,4 @@
-# joking+mwi (64 bytes, gold)
+# combined (64 bytes, gold)
 p=lambda m:[[1,0,(c:=sum(sum(m,[]))/8)>1],[0,c>2,0],[c>3,0,c>4]]
 
 ### xsot (tied, 64 bytes)

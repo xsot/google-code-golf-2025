@@ -1,4 +1,4 @@
-# joking+mwi (87 bytes, gold)
+# combined (87 bytes, gold)
 p=lambda i,k=3:-k*i or[[x[0**k<=(k:=y)^8]or y for y in x]for x in zip(*p(i,k-1)[::-1])]
 
 ### ovs (108 bytes)

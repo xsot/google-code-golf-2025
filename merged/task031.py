@@ -1,7 +1,7 @@
 # att (47 vs 45 bytes for gold)
 p=lambda a,*n:[*filter(any,zip(*n or p(a,*a)))]
 
-### joking+mwi (tied, 47 bytes)
+### combined (tied, 47 bytes)
 p=lambda a,*n:[*filter(any,zip(*n or p(a,*a)))]
 
 ### xsot (52 bytes)

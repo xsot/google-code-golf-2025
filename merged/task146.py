@@ -1,4 +1,4 @@
-# joking+mwi (58 bytes, gold)
+# combined (58 bytes, gold)
 p=lambda i:(r:=i[:3])*([*map(list,zip(*r))]!=r)or p(i[3:])
 
 ### ovs (tied, 58 bytes)

@@ -1,4 +1,4 @@
-# joking+mwi (283 (360 unzipped) bytes, gold)
+# combined (283 (360 unzipped) bytes, gold)
 def p(i,r=range(10)):
  for n in{*sum(i,[])}:
   k=[[5]+[y*(y==n)or 5for y,*s in zip(x,*i)if n in s]+[5]for x in i if n in x];f=len(k[0]);k=[t:=[5]*f]+k+[t]

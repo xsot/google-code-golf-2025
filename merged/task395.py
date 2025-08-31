@@ -1,4 +1,4 @@
-# joking+mwi (56 vs 53 bytes for gold)
+# combined (56 vs 53 bytes for gold)
 p=lambda a:[[2-c-b.pop(0)&6for c in a.pop(3)]for b in a]
 
 ### att (57 bytes)

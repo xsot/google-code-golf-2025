@@ -1,4 +1,4 @@
-# joking+mwi (67 vs 64 bytes for gold)
+# combined (67 vs 64 bytes for gold)
 p=lambda i:[[i[g:=len(i)//2][g+i[g].index(y)]for y in x]for x in i]
 
 ### att (69 bytes)

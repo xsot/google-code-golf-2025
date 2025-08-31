@@ -1,4 +1,4 @@
-# joking+mwi (92 vs 86 bytes for gold)
+# combined (92 vs 86 bytes for gold)
 p=lambda m,x=1,d=-1:m and p(m[1:],x:=x+d,x%(l:=len(m[0])-1)and d or-d)+[[8]*x+[1]+[8]*(l-x)]
 
 ### xsot (tied, 92 bytes)

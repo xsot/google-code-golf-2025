@@ -1,4 +1,4 @@
-# joking+mwi (206 vs 150 bytes for gold)
+# combined (206 vs 150 bytes for gold)
 import re
 p=lambda i,k=7,r=re.sub:-k*i or p(eval(r((h:="("+"5, "*(n:=k%5)+"5)")+((s:=f"(.{ {34-n*3}})")+"(5, "+"0, "*n+"5)")*n+s+h,lambda m,s=1:"".join(r(str(s:=s^1),"2",z)for z in m.groups()),str(i))),k-1)
 

@@ -1,7 +1,7 @@
 # att (52 bytes, gold)
 p=lambda a:[[8>>i+b.pop(0)for i in b[4:]]for b in a]
 
-### joking+mwi (tied, 52 bytes)
+### combined (tied, 52 bytes)
 p=lambda a:[[8>>i+b.pop(0)for i in b[4:]]for b in a]
 
 ### ovs (tied, 52 bytes)

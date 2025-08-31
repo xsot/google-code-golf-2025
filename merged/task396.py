@@ -1,4 +1,4 @@
-# joking+mwi (261 (268 unzipped) vs 220 bytes for gold)
+# combined (261 (268 unzipped) vs 220 bytes for gold)
 def p(m):
  d,b,*z=sorted(set(a:=sum(m,[])),key=a.count);N,M=len(m),len(m[0])
  for i in range(N*M):

@@ -1,5 +1,5 @@
 # att (109 vs 101 bytes for gold)
 p=lambda a,n=-3:n*a[1:-1]or p([a[1:],[[d and(b:=max(a[n%2]))for d in c]for c in zip(*a[:0:-1])]][e:=b>0],n+e)
 
-### joking+mwi (tied, 109 bytes)
+### combined (tied, 109 bytes)
 p=lambda a,n=-3:n*a[1:-1]or p([a[1:],[[d and(b:=max(a[n%2]))for d in c]for c in zip(*a[:0:-1])]][e:=b>0],n+e)

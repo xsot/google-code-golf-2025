@@ -1,4 +1,4 @@
-# joking+mwi (342 (391 unzipped) vs 296 bytes for gold)
+# combined (342 (391 unzipped) vs 296 bytes for gold)
 t=b'\n'
 def p(g):
  def Q(o,p):

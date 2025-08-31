@@ -1,7 +1,7 @@
 # att (50 bytes, gold)
 p=lambda a:[[6^6>>e+r.pop(3)for e in r]for r in a]
 
-### joking+mwi (tied, 50 bytes)
+### combined (tied, 50 bytes)
 p=lambda i:[[y+x.pop(3)and 6for y in x]for x in i]
 
 ### ovs (tied, 50 bytes)

@@ -1,4 +1,4 @@
-# joking+mwi (313 (465 unzipped) vs 283 bytes for gold)
+# combined (313 (465 unzipped) vs 283 bytes for gold)
 def p(g):
  e=enumerate;t=[-1,0],[1,0],[0,-1],[0,1];E=[A+1for A,B in e(g)if len({*B})==1][0];c=[A[::E]for A in g[::E]];J=lambda A,B:len(c)>A>-1<B<len(c[0])
  for A,B in e(c):

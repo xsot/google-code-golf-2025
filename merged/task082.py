@@ -1,4 +1,4 @@
-# joking+mwi (50 bytes, gold)
+# combined (50 bytes, gold)
 p=lambda i:[f:=i[0],[*map(max,f[1:]+[0],[0]+f)]]*3
 
 ### ovs (tied, 50 bytes)

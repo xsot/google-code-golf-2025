@@ -1,7 +1,7 @@
 # att (86 bytes, gold)
 p=eval(f"lambda a:max([str(a).count('1'),a]{'for*a,in map(zip,a,a[1:],a[2:])'*2})[1]")
 
-### joking+mwi (tied, 86 bytes)
+### combined (tied, 86 bytes)
 p=eval(f"lambda a:max([str(a).count('1'),a]{'for*a,in map(zip,a,a[1:],a[2:])'*2})[1]")
 
 ### ovs (94 bytes)

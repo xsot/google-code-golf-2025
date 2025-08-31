@@ -1,7 +1,7 @@
 # att (48 bytes, gold)
 p=lambda a:[b for*b,in map(map,[max]*5,a,a[6:])]
 
-### joking+mwi (tied, 48 bytes)
+### combined (tied, 48 bytes)
 p=lambda a:[b for*b,in map(map,[max]*5,a,a[6:])]
 
 ### ovs (tied, 48 bytes)

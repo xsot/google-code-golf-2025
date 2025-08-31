@@ -1,7 +1,7 @@
 # att (81 vs 79 bytes for gold)
 p=eval('lambda a:[[max(sum(a+a,())[1:],key=bool)'+'for*a,in map(zip,a,a[4:])]'*2)
 
-### joking+mwi (tied, 81 bytes)
+### combined (tied, 81 bytes)
 p=eval('lambda a:[[max(sum(a+a,())[1:],key=bool)'+'for*a,in map(zip,a,a[4:])]'*2)
 
 ### ovs (82 bytes)

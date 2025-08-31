@@ -1,7 +1,7 @@
 # att (57 vs 52 bytes for gold)
 p=lambda a:[[2>>c+c+b.pop(0)for c in a.pop(4)]for b in a]
 
-### joking+mwi (tied, 57 bytes)
+### combined (tied, 57 bytes)
 p=lambda i:[[~y+t&2for y,t in zip(x,i.pop(4))]for x in i]
 
 ### ovs (60 bytes)

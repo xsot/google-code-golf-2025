@@ -1,7 +1,7 @@
 # att (47 bytes, gold)
 p=lambda a:[[max(b:=sum(a,a),key=b.count)]*3]*3
 
-### joking+mwi (tied, 47 bytes)
+### combined (tied, 47 bytes)
 p=lambda i:[[max(z:=sum(i,i),key=z.count)]*3]*3
 
 ### ovs (48 bytes)

@@ -1,7 +1,7 @@
 # att (87 vs 81 bytes for gold)
 p=lambda a:[b.count(e)*[e]for b in a if(e:=min(set(d:=sum(a,[]))-{0},key=d.count))in b]
 
-### joking+mwi (tied, 87 bytes)
+### combined (tied, 87 bytes)
 p=lambda a:[b.count(e)*[e]for b in a if(e:=min(set(d:=sum(a,[]))-{0},key=d.count))in b]
 
 ### xsot (106 bytes)

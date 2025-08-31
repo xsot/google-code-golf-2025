@@ -1,7 +1,7 @@
 # att (65 vs 60 bytes for gold)
 p=lambda a:[b[:3]for*b,in zip(*filter(any,zip(*a)))if any(b)][:3]
 
-### joking+mwi (tied, 65 bytes)
+### combined (tied, 65 bytes)
 p=lambda a:[b[:3]for*b,in zip(*filter(any,zip(*a)))if any(b)][:3]
 
 ### ovs (74 bytes)

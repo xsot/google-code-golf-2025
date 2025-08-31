@@ -1,7 +1,7 @@
 # att (88 bytes, gold)
 p=lambda a:[[max(range(1,10),key=[sum({*b}&{*c})for c in zip(*a)for b in a].count)]*2]*2
 
-### joking+mwi (tied, 88 bytes)
+### combined (tied, 88 bytes)
 p=lambda a:[[max(range(1,10),key=[sum({*b}&{*c})for c in zip(*a)for b in a].count)]*2]*2
 
 ### ovs (94 bytes)

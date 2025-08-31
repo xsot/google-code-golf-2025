@@ -1,7 +1,7 @@
 # att (49 vs 48 bytes for gold)
 p=lambda a,b=[0]*9:[b:=[*map(max,b,r)]for r in a]
 
-### joking+mwi (tied, 49 bytes)
+### combined (tied, 49 bytes)
 p=lambda a,b=[0]*9:[b:=[*map(max,b,r)]for r in a]
 
 ### ovs (tied, 49 bytes)

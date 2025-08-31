@@ -1,7 +1,7 @@
 # att (46 bytes, gold)
 p=lambda a:a[:2]+a[::3]+[[5-b*4for b in a[2]]]
 
-### joking+mwi (tied, 46 bytes)
+### combined (tied, 46 bytes)
 p=lambda g:g[:1]*3+[g[3],[5-c*4for c in g[2]]]
 
 ### ovs (tied, 46 bytes)

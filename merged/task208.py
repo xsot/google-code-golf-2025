@@ -1,4 +1,4 @@
-# joking+mwi (258 (290 unzipped) vs 247 bytes for gold)
+# combined (258 (290 unzipped) vs 247 bytes for gold)
 def p(g):
  e=enumerate;A=g
  for G in'  ':A=[[*A]for A in zip(*A)if min(k:=sum(g,[]),key=k.count)in A];D,E=len(A),len(A[0])

@@ -1,4 +1,4 @@
-# joking+mwi (101 vs 88 bytes for gold)
+# combined (101 vs 88 bytes for gold)
 E=enumerate
 p=lambda g:[[v*(0in[*r[j-1:j+2],*[*zip(*g)][j][i-1:i+2]])for j,v in E(r)]for i,r in E(g)]
 

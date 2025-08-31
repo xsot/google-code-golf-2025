@@ -1,7 +1,7 @@
 # att (73 bytes, gold)
 p=lambda a:[[[5,c][c==max(d:=sum(a,a),key=d.count)]for c in b]for b in a]
 
-### joking+mwi (tied, 73 bytes)
+### combined (tied, 73 bytes)
 p=lambda a:[[[5,c][c==max(d:=sum(a,a),key=d.count)]for c in b]for b in a]
 
 ### ovs (74 bytes)

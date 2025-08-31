@@ -1,4 +1,4 @@
-# joking+mwi (63 bytes, gold)
+# combined (63 bytes, gold)
 p=lambda m:[*zip(sorted(set(a:=sum(m,[])),key=a.count))][2::-1]
 
 ### xsot (tied, 63 bytes)

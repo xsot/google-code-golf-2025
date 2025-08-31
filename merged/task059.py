@@ -1,4 +1,4 @@
-# joking+mwi (191 vs 156 bytes for gold)
+# combined (191 vs 156 bytes for gold)
 p=lambda g,R=range(11):[[(g[r][c]==5)*5or(max(f:=[sum([v[c:c+4]for v in g[r:r+4]],[]).count(C:=max({*sum(g,[])}-{5}))for c in[0,4,8]for r in[0,4,8]])==f[r//4+c//4*3])*C for c in R]for r in R]
 
 ### ovs (tied, 191 bytes)

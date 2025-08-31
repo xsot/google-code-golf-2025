@@ -1,4 +1,4 @@
-# joking+mwi (330 (475 unzipped) bytes, gold)
+# combined (330 (475 unzipped) bytes, gold)
 def p(g):
  C=[];e=enumerate
  for A,r in e(g):

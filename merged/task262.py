@@ -1,4 +1,4 @@
-# joking+mwi (39 bytes, gold)
+# combined (39 bytes, gold)
 p=lambda i:[[~b//~a^2]*3for a,b,_ in i]
 
 ### att (42 bytes)

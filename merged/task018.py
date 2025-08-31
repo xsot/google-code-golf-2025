@@ -1,4 +1,4 @@
-# joking+mwi (332 (374 unzipped) bytes, gold)
+# combined (332 (374 unzipped) bytes, gold)
 E=enumerate
 def p(g):
  def S(i,v):g[int(i.imag)][int(i.real)]=v

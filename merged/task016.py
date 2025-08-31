@@ -1,4 +1,4 @@
-# joking+mwi (46 vs 43 bytes for gold)
+# combined (46 vs 43 bytes for gold)
 p=lambda g:[[b" 	"[c]for c in g[0]]]*3
 
 ### xsot (tied, 46 bytes)

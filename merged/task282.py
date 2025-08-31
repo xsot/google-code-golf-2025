@@ -1,7 +1,7 @@
 # att (83 bytes, gold)
 p=lambda a:[*map(f:=lambda d,*b,c=0:[c|(c:=d)>>2|(d:=e)for e in[*b,0]],*map(f,*a))]
 
-### joking+mwi (tied, 83 bytes)
+### combined (tied, 83 bytes)
 p=lambda a:[*map(f:=lambda d,*b,c=0:[c|(c:=d)>>2|(d:=e)for e in[*b,0]],*map(f,*a))]
 
 ### ovs (122 bytes)

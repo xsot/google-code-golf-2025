@@ -1,4 +1,4 @@
-# joking+mwi (92 vs 69 bytes for gold)
+# combined (92 vs 69 bytes for gold)
 p=lambda i,r=range(10):[[(i[a-(s:=str(i).count("5"))][b-10+s]^5or 5)^5for b in r]for a in r]
 
 ### xsot (136 bytes)

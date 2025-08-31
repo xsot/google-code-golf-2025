@@ -1,4 +1,4 @@
-# joking+mwi (426 (612 unzipped) vs 374 bytes for gold)
+# combined (426 (612 unzipped) vs 374 bytes for gold)
 def p(g):
  L=enumerate;M=sum(g,[]);*S,J,K,E=sorted({*M},key=M.count);F=[]
  if(Q:={K,E}<={*g[0]}):g=[*map(list,zip(*g))]

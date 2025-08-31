@@ -1,4 +1,4 @@
-# joking+mwi (61 vs 60 bytes for gold)
+# combined (61 vs 60 bytes for gold)
 p=lambda i:[*zip(*[sorted(x,key=0 .__eq__)for x in zip(*i)])]
 
 ### ovs (65 bytes)

@@ -1,4 +1,4 @@
-# joking+mwi (99 vs 91 bytes for gold)
+# combined (99 vs 91 bytes for gold)
 p=lambda i:[[*map(max,*[s[t:t+3]for t in range(144)if(s:=sum(i*2,i))[t-x]==5])]for x in[-12,-1,10]]
 
 ### ovs (101 bytes)

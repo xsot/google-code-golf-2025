@@ -1,4 +1,4 @@
-# joking+mwi (190 vs 145 bytes for gold)
+# combined (190 vs 145 bytes for gold)
 def p(g,k=-3):u=range(len(g)-2);[exec("q-=1;P-=1;g[q][P]=g[y+2][x+2];"*min(P:=x,q:=y)*(g[y+1][x+1]<g[y+1][x]&g[y][x+1]))for y in u for x in u];return g*k or p([*map(list,zip(*g[::-1]))],k+1)
 
 ### xsot (281 bytes)

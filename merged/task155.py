@@ -1,7 +1,7 @@
 # att (18 bytes, gold)
 p=lambda a:a[::-1]
 
-### joking+mwi (tied, 18 bytes)
+### combined (tied, 18 bytes)
 p=lambda i:i[::-1]
 
 ### ovs (tied, 18 bytes)

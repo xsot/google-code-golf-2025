@@ -1,4 +1,4 @@
-# joking+mwi (94 vs 58 bytes for gold)
+# combined (94 vs 58 bytes for gold)
 import re;p=lambda i:[[n for n in{*sum(i,[])}-{0}if re.sub(f".*{n}, {n}, {n}.*"*2,"",str(i))]]
 
 ### xsot (111 bytes)

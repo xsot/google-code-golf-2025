@@ -1,4 +1,4 @@
-# joking+mwi (248 (277 unzipped) vs 222 bytes for gold)
+# combined (248 (277 unzipped) vs 222 bytes for gold)
 def p(g):
  e=enumerate;o=[(s,y,x)for y,r in e(g)for x,c in e(r)if any(s:=sum([r[x:x+3]for r in g[y:y+3]],[]))*s==s[::-1]and s[8:]]
  for a,y,x in o:

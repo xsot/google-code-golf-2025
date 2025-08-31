@@ -1,4 +1,4 @@
-# joking+mwi (76 vs 70 bytes for gold)
+# combined (76 vs 70 bytes for gold)
 p=lambda i:[[y[0]for y in zip(x,*i)if len({*y})>2]for x in i if len({*x})>2]
 
 ### ovs (85 bytes)

@@ -1,7 +1,7 @@
 # att (108 vs 105 bytes for gold)
 p=lambda a,i=0:[b:=sum(a,[]),c:=b.count]*any(r:=sorted([e*(c(e)>i)for e in{*b}],key=c)[::-1])and[r]+p(a,i+1)
 
-### joking+mwi (tied, 108 bytes)
+### combined (tied, 108 bytes)
 def p(i):z=sum(i,[]);c=z.count;return[*filter(sum,zip(*[[y]*c(y)+[0]*11for y in sorted({*z},key=c)][::-1]))]
 
 ### ovs (111 bytes)

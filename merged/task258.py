@@ -2,7 +2,7 @@
 import re
 p=lambda a:eval(re.sub('1, 0(?=, 1)','1,2',str(a)))
 
-### joking+mwi (tied, 61 bytes)
+### combined (tied, 61 bytes)
 import re;p=lambda i:eval(re.sub("1, 0(?=, 1)","1,2",str(i)))
 
 ### xsot (62 bytes)

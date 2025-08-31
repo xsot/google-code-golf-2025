@@ -15,7 +15,7 @@ def p(g):
   for(J,K)in C:A[J-F+(B-H)//2][K-G+(B-I)//2]=N
  return[A[:B]for A in A[:B]]
 
-### joking+mwi (261 bytes)
+### combined (261 bytes)
 def p(g):
  D=enumerate;E=sum(g,[]);*L,M=sorted({*E},key=E.count);A=[99*[M]for(A)in g]
  for N in L:

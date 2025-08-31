@@ -1,4 +1,4 @@
-# joking+mwi (105 bytes, gold)
+# combined (105 bytes, gold)
 p=lambda i,r=range(10):[[max({*i[a][b:]}&{*i[a][:b+1]}|{*c[a:]}&{*c[:a]})for*c,b in zip(*i,r)]for a in r]
 
 ### xsot (162 bytes)

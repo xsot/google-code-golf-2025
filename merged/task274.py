@@ -1,4 +1,4 @@
-# joking+mwi (75 vs 71 bytes for gold)
+# combined (75 vs 71 bytes for gold)
 p=lambda i:[(h:=[8]*sum({*x}=={0,5}for x in i)+[0]*5)[1:4],h[6:3:-1],[0]*3]
 
 ### xsot (77 bytes)

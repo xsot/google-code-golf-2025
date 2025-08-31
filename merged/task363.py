@@ -1,4 +1,4 @@
-# joking+mwi (243 (300 unzipped) vs 217 bytes for gold)
+# combined (243 (300 unzipped) vs 217 bytes for gold)
 def p(g):
  e=enumerate;v=[[y,x]for y,r in e(g)for x,c in e(r)if c%5];i,j=min(v)
  for y,r in e(g):

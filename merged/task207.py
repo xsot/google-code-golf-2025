@@ -1,7 +1,7 @@
 # att (81 bytes, gold)
 p=eval('lambda a:[[min(b:=sum(a,()),key=b.count)'+'for*a,in map(zip,a,a[3:])]'*2)
 
-### joking+mwi (tied, 81 bytes)
+### combined (tied, 81 bytes)
 p=eval('lambda a:[[min(b:=sum(a,()),key=b.count)'+'for*a,in map(zip,a,a[3:])]'*2)
 
 ### xsot (85 bytes)

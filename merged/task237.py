@@ -1,7 +1,7 @@
 # att (67 bytes, gold)
 p=lambda a,c=0:[(b:=0)or[c:=(b:=b or d)for d in r+[c]]for*r,_ in a]
 
-### joking+mwi (tied, 67 bytes)
+### combined (tied, 67 bytes)
 p=lambda a,c=0:[(b:=0)or[c:=(b:=b or d)for d in r+[c]]for*r,_ in a]
 
 ### ovs (76 bytes)
