@@ -5,8 +5,8 @@ p=lambda i:[max([n]for n in sum(i,[])if str(i).count(f"{n}, "*3)<2)]
 p=lambda i:[max((str(i).count(f"{n}, "*3)<2)*[n]for n in sum(i,[]))]
 p=lambda i:[[n]for n in{*sum(i,[])}if(str(i).count(f"{n}, "*3)<2)*n]
 
-### combined (94 bytes)
-import re;p=lambda i:[[n for n in{*sum(i,[])}-{0}if re.sub(f".*{n}, {n}, {n}.*"*2,"",str(i))]]
+### combined (tied, 68 bytes)
+p=lambda i:[max([n]for n in sum(i,[])if str(i).count(f"{n}, "*3)<2)]
 
 ### xsot (111 bytes)
 import re
