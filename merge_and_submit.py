@@ -19,7 +19,8 @@ players = [
     ('xsot', 'xsot/'),
     ('ovs', 'ovs/'),
     ('att', 'att/'),
-    ('joking+mwi', 'combined_solutions/')
+    ('joking', 'joking/'),
+    ('combined', 'combined_solutions/')
 ]
 
 # Output directory
