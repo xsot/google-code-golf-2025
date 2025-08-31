@@ -1,0 +1,1 @@
+p=lambda i,e=enumerate:i[0][2]&i[2][0]>7and[[y and i[a//3][b//3]for b,y in e(x[3:])]for a,x in e(i[3:])]or[*zip(*p([*zip(*i[::-1])]))][::-1]

@@ -2,9 +2,6 @@
 p=lambda m:[*zip(sorted({*(a:=sum(m,[]))},key=a.count))][2::-1]
 # same as task393 (f8ff0b80)
 
-### combined (tied, 63 bytes)
-p=lambda m:[*zip(sorted({*(a:=sum(m,[]))},key=a.count))][2::-1]
-
 ### att (69 bytes)
 p=lambda a:[[sorted(range(10),key=sum(a,a).count)[i]]for i in(7,6,5)]
 

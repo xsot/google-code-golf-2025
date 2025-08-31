@@ -4,9 +4,6 @@ p=lambda a:[b for*b,in map(map,[max]*5,a,a[6:])]
 ### ovs (tied, 48 bytes)
 p=lambda g:[[*map(max,*r)]for r in zip(g,g[6:])]
 
-### combined (tied, 48 bytes)
-p=lambda a:[b for*b,in map(map,[max]*5,a,a[6:])]
-
 ### xsot (54 bytes)
 p=lambda m:[[*map(sum,zip(r,m.pop(6)))]for r in m[:5]]
 

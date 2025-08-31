@@ -6,6 +6,3 @@ p=lambda g:[*zip(*g)]
 
 ### xsot (tied, 21 bytes)
 p=lambda m:[*zip(*m)]
-
-### combined (tied, 21 bytes)
-p=lambda i:[*zip(*i)]

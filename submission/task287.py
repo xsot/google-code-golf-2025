@@ -1,0 +1,1 @@
+p=lambda a:[[max({c,b.pop()}-{4})for c in a.pop()]for*b,in[*a]]

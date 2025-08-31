@@ -6,6 +6,3 @@ p=lambda g:[r+r[::-1]for r in g+g[::-1]]
 
 ### xsot (tied, 40 bytes)
 p=lambda m:[r+r[::-1]for r in m+m[::-1]]
-
-### combined (tied, 40 bytes)
-p=lambda i:[x+x[::-1]for x in i+i[::-1]]

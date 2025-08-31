@@ -1,0 +1,1 @@
+p=lambda i,k=3,e=enumerate:-k*i or p([[y or-7**k%5*(i[-b][a-1]*i[1-b][a-2]>9)for b,y in e(x)]for a,x in e(zip(*i[::-1]))],k-1)

@@ -6,6 +6,3 @@ p=lambda g:g[:5]+g[4::-1]
 
 ### xsot (tied, 25 bytes)
 p=lambda m:m[:6]+m[3::-1]
-
-### combined (tied, 25 bytes)
-p=lambda i:i[:5]+i[4::-1]

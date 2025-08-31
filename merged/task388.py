@@ -4,9 +4,6 @@ p=lambda a:2*[2*[d or any(c)*8for*c,d in zip(*a,b)]for b in a]
 ### ovs (tied, 62 bytes)
 p=lambda g:[2*[v or 8*any(c)for*c,v in zip(*g,r)]for r in g]*2
 
-### combined (tied, 62 bytes)
-p=lambda i:2*[2*[c or 8*any(y)for*y,c in zip(*i,r)]for r in i]
-
 ### xsot (67 bytes)
 p=lambda m:[2*[c or any(d)*8for c,d in zip(r,zip(*m))]for r in m]*2
 

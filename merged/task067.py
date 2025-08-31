@@ -6,6 +6,3 @@ p=lambda g:[r[:len(g)]for r in g]
 
 ### xsot (tied, 33 bytes)
 p=lambda m:[r[:len(m)]for r in m]
-
-### combined (tied, 33 bytes)
-p=lambda g:[r[:len(g)]for r in g]

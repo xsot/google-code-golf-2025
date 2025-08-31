@@ -23,9 +23,6 @@ def p(m):
     if-1<i<N>j>-1<4==m[i][j]:m[i][j]=0;q+=(i,j),
  return m
 
-### combined (tied, 93 bytes)
-p=lambda a,n=-62:[*map(lambda*b,d=0:[(d:=c%(d+4)+(n>c)*4)for c in b][::-1],*n*a or p(a,n+1))]
-
 ### att (98 bytes)
 p=lambda a,n=-62:[*map(lambda*b,d=0:[(c%2|d//3)*(d:=c+(n>c)*4)for c in b][::-1],*n*a or p(a,n+1))]
 

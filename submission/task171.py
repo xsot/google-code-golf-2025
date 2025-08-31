@@ -1,0 +1,1 @@
+p=lambda a:[*map(f:=lambda*b:[8,*b[2:],8],*map(f,*a))]

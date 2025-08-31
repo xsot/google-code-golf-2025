@@ -11,11 +11,6 @@ def p(a):
   for c,d in zip(s,A*(N+n==sum(map(any,(*t,*zip(*t)))))):d[j:j+n]=c*(t!=s)or[0]*n
  return a
 
-### combined (tied, 209 bytes)
-def p(a,i=-1):
- for i in(I:={i//10+i:v*(v!=8)for v in sum(a,[])if[i:=i+1]*v}):s={i};[s.add(y)for y in[*I]*6if{y,y+1,y-1,y+11,y-11}&s];a[i//11][i%11]=I[[s for s in I if I[s]][sorted(s).index(i)]]-I[i]
- return a
-
 ### att (251 bytes)
 def p(a):
 	f=lambda b:[c for*c,in zip(*b)if{*c}-{0,8}];s=f(f(a));n=len(s[0])

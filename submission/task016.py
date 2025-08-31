@@ -1,0 +1,1 @@
+p=lambda m:[[b'AA	'[i]for i in m[0]]]*3

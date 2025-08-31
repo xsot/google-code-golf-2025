@@ -20,13 +20,14 @@ players = [
     ('ovs', 'ovs/'),
     ('att', 'att/'),
     ('joking', 'joking/'),
+    ('mwi', 'mwi/'),
     ('combined', 'combined_solutions/')
 ]
 
 # Output directory
 output_dir = 'merged/'
 
-submission_dir = "combined_solutions"
+submission_dir = "submission"
 
 def promptYN(prompt, default = ""):
     response = default or input(prompt+" ")[0].upper()
@@ -92,6 +93,10 @@ for i in range(1, 401):
             score = len(code)
             solutions.append((zipped_score, score, player_name, path, zipped_code, code))
 
+    # Only add combined solution to merge if it is the untied best
+    solutions = [sol for sol in solutions if \
+        not (sol[2] == 'combined' and any(sol_2[0]<=sol[0] for sol_2 in solutions if sol_2[2] != 'combined'))]
+
     # Skip if no solutions found
     if not solutions:
         scores.append(99999)
@@ -142,19 +147,19 @@ with open(f"{output_dir}/scores.txt", 'w') as f:
 
 print("Merging complete!")
 
-############################################
-# STEP 2: Copy raw into combined_solutions #
-############################################
+####################################
+# STEP 2: Copy raw into submission #
+####################################
 
 for n in range(1,401):
     name = f"task{n:03d}.py"
-    with open(f"merged/{name}", "r") as file:
+    with open(output_dir + name, "r") as file:
         src = file.read()
     src = preprocess(src)
-    with open(f"combined_solutions/{name}", "r") as file:
-        l = len(file.read())
-    if l > len(src):
-        with open(f"combined_solutions/{name}", "w") as file:
+    #with open(f"{submission_dir}/{name}", "r") as file:
+    #    l = len(file.read())
+    if 1:#l > len(src):
+        with open(f"{submission_dir}/{name}", "w") as file:
             file.write(src)
 
 #######################
@@ -210,14 +215,14 @@ for diff in repo.index.diff(None):
  if output_dir in path:
   merges += [path]
   continue
- if "combined_solutions/task" not in path:
+ if f"{submission_dir}/task" not in path:
   continue
  if "alt" in path:
   passing += [path[-14:-3]]
  old_src = bytes(repo.git.show(f"{last_commit.hexsha}:{path}"),"u8")
  with open(path , "r") as file:
   new_src = bytes(file.read(),"u8")
- if len(new_src) > len(old_src):
+ if len(compress(new_src)) > len(compress(old_src)):
   too_long += [task_name]
   continue
  if not test_task(task_name, submission_dir):

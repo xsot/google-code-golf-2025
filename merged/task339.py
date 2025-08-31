@@ -6,6 +6,3 @@ p=lambda g:[[*filter(abs,sum(g,[]))]]
 
 ### xsot (tied, 37 bytes)
 p=lambda m:[[*filter(int,sum(m,[]))]]
-
-### combined (tied, 37 bytes)
-p=lambda i:[[*filter(int,sum(i,[]))]]

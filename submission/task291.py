@@ -1,0 +1,1 @@
+p=lambda i,n=1:len({x.count(n)for x in i})//3*[[n]]or p(i,n+1)

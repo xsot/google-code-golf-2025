@@ -1,0 +1,1 @@
+p=lambda g:[[x^84%x%3*13for x in r]for r in g]

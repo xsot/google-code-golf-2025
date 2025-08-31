@@ -1,0 +1,1 @@
+p=lambda a:[[2-c-b.pop(0)&6for c in a.pop(3)]for b in a]

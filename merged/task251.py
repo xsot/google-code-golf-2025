@@ -1,9 +1,6 @@
 # att (94 vs 89 bytes for gold)
 p=lambda a,n=-42:[*map(lambda*b,d=0:[max(n,c*(d+(d:=c)>1))for c in b][::-1],*n*a or p(a,n+1))]
 
-### combined (tied, 94 bytes)
-p=lambda a,n=-42:[*map(lambda*b,d=0:[max(n,c*(d+(d:=c)>1))for c in b][::-1],*n*a or p(a,n+1))]
-
 ### ovs (182 bytes)
 def p(g):
  def t(*I):

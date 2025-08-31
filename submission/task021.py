@@ -1,0 +1,1 @@
+p=lambda i,*n:[x for x in zip(*n or p(i,*i))if i!=(i:=x)][::2]

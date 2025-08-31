@@ -3,11 +3,6 @@ def p(a):
 	for b in a[:3]:c=6>>a[3][3];b[c:c+3]=b[5:2:-1]
 	return a
 
-### combined (tied, 67 bytes)
-def p(g):
- for x in g[:3]:o=6>>g[3][3];x[o:o+3]=x[5:2:-1]
- return g
-
 ### ovs (69 bytes)
 p=lambda g:[(r[g[3][3]*2:6]+r[5:2:-1]+r[3:])[:9]for r in g[:3]]+g[3:]
 

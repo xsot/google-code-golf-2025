@@ -1,0 +1,1 @@
+p=lambda i:[[sum({*sum(i,x)},-y)for y in x if y]for x in i if any(x)]

@@ -1,9 +1,6 @@
 # att (54 bytes, gold)
 p=lambda a:[*map(f:=lambda*b:[8,*b[2:],8],*map(f,*a))]
 
-### combined (tied, 54 bytes)
-p=lambda a:[*map(f:=lambda*b:[8,*b[2:],8],*map(f,*a))]
-
 ### ovs (61 bytes)
 p=lambda g,k=-1:g*k or p([[8,*r,8]for _,*r,_ in zip(*g)],k+1)
 
