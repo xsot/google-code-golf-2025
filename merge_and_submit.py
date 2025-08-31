@@ -91,16 +91,12 @@ for i in range(1, 401):
             score = len(code)
             solutions.append((zipped_score, score, player_name, path, zipped_code, code))
 
-    # Only add combined solution to merge if it is the untied best
-    solutions = [sol for sol in solutions if \
-        not (sol[2] == 'combined' and any(sol_2[0]<=sol[0] for sol_2 in solutions if sol_2[2] != 'combined'))]
-
     # Skip if no solutions found
     if not solutions:
         scores.append(99999)
 
-    # Sort by zipped score (shortest first), score, then by player name for tie-breaking
-    solutions.sort(key=lambda x: (x[0], x[1], x[2]))
+    # Sort by zipped score (shortest first), score, then by player name for tie-breaking (combined last)
+    solutions.sort(key=lambda x: (x[0], x[1], x[2] == 'combined', x[2]))
 
     output_path = os.path.join(output_dir, fname)
 
