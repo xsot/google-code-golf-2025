@@ -1,1 +1,1 @@
-p=lambda i,k=7:-k*i or p([[y&5or z+y>>1for y,z in zip(x,[0,*x])]for x in zip(*i[::-1])],k-1)
+p=lambda i,k=3:-k*i or[*map(lambda*x,z=0:[z%4|(z:=y)for y in x],*p(i,k-1)[::-1])]
