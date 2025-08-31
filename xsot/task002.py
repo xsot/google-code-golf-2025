@@ -1,7 +1,17 @@
+p=lambda a,n=-62:[*map(lambda*b,d=0:[(d:=c%(d+4)+(n>c)*4)for c in b][::-1],*n*a or p(a,n+1))]
+
+##
+# by att
+# innermost call will replace black with yellow
+# remaining calls flood fill from black (d=0 initialises it from the border)
+p=lambda a,n=-62:[*map(lambda*b,d=0:[(c%2|d//3)*(d:=c+(n>c)*4)for c in b][::-1],*n*a or p(a,n+1))]
+# equivalent to
+p=lambda a,n=-62:[*map(lambda*b,d=0:[(c==3 or d>=3)*(d:=c+(c==0 and n==1)*4)for c in b][::-1],*n*a or p(a,n+1))]
+
+##
 # based on ovs
 p=lambda g,k=79,s='04':-k*g or p([eval(str([0]+r).replace(*s))[1:]for*r,in zip(*g)][::-1],k-1,['0, 4','0, 0'])
 
-##
 def p(m):
  N=len(m:=eval(str(m).replace(*'04')))
  for i in range(N*N):
