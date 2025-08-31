@@ -1011,8 +1011,8 @@ def p(g):
    if g[0]in[[0,5,5,5,5,0,0,5,y!=1,5],[0,5,5,5,0,0,x,5,5,5]]:continue
    for Y,X in v*all(len(g[0])>X-j+x>-1<Y-i+y<len(g)and g[Y-i+y][X-j+x]<1for Y,X in v):g[Y-i+y][X-j+x]=2
  return g
-# task 364: 163 vs 156 bytes for gold, https://arcprize.org/play?task=e509e548
-p=lambda i,k=39:-k*i or p([[y and(u>0<t)*2**(k%4+2)|y|u if k else y.bit_count()*5%14%9for y,t,u in zip(x,[0,*x],s)]for*x,s in zip(*i,[[0]*99,*zip(*i)])][::-1],k-1)
+# task 364: 156 vs 163 bytes for gold, https://arcprize.org/play?task=e509e548
+p=lambda i,k=39:-k*i or p([[[y.bit_count()*5%14%9,y and(u*t>0)<<k%4+2|y|u][k>0]for y,t,u in zip(x,[0,*x],s)]for*x,s in zip(*i,[[0]*99,*zip(*i)])][::-1],k-1)
 # task 365: 134 vs 112 bytes for gold, https://arcprize.org/play?task=e50d258f
 p=lambda i:max([[x[a%9:][:9-a//9%9]for x in i[a//81%9:][:9-a//729]]for a in range(9**4)],key=lambda p:"0"in(r:=str(p))or r.count("2"))
 # task 366: 426 (612 unzipped) vs 374 bytes for gold, https://arcprize.org/play?task=e6721834
