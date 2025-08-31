@@ -1,4 +1,4 @@
-# xsot (371 (604 unzipped) vs 374 bytes for gold)
+# xsot (371 (604 unzipped) bytes, gold)
 def p(m):
  a=sum(m,C:=[]);*_,B,S,D=sorted({*a},key=a.count)
  if(S in m[0])*(D in m[0]):return[*zip(*p([*map(list,zip(*m))]))]
