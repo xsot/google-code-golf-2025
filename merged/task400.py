@@ -1,4 +1,4 @@
-# joking+mwi (70 vs 6 bytes for gold)
+# joking+mwi (70 vs 67 bytes for gold)
 p=lambda i:[t[::-1][s.index(1):][:5]for s,t in zip(i,i[::-1])if 1in s]
 
 ### ovs (tied, 70 bytes)
