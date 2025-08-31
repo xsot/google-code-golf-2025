@@ -2,12 +2,6 @@
 import re
 p=lambda i:eval(re.sub("5(, 5)+",lambda m,q=[re.findall("([^50](, [1-9])+)",str(i)*9)for _ in i]:q[m.end()%8].pop(0)[0],str(i)))
 
-##
-import re
-def p(i):
- def t(m,q=[-1]*99):q[y:=m.end()%32]+=1;return re.findall("([^50](, [1-46-9])+)",str(i)*9)[q[y]][0]
- return eval(re.sub("5(, 5)+",t,str(i)))
-
 ### xsot (197 bytes)
 def p(m):s=sum(m,[]);a=[x%5>0for x in s];x=a.index(1);w=a[x:].index(i:=0);exec("for j in range((a[x:][::10]+a).index(0)*(m[r:=i//10][c:=i%10]==5)):m[r+j][c:c+w]=s[x+10*j:][:w]\ni+=1\n"*99);return m
 
