@@ -1,13 +1,5 @@
-# ovs (190 vs 145 bytes for gold)
+# joking+mwi (190 vs 145 bytes for gold)
 def p(g,k=-3):u=range(len(g)-2);[exec("q-=1;P-=1;g[q][P]=g[y+2][x+2];"*min(P:=x,q:=y)*(g[y+1][x+1]<g[y+1][x]&g[y][x+1]))for y in u for x in u];return g*k or p([*map(list,zip(*g[::-1]))],k+1)
-
-### joking+mwi (238 bytes)
-def p(g):
- for y in(u:=range(1,h:=len(g)-1)):
-  for x in u:
-   c=g[y][x];A,B,C,D=[c==g[y+X//8-2][x+X%8-1]for X in b"	"];a,b,p,q=2*C-1,2*A-1,x,y
-   while(A^B)*(C^D)*(g[y+a][x+b]^c)*c>0<p<h>q>0:q-=a;p-=b;g[q][p]=g[y+2*a][x+2*b]
- return g
 
 ### xsot (281 bytes)
 def p(m):
