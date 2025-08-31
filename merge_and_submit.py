@@ -74,8 +74,6 @@ task_ids = [s.strip() for s in open("task_ids.txt")]
 single_file_view = []
 scores = []
 
-do_compress = promptYN("Calculate score with zlib compression?", default_compress)
-
 for i in range(1, 401):
     fname = f"task{i:03}.py"
 
@@ -88,7 +86,7 @@ for i in range(1, 401):
             code = preprocess(open(path).read())
             if not code:
                 continue
-            zipped_code = compress(code.encode()) if do_compress else code.encode()
+            zipped_code = compress(code.encode())
             zipped_score = len(zipped_code)
             score = len(code)
             solutions.append((zipped_score, score, player_name, path, zipped_code, code))
@@ -251,7 +249,7 @@ if (passing or merges) and promptYN("Commit changes? [Y]es/[N]o", default_commit
 if promptYN("Push improved solutions to remote? [Y]es/[N]o", default_push):
  repo.remote(name='origin').push()
 
-if do_compress:
+if promptYN("Calculate score with zlib compression?", default_compress):
  score = 1_000_000
  temp_dir = "submission_temp"
  os.makedirs(temp_dir, exist_ok=True)
