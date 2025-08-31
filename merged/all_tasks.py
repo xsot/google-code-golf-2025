@@ -231,20 +231,14 @@ p=lambda i,k=3:-k*[[(y!=0)*max({*(g:=sum(i,i[0]))}-{y or min(g,key=g.count),''})
 p=lambda a:[b[::-1]for b in a[::-1]]
 # task 88: 109 vs 101 bytes for gold, https://arcprize.org/play?task=3de23699
 p=lambda a,n=-3:n*a[1:-1]or p([a[1:],[[d and(b:=max(a[n%2]))for d in c]for c in zip(*a[:0:-1])]][e:=b>0],n+e)
-# task 89: 292 (376 unzipped) vs 272 bytes for gold, https://arcprize.org/play?task=3e980e27
+# task 89: 261 (280 unzipped) bytes, gold, https://arcprize.org/play?task=3e980e27
+e=enumerate;L=lambda i,j,s:any(0<(i-I)**2+(j-J)**2<3for I,J in s)
 def p(g):
- B=[];e=enumerate
- for A,r in e(g):
-  for x,F in e(r):
-   if F:
-    G=[F,{(A,x)}]
-    for D in[*B]:
-     if{(A-1,x),(A,x-1),(A-1,x-1),(A-1,x+1)}&D[1]:B.remove(D);G[1]|=D[1]
-    B+=[G]
- for x,F in B:
-  for A,r in B:
-   if len(r)>1==len(F)*len((H:=[D for D in r if g[D[0]][D[1]]==x])):
-    for D,E in r:I,J=H[0];K,L=max(F);g[D+K-I][L+(E-J)*(x%2*2-1)]=g[D][E]
+ for i,j in(M:={(A,x):F for A,r in e(g)for x,F in e(r)if F}):
+  for I in M:
+   s={I}
+   for y in[*M]*3:
+    if M[i,j]==M[I]!=L(i,j,M)<L(*y,s):s|={y};g[y[0]-I[0]+i][(I[1]-y[1])*(-1)**M[I]+j]=M[y]
  return g
 # task 90: 197 vs 159 bytes for gold, https://arcprize.org/play?task=3eda0437
 e=enumerate
@@ -947,7 +941,7 @@ p=lambda a:[[c*3%6for c in re.sub(b'\0(?=\0*(\0+(\0*|+))*\0*$)',b'1',bytes(b
 p=lambda a:[[*filter(int,sum(a,[]))]]
 # task 340: 133 vs 120 bytes for gold, https://arcprize.org/play?task=d687bc17
 p=lambda i,k=3:-k*i or[[x[0],sum({*x[1:]}&{*x[:2]}),*[y*(sum(i,i).count(y)>4>0<y!=x[0])for y in x[2:]]]for x in zip(*p(i,k-1)[::-1])]
-# task 341: 139 vs 134 bytes for gold, https://arcprize.org/play?task=d6ad076f
+# task 341: 139 vs 132 bytes for gold, https://arcprize.org/play?task=d6ad076f
 p=lambda i,k=1,r=range(10):-k*i or p([[i[b][a]or all(len({*s[b:]})%len({*s})&2for s in[*zip(*i)][a-(a>0):a+2])*8for b in r]for a in r],k-1)
 # task 342: 119 vs 112 bytes for gold, https://arcprize.org/play?task=d89b689b
 p=lambda i,s=-1:[[y==8and[g for g in[*map(max,*i[:a]),*map(max,*i[a:])]if g%8][s:=s+1]for y in i[a]]for a in range(10)]
