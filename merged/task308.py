@@ -1,4 +1,4 @@
-# xsot (252 (262 unzipped) vs 254 bytes for gold)
+# xsot (252 (262 unzipped) bytes, gold)
 def p(g):
  D=enumerate;*L,M=sorted(set(E:=sum(g,[])),key=E.count);A=[99*[M]for(A)in g]
  for N in L:

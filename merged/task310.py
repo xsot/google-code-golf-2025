@@ -1,8 +1,11 @@
-# combined (96 vs 78 bytes for gold)
+# att (81 vs 78 bytes for gold)
+p=lambda a,*n:[b for b in zip(*n or p(a,*a))if min(c:=sum(a,[]),key=c.count)in b]
+
+### combined (96 bytes)
 import re
 p=lambda m:[*map(eval,re.findall((c:=min(s:=str(m)+'[]'*8,key=s.count))+"[^[]*"+c,s))]
 
-### xsot (tied, 96 bytes)
+### xsot (96 bytes)
 import re
 p=lambda m:[*map(eval,re.findall((c:=min(s:=str(m)+'[]'*8,key=s.count))+"[^[]*"+c,s))]
 

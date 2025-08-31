@@ -1,4 +1,4 @@
-# combined (126 vs 103 bytes for gold)
+# combined (126 vs 100 bytes for gold)
 p=lambda m,k=3,R=range(-14,1):-k*m or p([*zip(*[m[(len([l:=i-j for j in R if 2in m[-j]])==4>abs(l)>1)*2*l-i]for i in R])],k-1)
 
 ### xsot (136 bytes)
