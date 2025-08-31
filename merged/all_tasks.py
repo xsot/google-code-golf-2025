@@ -1010,12 +1010,12 @@ def p(g):
 p=lambda i,k=39:-k*i or p([[[y.bit_count()*5%14%9,y and(u*t>0)<<k%4+2|y|u][k>0]for y,t,u in zip(x,[0,*x],s)]for*x,s in zip(*i,[[0]*99,*zip(*i)])][::-1],k-1)
 # task 365: 134 vs 112 bytes for gold, https://arcprize.org/play?task=e50d258f
 p=lambda i:max([[x[a%9:][:9-a//9%9]for x in i[a//81%9:][:9-a//729]]for a in range(9**4)],key=lambda p:"0"in(r:=str(p))or r.count("2"))
-# task 366: 426 (612 unzipped) vs 374 bytes for gold, https://arcprize.org/play?task=e6721834
+# task 366: 425 (612 unzipped) vs 374 bytes for gold, https://arcprize.org/play?task=e6721834
 def p(g):
  L=enumerate;M=sum(g,[]);*S,J,K,E=sorted({*M},key=M.count);F=[]
  if(Q:={K,E}<={*g[0]}):g=[*map(list,zip(*g))]
- for A,f in L(g):
-  for B,N in L(f):
+ for(A,f)in L(g):
+  for(B,N)in L(f):
    if E!=N!=K in f:
     C={(A,B)}
     for D in[*F]:
@@ -1023,10 +1023,10 @@ def p(g):
     F+=[C]
  for D in sorted(F,key=lambda s:-sum(g[A][B]!=J for(A,B)in s)):
   G,H=min(D)
-  for(I,A)in L(g):
-   for(C,B)in L(A):
-    if E in A and all(len(g[0])>C+B-H>-1<I+A-G<len(g)and(J!=g[A][B]==g[A+I-G][B+C-H]!=E or J==g[A][B]and g[A+I-G][B+C-H]==E)for(A,B)in D):
-     for(O,P)in D:g[I+O-G][C+P-H]=g[O][P]
+  for(A,f)in L(g):
+   for(B,N)in L(f):
+    if E in f and all(len(g[0])>B+N-H>-1<A+f-G<len(g)and(J!=g[f][N]==g[f+A-G][N+B-H]!=E or J==g[f][N]and g[f+A-G][N+B-H]==E)for(f,N)in D):
+     for(O,P)in D:g[A+O-G][B+P-H]=g[O][P]
  g=[A for A in g if E in A];return[g,[*zip(*g)]][Q]
 # task 367: 223 vs 130 bytes for gold, https://arcprize.org/play?task=e73095fd
 p=lambda g,k=59,e=enumerate:-k*g or p([*zip(*[[[c-c%5+0**c*4,max(c,x+y<1,(v:=(*g[y-(y>0)][x-1:x+1],r[x-1]))==(5,0,0),y>1<x<sum(v)>10>4<g[y-1][x-2]+g[y-2][x-1]or[0,*r][x]%5)][k>0]for x,c in e(r)]for y,r in e(g)][::-1])],k-1)
