@@ -1,17 +1,12 @@
-def p(g):
- L=enumerate;M=sum(g,[]);*S,J,K,E=sorted({*M},key=M.count);F=[]
- if(Q:={K,E}<={*g[0]}):g=[*map(list,zip(*g))]
- for(A,f)in L(g):
-  for(B,N)in L(f):
-   if E!=N!=K in f:
-    C={(A,B)}
-    for D in[*F]:
-     if{(A-1,B),(A,B-1)}&D:F.remove(D);C|=D
-    F+=[C]
- for D in sorted(F,key=lambda s:-sum(g[A][B]!=J for(A,B)in s)):
-  G,H=min(D)
-  for(A,f)in L(g):
-   for(B,N)in L(f):
-    if E in f and all(len(g[0])>B+N-H>-1<A+f-G<len(g)and(J!=g[f][N]==g[f+A-G][N+B-H]!=E or J==g[f][N]and g[f+A-G][N+B-H]==E)for(f,N)in D):
-     for(O,P)in D:g[A+O-G][B+P-H]=g[O][P]
- g=[A for A in g if E in A];return[g,[*zip(*g)]][Q]
+def p(m):
+ E=enumerate;a=sum(m,A:=[]);*_,B,S,D=sorted({*a},key=a.count)
+ if{S,D}<={*m[0]}:return[*zip(*p([*map(list,zip(*m))]))]
+ for(y,r)in E(m):
+  for(x,v)in E(r):
+   if D!=v!=S in r:c={(y,x)};[A.remove(d)or(c:=c|d)for d in[*A]if{(y-1,x),(y,x-1)}&d];A+=c,
+ for C in sorted(A,key=lambda s:-sum(B!=m[y][x]for(y,x)in s)):
+  G,H=min(C)
+  for(y,r)in E(m):
+   for(x,v)in E(r):
+    for(O,P)in[*C]*all(len(m[0])>c+(w:=x-H)>-1<r+(h:=y-G)<len(m)and(B!=m[r][c]==m[r+h][c+w]or B==m[r][c]and m[r+h][c+w]==D)for(r,c)in C):m[O+h][P+w]=m[O][P]
+ return[r for r in m if D in r]
