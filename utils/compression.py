@@ -1,14 +1,16 @@
 import re
 import zlib
+import functools
 
 PREFIXES = [b"",b"\n", b"\r",b"\f",b"\n\f",b"\r\f"] + [bytes([c,ne]) for c in b"\t\n\f\r 0123456789#" for ne in b"\n\r"]
 POSTFIXES = [b"",b" ",b"\t",b"\n",b"\r",b"\f",b"#",b";",b"\t ",b" \t",b"\np"] + [b"#"+bytes([n]) for n in range(32,127)]
 
+@functools.lru_cache(maxsize=2048)
 def compress(task_src: bytes) -> bytes:
     task_src_2 = sub_vars(task_src)
     zipped_src = zip_src(task_src_2, -9)
 
-    if len(zipped_src) > len(task_src):
+    if len(zipped_src) > len(task_src) + 10:
         return task_src
 
     for pre in PREFIXES:
