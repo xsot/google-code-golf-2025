@@ -280,7 +280,7 @@ E=enumerate
 p=lambda g:[[v*(0in[*r[j-1:j+2],*[*zip(*g)][j][i-1:i+2]])for j,v in E(r)]for i,r in E(g)]
 # task 99: 150 vs 131 bytes for gold, https://arcprize.org/play?task=444801d8
 p=lambda i,k=19:-k*i or p([[-(y<e<0)or(y<0<1!=e!=-2)*e or y or-2*(e>1<k>14or-2==e)or-(k==19>1==e)for y,e in zip(x,[0,*x])]for x in zip(*i[::-1])],k-1)
-# task 100: 88 vs 54 bytes for gold, https://arcprize.org/play?task=445eab21
+# task 100: 88 bytes, gold, https://arcprize.org/play?task=445eab21
 p=lambda a:[[max(range(1,10),key=[sum({*b}&{*c})for c in zip(*a)for b in a].count)]*2]*2
 # task 101: 335 (447 unzipped) bytes, gold, https://arcprize.org/play?task=447fd412
 def p(g,R=range,l=len):
@@ -1113,8 +1113,8 @@ def p(g):
 p=lambda m:[*zip(sorted(set(a:=sum(m,[])),key=a.count))][2::-1]
 # task 394: 126 vs 91 bytes for gold, https://arcprize.org/play?task=f9012d9b
 p=lambda i,n=1:all(len({*x[::n],0})<3for x in i)*[[max(x[b%n::n])for b,y in enumerate(x)if y<1]for x in i if 0in x]or p(i,n+1)
-# task 395: 55 vs 53 bytes for gold, https://arcprize.org/play?task=fafffa47
-p=lambda a:[[2&~c+b.pop(0)for c in a.pop(3)]for b in a]
+# task 395: 56 vs 53 bytes for gold, https://arcprize.org/play?task=fafffa47
+p=lambda a:[[2-c-b.pop(0)&6for c in a.pop(3)]for b in a]
 # task 396: 261 (268 unzipped) vs 220 bytes for gold, https://arcprize.org/play?task=fcb5c309
 def p(m):
  d,b,*z=sorted(set(a:=sum(m,[])),key=a.count);N,M=len(m),len(m[0])
