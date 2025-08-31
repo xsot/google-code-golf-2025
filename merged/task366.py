@@ -18,9 +18,9 @@ def p(g):
      for(O,P)in D:g[A+O-G][B+P-H]=g[O][P]
  g=[A for A in g if E in A];return[g,[*zip(*g)]][Q]
 
-### combined (612 bytes)
+### combined (615 bytes)
 def p(g):
- L=enumerate;M=sum(g,[]);*S,J,K,E=sorted({*M},key=M.count);F=[]
+ L=enumerate;M=sum(g,[]);*S,J,K,E=sorted({*M},key=M.count);F=[]###
  if(Q:={K,E}<={*g[0]}):g=[*map(list,zip(*g))]
  for A,f in L(g):
   for B,N in L(f):
