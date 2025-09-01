@@ -1,5 +1,5 @@
 def p(m):
- a=sum(m,C:=[]);*_,B,S,D=sorted({*a},key=a.count)
+ *_,B,S,D=sorted({*sum(m,C:=[])},key=sum(m,C:=[]).count)
  if(S in m[0])*(D in m[0]):return[*zip(*p([[*C]for C in zip(*m)]))]
  for y,r in enumerate(m):
   for x,v in enumerate(r):
