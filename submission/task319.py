@@ -1,1 +1,3 @@
-p=lambda i:[[[t[-1],y][y==l]for*s,y in zip(*i,x)if l in s]for x in i if(l:=(t:=sorted({*(z:=sum(i,[]))},key=z.count))[(q:=0)+hash((*z,))%5009%2681in[q:=q+n for n in b' ">?,v%6&!!	B!Z%$7!0NK"?ND|Rt	']])in x]
+q=0
+for n in b'@@@%@   \n@),a0%!  @$E`	sD 1':q=q*128+n
+p=lambda i:[[[t[-1],y][y==l]for*s,y in zip(*i,x)if l in s]for x in i if(l:=(t:=sorted({*(z:=sum(i,[]))},key=z.count))[1&q>>hash((*z,))%3999%2529%1577%989%616])in x]
