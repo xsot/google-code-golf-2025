@@ -1,4 +1,4 @@
-# ovs (289 (327 unzipped) vs 296 bytes for gold)
+# ovs (289 (327 unzipped) bytes, gold)
 def p(g):
  M={A*1j+B:D for A,C in enumerate(g)for B,D in enumerate(C)};A,C=[y for y in M if M[y]==3];S=[(C+C-A,C-A,0,0),(A+A-C,A-C,0,0)]
  for*V,y,A,C,G in S:

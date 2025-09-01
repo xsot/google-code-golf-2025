@@ -1,4 +1,7 @@
-# mwi (80 vs 75 bytes for gold)
+# att (79 vs 75 bytes for gold)
+p=eval('lambda a:[[9<sum(sum(a,()))'+'for*a,in map(zip,a,a[1:],a[2:])][::4]'*2)
+
+### mwi (80 bytes)
 r=0,4,8;p=lambda i:[[9<sum(sum(z[b:b+3])for z in i[a:a+3])for b in r]for a in r]
 
 ### combined (82 bytes)
