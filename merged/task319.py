@@ -1,4 +1,7 @@
-# ovs (267 vs 199 bytes for gold)
+# att (245 (293 unzipped) vs 199 bytes for gold)
+def p(a):g=max(f:=sum(A:=a,[]),key=f.count);return[[[[g,d][d==e]for*b,d in zip(*a,b)if e in b]for b in a if e in b]for e in{*f}for i in range(2652)if[]<(b:=[a for a,A in zip(a,sum(zip(A,A),((),)*19)[i%51:])for a,A in zip(a,sum(zip(A,A),((),)*19)[i%52:])if a!=A==e!=g])==b[:1]*f.count(b[0])][0]
+
+### ovs (267 bytes)
 # see joking's solution for details
 p=lambda i:[[[t[3],y][y==l]for*s,y in zip(*i,x)if l in s]for x in i if(l:=(t:=sorted({*(z:=sum(i,[]))},key=z.count))[1&b'1 Ds	`E$@  !%0a,)@\n   @%@@@'[(m:=hash((*z,))%3999%2529%1577%989%616)//7]>>m%7])in x]
 
