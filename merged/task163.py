@@ -1,9 +1,9 @@
-# att (143 vs 137 bytes for gold)
+# att (140 vs 137 bytes for gold)
 R=0,4,8
 e=enumerate
-p=lambda a:[[b*(b==5)or sum({a[k+i%4][l+j%4]for k in R for l in R if 4==a[k+i//4][l+j//4]})for j,b in e(r)]for i,r in e(a)]
+p=lambda a:[[b*(b==5)or sum((4==a[k+i//4][l+j//4])*a[k+i%4][l+j%4]for k in R for l in R)for j,b in e(r)]for i,r in e(a)]
 
-### combined (tied, 143 bytes)
+### combined (143 bytes)
 R=0,4,8
 e=enumerate
 p=lambda a:[[b*(b==5)or sum({a[k+i%4][l+j%4]for k in R for l in R if 4==a[k+i//4][l+j//4]})for j,b in e(r)]for i,r in e(a)]
