@@ -335,8 +335,8 @@ R=range(10)
 p=lambda g:[[g[0][max(i,j)%(5-0**g[0][4])]for j in R]for i in R]
 # task 124: 130 vs 123 bytes for gold, https://arcprize.org/play?task=53b68214
 p=lambda i,n=0,s=2:i[:s]==[x[n:]+n*[0]for x in i[s:s*2]]and[([0]*n*k+x)[:10]for k in range(5)for x in i[:s]][:10]or p(i,n+s%2,s^1)
-# task 125: 156 vs 126 bytes for gold, https://arcprize.org/play?task=543a7ed5
-p=lambda i,k=11,r=range(15):-k*i or p([[(y:=i[~b][a])*(y%6%4<1)or(i[-b][a]==4or i[~b][a-1]&i[-b][a]==6)*4or(i[-b][a-1]==6)*3or y for b in r]for a in r],k-1)
+# task 125: 141 vs 126 bytes for gold, https://arcprize.org/play?task=543a7ed5
+p=lambda i,k=15,r=range(15):-k*i or p([[(y:=i[~b][a])*(y&4>0)or(3<i[~b][a-1]&i[-b][a]<7)*4or(i[-b][a-1]==6)*3or y for b in r]for a in r],k-1)
 # task 126: 57 vs 54 bytes for gold, https://arcprize.org/play?task=54d82841
 p=lambda a:a[:-1]+[[4*(sum(c)<2*max(c))for c in zip(*a)]]
 # task 127: 82 vs 65 bytes for gold, https://arcprize.org/play?task=54d9e175
@@ -417,16 +417,15 @@ p=lambda i,k=3:-k*i or p([[*[*zip(*i[::-1])][(1<abs(h:=(r:=[*map(max,*i)]).index
 p=lambda a:a[::-1]
 # task 156: 199 vs 152 bytes for gold, https://arcprize.org/play?task=694f12f3
 p=lambda i,k=79,t=0:-k*i or p([[{*y*[t:=t+1]}if k>78else(y|(y-{0}and e-{0}or{0}))if k else sorted({*map(len,sum(i,[]))}).index(len(y))**2%12%7for y,e in zip(x,[{*()},*x])]for x in zip(*i[::-1])],k-1)
-# task 157: 342 (391 unzipped) vs 296 bytes for gold, https://arcprize.org/play?task=6a1e5592
-t=b'\n'
+# task 157: 339 (409 unzipped) vs 296 bytes for gold, https://arcprize.org/play?task=6a1e5592
 def p(g):
  def Q(o,p):
   c=C[o:];(3,)<=c!=Q(o+1,p)
   for A in S:
-   h=len(A);A in p or h==sum(x-y-4%y<=min(map(int.__sub__,A,c))for x,y in zip(A,c))!=Q(o+h,p|{A:o})
+   A in p or len(A)==sum(x-y-4%y<=min(map(int.__sub__,A,c))for x,y in zip(A,c))!=Q(o+len(A),p|{A:o})
    for I in 6,7,8,9:
-    for J in range(o//15*h):g[I-A[0]+C[p[A]]][J+p[A]]|=g[I][m:=J+K.find(t+A+t)]>0;g[I][m]=0
- K,C=zip(*[([*c,5].index(5),c.count(2))for c in zip(*g)]);K=t+bytes(K)+t;S={*K.split(t)};Q(0,{});return g
+    for J in range(o//15*len(A)):g[I-A[0]+C[p[A]]][J+p[A]]|=g[I][m:=J+K.find(b'\n'+A+b'\n')]>0;g[I][m]=0
+ K,C=zip(*[([*c,5].index(5),c.count(2))for c in zip(*g)]);K=b'\n'+bytes(K)+b'\n';S={*K.split(b'\n')};Q(0,{});return g
 # task 158: 322 (441 unzipped) vs 306 bytes for gold, https://arcprize.org/play?task=6aa20dc0
 def p(g):
  o=g[0][-1];e=enumerate;_,t=max((len({*sum(a:=[R[x:x+3]for R in g[y:y+3]],[])}),a)for y,r in e(g)for x,c in e(r))
