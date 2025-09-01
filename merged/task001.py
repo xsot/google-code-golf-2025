@@ -1,14 +1,14 @@
 # att (61 bytes, gold)
 p=lambda a:[[d&e for d in b for e in c]for b in a for c in a]
 
+### mwi (tied, 61 bytes)
+p=lambda a:[[d&e for d in b for e in c]for b in a for c in a]
+
 ### ovs (tied, 61 bytes)
 p=lambda g:[[v&V for v in l for V in L]for l in g for L in g]
 
 ### combined (tied, 61 bytes)
 p=lambda i:[[y&t for y in x for t in s]for x in i for s in i]
-
-### mwi (71 bytes)
-p=lambda m,R=range(9):[[m[r//3][c//3]&m[r%3][c%3]for c in R]for r in R]
 
 ### xsot (71 bytes)
 p=lambda m,R=range(9):[[m[r//3][c//3]&m[r%3][c%3]for c in R]for r in R]

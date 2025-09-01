@@ -204,6 +204,12 @@ def test_task(task_name, dir, subsets=('train', 'test', 'arc-gen')):
         # passed all tests
         return True
 
+# Add untracked tasks if any exist
+try: 
+   repo.git.add("-N", ["*/task*.py"])
+except:
+   pass
+
 for diff in repo.index.diff(None):
  path = diff.a_path
  if output_dir in path:
@@ -213,35 +219,34 @@ for diff in repo.index.diff(None):
   continue
  dir, task_name = path.split("/")
  task_name = task_name[:-3]
- if any(player_dir == dir for player_name, player_dir in players):
-  if not test_task(task_name, dir):
-   failing += [path]
-   continue
- if dir != submission_dir: continue
- old_src = bytes(repo.git.show(f"{last_commit.hexsha}:{path}"),"u8")
+ try:
+  repo.git.ls_tree(f"{last_commit.hexsha}", path)
+  old_src = compress(preprocess(repo.git.show(f"{last_commit.hexsha}:{path}")).encode())
+ except git.exc.GitCommandError as e:
+  old_src = b"#" * 2500
  with open(path , "r") as file:
-  new_src = bytes(file.read(),"u8")
- save =  len(compress(old_src)) - len(compress(new_src))
+  new_src = compress(preprocess(file.read()).encode())
+ save =  len(old_src) - len(new_src)
  if save < 0:
-  too_long += [task_name]
+  too_long += [path]
   continue
- if not test_task(task_name, submission_dir):
+ if not test_task(task_name, dir):
   failing += [path]
   continue
- passing += [task_name]
- total_save += save
+ passing += [path]
+ if dir == submission_dir: total_save += save
 
 if failing:
  print(f"{len(failing)} SOLUTION{'S'*(len(failing)!=1)} FAILED:", failing)
  exit()
 if too_long:
- print(f"{len(too_long)} SOLUTION{'S'*(len(too_long)!=1)} ARE WORST THAN CURRENT BEST:", too_long)
+ print(f"{len(too_long)} SOLUTION{'S'*(len(too_long)!=1)} ARE LONGER THAN PREVIOUS:", too_long)
 print(f"{len(passing)} improved solution{'s'*(len(passing)!=1)}, saving {total_save}b")
 
 if (passing or merges) and promptYN("Commit changes? [Y]es/[N]o", default_commit):
  if passing:
-  for task in passing:
-   repo.git.add(f"{submission_dir}/{task}.py")
+  for path in passing:
+   repo.git.add(path)
   repo.git.commit([f'-m Saved {total_save}b on: {passing}'])
  if merges:
   for path in merges:
