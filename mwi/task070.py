@@ -1,0 +1,1 @@
+p=lambda g,k=31,r=range(17):-k*g or p([[max(3*(g[-y][x]%5+g[~y][x-1]%5+g[~y][-~x%17]%5>5),g[~y][x])for y in r]for x in r],k-1)
