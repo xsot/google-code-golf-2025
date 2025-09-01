@@ -30,9 +30,9 @@ output_dir = 'merged/'
 submission_dir = "submission"
 
 def promptYN(prompt, default = ""):
-    response = default or input(prompt+" ")[0].upper()
+    response = default or (input(prompt+" ")+" ")[0].upper()
     while response not in "YN":
-        response = input("Improper input, try Y or N")[0].upper()
+        response = (input("Improper input, try Y or N")+" ")[0].upper()
     return response == "Y"
 
 
@@ -220,14 +220,15 @@ for diff in repo.index.diff(None):
  old_src = bytes(repo.git.show(f"{last_commit.hexsha}:{path}"),"u8")
  with open(path , "r") as file:
   new_src = bytes(file.read(),"u8")
- if len(compress(new_src)) > len(compress(old_src)):
+ save =  len(compress(old_src)) - len(compress(new_src))
+ if save < 0:
   too_long += [task_name]
   continue
  if not test_task(task_name, submission_dir):
   failing += [path]
   continue
  passing += [task_name]
- total_save += len(old_src) - len(new_src)
+ total_save += save
 
 if failing:
  print(f"{len(failing)} SOLUTION{'S'*(len(failing)!=1)} FAILED:", failing)
