@@ -3,7 +3,7 @@ def p(m):
  if(S in m[0])*(D in m[0]):return[*zip(*p([*map(list,zip(*m))]))]
  for(y,r)in enumerate(m):
   for(x,v)in enumerate(r):
-   if D!=v!=S in r:c={(y,x)};[C.remove(d)or(c:=c|d)for d in(*C)if{(y-1,x),(y,x-1)}&d];C+=[c]
+   if D!=v!=S in r:c={(y,x)};[C.remove(d)or(c:=c|d)for d in[*C]if{(y-1,x),(y,x-1)}&d];C+=[c]
 # greedily start with the shape with the most dots
  for(y,(G,H),*C)in sorted((-sum(B!=m[r][c]for(r,c)in C),min(C),*C)for(C)in C):
   for(y,r)in enumerate(m):

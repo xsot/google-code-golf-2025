@@ -997,13 +997,13 @@ def p(g):
 p=lambda i,k=39:-k*i or p([[[y.bit_count()*5%14%9,y and(u*t>0)<<k%4+2|y|u][k>0]for y,t,u in zip(x,[0,*x],s)]for*x,s in zip(*i,[[0]*99,*zip(*i)])][::-1],k-1)
 # task 365: 134 vs 112 bytes for gold, https://arcprize.org/play?task=e50d258f
 p=lambda i:max([[x[a%9:][:9-a//9%9]for x in i[a//81%9:][:9-a//729]]for a in range(9**4)],key=lambda p:"0"in(r:=str(p))or r.count("2"))
-# task 366: 371 (604 unzipped) bytes, gold, https://arcprize.org/play?task=e6721834
+# task 366: 373 (604 unzipped) vs 371 bytes for gold, https://arcprize.org/play?task=e6721834
 def p(m):
  a=sum(m,C:=[]);*_,B,S,D=sorted({*a},key=a.count)
  if(S in m[0])*(D in m[0]):return[*zip(*p([*map(list,zip(*m))]))]
  for(y,r)in enumerate(m):
   for(x,v)in enumerate(r):
-   if D!=v!=S in r:c={(y,x)};[C.remove(d)or(c:=c|d)for d in(*C)if{(y-1,x),(y,x-1)}&d];C+=[c]
+   if D!=v!=S in r:c={(y,x)};[C.remove(d)or(c:=c|d)for d in[*C]if{(y-1,x),(y,x-1)}&d];C+=[c]
  for(y,(G,H),*C)in sorted((-sum(B!=m[r][c]for(r,c)in C),min(C),*C)for(C)in C):
   for(y,r)in enumerate(m):
    for(x,v)in enumerate(r):
