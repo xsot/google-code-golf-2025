@@ -1,4 +1,12 @@
-# joking (280 vs 199 bytes for gold)
+# ovs (267 vs 199 bytes for gold)
+# see joking's solution for details
+p=lambda i:[[[t[3],y][y==l]for*s,y in zip(*i,x)if l in s]for x in i if(l:=(t:=sorted({*(z:=sum(i,[]))},key=z.count))[1&b'1 Ds	`E$@  !%0a,)@\n   @%@@@'[(m:=hash((*z,))%3999%2529%1577%989%616)//7]>>m%7])in x]
+
+## legit solve, zips to 275:
+
+def p(g):f=sum(g,[]);*r,b=T={C:{i*1j+j for i,r in enumerate(g)for j,v in enumerate(r)if C==v}for C in sorted(f,key=f.count)};return[[[[b,l][v==l]for*c,v in zip(*g,r)if l in c]for r in g if l in r]for c in r for l in r for o in T[l]if T[c]in({i*2+q+a-o*2for i in T[l]for a in(0,1,1j,1+1j)}&set().union(*T.values())for q in T[c])][0]
+
+### joking (280 bytes)
 # this can probably be shortened a bit with a lot more bruteforcing, but i doubt it can reach sub 200
 # maybe there's a better way to generate a binary number with a lot of zeroes?
 q=0
@@ -77,14 +85,6 @@ p=lambda i:[[[t[-1],y][y==l]for*s,y in zip(*i,x)if l in s]for x in i if(l:=(t:=s
 ### mwi (304 (396 unzipped) bytes)
 def p(g):
  f=sum(g,[]);*r,b=sorted({*f},key=f.count);W,H=len(g[0]),len(g);T={C:{(i,j)for i,r in enumerate(g)for j,v in enumerate(r)if C==v}for C in r}
- for c in r:
-  for l in r:
-   if T[c]in({(i*2+q+a,j*2+Q+A)for i,j in T[l]for a in(0,1)for A in(0,1)if H>i*2+q+a>-1<j*2+Q+A<W}for q in range(-H*2,H*2)for Q in range(-W*2,W*2)):return[[[b,l][v==l]for*c,v in zip(*g,r)if l in c]for r in g if l in r]
-
-### ovs (306 (392 unzipped) bytes)
-E=enumerate
-def p(g):
- f=sum(g,[]);*r,b=sorted({*f},key=f.count);W,H=len(g[0]),len(g);T={C:{(i,j)for i,r in E(g)for j,v in E(r)if C==v}for C in r}
  for c in r:
   for l in r:
    if T[c]in({(i*2+q+a,j*2+Q+A)for i,j in T[l]for a in(0,1)for A in(0,1)if H>i*2+q+a>-1<j*2+Q+A<W}for q in range(-H*2,H*2)for Q in range(-W*2,W*2)):return[[[b,l][v==l]for*c,v in zip(*g,r)if l in c]for r in g if l in r]
