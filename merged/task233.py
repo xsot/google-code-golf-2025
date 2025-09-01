@@ -1,4 +1,4 @@
-# combined (329 (460 unzipped) bytes, gold)
+# combined (329 (460 unzipped) vs 324 bytes for gold)
 def p(g):
  e=enumerate;w=[(y,x,s)for y,r in e(g[:-2])for x,c in e(r[:-2])if{*sum(s:=[v[x:x+3]for v in g[y:y+3]],[])}^{0}>{2,0}]
  for y,x,s in w:
