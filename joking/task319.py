@@ -1,42 +1,74 @@
-p=lambda i:[[[t[-1],y][y==l]for*s,y in zip(*i,x)if l in s]for x in i if(l:=(t:=sorted({*(z:=sum(i,[]))},key=z.count))[(q:=0)+hash((*z,))%5009%2681in[q:=q+n for n in b' ">?,v%6&!!	B!Z%$7!0NK"?ND|Rt	']])in x]
+# this can probably be shortened a bit with a lot more bruteforcing, but i doubt it can reach sub 200
+# maybe there's a better way to generate a binary number with a lot of zeroes?
+q=0
+for n in b'@@@%@   \n@),a0%!  @$E`	sD 1':q=q*128+n
+p=lambda i:[[[t[-1],y][y==l]for*s,y in zip(*i,x)if l in s]for x in i if(l:=(t:=sorted({*(z:=sum(i,[]))},key=z.count))[1&q>>hash((*z,))%3999%2529%1577%989%616])in x]
+
+## base 36 version
+p=lambda i:[[[t[-1],y][y==l]for*s,y in zip(*i,x)if l in s]for x in i if(l:=(t:=sorted({*(z:=sum(i,[]))},key=z.count))[1&int("UVXTWA4FWP709TG8WKB7YZMZLETQU9Z2HCC4AMP7LV1AWF2II79QRUG7JTZG6QGHW1JWBWFZ8RWOPGMIAL8BE9UR1VNP1GV06DXVOSYKQIH60E87DVHFZT4",36)>>hash((*z,))%3999%2529%1577%989%616])in x]
+
 
 ## generation code:
 examples=load_examples(319)
 e = examples['train'] + examples['test'] + examples['arc-gen']
 p = [set(),set()]
 for l in e:
-    t = sorted({*(z:=sum(l['input'],[]))},key=z.count)
-    f={t.index(c)for c in {*sum(l['output'],[])}}
-    p[min(f)]|={hash((*z,))}
+   t = sorted({*(z:=sum(l['input'],[]))},key=z.count)
+   f={t.index(c)for c in {*sum(l['output'],[])}}
+   p[min(f)]|={hash((*z,))}
 
-# there are 156 zeroes vs 111 ones, focus on identifying the ones
 print(len(p[0]),len(p[1]))
 print(p[0]&p[1])
 
-t=[]
+base_string = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+def to_base(number, base):
+   result = ""
+   while number:result += base_string[number % base];number //= base
+   return result[::-1] or "0"
 
-# get some viable modulos
-for a in range(2,10000):
- l=[{y%a for y in x}for x in p]
- if l[0]&l[1]:continue
- t.append(([a],l))
- if len(t)>200:break
+ratio = 0.7
+def modchain(lis, level, mods = []):
+ if level == 0:
+  n=sorted(lis[1])
+  if max(lis[1]) <= 615:
+   print(max(lis[1]))
+   print(lis)
+   print("%".join(map(str,mods)))
+   q=0
+   for n in lis[1]:q|=2**n
+   b36 = to_base(q, base=36)
+   print(len(b36),b36)
+   r=[]
+   h=0
+   while q:
+    s=q%2**7
+    if s==0:
+     s=1
+     while h+s in lis[0]:s+=1
+     s=2**s
+    r+=[s]
+    q=q//2**7
+    h+=7
 
-# loop over the next mod chain and print viable
-for s in t:
- p=s[-1]
- for b in range(2,max(p[0]|p[1])):
-  l = [{y%b for y in x}for x in p]
-  if l[0]&l[1]:continue
-  n=sorted(l[1])
-  d = [a-b for a,b in zip(n,[0]+n)]
-  if max(d) < 128 and len({13,10,0}&{*d}) == 0:
-   print(len(d),d)
-   print("".join(map(chr,d)))
-   print(s[0]+[b])
+   # if r[0]<10, we can use it as our initial value
+   r="".join(map(chr,r[::-1])).replace("\0","\\0").replace("\n","\\n").replace("\r","\\r")
+   print(len(r),"b'"+r+"'")
+   die
+ else:
+  for a in range(2,int(min(10000,max(lis[0]|lis[1]))*ratio)):
+   l=[{y%a for y in x}for x in lis]
+   if l[0]&l[1]:continue
+   modchain(l, level-1, mods + [a])
 
-# next steps:
-# get a better setup lol?
-# or else:
-#  encode the resulting data better
-#  increase collisions in the ones set
+modchain(p, 5)
+
+## ideas
+# you could maybe bruteforce something like any((q:=q+x)<hash<(q:=q+y) for x,y in stuff)
+# better bruteforcing: in the end, it's a split of 1s and 0s. maybe there's a straight up condition that can seperate them. we can mess with the hash generation quite a bit if we want
+
+# theoretically, this format is 136 bytes pre-hash
+# 267 cases with 1 bit of information divided by 7 bits gives us 38 ascii chars to work with, which seems doable?
+
+# old method
+## this one checks if the hash modulo is in a list, unfortunately this means the list basically has to be the size of the number of ones
+p=lambda i:[[[t[-1],y][y==l]for*s,y in zip(*i,x)if l in s]for x in i if(l:=(t:=sorted({*(z:=sum(i,[]))},key=z.count))[(q:=0)+hash((*z,))%5009%2681in[q:=q+n for n in b' ">?,v%6&!!	B!Z%$7!0NK"?ND|Rt	']])in x]
