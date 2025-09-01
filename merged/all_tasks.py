@@ -522,16 +522,16 @@ p=lambda a:[a[:len(a)//2],c:=[b[:len(b)//2]for b in a]][a==[b*2for b in c]]
 p=lambda i,e=enumerate:i[0][2]&i[2][0]>7and[[y and i[a//3][b//3]for b,y in e(x[3:])]for a,x in e(i[3:])]or[*zip(*p([*zip(*i[::-1])]))][::-1]
 # task 190: 112 vs 109 bytes for gold, https://arcprize.org/play?task=7ddcd7ec
 import re;p=lambda i,k=19:-k*i or p(eval(re.sub("0(?=.{34}([^0]), 0.{31}\\1)","\\1",str([*zip(*i[::-1])]))),k-1)
-# task 191: 267 (359 unzipped) vs 251 bytes for gold, https://arcprize.org/play?task=7df24a62
+# task 191: 265 (356 unzipped) vs 251 bytes for gold, https://arcprize.org/play?task=7df24a62
 def p(g):
  B=enumerate;A=[[c[0]for c in zip(r,*g)if 1in c]for r in g if 1in r]
  for E in[0,1]*4:
   g=E*g[::-1]or[*map(list,zip(*g))]
   for C in range(-9,30):
    for D in range(-9,30):
-    for(F,H)in B(A*all(g[C+F][D+G]==I//2*2if 23>D+G>-1<C+F<23 else I<4for(F,H)in B(A)for(G,I)in B(H))):
+    for(F,H)in B(A*all(g[C+F][D+G]==I//2*2if-1<D+G<23>C+F>-1else I<4for(F,H)in B(A)for(G,I)in B(H))):
      for(G,I)in B(H):
-      if 23>D+G>-1<C+F<23:g[C+F][D+G]=I
+      if-1<D+G<23>C+F>-1:g[C+F][D+G]=I
  return g
 # task 192: 155 vs 111 bytes for gold, https://arcprize.org/play?task=7e0986d6
 p=lambda i,u=[[0]*99]:[[[max(t)*(2*f"{max(t)}, "in str(t*2)),k][sum(i,i).count(k)>30]for*t,k in zip(m,[0]+l,n,l[1:]+[0],l)]for l,m,n in zip(i,u+i,i[1:]+u)]

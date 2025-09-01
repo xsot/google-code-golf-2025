@@ -1,4 +1,16 @@
-# combined (267 (359 unzipped) vs 251 bytes for gold)
+# mwi (265 (356 unzipped) vs 251 bytes for gold)
+def p(g):
+ B=enumerate;A=[[c[0]for c in zip(r,*g)if 1in c]for r in g if 1in r]
+ for E in[0,1]*4:
+  g=E*g[::-1]or[*map(list,zip(*g))]
+  for C in range(-9,30):
+   for D in range(-9,30):
+    for(F,H)in B(A*all(g[C+F][D+G]==I//2*2if-1<D+G<23>C+F>-1else I<4for(F,H)in B(A)for(G,I)in B(H))):
+     for(G,I)in B(H):
+      if-1<D+G<23>C+F>-1:g[C+F][D+G]=I
+ return g
+
+### combined (267 (359 unzipped) bytes)
 def p(g):
  B=enumerate;A=[[c[0]for c in zip(r,*g)if 1in c]for r in g if 1in r]
  for E in[0,1]*4:
