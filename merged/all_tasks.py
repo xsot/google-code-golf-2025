@@ -153,8 +153,8 @@ p=lambda g:[r[:1]*5+[5*(l>0)]+5*[l]for*r,l in g]
 p=lambda i,k=7:-k*i or[[*map(max,x,x[:len({*sum(i,[0])})-1]*9)]for x in zip(*p(i,k-1))][::-1]
 # task 62: 175 vs 147 bytes for gold, https://arcprize.org/play?task=2bcee788
 p=lambda i,e=enumerate:{*(r:=sum(i,i[0][:0]))[(s:=r.index(2)//10)*10:]}<={2,0}and eval(str((i[:s]+i[s-1::-1]+i[:1]*9)[:10]).replace(*"03"))or[*zip(*p([*zip(*i[::-1])]))][::-1]
-# task 63: 79 vs 77 bytes for gold, https://arcprize.org/play?task=2bee17df
-p=lambda g:[[v or(any(c)*any(r[1:-1])<1)*3for _,*c,_,v in zip(*g,r)]for r in g]
+# task 63: 78 vs 77 bytes for gold, https://arcprize.org/play?task=2bee17df
+p=lambda g:[[v or 3-3*any(c)*any(r[1:-1])for _,*c,_,v in zip(*g,r)]for r in g]
 # task 64: 184 vs 152 bytes for gold, https://arcprize.org/play?task=2c608aff
 p=lambda i,k=7:-k*i or[[(y==(t:=sorted({*(r:=sum(i,[]))},key=r.count))[2]!=t[0]in x[b:]!=t[1]in x[:b])*t[x[b:].count(t[0])>2]or y for b,y in enumerate(x)]for x in zip(*p(i,k-1))][::-1]
 # task 65: 104 vs 101 bytes for gold, https://arcprize.org/play?task=2dc579da
@@ -437,8 +437,8 @@ def p(g):
 def p(i,e=enumerate):l,m=[[[y[0]for y in zip(x,*i)if{*y}&n]for x in i if{*x}&n]for n in[{2},{1,*range(3,10)}]];s=len(l)//3;return[[y or m[~-a//s][~-b//s]for b,y in e(x)]for a,x in e(l)]
 # task 160: 115 bytes, gold, https://arcprize.org/play?task=6c434453
 import re;p=lambda i,*n:eval(re.sub("1, 1, 1(.{26}), 0, 1(.{26}), 1,",r"0,2,0\1*2,2,2\2*0,2,0*",str(n or p(i,*i))))
-# task 161: 109 vs 82 bytes for gold, https://arcprize.org/play?task=6cdd2623
-p=lambda i:[[sum(({x[0]}&{x[-1]}|{s[0]}&{s[-1]})&{min(k:=sum(i,[]),key=k.count)})for s in zip(*i)]for x in i]
+# task 161: 105 vs 82 bytes for gold, https://arcprize.org/play?task=6cdd2623
+p=lambda m:[[sum(({x}&{y}|{i}&{j})&{min(a:=sum(m,[]),key=a.count)})for i,*_,j in zip(*m)]for x,*_,y in m]
 # task 162: 107 vs 96 bytes for gold, https://arcprize.org/play?task=6cf79266
 import re;p=lambda i,k=2:-k*i or p(eval(re.sub("0, 0, 0(.{55})?"*3,r"1,1,1\1 1,1,1\2 1,1,1\3",str(i))),k-1)
 # task 163: 140 vs 137 bytes for gold, https://arcprize.org/play?task=6d0160f0
@@ -876,8 +876,10 @@ p=lambda i:[(q:=sorted(map(max,*i),key=0 .__eq__))[:3],q[5:2:-1],q[6:9]]
 p=lambda i,r=b"":[[i[a][b]>0for b in r]for a in r]
 # task 318: 60 vs 54 bytes for gold, https://arcprize.org/play?task=ce4f8723
 p=lambda i:[[any(y)*3for y in zip(*x)]for x in zip(i,i[5:])]
-# task 319: 267 vs 199 bytes for gold, https://arcprize.org/play?task=ce602527
-p=lambda i:[[[t[3],y][y==l]for*s,y in zip(*i,x)if l in s]for x in i if(l:=(t:=sorted({*(z:=sum(i,[]))},key=z.count))[1&b'1 Ds	`E$@  !%0a,)@\n   @%@@@'[(m:=hash((*z,))%3999%2529%1577%989%616)//7]>>m%7])in x]
+# task 319: 280 vs 199 bytes for gold, https://arcprize.org/play?task=ce602527
+q=0
+for n in b'@@@%@   \n@),a0%!  @$E`	sD 1':q=q*128+n
+p=lambda i:[[[t[-1],y][y==l]for*s,y in zip(*i,x)if l in s]for x in i if(l:=(t:=sorted({*(z:=sum(i,[]))},key=z.count))[1&q>>hash((*z,))%3999%2529%1577%989%616])in x]
 # task 320: 72 vs 68 bytes for gold, https://arcprize.org/play?task=ce9e57f2
 p=lambda a:[[c<<b.pop(0)for c in a.pop(0)]for*b,in(a[:1]*len(a)+a)[::2]]
 # task 321: 57 vs 55 bytes for gold, https://arcprize.org/play?task=cf98881b
@@ -984,9 +986,9 @@ def p(g):
 p=lambda i,k=39:-k*i or p([[[y.bit_count()*5%14%9,y and(u*t>0)<<k%4+2|y|u][k>0]for y,t,u in zip(x,[0,*x],s)]for*x,s in zip(*i,[[0]*99,*zip(*i)])][::-1],k-1)
 # task 365: 134 vs 112 bytes for gold, https://arcprize.org/play?task=e50d258f
 p=lambda i:max([[x[a%9:][:9-a//9%9]for x in i[a//81%9:][:9-a//729]]for a in range(9**4)],key=lambda p:"0"in(r:=str(p))or r.count("2"))
-# task 366: 369 (606 unzipped) vs 371 bytes for gold, https://arcprize.org/play?task=e6721834
+# task 366: 366 (613 unzipped) vs 371 bytes for gold, https://arcprize.org/play?task=e6721834
 def p(m):
- a=sum(m,C:=[]);*_,B,S,D=sorted({*a},key=a.count)
+ *_,B,S,D=sorted({*sum(m,C:=[])},key=sum(m,C:=[]).count)
  if(S in m[0])*(D in m[0]):return[*zip(*p([[*C]for C in zip(*m)]))]
  for y,r in enumerate(m):
   for x,v in enumerate(r):
