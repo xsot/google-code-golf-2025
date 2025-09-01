@@ -1,4 +1,4 @@
-# mwi (330 (420 unzipped) vs 333 bytes for gold)
+# mwi (330 (420 unzipped) bytes, gold)
 def p(i,n=2):
  s=*range(-n,0),*range(1,n+1);z=*zip(s,z:=[0]*9),*zip(z,[*s,0]);f=eval(str(i))
  for x in range(30):

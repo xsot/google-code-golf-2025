@@ -1,4 +1,4 @@
-# mwi (259 (284 unzipped) vs 261 bytes for gold)
+# mwi (259 (284 unzipped) bytes, gold)
 L=lambda i,j,s:any(0<(i-I)**2+(j-J)**2<3for I,J in s)
 def p(g):
  for i,j in(M:={(A,x):F for A,r in enumerate(g)for x,F in enumerate(r)if F}):
