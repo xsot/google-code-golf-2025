@@ -1,4 +1,4 @@
-# mwi (305 (355 unzipped) vs 306 bytes for gold)
+# mwi (305 (355 unzipped) bytes, gold)
 E=enumerate
 def p(g):
  G={j+i*1j:v^2for i,r in E(g)for j,v in E(r)if v};[abs(I-J)<2!=s.add(J)for P in G if G[P]%2if[s:={P}]for J in[*G]*6for I in[*s]]
