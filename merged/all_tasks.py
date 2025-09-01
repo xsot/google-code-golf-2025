@@ -126,13 +126,13 @@ p=lambda i,k=3:-k*i or[(l:=0)or[y+0*(l:=l|(1>a<y!=b)*b)or l for a,b,y in zip([0,
 p=lambda a:[3*[1//len({*b})*5]for b in a]
 # task 53: 21 bytes, gold, https://arcprize.org/play?task=25ff71a9
 p=lambda a:(a+a)[2:5]
-# task 54: 308 (379 unzipped) vs 314 bytes for gold, https://arcprize.org/play?task=264363fd
+# task 54: 308 (377 unzipped) vs 314 bytes for gold, https://arcprize.org/play?task=264363fd
 def p(g):
- f=sum(g,[]);*C,p,B=sorted({*f},key=f.count);M={(i,I):J for(i,j)in enumerate(g)for(I,J)in enumerate(j)if J in C};T={(i,j)for(i,j)in M for(I,J)in M if(I-i)**2+(J-j)**2==1}
- for(i,j)in{*M}-T:
-  for(I,J)in T:
-   y,x=zip(*T);d=I-sum(y)//len(y);D=J-sum(x)//len(x);g[I][J]=B;F=1
-   while((r:=g[d+i])[D+j]^B)*F:r[D+j]=M[I,J];d+=(d>0)-(d<0);D+=(D>0)-(D<0);F-=-3<d|D<3
+ f=sum(g,[]);*C,_,B=sorted({*f},key=f.count);M={(i,j):v for i,r in enumerate(g)for j,v in enumerate(r)if v in C};T={(i,j)for i,j in M for I,J in M if(I-i)**2+(J-j)**2==1}
+ for i,j in{*M}-T:
+  for I,J in T:
+   y,x=zip(*T);d=I-sum(y)//len(y);D=J-sum(x)//len(x);g[I][J]=B;F=1;u=d+i;U=D+j
+   while(g[u][U]^B)*F:g[u][U]=M[I,J];u+=int(d/2);U+=int(D/2);F-=-2<d|D<2
  return g
 # task 55: 100 vs 84 bytes for gold, https://arcprize.org/play?task=272f95fa
 p=lambda i,z=0:[[z:=z+1-((c:=0)in x)]and[-c+(c:=c+y)or b"020463010"[z*3+c%7]%8for y in x]for x in i]
@@ -156,20 +156,19 @@ p=lambda g:[[v or 3-3*any(c)*any(r[1:-1])for _,*c,_,v in zip(*g,r)]for r in g]
 p=lambda i,k=7:-k*i or[[(y==(t:=sorted({*(r:=sum(i,[]))},key=r.count))[2]!=t[0]in x[b:]!=t[1]in x[:b])*t[x[b:].count(t[0])>2]or y for b,y in enumerate(x)]for x in zip(*p(i,k-1))][::-1]
 # task 65: 104 vs 101 bytes for gold, https://arcprize.org/play?task=2dc579da
 p=lambda i:[p:=len(i)//2+1]and[[min(y,key=y.count)for y in zip(x,t,x[p:],t[p:])]for x,t in zip(i,i[p:])]
-# task 66: 348 (478 unzipped) vs 299 bytes for gold, https://arcprize.org/play?task=2dd70a9a
+# task 66: 312 (415 unzipped) vs 299 bytes for gold, https://arcprize.org/play?task=2dd70a9a
 def p(g):
- def p(y,x,A,B,V,g,C=0):
-  if C>2:return
-  for G in range(20):
-   if not len(g[0])>x>-1<y<len(g)or(y,x)in V:break
-   if(t:=g[y][x])==2:
-    for i,j in V:g[i][j]=3
-    return
-   if t>7:
-    for D,E in(G>0)*[[B,A],[-B,A],[B,-A],[-B,-A]]:p(y-A+D,x-B+E,D,E,{*V,(y-A,x-B)},g,C+1)
-    break
-   V=V|{(y,x)};y+=A;x+=B
- (C,D),(A,B)=[[A,B]for A,C in enumerate(g)for B,D in enumerate(C)if g[A][B]==3];H={(C,D),(A,B)};p(C+C-A,D+D-B,C-A,D-B,H,g);p(A+A-C,B+B-D,A-C,B-D,H,g);return g
+ def p(y,x,A,B,V,g,C=0,G=0):
+  if(len(g)>x>-1<y<len(g))*16<=C+13|G:return
+  if(t:=g[y][x])==2:
+   for i,j in V:g[i][j]=3
+   return
+  if t>7:
+   for D,E in[[B,A],[-B,A],[B,-A],[-B,-A]]*G:p(y-A+D,x-B+E,D,E,{*V,(y-A,x-B)},g,C+1)
+   return
+  p(y+A,x+B,A,B,{*V,(y,x)},g,C,G+1)
+ for(A,B),(C,D)in(X:=[(A,B)for A,C in enumerate(g)for B,D in enumerate(C)if g[A][B]==3]),X[::-1]:p(C+C-A,D+D-B,C-A,D-B,X,g)
+ return g
 # task 67: 33 bytes, gold, https://arcprize.org/play?task=2dee498d
 p=lambda a:[b[:len(a)]for b in a]
 # task 68: 122 vs 117 bytes for gold, https://arcprize.org/play?task=31aa019c
