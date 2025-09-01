@@ -8,7 +8,7 @@ def p(g):
     for J in range(o//15*len(A)):g[I-A[0]+C[p[A]]][J+p[A]]|=g[I][m:=J+K.find(b'\n'+A+b'\n')]>0;g[I][m]=0
  K,C=zip(*[([*c,5].index(5),c.count(2))for c in zip(*g)]);K=b'\n'+bytes(K)+b'\n';S={*K.split(b'\n')};Q(0,{});return g
 
-### ovs (391 bytes)
+### ovs (342 (391 unzipped) bytes)
 t=b'\n'
 def p(g):
  def Q(o,p):
@@ -19,7 +19,7 @@ def p(g):
     for J in range(o//15*h):g[I-A[0]+C[p[A]]][J+p[A]]|=g[I][m:=J+K.find(t+A+t)]>0;g[I][m]=0
  K,C=zip(*[([*c,5].index(5),c.count(2))for c in zip(*g)]);K=t+bytes(K)+t;S={*K.split(t)};Q(0,{});return g
 
-### combined (391 bytes)
+### combined (342 (391 unzipped) bytes)
 t=b'\n'
 def p(g):
  def Q(o,p):

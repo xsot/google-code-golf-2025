@@ -8,7 +8,7 @@ def p(g,k=3,v=range):
     if D in l:g[A][D]=4
  return-k*g or p([*map(list,zip(*g[::-1]))],k-1)
 
-### ovs (341 bytes)
+### ovs (288 (341 unzipped) bytes)
 E=enumerate
 def p(g):
  for _ in[G:=[*g]]*4:

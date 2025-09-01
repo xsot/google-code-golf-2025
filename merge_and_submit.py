@@ -120,10 +120,11 @@ for i in range(1, 401):
 
     # Add other solutions with comments
     for zipped_score, score, player_name, path, _, _ in solutions[1:]:
+        z = f" ({score} unzipped)" * (zipped_score != score)
         if score == best_score:
-            lines.extend(["", f"### {player_name} (tied, {score} bytes)"])
+            lines.extend(["", f"### {player_name} (tied, {zipped_score}{z} bytes)"])
         else:
-            lines.extend(["", f"### {player_name} ({score} bytes)"])
+            lines.extend(["", f"### {player_name} ({zipped_score}{z} bytes)"])
 
         with open(path) as f:
             lines.extend(f.readlines())

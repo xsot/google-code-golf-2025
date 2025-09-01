@@ -4,7 +4,7 @@ def p(g):
  for k,_ in e(g):g=[[c or any(any(s[x-(x>0):x+2])for s in g[y-(y>0):y+2])*[C,5][k%o<o-1]for x,c in e(r)]for y,r in e(g)]
  return g
 
-### ovs (320 bytes)
+### ovs (276 (320 unzipped) bytes)
 R=range(10)
 J=1j
 def p(g):

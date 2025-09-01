@@ -13,7 +13,7 @@ def p(m):
     for(r,c)in C*all(len(m[0])>x-H+c>-1<y-G+r<len(m)and(B!=m[r][c]==m[y-G+r][x-H+c]or B==m[r][c]!=D==m[y-G+r][x-H+c])for(r,c)in C):m[y-G+r][x-H+c]=m[r][c]
  return[r for(y,r)in enumerate(m)if D in r]
 
-### combined (561 bytes)
+### combined (412 (561 unzipped) bytes)
 def p(m):
  E=enumerate;a=sum(m,A:=[]);*_,B,S,D=sorted({*a},key=a.count)
  if{S,D}<={*m[0]}:return[*zip(*p([*map(list,zip(*m))]))]
