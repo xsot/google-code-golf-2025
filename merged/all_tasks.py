@@ -164,9 +164,9 @@ def p(g):
  return g
 # task 67: 33 bytes, gold, https://arcprize.org/play?task=2dee498d
 p=lambda a:[b[:len(a)]for b in a]
-# task 68: 122 vs 117 bytes for gold, https://arcprize.org/play?task=31aa019c
-z=[[0]*10]
-p=lambda a:eval(f'[[[0,2,2,*a[1]][[*map("{a}".count,str(a))].count(1)]'+'for*a,in map(zip,z+a,a,a,a[1:]+z)]'*2)
+# task 68: 119 vs 117 bytes for gold, https://arcprize.org/play?task=31aa019c
+s='for*a,in map(zip,[s]+a,a,a,a[1:]+[s])]'
+p=lambda a:eval(f'[[[0,2,2,*a[1]][[*map("{a}".count,str(a))].count(1)]'+s*2)
 # task 69: 209 vs 153 bytes for gold, https://arcprize.org/play?task=321b1fc6
 def p(a,i=-1):
  for i in(I:={i//10+i:v*(v!=8)for v in sum(a,[])if[i:=i+1]*v}):s={i};[s.add(y)for y in[*I]*6if{y,y+1,y-1,y+11,y-11}&s];a[i//11][i%11]=I[[s for s in I if I[s]][sorted(s).index(i)]]-I[i]
