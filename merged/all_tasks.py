@@ -513,8 +513,9 @@ def p(g):
      for(G,I)in B(H):
       if-1<D+G<23>C+F>-1:g[C+F][D+G]=I
  return g
-# task 192: 155 vs 111 bytes for gold, https://arcprize.org/play?task=7e0986d6
-p=lambda i,u=[[0]*99]:[[[max(t)*(2*f"{max(t)}, "in str(t*2)),k][sum(i,i).count(k)>30]for*t,k in zip(m,[0]+l,n,l[1:]+[0],l)]for l,m,n in zip(i,u+i,i[1:]+u)]
+# task 192: 120 vs 111 bytes for gold, https://arcprize.org/play?task=7e0986d6
+b,=c,=z=['for*d,c,b,a in zip(b,c,z+a,a[1:]+z,a)]']
+p=lambda a:eval('[[[sum({*d}&{b,c}),a][%s.count(a)>30]'%sum(a,a)+b*2)
 # task 193: 98 vs 85 bytes for gold, https://arcprize.org/play?task=7f4411dc
 import re
 p=lambda m,*a:eval(re.sub(r"(?<=[0 ,]..)\d(?=..[0 ])",'0',f" {[*zip(*a or p(m,*m))]} "))
