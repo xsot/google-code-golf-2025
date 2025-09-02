@@ -1,2 +1,2 @@
-# combined (142 vs 127 bytes for gold)
+# combined (142 vs 110 bytes for gold)
 p=lambda i,k=15:-k*i or p([[y[1]%2*3or y[(f:=sum(i,[]).index)(3)//(w:=len(i[0]))<f(2)//w]%3for y in zip([0,*x],x)]for x in zip(*i)][::-1],k-1)

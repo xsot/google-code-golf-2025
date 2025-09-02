@@ -1,5 +1,5 @@
-# joking (133 bytes, gold)
-p=lambda i,r=range(6):[[max([*[s for t in i[a-3:a]+i[a+3:a:-1]for s in t[b-3:b]+t[b+3:b:-1]if s][:-3],i[a][b]])for b in r]for a in r]
+# joking (132 vs 133 bytes for gold)
+p=lambda i,r=range(6):[[max([s for t in i[a-3:a]+i[a+3:a:-1]for s in t[b-3:b]+t[b+3:b:-1]if s][:-3]+[i[a][b]])for b in r]for a in r]
 
 ### combined (145 bytes)
 p=lambda i,k=3,r=range(6):-k*i or[[p([*zip(*i[::-1])],k-1)[b][~a]+max([*[s for t in i[a%3:a]for s in t[b%3:b]if s][:-3],0])for b in r]for a in r]
