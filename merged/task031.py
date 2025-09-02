@@ -1,8 +1,8 @@
-# att (47 vs 45 bytes for gold)
-p=lambda a,*n:[*filter(any,zip(*n or p(a,*a)))]
+# att (45 bytes, gold)
+p=lambda a,*n:[*filter(any,zip(*n or p(*a)))]
 
-### combined (tied, 47 bytes)
-p=lambda a,*n:[*filter(any,zip(*n or p(a,*a)))]
+### combined (tied, 45 bytes)
+p=lambda a,*n:[*filter(any,zip(*n or p(*a)))]
 
 ### xsot (52 bytes)
 p=lambda m,i=1:-i*m or p([*filter(sum,zip(*m))],i-1)

@@ -70,8 +70,8 @@ p=lambda g:[((j%11*[max(g[j%8])]+[0]*8)*2)[:10]for j in b'b"b""ooWoW']
 p=lambda a:min([d in sum(i:=[b[1:-1]for*b,in zip(*[b for*b,in zip(*a)if d in b])if{d}<{*b}],a),i]for d in sum(a,a))[1]
 # task 30: 97 bytes, gold, https://arcprize.org/play?task=1caeab9d
 p=lambda i:[[c*x[(H:=h.index)(1)-(j:=j-1)-H(c)]for c in h]for x in i if(h:=[*map(max,*i)],j:=11)]
-# task 31: 47 vs 45 bytes for gold, https://arcprize.org/play?task=1cf80156
-p=lambda a,*n:[*filter(any,zip(*n or p(a,*a)))]
+# task 31: 45 bytes, gold, https://arcprize.org/play?task=1cf80156
+p=lambda a,*n:[*filter(any,zip(*n or p(*a)))]
 # task 32: 39 bytes, gold, https://arcprize.org/play?task=1e0a9b12
 p=lambda a:[*zip(*map(sorted,zip(*a)))]
 # task 33: 77 bytes, gold, https://arcprize.org/play?task=1e32b0e9
@@ -584,8 +584,8 @@ r=range(661)
 p=lambda a:max([-(c:=sum(b:=[b[x>>5:y>>5]for b in a[x%32:y%32]],a).count)(0),c(2),-x,b]for x in r for y in r)[3]
 # task 217: 95 bytes, gold, https://arcprize.org/play?task=8f2ea7aa
 p=lambda a,*n:[*filter(any,zip(*[[d&e for d in b for e in c]for b in n for c in a]or p(a,*a)))]
-# task 218: 58 bytes, gold, https://arcprize.org/play?task=90c28cc7
-p=lambda a,*n:[*{b:0for b in zip(*n or p(a,*a))if any(b)}]
+# task 218: 56 vs 58 bytes for gold, https://arcprize.org/play?task=90c28cc7
+p=lambda a,*n:[*{b:0for b in zip(*n or p(*a))if any(b)}]
 # task 219: 294 (307 unzipped) vs 269 bytes for gold, https://arcprize.org/play?task=90f3ed37
 Z=zip
 def p(a,h=0):
@@ -1025,8 +1025,8 @@ f=lambda b,*a:[b:=(*b[d>0:-1],*{0,d})for*_,d in[b,*a]]
 p=lambda a,n=-3:n*a or p([b:=(c:=[*zip(*a)])[::-1],max(f(*c)[::-1],f(*b))][2in a[-1]],n+1)
 # task 383: 121 bytes, gold, https://arcprize.org/play?task=f1cefba8
 p=lambda g,*G:[[r,[(o:=[*{}.fromkeys(r)]*3)[1+0**v]for v in r]][str(o)[1:8]in f'{r+r[::-1]}']for r in zip(*G or p(g,*g))]
-# task 384: 65 vs 64 bytes for gold, https://arcprize.org/play?task=f25fbde4
-p=lambda a,*n:[b for*b,in zip(*n or p(a,*a))for _ in'  'if 4in b]
+# task 384: 63 vs 64 bytes for gold, https://arcprize.org/play?task=f25fbde4
+p=lambda a,*n:[b for*b,in zip(*n or p(*a))for _ in'  'if 4in b]
 # task 385: 25 bytes, gold, https://arcprize.org/play?task=f25ffba3
 p=lambda a:a[:4:-1]+a[5:]
 # task 386: 52 bytes, gold, https://arcprize.org/play?task=f2829549
