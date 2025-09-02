@@ -1,5 +1,8 @@
-# ovs (52 vs 51 bytes for gold)
+# mwi (51 bytes, gold)
+p=lambda g:[(str(g).count('1, 1')*[1]+[0]*9)[:9:2]]
+
+### ovs (52 bytes)
 p=lambda g:[(str(g).count('1, 1')//2*[1]+[0]*5)[:5]]
 
-### combined (tied, 52 bytes)
+### combined (52 bytes)
 p=lambda g:[(str(g).count('1, 1')//2*[1]+[0]*5)[:5]]
