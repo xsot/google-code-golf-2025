@@ -332,20 +332,20 @@ p=lambda a:[[sum({*b[c:c+3]}-{5})for c in(0,3,6)]for b in a[::3]]
 p=lambda a,n=-3:n*a or p([[*b[:[*b,1].index(~b[l:=len(a)]%5%3)],*b[l:],8,*[0]*l][l-1::-1]for*b,in zip(*a,*filter(any,a))],n+1)
 # task 132: 109 vs 86 bytes for gold, https://arcprize.org/play?task=56ff96f3
 p=lambda i,k=3:-k*i or p([[max({*i[a]}&{*y}|{*y[:a+1]}&{*y[a:]})for a in range(len(i))]for y in zip(*i)],k-1)
-# task 133: 330 (475 unzipped) bytes, gold, https://arcprize.org/play?task=57aa92db
+# task 133: 300 (389 unzipped) vs 330 bytes for gold, https://arcprize.org/play?task=57aa92db
 def p(g):
- C=[];e=enumerate
- for A,r in e(g):
-  for B,F in e(r):
-   G={(A,B)}
-   for D in(F>0)*C:
-    if{(A-1,B),(A,B-1)}&D:C.remove(D);G|=D
-   C+=(F>0)*[G]
+ *C,M={i*90+j:g for i,g in enumerate(g)for j,g in enumerate(g)if g},
+ for A in M:
+  G={A}
+  for D in*C,:
+   if{A-90,A-1}&D:C.remove(D);G|=D
+  C+=G,
  for A in C:
-  B=[g[A][B]for(A,B)in A];D=min({*B},key=B.count);G,H=max([A,B]for(A,B)in A if g[A][B]==D)
-  for I in 1//B.count(D)*C:
-   for(Q,R)in A-{(G,H)}:
-    for J,_ in e(E:=[[A,B]for(A,B)in I if g[A][B]==D]):F=(len(E)^6)%6;O,P=min(E);g[O+(Q-G)*F+J//F][P+(R-H)*F+J%F]=max(g[A][B]for(A,B)in I if g[A][B]^D)
+  for D in A:
+   for G in A:
+    for I in 1//sum(M[k]==M[D]for k in A)*C:
+     for Q in{G}^A:
+      for V in(E:=[k for k in I if M[D]==M[k]==M[G]]):V+=(len(E)^6)%6*(Q-G);g[V//90][V%90],={*map(M.get,I)}-{M[D]}
  return g
 # task 134: 209 vs 186 bytes for gold, https://arcprize.org/play?task=5ad4f10b
 p=lambda i,n=9:(t:=[k[0]for x in i if(k:=[y for y in x if(n*f", {y}")[2:]in str(x)!=y>0])])[n*2:]and[[(sum({*sum(i,[])})-y)*(y==t[2])for*s,y in zip(*i,x)if t[2]in s][::n]for x in i if t[2]in x][::n]or p(i,n-1)
