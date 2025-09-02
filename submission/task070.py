@@ -1,1 +1,1 @@
-p=lambda i:[[y%8*(8in{*x}&{*(u:=[*zip(*i)])[b],*{*u[b-1]}&{*u[-~b%17]}})*3or y for b,y in enumerate(x)]for x in i]
+p=lambda i:[[(c[0]+7in{*x}&{*c,hash(c)%1070})*2+c[0]for c in zip(x,*i)]for x in i]
