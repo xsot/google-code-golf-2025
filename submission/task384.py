@@ -1,1 +1,1 @@
-p=lambda a,*n:[b for*b,in zip(*n or p(*a))for _ in'  'if 4in b]
+p=lambda a,*n:sum([[b,b]for*b,in zip(*n or p(*a))if 4in b],[])
