@@ -1,5 +1,11 @@
-# ovs (103 vs 81 bytes for gold)
+# joking (81 bytes, gold)
+p=lambda i,k=2:-k*i or p([[*map(min,a,[9,9]+a[::-1],c)]for*c,a in zip(*i,i)],k-1)
+
+##
+p=lambda i,k=2:-k*i or p([[*map(min,a,b,c)]for a,b,*c in zip(i,i[:2]+i[::-1],*i)],k-1)
+
+### ovs (103 bytes)
 p=lambda i,k=2,r=range(30):-k*i or p([[min(i[a][b],i[b][a],i[1-b^-~b>>b][a])for b in r]for a in r],k-1)
 
-### combined (tied, 103 bytes)
+### combined (103 bytes)
 p=lambda i,k=2,r=range(30):-k*i or p([[min(i[a][b],i[b][a],i[1-b^-~b>>b][a])for b in r]for a in r],k-1)
