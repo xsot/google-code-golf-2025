@@ -953,7 +953,7 @@ p=lambda a:[[*map(max,b,b[:4:-1])]for b in a]
 def p(i):I=[r*2for r in i*2];return[[[max(I[x][y],I[a+n+b+~y][b-a+x],I[a-b+y][b+n+a+~x],I[2*a+n+~x][2*b+n+~y])for y in range(10)]for x in range(10)]for n in(4,3,2)for a in range(10)for b in range(10)if all(all(x[b:b+n])for x in I[a:a+n])][0]
 # task 362: 92 vs 69 bytes for gold, https://arcprize.org/play?task=e48d4e1a
 p=lambda i,r=range(10):[[(i[a-(s:=str(i).count("5"))][b-10+s]^5or 5)^5for b in r]for a in r]
-# task 363: 236 (310 unzipped) vs 217 bytes for gold, https://arcprize.org/play?task=e5062a87
+# task 363: 236 (310 unzipped) vs 216 bytes for gold, https://arcprize.org/play?task=e5062a87
 def p(g):
  v=[[y,x]for y,r in enumerate(g)for x,c in enumerate(r)if c%5];i,j=min(v)
  for y,r in enumerate(g):

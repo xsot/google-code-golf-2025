@@ -1,4 +1,4 @@
-# mwi (236 (310 unzipped) vs 217 bytes for gold)
+# mwi (236 (310 unzipped) vs 216 bytes for gold)
 def p(g):
  v=[[y,x]for y,r in enumerate(g)for x,c in enumerate(r)if c%5];i,j=min(v)
  for y,r in enumerate(g):
