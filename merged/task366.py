@@ -1,4 +1,4 @@
-# mwi (365 (604 unzipped) vs 366 bytes for gold)
+# mwi (365 (604 unzipped) bytes, gold)
 def p(m):
  *H,B,S,D=sorted({*sum(m,C:=[])},key=sum(m,C:=[]).count)
  if{*m[0]}>={S,D}:return[*zip(*p([[*C]for C in zip(*m)]))]
