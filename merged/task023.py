@@ -10,7 +10,7 @@ def p(g,*S):
   try:f=sum(g,[])*2;i=f.index(5);[{5}-{c}=={f[I]for I in s}!=g==p(g,i,*s)>1for s in[[w+i,1+i,w-~i],[i+1,i+2],[i+w,i+w*2]]]
   except:return g
 
-### xsot (280 (578 unzipped) bytes)
+### xsot (282 (578 unzipped) bytes)
 def p(m):
  N,M=len(m),len(m[0])
  def f():
