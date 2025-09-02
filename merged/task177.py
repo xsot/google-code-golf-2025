@@ -1,12 +1,15 @@
-# ovs (55 vs 53 bytes for gold)
+# mwi (53 bytes, gold)
+p=lambda a,*n:[*filter(any,zip(*n or p(a,*a)[::-1]))]
+
+### ovs (55 bytes)
 p=lambda g:[[*filter(abs,r)][::-1]for r in g if any(r)]
 
-### xsot (tied, 55 bytes)
+### xsot (55 bytes)
 p=lambda m:[[*filter(int,l[::-1])]for l in m if sum(l)]
 ##
 p=lambda m,F=filter:[[*F(int,l[::-1])]for l in F(sum,m)]
 p=lambda m:[[*filter(None,l)][::-1]for l in filter(sum,m)]
 p=lambda m:[[i for i in l[::-1]if i]for l in filter(sum,m)]
 
-### combined (tied, 55 bytes)
+### combined (55 bytes)
 p=lambda g:[[*filter(abs,r)][::-1]for r in g if any(r)]

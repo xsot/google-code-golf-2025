@@ -465,8 +465,8 @@ p=lambda g,c=1:(k:=(f:=lambda g:[r for*r,in zip(*g)if c in r])(f(g)))*(f(k)==f(k
 r=range(21);p=lambda g:[[g[A][B]|g[B][A]or g[0][B!=A]for B in r]for A in r]
 # task 176: 74 vs 65 bytes for gold, https://arcprize.org/play?task=7447852a
 p=lambda g:[[*map(max,(([4]*3+[0]*9)*9)[a%8::a%3],g[a%5])]for a in b"7)a"]
-# task 177: 55 vs 53 bytes for gold, https://arcprize.org/play?task=7468f01a
-p=lambda g:[[*filter(abs,r)][::-1]for r in g if any(r)]
+# task 177: 53 bytes, gold, https://arcprize.org/play?task=7468f01a
+p=lambda a,*n:[*filter(any,zip(*n or p(a,*a)[::-1]))]
 # task 178: 49 vs 47 bytes for gold, https://arcprize.org/play?task=746b3537
 p=lambda a:a*-1*-1or[p(b)for b in a if a!=(a:=b)]
 # task 179: 21 bytes, gold, https://arcprize.org/play?task=74dd1130
