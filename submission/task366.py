@@ -1,6 +1,6 @@
 def p(m):
- *_,B,S,D=sorted({*sum(m,C:=[])},key=sum(m,C:=[]).count)
- if(S in m[0])*(D in m[0]):return[*zip(*p([[*C]for C in zip(*m)]))]
+ *H,B,S,D=sorted({*sum(m,C:=[])},key=sum(m,C:=[]).count)
+ if{*m[0]}>={S,D}:return[*zip(*p([[*C]for C in zip(*m)]))]
  for y,r in enumerate(m):
   for x,v in enumerate(r):
    if D!=v!=S in r:c={(y,x)};[C.remove(d)or(c:=c|d)for d in[*C]if{(y-1,x),(y,x-1)}&d];C+=[c]
