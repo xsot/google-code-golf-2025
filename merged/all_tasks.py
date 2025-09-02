@@ -465,8 +465,8 @@ p=lambda g,c=1:(k:=(f:=lambda g:[r for*r,in zip(*g)if c in r])(f(g)))*(f(k)==f(k
 r=range(21);p=lambda g:[[g[A][B]|g[B][A]or g[0][B!=A]for B in r]for A in r]
 # task 176: 74 vs 65 bytes for gold, https://arcprize.org/play?task=7447852a
 p=lambda g:[[*map(max,(([4]*3+[0]*9)*9)[a%8::a%3],g[a%5])]for a in b"7)a"]
-# task 177: 53 bytes, gold, https://arcprize.org/play?task=7468f01a
-p=lambda a,*n:[*filter(any,zip(*n or p(a,*a)[::-1]))]
+# task 177: 51 vs 53 bytes for gold, https://arcprize.org/play?task=7468f01a
+p=lambda a,*n:[*filter(any,zip(*n or p(*a)[::-1]))]
 # task 178: 49 vs 47 bytes for gold, https://arcprize.org/play?task=746b3537
 p=lambda a:a*-1*-1or[p(b)for b in a if a!=(a:=b)]
 # task 179: 21 bytes, gold, https://arcprize.org/play?task=74dd1130
@@ -646,7 +646,7 @@ p=lambda a,c=0:[(b:=0)or[c:=(b:=b or d)for d in r+[c]]for*r,_ in a]
 def p(i):l,m=[[[a[0]for a in zip(b,*i)if{*a}&m]for b in i if{*b}&m]for m in[{8},{*range(1,8),9}]];return[[a<len(m)-1>b>0and((k:=l[a-1][b-1])and m[1-(b>a<len(m)-1-b)|-(b<a>len(m)-1-b)][1-(b<a<len(m)-1-b)|-(b>a>len(m)-1-b)]or k)or m[a][b]for b in range(len(m))]for a in range(len(m))]
 # task 239: 108 vs 105 bytes for gold, https://arcprize.org/play?task=9af7a82c
 p=lambda a,i=0:[b:=sum(a,[]),c:=b.count]*any(r:=sorted([e*(c(e)>i)for e in{*b}],key=c)[::-1])and[r]+p(a,i+1)
-# task 240: 107 bytes, gold, https://arcprize.org/play?task=9d9215db
+# task 240: 107 vs 101 bytes for gold, https://arcprize.org/play?task=9d9215db
 p=lambda i,k=4,r=range(19):-k*i or p([[i[~b][a]|i[b][a]|i[b%2*(a<b<18-a)*a+2][a]for b in r]for a in r],k-1)
 # task 241: 21 bytes, gold, https://arcprize.org/play?task=9dfd6313
 p=lambda a:[*zip(*a)]

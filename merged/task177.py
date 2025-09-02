@@ -1,5 +1,5 @@
-# mwi (53 bytes, gold)
-p=lambda a,*n:[*filter(any,zip(*n or p(a,*a)[::-1]))]
+# mwi (51 vs 53 bytes for gold)
+p=lambda a,*n:[*filter(any,zip(*n or p(*a)[::-1]))]
 
 ### ovs (55 bytes)
 p=lambda g:[[*filter(abs,r)][::-1]for r in g if any(r)]
