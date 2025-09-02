@@ -1,1 +1,1 @@
-p=lambda a,*n:[*{b:0for b in zip(*n or p(a,*a))if any(b)}]
+p=lambda a,*n:[*{b:0for b in zip(*n or p(*a))if any(b)}]
