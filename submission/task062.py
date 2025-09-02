@@ -1,1 +1,1 @@
-p=lambda i:{*i[s:=str(i).index(", 2")//31]+i[s+1]}<={2,3}and i[:s]+(i*2)[9+s::-1]or[*zip(*p(eval(str([*zip(*i)][::-1]).replace(*"03")))[9::-1])]
+p=lambda i:{*i[s:=str(i).index(", 2")//31]+i[s+1]}-{2,3}and[*zip(*p(eval(str([*zip(*i)][::-1]).replace(*"03")))[9::-1])]or i[:s]+(i*2)[9+s::-1]
