@@ -1,4 +1,4 @@
-import sys,numpy,json
+import sys,numpy as np,json,os,importlib,copy,time,re
 sys.path.append("google-code-golf-2025\\code_golf_utils")
 
 import warnings
@@ -8,7 +8,7 @@ def load_examples(task_num):
   """Loads relevant data from ARC-AGI and ARC-GEN."""
   if not task_num:
     return task_zero
-  with open("google-code-golf-2025\\"+f"task{task_num:03d}.json") as f:
+  with open("inputs\\"+f"task{task_num:03d}.json") as f:
     examples = json.load(f)
   return examples
 
@@ -42,7 +42,7 @@ def verify_task_test(task_num, path):
         result = json.loads(result)
         user_output = np.array(result)
         label_output = np.array(example_copy["output"])
-        if numpy.array_equal(user_output, label_output):
+        if np.array_equal(user_output, label_output):
           right += 1
         else:
           expected = copy.deepcopy(example)
@@ -63,13 +63,17 @@ def verify_task_test(task_num, path):
 pass_cnt = 0
 fail_cnt = 0
 failed = []
+slow = []
 
 for n in range(1,401):
- path = "submission_zipped\\task%03d.py"%n
+ path = "submission\\task%03d.py"%n
  if os.path.exists(path):
+     start = time.time()
      if verify_task_test(n, path):pass_cnt += 1;print(f"{n:03d}: PASS")
      else:fail_cnt += 1;failed += [n];print(f"{n:03d}: FAIL")
+     t = time.time()-start
+     if t > 20: print(f"{n:03d}: SLOW");slow.append((t, n))
      
 
-print(pass_cnt,fail_cnt)
-print(failed)
+print("FAILED:", fail_cnt, failed)
+for t,n in sorted(slow)[::-1]: print(f"{n:03d}:", int(t), "seconds")
