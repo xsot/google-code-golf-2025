@@ -1,1 +1,1 @@
-p=lambda a,*n:[*filter(any,zip(*n or p(a,*a)[::-1]))]
+p=lambda a,*n:[*filter(any,zip(*n or p(*a)[::-1]))]
