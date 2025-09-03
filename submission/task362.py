@@ -1,1 +1,1 @@
-def p(g):n=str(g).count('5');return[r[n:9]+r[:1]+r[:n]for r in g[-n:]+g[:-n]]
+def p(g):n=g.count(g[0]);return[r[n:9]+r[:1]+r[:n]for r in g[-n:]+g[:-n]]
