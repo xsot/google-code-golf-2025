@@ -176,33 +176,39 @@ sys.path.insert(0, os.path.abspath('./'))
 
 
 def test_task(task_name, dir, subsets=('train', 'test', 'arc-gen')):
+    
     test_filename = f'inputs/{task_name}.json'
     with open(test_filename) as test_file:
         test_data = json.load(test_file)
     try:
-        s = importlib.import_module(f'{dir}.{task_name}')
-        importlib.reload(s)
+        # very hacky way to run from source instead of a file
+        if type(dir) == tuple:
+            s={}
+            exec(dir[0], s)
+            submission = s['p']
+        else:
+            s = importlib.import_module(f'{dir}.{task_name}')
+            importlib.reload(s)
+            submission = s.p
     except:
         # python file not found
         return False
-    if hasattr(s,'p'):
-        submission = s.p
-        for subset in subsets:
-            for test_case in test_data[subset]:
-                try:
-                    repr = lambda i:json.dumps(eval(str(i).replace("False","0").replace("True","1").replace(".0","")))
-                    if not repr(submission(test_case['input'])) == repr(test_case['output']):
-                        # incorrect result
-                        return False
-                except KeyboardInterrupt as e:
-                    # user interrupt
-                    print('break')
+    for subset in subsets:
+        for test_case in test_data[subset]:
+            try:
+                repr = lambda i:json.dumps(eval(str(i).replace("False","0").replace("True","1").replace(".0","")))
+                if not repr(submission(test_case['input'])) == repr(test_case['output']):
+                    # incorrect result
                     return False
-                except:
-                    # error caused by solution
-                    return False
-        # passed all tests
-        return True
+            except KeyboardInterrupt as e:
+                # user interrupt
+                print('break')
+                return False
+            except:
+                # error caused by solution
+                return False
+    # passed all tests
+    return True
 
 # Add untracked tasks if any exist
 try: 
@@ -225,12 +231,13 @@ for diff in repo.index.diff(None):
  except git.exc.GitCommandError as e:
   old_src = b"#" * 2500
  with open(path , "r") as file:
-  new_src = compress(preprocess(file.read()).encode())
+  pre = preprocess(file.read()).encode()
+  new_src = compress(pre)
  save =  len(old_src) - len(new_src)
  if save < 0:
   too_long += [path]
   continue
- if not test_task(task_name, dir):
+ if not test_task(task_name, (pre,)):
   failing += [path]
   continue
  passing += [path]
