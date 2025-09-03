@@ -1,4 +1,4 @@
-# combined (189 vs 131 bytes for gold)
+# combined (189 vs 120 bytes for gold)
 f=lambda A:[i for i,r in enumerate(A)if any(r)]
 def p(A):
  _,E,*_,k,_=f(A);W,*_,p=f(zip(*A))
