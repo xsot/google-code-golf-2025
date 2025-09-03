@@ -613,7 +613,7 @@ def p(A):
  return A
 # task 229: 73 bytes, gold, https://arcprize.org/play?task=9565186b
 p=lambda a:[[[5,c][c==max(d:=sum(a,a),key=d.count)]for c in b]for b in a]
-# task 230: 125 vs 115 bytes for gold, https://arcprize.org/play?task=95990924
+# task 230: 125 vs 114 bytes for gold, https://arcprize.org/play?task=95990924
 import re
 p=lambda m,i=3:-i*m or[*zip(*eval(re.sub("0(?=.{%d}0, 5.{%d}5)"%((len(m)*3+1,)*2),"3421"[i],str(p(m,i-1)[::-1]))))]
 # task 231: 43 bytes, gold, https://arcprize.org/play?task=963e52fc
