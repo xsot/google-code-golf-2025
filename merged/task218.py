@@ -1,4 +1,4 @@
-# att (56 vs 58 bytes for gold)
+# att (56 bytes, gold)
 p=lambda a,*n:[*{b:0for b in zip(*n or p(*a))if any(b)}]
 
 ### combined (tied, 56 bytes)

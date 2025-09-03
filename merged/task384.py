@@ -1,4 +1,4 @@
-# ovs (62 vs 64 bytes for gold)
+# ovs (62 bytes, gold)
 p=lambda a,*n:sum([[b,b]for*b,in zip(*n or p(*a))if 4in b],[])
 
 ### att (63 bytes)
