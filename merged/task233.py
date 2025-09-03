@@ -24,7 +24,7 @@ def p(g):
    s=*zip(*s[::-1]),
  return u
 
-### ovs (414 (552 unzipped) bytes)
+### ovs (413 (552 unzipped) bytes)
 E=enumerate
 W=range
 J=1j

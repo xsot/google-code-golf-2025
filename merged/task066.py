@@ -5,7 +5,7 @@ def p(g):
   if(y in M)*16>G|C+13>1>(M[y]==2!=exec("for y in V:g[int(y.imag)][int(y.real)]=3")):F=M[y]>7;y-=A*F;S+=[(y,*V,y+D,D,C+F,~-F*~G)for D in[A][F:]or[A*1j,A/1j]*G]
  return g
 
-### mwi (348 (478 unzipped) bytes)
+### mwi (346 (478 unzipped) bytes)
 def p(g):
  def p(y,x,A,B,V,g,C=0):
   if C>2:return

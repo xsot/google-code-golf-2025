@@ -10,7 +10,7 @@ def p(g):
  for(C,D)in enumerate(g):p[C+1][1:-1]=D[::1|-(p[1][0]in s[0])]
  return p
 
-### combined (255 (306 unzipped) bytes)
+### combined (254 (306 unzipped) bytes)
 def p(g):
  B=enumerate;H,I=divmod(sum(p:=g,[]).index(4),len(g))
  for _ in'_'*4:x=();p=[[*A][::-1]for A in zip(*p)if 4in(x:=x+A)]
