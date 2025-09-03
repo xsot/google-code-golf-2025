@@ -1,3 +1,4 @@
+# compression abuse :)
 def p(g):
  e=enumerate;M=min(k:=sum(A:=g,[]),key=k.count);E,D=len(A:=[A for*A,in zip(*A)if M in A]),len(A:=[A for*A,in zip(*A)if M in A])
  for B,r in e(g):
