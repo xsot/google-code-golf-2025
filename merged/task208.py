@@ -1,4 +1,4 @@
-# ovs (229 (278 unzipped) vs 247 bytes for gold)
+# ovs (229 (278 unzipped) bytes, gold)
 # compression abuse :)
 def p(g):
  e=enumerate;M=min(k:=sum(A:=g,[]),key=k.count);E,D=len(A:=[A for*A,in zip(*A)if M in A]),len(A:=[A for*A,in zip(*A)if M in A])
