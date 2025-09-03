@@ -276,8 +276,8 @@ def p(i):g=sum(i,[]);z=len({*g})-1;r=range(5*z);return[[i[s:=x//z][t:=y//z]or(g[
 p=eval('lambda a:[[a '+"for a in a[1::2]for _ in' '*4]"*2)
 # task 109: 91 vs 81 bytes for gold, https://arcprize.org/play?task=47c1f68c
 p=lambda a:[*map(f:=lambda*b,i=len(a)//2:[c and b[i]for c in b[:i]+b[i-1::-1]],*map(f,*a))]
-# task 110: 188 vs 109 bytes for gold, https://arcprize.org/play?task=484b58aa
-def p(i,A=range(29)):J,a=[[K+1for K in A if all(len({*w[b::K+1],0})<3for w in l for b in A)][0]for l in[i,zip(*i)]];return[[max(sum([s[y%J::J]for s in i[x%a::a]],[]))for y in A]for x in A]
+# task 110: 132 vs 109 bytes for gold, https://arcprize.org/play?task=484b58aa
+p=lambda a,i=1:9<sum(b[i:]==b[:-i]for b in zip(*a))and[[c:=[*map(max,*a[j%i::i])],c[9:]+c[-9:]][0in c]for j in range(29)]or p(a,i+1)
 # task 111: 61 vs 60 bytes for gold, https://arcprize.org/play?task=48d8fb45
 p=lambda g:[(f:=sum(g,[]))[f.index(5)+d:][:3]for d in b'	']
 # task 112: 112 vs 109 bytes for gold, https://arcprize.org/play?task=4938f0c2
