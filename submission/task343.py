@@ -1,1 +1,1 @@
-p=lambda i,n=2:(k:=[(x[:n]*9)[:15]for x in i])*all(x[:(j:=i[-1].index(0))]==m[:j]for x,m in zip(i,k))or p(i,n+1)
+p=lambda i:[*zip(*((h:=[*zip(*i)])[:8-2*(h[8:12]!=h[:4]!=h[4:8])]*3)[:15])]
