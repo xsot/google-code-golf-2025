@@ -48,15 +48,14 @@ def zip_src(src: bytes, use_libdeflate: bool, window: int) -> bytes:
     if src[:10]==b"import re\n":
         header+=b",re"
         src=src[10:]
-    # We prefer that compressed source not end in a quotation mark
     if use_libdeflate:
         compression_level = 12 # Max Compression
         # the python wrapper adds a header a footer
         # it's always worth it to strip them and specify the window length in the decoder
-        while (compressed := deflate.zlib_compress(src, compression_level)[2:-4])[-1] == ord('"'): src += b"#"
+        compressed = deflate.zlib_compress(src, compression_level)[2:-4]
     else:
         compression_level = 9 # Max Compression
-        while (compressed := zlib.compress(src, compression_level, window))[-1] == ord('"'): src += b"#"
+        compressed = zlib.compress(src, compression_level, window)
 
     def sanitize(b_in):
         """Clean up problematic bytes in compressed b-string"""
@@ -70,7 +69,7 @@ def zip_src(src: bytes, use_libdeflate: bool, window: int) -> bytes:
 
     compressed = sanitize(compressed)
 
-    delim = b'"""'
+    delim = b'"""' if compressed[-1:] != b'"' else b"'''"
 
     newlines = compressed.count(ord("\n"))
     single = compressed.count(ord("'")) + newlines
