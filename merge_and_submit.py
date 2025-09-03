@@ -176,7 +176,6 @@ sys.path.insert(0, os.path.abspath('./'))
 
 
 def test_task(task_name, dir, subsets=('train', 'test', 'arc-gen')):
-    
     test_filename = f'inputs/{task_name}.json'
     with open(test_filename) as test_file:
         test_data = json.load(test_file)
@@ -211,7 +210,7 @@ def test_task(task_name, dir, subsets=('train', 'test', 'arc-gen')):
     return True
 
 # Add untracked tasks if any exist
-try: 
+try:
    repo.git.add("-N", ["*/task*.py"])
 except:
    pass
@@ -286,6 +285,8 @@ if promptYN("Calculate score with zlib compression?", default_compress):
      file.write(zipped_src)
     if test_task(task_name[:-3], temp_dir, subsets=('train',)):
      task_src = zipped_src
+    else:
+     print('failed after compression:', task_num)
    with open(f"{temp_dir}/{task_name}", "wb") as file:
     file.write(task_src)
    score -= len(task_src)

@@ -268,6 +268,30 @@ wheels = [
 ]
 
 [[package]]
+name = "deflate"
+version = "0.8.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/25/f5/4999436aed92db2ce6f2a78d494fd82e72b028c97d9ef64bd6ff127570ef/deflate-0.8.1.tar.gz", hash = "sha256:1bba0e70d3885f5135f00c17a42aef98d9dc817daf9a56df7dcc92174f4d2cda", size = 217643, upload-time = "2025-07-18T12:25:23.66Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/36/80/77c7336deb6f36d110cb718de5cf5dcb97f2aeb48a98cbd61f7bfe1c950f/deflate-0.8.1-cp311-abi3-macosx_10_9_x86_64.whl", hash = "sha256:42f6fc79e34cda342b7a1b2a28943e7f3cd1312b286b8d847a3608169193f781", size = 55160, upload-time = "2025-07-18T12:24:49.389Z" },
+    { url = "https://files.pythonhosted.org/packages/9d/8a/451f1c7cd1d517441c5df6c44726a3fc121b2983800a40e282259f4fdf84/deflate-0.8.1-cp311-abi3-macosx_11_0_arm64.whl", hash = "sha256:874382ead84be558e70bf4b5ebc6ce9d7ac2abdb2bd6830407dcb634bb5539ae", size = 40534, upload-time = "2025-07-18T12:24:50.82Z" },
+    { url = "https://files.pythonhosted.org/packages/ca/16/e985b65ad1b290e592546137a0505c9df0329c5a12691d47b119b942a4f0/deflate-0.8.1-cp311-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:ba5c8676f402480a290b61a8051953c8bbab85983b03e56cbfc7b1708bb6776c", size = 50176, upload-time = "2025-07-18T12:24:51.539Z" },
+    { url = "https://files.pythonhosted.org/packages/de/4a/b795ccf23430801970e606215cec0074030b37154918d3b5f54efc48437d/deflate-0.8.1-cp311-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:d0bf846e44f84d93ae99dc7bd4b71176f2abf0fd4f3baddbfc164387963763b6", size = 51757, upload-time = "2025-07-18T12:24:52.263Z" },
+    { url = "https://files.pythonhosted.org/packages/7a/0d/78349c64b3ba45d3593f04a97bd541af77863c6b401821588a107729b5f2/deflate-0.8.1-cp311-abi3-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:cc65690c9e24ed491a856dd20cea27d00f5a818add19952c7bf10743d94a0dbd", size = 54632, upload-time = "2025-07-18T12:24:53.451Z" },
+    { url = "https://files.pythonhosted.org/packages/ad/c6/d9bab3858c6a20bda9500a75f31c04d7bb2e79a3d99c5ff107f0677e969f/deflate-0.8.1-cp311-abi3-musllinux_1_2_aarch64.whl", hash = "sha256:5773f52faf63e3ab5fc47556a35335afb029bc7a020bac728af744764760aef3", size = 51272, upload-time = "2025-07-18T12:24:54.215Z" },
+    { url = "https://files.pythonhosted.org/packages/b4/e2/f368c86186bd5eec61762672cc622f463b6a188f9684ee7cd99396f8bb98/deflate-0.8.1-cp311-abi3-musllinux_1_2_i686.whl", hash = "sha256:319a376f4b49fd40578be54dcd9a2d056631c1fec1dc5ddba1c4363e5f2a55e2", size = 57182, upload-time = "2025-07-18T12:24:54.989Z" },
+    { url = "https://files.pythonhosted.org/packages/e9/a2/abb8e08e47389e1a0bf95f41027b637021c63c1431a110d38b95eff9ea5d/deflate-0.8.1-cp311-abi3-musllinux_1_2_x86_64.whl", hash = "sha256:dc36ef9bb0a87145fadfa1e2392e1bf1bdb29cbc8ce0a720b2ce1fce2084dd0b", size = 55133, upload-time = "2025-07-18T12:24:55.682Z" },
+    { url = "https://files.pythonhosted.org/packages/4e/89/6b3d1adb1fdb05b7d86861b97ec4acdb1ae4ee353bdb366a050961ac7e67/deflate-0.8.1-cp311-abi3-win32.whl", hash = "sha256:2846ebc94eafffa62ee0405eaa1786e841ca20cf7115dfcc23d255323c3e2a50", size = 43987, upload-time = "2025-07-18T12:24:56.4Z" },
+    { url = "https://files.pythonhosted.org/packages/87/f4/ec4a84faad8c932c0aa32d49bb29e345cf240f7024adbd0154006da517af/deflate-0.8.1-cp311-abi3-win_amd64.whl", hash = "sha256:4e82a4373a8c38fc5d92ac57685c8fdee538fe1d244197cece8db5b24ff74f80", size = 49977, upload-time = "2025-07-18T12:24:57.106Z" },
+    { url = "https://files.pythonhosted.org/packages/6e/a5/57d22ef8b2ddc32290097442722bfa2fc69061b8c1354150026e31279712/deflate-0.8.1-pp311-pypy311_pp73-macosx_10_15_x86_64.whl", hash = "sha256:a46fcc7450930aa3a46e8a3a2555ea3eef10ad8aaf7af7d65754e592c435adef", size = 54851, upload-time = "2025-07-18T12:25:12.533Z" },
+    { url = "https://files.pythonhosted.org/packages/73/53/ba79cc151838bc45de61c08693e2d5b2b477859df3854bdf3d641722e9c9/deflate-0.8.1-pp311-pypy311_pp73-macosx_11_0_arm64.whl", hash = "sha256:4f9a3b1c585b5bc3b0c6060d7b050353b394599133238d980bf36f5f45c5f9aa", size = 40596, upload-time = "2025-07-18T12:25:13.354Z" },
+    { url = "https://files.pythonhosted.org/packages/15/2e/f6e2db74896cd5253a4dd08e2822f4e71ce75ab13e40e48d331da78cee3c/deflate-0.8.1-pp311-pypy311_pp73-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:799ab54aeddd7fe6d70d168cd5b57560d102bf992f2bccd7a5909fd41f285f32", size = 50293, upload-time = "2025-07-18T12:25:14.066Z" },
+    { url = "https://files.pythonhosted.org/packages/94/9b/74aac4f62e24dab9df907f0299049f5bac36bf47321ac33040e5e9359cff/deflate-0.8.1-pp311-pypy311_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:635d4e6112ff1726accd64fe3bc9d55a2b520af4f2df60955659651f562fc02c", size = 51859, upload-time = "2025-07-18T12:25:14.822Z" },
+    { url = "https://files.pythonhosted.org/packages/2c/6e/44af2655f2b0564c74518c4a52a6eb53aaf194e9dbd35ed6af817d939fb3/deflate-0.8.1-pp311-pypy311_pp73-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:dba1b76a3e47e997367cc3c3b243b56b9335202e633c8990695ad18ab9d7b5f6", size = 54766, upload-time = "2025-07-18T12:25:15.529Z" },
+    { url = "https://files.pythonhosted.org/packages/44/2d/2b7c0605f964a5608a2ff2500055882cb899d077012d7a2fb9f180559d83/deflate-0.8.1-pp311-pypy311_pp73-win_amd64.whl", hash = "sha256:dea02536a4786fa32f0a109d2ec758694304222ce2c94dfea0094e53f016b38e", size = 50163, upload-time = "2025-07-18T12:25:16.4Z" },
+]
+
+[[package]]
 name = "defusedxml"
 version = "0.7.1"
 source = { registry = "https://pypi.org/simple" }
@@ -349,6 +373,7 @@ name = "google-code-golf-2025"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
+    { name = "deflate" },
     { name = "gitdb" },
     { name = "gitpython" },
     { name = "jupyterlab" },
@@ -359,6 +384,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
+    { name = "deflate", specifier = ">=0.8.1" },
     { name = "gitdb", specifier = ">=4.0.12" },
     { name = "gitpython", specifier = ">=3.1.45" },
     { name = "jupyterlab", specifier = ">=4.4.5" },

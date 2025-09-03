@@ -1,3 +1,4 @@
+import deflate
 import re
 import zlib
 import functools
@@ -7,8 +8,13 @@ POSTFIXES = [b"",b" ",b"\t",b"\n",b"\r",b"\f",b"#",b";",b"\t ",b" \t",b"\np"] + 
 
 @functools.lru_cache(maxsize=2048)
 def compress(task_src: bytes) -> bytes:
+    zipped_src_1 = compress_with_zlib(task_src)
+    zipped_src_2 = compress_with_libdeflate(task_src)
+    return min(zipped_src_1, zipped_src_2, task_src, key=len)
+
+def compress_with_zlib(task_src: bytes) -> bytes:
     task_src_2 = sub_vars(task_src)
-    zipped_src = zip_src(task_src_2, -9)
+    zipped_src = zip_src(task_src_2, use_libdeflate=False, window=-9)
 
     if len(zipped_src) > len(task_src) + 10:
         return task_src
@@ -17,21 +23,40 @@ def compress(task_src: bytes) -> bytes:
         for post in POSTFIXES:
             if len(pre+post) > 3: continue
             for window in (-9, -15):
-                z_src = zip_src(pre+task_src_2+post, window)
+                z_src = zip_src(pre+task_src_2+post, use_libdeflate=False, window=window)
                 if len(z_src)<len(zipped_src):zipped_src = z_src
 
-    return min(zipped_src, task_src, key=len)
+    return zipped_src
 
-def zip_src(src: bytes, window: int) -> bytes:
-    compression_level = 9 # Max Compression
+def compress_with_libdeflate(task_src: bytes) -> bytes:
+    # libdeflate hardcodes a window of 32768
+    # https://github.com/ebiggers/libdeflate/blob/master/lib/zlib_compress.c
+    task_src_2 = sub_vars(task_src)
+    zipped_src = zip_src(task_src_2, use_libdeflate=True, window=-15)
+    if len(zipped_src) > len(task_src) + 10:
+        return task_src
+    for pre in PREFIXES:
+        for post in POSTFIXES:
+            if len(pre+post) > 3: continue
+            z_src = zip_src(pre+task_src_2+post, use_libdeflate=True, window=-15)
+            if len(z_src)<len(zipped_src):zipped_src = z_src
+    return zipped_src
 
+def zip_src(src: bytes, use_libdeflate: bool, window: int) -> bytes:
     # Save on import re
     header = b"#coding:L1\nimport zlib"
     if src[:10]==b"import re\n":
         header+=b",re"
         src=src[10:]
     # We prefer that compressed source not end in a quotation mark
-    while (compressed := zlib.compress(src, compression_level, window))[-1] == ord('"'): src += b"#"
+    if use_libdeflate:
+        compression_level = 12 # Max Compression
+        # the python wrapper adds a header a footer
+        # it's always worth it to strip them and specify the window length in the decoder
+        while (compressed := deflate.zlib_compress(src, compression_level)[2:-4])[-1] == ord('"'): src += b"#"
+    else:
+        compression_level = 9 # Max Compression
+        while (compressed := zlib.compress(src, compression_level, window))[-1] == ord('"'): src += b"#"
 
     def sanitize(b_in):
         """Clean up problematic bytes in compressed b-string"""
