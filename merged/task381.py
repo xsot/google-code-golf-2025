@@ -1,4 +1,4 @@
-# xsot (93 vs 87 bytes for gold)
+# xsot (93 vs 84 bytes for gold)
 import re
 p=lambda m:eval(re.sub("(?<=.{30}2,)([0, ]*)(?=2.{30})","*[9]*len([\\1]),",str(m)))
 
