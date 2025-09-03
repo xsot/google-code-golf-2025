@@ -6,13 +6,13 @@ import pandas as pd
 from utils.compression import compress
 
 # Commit changes? [Y]es/[N]o/Leave string empty to be prompted
-default_commit = "Y"
+default_commit = ""
 # Push to remote? [Y]es/[N]o/Leave string empty to be prompted
-default_push = "Y"
+default_push = ""
 # Calculate score with zlib compression? [Y]es/[N]o/Leave string empty to be prompted
-default_compress = "Y"
+default_compress = ""
 # Submit to Kaggle? [Y]es/[N]o/Leave string empty to be prompted
-default_kaggle = "N"
+default_kaggle = ""
 
 # Configuration: add player directories here
 players = [
