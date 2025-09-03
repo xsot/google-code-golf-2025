@@ -1,4 +1,7 @@
-# joking (64 vs 63 bytes for gold)
+# mwi (63 bytes, gold)
+p=lambda i,r=range(18):[[y*x%max(i[~0])+1for y in r]for x in r]
+
+### joking (64 bytes)
 p=lambda i,r=range(18):[[y*x%max(max(i))+1for y in r]for x in r]
 
 ### combined (93 bytes)

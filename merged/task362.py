@@ -1,4 +1,7 @@
-# combined (92 vs 69 bytes for gold)
+# mwi (77 vs 69 bytes for gold)
+def p(g):n=str(g).count('5');return[r[n:9]+r[:1]+r[:n]for r in g[-n:]+g[:-n]]
+
+### combined (92 bytes)
 p=lambda i,r=range(10):[[(i[a-(s:=str(i).count("5"))][b-10+s]^5or 5)^5for b in r]for a in r]
 
 ### xsot (136 bytes)
