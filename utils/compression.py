@@ -1,6 +1,7 @@
 import deflate
 import re
 import zlib
+import zopfli.zlib
 import functools
 
 PREFIXES = [b"",b"\n", b"\r",b"\f",b"\n\f",b"\r\f"] + [bytes([c,ne]) for c in b"\t\n\f\r 0123456789#" for ne in b"\n\r"]
@@ -10,11 +11,14 @@ POSTFIXES = [b"",b" ",b"\t",b"\n",b"\r",b"\f",b"#",b";",b"\t ",b" \t",b"\np"] + 
 def compress(task_src: bytes) -> bytes:
     zipped_src_1 = compress_with_zlib(task_src)
     zipped_src_2 = compress_with_libdeflate(task_src)
-    return min(zipped_src_1, zipped_src_2, task_src, key=len)
+    zipped_src_3 = task_src
+    # Uncomment in case of emergency. Saves 9b as of this commit
+    # zipped_src_3 = compress_with_zopfli(task_src)
+    return min(zipped_src_1, zipped_src_2, zipped_src_3, task_src, key=len)
 
 def compress_with_zlib(task_src: bytes) -> bytes:
     task_src_2 = sub_vars(task_src)
-    zipped_src = zip_src(task_src_2, use_libdeflate=False, window=-9)
+    zipped_src = zip_src(task_src_2, method="zlib", window=-9)
 
     if len(zipped_src) > len(task_src) + 10:
         return task_src
@@ -23,39 +27,59 @@ def compress_with_zlib(task_src: bytes) -> bytes:
         for post in POSTFIXES:
             if len(pre+post) > 3: continue
             for window in (-9, -15):
-                z_src = zip_src(pre+task_src_2+post, use_libdeflate=False, window=window)
+                z_src = zip_src(pre+task_src_2+post, method="zlib", window=window)
                 if len(z_src)<len(zipped_src):zipped_src = z_src
 
     return zipped_src
 
-def compress_with_libdeflate(task_src: bytes) -> bytes:
-    # libdeflate hardcodes a window of 32768
-    # https://github.com/ebiggers/libdeflate/blob/master/lib/zlib_compress.c
+def compress_with_zopfli(task_src: bytes) -> bytes:
     task_src_2 = sub_vars(task_src)
-    zipped_src = zip_src(task_src_2, use_libdeflate=True, window=-15)
+    zipped_src = zip_src(task_src_2, method="zopfli")
     if len(zipped_src) > len(task_src) + 10:
         return task_src
     for pre in PREFIXES:
         for post in POSTFIXES:
             if len(pre+post) > 3: continue
-            z_src = zip_src(pre+task_src_2+post, use_libdeflate=True, window=-15)
+            z_src = zip_src(pre+task_src_2+post, method="zopfli")
             if len(z_src)<len(zipped_src):zipped_src = z_src
     return zipped_src
 
-def zip_src(src: bytes, use_libdeflate: bool, window: int) -> bytes:
+
+def compress_with_libdeflate(task_src: bytes) -> bytes:
+    # libdeflate hardcodes a window of 32768
+    # https://github.com/ebiggers/libdeflate/blob/master/lib/zlib_compress.c
+    task_src_2 = sub_vars(task_src)
+    zipped_src = zip_src(task_src_2, method="libdeflate", window=-15)
+    if len(zipped_src) > len(task_src) + 10:
+        return task_src
+    for pre in PREFIXES:
+        for post in POSTFIXES:
+            if len(pre+post) > 3: continue
+            z_src = zip_src(pre+task_src_2+post, method="libdeflate", window=-15)
+            if len(z_src)<len(zipped_src):zipped_src = z_src
+    return zipped_src
+
+def zip_src(src: bytes, method: str, window: int = None) -> bytes:
     # Save on import re
     header = b"#coding:L1\nimport zlib"
     if src[:10]==b"import re\n":
         header+=b",re"
         src=src[10:]
-    if use_libdeflate:
+    if method == "zopfli":
+        iterations = 20 # this is enough to get us the best scores as of now
+        compressed = zopfli.zlib.compress(src, numiterations=iterations, blocksplitting=False)
+        window = -(((compressed[0] >> 4) & 0x0F) + 8)
+        compressed = compressed[2:-4]
+    elif method == "libdeflate":
         compression_level = 12 # Max Compression
         # the python wrapper adds a header a footer
         # it's always worth it to strip them and specify the window length in the decoder
         compressed = deflate.zlib_compress(src, compression_level)[2:-4]
-    else:
+    elif method == "zlib":
         compression_level = 9 # Max Compression
         compressed = zlib.compress(src, compression_level, window)
+    else:
+        raise ValueError(f"Unknown method {method}")
 
     def sanitize(b_in):
         """Clean up problematic bytes in compressed b-string"""
