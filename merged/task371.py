@@ -1,4 +1,9 @@
-# combined (114 bytes, gold)
+# ovs (109 vs 114 bytes for gold)
+def p(a):
+ for i in[l:=len(a[0]),-l,1,0,-1]:b=sum(a,[]).index;i+=b(1,b(1)+1)+b(1)>>1;a[i//l][i%l]=3
+ return a
+
+### combined (114 bytes)
 def p(a):
 	b=sum(a,[]).index;d=b(1,b(1)+1)+b(1)>>1
 	for i in[l:=len(a[0]),~l,1,1,~l]:d+=i;a[d//l][d%l]=3
