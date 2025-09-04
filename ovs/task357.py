@@ -1,0 +1,1 @@
+p=lambda m,x=1,d=-1:m and p(m,x:=x+d,x%(l:=len(m.pop())-1)and d or-d)+[[8]*x+[1]+[8]*(l-x)]
