@@ -172,8 +172,8 @@ def p(a,i=-1):
  return a
 # task 70: 82 vs 78 bytes for gold, https://arcprize.org/play?task=32597951
 p=lambda i:[[(c[0]+7in{*x}&{*c,hash(c)%1070})*2+c[0]for c in zip(x,*i)]for x in i]
-# task 71: 195 vs 119 bytes for gold, https://arcprize.org/play?task=3345333e
-def p(g,k=0):C=[*{}.fromkeys(sum(g,[]))][1];e=[[C*(c and C in((r+[0]*99)[k-k%2*2-x],c))for x,c in enumerate(r)]for r in g];return e*all(z[k//2-5:k//2]==z[k//2+1-k%2:][4::-1]for z in e)or p(g,k+1)
+# task 71: 137 vs 119 bytes for gold, https://arcprize.org/play?task=3345333e
+p=lambda i,n=32,e=1:[[(e:=e-2%len({*t,l:=[*{}.fromkeys(sum(i,[]))][2]}))*t[t[0]==l]for t in zip(x,(x*9)[n::-1])]for x in i]*e or p(i,n-1)
 # task 72: 61 vs 54 bytes for gold, https://arcprize.org/play?task=3428a4f5
 p=lambda a:[[3*(c!=b.pop(0))for c in a.pop(0)]for b in a[7:]]
 # task 73: 46 bytes, gold, https://arcprize.org/play?task=3618c87e
