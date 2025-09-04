@@ -595,9 +595,9 @@ p=lambda i,r=range(6):[[max([s for t in i[a-3:a]+i[a+3:a:-1]for s in t[b-3:b]+t[
 p=lambda i,e=enumerate,s=sum:[[y or(s(x[:b])*2==s(x))*(s(k:=[*map(min,i)])==s(k[:a])*2)*2+0**s(x[b:]+k[a:])*3+0**s(x[:b]+k[:a])for b,y in e(x)]for a,x in e(i)]
 # task 227: 57 vs 52 bytes for gold, https://arcprize.org/play?task=94f9d214
 p=lambda a:[[2>>c+c+b.pop(0)for c in a.pop(4)]for b in a]
-# task 228: 122 vs 120 bytes for gold, https://arcprize.org/play?task=952a094c
+# task 228: 121 vs 120 bytes for gold, https://arcprize.org/play?task=952a094c
 import re
-p=lambda a,n=-3:n*a or[*zip(*eval(re.sub(r'0(.{34}([^0]).*)(.)(?=, \2.*0, \2)',r'\3\1 0',str(p(a,n+1)[::-1]))))]
+p=lambda a,n=-3:n*a or[*zip(*eval(re.sub(r'([^0]), (?!\1|0)(.)(.*\1.{34})0',r'\1,0\3\2',str(p(a,n+1)[::-1]))))]
 # task 229: 73 bytes, gold, https://arcprize.org/play?task=9565186b
 p=lambda a:[[[5,c][c==max(d:=sum(a,a),key=d.count)]for c in b]for b in a]
 # task 230: 114 bytes, gold, https://arcprize.org/play?task=95990924
@@ -852,7 +852,7 @@ p=lambda m:[[r.pop(0)or r[4]or r[9]for _ in m]for r in m]
 p=lambda a:[[*map(max,*a[:n]*2)]for n in(1,2,3)]
 # task 323: 153 vs 122 bytes for gold, https://arcprize.org/play?task=d06dbe63
 p=lambda i,k=1,r=range(13):-k*i or p([[i[a][~b]+any(8in sum(i[a:],[])[n-b::24][:max(14-b-~n%13>>1,0)]for n in b"&%$")*5for b in r]for a in r][::-1],k-1)
-# task 324: 264 (313 unzipped) vs 289 bytes for gold, https://arcprize.org/play?task=d07ae81c
+# task 324: 264 (313 unzipped) bytes, gold, https://arcprize.org/play?task=d07ae81c
 def p(g):s=sum(g,[]);k,K,b,B=sorted({*s},key=s.count);b=[b,B][any({*r}in({k,B},{K,b})for r in[*zip(*g)]+g)];[0for y,r in enumerate(eval(str(g)))for x,c in enumerate(r)for z,s in enumerate(g)for Y in(-z,z)for X in(-z,z)if c in{k,K}!=len(g)>Y+y>-1<X+x<len(g[0])for g[Y+y][X+x]in[[K,k][g[Y+y][X+x]in(b,k)]]];return g
 # task 325: 172 vs 160 bytes for gold, https://arcprize.org/play?task=d0f5fe59
 p=lambda i,k=39,z=0:-k*[x*[0]+[8]+(z+~x)*[0]for x in range(z)]or p([(s:=1)*[(k<39)*max(h and s,s:=h)or(z:=z+1)*h for h in x]for x in zip(*i[::-1])],k-1,len({*sum(i,[])})-1)
