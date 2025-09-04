@@ -1,4 +1,4 @@
-# mwi (249 (266 unzipped) bytes, gold)
+# mwi (249 (266 unzipped) vs 238 bytes for gold)
 def p(g):
  *L,M=sorted(set(E:=sum(g,[])),key=E.count);A=[99*[M]for(A)in g]
  for N in L:

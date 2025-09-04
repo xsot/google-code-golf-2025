@@ -1,4 +1,8 @@
-# xsot (125 vs 114 bytes for gold)
+# joking (114 bytes, gold)
+import re
+p=lambda m,i=3:-i*m or[*zip(*eval(re.sub(f"0(?=, 0.{ {len(m)*3}}.5, 5)","3**i%5",str(p(m,i-1))))[::-1])]
+
+### xsot (125 bytes)
 import re
 p=lambda m,i=3:-i*m or[*zip(*eval(re.sub("0(?=.{%d}0, 5.{%d}5)"%((len(m)*3+1,)*2),"3421"[i],str(p(m,i-1)[::-1]))))]
 
