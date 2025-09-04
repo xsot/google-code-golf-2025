@@ -1,7 +1,16 @@
-# att (104 vs 64 bytes for gold)
+# joking (71 vs 64 bytes for gold)
+p=lambda i,s=0:[[~y%~(s:=y-s>>t&2)%4for y,t in zip(x,[0]+x)]for x in i]
+
+## regex solution
+import re;p=lambda i:eval(re.sub("(2, (., )?\\2*2)","*[3>>x for x in[\\1]]",str(i)))
+p=lambda i,s=0:[[~y%~(s:=y*t!=4and s^y)%4for y,t in zip(x,[0]+x)]for x in i]
+p=lambda i,s=0:[(t:=1)*[~y%~(s:=t*(t:=y)!=4and s^y)%4for y in x]for x in i]
+p=lambda i,s=0:[(t:=1)*[~y%~(s:=(y&t|s)^(t:=y))%4for y in x]for x in i]
+
+### att (104 bytes)
 import re
 p=lambda a:[[c*3%6for c in re.sub(b'\0(?=\0*(\0+(\0*|+))*\0*$)',b'1',bytes(b))]for b in a]
 
-### combined (tied, 104 bytes)
+### combined (104 bytes)
 import re
 p=lambda a:[[c*3%6for c in re.sub(b'\0(?=\0*(\0+(\0*|+))*\0*$)',b'1',bytes(b))]for b in a]
