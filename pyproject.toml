@@ -12,4 +12,5 @@ dependencies = [
     "kaggle>=1.7.4.5",
     "matplotlib>=3.10.5",
     "pandas>=2.3.2",
+    "zopfli>=0.2.3.post1",
 ]
