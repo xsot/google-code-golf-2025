@@ -1,7 +1,2 @@
-def p(m):
- d,b,*z=sorted(set(a:=sum(m,[])),key=a.count);N,M=len(m),len(m[0])
- for y in range(N):
-  for x in range(M):
-   Y=y;X=x
-   for e in range(M):X+=(m[y]*2)[X]==b<M>X;Y+=Y<N!=(m[Y]*2)[x]==b;z=max(z,[sum(sum(a:=[[d*(e>0)for e in e[x:X]]for e in m[y:Y]],[]))//d,a])
- return z[1]
+E=enumerate
+p=lambda m,X=8:(T:=[[[min(a:=sum(m,[]),key=a.count)*(e>0)for e in e[x:x+X]]for e in m[y:]if(f:=f*e[x]==b)]for y,r in E(m)for x,b in E(r)if(f:=[b]*X==r[x:x+X])*b])and T[0]or p(m,X-1)
