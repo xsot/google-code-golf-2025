@@ -1,4 +1,8 @@
-# mwi (248 (281 unzipped) vs 220 bytes for gold)
+# ovs (193 vs 220 bytes for gold)
+E=enumerate
+p=lambda m,X=8:(T:=[[[min(a:=sum(m,[]),key=a.count)*(e>0)for e in e[x:x+X]]for e in m[y:]if(f:=f*e[x]==b)]for y,r in E(m)for x,b in E(r)if(f:=[b]*X==r[x:x+X])*b])and T[0]or p(m,X-1)
+
+### mwi (248 (281 unzipped) bytes)
 def p(m):
  d,b,*z=sorted(set(a:=sum(m,[])),key=a.count);N,M=len(m),len(m[0])
  for y in range(N):
