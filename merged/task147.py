@@ -1,4 +1,4 @@
-# joking (87 vs 2500 bytes for gold)
+# joking (87 vs 84 bytes for gold)
 p=lambda i,k=3:-k*i or[(s:=0)or[-y%~s%8+(s:=y)for y in x]for x in zip(*p(i,k-1))][::-1]
 
 ### combined (tied, 87 bytes)

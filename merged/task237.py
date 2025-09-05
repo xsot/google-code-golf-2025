@@ -1,4 +1,4 @@
-# att (67 vs 2500 bytes for gold)
+# att (67 bytes, gold)
 p=lambda a,c=0:[(b:=0)or[c:=(b:=b or d)for d in r+[c]]for*r,_ in a]
 
 ### combined (tied, 67 bytes)

@@ -1,4 +1,4 @@
-# ovs (57 vs 2500 bytes for gold)
+# ovs (57 vs 56 bytes for gold)
 p=lambda g:[[j*v//4for j,v in zip(b''*7,r)]for r in g]
 
 ### combined (58 bytes)

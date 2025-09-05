@@ -1,4 +1,4 @@
-# joking (225 (290 unzipped) vs 2500 bytes for gold)
+# joking (225 (290 unzipped) bytes, gold)
 # minor zlib improvements
 def p(g):
  M=min(sum(A:=g,[]),key=sum(A:=g,[]).count);E,D=len(A:=[A for A in zip(*A)if M in A]),len(A:=[A for A in zip(*A)if M in A])

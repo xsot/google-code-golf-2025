@@ -1,4 +1,4 @@
-# combined (62 vs 2500 bytes for gold)
+# combined (62 vs 57 bytes for gold)
 p=lambda i,*n:[x for x in zip(*n or p(i,*i))if i!=(i:=x)][::2]
 
 ### att (64 bytes)

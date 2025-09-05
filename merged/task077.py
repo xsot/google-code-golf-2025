@@ -1,4 +1,4 @@
-# joking (126 vs 2500 bytes for gold)
+# joking (126 bytes, gold)
 import re;p=lambda i,k=23:-k*i or p(eval(re.sub(f"(?<=[24], )[^2](?=(.{ {len(i)*3}}|.) [24])","4",str([*zip(*i[::-1])]))),k-1)
 
 ### combined (152 bytes)

@@ -1,4 +1,4 @@
-# mwi (339 (409 unzipped) vs 2500 bytes for gold)
+# mwi (339 (409 unzipped) vs 291 bytes for gold)
 def p(g):
  def Q(o,p):
   c=C[o:];(3,)<=c!=Q(o+1,p)

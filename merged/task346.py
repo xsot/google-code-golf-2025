@@ -1,4 +1,4 @@
-# att (68 vs 2500 bytes for gold)
+# att (68 vs 58 bytes for gold)
 p=lambda i:[max([n]for n in sum(i,[])if str(i).count(f"{n}, "*3)<2)]
 
 ##

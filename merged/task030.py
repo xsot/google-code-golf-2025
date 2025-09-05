@@ -1,4 +1,4 @@
-# ovs (97 vs 2500 bytes for gold)
+# ovs (97 bytes, gold)
 p=lambda i:[[c*x[(H:=h.index)(1)-(j:=j-1)-H(c)]for c in h]for x in i if(h:=[*map(max,*i)],j:=11)]
 
 ## same length as a def-function:

@@ -1,4 +1,4 @@
-# ovs (308 (377 unzipped) vs 2500 bytes for gold)
+# ovs (308 (377 unzipped) bytes, gold)
 def p(g):
  f=sum(g,[]);*C,_,B=sorted({*f},key=f.count);M={(i,j):v for i,r in enumerate(g)for j,v in enumerate(r)if v in C};T={(i,j)for i,j in M for I,J in M if(I-i)**2+(J-j)**2==1}
  for i,j in{*M}-T:

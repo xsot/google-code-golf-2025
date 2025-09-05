@@ -1,4 +1,4 @@
-# ovs (58 vs 2500 bytes for gold)
+# ovs (58 bytes, gold)
 p=lambda g:(x:=g[:3])*([*map(list,zip(*x))]!=x)or p(g[3:])
 
 ### xsot (tied, 58 bytes)

@@ -1,4 +1,4 @@
-# ovs (228 vs 2500 bytes for gold)
+# ovs (228 vs 220 bytes for gold)
 def p(i):
  for E in[enumerate]*2:
   *i,=zip(*i);m=max(i)

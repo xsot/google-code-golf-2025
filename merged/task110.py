@@ -1,4 +1,4 @@
-# att (132 vs 2500 bytes for gold)
+# att (132 vs 109 bytes for gold)
 p=lambda a,i=1:9<sum(b[i:]==b[:-i]for b in zip(*a))and[[c:=[*map(max,*a[j%i::i])],c[9:]+c[-9:]][0in c]for j in range(29)]or p(a,i+1)
 
 ### combined (188 bytes)

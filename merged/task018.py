@@ -1,4 +1,4 @@
-# mwi (323 (390 unzipped) vs 2500 bytes for gold)
+# mwi (323 (390 unzipped) bytes, gold)
 def p(g):
  def p(i,v):g[int(i.imag)][int(i.real)]=v
  G={i*1j+j:v for i,r in enumerate(g)for j,v in enumerate(r)if v};*f,=G.values()

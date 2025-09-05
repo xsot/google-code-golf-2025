@@ -1,4 +1,4 @@
-# att (54 vs 2500 bytes for gold)
+# att (54 bytes, gold)
 p=lambda g:[r[~r.index(0)::-1][:3]for r in g if 0in r]
 
 ### combined (tied, 54 bytes)

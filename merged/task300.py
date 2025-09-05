@@ -1,4 +1,4 @@
-# att (87 vs 2500 bytes for gold)
+# att (87 bytes, gold)
 p=lambda a,*n:[b for*b,in zip(*n or p(a,*a))if max(range(1,10),key=sum(a,a).count)in b]
 
 ### combined (tied, 87 bytes)

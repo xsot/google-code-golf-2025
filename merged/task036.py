@@ -1,4 +1,4 @@
-# mwi (98 vs 2500 bytes for gold)
+# mwi (98 vs 90 bytes for gold)
 p=lambda i:max(l for n in range(10)if len(l:=(f:=lambda g:[x for x in zip(*g)if n in x])(f(i)))<6)
 
 ### combined (106 bytes)

@@ -1,4 +1,4 @@
-# att (27 vs 2500 bytes for gold)
+# att (27 bytes, gold)
 p=lambda a:[*zip(*a)][::-1]
 
 ### ovs (tied, 27 bytes)

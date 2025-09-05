@@ -1,4 +1,4 @@
-# att (152 vs 2500 bytes for gold)
+# att (152 bytes, gold)
 p=lambda a,n=-3:n*a or[[d:=[e:=b.pop(),d][g[2]!=d>0<e!=g[1]in b]for _ in[*b]]for*b,in zip(*p(a,n+1))if[d:=0,g:=sorted(set(c:=sum(a,a[5])),key=c.count)]]
 
 ### joking (165 bytes)

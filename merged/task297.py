@@ -1,4 +1,4 @@
-# combined (44 vs 2500 bytes for gold)
+# combined (44 vs 43 bytes for gold)
 p=lambda i:i[:2]+[*zip(*[i[0]*2]*len(i[0]))]
 
 ### att (47 bytes)

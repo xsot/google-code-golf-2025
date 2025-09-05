@@ -1,4 +1,4 @@
-# mwi (106 vs 2500 bytes for gold)
+# mwi (106 bytes, gold)
 p=lambda g,k=5:-k*g or p([[c*(2*f"{c}, "in str(r))*(sum(g,[]).count(c)>4)for c in r]for r in zip(*g)],k-1)
 
 ### combined (196 (197 unzipped) bytes)

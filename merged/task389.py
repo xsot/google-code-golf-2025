@@ -1,4 +1,4 @@
-# att (57 vs 2500 bytes for gold)
+# att (57 bytes, gold)
 p=lambda a:[[sum({*sum(a,r)}-{e,5})for e in r]for r in a]
 
 ### combined (tied, 57 bytes)

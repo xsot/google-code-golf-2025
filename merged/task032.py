@@ -1,4 +1,4 @@
-# att (39 vs 2500 bytes for gold)
+# att (39 bytes, gold)
 p=lambda a:[*zip(*map(sorted,zip(*a)))]
 
 ### ovs (tied, 39 bytes)

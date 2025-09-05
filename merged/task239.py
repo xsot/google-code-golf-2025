@@ -1,4 +1,4 @@
-# joking (104 vs 2500 bytes for gold)
+# joking (104 bytes, gold)
 p=lambda i:[b:=sum(i,[]),*filter(any,zip(*sorted({(e,~e)*b.count(e)+(0,)*99for e in b},key=sum)))][1::2]
 
 ### att (108 bytes)

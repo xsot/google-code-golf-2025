@@ -1,4 +1,4 @@
-# joking (95 vs 2500 bytes for gold)
+# joking (95 vs 83 bytes for gold)
 p=lambda i,z=0:[[z:=z+min(x)%5]*(c:=0)+[c-(c:=c-y)or~-b""[c%3+z]for y in x]for x in i]
 # there's gotta be some pysearch for those constants
 # z can start at an arbitray point, the increments for z and c can be adjusted

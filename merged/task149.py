@@ -1,4 +1,4 @@
-# att (79 vs 2500 bytes for gold)
+# att (79 vs 75 bytes for gold)
 p=eval('lambda a:[[9<sum(sum(a,()))'+'for*a,in map(zip,a,a[1:],a[2:])][::4]'*2)
 
 ### mwi (80 bytes)

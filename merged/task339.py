@@ -1,4 +1,4 @@
-# att (37 vs 2500 bytes for gold)
+# att (37 bytes, gold)
 p=lambda a:[[*filter(int,sum(a,[]))]]
 
 ### ovs (tied, 37 bytes)

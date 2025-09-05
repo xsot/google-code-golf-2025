@@ -1,4 +1,4 @@
-# mwi (269 (488 unzipped) vs 2500 bytes for gold)
+# mwi (269 (488 unzipped) vs 305 bytes for gold)
 def p(g):
 # find 3x3 grid with the most unique colors
  s,t=max((len({*str(a:=[R[x:x+3]for R in g[y:y+3]])}),a)for y in range(len(g))for x in range(len(g[1])))

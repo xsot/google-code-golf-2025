@@ -1,4 +1,4 @@
-# joking (137 vs 2500 bytes for gold)
+# joking (137 vs 119 bytes for gold)
 p=lambda i,n=32,e=1:[[(e:=e-2%len({*t,l:=[*{}.fromkeys(sum(i,[]))][2]}))*t[t[0]==l]for t in zip(x,(x*9)[n::-1])]for x in i]*e or p(i,n-1)
 
 ### mwi (195 bytes)

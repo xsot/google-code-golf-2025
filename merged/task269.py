@@ -1,4 +1,4 @@
-# att (64 vs 2500 bytes for gold)
+# att (64 vs 63 bytes for gold)
 p=lambda a:eval('[[a '+"for a in a for _ in[*{*'%s'}][5:]]"%a*2)
 
 ### xsot (tied, 64 bytes)
