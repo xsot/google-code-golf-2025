@@ -180,7 +180,7 @@
         }
     },
     "task007": {
-        "gold": 65,
+        "gold": 64,
         "best": 67,
         "solutions": {
             "att": {
@@ -210,7 +210,7 @@
         }
     },
     "task008": {
-        "gold": 89,
+        "gold": 85,
         "best": 94,
         "solutions": {
             "att": {
@@ -456,7 +456,7 @@
         }
     },
     "task019": {
-        "gold": 119,
+        "gold": 109,
         "best": 126,
         "solutions": {
             "ovs": {
@@ -474,7 +474,7 @@
         }
     },
     "task020": {
-        "gold": 157,
+        "gold": 152,
         "best": 173,
         "solutions": {
             "ovs": {
@@ -552,7 +552,7 @@
         }
     },
     "task023": {
-        "gold": 203,
+        "gold": 195,
         "best": 206,
         "solutions": {
             "ovs": {
@@ -792,7 +792,7 @@
         }
     },
     "task033": {
-        "gold": 77,
+        "gold": 76,
         "best": 77,
         "solutions": {
             "att": {
@@ -816,7 +816,7 @@
         }
     },
     "task034": {
-        "gold": 146,
+        "gold": 125,
         "best": 178,
         "solutions": {
             "joking": {
@@ -882,7 +882,7 @@
         }
     },
     "task037": {
-        "gold": 107,
+        "gold": 105,
         "best": 109,
         "solutions": {
             "ovs": {
@@ -996,7 +996,7 @@
         }
     },
     "task042": {
-        "gold": 147,
+        "gold": 143,
         "best": 169,
         "solutions": {
             "ovs": {
@@ -1014,7 +1014,7 @@
         }
     },
     "task043": {
-        "gold": 57,
+        "gold": 56,
         "best": 57,
         "solutions": {
             "att": {
@@ -1044,7 +1044,7 @@
         }
     },
     "task044": {
-        "gold": 281,
+        "gold": 279,
         "best": 281,
         "solutions": {
             "mwi": {
@@ -1272,7 +1272,7 @@
         }
     },
     "task055": {
-        "gold": 84,
+        "gold": 83,
         "best": 100,
         "solutions": {
             "mwi": {
@@ -1314,7 +1314,7 @@
         }
     },
     "task057": {
-        "gold": 49,
+        "gold": 48,
         "best": 49,
         "solutions": {
             "att": {
@@ -1446,7 +1446,7 @@
         }
     },
     "task063": {
-        "gold": 77,
+        "gold": 74,
         "best": 78,
         "solutions": {
             "mwi": {
@@ -1584,7 +1584,7 @@
         }
     },
     "task069": {
-        "gold": 153,
+        "gold": 151,
         "best": 209,
         "solutions": {
             "att": {
@@ -1836,7 +1836,7 @@
         }
     },
     "task081": {
-        "gold": 95,
+        "gold": 92,
         "best": 95,
         "solutions": {
             "xsot": {
@@ -1944,7 +1944,7 @@
         }
     },
     "task086": {
-        "gold": 192,
+        "gold": 179,
         "best": 248,
         "solutions": {
             "xsot": {
@@ -2082,7 +2082,7 @@
         }
     },
     "task093": {
-        "gold": 101,
+        "gold": 99,
         "best": 102,
         "solutions": {
             "xsot": {
@@ -2100,7 +2100,7 @@
         }
     },
     "task094": {
-        "gold": 106,
+        "gold": 102,
         "best": 106,
         "solutions": {
             "joking": {
@@ -2118,7 +2118,7 @@
         }
     },
     "task095": {
-        "gold": 77,
+        "gold": 76,
         "best": 81,
         "solutions": {
             "joking": {
@@ -2184,7 +2184,7 @@
         }
     },
     "task099": {
-        "gold": 125,
+        "gold": 115,
         "best": 150,
         "solutions": {
             "combined_solutions": {
@@ -2508,7 +2508,7 @@
         }
     },
     "task114": {
-        "gold": 65,
+        "gold": 64,
         "best": 65,
         "solutions": {
             "ovs": {
@@ -2580,7 +2580,7 @@
         }
     },
     "task117": {
-        "gold": 154,
+        "gold": 148,
         "best": 172,
         "solutions": {
             "combined_solutions": {
@@ -2592,7 +2592,7 @@
         }
     },
     "task118": {
-        "gold": 314,
+        "gold": 282,
         "best": 314,
         "solutions": {
             "mwi": {
@@ -2652,7 +2652,7 @@
         }
     },
     "task121": {
-        "gold": 90,
+        "gold": 89,
         "best": 96,
         "solutions": {
             "ovs": {
@@ -2670,7 +2670,7 @@
         }
     },
     "task122": {
-        "gold": 88,
+        "gold": 82,
         "best": 94,
         "solutions": {
             "ovs": {
@@ -2706,7 +2706,7 @@
         }
     },
     "task124": {
-        "gold": 101,
+        "gold": 97,
         "best": 129,
         "solutions": {
             "mwi": {
@@ -3330,7 +3330,7 @@
         }
     },
     "task154": {
-        "gold": 100,
+        "gold": 99,
         "best": 133,
         "solutions": {
             "combined_solutions": {
@@ -3600,7 +3600,7 @@
         }
     },
     "task168": {
-        "gold": 115,
+        "gold": 112,
         "best": 117,
         "solutions": {
             "combined_solutions": {
@@ -4128,7 +4128,7 @@
         }
     },
     "task194": {
-        "gold": 73,
+        "gold": 67,
         "best": 74,
         "solutions": {
             "xsot": {
@@ -6175,13 +6175,19 @@
     },
     "task285": {
         "gold": 306,
-        "best": 317,
+        "best": 309,
         "solutions": {
             "combined_solutions": {
                 "source": "ZGVmIHAoZyxrPTcpOgogST1bXQogZm9yIEEsciBpbiBlbnVtZXJhdGUoZyk6CiAgZm9yIEIsRiBpbiBlbnVtZXJhdGUocik6CiAgIEc9eyhBLEIpfQogICBmb3IgRCBpbihGPjApKkk6CiAgICBpZnsoQS0xLEIpLChBLEItMSksKEEtMSxCKzEpLChBLTEsQi0xKX0mRDpJLnJlbW92ZShEKTtHfD1ECiAgIEkrPShGPjApKltHXQogZm9yIEcgaW4gSToKICBmb3IgQyxEIGluIEc6CiAgIGZvciBFIGluIHJhbmdlKDI1KToKICAgIGlmeypHfSZ7KEMtRSU1LEUvLzUtfkQpLChFJTUtfkMsRC1FLy81KX06Z1tDLUUlNV1bRC1FLy81XXw9bGVuKHsqc3RyKFt4W0Q6RCsyXWZvciB4IGluIGdbQzpDKzJdXSl9KS8vOCpnW0NdW0RdCiByZXR1cm4taypnIG9yIHAoWyptYXAobGlzdCx6aXAoKmdbOjotMV0pKV0say0xKQ==",
                 "size_uncompressed": 400,
                 "compressed": "I2NvZGluZzpMMQppbXBvcnQgemxpYgpleGVjKHpsaWIuZGVjb21wcmVzcyhieXRlcygnVY7BbsMgEETv+VxuLo0WG+o6ktWKiv4I4oBUqJAMtjDuoYnz7d11mkg9wcy+3ZlPH9gMTqz6lasDS9rYAwtTYUUsLGbm85p8cdWDo/k+ymL6P1r2Eav6DEVkvpEgMCIG08cLb9IOsBiQkD0ygkjZ00u6ffzQ245Rpefi0/TtIfL3etGR1lOrb9dM/StZqUe69/KCAllV9/xAsrj85eE08EeFpm7HM3gZngYRum6Q14jpqOQVT0iy+Kac2Qlrbo696NFnODdLLWBGE1VsT5ZSRkpBWnk0LN941701qHETaxZf15Ll2jiG7AymSW6GMS5V/MQZEFRK9pZzK1bZ818nLCJMMSIpLC05KSk=",
                 "size_compressed": 317
+            },
+            "ovs": {
+                "source": "ZGVmIHAoZyk6CiBmb3IgXyBpbiByYW5nZSg4KToKICBJPVtdCiAgZm9yIEEsciBpbiBlbnVtZXJhdGUoZyk6CiAgIGZvciBCLEYgaW4gZW51bWVyYXRlKHIpOgogICAgRz17KEEsQil9CiAgICBmb3IgRCBpbiBJWzpGKjVdOgogICAgIGlmeyhBLTEsQiksKEEsQi0xKSwoQS0xLEIrMSksKEEtMSxCLTEpfSZEOkkucmVtb3ZlKEQpO0d8PUQKICAgIEkrPVtHXVs6Rl0KICBmb3IgRyBpbiBJOgogICBmb3IgQyxEIGluIEc6CiAgICBmb3IgRSBpbiByYW5nZSg1KToKICAgICBmb3IgRiBpbiByYW5nZSg1KToKICAgICAgaWZ7Kkd9JnsoQy1GLEQtfkUpLChDLX5GLEQtRSl9OmdbQy1GXVtELUVdfD1sZW4oeypzdHIoW3hbRDpEKzJdZm9yIHggaW4gZ1tDOkMrMl1dKX0pLy84KmdbQ11bRF0KICAqZyw9bWFwKGxpc3QsemlwKCpnWzo6LTFdKSkKIHJldHVybiBnCg==",
+                "size_uncompressed": 426,
+                "compressed": "I2NvZGluZzpMMQppbXBvcnQgemxpYgpleGVjKHpsaWIuZGVjb21wcmVzcyhieXRlcygiXU/dasMgFL7vUwiDoomuZFAoDp9EZAjTcKBqsGYXS9Nn3zGSju3ufL9+fjpPJhqYPBCfMvkgEEm2cXT0UjlSlDYHsmmZz1V1cQ4u2+JaqmmRp7/a3DRi1UIzj2xF1KxQjUXL1J1N8xDwaBID2ng1i4Hxhvv9qtx6BFleswvpy1Fg7/auYMuXXmlrsHFfarcnnuMch0pY+dzgf795bkMbn/7x+7rOrseFOpE4iIdnHM9HvT1bZdDIG43A3NXVRbp0t5KpHjVI6N9M7R1rLxqlQ8KwlZ1Olw4xxurmLnAV7ESvcCv8GyaKmpRiMIwdSHZlzph+ET8iLCJMMSIpLC0xNSkp",
+                "size_compressed": 309
             }
         }
     },
@@ -6319,7 +6325,7 @@
     },
     "task292": {
         "gold": 56,
-        "best": 58,
+        "best": 57,
         "solutions": {
             "att": {
                 "source": "cD1sYW1iZGEgYTpbKGk6PTEpKltjfGM+PjEmKGk6PS1+aSUzKWZvciBjIGluIGJdZm9yIGIgaW4gYV0=",
@@ -6328,10 +6334,10 @@
                 "size_compressed": 59
             },
             "ovs": {
-                "source": "cD1sYW1iZGEgZzpbWzYtaiUzJnYlfjVmb3Igaix2IGluIGVudW1lcmF0ZShyKV1mb3IgciBpbiBnXQ==",
-                "size_uncompressed": 58,
-                "compressed": "cD1sYW1iZGEgZzpbWzYtaiUzJnYlfjVmb3Igaix2IGluIGVudW1lcmF0ZShyKV1mb3IgciBpbiBnXQ==",
-                "size_compressed": 58
+                "source": "cD1sYW1iZGEgZzpbW2oqdi8vNGZvciBqLHYgaW4gemlwKGInBgQEJyo3LHIpXWZvciByIGluIGddCg==",
+                "size_uncompressed": 57,
+                "compressed": "cD1sYW1iZGEgZzpbW2oqdi8vNGZvciBqLHYgaW4gemlwKGInBgQEJyo3LHIpXWZvciByIGluIGdd",
+                "size_compressed": 57
             },
             "combined_solutions": {
                 "source": "cD1sYW1iZGEgaTpbWzglfnkmNi1iJTNmb3IgYix5IGluIGVudW1lcmF0ZSh4KV1mb3IgeCBpbiBpXQ==",
@@ -6619,7 +6625,7 @@
     },
     "task306": {
         "gold": 74,
-        "best": 81,
+        "best": 75,
         "solutions": {
             "att": {
                 "source": "cD1sYW1iZGEgYTpbKm1hcChmOj1sYW1iZGEqYjpbbWF4KGJbaSUxMDo6MTBdKWZvciBpIGluIHJhbmdlKGxlbihiKSldLCptYXAoZiwqYSkpXQ==",
@@ -6628,10 +6634,10 @@
                 "size_compressed": 82
             },
             "ovs": {
-                "source": "RT1lbnVtZXJhdGUKcD1sYW1iZGEgZzpbW21heChzdW0oW3JbaiVzOjpzXWZvciByIGluIGdbaSVzOjpzXV0sW10pKWZvciBqLF8gaW4gRShyKV1mb3IgaSxyIGluIEUoZylmb3IgcyxxIGluIEUoZywxKWlmIHFbMF09PTRd",
-                "size_uncompressed": 126,
-                "compressed": "RT1lbnVtZXJhdGUKcD1sYW1iZGEgZzpbW21heChzdW0oW3JbaiVzOjpzXWZvciByIGluIGdbaSVzOjpzXV0sW10pKWZvciBqLF8gaW4gRShyKV1mb3IgaSxyIGluIEUoZylmb3IgcyxxIGluIEUoZywxKWlmIHFbMF09PTRd",
-                "size_compressed": 126
+                "source": "cD1sYW1iZGEgaSxrPTc6LWsqaSBvcltbKm1hcChtYXgseCxbMF0qMTAreCldZm9yKngsaW4gemlwKCpwKGksay0xKSldWzo6LTFdCg==",
+                "size_uncompressed": 75,
+                "compressed": "cD1sYW1iZGEgaSxrPTc6LWsqaSBvcltbKm1hcChtYXgseCxbMF0qMTAreCldZm9yKngsaW4gemlwKCpwKGksay0xKSldWzo6LTFd",
+                "size_compressed": 75
             },
             "combined_solutions": {
                 "source": "cD1sYW1iZGEgaSxrPTc6LWsqaSBvcltbKnhbOjEwXSwqbWFwKG1heCx4LHhbMTA6XSldZm9yIHggaW4gemlwKCpwKGksay0xKSldWzo6LTFd",
@@ -7044,7 +7050,7 @@
         }
     },
     "task323": {
-        "gold": 122,
+        "gold": 117,
         "best": 153,
         "solutions": {
             "combined_solutions": {
@@ -7398,7 +7404,7 @@
         }
     },
     "task340": {
-        "gold": 120,
+        "gold": 119,
         "best": 133,
         "solutions": {
             "combined_solutions": {
@@ -7662,7 +7668,7 @@
         }
     },
     "task354": {
-        "gold": 97,
+        "gold": 96,
         "best": 100,
         "solutions": {
             "att": {
@@ -7920,7 +7926,7 @@
         }
     },
     "task365": {
-        "gold": 112,
+        "gold": 111,
         "best": 128,
         "solutions": {
             "ovs": {
@@ -8130,7 +8136,7 @@
         }
     },
     "task374": {
-        "gold": 123,
+        "gold": 119,
         "best": 152,
         "solutions": {
             "xsot": {
@@ -8526,7 +8532,7 @@
         }
     },
     "task390": {
-        "gold": 100,
+        "gold": 99,
         "best": 122,
         "solutions": {
             "ovs": {
