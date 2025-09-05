@@ -1,7 +1,3 @@
-# ovs (72 vs 71 bytes for gold)
 p=lambda i:[[5*(y==x*5%len({*str(i)})%3)for x in(6,5,4)]for y in(0,1,2)]
 
 # last byte probably requires some search that optimizes x and y values together with the formula
-
-### combined (85 bytes)
-p=lambda i:[b:=[[0,0,5],[0,5,0],[5,0,0]],b[::-1],[[5]*3]+[[0]*3]*2][4-len({*str(i)})]
