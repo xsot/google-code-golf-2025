@@ -1,4 +1,4 @@
-# combined (63 bytes, gold)
+# combined (63 vs 2500 bytes for gold)
 p=lambda i:[[t&-y%5for y in x for t in s]for x in i for s in i]
 
 ### att (64 bytes)

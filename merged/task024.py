@@ -1,4 +1,4 @@
-# combined (62 bytes, gold)
+# combined (62 vs 2500 bytes for gold)
 p=lambda i:[[3%-~sum(x)or(2in y)*2for y in zip(*i)]for x in i]
 
 ### att (65 bytes)

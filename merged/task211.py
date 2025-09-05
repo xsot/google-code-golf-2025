@@ -1,4 +1,4 @@
-# ovs (48 bytes, gold)
+# ovs (48 vs 2500 bytes for gold)
 p=lambda g:[l[::-1]+l for l in(g[::-1]+g)*2][:9]
 
 ### xsot (tied, 48 bytes)

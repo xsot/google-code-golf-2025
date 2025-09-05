@@ -1,4 +1,4 @@
-# att (72 vs 68 bytes for gold)
+# att (72 vs 2500 bytes for gold)
 p=lambda a:[[sum(c<e*s for*s,in zip(*a))for*c,e in zip(*a,r)]for r in a]
 
 ### ovs (tied, 72 bytes)

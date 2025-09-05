@@ -1,4 +1,4 @@
-# mwi (93 vs 90 bytes for gold)
+# mwi (93 vs 2500 bytes for gold)
 p=lambda a,n=-62:[*map(lambda*b,d=0:[(d:=c%(d+4)+(n>c)*4)for c in b][::-1],*n*a or p(a,n+1))]
 
 ### xsot (tied, 93 bytes)

@@ -1,4 +1,4 @@
-# att (63 vs 56 bytes for gold)
+# att (63 vs 2500 bytes for gold)
 p=lambda a:[[max({c,b.pop()}-{4})for c in a.pop()]for*b,in[*a]]
 
 ### combined (tied, 63 bytes)

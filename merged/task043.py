@@ -1,4 +1,4 @@
-# att (57 vs 56 bytes for gold)
+# att (57 vs 2500 bytes for gold)
 p=lambda a:[[c*b[-1]//9|b.pop(0)for c in a[0]]for*b,in a]
 
 ### combined (tied, 57 bytes)

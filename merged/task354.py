@@ -1,4 +1,4 @@
-# ovs (100 vs 96 bytes for gold)
+# ovs (100 vs 2500 bytes for gold)
 p=lambda i,k=9:-k*i or p([[(y==5)*(c[0]or s)or y for*c,y,s in zip(*i,x,[0]+x)][::-1]for x in i],k-1)
 
 ### combined (101 bytes)

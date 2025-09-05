@@ -1,4 +1,4 @@
-# ovs (31 bytes, gold)
+# ovs (31 vs 2500 bytes for gold)
 p=lambda g,S=sorted:S(map(S,g))
 
 ### xsot (tied, 31 bytes)

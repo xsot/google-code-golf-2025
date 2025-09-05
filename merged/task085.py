@@ -1,4 +1,4 @@
-# combined (56 vs 50 bytes for gold)
+# combined (56 vs 2500 bytes for gold)
 p=lambda i:[i:=[f:=y*(x!=i or f<y)for y in x]for x in i]
 
 ### ovs (57 bytes)

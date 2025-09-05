@@ -1,4 +1,4 @@
-# joking (92 vs 91 bytes for gold)
+# joking (92 vs 2500 bytes for gold)
 p=lambda i:[[max(x[b%(n:=2+len(i)//7)::n])for b,y in enumerate(x)if y<1]for x in i if 0in x]
 
 ### combined (126 bytes)

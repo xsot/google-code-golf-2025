@@ -1,4 +1,4 @@
-# att (79 bytes, gold)
+# att (79 vs 2500 bytes for gold)
 p=lambda a,n=-79:a*n or[*zip(*eval(str(p(a,n+1)[::-1]).replace('1, 0','1,1')))]
 
 ### combined (tied, 79 bytes)

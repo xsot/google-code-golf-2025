@@ -1,4 +1,4 @@
-# ovs (46 bytes, gold)
+# ovs (46 vs 2500 bytes for gold)
 p=lambda g:[[x^84%x%3*13for x in r]for r in g]
 
 ### combined (tied, 46 bytes)

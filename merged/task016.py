@@ -1,4 +1,4 @@
-# xsot (46 vs 43 bytes for gold)
+# xsot (46 vs 2500 bytes for gold)
 # note: edit in vim, not vscode 
 p=lambda m:[[b'AA	'[i]for i in m[0]]]*3
 ##

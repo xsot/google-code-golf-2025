@@ -1,4 +1,4 @@
-# att (143 bytes, gold)
+# att (143 vs 2500 bytes for gold)
 def p(a):r=range(len(a));X,Y=[(x:=i,j)for i in r for j in r if a[i][j]][1];return[[a[X][Y]*(max(X-i,i-X,Y-j,j-Y)%(x-X)<1)for j in r]for i in r]
 
 ### combined (tied, 143 bytes)

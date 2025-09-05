@@ -1,4 +1,4 @@
-# joking (71 vs 64 bytes for gold)
+# joking (71 vs 2500 bytes for gold)
 p=lambda i,s=0:[[~y%~(s:=y-s>>t&2)%4for y,t in zip(x,[0]+x)]for x in i]
 
 ## regex solution

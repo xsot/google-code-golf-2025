@@ -1,2 +1,2 @@
-# combined (133 vs 119 bytes for gold)
+# combined (133 vs 2500 bytes for gold)
 p=lambda i,k=3:-k*i or[[x[0],sum({*x[1:]}&{*x[:2]}),*[y*(sum(i,i).count(y)>4>0<y!=x[0])for y in x[2:]]]for x in zip(*p(i,k-1)[::-1])]

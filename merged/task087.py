@@ -1,4 +1,4 @@
-# att (36 bytes, gold)
+# att (36 vs 2500 bytes for gold)
 p=lambda a:[b[::-1]for b in a[::-1]]
 
 ### ovs (tied, 36 bytes)

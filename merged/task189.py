@@ -1,4 +1,4 @@
-# joking (111 bytes, gold)
+# joking (111 vs 2500 bytes for gold)
 p=lambda i,r=range(6):[[i[a-6+(s:=i[6][0]%3)*3][b-6+(t:=i[0][6]%3)*3]/3*i[a//3-s][b//3-t]for b in r]for a in r]
 
 ### combined (140 bytes)

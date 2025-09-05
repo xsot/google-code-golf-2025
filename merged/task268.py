@@ -1,4 +1,4 @@
-# mwi (284 (331 unzipped) vs 250 bytes for gold)
+# mwi (284 (331 unzipped) vs 2500 bytes for gold)
 def p(g,k=3):
  l=range(len(g));B=[sum(A>0for A in A)for A in g if any(A)]
  if B[0]==max(B)>0<B.count(B[0])<2:

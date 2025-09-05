@@ -1,4 +1,4 @@
-# xsot (98 vs 81 bytes for gold)
+# xsot (98 vs 2500 bytes for gold)
 import re
 p=lambda m,*a:eval(re.sub(r"(?<=[0 ,]..)\d(?=..[0 ])",'0',f" {[*zip(*a or p(m,*m))]} "))
 

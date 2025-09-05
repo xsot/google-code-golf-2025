@@ -1,4 +1,4 @@
-# ovs (153 vs 131 bytes for gold)
+# ovs (153 vs 2500 bytes for gold)
 E=enumerate
 p=lambda g,k=-1:g*k or p([[max([k*(2>i*i<=k in[r,r[:j],r[j:]][i])for i,k in E(map(min,g),-j)if k]or[v])for j,v in E(r)]for r in zip(*g)],k+1)
 

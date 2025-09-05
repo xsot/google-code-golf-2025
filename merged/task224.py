@@ -1,4 +1,4 @@
-# combined (171 bytes, gold)
+# combined (171 vs 2500 bytes for gold)
 p=lambda i,k=3,s=0:-k*i or p([[y or(s==5in{*(h:=[*map(max,i)])[b+1:]}&{*h[:b]})*sum({*sum(i,[])},-5)for b,y in enumerate(x)]*1**(s:=s*2+max(x))for x in zip(*i)][::-1],k-1)
 
 ### ovs (214 (218 unzipped) bytes)

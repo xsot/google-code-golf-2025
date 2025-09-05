@@ -1,4 +1,4 @@
-# att (54 vs 52 bytes for gold)
+# att (54 vs 2500 bytes for gold)
 p=lambda a:[*map(f:=lambda*b:[8,*b[2:],8],*map(f,*a))]
 
 ### combined (tied, 54 bytes)

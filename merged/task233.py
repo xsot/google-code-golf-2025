@@ -1,4 +1,4 @@
-# xsot (307 (465 unzipped) bytes, gold)
+# xsot (307 (465 unzipped) vs 2500 bytes for gold)
 e=enumerate
 def p(g):
  w=[(y,x,s)for y,p in e(g[:-2])for x,p in e(p[:-2])if{*sum(s:=[v[x:x+3]for v in g[y:y+3]],[])}^{0}>{2,0}]

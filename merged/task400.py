@@ -1,4 +1,4 @@
-# ovs (70 vs 67 bytes for gold)
+# ovs (70 vs 2500 bytes for gold)
 p=lambda g:[R[::-1][r.index(1):][:5]for r,R in zip(g,g[::-1])if 1in r]
 
 ### combined (tied, 70 bytes)

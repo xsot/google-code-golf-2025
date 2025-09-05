@@ -1,4 +1,4 @@
-# xsot (66 vs 60 bytes for gold)
+# xsot (66 vs 2500 bytes for gold)
 p=lambda m:[[*(c:=sum(sum(m,[])))*[2],0,0][:3],[0,c//4*2,0],[0]*3]
 ##
 p=lambda m:[[*(c:=sum(sum(m,[])))*[2],0,0][:3],[0,c//4*2,0],[0]*3]

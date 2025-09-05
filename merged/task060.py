@@ -1,4 +1,4 @@
-# ovs (48 bytes, gold)
+# ovs (48 vs 2500 bytes for gold)
 p=lambda g:[r[:1]*5+[5*(l>0)]+5*[l]for*r,l in g]
 
 ### combined (tied, 48 bytes)

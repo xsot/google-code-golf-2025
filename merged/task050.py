@@ -1,4 +1,4 @@
-# ovs (96 vs 86 bytes for gold)
+# ovs (96 vs 2500 bytes for gold)
 p=lambda g,*G:[[v or(8in{*r[:j]}&{*r[j:]})*3for j,v in enumerate(r)]for*r,in zip(*G or p(g,*g))]
 
 ### combined (tied, 96 bytes)

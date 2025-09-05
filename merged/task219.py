@@ -1,4 +1,4 @@
-# att (292 (307 unzipped) vs 269 bytes for gold)
+# att (292 (307 unzipped) vs 2500 bytes for gold)
 Z=zip
 def p(a,h=0):
 	b=[*map(any,a)].index;d=b(0,c:=b(1));q=a[c:d];k=h//4;j=h%4>2;i=h%4%3;u,*r,v=a[k:k+d-c+2];*s,=Z(*r);l=-[*map(any,s[::-1]),1].index(1);s=s[:l];e=[*Z(*q)][j:l+j-i]==s[i:]!=s[:i]==s[i:i+i]!=u==v
