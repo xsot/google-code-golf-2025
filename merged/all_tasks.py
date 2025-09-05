@@ -409,15 +409,15 @@ def p(g):
    for I in 6,7,8,9:
     for J in range(o//15*len(A)):g[I-A[0]+C[p[A]]][J+p[A]]|=g[I][m:=J+K.find(b'\n'+A+b'\n')]>0;g[I][m]=0
  K,C=zip(*[([*c,5].index(5),c.count(2))for c in zip(*g)]);K=b'\n'+bytes(K)+b'\n';S={*K.split(b'\n')};Q(0,{});return g
-# task 158: 306 (471 unzipped) vs 305 bytes for gold, https://arcprize.org/play?task=6aa20dc0
+# task 158: 269 (488 unzipped) vs 305 bytes for gold, https://arcprize.org/play?task=6aa20dc0
 def p(g):
- o=g[0][-1];s,t=max((len({*sum(a:=[R[x:x+3]for R in g[y:y+3]],[])}),a)for y in range(len(g))for x in range(len(g[0])))
- for s in(1,2,3):
-  for y in range(len(g)+1-3*s):
-   for x in range(len(g[0])+1-3*s):
-    for z in'range'*2:
-     t=(t,[*zip(*t)])[z<'r'][::-1]
-     for Y in range(s*3*all((a:=g[y+Y][x+X])==(b:=t[Y//s][X//s])or(a==o)*(b==max({*t[1]}-{o}))for Y in range(s*3) for X in range(s*3))):
+ s,t=max((len({*str(a:=[R[x:x+3]for R in g[y:y+3]])}),a)for y in range(len(g))for x in range(len(g[1])))
+ for s in range(len(g[1])):
+  for y in range(len(g))[:-s*3]:
+   for x in range(len(g[1]))[:-s*3]:
+    for z in range(len(g[1])):
+     t=*zip(*t[::-1]),
+     for Y in range(s*3*all(g[y+Y][x+X]==t[Y//s][X//s]or g[y+Y][x+X]==g[1][-1]!=t[Y//s][X//s]==max({*t[1]}-{g[1][-1]})for Y in range(s*3)for X in range(s*3))):
       for X in range(s*3):g[y+Y][x+X]=t[Y//s][X//s]
  return g
 # task 159: 185 vs 139 bytes for gold, https://arcprize.org/play?task=6b9890af
@@ -668,7 +668,7 @@ p=lambda a:[(i:=1)*[[c,c and 4][i:=1-i]for c in b]for b in a]
 def p(g):f=sum(g,[]);k=f*2;return[[max(v*(k[i+1-j%5]*k[i+13-j%3*13]==v*v)for i,v in enumerate(f))for j in R]for R in b"KKHH KEEH AEEM AAMM".split()]
 # task 254: 103 vs 84 bytes for gold, https://arcprize.org/play?task=a61f2674
 def p(i):k=*map(sum,zip(*i)),;return[[y and s//max(k)+min({*k}-{0})//s*2for y,s in zip(x,k)]for x in i]
-# task 255: 244 (276 unzipped) vs 268 bytes for gold, https://arcprize.org/play?task=a64e4611
+# task 255: 244 (276 unzipped) bytes, gold, https://arcprize.org/play?task=a64e4611
 def p(g):
  for S in[{0,3}]*8:g=[[r[~x]+10*any({*s[-2%(30-x):31-x]}-S for s in g[y+y%~y:y+2])for y,r in enumerate(g)]for x,_ in enumerate(g)];g=[[v%10|3*({*r[:10]}<=S)*(len(w:=[r[x]for r in g if{*r[:10]}<=S])>3!=S>={*w}or 3in r[x:])for x,v in enumerate(r)]for r in g]
  return g
