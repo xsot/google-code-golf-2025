@@ -91,9 +91,9 @@ def p(matrix):
     transforms = {
         # Quadrant (row, col) : lambda local_r, local_c: (source_r, source_c)
         (0, 0): lambda r, c: (r, c),                      # Top-Left (no rotation)
-        (0, 1): lambda r, c: (N - 1 - c, r),             # Top-Right (inverse of 90Â°)
-        (1, 0): lambda r, c: (c, N - 1 - r),             # Bottom-Left (inverse of 270Â°)
-        (1, 1): lambda r, c: (N - 1 - r, N - 1 - c),     # Bottom-Right (inverse of 180Â°)
+        (0, 1): lambda r, c: (N - 1 - c, r),             # Top-Right (inverse of 90°)
+        (1, 0): lambda r, c: (c, N - 1 - r),             # Bottom-Left (inverse of 270°)
+        (1, 1): lambda r, c: (N - 1 - r, N - 1 - c),     # Bottom-Right (inverse of 180°)
     }
 
     def get_value(r, c):
