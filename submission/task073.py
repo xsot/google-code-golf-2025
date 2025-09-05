@@ -1,1 +1,0 @@
-p=lambda a:a[:2]+a[::3]+[[5-b*4for b in a[2]]]

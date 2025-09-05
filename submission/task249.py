@@ -1,1 +1,0 @@
-p=lambda a:[r*2for r in a]

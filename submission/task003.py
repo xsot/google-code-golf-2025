@@ -1,1 +1,0 @@
-p=lambda g:[[v*2for v in l]for l in g+g[g[:2]!=g[4:]:][2:5]]

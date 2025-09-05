@@ -1,1 +1,0 @@
-p=lambda a:eval(str(a).replace(*'75'))

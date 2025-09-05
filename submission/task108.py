@@ -1,1 +1,0 @@
-p=eval('lambda a:[[a '+"for a in a[1::2]for _ in' '*4]"*2)

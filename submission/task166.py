@@ -1,1 +1,0 @@
-p=lambda a:[[d or any(b)*2*any(c)for*c,d in zip(*a,b)]for b in a]

@@ -1,1 +1,0 @@
-p=lambda i,r=range(18):[[y*x%max(i[~0])+1for y in r]for x in r]

@@ -1,1 +1,0 @@
-p=lambda i:[[3%~t+2&8-(2in x)for t in i[0]]for x in i]

@@ -1,1 +1,0 @@
-p=lambda m:[[len(r)*r.pop(0)%2*3or x for x in[*r]]for r in m]

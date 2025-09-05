@@ -1,1 +1,0 @@
-p=lambda a:[b:=[*map(max,a)]*3,b[::-1]]

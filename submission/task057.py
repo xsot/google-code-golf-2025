@@ -1,1 +1,0 @@
-p=lambda a,*n:[*filter(any,zip(*n or p(a,*a)*2))]

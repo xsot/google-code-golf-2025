@@ -11,9 +11,8 @@ POSTFIXES = [b"",b" ",b"\t",b"\n",b"\r",b"\f",b"#",b";",b"\t ",b" \t",b"\np"] + 
 def compress(task_src: bytes) -> bytes:
     zipped_src_1 = compress_with_zlib(task_src)
     zipped_src_2 = compress_with_libdeflate(task_src)
-    zipped_src_3 = task_src
-    # Uncomment in case of emergency. Saves 9b as of this commit
-    # zipped_src_3 = compress_with_zopfli(task_src)
+    zipped_src_3 = compress_with_zopfli(task_src)
+    
     return min(zipped_src_1, zipped_src_2, zipped_src_3, task_src, key=len)
 
 def compress_with_zlib(task_src: bytes) -> bytes:

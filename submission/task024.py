@@ -1,1 +1,0 @@
-p=lambda i:[[3%-~sum(x)or(2in y)*2for y in zip(*i)]for x in i]

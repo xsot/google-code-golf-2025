@@ -1,1 +1,0 @@
-p=lambda i:[[-y%5^s*3for s,y in zip(*x)]for x in zip(i,i[5:])]

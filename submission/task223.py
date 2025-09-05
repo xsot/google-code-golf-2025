@@ -1,1 +1,0 @@
-p=lambda a:eval("[[a "+"for a in a for _ in%s]"%a*2)

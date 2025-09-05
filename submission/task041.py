@@ -1,1 +1,0 @@
-p=lambda a,b=0:[[e|(b:=b^e)for e in r]for r in a]

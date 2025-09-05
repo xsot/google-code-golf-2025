@@ -1,1 +1,0 @@
-p=lambda i:[max([n]for n in sum(i,[])if str(i).count(f"{n}, "*3)<2)]
