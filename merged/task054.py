@@ -7,7 +7,7 @@ def p(g):
    while(g[u][U]^B)*F:g[u][U]=M[I,J];u+=int(d/2);U+=int(D/2);F-=-2<d|D<2
  return g
 
-### mwi (308 (379 unzipped) bytes)
+### mwi (tied, 308 (379 unzipped) bytes)
 def p(g):
  f=sum(g,[]);*C,p,B=sorted({*f},key=f.count);M={(i,I):J for(i,j)in enumerate(g)for(I,J)in enumerate(j)if J in C};T={(i,j)for(i,j)in M for(I,J)in M if(I-i)**2+(J-j)**2==1}
  for(i,j)in{*M}-T:
