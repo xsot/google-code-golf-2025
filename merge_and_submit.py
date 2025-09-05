@@ -26,6 +26,9 @@ assume_passing = False
 # the compression function and want to run it on all files
 update_all = False
 
+# Configuration: How many diffs to report in stats.txt
+stats_size = 5
+
 # Configuration: add player directories here
 player_dirs = [
     'att',
@@ -279,6 +282,17 @@ with open(as_path(output_dir, "all_tasks"), "w") as file:
 with open(as_path(output_dir, "scores", "txt"), "w") as file:
     for task in tasks.values():
         print(task["best"], file=file)
+
+with open(as_path(output_dir, "stats", "txt"), "w") as file:
+    print("Biggest diffs (current - gold):", file=file)
+    diffs = [(t, tasks[t]["best"] - tasks[t]["gold"], tasks[t]["best"] / tasks[t]["gold"])
+        for t in tasks]
+    for task, diff_sub, _ in sorted(diffs, key = lambda d: d[1])[::-1][:stats_size]:
+        print(f"\t{task}: {diff_sub}", file=file)
+    print("Biggest diffs (current / gold):", file=file)
+    for task, _, diff_div in sorted(diffs, key = lambda d: d[2])[::-1][:stats_size]:
+        print(f"\t{task}: {diff_div:.03f}", file=file)
+
 
 # Commit changes
 if promptYN("Commit changes? [Y]es/[N]o", default_commit):

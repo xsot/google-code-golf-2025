@@ -419,7 +419,7 @@ def p(g):
  return g
 # task 159: 185 vs 139 bytes for gold, https://arcprize.org/play?task=6b9890af
 def p(i,e=enumerate):l,m=[[[y[0]for y in zip(x,*i)if{*y}&n]for x in i if{*x}&n]for n in[{2},{1,*range(3,10)}]];s=len(l)//3;return[[y or m[~-a//s][~-b//s]for b,y in e(x)]for a,x in e(l)]
-# task 160: 107 vs 115 bytes for gold, https://arcprize.org/play?task=6c434453
+# task 160: 107 bytes, gold, https://arcprize.org/play?task=6c434453
 import re;p=lambda i,*n:eval(re.sub("1, 1,"+' 1(.{26}), .,'*2,r"0,2,0\1*2,2,2\2*0,2,0*",str(n or p(i,*i))))
 # task 161: 105 vs 82 bytes for gold, https://arcprize.org/play?task=6cdd2623
 p=lambda m:[[sum(({x}&{y}|{i}&{j})&{min(a:=sum(m,[]),key=a.count)})for i,*_,j in zip(*m)]for x,*_,y in m]
