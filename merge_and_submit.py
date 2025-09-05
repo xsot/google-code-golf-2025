@@ -284,6 +284,7 @@ with open(as_path(output_dir, "scores", "txt"), "w") as file:
 if promptYN("Commit changes? [Y]es/[N]o", default_commit):
     repo.git.add("*/task*.py")
     repo.git.add("merged/*")
+    repo.git.add("tasks.json")
     repo.git.commit([f'-m +{total_save}={total_score}/{1_000_000 - sum(gold_score)}'])
 
 # Push
