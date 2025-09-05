@@ -417,8 +417,8 @@ def p(g):
      for Y in range(s*3*all(g[y+Y][x+X]==t[Y//s][X//s]or g[y+Y][x+X]==g[1][-1]!=t[Y//s][X//s]==max({*t[1]}-{g[1][-1]})for Y in range(s*3)for X in range(s*3))):
       for X in range(s*3):g[y+Y][x+X]=t[Y//s][X//s]
  return g
-# task 159: 185 vs 139 bytes for gold, https://arcprize.org/play?task=6b9890af
-def p(i,e=enumerate):l,m=[[[y[0]for y in zip(x,*i)if{*y}&n]for x in i if{*x}&n]for n in[{2},{1,*range(3,10)}]];s=len(l)//3;return[[y or m[~-a//s][~-b//s]for b,y in e(x)]for a,x in e(l)]
+# task 159: 112 vs 139 bytes for gold, https://arcprize.org/play?task=6b9890af
+p=lambda g,*G:sum([[[2,*r,2]]*({*r}=={2}or({*r}-{2}!={0})*str(g).count('2')//12)for*r,in zip(*G or p(g,*g))],[])
 # task 160: 107 bytes, gold, https://arcprize.org/play?task=6c434453
 import re;p=lambda i,*n:eval(re.sub("1, 1,"+' 1(.{26}), .,'*2,r"0,2,0\1*2,2,2\2*0,2,0*",str(n or p(i,*i))))
 # task 161: 105 vs 82 bytes for gold, https://arcprize.org/play?task=6cdd2623
