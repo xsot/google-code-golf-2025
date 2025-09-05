@@ -1,4 +1,4 @@
-# combined (152 vs 119 bytes for gold)
+# combined (152 vs 112 bytes for gold)
 p=lambda i,k=19,t=0:-k*i or p([[0**k*sorted({*sum(i,[])}).index(y)*2%5or(y>0)*max(s,5+(t:=s and-~t),s:=y)for y in x]for x in zip(*i[::-1])if[s:=0]],k-1)
 
 ### xsot (263 (279 unzipped) bytes)

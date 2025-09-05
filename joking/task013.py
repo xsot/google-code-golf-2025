@@ -1,0 +1,1 @@
+def p(i,a=-1):f,*r=map(i.index,filter(any,i));return[[max(i[f+(f>(a:=a+1)or a-f)%(2*r[0]-2*f)])]*len(x)for x in i if i[len(x):]]or[*zip(*p([*zip(*i)]))]
