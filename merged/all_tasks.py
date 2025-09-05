@@ -243,8 +243,8 @@ p=lambda i,k=3:-k*i or[*map(lambda*x,z=0:[z%4|(z:=y)for y in x],*p(i,k-1)[::-1])
 def p(g,*S):
  for c in{b:=max(f:=sum(g,[]),key=f.count)}^{*f}:r=max([[i for i,v in enumerate(r)if v==c]for*r,in[*g,*zip(*g)]],key=len);D=max(d:=min(d:=[x-r.pop(0)for x in r[1:]],d[::-1])+[0]);S+=((d.index(D)*2or~-len(d))+D|1,D-2,c),
  R=range(w:=max(S)[0]);return[[([C for W,G,C in S if G<(M:=sorted(abs(w//2-v)for v in(i,j)))[0]*2<M[1]*2+1==W]+[b])[0]for j in R]for i in R]
-# task 97: 115 vs 108 bytes for gold, https://arcprize.org/play?task=42a50994
-p=lambda i,e=enumerate:[[y*(sum(sum([z[b-(b>0):b+2]for z in i[a-(a>0):a+2]],[]))>y)for b,y in e(x)]for a,x in e(i)]
+# task 97: 113 vs 108 bytes for gold, https://arcprize.org/play?task=42a50994
+p=lambda i,e=enumerate:[[y*(sum(sum([z[b+b%~b:b+2]for z in i[a+a%~a:a+2]],[]))>y)for b,y in e(x)]for a,x in e(i)]
 # task 98: 92 vs 88 bytes for gold, https://arcprize.org/play?task=4347f46a
 p=lambda i:[[y^min(t)for*t,y in zip(*w,[0]+s,s[1:]+[0],s)]for*w,s in zip(i[:1]+i,i[1:]+i,i)]
 # task 99: 150 vs 115 bytes for gold, https://arcprize.org/play?task=444801d8
@@ -407,15 +407,15 @@ def p(g):
    for I in 6,7,8,9:
     for J in range(o//15*len(A)):g[I-A[0]+C[p[A]]][J+p[A]]|=g[I][m:=J+K.find(b'\n'+A+b'\n')]>0;g[I][m]=0
  K,C=zip(*[([*c,5].index(5),c.count(2))for c in zip(*g)]);K=b'\n'+bytes(K)+b'\n';S={*K.split(b'\n')};Q(0,{});return g
-# task 158: 306 (471 unzipped) vs 305 bytes for gold, https://arcprize.org/play?task=6aa20dc0
+# task 158: 269 (488 unzipped) vs 305 bytes for gold, https://arcprize.org/play?task=6aa20dc0
 def p(g):
- o=g[0][-1];s,t=max((len({*sum(a:=[R[x:x+3]for R in g[y:y+3]],[])}),a)for y in range(len(g))for x in range(len(g[0])))
- for s in(1,2,3):
-  for y in range(len(g)+1-3*s):
-   for x in range(len(g[0])+1-3*s):
-    for z in'range'*2:
-     t=(t,[*zip(*t)])[z<'r'][::-1]
-     for Y in range(s*3*all((a:=g[y+Y][x+X])==(b:=t[Y//s][X//s])or(a==o)*(b==max({*t[1]}-{o}))for Y in range(s*3) for X in range(s*3))):
+ s,t=max((len({*str(a:=[R[x:x+3]for R in g[y:y+3]])}),a)for y in range(len(g))for x in range(len(g[1])))
+ for s in range(len(g[1])):
+  for y in range(len(g))[:-s*3]:
+   for x in range(len(g[1]))[:-s*3]:
+    for z in range(len(g[1])):
+     t=*zip(*t[::-1]),
+     for Y in range(s*3*all(g[y+Y][x+X]==t[Y//s][X//s]or g[y+Y][x+X]==g[1][-1]!=t[Y//s][X//s]==max({*t[1]}-{g[1][-1]})for Y in range(s*3)for X in range(s*3))):
       for X in range(s*3):g[y+Y][x+X]=t[Y//s][X//s]
  return g
 # task 159: 185 vs 139 bytes for gold, https://arcprize.org/play?task=6b9890af
@@ -666,14 +666,10 @@ p=lambda a:[(i:=1)*[[c,c and 4][i:=1-i]for c in b]for b in a]
 def p(g):f=sum(g,[]);k=f*2;return[[max(v*(k[i+1-j%5]*k[i+13-j%3*13]==v*v)for i,v in enumerate(f))for j in R]for R in b"KKHH KEEH AEEM AAMM".split()]
 # task 254: 103 vs 84 bytes for gold, https://arcprize.org/play?task=a61f2674
 def p(i):k=*map(sum,zip(*i)),;return[[y and s//max(k)+min({*k}-{0})//s*2for y,s in zip(x,k)]for x in i]
-# task 255: 269 (325 unzipped) vs 244 bytes for gold, https://arcprize.org/play?task=a64e4611
+# task 255: 244 (276 unzipped) bytes, gold, https://arcprize.org/play?task=a64e4611
 def p(g):
- g=[[g[y][x]+10*any(sum(s[x-(x>0):x+2])for s in g[y-(y>0):y+2])for x in range(30)]for y in range(30)]
- for y in'y'*8:
-  g=*map(list,zip(*g[::-1])),;w=[r for r in g if{*r[:10]}<={0,3}]
-  for x in range(30):
-   for r in w:w*=all(r[x]%3<1for r in w);r[x]|=3*(len(w)>3or 3in r[x+1:])
- return[[c%10for c in r]for r in g]
+ for S in[{0,3}]*8:g=[[r[~x]+10*any({*s[-2%(30-x):31-x]}-S for s in g[y+y%~y:y+2])for y,r in enumerate(g)]for x,_ in enumerate(g)];g=[[v%10|3*({*r[:10]}<=S)*(len(w:=[r[x]for r in g if{*r[:10]}<=S])>3!=S>={*w}or 3in r[x:])for x,v in enumerate(r)]for r in g]
+ return g
 # task 256: 96 vs 95 bytes for gold, https://arcprize.org/play?task=a65b410d
 def p(g):s=sum(m:=max(g))//2;i=s-~g.index(m);return[[2-((i:=i+i%~i)<s)+(i>s)]*i+r[i:]for r in g]
 # task 257: 75 bytes, gold, https://arcprize.org/play?task=a68b268e
@@ -750,11 +746,12 @@ p=lambda a:[*map(f:=lambda d,*b,c=0:[c|(c:=d)>>2|(d:=e)for e in[*b,0]],*map(f,*a
 # task 283: 94 vs 86 bytes for gold, https://arcprize.org/play?task=b6afb2da
 z=0,
 p=lambda a:[*map(f:=lambda*b:[c[0]*sum(c,7)%32%6for c in zip(b,z+b,b[1:]+z)],*map(f,*a))]
-# task 284: 238 vs 220 bytes for gold, https://arcprize.org/play?task=b7249182
-def p(i,k=1,E=enumerate):
- m=max(i)
- if len(l:=[n for n,y in E(m)if y])==2:s,t=l;i=[[(abs(a-i.index(m))in[*(t-s-2)//2*[[0]],[0,1,2],[2],*[[]]*9][min(t-b,b-s)])*m[l[t-b<b-s]]for b,_ in E(x)]for a,x in E(i)]
- return-k*i or p([*zip(*i)],k-1)
+# task 284: 228 vs 220 bytes for gold, https://arcprize.org/play?task=b7249182
+def p(i):
+ for E in[enumerate]*2:
+  *i,=zip(*i);m=max(i)
+  if len(l:=[n for n,y in E(m)if y])==2:s,t=l;i=[[([*(t-s-2)//2*[1],7,4,*[0]*4][min(t-b,b-s)]>>abs(a-i.index(m))&1)*m[l[t-b<b-s]]for b,_ in E(x)]for a,x in E(i)]
+ return i
 # task 285: 309 (426 unzipped) vs 306 bytes for gold, https://arcprize.org/play?task=b775ac94
 def p(g):
  for _ in range(8):
@@ -889,16 +886,16 @@ p=lambda i,s=0:[[~y%~(s:=y-s>>t&2)%4for y,t in zip(x,[0]+x)]for x in i]
 p=lambda a:[[*filter(int,sum(a,[]))]]
 # task 340: 133 vs 119 bytes for gold, https://arcprize.org/play?task=d687bc17
 p=lambda i,k=3:-k*i or[[x[0],sum({*x[1:]}&{*x[:2]}),*[y*(sum(i,i).count(y)>4>0<y!=x[0])for y in x[2:]]]for x in zip(*p(i,k-1)[::-1])]
-# task 341: 139 vs 132 bytes for gold, https://arcprize.org/play?task=d6ad076f
-p=lambda i,k=1,r=range(10):-k*i or p([[i[b][a]or all(len({*s[b:]})%len({*s})&2for s in[*zip(*i)][a-(a>0):a+2])*8for b in r]for a in r],k-1)
+# task 341: 138 vs 132 bytes for gold, https://arcprize.org/play?task=d6ad076f
+p=lambda i,k=1,r=range(10):-k*i or p([[i[b][a]or all(len({*s[b:]})%len({*s})&2for s in[*zip(*i)][a+a%~a:a+2])*8for b in r]for a in r],k-1)
 # task 342: 119 vs 112 bytes for gold, https://arcprize.org/play?task=d89b689b
 p=lambda i,s=-1:[[y==8and[g for g in[*map(max,*i[:a]),*map(max,*i[a:])]if g%8][s:=s+1]for y in i[a]]for a in range(10)]
 # task 343: 75 vs 65 bytes for gold, https://arcprize.org/play?task=d8c310e9
 p=lambda i:[*zip(*((h:=[*zip(*i)])[:8-2*(h[8:12]!=h[:4]!=h[4:8])]*3)[:15])]
 # task 344: 78 bytes, gold, https://arcprize.org/play?task=d90796e8
 p=lambda i,k=3:-k*i or[*zip(*eval(str(p(i,k-1)[::-1]).replace("2, 3","0,8")))]
-# task 345: 109 vs 90 bytes for gold, https://arcprize.org/play?task=d9f24cd1
-p=lambda i,r=range(10):[[i[a][b]|2&6%~sum((t:=[*zip(*i)])[b-1][a-(a>0):])+max(t[b][a:])for b in r]for a in r]
+# task 345: 108 vs 90 bytes for gold, https://arcprize.org/play?task=d9f24cd1
+p=lambda i,r=range(10):[[i[a][b]|2&6%~sum((t:=[*zip(*i)])[b-1][a+a%~a:])+max(t[b][a:])for b in r]for a in r]
 # task 346: 68 vs 58 bytes for gold, https://arcprize.org/play?task=d9fac9be
 p=lambda i:[max([n]for n in sum(i,[])if str(i).count(f"{n}, "*3)<2)]
 # task 347: 50 bytes, gold, https://arcprize.org/play?task=dae9d2b5
@@ -956,8 +953,8 @@ def p(m):
    for x,v in enumerate(r):
     for r,c in C*all(len(m[0])>x-H+c>-1<y-G+r<len(m)and(B!=m[r][c]==m[y-G+r][x-H+c]or B==m[r][c]!=D==m[y-G+r][x-H+c])for r,c in C):m[y-G+r][x-H+c]=m[r][c]
  return[r for y,r in enumerate(m)if D in r]
-# task 367: 223 vs 130 bytes for gold, https://arcprize.org/play?task=e73095fd
-p=lambda g,k=59,e=enumerate:-k*g or p([*zip(*[[[c-c%5+0**c*4,max(c,x+y<1,(v:=(*g[y-(y>0)][x-1:x+1],r[x-1]))==(5,0,0),y>1<x<sum(v)>10>4<g[y-1][x-2]+g[y-2][x-1]or[0,*r][x]%5)][k>0]for x,c in e(r)]for y,r in e(g)][::-1])],k-1)
+# task 367: 222 vs 130 bytes for gold, https://arcprize.org/play?task=e73095fd
+p=lambda g,k=59,e=enumerate:-k*g or p([*zip(*[[[c-c%5+0**c*4,max(c,x+y<1,(v:=(*g[y+y%~y][x-1:x+1],r[x-1]))==(5,0,0),y>1<x<sum(v)>10>4<g[y-1][x-2]+g[y-2][x-1]or[0,*r][x]%5)][k>0]for x,c in e(r)]for y,r in e(g)][::-1])],k-1)
 # task 368: 138 bytes, gold, https://arcprize.org/play?task=e76a88a6
 import re
 p=lambda i:eval(re.sub("5(, 5)+",lambda m,q=[re.findall("([^50](, [1-9])+)",str(i)*9)for _ in i]:q[m.end()%8].pop(0)[0],str(i)))
