@@ -6,7 +6,7 @@ def p(g):
   for Y,X in(m:=[(Y-i+y,X-j+x)for Y,X in v])*(g[0]!=[0,5,5,5,5,0,0,5,y^1,5]!={*m}<z):g[Y][X]=2;z-={(Y,X)}
  return g
 
-### mwi (236 (310 unzipped) bytes)
+### mwi (235 (310 unzipped) bytes)
 def p(g):
  v=[[y,x]for y,r in enumerate(g)for x,c in enumerate(r)if c%5];i,j=min(v)
  for y,r in enumerate(g):

@@ -16,7 +16,7 @@ def p(g):
    for r in w:w*=all(r[x]%3<1for r in w);r[x]|=3*(len(w)>3or 3in r[x+1:])
  return[[c%10for c in r]for r in g]
 
-### ovs (326 (381 unzipped) bytes)
+### ovs (324 (381 unzipped) bytes)
 def p(g):
  for R in[lambda x:[r[::-1]for*r,in zip(*x)]]*4:
   c,={*sum(g:=R(g),[])}-{0,3};D=*[[*r,c].index(c)for r in g],99,0;j=-1

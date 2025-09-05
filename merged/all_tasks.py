@@ -182,7 +182,7 @@ p=lambda a:a[:2]+a[::3]+[[5-b*4for b in a[2]]]
 p=lambda i,k=2:-k*i or p([[*map(min,a,[9,9]+a[::-1],c)]for*c,a in zip(*i,i)],k-1)
 # task 75: 88 vs 86 bytes for gold, https://arcprize.org/play?task=363442ee
 p=lambda i,r=range(9):[i[a][:4]+[i[a//3*3+1][b//3*3+5]*i[a%3][b%3]for b in r]for a in r]
-# task 76: 303 (355 unzipped) bytes, gold, https://arcprize.org/play?task=36d67576
+# task 76: 302 (355 unzipped) vs 303 bytes for gold, https://arcprize.org/play?task=36d67576
 E=enumerate
 def p(g):
  G={j+i*1j:v^2for i,r in E(g)for j,v in E(r)if v};[abs(I-J)<2!=s.add(J)for P in G if G[P]%2if[s:={P}]for J in[*G]*6for I in[*s]]
@@ -251,7 +251,7 @@ p=lambda g:[[v*(0in[*r[j-1:j+2],*[*zip(*g)][j][i-1:i+2]])for j,v in E(r)]for i,r
 p=lambda i,k=19:-k*i or p([[-(y<e<0)or(y<0<1!=e!=-2)*e or y or-2*(e>1<k>14or-2==e)or-(k==19>1==e)for y,e in zip(x,[0,*x])]for x in zip(*i[::-1])],k-1)
 # task 100: 88 vs 85 bytes for gold, https://arcprize.org/play?task=445eab21
 p=lambda a:[[max(range(1,10),key=[sum({*b}&{*c})for c in zip(*a)for b in a].count)]*2]*2
-# task 101: 282 (338 unzipped) bytes, gold, https://arcprize.org/play?task=447fd412
+# task 101: 281 (338 unzipped) vs 282 bytes for gold, https://arcprize.org/play?task=447fd412
 def p(g):
  T=1,20;V,m,M,s,v=[{j+i*20for i,g in enumerate(g)for j,g in enumerate(g)if g==C}for C in range(5)];[s.add(I)for I in[*M]*2for i in m|s if abs(I-i)in T]
  for i in M-s:
@@ -390,7 +390,7 @@ def p(g):
  return g
 # task 152: 40 bytes, gold, https://arcprize.org/play?task=67e8384a
 p=lambda a:[r+r[::-1]for r in a+a[::-1]]
-# task 153: 184 vs 141 bytes for gold, https://arcprize.org/play?task=681b3aeb
+# task 153: 183 (184 unzipped) vs 141 bytes for gold, https://arcprize.org/play?task=681b3aeb
 def p(g,R=range):u=[[(r*2)[x:x+3]for r in(g*2)[y:y+3]]for x in R(10)for y in R(10)];return[t for a in u for b in u if"0"not in str(t:=[[a[y][x]^b[y][x]for x in R(3)]for y in R(3)])][0]
 # task 154: 133 vs 100 bytes for gold, https://arcprize.org/play?task=6855a6e4
 p=lambda i,k=3:-k*i or p([[*[*zip(*i[::-1])][(1<abs(h:=(r:=[*map(max,*i)]).index(2)-l)<4==r.count(2))*2*h+l]]for l in range(15)],k-1)
@@ -926,7 +926,7 @@ p=lambda i,k=39:-k*i or[[*map(max,x,x[6-13//len({*x,0}):]+(0,0)*9)]for x in zip(
 p=lambda g:[[max(w:=c+r,key=w.count)for*c,in zip(*g)]for r in g]
 # task 360: 45 bytes, gold, https://arcprize.org/play?task=e3497940
 p=lambda a:[[*map(max,b,b[:4:-1])]for b in a]
-# task 361: 211 (241 unzipped) vs 204 bytes for gold, https://arcprize.org/play?task=e40b9e2f
+# task 361: 208 (241 unzipped) vs 204 bytes for gold, https://arcprize.org/play?task=e40b9e2f
 def p(i):I=[r*2for r in i*2];return[[[max(I[x][y],I[a+n+b+~y][b-a+x],I[a-b+y][b+n+a+~x],I[2*a+n+~x][2*b+n+~y])for y in range(10)]for x in range(10)]for n in(4,3,2)for a in range(10)for b in range(10)if all(all(x[b:b+n])for x in I[a:a+n])][0]
 # task 362: 69 bytes, gold, https://arcprize.org/play?task=e48d4e1a
 p=lambda g:[r[(n:=g.count(g[0])):9]+r[:1]+r[:n]for r in g*2][10-n:-n]
@@ -1008,8 +1008,8 @@ p=lambda a,*n:sum([[b,b]for*b,in zip(*n or p(*a))if 4in b],[])
 p=lambda a:a[:4:-1]+a[5:]
 # task 386: 52 bytes, gold, https://arcprize.org/play?task=f2829549
 p=lambda a:[[3>>e+r.pop(0)for e in r[4:]]for r in a]
-# task 387: 232 (238 unzipped) vs 222 bytes for gold, https://arcprize.org/play?task=f35d900a
-p=lambda i,k=3:-k*i or p([[(y<1>k)*([*{*sum(i,[])}-{*sum([*zip(*i[b-(b>0):b+2])][a-(a>0):a+2],()),5},0]*2)[2]+(sum(x[b+1:])%5>0<sum(x[:b])%5>x[b-1]+x[b+1]==0<x[b-2]+x[b+2])*5or y for b,y in enumerate(x)]for a,x in enumerate(zip(*i))],k-1)
+# task 387: 230 (234 unzipped) vs 222 bytes for gold, https://arcprize.org/play?task=f35d900a
+p=lambda i,k=3,e=enumerate:-k*i or p([[(y<1>k)*([*{*sum(i,[])}-{*sum([*zip(*i[b-(b>0):b+2])][a-(a>0):a+2],()),5},0]*2)[2]+(sum(x[b+1:])%5>0<sum(x[:b])%5>x[b-1]+x[b+1]==0<x[b-2]+x[b+2])*5or y for b,y in e(x)]for a,x in e(zip(*i))],k-1)
 # task 388: 62 vs 61 bytes for gold, https://arcprize.org/play?task=f5b8619d
 p=lambda a:2*[2*[d or any(c)*8for*c,d in zip(*a,b)]for b in a]
 # task 389: 57 bytes, gold, https://arcprize.org/play?task=f76d97a5

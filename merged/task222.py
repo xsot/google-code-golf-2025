@@ -1,7 +1,7 @@
 # mwi (106 bytes, gold)
 p=lambda g,k=5:-k*g or p([[c*(2*f"{c}, "in str(r))*(sum(g,[]).count(c)>4)for c in r]for r in zip(*g)],k-1)
 
-### combined (197 bytes)
+### combined (196 (197 unzipped) bytes)
 p=lambda i,r=range(16):[[[(x<=t<a)*(y<=s<b)*i[t][s]for s in r]for t in r]for a in r[::-1]for b in r[::-1]for y in r for x in r if b-y>1<a-x!={*sum(l:=[s[y:b]for s in i[x:a]],[])}=={l[0][0]}-{0}][0]
 
 ### ovs (204 (230 unzipped) bytes)

@@ -18,7 +18,7 @@ def p(g):
     if M[i,j]==M[I]!=L(i,j,M)<L(*y,s):s|={y};g[y[0]-I[0]+i][(I[1]-y[1])*(-1)**M[I]+j]=M[y]
  return g
 
-### combined (292 (376 unzipped) bytes)
+### combined (290 (376 unzipped) bytes)
 def p(g):
  B=[];e=enumerate
  for A,r in e(g):
