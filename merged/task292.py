@@ -1,7 +1,7 @@
-# ovs (58 vs 56 bytes for gold)
-p=lambda g:[[6-j%3&v%~5for j,v in enumerate(r)]for r in g]
+# ovs (57 vs 56 bytes for gold)
+p=lambda g:[[j*v//4for j,v in zip(b''*7,r)]for r in g]
 
-### combined (tied, 58 bytes)
+### combined (58 bytes)
 p=lambda i:[[8%~y&6-b%3for b,y in enumerate(x)]for x in i]
 
 ### att (59 bytes)

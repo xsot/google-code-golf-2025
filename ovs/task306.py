@@ -1,2 +1,1 @@
-E=enumerate
-p=lambda g:[[max(sum([r[j%s::s]for r in g[i%s::s]],[]))for j,_ in E(r)]for i,r in E(g)for s,q in E(g,1)if q[0]==4]
+p=lambda i,k=7:-k*i or[[*map(max,x,[0]*10+x)]for*x,in zip(*p(i,k-1))][::-1]
