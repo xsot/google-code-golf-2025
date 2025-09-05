@@ -1,4 +1,4 @@
-# ovs (281 (338 unzipped) vs 282 bytes for gold)
+# ovs (281 (338 unzipped) bytes, gold)
 def p(g):
  T=1,20;V,m,M,s,v=[{j+i*20for i,g in enumerate(g)for j,g in enumerate(g)if g==C}for C in range(5)];[s.add(I)for I in[*M]*2for i in m|s if abs(I-i)in T]
  for i in M-s:

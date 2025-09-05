@@ -1,4 +1,4 @@
-# mwi (269 (325 unzipped) vs 268 bytes for gold)
+# mwi (269 (325 unzipped) vs 244 bytes for gold)
 def p(g):
  g=[[g[y][x]+10*any(sum(s[x-(x>0):x+2])for s in g[y-(y>0):y+2])for x in range(30)]for y in range(30)]
  for y in'y'*8:
