@@ -303,4 +303,4 @@ if promptYN("Submit to Kaggle? [Y]es/[No]", default_kaggle):
                 temp_file.write(task_source)
                 zipf.write(temp_path, arcname=task_name)
     kaggle.api.authenticate()
-    kaggle.api.competition_submit("submission.zip", f"Est. Score: {score} " + "".join([random.choice("⬛🟦🟥🟩🟨⬜🟪🟧🟫")for _ in[0]*9]), "google-code-golf-2025")
+    kaggle.api.competition_submit("submission.zip", f"Est. Score: {total_score} " + "".join([random.choice("⬛🟦🟥🟩🟨⬜🟪🟧🟫")for _ in[0]*9]), "google-code-golf-2025")
