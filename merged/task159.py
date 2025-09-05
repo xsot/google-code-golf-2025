@@ -1,4 +1,7 @@
-# ovs (112 bytes, gold)
+# mwi (110 vs 112 bytes for gold)
+p=lambda g,*G:sum([[[2,*r,2]]*(any({*r}-{2})*str(g).count('2')//12or{*r}=={2})for*r,in zip(*G or p(g,*g))],[])
+
+### ovs (112 bytes)
 p=lambda g,*G:sum([[[2,*r,2]]*({*r}=={2}or({*r}-{2}!={0})*str(g).count('2')//12)for*r,in zip(*G or p(g,*g))],[])
 
 ### combined (185 bytes)
