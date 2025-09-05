@@ -301,6 +301,6 @@ if promptYN("Submit to Kaggle? [Y]es/[No]", default_kaggle):
                 key=lambda s:s["size_compressed"])["compressed"])
             with open(temp_path, "wb") as temp_file:
                 temp_file.write(task_source)
-                zipf.write(temp_path, arcname=task_name)
+            zipf.write(temp_path, arcname=task_name + ".py")
     kaggle.api.authenticate()
     kaggle.api.competition_submit("submission.zip", f"Est. Score: {total_score} " + "".join([random.choice("⬛🟦🟥🟩🟨⬜🟪🟧🟫")for _ in[0]*9]), "google-code-golf-2025")
