@@ -118,16 +118,16 @@ except:
    pass
 
 # Read in data from tasks.json, or rebuild it if its not there
-try: 
+try:
     with open("tasks.json", "r") as file:
         tasks = json.load(file)
-    
+
     # Error if json is formatted incorrectly
     assert(len(tasks) == task_count)
     assert(all(task_data["solutions"] and task_data["gold"] and task_data["best"] for task_data in tasks.values()))
 except:
     if promptYN("tasks.json is missing or unreadable. Try rebuilding it?"):
-        tasks = {num_to_task_name(n): {"gold": max_size, "best": max_size, "solutions": dict()} 
+        tasks = {num_to_task_name(n): {"gold": max_size, "best": max_size, "solutions": dict()}
             for n in range(1,task_count+1)}
         # if we couldn't read tasks.json, consider all existing tasks changed
         update_all = True
@@ -135,11 +135,8 @@ except:
         exit()
 
 # Update golds
-try:
-    df = pd.read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vQ7RUqwrtwRD2EJbgMRrccAHkwUQZgFe2fsROCR1WV5LA1naxL0pU2grjQpcWC2HU3chdGwIOUpeuoK/pub?gid=1427788625&single=true&output=csv")
-    gold_score = df.loc[7:,"BEST"].reset_index(drop=True).astype(int)
-except:
-    gold_score = [max_size] * task_count
+df = pd.read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vQ7RUqwrtwRD2EJbgMRrccAHkwUQZgFe2fsROCR1WV5LA1naxL0pU2grjQpcWC2HU3chdGwIOUpeuoK/pub?gid=1427788625&single=true&output=csv")
+gold_score = df.loc[7:,"BEST"].reset_index(drop=True).astype(int)
 
 for n in range(1, task_count + 1):
     tasks[num_to_task_name(n)]["gold"] = int(gold_score[n-1])
@@ -165,7 +162,7 @@ for i, path in enumerate(changed_tasks):
     print(f"\t{i}/{len(changed_tasks)}: {path}")
 
     player, task_name = as_dir_and_name(path)
-    
+
     task_sols = tasks[task_name]["solutions"]
     with open(path, "r") as file:
         src = file.read().encode()
@@ -182,7 +179,7 @@ for i, path in enumerate(changed_tasks):
         compressed = preprocessed
 
     if player in task_sols and len(compressed) > task_sols[player]["size_compressed"]:
-        too_long.append(path)
+        too_long.append((path, len(compressed), task_sols[player]["size_compressed"]))
         continue
 
     passing.append(path)
@@ -209,8 +206,8 @@ if any(failing) or any(too_long):
             print("\t" + path)
     if any(too_long):
         print(f"{len(too_long)} TASK{'S' * (len(too_long) != 1)} WORSE THAN PREVIOUS:")
-        for path in too_long:
-            print("\t" + path)
+        for path, current, best in too_long:
+            print(f"\t{path} - current: {current}, best: {best}")
     print("ABORTING MERGE")
     exit()
 
@@ -242,7 +239,7 @@ for i in range(1, task_count + 1):
     best_score = task_data["best"]
 
     # Sort by zipped score (shortest first), score, then by player name for tie-breaking (combined last)
-    ordered = sorted(solutions, key = 
+    ordered = sorted(solutions, key =
         lambda name: (
             solutions[name]["size_compressed"],
             solutions[name]["size_uncompressed"],
@@ -262,14 +259,14 @@ for i in range(1, task_count + 1):
         prefix = "tied, " * (score == best_score and not is_best)
         postfix = "bytes" if not is_best else "bytes, gold" if score==gold else f"vs {gold} bytes for gold"
         hashes = "#" if is_best else "###"
-    
+
         score_string = f"{prefix}{score}{f' ({unzipped_score} unzipped)' * (unzipped_score != score)} {postfix}"
 
         if is_best:
             all_tasks_lines.append(f"# task {i}: {score_string}, https://arcprize.org/play?task={task_ids[i-1]}\n" + preprocess(code))
         else:
             lines.append("")
-    
+
         lines.append(f"{hashes} {player.replace('combined_solutions', 'combined')} ({score_string})")
         lines.append(code)
 
