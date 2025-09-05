@@ -1,4 +1,4 @@
-# att (86 bytes, gold)
+# att (86 vs 2500 bytes for gold)
 p=eval(f"lambda a:max([str(a).count('1'),a]{'for*a,in map(zip,a,a[1:],a[2:])'*2})[1]")
 
 ### combined (tied, 86 bytes)

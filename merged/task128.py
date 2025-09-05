@@ -1,4 +1,4 @@
-# combined (64 bytes, gold)
+# combined (64 vs 2500 bytes for gold)
 p=lambda i:[*zip(*[x[(j:=-x.count(0)):]+x[:j]for x in zip(*i)])]
 
 ### ovs (73 bytes)

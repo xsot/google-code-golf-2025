@@ -1,4 +1,4 @@
-# att (38 bytes, gold)
+# att (38 vs 2500 bytes for gold)
 p=lambda a:eval(str(a).replace(*'62'))
 
 ### ovs (tied, 38 bytes)

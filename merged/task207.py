@@ -1,4 +1,4 @@
-# att (81 bytes, gold)
+# att (81 vs 2500 bytes for gold)
 p=eval('lambda a:[[min(b:=sum(a,()),key=b.count)'+'for*a,in map(zip,a,a[3:])]'*2)
 
 ### combined (tied, 81 bytes)

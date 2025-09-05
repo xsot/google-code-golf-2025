@@ -1,4 +1,4 @@
-# ovs (53 bytes, gold)
+# ovs (53 vs 2500 bytes for gold)
 def p(g,i=0):
  for r in g:r[i]=r[~i]=0;i+=1
  return g

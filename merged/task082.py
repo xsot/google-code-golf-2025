@@ -1,4 +1,4 @@
-# ovs (50 bytes, gold)
+# ovs (50 vs 2500 bytes for gold)
 p=lambda g:[f:=g[0],[*map(max,[0]+f,f[1:]+[0])]]*3
 
 ### combined (tied, 50 bytes)

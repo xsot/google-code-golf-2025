@@ -1,4 +1,4 @@
-# att (65 bytes, gold)
+# att (65 vs 2500 bytes for gold)
 p=lambda a,n=1:(a[n]!=a[0])*[b[::~n]for b in a][::1+n]or p(a,n+1)
 
 ### combined (tied, 65 bytes)

@@ -1,4 +1,4 @@
-# joking (106 vs 102 bytes for gold)
+# joking (106 vs 2500 bytes for gold)
 p=lambda i,*h:[h:=[(y>2==x.count((c:=h.count)(1)%5-1)>=c(6))*6or y for y in x]for x in zip(*h or p(i,*i))]
 
 ### combined (137 bytes)

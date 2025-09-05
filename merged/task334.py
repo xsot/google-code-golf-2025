@@ -1,4 +1,4 @@
-# combined (75 vs 66 bytes for gold)
+# combined (75 vs 2500 bytes for gold)
 p=lambda i:[[((x|y)>>sum({*sum(i,[])})&1)*5for y in[0,6,8]]for x in[4,2,8]]
 
 ### xsot (76 bytes)

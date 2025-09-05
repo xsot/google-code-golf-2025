@@ -1,4 +1,4 @@
-# mwi (48 bytes, gold)
+# mwi (48 vs 2500 bytes for gold)
 p=lambda a:[[*map(max,*a[:n]*2)]for n in(1,2,3)]
 
 ### att (49 bytes)

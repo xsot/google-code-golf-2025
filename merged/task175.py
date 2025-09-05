@@ -1,4 +1,4 @@
-# mwi (75 bytes, gold)
+# mwi (75 vs 2500 bytes for gold)
 r=range(21);p=lambda g:[[g[A][B]|g[B][A]or g[0][B!=A]for B in r]for A in r]
 
 ### combined (92 bytes)

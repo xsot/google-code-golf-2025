@@ -1,4 +1,4 @@
-# mwi (269 (361 unzipped) bytes, gold)
+# mwi (269 (361 unzipped) vs 2500 bytes for gold)
 def p(g,k=3):
  y,*t=[y for y,r in enumerate(g)if 0in r];x,*t=[y for y,r in enumerate(zip(*g))if 0in r];V=g[y][x];v=V>0
  for s in range(10):

@@ -1,4 +1,4 @@
-# joking (143 bytes, gold)
+# joking (143 vs 2500 bytes for gold)
 p=lambda i:{*i[s:=str(i).index(", 2")//31]+i[s+1]}-{2,3}and[*zip(*p(eval(str([*zip(*i)][::-1]).replace(*"03")))[9::-1])]or i[:s]+(i*2)[9+s::-1]
 
 ##

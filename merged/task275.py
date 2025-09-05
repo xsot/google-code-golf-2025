@@ -1,4 +1,4 @@
-# combined (137 bytes, gold)
+# combined (137 vs 2500 bytes for gold)
 p=lambda i:"8"in str(i[(u:=len(i[0])):])and[[t*y/8for t in s for y in x]for s in i[:u]for x in i[u:]]or[*zip(*p([*zip(*i[::-1])]))][::-1]
 
 ### ovs (140 bytes)

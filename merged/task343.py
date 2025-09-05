@@ -1,4 +1,4 @@
-# joking (75 vs 65 bytes for gold)
+# joking (75 vs 2500 bytes for gold)
 
 p=lambda i:[*zip(*((h:=[*zip(*i)])[:8-2*(h[8:12]!=h[:4]!=h[4:8])]*3)[:15])]
 

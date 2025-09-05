@@ -1,4 +1,4 @@
-# mwi (292 (429 unzipped) bytes, gold)
+# mwi (292 (429 unzipped) vs 2500 bytes for gold)
 def p(g):
  G=g[-5:]
  for s in[()]*4:G=[x for x in zip(*G[::-1])if{*x}-{0,4}];g=[[*x]for x in zip(*g[::-1])if 4in(s:=s+x)]

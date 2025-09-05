@@ -1,4 +1,4 @@
-# att (51 bytes, gold)
+# att (51 vs 2500 bytes for gold)
 p=lambda a:[[2*c*b.pop(0)for c in b[4:]]for b in a]
 
 ### ovs (tied, 51 bytes)

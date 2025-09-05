@@ -1,4 +1,4 @@
-# combined (39 bytes, gold)
+# combined (39 vs 2500 bytes for gold)
 p=lambda i:[[~b//~a^2]*3for a,b,_ in i]
 
 ### att (42 bytes)

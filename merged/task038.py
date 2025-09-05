@@ -1,4 +1,4 @@
-# mwi (51 bytes, gold)
+# mwi (51 vs 2500 bytes for gold)
 p=lambda g:[(str(g).count('1, 1')*[1]+[0]*9)[:9:2]]
 
 ### ovs (52 bytes)

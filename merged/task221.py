@@ -1,4 +1,4 @@
-# combined (102 vs 87 bytes for gold)
+# combined (102 vs 2500 bytes for gold)
 def p(i):j=3*str(i).count("0");return[[(a//3*j+b<27-j)*i[a%3][b%3]for b in range(j)]for a in range(j)]
 
 ### att (103 bytes)
