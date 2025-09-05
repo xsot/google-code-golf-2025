@@ -1,0 +1,1 @@
+s=' in[a '+'for*a,in map(zip,a[-1:]+a,a,a[1:]+a)'*2;p=eval(f'lambda a:[d for b{s}]for c{s}]if all(sum(d:=[[*map(int.__xor__,*e)]for*e,in zip(b,c)],[]))][0]')

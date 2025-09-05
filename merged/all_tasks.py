@@ -389,8 +389,8 @@ def p(g):
  return g
 # task 152: 40 bytes, gold, https://arcprize.org/play?task=67e8384a
 p=lambda a:[r+r[::-1]for r in a+a[::-1]]
-# task 153: 173 vs 133 bytes for gold, https://arcprize.org/play?task=681b3aeb
-def p(g):u=[[(r*2)[x//10:][:3]for r in(g*2)[x%10:][:3]]for x in range(99)];return max(all(sum(t:=[[x^y for y,x in zip(A,B)]for A,B in zip(a,b)],[]))*t for a in u for b in u)
+# task 153: 157 vs 133 bytes for gold, https://arcprize.org/play?task=681b3aeb
+s=' in[a '+'for*a,in map(zip,a[-1:]+a,a,a[1:]+a)'*2;p=eval(f'lambda a:[d for b{s}]for c{s}]if all(sum(d:=[[*map(int.__xor__,*e)]for*e,in zip(b,c)],[]))][0]')
 # task 154: 122 vs 99 bytes for gold, https://arcprize.org/play?task=6855a6e4
 p=lambda g,k=-1:k*g or p([*zip(*[[*[g[k-~k]for k in(1,2,-3,-4)if g[k].count(2)>4],r][0]for r in g if(g:=g[1:]+[r])])],k+1)
 # task 155: 18 bytes, gold, https://arcprize.org/play?task=68b16354
