@@ -1,0 +1,1 @@
+def p(g):u=[[(r*2)[x//10:][:3]for r in(g*2)[x%10:][:3]]for x in range(99)];return max(all(sum(t:=[[x^y for y,x in zip(A,B)]for A,B in zip(a,b)],[]))*t for a in u for b in u)
