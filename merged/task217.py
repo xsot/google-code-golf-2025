@@ -1,4 +1,4 @@
-# att (95 vs 2500 bytes for gold)
+# att (95 bytes, gold)
 p=lambda a,*n:[*filter(any,zip(*[[d&e for d in b for e in c]for b in n for c in a]or p(a,*a)))]
 
 ### combined (tied, 95 bytes)

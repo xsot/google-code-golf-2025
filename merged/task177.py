@@ -1,4 +1,4 @@
-# mwi (51 vs 2500 bytes for gold)
+# mwi (51 bytes, gold)
 p=lambda a,*n:[*filter(any,zip(*n or p(*a)[::-1]))]
 
 ### ovs (55 bytes)

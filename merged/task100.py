@@ -1,4 +1,4 @@
-# att (88 vs 2500 bytes for gold)
+# att (88 vs 85 bytes for gold)
 p=lambda a:[[max(range(1,10),key=[sum({*b}&{*c})for c in zip(*a)for b in a].count)]*2]*2
 
 ### combined (tied, 88 bytes)

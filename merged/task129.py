@@ -1,4 +1,4 @@
-# att (47 vs 2500 bytes for gold)
+# att (47 bytes, gold)
 p=lambda a:[[max(b:=sum(a,a),key=b.count)]*3]*3
 
 ### combined (tied, 47 bytes)

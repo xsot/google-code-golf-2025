@@ -1,4 +1,4 @@
-# att (49 vs 2500 bytes for gold)
+# att (49 vs 47 bytes for gold)
 p=lambda a:a*-1*-1or[p(b)for b in a if a!=(a:=b)]
 
 ### combined (tied, 49 bytes)

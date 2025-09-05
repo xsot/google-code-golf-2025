@@ -1,4 +1,4 @@
-# ovs (96 vs 2500 bytes for gold)
+# ovs (96 vs 89 bytes for gold)
 p=lambda g,k=-39:[[sum({*g[0]*v})for v in r]for r in k*g]or p([*zip(*g[(8in g[-2])-2::-1])],k+1)
 
 ### combined (tied, 96 bytes)

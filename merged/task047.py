@@ -1,4 +1,4 @@
-# ovs (55 vs 2500 bytes for gold)
+# ovs (55 bytes, gold)
 p=lambda g:[[sum({*r+c})%13for*c,in zip(*g)]for r in g]
 
 ### combined (tied, 55 bytes)

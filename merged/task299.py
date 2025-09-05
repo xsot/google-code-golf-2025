@@ -1,4 +1,4 @@
-# combined (54 vs 2500 bytes for gold)
+# combined (54 bytes, gold)
 p=lambda i:[[3%~t+2&8-(2in x)for t in i[0]]for x in i]
 
 ### ovs (64 bytes)

@@ -1,4 +1,4 @@
-# att (57 vs 2500 bytes for gold)
+# att (57 vs 54 bytes for gold)
 p=lambda a:a[:-1]+[[4*(sum(c)<2*max(c))for c in zip(*a)]]
 
 ### combined (tied, 57 bytes)

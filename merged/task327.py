@@ -1,4 +1,4 @@
-# combined (67 vs 2500 bytes for gold)
+# combined (67 bytes, gold)
 p=lambda i,l=[0]*3:[l:=[*map(max,x+[0]*3,[0]+l*2)]for x in i+[l]*3]
 
 ### xsot (90 bytes)

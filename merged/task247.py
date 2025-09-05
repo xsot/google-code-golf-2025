@@ -1,4 +1,4 @@
-# att (96 vs 2500 bytes for gold)
+# att (96 vs 95 bytes for gold)
 p=lambda a:(m:=max(map(c:=(b:=sum(zip(*a),())).count,{*b}-{0})))*[[*{d:0for d in b if c(d)==m}]]
 
 ### combined (tied, 96 bytes)

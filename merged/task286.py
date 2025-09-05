@@ -1,4 +1,4 @@
-# joking (111 vs 2500 bytes for gold)
+# joking (111 vs 109 bytes for gold)
 p=lambda i,k=43:-k*i or[*map(lambda*x,t=0:[t:=y or([0,*{*sum(i,[])}-{y,t,8}]*2)[3]for y in x],*p(i,k-1)[::-1])]
 
 ## faster version

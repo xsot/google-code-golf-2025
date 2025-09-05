@@ -1,4 +1,4 @@
-# joking (63 vs 2500 bytes for gold)
+# joking (63 vs 62 bytes for gold)
 def p(i,x=1):
  while i[x:]:i[-1][x]=4;i[~x][x]=2;x+=1
  return i

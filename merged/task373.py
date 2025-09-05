@@ -1,4 +1,4 @@
-# att (39 vs 2500 bytes for gold)
+# att (39 bytes, gold)
 p=lambda a:[b:=[*map(max,a)]*3,b[::-1]]
 
 ### xsot (tied, 39 bytes)

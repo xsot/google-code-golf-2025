@@ -1,4 +1,4 @@
-# att (58 vs 2500 bytes for gold)
+# att (58 vs 56 bytes for gold)
 p=eval('lambda a:[[a '+"for a in a[1::2]for _ in' '*4]"*2)
 
 ### combined (tied, 58 bytes)

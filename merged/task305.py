@@ -1,4 +1,4 @@
-# combined (62 vs 2500 bytes for gold)
+# combined (62 bytes, gold)
 p=lambda g:[(sorted({*g[0]}-{0})*9)[y:y+16]for y in range(16)]
 
 ### ovs (74 bytes)

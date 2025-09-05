@@ -1,4 +1,4 @@
-# att (92 vs 2500 bytes for gold)
+# att (92 bytes, gold)
 p=lambda a,n=-3:n*a or[(d:=0)or[d:=b.pop()|d*(3in b[:-1])for _ in a]for*b,in zip(*p(a,n+1))]
 
 ### combined (93 bytes)

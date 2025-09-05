@@ -1,4 +1,4 @@
-# att (83 vs 2500 bytes for gold)
+# att (83 bytes, gold)
 p=lambda a:[*map(f:=lambda d,*b,c=0:[c|(c:=d)>>2|(d:=e)for e in[*b,0]],*map(f,*a))]
 
 ### combined (tied, 83 bytes)

@@ -1,4 +1,4 @@
-# combined (119 vs 2500 bytes for gold)
+# combined (119 vs 117 bytes for gold)
 import re;p=lambda i,k=7:-k*i or eval(re.sub(f"({k|3})([, \d]*)0(, {2-k//4})",r"0\2\1\3",str([*zip(*p(i,k-1)[::-1])])))
 
 ### att (122 bytes)

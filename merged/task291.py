@@ -1,4 +1,4 @@
-# combined (62 vs 2500 bytes for gold)
+# combined (62 vs 61 bytes for gold)
 p=lambda i,n=1:len({x.count(n)for x in i})//3*[[n]]or p(i,n+1)
 
 ### att (69 bytes)

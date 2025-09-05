@@ -1,4 +1,4 @@
-# att (86 vs 2500 bytes for gold)
+# att (86 vs 84 bytes for gold)
 p=lambda i,k=3:-k*i or[*map(lambda*x,t=0:[max(0<t<3,t:=y)for y in x],*p(i,k-1)[::-1])]
 
 ### combined (90 bytes)

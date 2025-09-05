@@ -1,4 +1,4 @@
-# xsot (105 vs 2500 bytes for gold)
+# xsot (105 vs 82 bytes for gold)
 p=lambda m:[[sum(({x}&{y}|{i}&{j})&{min(a:=sum(m,[]),key=a.count)})for i,*_,j in zip(*m)]for x,*_,y in m]
 
 ### combined (109 bytes)

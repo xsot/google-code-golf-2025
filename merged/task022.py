@@ -1,4 +1,4 @@
-# mwi (98 vs 2500 bytes for gold)
+# mwi (98 vs 91 bytes for gold)
 p=lambda i:[[*map(max,*[s[t:t+3]for t in range(144)if(s:=sum(i*2,i))[t+x]==5])]for x in[12,1,-10]]
 
 ### combined (99 bytes)

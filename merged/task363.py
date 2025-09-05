@@ -1,4 +1,4 @@
-# ovs (234 vs 2500 bytes for gold)
+# ovs (234 vs 213 bytes for gold)
 E=enumerate
 def p(g):
  z,v,V=[{(y,x)for y,r in E(g)for x,c in E(r)if c==C}for C in(0,2,5)];i,j=min(v)
