@@ -392,8 +392,8 @@ def p(g):
 p=lambda a:[r+r[::-1]for r in a+a[::-1]]
 # task 153: 183 (184 unzipped) vs 141 bytes for gold, https://arcprize.org/play?task=681b3aeb
 def p(g,R=range):u=[[(r*2)[x:x+3]for r in(g*2)[y:y+3]]for x in R(10)for y in R(10)];return[t for a in u for b in u if"0"not in str(t:=[[a[y][x]^b[y][x]for x in R(3)]for y in R(3)])][0]
-# task 154: 133 vs 99 bytes for gold, https://arcprize.org/play?task=6855a6e4
-p=lambda i,k=3:-k*i or p([[*[*zip(*i[::-1])][(1<abs(h:=(r:=[*map(max,*i)]).index(2)-l)<4==r.count(2))*2*h+l]]for l in range(15)],k-1)
+# task 154: 122 vs 99 bytes for gold, https://arcprize.org/play?task=6855a6e4
+p=lambda g,k=-1:k*g or p([*zip(*[[*[g[k-~k]for k in(1,2,-3,-4)if g[k].count(2)>4],r][0]for r in g if(g:=g[1:]+[r])])],k+1)
 # task 155: 18 bytes, gold, https://arcprize.org/play?task=68b16354
 p=lambda a:a[::-1]
 # task 156: 199 vs 152 bytes for gold, https://arcprize.org/play?task=694f12f3
@@ -407,7 +407,7 @@ def p(g):
    for I in 6,7,8,9:
     for J in range(o//15*len(A)):g[I-A[0]+C[p[A]]][J+p[A]]|=g[I][m:=J+K.find(b'\n'+A+b'\n')]>0;g[I][m]=0
  K,C=zip(*[([*c,5].index(5),c.count(2))for c in zip(*g)]);K=b'\n'+bytes(K)+b'\n';S={*K.split(b'\n')};Q(0,{});return g
-# task 158: 269 (488 unzipped) vs 305 bytes for gold, https://arcprize.org/play?task=6aa20dc0
+# task 158: 269 (488 unzipped) bytes, gold, https://arcprize.org/play?task=6aa20dc0
 def p(g):
  s,t=max((len({*str(a:=[R[x:x+3]for R in g[y:y+3]])}),a)for y in range(len(g))for x in range(len(g[1])))
  for s in range(len(g[1])):
