@@ -40,7 +40,7 @@ def p(g):
  G={i*1j+j:v for i,r in enumerate(g)for j,v in enumerate(r)if v};*f,=G.values()
  for j in G:s={j};[s:=s|{x}for x in[*G]*5for y in s if abs(x-y)<2];[*s][3:]and[p((x-j-a//4*(x-j).real*2)*1j**a+O,G[x])==p(x,0)for a in b''for O in G if all({G[A]}<{max(f,key=f.count),G.get((A-j-a//4*(A-j).real*2)*1j**a+O)}for A in s)for x in s]
  return g
-# task 19: 126 vs 109 bytes for gold, https://arcprize.org/play?task=10fcaaa3
+# task 19: 126 vs 105 bytes for gold, https://arcprize.org/play?task=10fcaaa3
 E=enumerate
 p=lambda g:[[v or 8*any([*[*g*2,[0]*9][y+d%5-1]*2,0][x+d%3-1]for d in b'-/29')for x,v in E(l*2)]for y,l in E(g*2)]
 # task 20: 173 vs 152 bytes for gold, https://arcprize.org/play?task=11852cab
@@ -292,7 +292,7 @@ p=lambda a:[*s(zip(*s(zip(*map(s,a)))))]
 p=lambda a:a[::-1]+a
 # task 117: 172 vs 148 bytes for gold, https://arcprize.org/play?task=4c5c2cf0
 p=lambda i,k=1:-k*i or p([[*map(max,x,[*x,*(s:=sum(i,[]))][s.index(max(s,key=lambda n:[x.count(n)for x in i if n in x]==[2,1,2]))//len(i)*2+2::-1]+s)]for x in zip(*i)],k-1)
-# task 118: 314 (415 unzipped) vs 282 bytes for gold, https://arcprize.org/play?task=50846271
+# task 118: 314 (415 unzipped) vs 280 bytes for gold, https://arcprize.org/play?task=50846271
 def p(g,F=0):
  for W in 3,3,2:
   for i in range(h:=len(g)):
@@ -925,8 +925,8 @@ p=lambda i,k=39:-k*i or[[*map(max,x,x[6-13//len({*x,0}):]+(0,0)*9)]for x in zip(
 p=lambda g:[[max(w:=c+r,key=w.count)for*c,in zip(*g)]for r in g]
 # task 360: 45 bytes, gold, https://arcprize.org/play?task=e3497940
 p=lambda a:[[*map(max,b,b[:4:-1])]for b in a]
-# task 361: 208 (241 unzipped) vs 203 bytes for gold, https://arcprize.org/play?task=e40b9e2f
-def p(i):I=[r*2for r in i*2];return[[[max(I[x][y],I[a+n+b+~y][b-a+x],I[a-b+y][b+n+a+~x],I[2*a+n+~x][2*b+n+~y])for y in range(10)]for x in range(10)]for n in(4,3,2)for a in range(10)for b in range(10)if all(all(x[b:b+n])for x in I[a:a+n])][0]
+# task 361: 195 (245 unzipped) vs 203 bytes for gold, https://arcprize.org/play?task=e40b9e2f
+def p(a):I=[a*2for a in a+a];return[[[max(I[x][y],I[a+b+n+~y][b-a+x],I[a-b+y][a+b+n+~x],I[a+a+n+~x][b+b+n+~y])for y in range(10)]for x in range(10)]for n in range(10)for a in range(10)for b in range(10)if all(all(x[b:b+n])for x in I[a:a+n])][-1]
 # task 362: 69 bytes, gold, https://arcprize.org/play?task=e48d4e1a
 p=lambda g:[r[(n:=g.count(g[0])):9]+r[:1]+r[:n]for r in g*2][10-n:-n]
 # task 363: 234 vs 213 bytes for gold, https://arcprize.org/play?task=e5062a87

@@ -468,7 +468,7 @@
         }
     },
     "task019": {
-        "gold": 109,
+        "gold": 105,
         "best": 126,
         "solutions": {
             "ovs": {
@@ -2640,7 +2640,7 @@
         }
     },
     "task118": {
-        "gold": 282,
+        "gold": 280,
         "best": 314,
         "solutions": {
             "mwi": {
@@ -7975,7 +7975,7 @@
     },
     "task361": {
         "gold": 203,
-        "best": 208,
+        "best": 195,
         "solutions": {
             "mwi": {
                 "source": "ZGVmIHAoaSk6ST1bcioyZm9yIHIgaW4gaSoyXTtyZXR1cm5bW1ttYXgoSVt4XVt5XSxJW2ErbitiK355XVtiLWEreF0sSVthLWIreV1bYituK2ErfnhdLElbMiphK24rfnhdWzIqYituK355XSlmb3IgeSBpbiByYW5nZSgxMCldZm9yIHggaW4gcmFuZ2UoMTApXWZvciBuIGluKDQsMywyKWZvciBhIGluIHJhbmdlKDEwKWZvciBiIGluIHJhbmdlKDEwKWlmIGFsbChhbGwoeFtiOmIrbl0pZm9yIHggaW4gSVthOmErbl0pXVswXQ==",
@@ -7994,6 +7994,12 @@
                 "size_uncompressed": 223,
                 "compressed": "I2NvZGluZzpMMQppbXBvcnQgemxpYgpleGVjKHpsaWIuZGVjb21wcmVzcyhieXRlcygiRYyBBsMwEIZfJQySJqXLBjp9knMIy03ILnM2Bvrsy6UYwpfvft89k3nZEuomiR/ZnhfnVtmgTpGamGpcbpsyRbxJfn+EAeCZvlYgIWQMAuybJ79nBJrZp6Fm8vrvF/b7UHHSXedO3eveaT5rvqJi+mPraK/hEuIY8bgYRTqwkEm12vGA1l4cuaMhwCurQVjw5H4iLCJMMSIpLC0xNSkp",
                 "size_compressed": 210
+            },
+            "xsot": {
+                "source": "ZGVmIHAoYSk6ST1bYSoyZm9yIGEgaW4gYSthXTtyZXR1cm5bW1ttYXgoSVt4XVt5XSxJW2ErYituK355XVtiLWEreF0sSVthLWIreV1bYStiK24rfnhdLElbYSthK24rfnhdW2IrYituK355XSlmb3IgeSBpbiByYW5nZSgxMCldZm9yIHggaW4gcmFuZ2UoMTApXWZvciBuIGluIHJhbmdlKDEwKWZvciBhIGluIHJhbmdlKDEwKWZvciBiIGluIHJhbmdlKDEwKWlmIGFsbChhbGwoeFtiOmIrbl0pZm9yIHggaW4gSVthOmErbl0pXVstMV0=",
+                "size_uncompressed": 245,
+                "compressed": "I2NvZGluZzpMMQppbXBvcnQgemxpYgpleGVjKHpsaWIuZGVjb21wcmVzcyhieXRlcygiZczBXG7CMAzG8VfpsTUOnMeKTxJyCNhIYX6VoODJZ5duDBk7BMIv4X8rFp4RKfuVcThb84BQEUCQi5fX28HMD/1EZxVucnQGGVX6NmEbQDrTYNRkvSxEWHa29T/1fOt5V9xLHE9JOume6oa6YCe2kWpBpynOw5aNqqR/nJHRRXgY5QciLCJMMSIpLC0xNSkp",
+                "size_compressed": 195
             }
         }
     },
