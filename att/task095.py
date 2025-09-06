@@ -1,0 +1,1 @@
+p=lambda i,k=3,z=0:-k*i or[[z%4|(z:=x.pop())for _ in i]for*x,in zip(*p(i,k-1))]

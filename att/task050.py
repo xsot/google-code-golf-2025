@@ -1,1 +1,1 @@
-p=lambda a:[*map(f:=lambda*b:[c|3*(8in{*b[:i]}&{*b[i+1:]})for i,c in enumerate(b)],*map(f,*a))]
+p=lambda a:[*map(f:=lambda*b,i=0:[c|3*(8in{*b[:i]}&{*b[(i:=i+1):]})for c in b],*map(f,*a))]
