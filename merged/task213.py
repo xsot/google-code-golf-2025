@@ -1,4 +1,7 @@
-# combined (111 vs 92 bytes for gold)
+# xsot (109 vs 92 bytes for gold)
+p=lambda i:len({*i[-1]})<=(n:=len({*i[0]}))>2and~-n*[[*filter(int,i[0])]]or[*zip(*p([*zip(*i[::-1])]))][::-1]
+
+### combined (111 bytes)
 p=lambda i:len({*i[-1]})<=(n:=len({*i[0]}))>2and~-n*[[k for k in i[0]if k]]or[*zip(*p([*zip(*i[::-1])]))][::-1]
 
 ### ovs (113 bytes)
