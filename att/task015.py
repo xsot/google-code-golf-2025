@@ -1,0 +1,1 @@
+p=eval('lambda a:[[(b:=sum(a,()))[4]or(1in b[1::2])*7|4*(2in b[::2])'+'for*a,in map(zip,a[8:]+a,a,a[1:]+a)]'*2)

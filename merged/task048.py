@@ -1,4 +1,7 @@
-# xsot (120 vs 92 bytes for gold)
+# att (118 vs 92 bytes for gold)
+p=lambda m,i=99,s="":-i*[[8-8*("2"in'%s'%m)]]or p([*zip(*eval(str(m).replace("282"[i%3]+s,"1"+s,2)))][::-1],i-1,", 1")
+
+### xsot (120 bytes)
 # change the first red to blue, then flood fill from blue and test if any red is left
 p=lambda m,i=99,s="":-i*[[8-8*("2"in str(m))]]or p([*zip(*eval(str(m).replace("28"[i%3%2]+s,"1"+s,1)))][::-1],i-1,", 1")
 
@@ -9,5 +12,5 @@ p=lambda m,i=99:-i*[[8-8*("2"in str(m))]]or p([*zip(*eval(str(m).replace("28"[i%
 p=lambda m,i=99:-i*[[8-8*("2"in str(m))]]or p([*zip(*eval(str(m).replace([["2, 2","2, 1"][i<99],"8, 1"][i%3%2],"1,1",1)))][::-1],i-1)
 p=lambda m,i=99:-i*[[8-8*("2"in str(m))]]or p([*zip(*eval(str(m).replace([["2","2, 1"][i<99],"8, 1"][i%3%2],["1","1,1"][i<99],1)))][::-1],i-1)
 
-### combined (tied, 120 bytes)
+### combined (120 bytes)
 p=lambda m,i=99,s="":-i*[[8-8*("2"in str(m))]]or p([*zip(*eval(str(m).replace("28"[i%3%2]+s,"1"+s,1)))][::-1],i-1,", 1")

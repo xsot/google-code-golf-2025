@@ -1,7 +1,10 @@
-# mwi (78 vs 74 bytes for gold)
+# att (77 vs 74 bytes for gold)
+p=lambda g:[[v or 3^3*(c>[0]*99<r[1:-1])for _,*c,_,v in zip(*g,r)]for r in g]
+
+### mwi (78 bytes)
 p=lambda g:[[v or 3-3*any(min(c,r[1:-1]))for _,*c,_,v in zip(*g,r)]for r in g]
 
-### xsot (tied, 78 bytes)
+### xsot (78 bytes)
 p=lambda g:[[v or 3-3*any(c)*any(r[1:-1])for _,*c,_,v in zip(*g,r)]for r in g]
 
 ### ovs (79 bytes)
