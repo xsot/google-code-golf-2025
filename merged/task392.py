@@ -1,5 +1,5 @@
-# ovs (187 vs 156 bytes for gold)
-def p(g):e=enumerate;C=max(sum(g,[]));[g:=[[c or _*any(any(s[x+x%~x:x+2])for s in g[y+y%~y:y+2])for x,c in e(r)]for y,r in e(g)]for _ in[5,*[5]*(f"{C}, 0, 0, {C}"in str(g)),C]*3];return g
+# ovs (178 vs 156 bytes for gold)
+def p(g):e=enumerate;C=max(max(g));[g:=[[c or _*any(any(s[x+x%~x:x+2])for s in g[y+y%~y:y+2])for x,c in e(r)]for y,r in e(g)]for _ in[5,5,C][f"{C}, 0, {C}"in str(g):]*3];return g
 
 ##
 

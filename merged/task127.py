@@ -1,4 +1,7 @@
-# att (80 vs 65 bytes for gold)
+# ovs (79 vs 65 bytes for gold)
+p=eval('lambda a:[[sum(b"%r0"%a)%5+5'+'for*a,in map(zip,a[:1]+a,a,a[1:]+a)]'*2)
+
+### att (80 bytes)
 p=eval('lambda a:[[sum(sum(a,()))%5+5'+'for*a,in map(zip,a[:1]+a,a,a[1:]+a)]'*2)
 
 ##
