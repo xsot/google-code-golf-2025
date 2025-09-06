@@ -1,4 +1,7 @@
-# combined (63 vs 58 bytes for gold)
+# joking (61 vs 58 bytes for gold)
+p=lambda i:[(e:=0)or[(e:=y-e)>>9&5or e for y in x]for x in i]
+
+### combined (63 bytes)
 p=lambda i:[[(0>(e:=y-e))*5or e for y in x]for x in i if[e:=0]]
 
 ### att (67 bytes)
