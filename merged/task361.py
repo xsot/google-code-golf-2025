@@ -1,4 +1,4 @@
-# mwi (208 (241 unzipped) vs 204 bytes for gold)
+# mwi (208 (241 unzipped) vs 203 bytes for gold)
 def p(i):I=[r*2for r in i*2];return[[[max(I[x][y],I[a+n+b+~y][b-a+x],I[a-b+y][b+n+a+~x],I[2*a+n+~x][2*b+n+~y])for y in range(10)]for x in range(10)]for n in(4,3,2)for a in range(10)for b in range(10)if all(all(x[b:b+n])for x in I[a:a+n])][0]
 
 ### ovs (210 (223 unzipped) bytes)

@@ -1,4 +1,10 @@
-# combined (113 vs 89 bytes for gold)
+# joking (95 vs 89 bytes for gold)
+p=lambda i,k=3:-k*i or[[y or-(s*2^s-7)%7for y,s in zip(x,[0,*x])]for x in zip(*p(i,k-1)[::-1])]
+
+## the transformations are suspiciously either half or double, maybe usable?
+p=lambda i,k=3:-k*i or[[y or s*2>>11%-~s%3for y,s in zip(x,[0,*x])]for x in zip(*p(i,k-1)[::-1])]
+
+### combined (113 bytes)
 p=lambda i,e=enumerate:[[y or max(max(s[b-(b>0):b+2])for s in i[a-(a>0):a+2])*5%9for b,y in e(x)]for a,x in e(i)]
 
 ### ovs (116 bytes)
