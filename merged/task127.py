@@ -1,5 +1,10 @@
-# combined (82 vs 65 bytes for gold)
-p=lambda i,E=enumerate:[[5+(y<5)*i[a&12|1][b&12|1]for b,y in E(x)]for a,x in E(i)]
+# att (80 vs 65 bytes for gold)
+p=eval('lambda a:[[sum(sum(a,()))%5+5'+'for*a,in map(zip,a[:1]+a,a,a[1:]+a)]'*2)
 
-### att (85 bytes)
+##
+p=eval('lambda a:[[sum({*sum(a,()),5})'+'for*a,in map(zip,a[:1]+a,a,a[1:]+a)]'*2)
+p=lambda a:[*map(f:=lambda*b:[sum(c)%5+5for*c,in zip((0,)+b,b,b[1:]+b)],*map(f,*a))]
 p=lambda a:[*map(f:=lambda*b:sum(([5]+3*[e%5+5]for e in b[1::4]),[])[1:],*map(f,*a))]
+
+### combined (82 bytes)
+p=lambda i,E=enumerate:[[5+(y<5)*i[a&12|1][b&12|1]for b,y in E(x)]for a,x in E(i)]

@@ -1,4 +1,4 @@
-# ovs (302 (384 unzipped) vs 280 bytes for gold)
+# ovs (302 (384 unzipped) vs 279 bytes for gold)
 def p(g,F=0):
  for W in 4,4,3:
   for i in range(h:=len(g)):
