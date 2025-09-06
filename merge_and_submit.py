@@ -148,6 +148,13 @@ for n in range(1, task_count + 1):
 changed_tasks = [diff.a_path for diff in repo.index.diff(None)
     if "/task" in diff.a_path and output_dir not in diff.a_path]
 
+try:
+    # undo `git add -N` after diff
+    # https://stackoverflow.com/questions/62444728/how-to-undo-git-add-intent-to-add/62444729
+    repo.git.reset("--mixed")
+except:
+    pass
+
 if update_all:
     changed_tasks = list(filter(os.path.exists,
         [as_path(player, num_to_task_name(n))
