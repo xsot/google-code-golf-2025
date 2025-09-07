@@ -24,12 +24,12 @@ v=[[5]*11]*9
 p=eval(f"lambda a:[a {'for*a,in map(zip,a,a,a,v,*[a[1:]]*3,v,*[a[2:]]*3)'*2}if(c:=sum(a,()).count)(5)<c(0)][0]")
 # task 12: 132 vs 127 bytes for gold, https://arcprize.org/play?task=0962bcdd
 import re;p=lambda i:[i:=eval(re.sub("(([^0]).{37}([^0]), )0(, 0.{31})0, 0,",r"\1\2\4\3,0,\2+",str([*zip(*i[::-1])])))for _ in i][7]
-# task 13: 152 vs 140 bytes for gold, https://arcprize.org/play?task=0a938d79
-def p(i,a=-1):f,*r=map(i.index,filter(any,i));return[[max(i[f+(f>(a:=a+1)or a-f)%(2*r[0]-2*f)])]*len(x)for x in i if i[len(x):]]or[*zip(*p([*zip(*i)]))]
+# task 13: 150 vs 140 bytes for gold, https://arcprize.org/play?task=0a938d79
+def p(i):f,*r=map(i.index,filter(any,i));a=~f;return[[max(i[f+(0>(a:=a+1)or a)%(2*r[0]-2*f)])]*len(x)for x in i if i[len(x):]]or[*zip(*p([*zip(*i)]))]
 # task 14: 76 vs 70 bytes for gold, https://arcprize.org/play?task=0b148d64
 p=lambda i:[[y[0]for y in zip(x,*i)if len({*y})>2]for x in i if len({*x})>2]
 # task 15: 106 vs 98 bytes for gold, https://arcprize.org/play?task=0ca9ddb6
-p=lambda i,r=range(9):[i:=[[i[~b][a]|(i[-b][a-1]==2)*4+(i[-b][a]==1)*7for b in r]for a in r]for _ in i][3]
+p=eval(f"lambda i:[i:=[[i[~b][a]|(i[-b][a-1]==2)*4+(i[-b][a]==1)*7{'for %s in range(9)]'*3%(*'ba_',)}[3]")
 # task 16: 46 vs 43 bytes for gold, https://arcprize.org/play?task=0d3d703e
 p=lambda m:[[b'AA	'[i]for i in m[0]]]*3
 # task 17: 120 vs 109 bytes for gold, https://arcprize.org/play?task=0dfd9992
@@ -43,9 +43,8 @@ def p(g):
 # task 19: 105 bytes, gold, https://arcprize.org/play?task=10fcaaa3
 z=[[0]*9]
 p=eval('lambda a:[[a[1][1]or 8*any(sum(a,())[::2])'+'for*a,in map(zip,z+a+a,a+a,a[1:]+a+z)]'*2)
-# task 20: 173 vs 152 bytes for gold, https://arcprize.org/play?task=11852cab
-r=range(10)
-def p(g):i=complex(*[[*map(any,G)].index(1)+2for*G,in(zip(*g),g)]);return[[max((abs(y*1j+x-i)==abs(I*1j+J-i))*g[y][x]for y in r for x in r)for J in r]for I in r]
+# task 20: 148 vs 149 bytes for gold, https://arcprize.org/play?task=11852cab
+exec(f"def p(g):i,j={'[*map(any,g:=[*zip(*g)])].index(1)+2,'*2};return[g:=[[g[J][I]|((g*2)[i+j-I]*2)[i-j+J]{'for %s in range(10)]'*3%(*'IJ_',)}[3]")
 # task 21: 62 vs 57 bytes for gold, https://arcprize.org/play?task=1190e5a7
 p=lambda i,*n:[x for x in zip(*n or p(i,*i))if i!=(i:=x)][::2]
 # task 22: 98 vs 91 bytes for gold, https://arcprize.org/play?task=137eaa0f
