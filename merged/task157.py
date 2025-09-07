@@ -1,4 +1,4 @@
-# joking (259 (271 unzipped) vs 260 bytes for gold)
+# joking (259 (271 unzipped) bytes, gold)
 # brute force
 def p(g):
  r=[*map(max,*g[6:]),0,5,0].index;w=r(0,t:=r(5))

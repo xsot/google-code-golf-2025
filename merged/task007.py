@@ -1,4 +1,4 @@
-# ovs (66 vs 63 bytes for gold)
+# ovs (66 vs 62 bytes for gold)
 p=lambda a:[[max(sum(a:=[[0,0]]+a,[])[2::3])for _ in r]for r in a]
 
 ##

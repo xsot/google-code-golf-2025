@@ -1,4 +1,4 @@
-# joking (148 vs 149 bytes for gold)
+# joking (148 bytes, gold)
 exec(f"def p(g):i,j={'[*map(any,g:=[*zip(*g)])].index(1)+2,'*2};return[g:=[[g[J][I]|((g*2)[i+j-I]*2)[i-j+J]{'for %s in range(10)]'*3%(*'IJ_',)}[3]")
 
 ##

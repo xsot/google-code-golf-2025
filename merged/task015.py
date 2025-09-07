@@ -1,4 +1,4 @@
-# joking (106 vs 98 bytes for gold)
+# joking (106 vs 93 bytes for gold)
 p=eval(f"lambda i:[i:=[[i[~b][a]|(i[-b][a-1]==2)*4+(i[-b][a]==1)*7{'for %s in range(9)]'*3%(*'ba_',)}[3]")
 
 ## experiments with using true/false

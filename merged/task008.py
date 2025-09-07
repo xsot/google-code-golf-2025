@@ -1,4 +1,4 @@
-# ovs (94 vs 85 bytes for gold)
+# ovs (94 vs 84 bytes for gold)
 p=lambda g:[g:=sorted(zip(*g[::-1]),key=lambda x,P={0}:any((P.add(8in x),*P)+x))for _ in g][3]
 
 ### combined (tied, 94 bytes)

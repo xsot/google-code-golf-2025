@@ -1,4 +1,4 @@
-# combined (133 vs 126 bytes for gold)
+# combined (133 vs 107 bytes for gold)
 p=lambda i,k=1:-k*i or p([[y or(sum((t:=[*map(max,i)])[:b+1])*sum(t[b:])>0<k*6+2in x)*4for b,y in enumerate(x)]for x in zip(*i)],k-1)
 
 ### xsot (199 bytes)
