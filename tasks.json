@@ -1026,7 +1026,7 @@
         }
     },
     "task042": {
-        "gold": 143,
+        "gold": 139,
         "best": 169,
         "solutions": {
             "ovs": {
@@ -1651,7 +1651,7 @@
     },
     "task069": {
         "gold": 151,
-        "best": 209,
+        "best": 207,
         "solutions": {
             "att": {
                 "source": "ZGVmIHAoYSk6CglmPWxhbWJkYSBiOltjIGZvcipjLGluIHppcCgqYilpZnsqY30tezAsOH1dO3M9ZihmKGEpKTtuPWxlbihzWzBdKQoJZm9yIGkgaW4gcmFuZ2UoOTkpOgoJCWo9aSUxMDtpLy89MTA7dD1bY1tqOmorbl1mb3IgYyBpbiBhW2k6aStsZW4ocyldXQoJCWZvciBjLGQgaW4gemlwKHMsYVtpOl0qKHQgaW5bcyxbW2QgYW5kIDhmb3IgZCBpbiBjXWZvciBjIGluIHNdXSkpOmRbajpqK25dPWMqKHQhPXMpb3JbMF0qbgoJcmV0dXJuIGE=",
@@ -1670,6 +1670,12 @@
                 "size_uncompressed": 209,
                 "compressed": "ZGVmIHAoYSxpPS0xKToKIGZvciBpIGluKEk6PXtpLy8xMCtpOnYqKHYhPTgpZm9yIHYgaW4gc3VtKGEsW10paWZbaTo9aSsxXSp2fSk6cz17aX07W3MuYWRkKHkpZm9yIHkgaW5bKkldKjZpZnt5LHkrMSx5LTEseSsxMSx5LTExfSZzXTthW2kvLzExXVtpJTExXT1JW1tzIGZvciBzIGluIEkgaWYgSVtzXV1bc29ydGVkKHMpLmluZGV4KGkpXV0tSVtpXQogcmV0dXJuIGE=",
                 "size_compressed": 209
+            },
+            "mwi": {
+                "source": "ZGVmIHAoYSxpPS0xKToKIGZvciBpIGluKEk6PXtpLy8xMCtpOnYqKHYhPTgpZm9yIHYgaW4gc3VtKGEsW10paWZbaTo9aSsxXSp2fSk6cz17aX07W3MuYWRkKHkpZm9yIHkgaW5bKkldKjZpZnt5KzEseS0xLHkrMTEseS0xMX0mc107YVtpLy8xMV1baSUxMV09SVtbcyBmb3IgcyBpbiBJIGlmIElbc11dW3NvcnRlZChzKS5pbmRleChpKV1dLUlbaV0KIHJldHVybiBh",
+                "size_uncompressed": 207,
+                "compressed": "ZGVmIHAoYSxpPS0xKToKIGZvciBpIGluKEk6PXtpLy8xMCtpOnYqKHYhPTgpZm9yIHYgaW4gc3VtKGEsW10paWZbaTo9aSsxXSp2fSk6cz17aX07W3MuYWRkKHkpZm9yIHkgaW5bKkldKjZpZnt5KzEseS0xLHkrMTEseS0xMX0mc107YVtpLy8xMV1baSUxMV09SVtbcyBmb3IgcyBpbiBJIGlmIElbc11dW3NvcnRlZChzKS5pbmRleChpKV1dLUlbaV0KIHJldHVybiBh",
+                "size_compressed": 207
             }
         }
     },
@@ -7314,7 +7320,7 @@
         }
     },
     "task324": {
-        "gold": 264,
+        "gold": 263,
         "best": 264,
         "solutions": {
             "mwi": {
@@ -8244,7 +8250,7 @@
         }
     },
     "task367": {
-        "gold": 130,
+        "gold": 129,
         "best": 129,
         "solutions": {
             "combined_solutions": {
@@ -8748,7 +8754,7 @@
         }
     },
     "task387": {
-        "gold": 222,
+        "gold": 218,
         "best": 230,
         "solutions": {
             "mwi": {

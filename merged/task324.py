@@ -1,4 +1,4 @@
-# ovs (264 (313 unzipped) bytes, gold)
+# ovs (264 (313 unzipped) vs 263 bytes for gold)
 def p(g):s=sum(g,[]);k,K,b,B=sorted({*s},key=s.count);b=[b,B][any({*r}in({k,B},{K,b})for r in[*zip(*g)]+g)];[0for y,r in enumerate(eval(str(g)))for x,c in enumerate(r)for z,s in enumerate(g)for Y in(-z,z)for X in(-z,z)if c in{k,K}!=len(g)>Y+y>-1<X+x<len(g[0])for g[Y+y][X+x]in[[K,k][g[Y+y][X+x]in(b,k)]]];return g
 
 ### mwi (289 (343 unzipped) bytes)
