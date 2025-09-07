@@ -1,4 +1,4 @@
-# ovs (136 vs 137 bytes for gold)
+# ovs (136 bytes, gold)
 p=lambda i:"8"in"%s"%i[(u:=len(i[0])):]and[[t*y/8for t in s for y in x]for s in i[:u]for x in i[u:]]or[*zip(*p([*zip(*i[::-1])]))][::-1]
 
 ##

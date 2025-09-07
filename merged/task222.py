@@ -1,4 +1,4 @@
-# ovs (103 vs 104 bytes for gold)
+# ovs (103 bytes, gold)
 p=lambda g:[g:=[[c*(2*f"{c}, "in"%s"%r)*(sum(g,g).count(c)>4)for c in r]for*r,in zip(*g)]for _ in g][5]
 
 ##
