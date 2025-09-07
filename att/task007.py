@@ -1,1 +1,1 @@
-p=lambda a,*b:[[max(sum(a,b:=[*b,0,0])[2::3])for _ in a]for _ in a]
+p=lambda a:[[max(sum(a:=a[1:3]+a,[0])[::3])for _ in r]for r in a]
