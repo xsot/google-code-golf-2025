@@ -1,0 +1,1 @@
+p=lambda i,k=1:-k*i or p([[y or(sum(sum(i[:b+1],[]))*sum(sum(i[b:],[]))>0<k+2in x)*8for b,y in enumerate(x)]for x in zip(*i)],k-1)
