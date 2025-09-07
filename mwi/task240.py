@@ -1,0 +1,1 @@
+p=lambda i,r=range(19):[i:=[[i[~b][a]|i[b][a]|i[b%2*(a<b<18-a)*a+2][a]for b in r]for a in r]for _ in i][4]

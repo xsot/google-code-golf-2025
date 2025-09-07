@@ -1,4 +1,7 @@
-# joking (81 vs 79 bytes for gold)
+# mwi (80 vs 79 bytes for gold)
+p=lambda i:[i:=[[*map(min,a,[9,9]+a[::-1],c)]for*c,a in zip(*i,i)]for _ in i][2]
+
+### joking (81 bytes)
 p=lambda i,k=2:-k*i or p([[*map(min,a,[9,9]+a[::-1],c)]for*c,a in zip(*i,i)],k-1)
 
 ##

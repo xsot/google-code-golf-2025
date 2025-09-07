@@ -1,0 +1,1 @@
+p=lambda g:[g:=[*zip(*[[*[g[k-~k]for k in(1,2,-3,-4)if g[k].count(2)>4],r][0]for r in g if(g:=g[1:]+[r])])]for _ in g][1]

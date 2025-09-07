@@ -1,4 +1,7 @@
-# combined (107 vs 98 bytes for gold)
+# mwi (106 vs 98 bytes for gold)
+p=lambda i,r=range(9):[i:=[[i[~b][a]|(i[-b][a-1]==2)*4+(i[-b][a]==1)*7for b in r]for a in r]for _ in i][3]
+
+### combined (107 bytes)
 p=lambda i,k=3,r=range(9):-k*i or p([[i[~b][a]|(i[-b][a-1]==2)*4+(i[-b][a]==1)*7for b in r]for a in r],k-1)
 
 ### att (111 bytes)

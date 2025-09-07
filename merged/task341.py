@@ -1,4 +1,7 @@
-# ovs (138 vs 132 bytes for gold)
+# mwi (137 vs 132 bytes for gold)
+p=lambda i,r=range(10):[i:=[[i[b][a]or all(len({*s[b:]})%len({*s})&2for s in[*zip(*i)][a+a%~a:a+2])*8for b in r]for a in r]for _ in i][1]
+
+### ovs (138 bytes)
 p=lambda i,k=1,r=range(10):-k*i or p([[i[b][a]or all(len({*s[b:]})%len({*s})&2for s in[*zip(*i)][a+a%~a:a+2])*8for b in r]for a in r],k-1)
 
 ### combined (139 bytes)

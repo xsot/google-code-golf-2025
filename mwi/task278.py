@@ -1,0 +1,1 @@
+p=lambda i,e=enumerate:[i:=[[y or("2, 2"in str([h[a:a+3]for h in i[b-(b>0):b+2]]))*3for b,y in e(x)]for a,x in e(zip(*i))][::-1]for _ in i][3]
