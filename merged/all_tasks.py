@@ -398,15 +398,15 @@ p=lambda g,k=-1:k*g or p([*zip(*[[*[g[k-~k]for k in(1,2,-3,-4)if g[k].count(2)>4
 p=lambda a:a[::-1]
 # task 156: 194 vs 146 bytes for gold, https://arcprize.org/play?task=694f12f3
 p=lambda i,k=79,t=0:-k*i or p([[{*y*[t:=t+1]}if k>78else y|(y-{0}and e-{0}or{0})if k else sum(x<len(y)for x in{*map(len,sum(i,[]))})**2%12%7for y,e in zip(x,[{0}]+x)]for*x,in zip(*i[::-1])],k-1)
-# task 157: 260 (272 unzipped) bytes, gold, https://arcprize.org/play?task=6a1e5592
+# task 157: 259 (271 unzipped) vs 260 bytes for gold, https://arcprize.org/play?task=6a1e5592
 def p(g):
- r=[*map(max,*g[6:]),0,5,0].index;t=r(5);w=r(0,t)
+ r=[*map(max,*g[6:]),0,5,0].index;w=r(0,t:=r(5))
  for l in range(16+t%15-w):
   for s in 0,1:
    u=*map(list,g),
    for x in u[6:]:
     s+=any(x[t:w])
-    for b in range(w-t):u[s][l+b]+=x[b+t]>4;x[b+t]=0
+    for b in range(w-t):u[s][b+l]+=x[b+t]>4;x[b+t]=0
    if k:=p(u):return k
  if{*sum(g[:3],[])}=={1,2}:return g
 # task 158: 269 (488 unzipped) bytes, gold, https://arcprize.org/play?task=6aa20dc0
