@@ -1,4 +1,7 @@
-# combined (102 vs 87 bytes for gold)
+# joking (98 vs 87 bytes for gold)
+def p(i):r=range(j:=3*str(i).count("0"));return[[(a//3*j+j+b<27)*i[a%3][b%3]for b in r]for a in r]
+
+### combined (102 bytes)
 def p(i):j=3*str(i).count("0");return[[(a//3*j+b<27-j)*i[a%3][b%3]for b in range(j)]for a in range(j)]
 
 ### att (103 bytes)
