@@ -1,1 +1,1 @@
-p=lambda g:[[(v^792>>v&53)%10for v in l]for l in g]
+p=lambda m:[[i^466%(1|12-i)for i in m[0]]]*3
