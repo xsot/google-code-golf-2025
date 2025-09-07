@@ -365,8 +365,8 @@ p=lambda a:[b[::-1]for b in a[::-1]]
 p=lambda i,e=enumerate:[[max((k:=z+[0]*99)[t+b-a]|k[a+b-t]for t,z in e(i))for b,y in e(x)]for a,x in e(i)]
 # task 142: 40 bytes, gold, https://arcprize.org/play?task=62c24649
 p=lambda a:[b+b[::-1]for b in a+a[::-1]]
-# task 143: 150 vs 140 bytes for gold, https://arcprize.org/play?task=63613498
-p=lambda i,n=1,w=0:(any(w==(w:=[*map(len,bytes(sum(i,[])).split(b'%c'%n))][1:-1])for n in{n,max(i[:3])[0]}))*eval(str(i).replace(*f"{n}5"))or p(i,n+1)
+# task 143: 137 vs 140 bytes for gold, https://arcprize.org/play?task=63613498
+p=lambda i,n=1,w=0:any(w==(w:=[*map(len,str(i).split(str(n))[1:-1])])for n in{n,max(i[:3])[0]})*eval(str(i).replace(*f"{n}5"))or p(i,n+1)
 # task 144: 59 vs 53 bytes for gold, https://arcprize.org/play?task=6430c8c4
 p=lambda a:[[3>>c+b.pop(0)for c in a.pop(0)]for b in a[5:]]
 # task 145: 199 bytes, gold, https://arcprize.org/play?task=6455b5f5
