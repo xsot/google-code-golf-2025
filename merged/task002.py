@@ -1,7 +1,13 @@
-# mwi (93 vs 90 bytes for gold)
+# joking (91 vs 90 bytes for gold)
+p=lambda a,n=-62:[*map(lambda*b,d=0:[d:=c%(d+4)+(n>c)*4for c in b][::-1],*n*a or p(a,n+1))]
+
+##
+p=lambda a,n=-63:n*a or[*map(lambda*b,d=0:[d:=c%(d+4)+(n==c)*4for c in b][::-1],*p(a,n+1))]
+
+### mwi (93 bytes)
 p=lambda a,n=-62:[*map(lambda*b,d=0:[(d:=c%(d+4)+(n>c)*4)for c in b][::-1],*n*a or p(a,n+1))]
 
-### xsot (tied, 93 bytes)
+### xsot (93 bytes)
 p=lambda a,n=-62:[*map(lambda*b,d=0:[(d:=c%(d+4)+(n>c)*4)for c in b][::-1],*n*a or p(a,n+1))]
 
 ##
@@ -26,7 +32,7 @@ def p(m):
     if-1<i<N>j>-1<4==m[i][j]:m[i][j]=0;q+=(i,j),
  return m
 
-### combined (tied, 93 bytes)
+### combined (93 bytes)
 p=lambda a,n=-62:[*map(lambda*b,d=0:[(d:=c%(d+4)+(n>c)*4)for c in b][::-1],*n*a or p(a,n+1))]
 
 ### att (98 bytes)

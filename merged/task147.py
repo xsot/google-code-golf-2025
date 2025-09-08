@@ -1,7 +1,10 @@
-# joking (87 vs 84 bytes for gold)
-p=lambda i,k=3:-k*i or[(s:=0)or[-y%~s%8+(s:=y)for y in x]for x in zip(*p(i,k-1))][::-1]
+# joking (83 vs 84 bytes for gold)
+p=lambda i:[*eval("map(lambda*x,s=0:[-y%~s%8+(s:=y)for y in x][::-1],*"*4+"i))))")]
 
-### combined (tied, 87 bytes)
+##
+p=lambda i,k=3:-k*i or[*map(lambda*x,s=0:[-y%~s%8+(s:=y)for y in x][::-1],*p(i,k-1))]
+
+### combined (87 bytes)
 p=lambda i,k=3:-k*i or[(s:=0)or[-y%~s%8+(s:=y)for y in x]for x in zip(*p(i,k-1))][::-1]
 
 ### ovs (88 bytes)

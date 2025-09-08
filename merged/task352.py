@@ -1,4 +1,7 @@
-# att (86 vs 84 bytes for gold)
+# joking (84 bytes, gold)
+p=lambda i:[*eval("map(lambda*x,t=0:[max(0<t<3,t:=y)for y in x][::-1],*"*4+"i))))")]
+
+### att (86 bytes)
 p=lambda i,k=3:-k*i or[*map(lambda*x,t=0:[max(0<t<3,t:=y)for y in x],*p(i,k-1)[::-1])]
 
 ### combined (90 bytes)
