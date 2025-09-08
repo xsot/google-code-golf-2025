@@ -1147,13 +1147,19 @@
     },
     "task046": {
         "gold": 176,
-        "best": 176,
+        "best": 170,
         "solutions": {
             "combined_solutions": {
                 "source": "cD1sYW1iZGEgaSxuPTA6Wyp6aXAoKltbeSBhbmQgbWF4KHsqcCwqeCwqcX0tezV9KWZvciB5IGluIHhbbiUzOl0reFs6biUzXV1mb3IqeCxwLHEgaW4gemlwKCppLFtbXSwqemlwKCppKV0sWyp6aXAoKmkpLFs1XV1bMTpdKWlmIGFueSh4KW9yKG46PW4tWypwLDVdLmluZGV4KDUpK3EuaW5kZXgoNSkpKjBdKV0=",
                 "size_uncompressed": 176,
                 "compressed": "cD1sYW1iZGEgaSxuPTA6Wyp6aXAoKltbeSBhbmQgbWF4KHsqcCwqeCwqcX0tezV9KWZvciB5IGluIHhbbiUzOl0reFs6biUzXV1mb3IqeCxwLHEgaW4gemlwKCppLFtbXSwqemlwKCppKV0sWyp6aXAoKmkpLFs1XV1bMTpdKWlmIGFueSh4KW9yKG46PW4tWypwLDVdLmluZGV4KDUpK3EuaW5kZXgoNSkpKjBdKV0=",
                 "size_compressed": 176
+            },
+            "joking": {
+                "source": "cD1sYW1iZGEgaSxuPTAsWj16aXA6WypaKCpbW3kgYW5kIG1heCh7KnAsKngsKnF9LXs1fSlmb3IgeSBpbiB4W246XSt4WzpuXV1mb3IqeCxwLHEgaW4gWigqaSxbW10sKlooKmkpXSxbKlooKmkpLFs1XV1bMTpdKWlmIGFueSh4KW9yKG46PW4tWypwLDVdLmluZGV4KDUpK3EuaW5kZXgoNSkpKjBdKV0=",
+                "size_uncompressed": 170,
+                "compressed": "cD1sYW1iZGEgaSxuPTAsWj16aXA6WypaKCpbW3kgYW5kIG1heCh7KnAsKngsKnF9LXs1fSlmb3IgeSBpbiB4W246XSt4WzpuXV1mb3IqeCxwLHEgaW4gWigqaSxbW10sKlooKmkpXSxbKlooKmkpLFs1XV1bMTpdKWlmIGFueSh4KW9yKG46PW4tWypwLDVdLmluZGV4KDUpK3EuaW5kZXgoNSkpKjBdKV0=",
+                "size_compressed": 170
             }
         }
     },
@@ -1249,7 +1255,7 @@
     },
     "task051": {
         "gold": 115,
-        "best": 123,
+        "best": 117,
         "solutions": {
             "combined_solutions": {
                 "source": "cD1sYW1iZGEgaSxrPTM6LWsqaSBvclsobDo9MClvclt5KzAqKGw6PWx8KDE+YTx5IT1iKSpiKW9yIGwgZm9yIGEsYix5IGluIHppcChbMCwxLCp4XSxbMCwqeF0seCldZm9yIHggaW4gemlwKCpwKGksay0xKSldWzo6LTFd",
@@ -1262,6 +1268,12 @@
                 "size_uncompressed": 123,
                 "compressed": "aW1wb3J0IHJlCnA9bGFtYmRhIGEsbj0tNjM6biphIG9yWyp6aXAoKmV2YWwocmUuc3ViKHInMCwgKFteMF0pKCgsICg/ITB8XDEpLikrWzAsIF0qKTAnLHInMCxcMVwyXDEnLHN0cihwKGEsbisxKSkpKSldWzo6LTFd",
                 "size_compressed": 123
+            },
+            "joking": {
+                "source": "cD1sYW1iZGEgaSxrPTM6LWsqaSBvclsqbWFwKGxhbWJkYSp4LGw9MCxiPTEsYT0xOlswKihsOj1sfChiIT15PmE8MSkqKGE6PWIpKSsoYjo9eSlvciBsIGZvciB5IGluIHhdLCpwKGksay0xKSldWzo6LTFdCgojIwppbXBvcnQgcmU7cD1sYW1iZGEgYSxuPS02MzpuKmEgb3JbKnppcCgqZXZhbChyZS5zdWIocicwKD89W1xkLCBdKihbXjBdKSwgKD8hMHxcMSkoXGQpLCAwKScscidcMicsc3RyKHAoYSxuKzEpKSkpKV1bOjotMV0K",
+                "size_uncompressed": 117,
+                "compressed": "cD1sYW1iZGEgaSxrPTM6LWsqaSBvclsqbWFwKGxhbWJkYSp4LGw9MCxiPTEsYT0xOlswKihsOj1sfChiIT15PmE8MSkqKGE6PWIpKSsoYjo9eSlvciBsIGZvciB5IGluIHhdLCpwKGksay0xKSldWzo6LTFd",
+                "size_compressed": 117
             }
         }
     },
@@ -2881,7 +2893,7 @@
     },
     "task124": {
         "gold": 96,
-        "best": 129,
+        "best": 100,
         "solutions": {
             "mwi": {
                 "source": "cD1sYW1iZGEgaSxuPTAscz0yOlsoWzBdKm4qayt4KVs6MTBdZm9yIGsgaW4gcmFuZ2UoNSlmb3IgeCBpbihpWzpzXT09W3hbbjpdK24qWzBdZm9yIHggaW4gaVtzOnMqMl1dKSppWzpzXV1bOjEwXW9yIHAoaSxuK3MlMixzXjEp",
@@ -2894,6 +2906,12 @@
                 "size_uncompressed": 130,
                 "compressed": "cD1sYW1iZGEgaSxuPTAscz0yOmlbOnNdPT1beFtuOl0rbipbMF1mb3IgeCBpbiBpW3M6cyoyXV1hbmRbKFswXSpuKmsreClbOjEwXWZvciBrIGluIHJhbmdlKDUpZm9yIHggaW4gaVs6c11dWzoxMF1vciBwKGksbitzJTIsc14xKQ==",
                 "size_compressed": 130
+            },
+            "joking": {
+                "source": "cD1sYW1iZGEgaSxuPTAscz0yOihyOj1bKGsvL3MqbipbMF0raVtrJXNdKVs6MTBdZm9yIGsgaW4gcmFuZ2UoMTApXSkqKHJbOjVdPT1pWzo1XSlvciBwKGksbitzJTIsc14xKQoKIyMKcD1sYW1iZGEgaSxuPTg6KHI6PVsoay8vKHQ6PW4vLzQpKihuJTQpKlswXStpW2sldF0pWzoxMF1mb3IgayBpbiByYW5nZSgxMCldKSoocls6NV09PWlbOjVdKW9yIHAoaSxuKzEp",
+                "size_uncompressed": 100,
+                "compressed": "cD1sYW1iZGEgaSxuPTAscz0yOihyOj1bKGsvL3MqbipbMF0raVtrJXNdKVs6MTBdZm9yIGsgaW4gcmFuZ2UoMTApXSkqKHJbOjVdPT1pWzo1XSlvciBwKGksbitzJTIsc14xKQ==",
+                "size_compressed": 100
             }
         }
     },
