@@ -1,4 +1,4 @@
-# att (120 vs 109 bytes for gold)
+# att (120 vs 99 bytes for gold)
 p=lambda a,n=1:[*map(f:=lambda*b:[max(b[i%n::n])for i in range(21)],*map(f,*a))]*any(b[n:]==b[:-n]for b in a)or p(a,n+1)
 
 ### combined (tied, 120 bytes)

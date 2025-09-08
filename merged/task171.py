@@ -1,4 +1,4 @@
-# joking (51 vs 49 bytes for gold)
+# joking (51 bytes, gold)
 p=lambda a:a*all(a[0])or p([*zip(*a[:0:-1],[8]*9)])
 
 ##
