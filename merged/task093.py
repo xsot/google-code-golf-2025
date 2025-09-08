@@ -1,4 +1,8 @@
-# xsot (102 vs 99 bytes for gold)
+# ovs (100 vs 99 bytes for gold)
+import re
+p=lambda g:[g:=eval(re.sub("[^50],([^(]+5)",r"\1,5",str([*zip(*g[::-1])])))for _ in g][11]
+
+### xsot (102 bytes)
 import re
 p=lambda g,k=11:-k*g or[*zip(*eval(re.sub(r"[^50],([^[(]+5)",r"\1,5",str(p(g,k-1)[::-1]))))]
 
