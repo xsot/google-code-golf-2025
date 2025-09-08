@@ -1,4 +1,4 @@
-# mwi (137 bytes, gold)
+# mwi (137 vs 135 bytes for gold)
 p=lambda i,n=1,w=0:any(w==(w:=[*map(len,str(i).split(str(n))[1:-1])])for n in{n,max(i[:3])[0]})*eval(str(i).replace(*f"{n}5"))or p(i,n+1)
 
 ### ovs (150 bytes)

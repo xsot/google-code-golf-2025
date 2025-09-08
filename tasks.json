@@ -912,8 +912,8 @@
         }
     },
     "task036": {
-        "gold": 90,
-        "best": 98,
+        "gold": 84,
+        "best": 90,
         "solutions": {
             "mwi": {
                 "source": "cD1sYW1iZGEgaTptYXgobCBmb3IgbiBpbiByYW5nZSgxMClpZiBsZW4obDo9KGY6PWxhbWJkYSBnOlt4IGZvciB4IGluIHppcCgqZylpZiBuIGluIHhdKShmKGkpKSk8Nik=",
@@ -932,6 +932,12 @@
                 "size_uncompressed": 106,
                 "compressed": "cD1sYW1iZGEgaTpbbCBmb3IgbiBpbnsqc3VtKGksW10pfWlmIGxlbihsOj1bW3lbMF1mb3IgeSBpbiB6aXAoeCwqaSlpZiBuIGluIHldZm9yIHggaW4gaSBpZiBuIGluIHhdKTw2XVswXQ==",
                 "size_compressed": 106
+            },
+            "joking": {
+                "source": "cD1sYW1iZGEgaSxuPTE6KGxlbihsOj0oZjo9bGFtYmRhIGc6W3ggZm9yIHggaW4gemlwKCpnKWlmIG4gaW4geF0pKGYoaSkpKTw2KSpsIG9yIHAoaSxuKzEp",
+                "size_uncompressed": 90,
+                "compressed": "cD1sYW1iZGEgaSxuPTE6KGxlbihsOj0oZjo9bGFtYmRhIGc6W3ggZm9yIHggaW4gemlwKCpnKWlmIG4gaW4geF0pKGYoaSkpKTw2KSpsIG9yIHAoaSxuKzEp",
+                "size_compressed": 90
             }
         }
     },
@@ -979,7 +985,7 @@
     },
     "task039": {
         "gold": 60,
-        "best": 64,
+        "best": 61,
         "solutions": {
             "att": {
                 "source": "cD1sYW1iZGEgYTpbYls6M11mb3IqYixpbiB6aXAoKmZpbHRlcihhbnksemlwKCphKSkpaWYgYW55KGIpXVs6M10=",
@@ -998,6 +1004,12 @@
                 "size_uncompressed": 65,
                 "compressed": "cD1sYW1iZGEgYTpbYls6M11mb3IqYixpbiB6aXAoKmZpbHRlcihhbnksemlwKCphKSkpaWYgYW55KGIpXVs6M10=",
                 "size_compressed": 65
+            },
+            "joking": {
+                "source": "cD1sYW1iZGEgYSxmPWZpbHRlcjpbKnppcCgqWypmKGFueSx6aXAoKmYoYW55LGEpKSldWzozXSldWzozXQ==",
+                "size_uncompressed": 61,
+                "compressed": "cD1sYW1iZGEgYSxmPWZpbHRlcjpbKnppcCgqWypmKGFueSx6aXAoKmYoYW55LGEpKSldWzozXSldWzozXQ==",
+                "size_compressed": 61
             }
         }
     },
@@ -1590,7 +1602,7 @@
         }
     },
     "task065": {
-        "gold": 101,
+        "gold": 100,
         "best": 104,
         "solutions": {
             "combined_solutions": {
@@ -2856,7 +2868,7 @@
         }
     },
     "task124": {
-        "gold": 97,
+        "gold": 96,
         "best": 129,
         "solutions": {
             "mwi": {
@@ -3282,7 +3294,7 @@
         }
     },
     "task143": {
-        "gold": 137,
+        "gold": 135,
         "best": 137,
         "solutions": {
             "mwi": {
@@ -3678,7 +3690,7 @@
         }
     },
     "task160": {
-        "gold": 107,
+        "gold": 105,
         "best": 107,
         "solutions": {
             "xsot": {
@@ -3919,7 +3931,7 @@
     },
     "task171": {
         "gold": 49,
-        "best": 54,
+        "best": 51,
         "solutions": {
             "att": {
                 "source": "cD1sYW1iZGEgYTpbKm1hcChmOj1sYW1iZGEqYjpbOCwqYlsyOl0sOF0sKm1hcChmLCphKSld",
@@ -3944,6 +3956,12 @@
                 "size_uncompressed": 54,
                 "compressed": "cD1sYW1iZGEgYTpbKm1hcChmOj1sYW1iZGEqYjpbOCwqYlsyOl0sOF0sKm1hcChmLCphKSld",
                 "size_compressed": 54
+            },
+            "joking": {
+                "source": "cD1sYW1iZGEgYTphKmFsbChhWzBdKW9yIHAoWyp6aXAoKmFbOjA6LTFdLFs4XSo5KV0pCgojIwpwPWxhbWJkYSBhLGs9MzotayphIG9yWyp6aXAoKnAoYSxrLTEpWzowOi0xXSxbOF0qOSld",
+                "size_uncompressed": 51,
+                "compressed": "cD1sYW1iZGEgYTphKmFsbChhWzBdKW9yIHAoWyp6aXAoKmFbOjA6LTFdLFs4XSo5KV0p",
+                "size_compressed": 51
             }
         }
     },
@@ -3997,7 +4015,7 @@
     },
     "task174": {
         "gold": 97,
-        "best": 99,
+        "best": 97,
         "solutions": {
             "mwi": {
                 "source": "cD1sYW1iZGEgZyxjPTE6KGs6PShmOj1sYW1iZGEgZzpbciBmb3IqcixpbiB6aXAoKmcpaWYgYyBpbiByXSkoZihnKSkpKihmKGspPT1mKGspWzo6LTFdKW9yIHAoZyxjKzEp",
@@ -4016,6 +4034,12 @@
                 "size_uncompressed": 105,
                 "compressed": "cD1sYW1iZGEgZyxjPTE6KGs6PShmOj1sYW1iZGEgZzpbciBmb3IqcixpbiB6aXAoKmcpaWYgYyBpbiByXSkoZihnKSkpKihrPT1beFs6Oi0xXWZvciB4IGluIGtdKW9yIHAoZyxjKzEp",
                 "size_compressed": 105
+            },
+            "joking": {
+                "source": "cD1sYW1iZGEgZyxjPTE6KChmOj1sYW1iZGEgZzpbciBmb3IgciBpbiB6aXAoKmcpaWYgYyBpbiByXSkoazo9ZihnKSk9PWYoa1s6Oi0xXSkpKmYoaylvciBwKGcsYysxKQ==",
+                "size_uncompressed": 97,
+                "compressed": "cD1sYW1iZGEgZyxjPTE6KChmOj1sYW1iZGEgZzpbciBmb3IgciBpbiB6aXAoKmcpaWYgYyBpbiByXSkoazo9ZihnKSk9PWYoa1s6Oi0xXSkpKmYoaylvciBwKGcsYysxKQ==",
+                "size_compressed": 97
             }
         }
     },
@@ -4752,7 +4776,7 @@
         }
     },
     "task209": {
-        "gold": 290,
+        "gold": 289,
         "best": 292,
         "solutions": {
             "mwi": {
@@ -6552,7 +6576,7 @@
         }
     },
     "task285": {
-        "gold": 291,
+        "gold": 288,
         "best": 302,
         "solutions": {
             "combined_solutions": {
@@ -7656,7 +7680,7 @@
         }
     },
     "task333": {
-        "gold": 92,
+        "gold": 89,
         "best": 92,
         "solutions": {
             "att": {
@@ -8772,7 +8796,7 @@
         }
     },
     "task381": {
-        "gold": 84,
+        "gold": 79,
         "best": 92,
         "solutions": {
             "xsot": {

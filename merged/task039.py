@@ -1,4 +1,7 @@
-# ovs (64 vs 60 bytes for gold)
+# joking (61 vs 60 bytes for gold)
+p=lambda a,f=filter:[*zip(*[*f(any,zip(*f(any,a)))][:3])][:3]
+
+### ovs (64 bytes)
 p=lambda a,k=-1:k*a or[*zip(*p([*filter(any,zip(*a))],k+1))][:3]
 
 ##

@@ -1,7 +1,13 @@
-# att (54 vs 49 bytes for gold)
+# joking (51 vs 49 bytes for gold)
+p=lambda a:a*all(a[0])or p([*zip(*a[:0:-1],[8]*9)])
+
+##
+p=lambda a,k=3:-k*a or[*zip(*p(a,k-1)[:0:-1],[8]*9)]
+
+### att (54 bytes)
 p=lambda a:[*map(f:=lambda*b:[8,*b[2:],8],*map(f,*a))]
 
-### combined (tied, 54 bytes)
+### combined (54 bytes)
 p=lambda a:[*map(f:=lambda*b:[8,*b[2:],8],*map(f,*a))]
 
 ### ovs (61 bytes)

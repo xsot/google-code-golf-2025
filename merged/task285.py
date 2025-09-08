@@ -1,4 +1,4 @@
-# xsot (302 (426 unzipped) vs 291 bytes for gold)
+# xsot (302 (426 unzipped) vs 288 bytes for gold)
 def p(g):
  for E in range(8):
   I=[]

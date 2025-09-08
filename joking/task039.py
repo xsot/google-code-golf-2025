@@ -1,0 +1,1 @@
+p=lambda a,f=filter:[*zip(*[*f(any,zip(*f(any,a)))][:3])][:3]

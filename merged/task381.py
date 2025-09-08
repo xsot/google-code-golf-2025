@@ -1,4 +1,4 @@
-# ovs (92 vs 84 bytes for gold)
+# ovs (92 vs 79 bytes for gold)
 import re
 p=lambda m:eval(re.sub("(?<=.{30}2,)([0, ]*)(?=2.*],)","*[9]*len([\\1]),",str(m)))
 
