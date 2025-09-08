@@ -577,8 +577,8 @@ def p(a,h=0):
  b=[*map(any,a)].index;d=b(0,c:=b(1));q=a[c:d];k=h//4;j=h%4>2;i=h%4%3;u,*r,v=a[k:k+d-c+2];*s,=zip(*r);l=-[*map(any,s[::-1]),1].index(1);s=s[:l];e=[*zip(*q)][j:l+j-i]==s[i:]!=s[:i]==s[i:i+i]!=u==v
  for m,n in zip(q,r):n[l:]=[x+(e*y>x)for x,y in zip(n[l:],m[l+j-i:]+u)]
  return h//52*a or p(a,h+1)
-# task 220: 94 vs 89 bytes for gold, https://arcprize.org/play?task=913fb3ed
-p=lambda i,k=3:-k*i or[[y or-(s*2^s-7)%7for y,s in zip(x,[0]+x)]for*x,in zip(*p(i,k-1)[::-1])]
+# task 220: 93 vs 89 bytes for gold, https://arcprize.org/play?task=913fb3ed
+p=lambda i:[*eval("map(lambda*x,s=0:[[-(s*2^s-7)%7,s:=y][y>0]for y in x][::-1],*"*4+"i))))")]
 # task 221: 98 vs 87 bytes for gold, https://arcprize.org/play?task=91413438
 def p(i):r=range(j:=3*str(i).count("0"));return[[(a//3*j+j+b<27)*i[a%3][b%3]for b in r]for a in r]
 # task 222: 103 bytes, gold, https://arcprize.org/play?task=91714a58
