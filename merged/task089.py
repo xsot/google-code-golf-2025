@@ -1,4 +1,4 @@
-# ovs (236 (278 unzipped) vs 257 bytes for gold)
+# ovs (236 (278 unzipped) bytes, gold)
 def p(g):
  for i in(M:={i*1j+j:g for i,g in enumerate(g)for j,g in enumerate(g)if g}):
   for I in M:
