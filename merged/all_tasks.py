@@ -214,14 +214,13 @@ p=lambda i,k=7,s=0:-k*i or[[k<7and(-((s:=(y>0)*min(s-1,-1)or~-max(-s,s,1))>1)or 
 p=lambda a:[b[::-1]for b in a[::-1]]
 # task 88: 109 vs 101 bytes for gold, https://arcprize.org/play?task=3de23699
 p=lambda a,n=-3:n*a[1:-1]or p([a[1:],[[d and(b:=max(a[n%2]))for d in c]for c in zip(*a[:0:-1])]][e:=b>0],n+e)
-# task 89: 259 (284 unzipped) vs 257 bytes for gold, https://arcprize.org/play?task=3e980e27
-L=lambda i,j,s:any(0<(i-I)**2+(j-J)**2<3for I,J in s)
+# task 89: 239 (278 unzipped) vs 257 bytes for gold, https://arcprize.org/play?task=3e980e27
 def p(g):
- for i,j in(M:={(A,x):F for A,r in enumerate(g)for x,F in enumerate(r)if F}):
+ for i in(M:={A*1j+x:F for A,r in enumerate(g)for x,F in enumerate(r)if F}):
   for I in M:
    s={I}
    for y in[*M]*3:
-    if M[i,j]==M[I]!=L(i,j,M)<L(*y,s):s|={y};g[y[0]-I[0]+i][(I[1]-y[1])*(-1)**M[I]+j]=M[y]
+    if M[i]==M[I]!=any(0<abs(i-I)<2for I in M)<any(0<abs(y-I)<2for I in s):s|={y};g[int((y-I+i).imag)][int(((I-y)*(-1)**M[I]+i).real)]=M[y]
  return g
 # task 90: 197 vs 159 bytes for gold, https://arcprize.org/play?task=3eda0437
 e=enumerate

@@ -1,8 +1,7 @@
-e=enumerate;L=lambda i,j,s:any(0<(i-I)**2+(j-J)**2<3for I,J in s)
 def p(g):
- for i,j in(M:={(A,x):F for A,r in e(g)for x,F in e(r)if F}):
+ for i in(M:={A*1j+x:F for A,r in enumerate(g)for x,F in enumerate(r)if F}):
   for I in M:
    s={I}
    for y in[*M]*3:
-    if M[i,j]==M[I]!=L(i,j,M)<L(*y,s):s|={y};g[y[0]-I[0]+i][(I[1]-y[1])*(-1)**M[I]+j]=M[y]
+    if M[i]==M[I]!=any(0<abs(i-I)<2for I in M)<any(0<abs(y-I)<2for I in s):s|={y};g[int((y-I+i).imag)][int(((I-y)*(-1)**M[I]+i).real)]=M[y]
  return g
