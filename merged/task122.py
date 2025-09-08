@@ -1,4 +1,7 @@
-# combined (94 vs 82 bytes for gold)
+# att (82 bytes, gold)
+p=lambda a:7in map(sum,a)and a[-2:][::(-1)**len(a)]+a[:-2]or[*zip(*p([*zip(*a)]))]
+
+### combined (94 bytes)
 p=lambda i:sum(map(max,i))<8and[[x[0]%2*3,x[1]%2*3,*x[:-2]]for x in i]or[*zip(*p([*zip(*i)]))]
 
 ### ovs (102 bytes)
