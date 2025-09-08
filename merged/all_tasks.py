@@ -698,15 +698,14 @@ def p(i):
 p=lambda g:[([0,0,0,r%9,0,r//9]*2)[4-max(g).index(2):][:5]for r in b'\09\0G\0'[2-g.index(max(g)):][:3]]
 # task 267: 52 vs 46 bytes for gold, https://arcprize.org/play?task=aabf363d
 p=lambda i:[[i[-y>>8][x==i[6]]for y in x]for x in i]
-# task 268: 284 (331 unzipped) vs 250 bytes for gold, https://arcprize.org/play?task=aba27056
-def p(g,k=3):
- l=range(len(g));B=[sum(A>0for A in A)for A in g if any(A)]
- if B[0]==max(B)>0<B.count(B[0])<2:
-  (J,E),*B,(C,F)=sorted([A,C]for A in l for C in l if g[A][C])
+# task 268: 239 (253 unzipped) vs 243 bytes for gold, https://arcprize.org/play?task=aba27056
+def p(g):
+ l=range(len(g));(J,E),*B,(C,F)=[[A,D]for A in l for D in l if g[A][D]]
+ if g[C][F-2]<1:
   for A in l[J+1:]:
-   for D in((*range(E+2,F-1),F+A-C-2,E-A+C+2),range(E+1,F))[A<C]:
-    if D in l:g[A][D]=4
- return-k*g or p([*map(list,zip(*g[::-1]))],k-1)
+   for D in({*l[E+2:F-1],F+A-C-2,E-A+C+2}&{*l},l[E+1:F])[A<C]:g[A][D]=4
+  return g
+ return[*zip(*p([*map(list,zip(*g[::-1]))]))][::-1]
 # task 269: 64 vs 63 bytes for gold, https://arcprize.org/play?task=ac0a08a4
 p=lambda a:eval('[[a '+"for a in a for _ in[*{*'%s'}][5:]]"%a*2)
 # task 270: 119 vs 117 bytes for gold, https://arcprize.org/play?task=ae3edfdc
