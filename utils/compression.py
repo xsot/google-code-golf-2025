@@ -1,3 +1,4 @@
+import ast
 import deflate
 import re
 import zlib
@@ -9,14 +10,17 @@ POSTFIXES = [b"",b" ",b"\t",b"\n",b"\r",b"\f",b"#",b";",b"\t ",b" \t",b"\np"] + 
 
 @functools.lru_cache(maxsize=2048)
 def compress(task_src: bytes) -> bytes:
-    zipped_src_1 = compress_with_zlib(task_src)
-    zipped_src_2 = compress_with_libdeflate(task_src)
-    zipped_src_3 = compress_with_zopfli(task_src)
-    
-    return min(zipped_src_1, zipped_src_2, zipped_src_3, task_src, key=len)
-
-def compress_with_zlib(task_src: bytes) -> bytes:
     task_src_2 = sub_vars(task_src)
+
+    # if adding a new compression method, try to keep these in order of
+    # fastest to slowest
+    task_src = min(task_src, compress_with_zlib(task_src, task_src_2), key=len)
+    task_src = min(task_src, compress_with_libdeflate(task_src, task_src_2), key=len)
+    task_src = min(task_src, compress_with_zopfli(task_src, task_src_2), key=len)
+    
+    return task_src
+
+def compress_with_zlib(task_src: bytes, task_src_2: bytes) -> bytes:
     zipped_src = zip_src(task_src_2, method="zlib", window=-9)
 
     if len(zipped_src) > len(task_src) + 10:
@@ -31,8 +35,7 @@ def compress_with_zlib(task_src: bytes) -> bytes:
 
     return zipped_src
 
-def compress_with_zopfli(task_src: bytes) -> bytes:
-    task_src_2 = sub_vars(task_src)
+def compress_with_zopfli(task_src: bytes, task_src_2: bytes) -> bytes:
     zipped_src = zip_src(task_src_2, method="zopfli")
     if len(zipped_src) > len(task_src) + 10:
         return task_src
@@ -44,10 +47,9 @@ def compress_with_zopfli(task_src: bytes) -> bytes:
     return zipped_src
 
 
-def compress_with_libdeflate(task_src: bytes) -> bytes:
+def compress_with_libdeflate(task_src: bytes, task_src_2: bytes) -> bytes:
     # libdeflate hardcodes a window of 32768
     # https://github.com/ebiggers/libdeflate/blob/master/lib/zlib_compress.c
-    task_src_2 = sub_vars(task_src)
     zipped_src = zip_src(task_src_2, method="libdeflate", window=-15)
     if len(zipped_src) > len(task_src) + 10:
         return task_src
@@ -108,16 +110,34 @@ def zip_src(src: bytes, method: str, window: int = None) -> bytes:
         delim + compressed + delim + \
         b',"L1")'+(b',%d'%window if window<15 else b'')+b'))'
 
-def sub_vars(src: bytes) -> bytes:
-    # all letters except lowercase p
-    var_names = b"abcdefghijklmnoqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
-    var_regex = br"(?<!\\)\b[%b]\b(?!['\"])" % var_names
+def sub_vars(src: bytes, alphabet:bytes = b"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnoqrstuvwxyz") -> bytes:
+    
+    if set(alphabet) != set(b"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnoqrstuvwxyz"):
+        raise ValueError("alphabet must be an ordering of all letters except lowercase p")
+    
+    vars_prev = get_vars(src, alphabet)
 
-    vars_prev = sorted(set(re.findall(var_regex,src)))
-    varless = re.sub(var_regex,b"_", src)
-    rest = set(re.findall(br"[%b]" % var_names, varless))
+    if len(vars_prev) == 0:
+        return src
+    varless = re.sub(br"(?<!\\)\b[%b]\b(?!['\"])" % alphabet,b"_", src)
+    rest = set(re.findall(br"[%b]" % alphabet, varless))
 
     # TODO: Optimize sorting method, could probably save 10-30 bytes
-    trans = dict(zip(vars_prev,sorted(sorted(rest), key=varless.count)[::-1] + sorted(set(bytes([v]) for v in var_names) - rest)))
+    trans = dict(zip(vars_prev,sorted(sorted(rest), key=varless.count)[::-1] + sorted(set(bytes([v]) for v in alphabet) - rest)))
 
-    return re.sub(var_regex, lambda c:trans[c.group()], src)
+    return re.sub(br"(?<!\\)\b[%b]\b(?!['\"])" % b"".join(vars_prev), lambda c:trans[c.group()], src)
+
+def get_vars(src: bytes, alphabet: bytes):
+    tree = ast.parse(src)
+
+    identifiers = set()
+
+    for i in ast.walk(tree):
+        if isinstance(i, ast.arg):
+           identifiers.add(i.arg)
+        if isinstance(i, ast.Name):
+            identifiers.add(i.id)
+        if isinstance(i, ast.FunctionDef):
+            identifiers.add(i.name)
+
+    return sorted(i.encode() for i in identifiers if len(i)==1 and i in alphabet)
