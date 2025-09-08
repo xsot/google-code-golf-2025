@@ -605,20 +605,16 @@ p=lambda m,i=3:-i*m or[*zip(*eval(re.sub(f"0(?=, 0.{ {len(m)*3}}.5, 5)","3**i%5"
 p=lambda a:[(r[:6]*4)[:len(r)*2]for r in a]
 # task 232: 61 vs 58 bytes for gold, https://arcprize.org/play?task=97999447
 p=lambda i:[(e:=0)or[(e:=y-e)>>9&5or e for y in x]for x in i]
-# task 233: 307 (465 unzipped) vs 297 bytes for gold, https://arcprize.org/play?task=97a05b5b
+# task 233: 300 (396 unzipped) vs 297 bytes for gold, https://arcprize.org/play?task=97a05b5b
 e=enumerate
 def p(g):
- w=[(y,x,s)for y,p in e(g[:-2])for x,p in e(p[:-2])if{*sum(s:=[v[x:x+3]for v in g[y:y+3]],[])}^{0}>{2,0}]
- for y,x,s in w:
-  for n,p in e(s):g[y+n][x:x+3]=0,0,0,
- u=[[y[0]for y in zip(x,*g)if sum(y)]for x in g if sum(x)]
- for y,x,s in w[::-1]:
-  for n,p in e(s*4):
-   for y,p in e(u):
-    for x,p in e(p):
-     for n,p in e(s*all((2*(2*u)[n+y])[m+x]==2*(2!=r)for n,p in e(s)for m,r in e(p))):u[n+y][x:x+3]=p;s=[]
-   s=*zip(*s[::-1]),
- return u
+ for G in[g]*60:*g,=map(list,zip(*g[max(map(len,str(g[0]).split('0')))<12:][::-1]))
+ for s in [[v[x:x+3]for v in G[y:y+3]]for y,p in e(G[:-2])for x,p in e(p[:-2])][::-1]*4:
+  for y,p in e(g*({*sum(s,s[0])}^{0}>{2,0})):
+   for x,p in e(p):
+    for n,p in e(s*all((2*(2*g)[n+y])[m+x]==2*(2!=p)for n,p in e(s)for m,p in e(p))):g[n+y][x:x+3],*s=p,
+  s[:]=zip(*s[::-1])
+ return g
 # task 234: 120 vs 118 bytes for gold, https://arcprize.org/play?task=98cf29f8
 p=lambda i,k=3,h={0}:-k*i or p([*zip(*([x for x in i if len(h:=h|{*x})-3+sum(x)-max(x)]+i[-1:]*99)[:len(i)])][::-1],k-1)
 # task 235: 62 bytes, gold, https://arcprize.org/play?task=995c5fa3
