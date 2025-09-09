@@ -37,6 +37,7 @@ player_dirs = [
     'ovs',
     'xsot',
     'combined_solutions',
+    'garry_moss'
 ]
 
 output_dir = "merged"
