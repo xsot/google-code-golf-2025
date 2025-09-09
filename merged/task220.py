@@ -1,4 +1,4 @@
-# joking (93 vs 89 bytes for gold)
+# joking (93 vs 87 bytes for gold)
 p=lambda i:[*eval("map(lambda*x,s=0:[[-(s*2^s-7)%7,s:=y][y>0]for y in x][::-1],*"*4+"i))))")]
 
 ##

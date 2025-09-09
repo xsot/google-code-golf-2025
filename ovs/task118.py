@@ -1,3 +1,16 @@
+# based on Garry Moss' solution
+def p(p):
+ z,t,T=[{(l,n)for l,p in enumerate(p)for n,p in enumerate(p)if p==C}for C in(0,2,5)]
+ for n in 2,3:
+  R=[t-t]
+  for d,i in(Q:=z|t|T):v=Q&{*sum([[(d+l,i),(d,i+l)]for l in range(-n,n+1)],[])};R+=[l|v for l in R if Q-z-l>v]
+  for l in R:
+   if t<=l:
+    for l,n in l&T:p[l][n]=8
+    return p
+
+##
+
 def p(g,F=0):
  for W in 4,4,3:
   for i in range(h:=len(g)):

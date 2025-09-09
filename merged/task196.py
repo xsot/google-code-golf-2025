@@ -1,5 +1,5 @@
-# ovs (113 vs 112 bytes for gold)
-p=lambda i,k=-99:k*i or p([*map(lambda*r,a=4:[[b%4,b or a&4,b|2*(a%3<(a:=b)<2)][k//50]for b in r],*i[::-1])],k+1)
+# ovs (112 bytes, gold)
+p=lambda i,k=-99:k*i or p([*map(lambda*r,a=-4:[[b%4,b or-4&a,b|2*(a%3<(a:=b))][k//50]for b in r],*i[::-1])],k+1)
 
 ##
 
