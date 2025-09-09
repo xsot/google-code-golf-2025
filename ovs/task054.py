@@ -1,7 +1,7 @@
 def p(g):
- f=sum(g,[]);*C,_,B=sorted({*f},key=f.count);M={(i,j):v for i,r in enumerate(g)for j,v in enumerate(r)if v in C};T={(i,j)for i,j in M for I,J in M if(I-i)**2+(J-j)**2==1}
- for i,j in{*M}-T:
-  for I,J in T:
-   y,x=zip(*T);d=I-sum(y)//len(y);D=J-sum(x)//len(x);g[I][J]=B;F=1;u=d+i;U=D+j
-   while(g[u][U]^B)*F:g[u][U]=M[I,J];u+=int(d/2);U+=int(D/2);F-=-2<d|D<2
+ f=sum(g,[]);*C,_,B=sorted({*f},key=f.count);M={i*1j+j:v for i,r in enumerate(g)for j,v in enumerate(r)if v in C};T={i for i in M for I in M if abs(I-i)==1}
+ for i in{*M}-T:
+  for I in T:
+   d=I-sum(T)/len(T);g[int(I.imag)][int(I.real)]=B;F=1;u=d+i
+   while(g[int(u.imag)][int(u.real)]^B)*F:g[int(u.imag)][int(u.real)]=M[I];u+=d/2;F-=abs(d)<2
  return g
