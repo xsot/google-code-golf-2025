@@ -1,4 +1,7 @@
-# ovs (177 vs 156 bytes for gold)
+# garry_moss (161 vs 149 bytes for gold)
+p=lambda n,r=range(10):[[(a:=max(sum(n,[])),5,5)[min(max(abs(f-b),abs(m-s))for b in r for s in r if n[b][s])%(3-(f'{a}, 0, {a}'in str(n)))]for m in r]for f in r]
+
+### ovs (177 bytes)
 def p(g):e=enumerate;C=max(max(g));[g:=[[c or _*any(any(s[x+x%~x:x+2])for s in g[y+y%~y:y+2])for x,c in e(r)]for y,r in e(g)]for _ in[5,5,C][f"{C}, 0, {C}"in"%s"%g:]*3];return g
 
 ##
