@@ -289,13 +289,12 @@ p=lambda a:[*s(zip(*s(zip(*map(s,a)))))]
 p=lambda a:a[::-1]+a
 # task 117: 172 vs 148 bytes for gold, https://arcprize.org/play?task=4c5c2cf0
 p=lambda i,k=1:-k*i or p([[*map(max,x,[*x,*(s:=sum(i,[]))][s.index(max(s,key=lambda n:[x.count(n)for x in i if n in x]==[2,1,2]))//len(i)*2+2::-1]+s)]for x in zip(*i)],k-1)
-# task 118: 278 (416 unzipped) vs 279 bytes for gold, https://arcprize.org/play?task=50846271
+# task 118: 271 (395 unzipped) vs 279 bytes for gold, https://arcprize.org/play?task=50846271
 def p(p):
- t={(l,n)for l in range(len(p))for n in range(len(p[0]))if p[l][n]&2};d=lambda i,l:[i and(d(i[1:],l)or not i[0]&l and d(i[1:],l|i[0])),l][t<=l]
+ t={(l,n)for l in range(len(p))for n in range(len(p[0]))if p[l][n]&2};d=lambda i,l:[i and(d(i[1:],l)or not l&i[0]and d(i[1:],l|i[0])),l][t<=l]
  for n in 2,3:
-  l=[l for d in range(len(p))for i in range(len(p[0]))for l in[{(l,n)for l in range(-n,n+1)for l,n in[(d+l,i),(d,i+l)]if len(p)>l>-1<n<len(p[0])}]if min(p[l][n]for l,n in l)&2]
-  if l:=d(l,set()):
-   for l,n in l:p[l][n]+=3*(p[l][n]&1)
+  if l:=d([l for d in range(len(p))for i in range(len(p[0]))if(l:={(l,n)for l in range(-n,n+1)for l,n in[(d+l,i),(d,i+l)]if p[l:]and-1<n<len(p[0])})if min(p[l][n]for l,n in l)&2],set()):
+   for l,n in l-t:p[l][n]+=3
    return p
 # task 119: 127 vs 106 bytes for gold, https://arcprize.org/play?task=508bd3b6
 R=range(12)
@@ -852,8 +851,8 @@ p=lambda i,k=39,z=0:-k*[x*[0]+[8]+(z+~x)*[0]for x in range(z)]or p([(s:=1)*[(k<3
 p=lambda a:[a[0][:2],a[1][:2]]
 # task 327: 67 bytes, gold, https://arcprize.org/play?task=d13f3404
 p=lambda i,l=[0]*3:[l:=[*map(max,x+[0]*3,[0]+l*2)]for x in i+[l]*3]
-# task 328: 175 vs 167 bytes for gold, https://arcprize.org/play?task=d22278a0
-def p(g):R=range(len(g));return[[(D:=sorted((sum(T:=[abs(x-r),abs(y-c)]),v*(~max(T)&1))for x in R for y in R if(v:=g[x][y])))and(D[0][0]<D[1][0])*D[0][1]for c in R]for r in R]
+# task 328: 173 vs 166 bytes for gold, https://arcprize.org/play?task=d22278a0
+def p(g):R=range(len(g));return[[(D:=sorted((sum(T:=[abs(x-r),abs(y-c)]),~max(T)%2*v)for x in R for y in R if(v:=g[x][y])))and(D[0][0]<D[1][0])*D[0][1]for c in R]for r in R]
 # task 329: 54 bytes, gold, https://arcprize.org/play?task=d23f8c26
 p=lambda a:[[0]*(l:=len(r)//2)+[r[l]]+l*[0]for r in a]
 # task 330: 135 vs 134 bytes for gold, https://arcprize.org/play?task=d2abd087
