@@ -9,9 +9,12 @@ PREFIXES = [b"",b"\n", b"\r",b"\f",b"\n\f",b"\r\f"] + [bytes([c,ne]) for c in b"
 POSTFIXES = [b"",b" ",b"\t",b"\n",b"\r",b"\f",b"#",b";",b"\t ",b" \t",b"\np"] + [b"#"+bytes([n]) for n in range(32,127)]
 
 @functools.lru_cache(maxsize=2048)
-def compress(task_src: bytes) -> bytes:
-
-    for task_src_2 in (sub_vars(task_src), task_src):
+def compress(task_src: bytes, alphabet:bytes = b"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnoqrstuvwxyz") -> bytes:
+    
+    for task_src_2 in (
+        sub_vars(task_src, alphabet), 
+        sub_vars(task_src, alphabet[::-1]),
+        task_src):
 
         # if adding a new compression method, try to keep these in order of
         # fastest to slowest
@@ -125,11 +128,13 @@ def sub_vars(src: bytes, alphabet:bytes = b"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghij
 
     # first try replacing variables with letters that already exist in the source,
     # most common first
-    vars_new_1 = sorted(sorted(rest), key=varless.count)[::-1]
+    vars_new_1 = sorted(rest, 
+        key=lambda c: (-varless.count(c), -alphabet.index(c)))
 
     # then use the rest of the letters. bruteforcing different orderings
     # may yield byte saves
-    vars_new_2 = sorted(set(bytes([v]) for v in alphabet) - rest)
+    vars_new_2 = sorted(set(bytes([v]) for v in alphabet) - rest,
+        key= lambda c: alphabet.index(c))
 
     vars_new = vars_new_1 + vars_new_2
     trans = dict(zip(vars_prev, vars_new))
