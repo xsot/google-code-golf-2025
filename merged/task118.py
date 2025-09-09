@@ -1,9 +1,8 @@
-# ovs (255 (298 unzipped) vs 271 bytes for gold)
+# ovs (255 (294 unzipped) vs 271 bytes for gold)
 # based on Garry Moss' solution
 def p(p):
- z,t,T=[{(l,n)for l,p in enumerate(p)for n,p in enumerate(p)if p==C}for C in(0,2,5)]
  for n in 2,3:
-  R=[t-t]
+  z,t,T,*R=[{(l,n)for l,p in enumerate(p)for n,p in enumerate(p)if p==C}for C in(0,2,5,7)]
   for d,i in(Q:=z|t|T):v=Q&{*sum([[(d+l,i),(d,i+l)]for l in range(-n,n+1)],[])};R+=[l|v for l in R if Q-z-l>v]
   for l in R:
    if t<=l:
