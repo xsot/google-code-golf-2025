@@ -1,4 +1,4 @@
-# joking (259 (271 unzipped) bytes, gold)
+# joking (257 (271 unzipped) vs 259 bytes for gold)
 # brute force
 def p(g):
  r=[*map(max,*g[6:]),0,5,0].index;w=r(0,t:=r(5))
@@ -32,7 +32,7 @@ def p(g):
  K,C=zip(*[([*c,5].index(5),c.count(2))for c in zip(*g)]);K=b'\n%0s\n'%bytes(K);S={*K.split(b'\n')};Q(0,{});return g
 # the 0 in %0s is necessary to avoid variable substitution replacing the s with another letter
 
-### mwi (339 (409 unzipped) bytes)
+### mwi (338 (409 unzipped) bytes)
 def p(g):
  def Q(o,p):
   c=C[o:];(3,)<=c!=Q(o+1,p)

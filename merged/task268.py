@@ -1,4 +1,4 @@
-# joking (239 (253 unzipped) bytes, gold)
+# joking (238 (253 unzipped) vs 239 bytes for gold)
 def p(g):
  l=range(len(g));(J,E),*B,(C,F)=[[A,D]for A in l for D in l if g[A][D]]
  if g[C][F-2]<1:
@@ -21,7 +21,7 @@ def p(g):
   for D in({*l[E+2:F-1],F+A-C-2,E-A+C+2}&{*l},l[E+1:F])[A<C]:g[A][D]+=z*4
  return z*g or[*zip(*p([*map(list,zip(*g[::-1]))]))][::-1]
 
-### mwi (284 (331 unzipped) bytes)
+### mwi (283 (331 unzipped) bytes)
 def p(g,k=3):
  l=range(len(g));B=[sum(A>0for A in A)for A in g if any(A)]
  if B[0]==max(B)>0<B.count(B[0])<2:
@@ -31,7 +31,7 @@ def p(g,k=3):
     if D in l:g[A][D]=4
  return-k*g or p([*map(list,zip(*g[::-1]))],k-1)
 
-### combined (286 (327 unzipped) bytes)
+### combined (285 (327 unzipped) bytes)
 def p(g,k=3,v=range):
  l=v(len(g));B=[sum(A>0for A in A)for A in g if any(A)]
  if B[0]==max(B)>0<B.count(B[0])<2:

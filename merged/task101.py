@@ -1,4 +1,4 @@
-# ovs (281 (338 unzipped) bytes, gold)
+# ovs (280 (338 unzipped) vs 281 bytes for gold)
 def p(g):
  T=1,20;V,m,M,s,v=[{j+i*20for i,g in enumerate(g)for j,g in enumerate(g)if g==C}for C in range(5)];[s.add(I)for I in[*M]*2for i in m|s if abs(I-i)in T]
  for i in M-s:
@@ -19,7 +19,7 @@ def p(g):
       if V:g[y+H][x+W]=u+u//2
  return eval(str(g).replace(*'32'))
 
-### combined (335 (447 unzipped) bytes)
+### combined (334 (447 unzipped) bytes)
 def p(g,R=range,l=len):
  G=g
  for _ in' '*96:G=[r[::-1]for r in zip(*G[(0,)*l(G[0])in G[:min(y for y in R(l(G))if 1in G[y])]:])];h,w=l(G),l(G[0])

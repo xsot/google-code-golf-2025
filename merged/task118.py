@@ -1,4 +1,4 @@
-# joking (271 (395 unzipped) vs 279 bytes for gold)
+# joking (271 (395 unzipped) vs 277 bytes for gold)
 # garry derived
 def p(p):
  t={(l,n)for l in range(len(p))for n in range(len(p[0]))if p[l][n]&2};d=lambda i,l:[i and(d(i[1:],l)or not l&i[0]and d(i[1:],l|i[0])),l][t<=l]

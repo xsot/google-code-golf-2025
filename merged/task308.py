@@ -1,4 +1,4 @@
-# ovs (245 (253 unzipped) vs 238 bytes for gold)
+# ovs (245 (253 unzipped) vs 235 bytes for gold)
 def p(g):
  A=[9*[M:=max(E:=sum(g,[]),key=E.count)]for(A)in g]
  for N in{*E}-{M}:
@@ -31,7 +31,7 @@ def p(g):
   for(J,K)in C:A[J-F+(B-H)//2][K-G+(B-I)//2]=N
  return[A[:B]for A in A[:B]]
 
-### combined (254 (261 unzipped) bytes)
+### combined (253 (261 unzipped) bytes)
 def p(g):
  D=enumerate;E=sum(g,[]);*L,M=sorted({*E},key=E.count);A=[99*[M]for(A)in g]
  for N in L:

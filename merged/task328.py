@@ -1,4 +1,4 @@
-# joking (173 vs 166 bytes for gold)
+# joking (173 vs 163 bytes for gold)
 # garry derived
 def p(g):R=range(len(g));return[[(D:=sorted((sum(T:=[abs(x-r),abs(y-c)]),~max(T)%2*v)for x in R for y in R if(v:=g[x][y])))and(D[0][0]<D[1][0])*D[0][1]for c in R]for r in R]
 

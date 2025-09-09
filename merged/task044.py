@@ -1,4 +1,4 @@
-# mwi (281 (376 unzipped) vs 264 bytes for gold)
+# mwi (281 (376 unzipped) vs 255 bytes for gold)
 def p(i):
  for n in{*sum(i,[])}:
   k=[[5]+[y*(y==n)or 5for y,*s in zip(x,*i)if n in s]+[5]for x in i if n in x];k=[t:=[5]*len(k[0])]+k+[t]

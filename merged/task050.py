@@ -1,4 +1,4 @@
-# att (91 vs 86 bytes for gold)
+# att (91 vs 85 bytes for gold)
 p=lambda a:[*map(f:=lambda*b,i=0:[c|3*(8in{*b[:i]}&{*b[(i:=i+1):]})for c in b],*map(f,*a))]
 
 ### ovs (96 bytes)

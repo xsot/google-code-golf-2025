@@ -1,4 +1,4 @@
-# joking (90 vs 84 bytes for gold)
+# joking (90 vs 75 bytes for gold)
 p=lambda i,n=1:(len(l:=(f:=lambda g:[x for x in zip(*g)if n in x])(f(i)))<6)*l or p(i,n+1)
 
 ### mwi (98 bytes)

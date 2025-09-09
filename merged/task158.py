@@ -10,7 +10,7 @@ def p(g):
       for X in range(s*3):g[y+Y][x+X]=t[Y//s][X//s]
  return g
 
-### mwi (306 (471 unzipped) bytes)
+### mwi (304 (471 unzipped) bytes)
 def p(g):
  o=g[0][-1];s,t=max((len({*sum(a:=[R[x:x+3]for R in g[y:y+3]],[])}),a)for y in range(len(g))for x in range(len(g[0])))
  for s in(1,2,3):

@@ -1,4 +1,4 @@
-# att (243 (293 unzipped) vs 194 bytes for gold)
+# att (242 (293 unzipped) vs 194 bytes for gold)
 def p(a):g=max(f:=sum(A:=a,[]),key=f.count);return[[[[g,d][d==e]for*b,d in zip(*a,b)if e in b]for b in a if e in b]for e in{*f}for i in range(2652)if[]<(b:=[a for a,A in zip(a,sum(zip(A,A),((),)*19)[i%51:])for a,A in zip(a,sum(zip(A,A),((),)*19)[i%52:])if a!=A==e!=g])==b[:1]*f.count(b[0])][0]
 
 ### ovs (267 bytes)
@@ -85,7 +85,7 @@ modchain(p, 5)
 ## this one checks if the hash modulo is in a list, unfortunately this means the list basically has to be the size of the number of ones
 p=lambda i:[[[t[-1],y][y==l]for*s,y in zip(*i,x)if l in s]for x in i if(l:=(t:=sorted({*(z:=sum(i,[]))},key=z.count))[(q:=0)+hash((*z,))%5009%2681in[q:=q+n for n in b' ">?,v%6&!!	B!Z%$7!0NK"?ND|Rt	']])in x]
 
-### mwi (304 (396 unzipped) bytes)
+### mwi (302 (396 unzipped) bytes)
 def p(g):
  f=sum(g,[]);*r,b=sorted({*f},key=f.count);W,H=len(g[0]),len(g);T={C:{(i,j)for i,r in enumerate(g)for j,v in enumerate(r)if C==v}for C in r}
  for c in r:

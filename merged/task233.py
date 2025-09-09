@@ -9,7 +9,7 @@ def p(g):
   s[:]=zip(*s[::-1])
  return g
 
-### xsot (307 (465 unzipped) bytes)
+### xsot (305 (465 unzipped) bytes)
 e=enumerate
 def p(g):
  w=[(y,x,s)for y,p in e(g[:-2])for x,p in e(p[:-2])if{*sum(s:=[v[x:x+3]for v in g[y:y+3]],[])}^{0}>{2,0}]
@@ -24,7 +24,7 @@ def p(g):
    s=*zip(*s[::-1]),
  return u
 
-### mwi (328 (460 unzipped) bytes)
+### mwi (326 (460 unzipped) bytes)
 def p(g):
  e=enumerate;w=[(y,x,s)for y,r in e(g[:-2])for x,c in e(r[:-2])if{*sum(s:=[v[x:x+3]for v in g[y:y+3]],[])}^{0}>{2,0}]
  for y,x,s in w:
@@ -37,7 +37,7 @@ def p(g):
    s=*zip(*s[::-1]),
  return u
 
-### combined (329 (460 unzipped) bytes)
+### combined (327 (460 unzipped) bytes)
 def p(g):
  e=enumerate;w=[(y,x,s)for y,r in e(g[:-2])for x,c in e(r[:-2])if{*sum(s:=[v[x:x+3]for v in g[y:y+3]],[])}^{0}>{2,0}]
  for y,x,s in w:
