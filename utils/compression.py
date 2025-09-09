@@ -143,10 +143,10 @@ def get_vars(src: bytes, alphabet: bytes):
 
     for i in ast.walk(tree):
         if isinstance(i, ast.arg):
-           identifiers.add(i.arg)
+           identifiers.add(i.arg.encode())
         if isinstance(i, ast.Name):
-            identifiers.add(i.id)
+            identifiers.add(i.id.encode())
         if isinstance(i, ast.FunctionDef):
-            identifiers.add(i.name)
+            identifiers.add(i.name.encode())
 
-    return sorted(i.encode() for i in identifiers if len(i)==1 and i in alphabet)
+    return sorted(i for i in identifiers if len(i)==1 and i in alphabet)
