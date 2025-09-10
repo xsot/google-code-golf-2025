@@ -1,4 +1,4 @@
-# ovs (245 (253 unzipped) vs 235 bytes for gold)
+# ovs (245 (253 unzipped) vs 226 bytes for gold)
 def p(g):
  A=[9*[M:=max(E:=sum(g,[]),key=E.count)]for(A)in g]
  for N in{*E}-{M}:
