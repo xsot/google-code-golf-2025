@@ -1,1 +1,2 @@
-p=lambda i,k=1:-k*i or p([[y or(sum(sum(i[:b+1],[]))*sum(sum(i[b:],[]))>0<k*6+2in x)*4for b,y in enumerate(x)]for x in zip(*i)],k-1)
+# almost identical to 246
+p=lambda i,k=1:-k*i or p([*map(lambda*x,b=0:[y|(any(sum(i[b:],[]))*any(sum(i[:(b:=b+1)],[]))>y<k*6+2in x)*4for y in x],*i)],k-1)
