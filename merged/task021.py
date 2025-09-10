@@ -1,12 +1,15 @@
-# combined (62 vs 57 bytes for gold)
+# ovs (54 vs 57 bytes for gold)
+p=lambda i:i*(i*0==0)or-~min(map(i.count,i))*[p(i[0])]
+
+##
+
+H=lambda w:1+min(map(w.count,w));p=lambda g:[g[0][:1]*H(g[0])]*H(g)
+
+### combined (62 bytes)
 p=lambda i,*n:[x for x in zip(*n or p(i,*i))if i!=(i:=x)][::2]
 
 ### att (64 bytes)
 p=eval('lambda a:[[a '+'for a in-~min(map(a.count,a))*a[:1]]'*2)
-
-### ovs (67 bytes)
-H=lambda w:1+min(map(w.count,w))
-p=lambda g:[g[0][:1]*H(g[0])]*H(g)
 
 ### xsot (78 bytes)
 p=lambda m:-~m.count(len(r:=m[0])*(a:=[*set(r)-{r[0]}]))*[-~r.count(*a)*r[:1]]

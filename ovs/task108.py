@@ -1,1 +1,5 @@
+p=lambda a:a>a*0!=0and[p(a[1])]*4+p(a[2:])or a
+
+##
+
 p=lambda g:sum([[sum([4*[v]for v in r[1::2]],[])]*4for r in g[1::2]],[])
