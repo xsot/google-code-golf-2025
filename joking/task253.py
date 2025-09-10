@@ -1,0 +1,1 @@
+def p(g):f=sum(g,[]);k=f*99;i=0;return[[max(v*(k[(i:=i+1)-j%5]==k[i+12-j%3*13]==v)for v in f)for j in R]for R in b"KKHH KEEH AEEM AAMM".split()]
