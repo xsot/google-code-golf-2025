@@ -1,4 +1,11 @@
-# mwi (106 vs 99 bytes for gold)
+# joking (105 vs 99 bytes for gold)
+p=lambda i,r=range(19):[i:=[[(z:=i[b])[~a]|z[a]|z[a%2*(b<a<18-b)*b+2]for b in r]for a in r]for _ in r][4]
+
+
+##
+exec(f"p=lambda i:[i:=[[(z:=i[b])[~a]|z[a]|z[a%2*(b<a<18-b)*b+2]{'for %s in range(19)]'*3%(*'ba_',)}[4]")
+
+### mwi (106 bytes)
 p=lambda i,r=range(19):[i:=[[i[~b][a]|i[b][a]|i[b%2*(a<b<18-a)*a+2][a]for b in r]for a in r]for _ in i][4]
 
 ### combined (107 bytes)
