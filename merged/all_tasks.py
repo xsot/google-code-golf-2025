@@ -243,8 +243,8 @@ def p(g,*S):
 p=lambda i,e=enumerate:[[y*(sum(sum([z[b+b%~b:b+2]for z in i[a+a%~a:a+2]],[]))>y)for b,y in e(x)]for a,x in e(i)]
 # task 98: 92 vs 88 bytes for gold, https://arcprize.org/play?task=4347f46a
 p=lambda i:[[y^min(t)for*t,y in zip(*w,[0]+s,s[1:]+[0],s)]for*w,s in zip(i[:1]+i,i[1:]+i,i)]
-# task 99: 149 vs 115 bytes for gold, https://arcprize.org/play?task=444801d8
-p=lambda i,k=19:-k*i or p([[-(y<e<0)or(y<0<1!=e!=-2)*e or y or-2*(e>1<k>14or-2==e)or-(k==19>1==e)for y,e in zip(x,[0]+x)]for*x,in zip(*i[::-1])],k-1)
+# task 99: 116 vs 115 bytes for gold, https://arcprize.org/play?task=444801d8
+p=lambda g,r=range(10):[[g[y][x]or max(sum(g[y:y+4],g[y-1]))*any(g[y-9][:x+1]*any(g[y-9][x:]))for x in r]for y in r]
 # task 100: 88 vs 85 bytes for gold, https://arcprize.org/play?task=445eab21
 p=lambda a:[[max(range(1,10),key=[sum({*b}&{*c})for c in zip(*a)for b in a].count)]*2]*2
 # task 101: 280 (338 unzipped) vs 281 bytes for gold, https://arcprize.org/play?task=447fd412
