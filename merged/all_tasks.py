@@ -683,11 +683,8 @@ p=lambda i:[[~b//~a^2]*3for a,b,_ in i]
 p=lambda g:g[(T:=[*zip(*[(x>0for y in g for x in y)]*9)]).index(min(T,key=T.count))*3:][:3%len(g)]or[*zip(*p([*zip(*g)]))]
 # task 264: 216 bytes, gold, https://arcprize.org/play?task=a8c38be5
 p=lambda g,R=range:[[sorted([sum([s[x:x+3]for s in g[y:y+3]],[])for y in R(len(g)-2)for x in R(len(g[0])-2)],key=lambda v:[-all(v)]+[A==5for A in v])[b"\0"[B//3*3+C//3]][B%3*3+C%3]for C in R(9)]for B in R(9)]
-# task 265: 141 vs 104 bytes for gold, https://arcprize.org/play?task=a8d7556c
-def p(i):
- for n in range(289):
-  if sum(i[a:=n//17][(b:=n%17):b+2]+i[a+1][b:b+2])<5<392!=a*sum(i[1]):i[a][b:b+2]=i[a+1][b:b+2]=2,2
- return i
+# task 265: 139 vs 104 bytes for gold, https://arcprize.org/play?task=a8d7556c
+import re;p=lambda g,i=2:eval(max(g:=re.sub(r"[02], [02](.{52})[02], [0i]",r"i, 2\g<1>2, 2",str(g))for _ in[0]*(3==hash((*g[0],))%98or 3)))
 # task 266: 103 vs 102 bytes for gold, https://arcprize.org/play?task=a9f96cdd
 p=lambda g:[([0,0,0,r%9,0,r//9]*2)[4-max(g).index(2):][:5]for r in b'\09\0G\0'[2-g.index(max(g)):][:3]]
 # task 267: 52 vs 46 bytes for gold, https://arcprize.org/play?task=aabf363d
