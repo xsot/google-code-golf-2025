@@ -130,8 +130,8 @@ def p(g):
    d=I-sum(T)/len(T);g[int(I.imag)][int(I.real)]=B;F=1;u=d+i
    while(g[int(u.imag)][int(u.real)]^B)*F:g[int(u.imag)][int(u.real)]=M[I];u+=d/2;F-=abs(d)<2
  return g
-# task 55: 95 vs 83 bytes for gold, https://arcprize.org/play?task=272f95fa
-p=lambda i,z=0:[[z:=z+min(x)%5]*(c:=0)+[c-(c:=c-y)or~-b""[c%3+z]for y in x]for x in i]
+# task 55: 77 vs 83 bytes for gold, https://arcprize.org/play?task=272f95fa
+p=lambda i,z=0:i*0!=0and[p(y,3*(z:=z+([y]>i)))for y in i]or i or 2222096>>z&7
 # task 56: 40 bytes, gold, https://arcprize.org/play?task=27a28665
 p=lambda i:[[0**i[0][0]+0**i[0][2]*3^2]]
 # task 57: 49 vs 48 bytes for gold, https://arcprize.org/play?task=28bf18c6
@@ -146,17 +146,19 @@ p=lambda g:[r[:1]*5+[5*(l>0)]+5*[l]for*r,l in g]
 p=lambda i,r=range(18):[[y*x%max(i[~0])+1for y in r]for x in r]
 # task 62: 143 bytes, gold, https://arcprize.org/play?task=2bcee788
 p=lambda i:{*i[s:=str(i).index(", 2")//31]+i[s+1]}-{2,3}and[*zip(*p(eval(str([*zip(*i)][::-1]).replace(*"03")))[9::-1])]or i[:s]+(i*2)[9+s::-1]
-# task 63: 77 vs 74 bytes for gold, https://arcprize.org/play?task=2bee17df
-p=lambda g:[[v or 3^3*(c>[0]*99<r[1:-1])for _,*c,_,v in zip(*g,r)]for r in g]
+# task 63: 76 vs 74 bytes for gold, https://arcprize.org/play?task=2bee17df
+p=lambda g:[[v or(c>[0]*99<r[1:-1])*3^3for _,*c,_,v in zip(*g,r)]for r in g]
 # task 64: 152 bytes, gold, https://arcprize.org/play?task=2c608aff
 p=lambda a,n=-3:n*a or[[d:=[e:=b.pop(),d][g[2]!=d>0<e!=g[1]in b]for _ in[*b]]for*b,in zip(*p(a,n+1))if[d:=0,g:=sorted(set(c:=sum(a,a[5])),key=c.count)]]
 # task 65: 91 bytes, gold, https://arcprize.org/play?task=2dc579da
 p=eval('lambda a:[[min(b:=sum(a,()),key=b.count)'+'for*a,in map(zip,a,a[len(a)//2+1:])]'*2)
-# task 66: 288 (327 unzipped) vs 268 bytes for gold, https://arcprize.org/play?task=2dd70a9a
+# task 66: 278 (322 unzipped) vs 268 bytes for gold, https://arcprize.org/play?task=2dd70a9a
 def p(g):
  M={A*1j+B:D for A,C in enumerate(g)for B,D in enumerate(C)};A,C=[y for y in M if M[y]==3];S=[(C+C-A,C-A,0,0),(A+A-C,A-C,0,0)]
  for*V,y,A,C,G in S:
-  if(y in M)*16>G|C+13>1>(M[y]==2!=exec("for y in V:g[int(y.imag)][int(y.real)]=3")):F=M[y]>7;y-=A*F;S+=[(y,*V,y+D,D,C+F,~-F*~G)for D in[A][F:]or[A*1j,A/1j]*G]
+  if(y in M)*16>G|C+13:
+   for y in(M[y]==2)*V:g[int(y.imag)][int(y.real)]=3
+   F=M[y]>7;y-=A*F;S+=[(y,*V,y+D,D,C+F,~-F*~G)for D in[A][F:]or[A*1j,A/1j]*G]
  return g
 # task 67: 33 bytes, gold, https://arcprize.org/play?task=2dee498d
 p=lambda a:[b[:len(a)]for b in a]
