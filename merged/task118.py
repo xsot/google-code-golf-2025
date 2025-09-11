@@ -1,4 +1,4 @@
-# ovs (245 (282 unzipped) vs 271 bytes for gold)
+# ovs (244 (282 unzipped) vs 271 bytes for gold)
 # based on Garry Moss' solution
 def p(I):
  for n in 2,3:

@@ -1,4 +1,4 @@
-# xsot (269 (488 unzipped) bytes, gold)
+# xsot (268 (488 unzipped) vs 269 bytes for gold)
 def p(g):
  s,t=max((len({*str(a:=[R[x:x+3]for R in g[y:y+3]])}),a)for y in range(len(g))for x in range(len(g[1])))
  for s in range(len(g[1])):

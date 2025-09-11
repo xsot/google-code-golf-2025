@@ -10,7 +10,7 @@ def p(g):
       for X in range(len(G[0])*s):g[Y+y][X+x]=G[Y//s][X//s]
      return g
 
-### combined (299 (406 unzipped) bytes)
+### combined (298 (406 unzipped) bytes)
 def p(g):
  R=range;G=g[-5:]
  for s in[()]*4:G=[x for x in zip(*G[::-1])if{*x}-{0,4}];g=[[*x]for x in zip(*g[::-1])if 4in(s:=s+x)]

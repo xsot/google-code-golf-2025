@@ -32,7 +32,7 @@ def p(g):
  K,C=zip(*[([*c,5].index(5),c.count(2))for c in zip(*g)]);K=b'\n%0s\n'%bytes(K);S={*K.split(b'\n')};Q(0,{});return g
 # the 0 in %0s is necessary to avoid variable substitution replacing the s with another letter
 
-### mwi (338 (409 unzipped) bytes)
+### mwi (337 (409 unzipped) bytes)
 def p(g):
  def Q(o,p):
   c=C[o:];(3,)<=c!=Q(o+1,p)
@@ -42,7 +42,7 @@ def p(g):
     for J in range(o//15*len(A)):g[I-A[0]+C[p[A]]][J+p[A]]|=g[I][m:=J+K.find(b'\n'+A+b'\n')]>0;g[I][m]=0
  K,C=zip(*[([*c,5].index(5),c.count(2))for c in zip(*g)]);K=b'\n'+bytes(K)+b'\n';S={*K.split(b'\n')};Q(0,{});return g
 
-### combined (342 (391 unzipped) bytes)
+### combined (341 (391 unzipped) bytes)
 t=b'\n'
 def p(g):
  def Q(o,p):

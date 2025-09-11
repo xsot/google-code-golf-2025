@@ -7,7 +7,7 @@ def p(g):
    while(g[int(u.imag)][int(u.real)]^B)*F:g[int(u.imag)][int(u.real)]=M[I];u+=d/2;F-=abs(d)<2
  return g
 
-### mwi (308 (379 unzipped) bytes)
+### mwi (305 (379 unzipped) bytes)
 def p(g):
  f=sum(g,[]);*C,p,B=sorted({*f},key=f.count);M={(i,I):J for(i,j)in enumerate(g)for(I,J)in enumerate(j)if J in C};T={(i,j)for(i,j)in M for(I,J)in M if(I-i)**2+(J-j)**2==1}
  for(i,j)in{*M}-T:
@@ -27,7 +27,7 @@ def p(g):
  for Q in range(25):g[I-2+Q//5][J-2+Q%5]=A
  return g
 
-### combined (380 (589 unzipped) bytes)
+### combined (378 (589 unzipped) bytes)
 def p(g):
  B=enumerate;K=sum(g,[]);*R,C,A=sorted({*K},key=K.count);L=max(G for(E,D)in B(g)for(F,G)in B(D[:-1])if G!=A!=C==D[F+1]);I,J=max([E,F]for(E,D)in B(g)for(F,G)in B(D[:-1])if g[E][F]==L!=A!=D[F+1]!=C!=D[F-1]!=A)
  for(F,G)in[[E,F]for(E,D)in B(g)for(F,G)in B(D[:-1])if G==L!=C==D[F+1]]:

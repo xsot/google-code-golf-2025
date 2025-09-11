@@ -6,7 +6,7 @@ def p(g):
   for k in N and{i-A*(min(s)-I)for I in m}&V:g[k//20][k%20]=1
  return g
 
-### mwi (330 (464 unzipped) bytes)
+### mwi (329 (464 unzipped) bytes)
 def p(g):
  G=g
  for _ in' '*96:G=[r[::-1]for r in zip(*G[(0,)*len(G[0])in G[:min(y for y in range(len(G))if 1in G[y])]:])];h,w=len(G),len(G[0])
@@ -19,7 +19,7 @@ def p(g):
       if V:g[y+H][x+W]=u+u//2
  return eval(str(g).replace(*'32'))
 
-### combined (334 (447 unzipped) bytes)
+### combined (333 (447 unzipped) bytes)
 def p(g,R=range,l=len):
  G=g
  for _ in' '*96:G=[r[::-1]for r in zip(*G[(0,)*l(G[0])in G[:min(y for y in R(l(G))if 1in G[y])]:])];h,w=l(G),l(G[0])
