@@ -1,1 +1,5 @@
-def p(g):e=enumerate;I,J=max(t:=[(y,x)for y,r in e(g)for x,c in e(r)if c]);s=3-0**g[I][J-3];x=min(x for y,x in t if y<I-s or x<J-s);y,*_,Y=[y for y,x in t if y<I-s or x<J-s];v=(Y+1-y)//(s+1);return[[g[y+v*n][x+v*m]and c for m,c in e(r[J-s:J+1])]for n,r in e(g[I-s:I+1])]
+def p(g):e=enumerate;y,x=max((y+1,x+1)for y,r in e(g)for x,c in e(r)if c);s=4-0**g[y-1][x-4];v=-~len(h:=[*filter(max,zip(*filter(max,zip(*g[:y-s]))))])//s;return[[h[Y*v][X*v]and C for X,C in e(R[x-s:x])]for Y,R in e(g[y-s:y])]
+
+##
+def p(g):I,J=max(t:=[(y,x)for y,r in enumerate(g)for x,c in enumerate(r)if c]);s=3-0**g[I][J-3];y,*_,Y=[y for y,r in enumerate(g)for x,c in enumerate(r)if c>0<I-s>y];v=(Y+2-y)//-~s;return[[g[y+v*n][min(x for y,r in enumerate(g)for x,c in enumerate(r)if c>0<I-s>y)+v*m]and c for m,c in enumerate(r[J-s:J+1])]for n,r in enumerate(g[I-s:I+1])]
+def p(g):e=enumerate;I,J=max(t:=[(y,x)for y,r in e(g)for x,c in e(r)if c]);s=3-0**g[I][J-3];y,*_,Y=[y for y,x in t if y<I-s or x<J-s];v=(Y+1-y)//(s+1);return[[g[y+v*n][min(x for y,x in t if y<I-s or x<J-s)+v*m]and c for m,c in e(r[J-s:J+1])]for n,r in e(g[I-s:I+1])]
