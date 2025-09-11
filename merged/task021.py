@@ -1,4 +1,7 @@
-# ovs (54 vs 57 bytes for gold)
+# mwi (51 vs 57 bytes for gold)
+p=lambda i:i*-1*-1or-~min(map(i.count,i))*[p(i[0])]
+
+### ovs (54 bytes)
 p=lambda i:i*(i*0==0)or-~min(map(i.count,i))*[p(i[0])]
 
 ##
