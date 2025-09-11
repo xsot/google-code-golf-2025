@@ -832,8 +832,8 @@ p=lambda i,r=range(8):[[max((x:=i[a])[b-5]&x[b-3],i[a-5][b]&i[a-3][b],x[b])for b
 p=lambda i:[[t&-y%5for y in x for t in s]for x in i for s in i]
 # task 316: 72 vs 71 bytes for gold, https://arcprize.org/play?task=cdecee7f
 p=lambda i:[(q:=sorted(map(max,*i),key=0 .__eq__))[:3],q[5:2:-1],q[6:9]]
-# task 317: 48 vs 59 bytes for gold, https://arcprize.org/play?task=ce22a75a
-p=lambda a:a>a*0==0 or a and[p(a[1])]*3+p(a[3:])
+# task 317: 43 vs 59 bytes for gold, https://arcprize.org/play?task=ce22a75a
+p=lambda a:a==5or a and[p(a[1])]*3+p(a[3:])
 # task 318: 60 vs 54 bytes for gold, https://arcprize.org/play?task=ce4f8723
 p=lambda i:[[any(y)*3for y in zip(*x)]for x in zip(i,i[5:])]
 # task 319: 242 (293 unzipped) vs 194 bytes for gold, https://arcprize.org/play?task=ce602527

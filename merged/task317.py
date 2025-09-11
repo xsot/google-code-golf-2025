@@ -1,4 +1,7 @@
-# ovs (48 vs 59 bytes for gold)
+# mwi (43 vs 59 bytes for gold)
+p=lambda a:a==5or a and[p(a[1])]*3+p(a[3:])
+
+### ovs (48 bytes)
 p=lambda a:a>a*0==0 or a and[p(a[1])]*3+p(a[3:])
 
 ### att (59 bytes)
