@@ -1,4 +1,14 @@
-# ovs (244 (282 unzipped) vs 271 bytes for gold)
+# joking (242 (282 unzipped) vs 271 bytes for gold)
+def p(I):
+ for n in 2,3:
+  z,t,T,*R=[{(l,n)for l,I in enumerate(I)for n,I in enumerate(I)if I>=C}for C in(0,2,5,7)]
+  for d,i in z:v={(l,I)for l,I in z if abs(d-l+(i-I)*1j)in{0,1,2,n}};R+=[l|v for l in R if t-l>v]
+  for l in R:
+   if t-T<l:
+    for l,n in l&T:I[l][n]=8
+    return I
+
+### ovs (244 (282 unzipped) bytes)
 # based on Garry Moss' solution
 def p(I):
  for n in 2,3:
@@ -19,15 +29,6 @@ def p(g,F=0):
     for I,J in{*X*all(V:=[not h>I>-1<J<w or g[I][J]for I,J in X])*(2in V[W%4-W:]or F)*(1<V[3:].count(2)==sum(5-v&v%~4for r in g[i-min(W,i):i-~W]for v in r[j-min(W,j):j-~W]))}:
      if h>I>-1<J<w:F=g[I][J]=2+g[I][J]%2*6
  return g
-
-### joking (271 (395 unzipped) bytes)
-# garry derived
-def p(p):
- t={(l,n)for l in range(len(p))for n in range(len(p[0]))if p[l][n]&2};d=lambda i,l:[i and(d(i[1:],l)or not l&i[0]and d(i[1:],l|i[0])),l][t<=l]
- for n in 2,3:
-  if l:=d([l for d in range(len(p))for i in range(len(p[0]))if(l:={(l,n)for l in range(-n,n+1)for l,n in[(d+l,i),(d,i+l)]if p[l:]and-1<n<len(p[0])})if min(p[l][n]for l,n in l)&2],set()):
-   for l,n in l-t:p[l][n]+=3
-   return p
 
 ### garry_moss (278 (416 unzipped) bytes)
 def p(p):

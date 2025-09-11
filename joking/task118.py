@@ -1,7 +1,8 @@
-# garry derived
-def p(p):
- t={(l,n)for l in range(len(p))for n in range(len(p[0]))if p[l][n]&2};d=lambda i,l:[i and(d(i[1:],l)or not l&i[0]and d(i[1:],l|i[0])),l][t<=l]
+def p(I):
  for n in 2,3:
-  if l:=d([l for d in range(len(p))for i in range(len(p[0]))if(l:={(l,n)for l in range(-n,n+1)for l,n in[(d+l,i),(d,i+l)]if p[l:]and-1<n<len(p[0])})if min(p[l][n]for l,n in l)&2],set()):
-   for l,n in l-t:p[l][n]+=3
-   return p
+  z,t,T,*R=[{(l,n)for l,I in enumerate(I)for n,I in enumerate(I)if I>=C}for C in(0,2,5,7)]
+  for d,i in z:v={(l,I)for l,I in z if abs(d-l+(i-I)*1j)in{0,1,2,n}};R+=[l|v for l in R if t-l>v]
+  for l in R:
+   if t-T<l:
+    for l,n in l&T:I[l][n]=8
+    return I
