@@ -1,0 +1,1 @@
+s='for %s,b in enumerate(%s)';exec(f"p=lambda a:min([j<=i,(C:=str(g:=[[b|6*(i<=m<=j)*(k<=n<=l){s}]{s}]).count)('7'),-C('6'),g]{s*4})[3]"%(*'nbmaiakbjalb',))
