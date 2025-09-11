@@ -4,64 +4,55 @@ import re
 import zlib
 import zopfli.zlib
 import functools
+import random
 
 PREFIXES = [b"",b"\n", b"\r",b"\f",b"\n\f",b"\r\f"] + [bytes([c,ne]) for c in b"\t\n\f\r 0123456789#" for ne in b"\n\r"]
 POSTFIXES = [b"",b" ",b"\t",b"\n",b"\r",b"\f",b"#",b";",b"\t ",b" \t",b"\np"] + [b"#"+bytes([n]) for n in range(32,127)]
+DEFAULT_ALPHABET = b"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnoqrstuvwxyz"
 
 @functools.lru_cache(maxsize=2048)
-def compress(task_src: bytes, alphabet:bytes = b"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnoqrstuvwxyz") -> bytes:
+def compress(task_src: bytes, rand_passes = 0, pre_and_post = True) -> bytes:
     
+    # Shortest compressible task is currently 184b
+    if len(task_src) < 160: return task_src
+
+    # Try random var orderings
+    random.seed(0)
+    rands = [
+        sub_vars(task_src, bytes(sorted(DEFAULT_ALPHABET, key = lambda c: random.random())))
+        for _ in [0] * rand_passes
+    ]
+
     for task_src_2 in (
-        sub_vars(task_src, alphabet), 
-        sub_vars(task_src, alphabet[::-1]),
+        sub_vars(task_src, DEFAULT_ALPHABET), 
+        sub_vars(task_src, DEFAULT_ALPHABET[::-1]),
+        *rands,
         task_src):
 
         # if adding a new compression method, try to keep these in order of
         # fastest to slowest
-        task_src = min(task_src, compress_with_zlib(task_src, task_src_2), key=len)
-        task_src = min(task_src, compress_with_libdeflate(task_src, task_src_2), key=len)
-        task_src = min(task_src, compress_with_zopfli(task_src, task_src_2), key=len)
-    
+        for method, window in (
+            ("zlib", -9),
+            ("zlib", -15),
+            ("libdeflate", -15),
+            ("zopfli", None)
+        ):
+            task_src = min(task_src, compress_with_method(task_src, task_src_2, method, window, pre_and_post), key=len)
     return task_src
 
-def compress_with_zlib(task_src: bytes, task_src_2: bytes) -> bytes:
-    zipped_src = zip_src(task_src_2, method="zlib", window=-9)
+
+def compress_with_method(task_src: bytes, task_src_2: bytes, method: str, window: int, pre_and_post: bool) -> bytes:
+    zipped_src = zip_src(task_src_2, method=method, window=window)
 
     if len(zipped_src) > len(task_src) + 10:
         return task_src
-
-    for pre in PREFIXES:
-        for post in POSTFIXES:
+    
+    for pre in (PREFIXES if pre_and_post else [b""]):
+        for post in (POSTFIXES if pre_and_post else [b""]):
             if len(pre+post) > 3: continue
-            for window in (-9, -15):
-                z_src = zip_src(pre+task_src_2+post, method="zlib", window=window)
-                if len(z_src)<len(zipped_src):zipped_src = z_src
-
-    return zipped_src
-
-def compress_with_zopfli(task_src: bytes, task_src_2: bytes) -> bytes:
-    zipped_src = zip_src(task_src_2, method="zopfli")
-    if len(zipped_src) > len(task_src) + 10:
-        return task_src
-    for pre in PREFIXES:
-        for post in POSTFIXES:
-            if len(pre+post) > 3: continue
-            z_src = zip_src(pre+task_src_2+post, method="zopfli")
+            z_src = zip_src(pre+task_src_2+post, method=method, window=window)
             if len(z_src)<len(zipped_src):zipped_src = z_src
-    return zipped_src
 
-
-def compress_with_libdeflate(task_src: bytes, task_src_2: bytes) -> bytes:
-    # libdeflate hardcodes a window of 32768
-    # https://github.com/ebiggers/libdeflate/blob/master/lib/zlib_compress.c
-    zipped_src = zip_src(task_src_2, method="libdeflate", window=-15)
-    if len(zipped_src) > len(task_src) + 10:
-        return task_src
-    for pre in PREFIXES:
-        for post in POSTFIXES:
-            if len(pre+post) > 3: continue
-            z_src = zip_src(pre+task_src_2+post, method="libdeflate", window=-15)
-            if len(z_src)<len(zipped_src):zipped_src = z_src
     return zipped_src
 
 def zip_src(src: bytes, method: str, window: int = None) -> bytes:

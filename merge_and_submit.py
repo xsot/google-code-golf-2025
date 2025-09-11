@@ -170,7 +170,7 @@ too_long = []
 passing = []
 total_save = 0
 for i, path in enumerate(changed_tasks):
-    print(f"\t{i}/{len(changed_tasks)}: {path}")
+    print(f"\t{i+1}/{len(changed_tasks)}: {path}")
 
     player, task_name = as_dir_and_name(path)
 
@@ -184,8 +184,18 @@ for i, path in enumerate(changed_tasks):
         failing.append(path)
         continue
 
+    # Ideally, we could run a single compression with 
+    #  rand_passes=some_big_number , pre_and_post=True
+    # However, that would be waaaay slow
+    # 
+    # it might not be too bad to try something like
+    # compress(preprocessed,rand_passes=5,pre_and_post=True)
+    compressed = min((
+        compress(preprocessed,rand_passes=0,pre_and_post=True),
+        compress(preprocessed,rand_passes=100,pre_and_post=False),
+        ), key=len)
+    
     # Compress unless the compressed code fails
-    compressed = compress(preprocessed)
     if not (assume_passing or test_task(task_name, compressed)):
         compressed = preprocessed
 
