@@ -2077,13 +2077,13 @@
     },
     "task084": {
         "gold": 62,
-        "best": 63,
+        "best": 62,
         "solutions": {
             "ovs": {
-                "source": "ZGVmIHAoZyxpPTApOgogd2hpbGUgZ1sxLWk6XTppLT0xO2dbfmldW2ldPTI7Z1stMV1baV09NAogcmV0dXJuIGc=",
-                "size_uncompressed": 65,
-                "compressed": "ZGVmIHAoZyxpPTApOgogd2hpbGUgZ1sxLWk6XTppLT0xO2dbfmldW2ldPTI7Z1stMV1baV09NAogcmV0dXJuIGc=",
-                "size_compressed": 65
+                "source": "ZGVmIHAoaSx4PTEpOmlbLTFdW3hdPTQ7aVt+eF1beF09MjtpWzp+eF1hbmQgcChpLHgrMSk7cmV0dXJuIGkKCiMjCgpkZWYgcChnLGk9MCk6CiB3aGlsZSBnWzEtaTpdOmktPTE7Z1t+aV1baV09MjtnWy0xXVtpXT00CiByZXR1cm4gZwo=",
+                "size_uncompressed": 62,
+                "compressed": "ZGVmIHAoaSx4PTEpOmlbLTFdW3hdPTQ7aVt+eF1beF09MjtpWzp+eF1hbmQgcChpLHgrMSk7cmV0dXJuIGk=",
+                "size_compressed": 62
             },
             "combined_solutions": {
                 "source": "ZGVmIHAoaSx4PTEpOmlbLTFdW3hdPTQ7aVt+eF1beF09MjtyZXR1cm4gaVs6fnhdYW5kIHAoaSx4KzEpb3IgaQ==",
@@ -2593,13 +2593,13 @@
     },
     "task106": {
         "gold": 67,
-        "best": 75,
+        "best": 72,
         "solutions": {
             "ovs": {
-                "source": "cD1sYW1iZGEgZywqeDpbeDo9W3c6PWErYls6Oi0xXSwqeCx3Wzo6LTFdXWZvcipiLGEgaW5bKnppcCgqZyxnKV1bOjotMV1dWy0xXQ==",
-                "size_uncompressed": 76,
-                "compressed": "cD1sYW1iZGEgZywqeDpbeDo9W3c6PWErYls6Oi0xXSwqeCx3Wzo6LTFdXWZvcipiLGEgaW5bKnppcCgqZyxnKV1bOjotMV1dWy0xXQ==",
-                "size_compressed": 76
+                "source": "Uz0nWzo6LTFdZm9yKngsYSBpbiB6aXAoKmksaSldJztwPWV2YWwoZidsYW1iZGEgaTpbYSt4e1N9K1t4K2EnK1MrU1s6Nl0pCgojIwoKcD1sYW1iZGEgZyxpPTA6Z1tpOl1hbmRbdzo9Z1tpXStbKlsqemlwKCpnKV1baV1dWzo6LTFdLCpwKGcsaSsxKSx3Wzo6LTFdXQo=",
+                "size_uncompressed": 72,
+                "compressed": "Uz0nWzo6LTFdZm9yKngsYSBpbiB6aXAoKmksaSldJztwPWV2YWwoZidsYW1iZGEgaTpbYSt4e1N9K1t4K2EnK1MrU1s6Nl0p",
+                "size_compressed": 72
             },
             "combined_solutions": {
                 "source": "cD1sYW1iZGEgaTooczo9W2EreCBmb3IgYSwqeCBpbiB6aXAoaSwqaVs6Oi0xXSldKStbeFs6Oi0xXWZvciB4IGluIHNbOjotMV1d",
