@@ -2,11 +2,11 @@ Biggest diffs (current - gold):
 	task069: 56
 	task319: 48
 	task156: 48
-	task265: 45
 	task170: 40
+	task034: 39
 Biggest diffs (current / gold):
-	task265: 1.433
 	task069: 1.371
+	task265: 1.356
 	task374: 1.339
 	task156: 1.329
 	task034: 1.312
