@@ -1,4 +1,7 @@
-# mwi (180 vs 146 bytes for gold)
+# joking (156 vs 146 bytes for gold)
+p=lambda i,r=range(10),S=sum:[[i[a][b]-S(S(t[b-1:b+2])for t in i[a-1:a+2])//36*(S(t:=[*map(S,i)])//S(t[:(h:=t.index(0,1))]*2)+2^(h<a))for b in r]for a in r]
+
+### mwi (180 bytes)
 # subtract from each cell
 # if all 4 adjacent cells are non-zero
 # and the y coord isnt on the first or last row.
