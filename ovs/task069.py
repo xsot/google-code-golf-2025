@@ -1,3 +1,11 @@
+# very slow (~200s locally)
+def p(g):f=str(g+[E:=enumerate]*9);return[[v==8and int([K for k,K in E(f)if{'8'}=={f[32*i+2+j*3-k+h]for h,H in E(f)if{K,H}<{*'12345679'}}][0])for j,v in E(r)]for i,r in E(g)]
+
+## faster solutions:
+
+def p(g):f=str(g+[E:=enumerate]*9);W=[i for i,v in E(f)if v in'12345679'];return[[v==8and int([f[k]for k in W if{'8'}=={f[32*i+2+j*3-k+h]for h in W}][0])for j,v in E(r)]for i,r in E(g)]
+
+
 def p(a,i=-1):
  for i in(I:={i//10+i:v*(v!=8)for v in sum(a,[])if[i:=i+1]*v}):s={i};[s.add(y)for y in[*I]*6if{y,y+1,y-1,y+11,y-11}&s];a[i//11][i%11]=I[[s for s in I if I[s]][sorted(s).index(i)]]-I[i]
  return a
