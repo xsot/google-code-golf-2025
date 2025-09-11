@@ -856,8 +856,8 @@ def p(g):R=range(len(g));return[[(D:=sorted((sum(T:=[abs(x-r),abs(y-c)]),~max(T)
 p=lambda a:[[0]*(l:=len(r)//2)+[r[l]]+l*[0]for r in a]
 # task 330: 135 vs 134 bytes for gold, https://arcprize.org/play?task=d2abd087
 p=lambda i,k=179:-k*i or p([[[k>78and 1<<4*(k:=k-1)or e|y,118%~(y%15)%3][k<1]*(y>0)for y,e in zip(x,[0]+x)]for*x,in zip(*i[::-1])],k-1)
-# task 331: 86 vs 83 bytes for gold, https://arcprize.org/play?task=d364b489
-p=lambda i,k=7:-k*i or p(eval(str([*zip(*i[::-1])]).replace("1, 0","1,86//k%10")),k-2)
+# task 331: 84 vs 83 bytes for gold, https://arcprize.org/play?task=d364b489
+p=lambda i,k=7:-k*i or p(eval(str([*zip(*i[::-1])]).replace("1, ","1,86//k%1")),k-2)
 # task 332: 61 vs 58 bytes for gold, https://arcprize.org/play?task=d406998b
 p=lambda m:[[len(r)*r.pop(0)%2*3or x for x in[*r]]for r in m]
 # task 333: 89 bytes, gold, https://arcprize.org/play?task=d43fd935
