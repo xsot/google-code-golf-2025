@@ -1,0 +1,1 @@
+p=lambda g,i=2,l=39:-l*g or p([*zip(*(a:=eval(str(g).replace(l//4*"5, ",l//4*f"{i*3%5},"))))][::-1],i+(g>a),l-1)

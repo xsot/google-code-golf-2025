@@ -970,8 +970,8 @@ def p(a):
 p=lambda a:[b for*b,in map(map,[max]*5,a,a[6:])]
 # task 373: 39 bytes, gold, https://arcprize.org/play?task=e9afcf9a
 p=lambda a:[b:=[*map(max,a)]*3,b[::-1]]
-# task 374: 150 vs 112 bytes for gold, https://arcprize.org/play?task=ea32f347
-p=lambda i,k=19,t=0:-k*i or p([*map(lambda*x,s=0:[0**k*sorted({*sum(i,[])}).index(y)*2%5or(y>0)*max(s,5+(t:=s and-~t),s:=y)for y in x],*i[::-1])],k-1)
+# task 374: 112 bytes, gold, https://arcprize.org/play?task=ea32f347
+p=lambda g,i=2,l=39:-l*g or p([*zip(*(a:=eval(str(g).replace(l//4*"5, ",l//4*f"{i*3%5},"))))][::-1],i+(g>a),l-1)
 # task 375: 53 bytes, gold, https://arcprize.org/play?task=ea786f4a
 def p(g,i=0):
  for r in g:r[i]=r[~i]=0;i+=1
