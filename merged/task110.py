@@ -1,4 +1,7 @@
-# mwi (105 vs 85 bytes for gold)
+# ovs (89 vs 85 bytes for gold)
+p=lambda g:[max([[0in{x,y,x^y}and(x|y)for x,y in zip(b,a)]for a in g],key=all)for b in g]
+
+### mwi (105 bytes)
 # If you find a golf for this hole, try applying it to task017
 p=lambda g,k=-1:k*g or p([*zip(*[max(a for a in g if all(x in[0,y]for x,y in zip(b,a)))for b in g])],k+1)
 
