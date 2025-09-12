@@ -3187,7 +3187,7 @@
     },
     "task132": {
         "gold": 86,
-        "best": 108,
+        "best": 86,
         "solutions": {
             "combined_solutions": {
                 "source": "cD1sYW1iZGEgaSxrPTM6LWsqaSBvciBwKFtbbWF4KHsqaVthXX0meyp5fXx7KnlbOmErMV19JnsqeVthOl19KWZvciBhIGluIHJhbmdlKGxlbihpKSldZm9yIHkgaW4gemlwKCppKV0say0xKQ==",
@@ -3200,6 +3200,12 @@
                 "size_uncompressed": 108,
                 "compressed": "cD1sYW1iZGEgaTpbaTo9W1ttYXgoeyppW2FdfSZ7Knl9fHsqeVs6YSsxXX0meyp5W2E6XX0pZm9yIGEgaW4gcmFuZ2UobGVuKGkpKV1mb3IgeSBpbiB6aXAoKmkpXWZvciBfIGluIGldWzNd",
                 "size_compressed": 108
+            },
+            "ovs": {
+                "source": "cD1sYW1iZGEgaSx2PTA6W2k6PVtbdnwodjo9dl5zdW0oeypBfSZ7Knl9KSlmb3IgQSBpbiBpXWZvciB5IGluIHppcCgqaSldZm9yIF8gaW4gaV1bMV0K",
+                "size_uncompressed": 86,
+                "compressed": "cD1sYW1iZGEgaSx2PTA6W2k6PVtbdnwodjo9dl5zdW0oeypBfSZ7Knl9KSlmb3IgQSBpbiBpXWZvciB5IGluIHppcCgqaSldZm9yIF8gaW4gaV1bMV0=",
+                "size_compressed": 86
             }
         }
     },
@@ -6012,7 +6018,7 @@
         }
     },
     "task250": {
-        "gold": 119,
+        "gold": 118,
         "best": 125,
         "solutions": {
             "ovs": {
