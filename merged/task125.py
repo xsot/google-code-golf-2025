@@ -1,4 +1,8 @@
-# mwi (141 vs 126 bytes for gold)
+# ovs (125 vs 126 bytes for gold)
+import re
+p=lambda i,k=15:-k*i or p(eval(re.sub('[83](?='+(k%3>0)*', 4|, 6'+'.{43}6)','344'[k%3],str([*zip(*i[::-1])]))),k-1)
+
+### mwi (141 bytes)
 p=lambda i,k=15,r=range(15):-k*i or p([[(y:=i[~b][a])*(y&4>0)or(3<i[~b][a-1]&i[-b][a]<7)*4or(i[-b][a-1]==6)*3or y for b in r]for a in r],k-1)
 
 ### combined (156 bytes)
