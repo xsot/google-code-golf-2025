@@ -1,4 +1,11 @@
-# combined (106 vs 94 bytes for gold)
+# ovs (102 vs 94 bytes for gold)
+def p(i):e=range(len(i));return[[max((k:=i[t]+[0]*29)[b+t-a]|k[b-t+a]for t in e)for b in e]for a in e]
+
+##
+
+p=eval('lambda i:list(list(max((k:=i[t]+[0]*29)[b+t-a]|k[b-t+a]'+"for %s in range(len(i)))"*3%(*'tba',))
+
+### combined (106 bytes)
 p=lambda i,e=enumerate:[[max((k:=z+[0]*99)[t+b-a]|k[a+b-t]for t,z in e(i))for b,y in e(x)]for a,x in e(i)]
 
 ### xsot (119 bytes)
