@@ -1,4 +1,17 @@
 def p(g):
+ r=[*map(max,*g[6:]),0,5,0].index;w=r(0,t:=r(5))
+ for l in range(16+t%15-w):
+  for s in 0,1:
+   u=*map(list,g),
+   for x in u[6:]:
+    s+=any(x[t:w])
+    for b in range(w-t):u[s][b+l]+=x[b+t]>4;x[b+t]=0
+   g=p(u)or g
+ if{*sum(g[:3],[])}=={1,2}:return g
+
+##
+
+def p(g):
  def Q(o,p):
   c=C[o:];(3,)<=c!=Q(o+1,p)
   for A in S:
