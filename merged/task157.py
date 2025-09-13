@@ -1,4 +1,4 @@
-# ovs (251 (262 unzipped) vs 248 bytes for gold)
+# ovs (246 (256 unzipped) vs 248 bytes for gold)
 def p(g):
  r=[*map(max,*g[6:]),0,5,0].index;w=r(0,t:=r(5))
  for l in range(16+t%15-w):
@@ -6,9 +6,9 @@ def p(g):
    u=*map(list,g),
    for x in u[6:]:
     s+=any(x[t:w])
-    for b in range(w-t):u[s][b+l]+=x[b+t]>4;x[b+t]=0
+    for b in range(t,w):u[s][b-t+l]+=x[b]>4;x[b]=0
    g=p(u)or g
- if{*sum(g[:3],[])}=={1,2}:return g
+ if{*g[1]+g[2]}=={1,2}:return g
 
 ##
 
