@@ -1,0 +1,1 @@
+p=lambda a,n=-3,d=0:n*a or p([[b.pop()or(2+n%2*6in b)*d*4for c in a[::-1]if[d:=d^any({*c}-{4})]]for*b,in zip(*a)],n+1)

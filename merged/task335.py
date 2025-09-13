@@ -1,4 +1,7 @@
-# joking (128 vs 107 bytes for gold)
+# att (118 vs 107 bytes for gold)
+p=lambda a,n=-3,d=0:n*a or p([[b.pop()or(2+n%2*6in b)*d*4for c in a[::-1]if[d:=d^any({*c}-{4})]]for*b,in zip(*a)],n+1)
+
+### joking (128 bytes)
 # almost identical to 246
 p=lambda i,k=1:-k*i or p([*map(lambda*x,b=0:[y|(any(sum(i[b:],[]))*any(sum(i[:(b:=b+1)],[]))>y<k*6+2in x)*4for y in x],*i)],k-1)
 

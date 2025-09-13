@@ -1,3 +1,1 @@
-def p(a,n=0,b=0):
-	for c in a:d=b;b^=sum(c)%8*4&8;c[j]=c[j:=sum(a,c).index(3-n)%len(c)]or d|b
-	*d,=map(list,zip(*a));return n*d or p(d,1)
+p=lambda a,n=-3,d=0:n*a or p([[b.pop()or(2+n%2in b)*d*4for c in a[::-1]if[d:=d^sum(c)&2]]for*b,in zip(*a)],n+1)
