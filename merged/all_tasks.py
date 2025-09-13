@@ -538,14 +538,14 @@ def p(g):
    if(c!=M)>sum(sum(A[1+C:C+E-1])for A in g[1+B:B+D-1]):
     for g[B][C:C+E]in A:B+=1
     return g
-# task 209: 290 (429 unzipped) vs 289 bytes for gold, https://arcprize.org/play?task=8a004b2b
+# task 209: 276 (427 unzipped) vs 289 bytes for gold, https://arcprize.org/play?task=8a004b2b
 def p(g):
  G=g[-5:]
- for s in[()]*4:G=[x for x in zip(*G[::-1])if{*x}-{0,4}];g=[[*x]for x in zip(*g[::-1])if 4in(s:=s+x)]
- for s in[2,3,4]:
+ for s in range(20):G=[x for x in zip(*G)if{*x}-{b:=0,4}];g=[[*x]for x in zip(*g)if b|(b:=b^(4in x))]
+ for s in range(20):
   for y in range(20):
    for x in range(20):
-    if all(g[Y][X]in[0,4-4*(y<=Y<y+len(G)*s>0<x<=X<x+len(G[0])*s)or G[(Y-y)//s][(X-x)//s]]for Y in range(len(g))for X in range(len(g[0]))):
+    if all(g[Y][X]in[0,4-4*(len(G)*s>Y-y>-1<X-x<len(G[0])*s)or G[(Y-y)//s][(X-x)//s]]for Y in range(len(g))for X in range(len(g[0]))):
      for Y in range(len(G)*s):
       for X in range(len(G[0])*s):g[Y+y][X+x]=G[Y//s][X//s]
      return g
