@@ -1,4 +1,8 @@
-# xsot (113 vs 105 bytes for gold)
+# ovs (108 vs 105 bytes for gold)
+import re
+p=lambda m:[m:=eval(re.sub("0(?=(.{34}(1)){2})|(?<=((2).{34}){2})0",r"\2\4",str(m)))for _ in m][9]
+
+### xsot (113 bytes)
 import re
 p=lambda m,S=re.sub:eval(eval('S("(?<=(2.{34}){2})0","2",S("0(?=(.{34}1){2})","1",'*9+f'"{m}"'+'))'*9))
 
@@ -15,5 +19,5 @@ p=lambda m,i=20:-i*m or p(eval(re.sub("(0?(<?==((2..{{3344}}1)){{22}}))0"[i%2::2
 import re
 p=lambda m,i=20:-i*m or p(eval(re.sub(["(?<=(2.{34}){2})0","0(?=(.{34}1){2})"][i%2],"21"[i%2],str(m))),i-1)
 
-### combined (tied, 113 bytes)
+### combined (113 bytes)
 p=lambda i,k=19,r=range(10):-k*i or p([[i[~b][~a]or(a*b>0)*i[-b][-a]&2-k%2&i[1-b][1-a]for b in r]for a in r],k-1)
