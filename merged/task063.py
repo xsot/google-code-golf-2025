@@ -1,4 +1,7 @@
-# ovs (76 vs 74 bytes for gold)
+# joking (75 vs 74 bytes for gold)
+p=lambda g:[[v+3-3*(c>[-v]*99<r[1:-1])for _,*c,_,v in zip(*g,r)]for r in g]
+
+### ovs (76 bytes)
 p=lambda g:[[v or(c>[0]*99<r[1:-1])*3^3for _,*c,_,v in zip(*g,r)]for r in g]
 
 ##
