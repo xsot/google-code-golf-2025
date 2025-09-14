@@ -5559,7 +5559,7 @@
     },
     "task201": {
         "gold": 208,
-        "best": 208,
+        "best": 207,
         "solutions": {
             "mwi": {
                 "source": "ZGVmIHAoZyk6CiBILEk9ZGl2bW9kKHN1bShwOj1nLFtdKS5pbmRleCg0KSxsZW4oZykpCiBmb3IgQSBpbicgemlwJzp4PSgpO3A9W1sqQV1bOjotMV1mb3IgQSBpbiB6aXAoKnApaWYgNGluKHg6PXgrQSldCiBmb3IoQyxEKWluIGVudW1lcmF0ZShwKTpnW0MrSF1bSTpJK2xlbihEKV09WzBdKmxlbihEKQogZm9yIEEgaW4nIHppcCc6eD0oKTtzPWc7Zz1bQVs6Oi0xXWZvciBBIGluIHppcCgqZylpZiBzdW0oeDo9eCtBKV0KIGZvcihDLEQpaW4gZW51bWVyYXRlKGcpOnBbQysxXVsxOi0xXT1EWzo6MXwtKHBbMV1bMF1pbiBzWzBdKV0KIHJldHVybiBw",
@@ -5571,10 +5571,10 @@
                 "escape_cost": 0
             },
             "ovs": {
-                "source": "ZGVmIHAoZyk6aj1EPTA7UD1bXTtleGVjKCJmb3IgciBpbiBnOlY9cltqXTtGPVY9PTQ7UCs9W1ZdKkQ7RF49RjtyW2pdKj1EfEY8MVxuais9MVxuIioxMysiZ1s6XT1maWx0ZXIoYW55LHppcCgqZykpOyIqMik7QSwqXyxCPW1hcChtYXgsKmcpO0U9NCwqWzBdKmxlbihnWzBdKSw0O3JldHVybltFLCpbW0EsKnIsQl1bOjpBPT1QWzBdb3ItMV1mb3IgciBpbiBnXSxFXQo=",
-                "size_uncompressed": 208,
-                "compressed": "ZGVmIHAoZyk6aj1EPTA7UD1bXTtleGVjKCJmb3IgciBpbiBnOlY9cltqXTtGPVY9PTQ7UCs9W1ZdKkQ7RF49RjtyW2pdKj1EfEY8MVxuais9MVxuIioxMysiZ1s6XT1maWx0ZXIoYW55LHppcCgqZykpOyIqMik7QSwqXyxCPW1hcChtYXgsKmcpO0U9NCwqWzBdKmxlbihnWzBdKSw0O3JldHVybltFLCpbW0EsKnIsQl1bOjpBPT1QWzBdb3ItMV1mb3IgciBpbiBnXSxFXQ==",
-                "size_compressed": 208,
+                "source": "ZGVmIHAoZyk6aj1EPTA7UD1bXTtleGVjKCJmb3IgciBpbiBnOkY9cltqXT09NDtQKz1bcltqXV0qRDtEXj1GO3Jbal0qPUR8RjwxXG5qKz0xXG4iKjEzKyJnWzpdPWZpbHRlcihhbnksemlwKCpnKSk7IioyKTtBLCpfLEI9bWFwKG1heCwqZyk7RT00LCpbMF0qbGVuKGdbMF0pLDQ7cmV0dXJuW0UsKltbQSwqcixCXVs6OkE9PVBbMF1vci0xXWZvciByIGluIGddLEVdCg==",
+                "size_uncompressed": 207,
+                "compressed": "ZGVmIHAoZyk6aj1EPTA7UD1bXTtleGVjKCJmb3IgciBpbiBnOkY9cltqXT09NDtQKz1bcltqXV0qRDtEXj1GO3Jbal0qPUR8RjwxXG5qKz0xXG4iKjEzKyJnWzpdPWZpbHRlcihhbnksemlwKCpnKSk7IioyKTtBLCpfLEI9bWFwKG1heCwqZyk7RT00LCpbMF0qbGVuKGdbMF0pLDQ7cmV0dXJuW0UsKltbQSwqcixCXVs6OkE9PVBbMF1vci0xXWZvciByIGluIGddLEVd",
+                "size_compressed": 207,
                 "method": "none"
             },
             "combined_solutions": {
