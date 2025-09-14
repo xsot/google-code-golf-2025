@@ -12,9 +12,10 @@ DEFAULT_ALPHABET = b"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnoqrstuvwxyz"
 
 @functools.lru_cache(maxsize=2048)
 def compress(task_src: bytes, rand_passes = 0, pre_and_post = True) -> bytes:
-    
+    stats = {'method': 'none'}
+
     # Shortest compressible task is currently 184b
-    if len(task_src) < 160: return task_src
+    if len(task_src) < 160: return task_src, stats
 
     # Try random var orderings
     random.seed(0)
@@ -24,7 +25,7 @@ def compress(task_src: bytes, rand_passes = 0, pre_and_post = True) -> bytes:
     ]
 
     for task_src_2 in (
-        sub_vars(task_src, DEFAULT_ALPHABET), 
+        sub_vars(task_src, DEFAULT_ALPHABET),
         sub_vars(task_src, DEFAULT_ALPHABET[::-1]),
         *rands,
         task_src):
@@ -37,23 +38,23 @@ def compress(task_src: bytes, rand_passes = 0, pre_and_post = True) -> bytes:
             ("libdeflate", -15),
             ("zopfli", None)
         ):
-            task_src = min(task_src, compress_with_method(task_src, task_src_2, method, window, pre_and_post), key=len)
-    return task_src
+            task_src, stats = min((task_src, stats), compress_with_method(task_src, task_src_2, method, window, pre_and_post), key=lambda x:len(x[0]))
+    return task_src, stats
 
 
 def compress_with_method(task_src: bytes, task_src_2: bytes, method: str, window: int, pre_and_post: bool) -> bytes:
-    zipped_src = zip_src(task_src_2, method=method, window=window)
+    best_zipped_src, best_stats = zip_src(task_src_2, method=method, window=window)
 
-    if len(zipped_src) > len(task_src) + 10:
-        return task_src
-    
+    if len(best_zipped_src) > len(task_src) + 10:
+        return task_src, {} # TODO
+
     for pre in (PREFIXES if pre_and_post else [b""]):
         for post in (POSTFIXES if pre_and_post else [b""]):
             if len(pre+post) > 3: continue
-            z_src = zip_src(pre+task_src_2+post, method=method, window=window)
-            if len(z_src)<len(zipped_src):zipped_src = z_src
+            z_src, stats = zip_src(pre+task_src_2+post, method=method, window=window)
+            if len(z_src)<len(best_zipped_src):best_zipped_src, best_stats = z_src, stats
 
-    return zipped_src
+    return best_zipped_src, best_stats
 
 def zip_src(src: bytes, method: str, window: int = None) -> bytes:
     # Save on import re
@@ -87,6 +88,7 @@ def zip_src(src: bytes, method: str, window: int = None) -> bytes:
             else:         b_out.append(ch)
         return b_out
 
+    len_before_escape = len(compressed)
     compressed = sanitize(compressed)
 
     delim = b'"""' if compressed[-1:] != b'"' else b"'''"
@@ -101,15 +103,25 @@ def zip_src(src: bytes, method: str, window: int = None) -> bytes:
         delim = b'"'
         compressed = compressed.replace(b'"', b'\\"').replace(b"\n", b"\\n")
 
+    stats = {
+        'method': method,
+        'window': window,
+        'escape_cost': len(compressed) - len_before_escape,
+    }
+
+    # it seems that a window length of 512 is always enough to decode our solutions
+    if window < 15:
+        window = -9
+
     return header+b"\nexec(zlib.decompress(bytes(" + \
         delim + compressed + delim + \
-        b',"L1")'+(b',%d'%window if window<15 else b'')+b'))'
+        b',"L1")'+(b',%d'%window if window<15 else b'')+b'))', stats
 
 def sub_vars(src: bytes, alphabet:bytes = b"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnoqrstuvwxyz") -> bytes:
-    
+
     if set(alphabet) != set(b"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnoqrstuvwxyz"):
         raise ValueError("alphabet must be an ordering of all letters except lowercase p")
-    
+
     vars_prev = get_vars(src, alphabet)
 
     if len(vars_prev) == 0:
@@ -119,7 +131,7 @@ def sub_vars(src: bytes, alphabet:bytes = b"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghij
 
     # first try replacing variables with letters that already exist in the source,
     # most common first
-    vars_new_1 = sorted(rest, 
+    vars_new_1 = sorted(rest,
         key=lambda c: (-varless.count(c), -alphabet.index(c)))
 
     # then use the rest of the letters. bruteforcing different orderings

@@ -6,6 +6,7 @@ import os
 import pandas as pd
 import random
 import sys
+import warnings
 import zipfile
 
 from utils.compression import compress
@@ -22,9 +23,11 @@ default_kaggle = ""
 # Configuration: Skips testing whether solutions pass. Use with caution
 assume_passing = False
 
-# Configuration: Update all solutions. Use, for example, if you have updated
+# Configuration: Force all solutions to be updated. Use, for example, if you have updated
 # the compression function and want to run it on all files
 update_all = False
+# Configuration: Force selected solutions to be updated. Requires update_all = False
+update_only = []
 
 # Configuration: How many diffs to report in stats.txt
 stats_size = 5
@@ -39,6 +42,8 @@ player_dirs = [
     'combined_solutions',
     'garry_moss'
 ]
+
+warnings.filterwarnings("ignore")
 
 output_dir = "merged"
 
@@ -161,13 +166,18 @@ if update_all:
         [as_path(player, num_to_task_name(n))
             for n in range(1, task_count+1)
             for player in player_dirs]))
+elif update_only:
+    changed_tasks = list(filter(os.path.exists,
+        [as_path(player, num_to_task_name(n))
+            for n in update_only
+            for player in player_dirs]))
 
 
 print(f"Updating {len(changed_tasks)} changed tasks...")
 
 failing = []
 too_long = []
-passing = []
+improved = []
 total_save = 0
 for i, path in enumerate(changed_tasks):
     print(f"\t{i+1}/{len(changed_tasks)}: {path}")
@@ -184,33 +194,35 @@ for i, path in enumerate(changed_tasks):
         failing.append(path)
         continue
 
-    # Ideally, we could run a single compression with 
+    # Ideally, we could run a single compression with
     #  rand_passes=some_big_number , pre_and_post=True
     # However, that would be waaaay slow
-    # 
+    #
     # it might not be too bad to try something like
     # compress(preprocessed,rand_passes=5,pre_and_post=True)
-    compressed = min((
+    compressed, stats = min((
         compress(preprocessed,rand_passes=0,pre_and_post=True),
         compress(preprocessed,rand_passes=100,pre_and_post=False),
-        ), key=len)
-    
+        ), key=lambda x:len(x[0]))
+
     # Compress unless the compressed code fails
     if not (assume_passing or test_task(task_name, compressed)):
         compressed = preprocessed
 
     if player in task_sols and len(compressed) > task_sols[player]["size_compressed"]:
-        too_long.append((path, len(compressed), task_sols[player]["size_compressed"]))
+        too_long.append((path, len(compressed), task_sols[player]["size_compressed"], tasks[task_name]['best']))
         continue
 
-    passing.append(path)
+    if player in task_sols and len(compressed) < task_sols[player]["size_compressed"]:
+        improved.append((path, len(compressed), task_sols[player]["size_compressed"], tasks[task_name]['best']))
 
     # Update JSON
     tasks[task_name]["solutions"][player] = {
         "source" : base64.b64encode(src).decode('ASCII'),
         "size_uncompressed" : len(preprocessed),
         "compressed" : base64.b64encode(compressed).decode('ASCII'),
-        "size_compressed" : len(compressed)
+        "size_compressed" : len(compressed),
+        **stats
     }
 
     # Update best
@@ -218,6 +230,11 @@ for i, path in enumerate(changed_tasks):
     if improvement > 0:
         tasks[task_name]["best"] = len(compressed)
         total_save += improvement
+
+if any(improved):
+    print(f"{len(improved)} TASK{'S' * (len(improved) != 1)} IMPROVED:")
+    for path, current, prev, best in improved:
+        print(f"\t{path} - current: {current}, prev: {prev}, prev_best: {best}")
 
 # Exit if there are problems with any changed solutions
 if any(failing) or any(too_long):
@@ -227,8 +244,8 @@ if any(failing) or any(too_long):
             print("\t" + path)
     if any(too_long):
         print(f"{len(too_long)} TASK{'S' * (len(too_long) != 1)} WORSE THAN PREVIOUS:")
-        for path, current, best in too_long:
-            print(f"\t{path} - current: {current}, best: {best}")
+        for path, current, prev, best in too_long:
+            print(f"\t{path} - current: {current}, prev: {prev}, best: {best}")
     print("ABORTING MERGE")
     exit()
 
