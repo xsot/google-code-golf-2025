@@ -1,4 +1,8 @@
-# ovs (99 vs 96 bytes for gold)
+# att (98 vs 96 bytes for gold)
+import re
+p=lambda i:eval(eval('re.sub("0, 0, 0(.{55})?"*3,"*(1,)*3\%d"*3%(1,2,3),'*2+f'"{i}"))'))
+
+### ovs (99 bytes)
 import re;p=lambda i:eval('eval(re.sub("0, 0, 0(.{55})?"*3,"1,1,1\%d "*3%(1,2,3),str('*3+'i'+')'*9)
 
 ### mwi (101 bytes)
@@ -6,14 +10,6 @@ import re;p=lambda i:[i:=eval(re.sub("0, 0, 0(.{55})?"*3,"1,1,1\%d "*3%(1,2,3),s
 
 ### combined (107 bytes)
 import re;p=lambda i,k=2:-k*i or p(eval(re.sub("0, 0, 0(.{55})?"*3,r"1,1,1\1 1,1,1\2 1,1,1\3",str(i))),k-1)
-
-### att (132 bytes)
-r=range(324)
-def p(a):
-	for i in r:
-		b=a[i%18:][:3];i//=18;z=any(max([*zip(*b)][i:i+3]))
-		for k in r:b[k%5%3][i+k%3]**=z
-	return a
 
 ### xsot (161 bytes)
 def p(m,R=range):
