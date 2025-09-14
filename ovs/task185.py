@@ -1,3 +1,7 @@
+p=eval(('lambda i:'+'[[sum({r.pop()}&)r,r[1:])]*'*2+'[[r[0]r,*i)if]i if])])]').translate([0,"{*r}-{*i[0]}","zip(","for*r,in "]))
+
+## without the `str.translate` compression:
+
 exec('def p(i):h={*i[0]};return'+'[[a*({a}=={b}-h)for a,b in zip(r,r[1:])]for*r,in zip(*'*2+'[[t[0]for t in zip(s,*i)if{*t}-h]for s in i if{*s}-h])])]')
 
 ## idea for a shorter solution? Doesn't quite work, dealing with empty lines in the output is difficult.

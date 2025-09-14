@@ -339,7 +339,7 @@ def p(g):
      for Q in{G}^A:
       for V in(E:=[k for k in I if M[D]==M[k]==M[G]]):V+=(len(E)^6)%6*(Q-G);g[V//90][V%90],={M[k]for k in I}-{M[D]}
  return g
-# task 134: 174 vs 186 bytes for gold, https://arcprize.org/play?task=5ad4f10b
+# task 134: 174 vs 181 bytes for gold, https://arcprize.org/play?task=5ad4f10b
 def p(g):D,C=sorted({*sum(g,[])}-{0},key=lambda c:str(g).count(f'{c}, '*2));g=[[D*(v==C)for v in r]for r in g];exec("*h,=filter(any,zip(*g));g[:]=h[::len(h)//3];"*2);return g
 # task 135: 32 bytes, gold, https://arcprize.org/play?task=5bd6f4ac
 p=lambda a:[b[6:]for b in a[:3]]
@@ -477,12 +477,12 @@ def p(g):
 def p(g):A=len(g);B=range(2,A-2);return[[g[C][B]%7*g[0-C*2//A][0-B*2//A]for B in B]for C in B]
 # task 184: 101 vs 100 bytes for gold, https://arcprize.org/play?task=780d0b14
 p=lambda i,k=0,s=[0]*99:[s+0*(s:=[*x])for x in zip(*k or p(i,i))if-~-any(x)*(s:=[*map(max,s,x)])]+[s]
-# task 185: 152 vs 143 bytes for gold, https://arcprize.org/play?task=7837ac64
-exec('def p(i):h={*i[0]};return'+'[[a*({a}=={b}-h)for a,b in zip(r,r[1:])]for*r,in zip(*'*2+'[[t[0]for t in zip(s,*i)if{*t}-h]for s in i if{*s}-h])])]')
+# task 185: 138 vs 143 bytes for gold, https://arcprize.org/play?task=7837ac64
+p=eval(('lambda i:'+'[[sum({r.pop()}&)r,r[1:])]*'*2+'[[r[0]r,*i)if]i if])])]').translate([0,"{*r}-{*i[0]}","zip(","for*r,in "]))
 # task 186: 66 vs 60 bytes for gold, https://arcprize.org/play?task=794b24be
 p=lambda m:[[*(c:=sum(sum(m,[])))*[2],0,0][:3],[0,c//4*2,0],[0]*3]
-# task 187: 106 vs 92 bytes for gold, https://arcprize.org/play?task=7b6016b9
-p=lambda i,k=79:-k*i or[[y*(y!=2)or(z==3)*3or y or 2for y,z in zip(x,[3]+x)]for*x,in zip(*p(i,k-1)[::-1])]
+# task 187: 93 vs 92 bytes for gold, https://arcprize.org/play?task=7b6016b9
+p=lambda i,k=79:-k*i or[*map(lambda*x,z=3:[y|(z*(z:=y)==6)*3or 2for y in x],*p(i,k-1)[::-1])]
 # task 188: 75 vs 61 bytes for gold, https://arcprize.org/play?task=7b7f7511
 p=lambda a:[a[:len(a)//2],c:=[b[:len(b)//2]for b in a]][a==[b*2for b in c]]
 # task 189: 111 bytes, gold, https://arcprize.org/play?task=7c008303
