@@ -12,7 +12,7 @@ p=lambda i,k=20,r=re.sub:-k*i or p(eval(r(f'({(h:=(5,)*-~(n:=k%5))}(?={(r:=(s:=f
 import re
 p=lambda i,k=7,r=re.sub:-k*i or p(eval(r((h:="("+"5, "*(n:=k%5)+"5)")+((s:=f"(.{ {34-n*3}})")+"(5, "+"0, "*n+"5)")*n+s+h,lambda m,s=1:"".join(r(str(s:=s^1),"2",z)for z in m.groups()),str(i))),k-1)
 
-### ovs (271 (310 unzipped) bytes)
+### ovs (270 (310 unzipped) bytes)
 R=range;W=R(12)
 def p(g):
  def t(C):

@@ -1,4 +1,4 @@
-# ovs (283 (362 unzipped) vs 280 bytes for gold)
+# ovs (282 (362 unzipped) vs 280 bytes for gold)
 def p(g):
  f=sum(g,[]);*C,_,B=sorted({*f},key=f.count);M={i*1j+j:v for i,r in enumerate(g)for j,v in enumerate(r)if v in C};T={i for i in M for I in M if abs(I-i)==1}
  for i in{*M}-T:
@@ -27,7 +27,7 @@ def p(g):
  for Q in range(25):g[I-2+Q//5][J-2+Q%5]=A
  return g
 
-### combined (378 (589 unzipped) bytes)
+### combined (377 (589 unzipped) bytes)
 def p(g):
  B=enumerate;K=sum(g,[]);*R,C,A=sorted({*K},key=K.count);L=max(G for(E,D)in B(g)for(F,G)in B(D[:-1])if G!=A!=C==D[F+1]);I,J=max([E,F]for(E,D)in B(g)for(F,G)in B(D[:-1])if g[E][F]==L!=A!=D[F+1]!=C!=D[F-1]!=A)
  for(F,G)in[[E,F]for(E,D)in B(g)for(F,G)in B(D[:-1])if G==L!=C==D[F+1]]:

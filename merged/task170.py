@@ -1,4 +1,4 @@
-# mwi (220 (226 unzipped) vs 196 bytes for gold)
+# mwi (219 (226 unzipped) vs 196 bytes for gold)
 def p(g):e=enumerate;y,x=max((y+1,x+1)for y,r in e(g)for x,c in e(r)if c);s=4-0**g[y-1][x-4];v=-~len(h:=[*filter(max,zip(*filter(max,zip(*g[:y-s]))))])//s;return[[h[Y*v][X*v]and C for X,C in e(R[x-s:x])]for Y,R in e(g[y-s:y])]
 
 ## a good bit longer, but almost tied due to compressing a lot better
@@ -11,7 +11,7 @@ def p(g):
  while g[i-1][j-1]:i-=1;j-=1
  x=min(x for y,x in t if y<i or x<j);y,*_,Y=[y for y,x in t if y<i or x<j];s=(Y+1-y)//(I+1-i);return[[g[y+s*n][x+s*m]and c for m,c in e(r[j:J+1])]for n,r in e(g[i:I+1])]
 
-### ovs (268 (303 unzipped) bytes)
+### ovs (267 (303 unzipped) bytes)
 E=enumerate
 def p(g):
  I,J,W,*C=next((i,j,3+(r[j+3]>0))for i,r in E(g)for j,_ in E(r)if[*{*all(s:=r[j:j+3]+g[i+1][j:j+3])*s}][1:])

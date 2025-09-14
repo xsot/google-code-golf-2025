@@ -1,4 +1,4 @@
-# ovs (278 (322 unzipped) vs 268 bytes for gold)
+# ovs (277 (322 unzipped) vs 268 bytes for gold)
 def p(g):
  M={A*1j+B:D for A,C in enumerate(g)for B,D in enumerate(C)};A,C=[y for y in M if M[y]==3];S=[(C+C-A,C-A,0,0),(A+A-C,A-C,0,0)]
  for*V,y,A,C,G in S:
@@ -7,7 +7,7 @@ def p(g):
    F=M[y]>7;y-=A*F;S+=[(y,*V,y+D,D,C+F,~-F*~G)for D in[A][F:]or[A*1j,A/1j]*G]
  return g
 
-### mwi (345 (478 unzipped) bytes)
+### mwi (344 (478 unzipped) bytes)
 def p(g):
  def p(y,x,A,B,V,g,C=0):
   if C>2:return
@@ -22,7 +22,7 @@ def p(g):
    V=V|{(y,x)};y+=A;x+=B
  (C,D),(A,B)=[[A,B]for A,C in enumerate(g)for B,D in enumerate(C)if g[A][B]==3];H={(C,D),(A,B)};p(C+C-A,D+D-B,C-A,D-B,H,g);p(A+A-C,B+B-D,A-C,B-D,H,g);return g
 
-### combined (347 (479 unzipped) bytes)
+### combined (346 (479 unzipped) bytes)
 def p(g):
  def F(y,x,A,B,V,g,C=0):
   if C>2:return

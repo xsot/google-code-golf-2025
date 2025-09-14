@@ -18,7 +18,7 @@ def p(g):
     for g[B][C:C+E]in A:B+=1
     return g
 
-### combined (256 (290 unzipped) bytes)
+### combined (255 (290 unzipped) bytes)
 def p(g):
  e=enumerate;A=g
  for G in'  ':A=[[*A]for A in zip(*A)if min(k:=sum(g,[]),key=k.count)in A];D,E=len(A),len(A[0])

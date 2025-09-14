@@ -15,7 +15,7 @@ def p(i,q=999):
  if all({*zip(i[b:]+i,k)}<={(0,n),(5,5)}for i,k in zip(i[a:]+i,k)):i=eval(str(i).replace(*f'{n}0'));[5for r,r[b:b+F]in zip(i[a:],k)]
  return-q*i or p(i,q-1)
 
-### mwi (281 (376 unzipped) bytes)
+### mwi (280 (376 unzipped) bytes)
 def p(i):
  for n in{*sum(i,[])}:
   k=[[5]+[y*(y==n)or 5for y,*s in zip(x,*i)if n in s]+[5]for x in i if n in x];k=[t:=[5]*len(k[0])]+k+[t]
@@ -26,7 +26,7 @@ def p(i):
      for l in k:i[a][b:b+len(k[0])]=l;a+=1
  return i
 
-### combined (283 (360 unzipped) bytes)
+### combined (282 (360 unzipped) bytes)
 def p(i,r=range(10)):
  for n in{*sum(i,[])}:
   k=[[5]+[y*(y==n)or 5for y,*s in zip(x,*i)if n in s]+[5]for x in i if n in x];f=len(k[0]);k=[t:=[5]*f]+k+[t]

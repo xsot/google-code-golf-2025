@@ -1,4 +1,4 @@
-# ovs (280 (338 unzipped) vs 281 bytes for gold)
+# ovs (279 (338 unzipped) vs 281 bytes for gold)
 def p(g):
  T=1,20;V,m,M,s,v=[{j+i*20for i,g in enumerate(g)for j,g in enumerate(g)if g==C}for C in range(5)];[s.add(I)for I in[*M]*2for i in m|s if abs(I-i)in T]
  for i in M-s:
@@ -6,7 +6,7 @@ def p(g):
   for k in N and{i-A*(min(s)-I)for I in m}&V:g[k//20][k%20]=1
  return g
 
-### mwi (329 (464 unzipped) bytes)
+### mwi (328 (464 unzipped) bytes)
 def p(g):
  G=g
  for _ in' '*96:G=[r[::-1]for r in zip(*G[(0,)*len(G[0])in G[:min(y for y in range(len(G))if 1in G[y])]:])];h,w=len(G),len(G[0])

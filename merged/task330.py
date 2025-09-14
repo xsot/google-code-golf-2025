@@ -4,7 +4,7 @@ p=lambda i,k=179:-k*i or p([[[k>78and 1<<4*(k:=k-1)or e|y,118%~(y%15)%3][k<1]*(y
 ### combined (139 bytes)
 p=lambda i,k=179:-k*i or p([[{*[k:=k-1]*y}if k>78else[y and{*e}|y,118%~len(y)%3][k<1]for y,e in zip(x,[[],*x])]for x in zip(*i[::-1])],k-1)
 
-### xsot (245 (266 unzipped) bytes)
+### xsot (244 (266 unzipped) bytes)
 def p(m):
  for i in range(99):
   z,*s=0,;q=(m[r:=i//10][c:=i%10]==5)*[(r,c)]

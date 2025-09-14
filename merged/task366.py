@@ -1,4 +1,4 @@
-# mwi (364 (604 unzipped) vs 365 bytes for gold)
+# mwi (363 (604 unzipped) vs 365 bytes for gold)
 def p(m):
  *H,B,S,D=sorted({*sum(m,C:=[])},key=sum(m,C:=[]).count)
  if{*m[0]}>={S,D}:return[*zip(*p([[*C]for C in zip(*m)]))]
@@ -11,7 +11,7 @@ def p(m):
     for r,c in C*all(len(m[0])>x-H+c>-1<y-G+r<len(m)and(B!=m[r][c]==m[y-G+r][x-H+c]or B==m[r][c]!=D==m[y-G+r][x-H+c])for r,c in C):m[y-G+r][x-H+c]=m[r][c]
  return[r for y,r in enumerate(m)if D in r]
 
-### xsot (365 (613 unzipped) bytes)
+### xsot (364 (613 unzipped) bytes)
 def p(m):
  *_,B,S,D=sorted({*sum(m,C:=[])},key=sum(m,C:=[]).count)
  if(S in m[0])*(D in m[0]):return[*zip(*p([[*C]for C in zip(*m)]))]
@@ -39,10 +39,10 @@ def p(m):
     for(r,c)in C*all(len(m[0])>x-H+c>-1<y-G+r<len(m)and(B!=m[r][c]==m[y-G+r][x-H+c]or B==m[r][c]!=D==m[y-G+r][x-H+c])for(r,c)in C):m[y-G+r][x-H+c]=m[r][c]
  return[r for(y,r)in enumerate(m)if D in r]
 
-### garry_moss (372 (651 unzipped) bytes)
+### garry_moss (371 (651 unzipped) bytes)
 def p(r):g=len(r)>len(r[0]);n=[*map(list,(r,zip(*r))[g])];f,o=len(n),len(n[0])>>1;i,r=sorted([[r[:o]for r in n],[r[o:]for r in n]],key=lambda r:len(set(sum(r,[]))));y,a=sorted(set(p:=sum(r,[])),key=p.count)[-2:];u=max(set(p:=sum(i,[])),key=p.count);[exec('for r in r[t:t+e]:r[n:n+s]=[a]*s')or[all(i[t+a][n:n+s]==[(a,u)[a==y]for a in k[a]]for a in range(e))and exec('for a in range(e):i[t+a][n:n+s]=k[a]')for t in range(f-e+1)for n in range(o-s+1)]for g in range(3,0,-1)for t in range(f)for n in range(o)for e in range(f-t,0,-1)for s in range(o-n,0,-1)if a not in(p:=sum(k:=[r[n:n+s]for r in r[t:t+e]],[]))and e*s-p.count(y)==g];return(i,[*zip(*i)])[g]
 
-### combined (407 (561 unzipped) bytes)
+### combined (406 (561 unzipped) bytes)
 def p(m):
  E=enumerate;a=sum(m,A:=[]);*_,B,S,D=sorted({*a},key=a.count)
  if{S,D}<={*m[0]}:return[*zip(*p([*map(list,zip(*m))]))]

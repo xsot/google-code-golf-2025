@@ -1,4 +1,4 @@
-# xsot (276 (427 unzipped) vs 289 bytes for gold)
+# xsot (275 (427 unzipped) vs 289 bytes for gold)
 def p(g):
  G=g[-5:]
  for s in range(20):G=[x for x in zip(*G)if{*x}-{b:=0,4}];g=[[*x]for x in zip(*g)if b|(b:=b^(4in x))]
@@ -10,7 +10,7 @@ def p(g):
       for X in range(len(G[0])*s):g[Y+y][X+x]=G[Y//s][X//s]
      return g
 
-### mwi (290 (429 unzipped) bytes)
+### mwi (289 (429 unzipped) bytes)
 def p(g):
  G=g[-5:]
  for s in[()]*4:G=[x for x in zip(*G[::-1])if{*x}-{0,4}];g=[[*x]for x in zip(*g[::-1])if 4in(s:=s+x)]
@@ -22,7 +22,7 @@ def p(g):
       for X in range(len(G[0])*s):g[Y+y][X+x]=G[Y//s][X//s]
      return g
 
-### combined (298 (406 unzipped) bytes)
+### combined (297 (406 unzipped) bytes)
 def p(g):
  R=range;G=g[-5:]
  for s in[()]*4:G=[x for x in zip(*G[::-1])if{*x}-{0,4}];g=[[*x]for x in zip(*g[::-1])if 4in(s:=s+x)]

@@ -35,7 +35,7 @@ def p(g):
    if k:=p(u):return k
  if{*sum(g[:3],[])}=={1,2}:return g
 
-### garry_moss (289 (395 unzipped) bytes)
+### garry_moss (288 (395 unzipped) bytes)
 def p(p):
  a=sum(p,e:=[]);p=[];n=[[]];r=15
  for i in range(16):
@@ -45,7 +45,7 @@ def p(p):
   i=[any(n-i in e*(6>i%r-n%r)for i,e in zip(i,e))|a[n]%5for n in range(150)]
   if all(i[:45])*(i.count(0)==a.count(0)):return[i[n*r:][:r]for n in range(10)]
 
-### mwi (337 (409 unzipped) bytes)
+### mwi (336 (409 unzipped) bytes)
 def p(g):
  def Q(o,p):
   c=C[o:];(3,)<=c!=Q(o+1,p)
@@ -55,7 +55,7 @@ def p(g):
     for J in range(o//15*len(A)):g[I-A[0]+C[p[A]]][J+p[A]]|=g[I][m:=J+K.find(b'\n'+A+b'\n')]>0;g[I][m]=0
  K,C=zip(*[([*c,5].index(5),c.count(2))for c in zip(*g)]);K=b'\n'+bytes(K)+b'\n';S={*K.split(b'\n')};Q(0,{});return g
 
-### combined (341 (391 unzipped) bytes)
+### combined (340 (391 unzipped) bytes)
 t=b'\n'
 def p(g):
  def Q(o,p):

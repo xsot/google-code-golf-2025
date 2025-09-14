@@ -16,7 +16,7 @@ def p(g):
   *g,=map(list,zip(*g[::-1]))
  return g
 
-### ovs (309 (426 unzipped) bytes)
+### ovs (308 (426 unzipped) bytes)
 def p(g):
  for _ in range(8):
   I=[]

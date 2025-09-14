@@ -1,4 +1,4 @@
-# ovs (298 (394 unzipped) vs 297 bytes for gold)
+# ovs (297 (394 unzipped) bytes, gold)
 e=enumerate
 def p(g):
  for G in[g]*60:*g,=map(list,zip(*g[max(map(len,str(g[0]).split('0')))<12:][::-1]))
@@ -9,7 +9,7 @@ def p(g):
   s[:]=zip(*s[::-1])
  return g
 
-### xsot (305 (465 unzipped) bytes)
+### xsot (304 (465 unzipped) bytes)
 e=enumerate
 def p(g):
  w=[(y,x,s)for y,p in e(g[:-2])for x,p in e(p[:-2])if{*sum(s:=[v[x:x+3]for v in g[y:y+3]],[])}^{0}>{2,0}]
@@ -24,7 +24,7 @@ def p(g):
    s=*zip(*s[::-1]),
  return u
 
-### mwi (325 (460 unzipped) bytes)
+### mwi (324 (460 unzipped) bytes)
 def p(g):
  e=enumerate;w=[(y,x,s)for y,r in e(g[:-2])for x,c in e(r[:-2])if{*sum(s:=[v[x:x+3]for v in g[y:y+3]],[])}^{0}>{2,0}]
  for y,x,s in w:
@@ -37,7 +37,7 @@ def p(g):
    s=*zip(*s[::-1]),
  return u
 
-### combined (326 (460 unzipped) bytes)
+### combined (325 (460 unzipped) bytes)
 def p(g):
  e=enumerate;w=[(y,x,s)for y,r in e(g[:-2])for x,c in e(r[:-2])if{*sum(s:=[v[x:x+3]for v in g[y:y+3]],[])}^{0}>{2,0}]
  for y,x,s in w:
@@ -50,7 +50,7 @@ def p(g):
    s=*zip(*s[::-1]),
  return u
 
-### garry_moss (368 (561 unzipped) bytes)
+### garry_moss (367 (561 unzipped) bytes)
 def p(u):
  i=range(9);c={};f=lambda a:[a(p,s,[u[p+a//3][s+a%3]for a in i])for p in range(len(u)-2)for s in range(len(u[0])-2)]
  def p(p,s,n):

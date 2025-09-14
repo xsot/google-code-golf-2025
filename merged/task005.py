@@ -1,16 +1,16 @@
-# mwi (219 (290 unzipped) vs 206 bytes for gold)
+# mwi (218 (290 unzipped) vs 206 bytes for gold)
 p=lambda g:(R:=max([{(i,j)for i in range(21)[I:I+3]for j in range(21)[J:J+3]if g[i][j]}for I in range(21)for J in range(21)],key=len),[[max((c==(y-k*d,x-k*D))*g[i+d][j+D]for i,j in R for d in(-4,0,4)for D in(-4,0,4)for k in range(21)[1:]for c in R)for x in range(21)]for y in range(21)])[1]
 
-### joking (220 (289 unzipped) bytes)
+### joking (219 (289 unzipped) bytes)
 # faster
 def p(g):R=max([{(i,j)for i in range(21)[I:I+3]for j in range(21)[J:J+3]if g[i][j]}for I in range(21)for J in range(21)],key=len);return[[max((c==(y-k*d,x-k*D))*g[i+d][j+D]for i,j in R for d in[-4,0,4]for D in[-4,0,4]for k in range(21)[1:4]for c in R)for x in range(21)]for y in range(21)]
 
-### xsot (225 (244 unzipped) bytes)
+### xsot (224 (244 unzipped) bytes)
 W=range(21)
 t=-4,0,4
 def p(g):R=max([{(i,j)for i in W[I:I+3]for j in W[J:J+3]if g[i][j]}for I in W for J in W],key=len);return[[max((c==(y-k*d,x-k*D))*g[i+d][j+D]for i,j in R for d in t for D in t for k in W[1:]for c in R)for x in W]for y in W]
 
-### combined (225 (244 unzipped) bytes)
+### combined (224 (244 unzipped) bytes)
 W=range(21)
 t=-4,0,4
 def p(g):R=max([{(i,j)for i in W[I:I+3]for j in W[J:J+3]if g[i][j]}for I in W for J in W],key=len);return[[max((c==(y-k*d,x-k*D))*g[i+d][j+D]for i,j in R for d in t for D in t for k in W[1:]for c in R)for x in W]for y in W]
