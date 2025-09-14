@@ -481,18 +481,18 @@ p=lambda i,k=0,s=[0]*99:[s+0*(s:=[*x])for x in zip(*k or p(i,i))if-~-any(x)*(s:=
 p=eval(('lambda i:'+'[[sum({r.pop()}&)r,r[1:])]*'*2+'[[r[0]r,*i)if]i if])])]').translate([0,"{*r}-{*i[0]}","zip(","for*r,in "]))
 # task 186: 66 vs 60 bytes for gold, https://arcprize.org/play?task=794b24be
 p=lambda m:[[*(c:=sum(sum(m,[])))*[2],0,0][:3],[0,c//4*2,0],[0]*3]
-# task 187: 93 vs 92 bytes for gold, https://arcprize.org/play?task=7b6016b9
-p=lambda i,k=79:-k*i or[*map(lambda*x,z=3:[y|(z*(z:=y)==6)*3or 2for y in x],*p(i,k-1)[::-1])]
-# task 188: 75 vs 61 bytes for gold, https://arcprize.org/play?task=7b7f7511
-p=lambda a:[a[:len(a)//2],c:=[b[:len(b)//2]for b in a]][a==[b*2for b in c]]
+# task 187: 91 vs 92 bytes for gold, https://arcprize.org/play?task=7b6016b9
+p=lambda i,k=59:-k*i or[*map(lambda*x,z=3:[y|(z*(z:=y)==6)or 2for y in x],*p(i,k-1)[::-1])]
+# task 188: 68 vs 61 bytes for gold, https://arcprize.org/play?task=7b7f7511
+p=lambda a:[*zip(*(c:=(A:=[*zip(*a)])[:len(A)//2])*(A==c*2)or p(A))]
 # task 189: 111 bytes, gold, https://arcprize.org/play?task=7c008303
 p=lambda i,r=range(6):[[i[a-6+(s:=i[6][0]%3)*3][b-6+(t:=i[0][6]%3)*3]/3*i[a//3-s][b//3-t]for b in r]for a in r]
 # task 190: 108 vs 109 bytes for gold, https://arcprize.org/play?task=7ddcd7ec
 import re;p=lambda i,k=19:-k*i or[*zip(*eval(re.sub("0(?=.{34}(.), 0.{31}\\1)","\\1",str(p(i,k-1))))[::-1])]
-# task 191: 253 (327 unzipped) vs 241 bytes for gold, https://arcprize.org/play?task=7df24a62
+# task 191: 250 (363 unzipped) vs 241 bytes for gold, https://arcprize.org/play?task=7df24a62
 def p(g):
- B=enumerate;A=[[c[0]for c in zip(r,*g)if 1in c]for r in g if 1in r]
- for E in[0,1]*4:g=E*g[::-1]or[*map(list,zip(*g))];[0for C,H in B(g,-1)for D,I in B(g,-1)for F,H in B(A*all(g[C+F][D+G]==I&-2if-1<D+G<23>C+F>-1else I<4for F,H in B(A)for G,I in B(H)))for G,I in B(H)for g[C+F][D+G]in[I]*(-1<D+G<23>C+F>-1)]
+ A=[[c[0]for c in zip(r,*g)if 1in c]for r in g if 1in r]
+ for E in[0,1]*4:g=E*g[::-1]or[c for*c,in zip(*g)];[0for C,H in enumerate(g,-1)for D,I in enumerate(g,-1)for F,H in enumerate(A*all(g[C+F][D+G]==I&-2if-1<D+G<23>C+F>-1else I<4for F,H in enumerate(A)for G,I in enumerate(H)))for G,I in enumerate(H)for g[C+F][D+G]in[I]*(-1<D+G<23>C+F>-1)]
  return g
 # task 192: 120 vs 110 bytes for gold, https://arcprize.org/play?task=7e0986d6
 b,=c,=z=['for*d,c,b,a in zip(b,c,z+a,a[1:]+z,a)]']
