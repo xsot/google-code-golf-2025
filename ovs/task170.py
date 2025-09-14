@@ -1,5 +1,4 @@
-E=enumerate
-def p(g):
- I,J,W,*C=next((i,j,3+(r[j+3]>0))for i,r in E(g)for j,_ in E(r)if[*{*all(s:=r[j:j+3]+g[i+1][j:j+3])*s}][1:])
- for r in g[I:I+W]:C+=r[J:J+W],;r[J:J+W]=[0]*W
- [g:=[r for*r,in zip(*g)if any(r)]for _ in'  '];B=len(g)//W;return[[V*(v>0)for v,V in zip(r[::B],R)]for r,R in zip(g[::B],C)]
+def p(g):y,x=max((y+1,x+1)for y,g in enumerate(g)for x,c in enumerate(g)if c);s=4-0**g[y-1][x-4];v=-~len(h:=[*filter(max,zip(*filter(max,zip(*g[:y-s]))))])//s;return[[h[Y*v][X*v]and g for X,g in enumerate(g[x-s:x])]for Y,g in enumerate(g[y-s:y])]
+
+## 223 without compression:
+def p(g):e=enumerate;y,x=max((y+1,x+1)for y,r in e(g)for x,c in e(r)if c);s=4-0**g[y-1][x-4];v=-~len(h:=[*eval('filter(max,zip(*'*2+'g[:y-s]))))')])//s;return[[h[Y*v][X*v]and C for X,C in e(R[x-s:x])]for Y,R in e(g[y-s:y])]
