@@ -1,5 +1,5 @@
-# att (118 vs 107 bytes for gold)
-p=lambda a,n=-3,d=0:n*a or p([[b.pop()or(2+n%2*6in b)*d*4for c in a[::-1]if[d:=d^any({*c}-{4})]]for*b,in zip(*a)],n+1)
+# att (113 vs 107 bytes for gold)
+p=lambda a,n=10,d=0:~n*a or p([[b.pop()|4*(n%6*2in b)*(d:=d^any({*c}-{4}))for c in a[::-1]]for*b,in zip(*a)],n-3)
 
 ### joking (128 bytes)
 # almost identical to 246

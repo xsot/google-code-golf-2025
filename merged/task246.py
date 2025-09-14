@@ -1,8 +1,8 @@
-# mwi (109 vs 105 bytes for gold)
-p=lambda a,n=3,d=0:-n*a or p([[b.pop()or(n|2in b)*d*4for c in a[::-1]if[d:=d^sum(c)&2]]for*b,in zip(*a)],n-1)
+# att (105 bytes, gold)
+p=lambda a,n=3,d=0:-n*a or p([[b.pop()|4*(n|2in b)*(d:=d^sum(c)&2)for c in a[::-1]]for*b,in zip(*a)],n-1)
 
-### att (111 bytes)
-p=lambda a,n=-3,d=0:n*a or p([[b.pop()or(2+n%2in b)*d*4for c in a[::-1]if[d:=d^sum(c)&2]]for*b,in zip(*a)],n+1)
+### mwi (109 bytes)
+p=lambda a,n=3,d=0:-n*a or p([[b.pop()or(n|2in b)*d*4for c in a[::-1]if[d:=d^sum(c)&2]]for*b,in zip(*a)],n-1)
 
 ### joking (126 bytes)
 # almost identical to 335
