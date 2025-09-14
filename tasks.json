@@ -1087,7 +1087,7 @@
     },
     "task042": {
         "gold": 139,
-        "best": 169,
+        "best": 167,
         "solutions": {
             "ovs": {
                 "source": "UT1yYW5nZSgxMCkKZGVmIHAoZyk6Qz1zdW0oYiclciclZykvLzM4JTQ7cmV0dXJuW1tnW2ldW2pdfGFueShhbGwoKChnK2dbOjFdKjMpW2kreSpzXStnWzBdKVtqKygzLXkpKlNdZm9yIHkgaW4oMSwyKSlmb3IgcyBpbigtQyxDKWZvciBTIGluKC1DLEMpKSo4Zm9yIGogaW4gUV1mb3IgaSBpbiBRXQ==",
@@ -1100,6 +1100,12 @@
                 "size_uncompressed": 169,
                 "compressed": "UT1yYW5nZSgxMCkKZGVmIHAoZyk6Qz1zdW0oYiclciclZykvLzM4JTQ7cmV0dXJuW1tnW2ldW2pdfGFueShhbGwoKChnK2dbOjFdKjMpW2kreSpzXStnWzBdKVtqKygzLXkpKlNdZm9yIHkgaW4oMSwyKSlmb3IgcyBpbigtQyxDKWZvciBTIGluKC1DLEMpKSo4Zm9yIGogaW4gUV1mb3IgaSBpbiBRXQ==",
                 "size_compressed": 169
+            },
+            "mwi": {
+                "source": "cD1sYW1iZGEgZyxRPXJhbmdlKDEwKTpbW2dbaV1bal18YW55KGFsbCgoKGcrZ1s6MV0qMylbaSt5KlsoQzo9c3VtKGInJXInJWcpLy8zOCU0KSwtQ11bUyUyXV0rZ1swXSlbaitDKlszLXkseS0zXVtTPjVdXWZvciB5IGluKDEsMikpZm9yIFMgaW4gUSkqOGZvciBqIGluIFFdZm9yIGkgaW4gUV0=",
+                "size_uncompressed": 167,
+                "compressed": "cD1sYW1iZGEgZyxRPXJhbmdlKDEwKTpbW2dbaV1bal18YW55KGFsbCgoKGcrZ1s6MV0qMylbaSt5KlsoQzo9c3VtKGInJXInJWcpLy8zOCU0KSwtQ11bUyUyXV0rZ1swXSlbaitDKlszLXkseS0zXVtTPjVdXWZvciB5IGluKDEsMikpZm9yIFMgaW4gUSkqOGZvciBqIGluIFFdZm9yIGkgaW4gUV0=",
+                "size_compressed": 167
             }
         }
     },

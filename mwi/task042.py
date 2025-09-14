@@ -1,0 +1,1 @@
+p=lambda g,Q=range(10):[[g[i][j]|any(all(((g+g[:1]*3)[i+y*[(C:=sum(b'%r'%g)//38%4),-C][S%2]]+g[0])[j+C*[3-y,y-3][S>5]]for y in(1,2))for S in Q)*8for j in Q]for i in Q]
