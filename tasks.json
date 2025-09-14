@@ -5761,7 +5761,7 @@
     },
     "task208": {
         "gold": 215,
-        "best": 225,
+        "best": 223,
         "solutions": {
             "joking": {
                 "source": "IyBtaW5vciB6bGliIGltcHJvdmVtZW50cwpkZWYgcChnKToKIE09bWluKHN1bShBOj1nLFtdKSxrZXk9c3VtKEE6PWcsW10pLmNvdW50KTtFLEQ9bGVuKEE6PVtBIGZvciBBIGluIHppcCgqQSlpZiBNIGluIEFdKSxsZW4oQTo9W0EgZm9yIEEgaW4gemlwKCpBKWlmIE0gaW4gQV0pCiBmb3IgQixyIGluIGVudW1lcmF0ZShnKToKICBmb3IgQyxjIGluIGVudW1lcmF0ZShyWzotRV0pOgogICBpZihjIT1NKT5zdW0oc3VtKEFbMStDOkMrRS0xXSlmb3IgQSBpbiBnWzErQjpCK0QtMV0pOgogICAgZm9yIGdbQl1bQzpDK0VdaW4gQTpCKz0xCiAgICByZXR1cm4gZw==",
@@ -5796,6 +5796,15 @@
                 "compressed": "I2NvZGluZzpMMQppbXBvcnQgemxpYgpleGVjKHpsaWIuZGVjb21wcmVzcyhieXRlcygiRY/NasQgEMfveYrZ0+rqlu51tj6JzKG0IwxNJovRQ/L0VUMpKMJP/l/TNyd4mcPiBCWw1oXzZ+GnhmOCtGaoIHoFuKKGGG9KnWljcMjL3NRKgkXUzBi2upjDR7L+h/cwv32tVYsVBaVn8hxmVqPWjye+kz39xe/drZwVBsp+OdEe8c40OPScS+jCdi4jrF+N2T0wO74/yP53i9KouNTpR/vnUnPHKOTiFjGTW93WtIxj0eq3v03qmxrJkusuCekXIiwiTDEiKSwtOSkp",
                 "size_compressed": 255,
                 "method": "zopfli",
+                "window": -15,
+                "escape_cost": 0
+            },
+            "xsot": {
+                "source": "IyByYW5kb20gYnVsbHNoaXQgZ28KZGVmIHAoZyk6CiBNPW1pbihzdW0oQTo9ZyxbXSksa2V5PXN1bShBOj1nLFtdKS5jb3VudCk7RT1sZW4oQTo9W0EgZm9yIEEgaW4gemlwKCpBKWlmIE0gaW4gQV0pCiBEPWxlbihBOj1bQSBmb3IgQSBpbiB6aXAoKkEpaWYgTSBpbiBBXSkKIGZvciBCLHIgaW4gZW51bWVyYXRlKGcpOgogIGZvciBDLGMgaW4gZW51bWVyYXRlKHJbOi1FXSk6CiAgIGlmKGMhPU0pPnN1bShzdW0oQVsxK0M6QytFLTFdKWZvciBBIGluIGdbQisxOkIrRC0xXSk6CiAgICBmb3IgZ1tCXVtDOkMrRV1pbiBBOkIrPTEKICAgIHJldHVybiBnCg==",
+                "size_uncompressed": 291,
+                "compressed": "I2NvZGluZzpMMQppbXBvcnQgemxpYgpleGVjKHpsaWIuZGVjb21wcmVzcyhieXRlcygijY5BDgIhDEX3c4q6A4cxYYvBixAWRkvSKGWCsNDTazExunPZ/37bd8YEq8raTdB9Jla3nhU7n02I2lzw7r+D3al0bnqf/BVZ0sCQSgUGYnjQqrasKUGXkaOeoP5bFEimyYzcM9Zjw7fWQGjKL2rBLSkODpRU2fiuD6I6dIOd0eGcFhv1520ONFtHc5VUFsdpiWMY7Sgyr4K3A1ZsvTLkJyIsIkwxIiksLTkpKQ==",
+                "size_compressed": 223,
+                "method": "libdeflate",
                 "window": -15,
                 "escape_cost": 0
             }

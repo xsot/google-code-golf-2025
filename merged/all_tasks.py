@@ -531,12 +531,13 @@ def p(g,E=enumerate):
  return g
 # task 207: 81 bytes, gold, https://arcprize.org/play?task=88a62173
 p=eval('lambda a:[[min(b:=sum(a,()),key=b.count)'+'for*a,in map(zip,a,a[3:])]'*2)
-# task 208: 225 (290 unzipped) vs 215 bytes for gold, https://arcprize.org/play?task=890034e9
+# task 208: 223 (291 unzipped) vs 215 bytes for gold, https://arcprize.org/play?task=890034e9
 def p(g):
- M=min(sum(A:=g,[]),key=sum(A:=g,[]).count);E,D=len(A:=[A for A in zip(*A)if M in A]),len(A:=[A for A in zip(*A)if M in A])
+ M=min(sum(A:=g,[]),key=sum(A:=g,[]).count);E=len(A:=[A for A in zip(*A)if M in A])
+ D=len(A:=[A for A in zip(*A)if M in A])
  for B,r in enumerate(g):
   for C,c in enumerate(r[:-E]):
-   if(c!=M)>sum(sum(A[1+C:C+E-1])for A in g[1+B:B+D-1]):
+   if(c!=M)>sum(sum(A[1+C:C+E-1])for A in g[B+1:B+D-1]):
     for g[B][C:C+E]in A:B+=1
     return g
 # task 209: 275 (427 unzipped) vs 289 bytes for gold, https://arcprize.org/play?task=8a004b2b
