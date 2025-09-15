@@ -1,3 +1,7 @@
+#1b save by removing \g<1>, there might be a better way to handle this
+import re;p=lambda g,i=2:eval([g:=re.sub("[0i], [0i](.{52})[0i], [02]","2, i\\1i, i",str(g))for _ in-~hash((*g[0],))%881*[0]][-1])
+
+##
 import re;p=lambda g,i=2:eval(max(g:=re.sub(r"[02], [02](.{52})[02], [0i]",r"i, 2\g<1>2, 2",str(g))for _ in[0]*(3==hash((*g[0],))%98or 3)))
 
 ## 141 bytes

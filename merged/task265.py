@@ -1,12 +1,8 @@
-# joking (131 vs 104 bytes for gold)
-import re;p=lambda g,i=2:eval(max(g:=re.sub("[02], [02](.{52})[02], [0i]","i, 2\g<1>2, 2",str(g))for _ in-~hash((*g[0],))%881*[0]))
+# mwi (130 vs 104 bytes for gold)
+#1b save by removing \g<1>, there might be a better way to handle this
+import re;p=lambda g,i=2:eval([g:=re.sub("[0i], [0i](.{52})[0i], [02]","2, i\\1i, i",str(g))for _ in-~hash((*g[0],))%881*[0]][-1])
 
-
-## fails one test case
-## somehow still longer than gold
-import re;p=lambda g,i=2:eval(max(g:=re.sub("[02], [02](.{52})[02], [0i]","i, 2\g<1>2, 2",str(g))for _ in g))
-
-### mwi (139 bytes)
+##
 import re;p=lambda g,i=2:eval(max(g:=re.sub(r"[02], [02](.{52})[02], [0i]",r"i, 2\g<1>2, 2",str(g))for _ in[0]*(3==hash((*g[0],))%98or 3)))
 
 ## 141 bytes
@@ -22,6 +18,14 @@ def p(i):
 
 ## fails broken testcase
 p=lambda g,e=enumerate:[g:=[*zip(*[[c or 2*(x*y>0<5>max([r[x-1],*g[y-1][x-1:x+1]]))for x,c in e(r)]for y,r in e(g)][::-1])]for _ in g][3]
+
+### joking (131 bytes)
+import re;p=lambda g,i=2:eval(max(g:=re.sub("[02], [02](.{52})[02], [0i]","i, 2\g<1>2, 2",str(g))for _ in-~hash((*g[0],))%881*[0]))
+
+
+## fails one test case
+## somehow still longer than gold
+import re;p=lambda g,i=2:eval(max(g:=re.sub("[02], [02](.{52})[02], [0i]","i, 2\g<1>2, 2",str(g))for _ in g))
 
 ### xsot (149 bytes)
 def p(i):
