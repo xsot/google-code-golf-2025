@@ -1,4 +1,7 @@
-# combined (60 vs 54 bytes for gold)
+# joking (58 vs 54 bytes for gold)
+p=lambda i:[[any(y)*3for y in x]for x in map(zip,i,i[5:])]
+
+### combined (60 bytes)
 p=lambda i:[[any(y)*3for y in zip(*x)]for x in zip(i,i[5:])]
 
 ### att (61 bytes)

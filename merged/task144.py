@@ -1,6 +1,12 @@
 # att (59 vs 53 bytes for gold)
 p=lambda a:[[3>>c+b.pop(0)for c in a.pop(0)]for b in a[5:]]
 
+### joking (tied, 59 bytes)
+p=lambda a:[[3>>c+f for c,f in d]for d in map(zip,a,a[5:])]
+
+##
+p=lambda a:[[3>>sum(c)for c in d]for d in map(zip,a,a[5:])]
+
 ### combined (tied, 59 bytes)
 p=lambda a:[[3>>c+b.pop(0)for c in a.pop(0)]for b in a[5:]]
 
