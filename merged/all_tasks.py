@@ -641,10 +641,10 @@ p=lambda i,k=7:-k*i or p([*map(lambda*r,w=0:[[v,w%3][(w:=v)<=2in{*max(i,key=any)
 p=lambda a,n=3,d=0:-n*a or p([[b.pop()|4*(n|2in b)*(d:=d^sum(c)&2)for c in a[::-1]]for*b,in zip(*a)],n-1)
 # task 247: 96 vs 95 bytes for gold, https://arcprize.org/play?task=a3325580
 p=lambda a:(m:=max(map(c:=(b:=sum(zip(*a),())).count,{*b}-{0})))*[[*{d:0for d in b if c(d)==m}]]
-# task 248: 79 vs 72 bytes for gold, https://arcprize.org/play?task=a3df8b1e
-def p(g,A=0,C=-1):
- for x in g[::-1]:x[A]=1;C*=-(A%~-len(x)<1)|1;A+=C
- return g
+# task 248: 77 vs 72 bytes for gold, https://arcprize.org/play?task=a3df8b1e
+def p(m,c=0,d=1):
+ for r in m[::-1]:r[c]=1;c+=d;c%~-len(r)or(d:=-d)
+ return m
 # task 249: 26 bytes, gold, https://arcprize.org/play?task=a416b8f3
 p=lambda a:[r*2for r in a]
 # task 250: 125 vs 118 bytes for gold, https://arcprize.org/play?task=a48eeaf7

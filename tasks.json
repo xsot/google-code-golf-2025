@@ -7053,13 +7053,20 @@
     },
     "task248": {
         "gold": 72,
-        "best": 79,
+        "best": 77,
         "solutions": {
             "combined_solutions": {
                 "source": "ZGVmIHAoZyxBPTAsQz0tMSk6CiBmb3IgeCBpbiBnWzo6LTFdOnhbQV09MTtDKj0tKEElfi1sZW4oeCk8MSl8MTtBKz1DCiByZXR1cm4gZw==",
                 "size_uncompressed": 79,
                 "compressed": "ZGVmIHAoZyxBPTAsQz0tMSk6CiBmb3IgeCBpbiBnWzo6LTFdOnhbQV09MTtDKj0tKEElfi1sZW4oeCk8MSl8MTtBKz1DCiByZXR1cm4gZw==",
                 "size_compressed": 79,
+                "method": "none"
+            },
+            "xsot": {
+                "source": "ZGVmIHAobSxjPTAsZD0xKToKIGZvciByIGluIG1bOjotMV06cltjXT0xO2MrPWQ7YyV+LWxlbihyKW9yKGQ6PS1kKQogcmV0dXJuIG0=",
+                "size_uncompressed": 77,
+                "compressed": "ZGVmIHAobSxjPTAsZD0xKToKIGZvciByIGluIG1bOjotMV06cltjXT0xO2MrPWQ7YyV+LWxlbihyKW9yKGQ6PS1kKQogcmV0dXJuIG0=",
+                "size_compressed": 77,
                 "method": "none"
             }
         }
