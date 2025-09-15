@@ -588,8 +588,8 @@ p=lambda a:a>a*0!=0and[p(a[0])]*3+p(a[1:])or a
 p=lambda i,k=3,s=0:-k*i or p([[y or(s==5in{*(h:=[*map(max,i)])[b+1:]}&{*h[:b]})*sum({*sum(i,[])},-5)for b,y in enumerate(x)]*1**(s:=s*2+max(x))for x in zip(*i)][::-1],k-1)
 # task 225: 132 bytes, gold, https://arcprize.org/play?task=93b581b8
 p=lambda i,r=range(6):[[max([s for t in i[a-3:a]+i[a+3:a:-1]for s in t[b-3:b]+t[b+3:b:-1]if s][:-3]+[i[a][b]])for b in r]for a in r]
-# task 226: 155 vs 139 bytes for gold, https://arcprize.org/play?task=941d9a10
-p=lambda g,k=1:-k*g or p([[c//5*c or(u:=2*((a:=r[:x].count(5))==(b:=r[x:].count(5)))+0**a+0**b*3)*(k or c==u)for x,c in enumerate(r)]for r in zip(*g)],k-1)
+# task 226: 148 vs 139 bytes for gold, https://arcprize.org/play?task=941d9a10
+p=lambda g,k=1:-k*g or p([(a:=0)or[5*(-a+(a:=a+r.pop(0)//5))or(u:=2*(a==(b:=r.count(5)))+0**a+0**b*3)*(k or c==u)for c in[*r]]for*r,in zip(*g)],k-1)
 # task 227: 55 vs 52 bytes for gold, https://arcprize.org/play?task=94f9d214
 p=lambda a:[[~b.pop(0)+c&2for c in a.pop(4)]for b in a]
 # task 228: 119 bytes, gold, https://arcprize.org/play?task=952a094c
@@ -657,8 +657,8 @@ p=lambda a,n=-42:[*map(lambda*b,d=0:[max(n,c*(d+(d:=c)>1))for c in b][::-1],*n*a
 p=lambda a:[(i:=1)*[[c,c and 4][i:=1-i]for c in b]for b in a]
 # task 253: 144 vs 129 bytes for gold, https://arcprize.org/play?task=a61ba2ce
 def p(g):f=sum(g,[]);k=f*99;i=0;return[[max(v*(k[(i:=i+1)-j%5]==k[i+12-j%3*13]==v)for v in f)for j in R]for R in b"KKHH KEEH AEEM AAMM".split()]
-# task 254: 99 vs 84 bytes for gold, https://arcprize.org/play?task=a61f2674
-def p(i):k=*zip(*i),;return[[y and(s==max(k))+2*(s==sorted({*k})[1])for y,s in zip(x,k)]for x in i]
+# task 254: 95 vs 84 bytes for gold, https://arcprize.org/play?task=a61f2674
+def p(i):k=*zip(*i),;return[[x.pop(0)>>(s!=max(k))+2*(s!=sorted({*k})[1])for s in k]for x in i]
 # task 255: 244 (276 unzipped) vs 242 bytes for gold, https://arcprize.org/play?task=a64e4611
 def p(g):
  for S in[{0,3}]*8:g=[[r[~x]+10*any({*s[-2%(30-x):31-x]}-S for s in g[y+y%~y:y+2])for y,r in enumerate(g)]for x,_ in enumerate(g)];g=[[v%10|3*({*r[:10]}<=S)*(len(w:=[r[x]for r in g if{*r[:10]}<=S])>3!=S>={*w}or 3in r[x:])for x,v in enumerate(r)]for r in g]
