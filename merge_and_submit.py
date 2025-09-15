@@ -30,7 +30,7 @@ update_all = False
 update_only = []
 
 # Configuration: How many diffs to report in stats.txt
-stats_size = 5
+stats_size = 15
 
 # Configuration: add player directories here
 player_dirs = [
