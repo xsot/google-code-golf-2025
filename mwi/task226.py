@@ -1,0 +1,1 @@
+p=lambda g,k=1:-k*g or p([[c//5*c or(u:=2*((a:=r[:x].count(5))==(b:=r[x:].count(5)))+0**a+0**b*3)*(k or c==u)for x,c in enumerate(r)]for r in zip(*g)],k-1)

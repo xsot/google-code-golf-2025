@@ -1,0 +1,1 @@
+def p(i):k=*zip(*i),;return[[y and(s==max(k))+2*(s==sorted({*k})[1])for y,s in zip(x,k)]for x in i]
