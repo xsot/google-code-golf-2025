@@ -1,4 +1,7 @@
-# combined (74 vs 67 bytes for gold)
+# ovs (68 vs 67 bytes for gold)
+p=lambda g,a=-3:-a*g and[r:=g[a]+sum(g,[])[a::-3],*p(g,a+1),r[::-1]]
+
+### combined (74 bytes)
 p=lambda g:(t:=[a+b for*b,a in zip(*g[::-1],g)])+[e[::-1]for e in t[::-1]]
 
 ### xsot (92 bytes)
