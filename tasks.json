@@ -8977,7 +8977,7 @@
     },
     "task319": {
         "gold": 194,
-        "best": 241,
+        "best": 240,
         "solutions": {
             "att": {
                 "source": "ZGVmIHAoYSk6Zz1tYXgoZjo9c3VtKEE6PWEsW10pLGtleT1mLmNvdW50KTtyZXR1cm5bW1tbZyxkXVtkPT1lXWZvcipiLGQgaW4gemlwKCphLGIpaWYgZSBpbiBiXWZvciBiIGluIGEgaWYgZSBpbiBiXWZvciBlIGlueypmfWZvciBpIGluIHJhbmdlKDI2NTIpaWZbXTwoYjo9W2EgZm9yIGEsQSBpbiB6aXAoYSxzdW0oemlwKEEsQSksKCgpLCkqMTkpW2klNTE6XSlmb3IgYSxBIGluIHppcChhLHN1bSh6aXAoQSxBKSwoKCksKSoxOSlbaSU1MjpdKWlmIGEhPUE9PWUhPWddKT09Yls6MV0qZi5jb3VudChiWzBdKV1bMF0=",
@@ -8996,13 +8996,13 @@
                 "method": "none"
             },
             "mwi": {
-                "source": "ZGVmIHAoZyk6CiBmPXN1bShnLFtdKTsqcixiPXNvcnRlZCh7KmZ9LGtleT1mLmNvdW50KTtXLEg9bGVuKGdbMF0pLGxlbihnKTtUPXtDOnsoaSxqKWZvciBpLHIgaW4gZW51bWVyYXRlKGcpZm9yIGosdiBpbiBlbnVtZXJhdGUocilpZiBDPT12fWZvciBDIGluIHJ9CiBmb3IgYyBpbiByOgogIGZvciBsIGluIHI6CiAgIGlmIFRbY11pbih7KGkqMitxK2EsaioyK1ErQSlmb3IgaSxqIGluIFRbbF1mb3IgYSBpbigwLDEpZm9yIEEgaW4oMCwxKWlmIEg+aSoyK3ErYT4tMTxqKjIrUStBPFd9Zm9yIHEgaW4gcmFuZ2UoLUgqMixIKjIpZm9yIFEgaW4gcmFuZ2UoLVcqMixXKjIpKTpyZXR1cm5bW1tiLGxdW3Y9PWxdZm9yKmMsdiBpbiB6aXAoKmcscilpZiBsIGluIGNdZm9yIHIgaW4gZyBpZiBsIGluIHJd",
-                "size_uncompressed": 396,
-                "compressed": "I2NvZGluZzpMMQppbXBvcnQgemxpYgpleGVjKHpsaWIuZGVjb21wcmVzcyhieXRlcygnVY9BjsMgDEX3PQVLIO6o7TIpvQhigQKJEAlUBBZplLsP0LSaWVj4fWN/W+kBPbEi7QnNbEkzVsAF6aiFxBYfolZ4o/MOVq9s/ul9cpF0HgKbtMOKXwSBmpFOs820Gx5hIoMPaASLjEPapVkHGXX+UuQJ1v+yJWZAhrF1L2VTinY/oQKyQt6s0vIllDs0l8I4nP3orembCFN+h8Yd3lM14YsoGDPgC1xrzX0gDwmPo/txvt6PAXdfF+nLgCDdqPE50BvkqO3DH91nPQchbdAxBcc5T7AIvjJWjal8H/syT0wV1EvrFbKuZUuq0Ee04hcnLCJMMSIpLC05KSk=",
-                "size_compressed": 302,
-                "method": "zlib",
-                "window": -9,
-                "escape_cost": 0
+                "source": "ZGVmIHAoYSk6Zz1tYXgoZjo9c3VtKEE6PWEsW10pLGtleT1mLmNvdW50KTtyZXR1cm5bW1tbZyxBXVtBPT1lXWZvcipiLEEgaW4gemlwKCphLGIpaWYgZSBpbiBiXWZvciBiIGluIGEgaWYgZSBpbiBiXWZvciBlIGlueypmfWZvciBpIGluIHJhbmdlKDI2NTIpaWZbXTwoYjo9W2EgZm9yIGEsQSBpbiB6aXAoYSxzdW0oemlwKEEsQSksKCgpLCkqMTkpW2klNTE6XSlmb3IgYSxBIGluIHppcChhLHN1bSh6aXAoQSxBKSwoKCksKSoxOSlbaSU1MjpdKWlmIGEhPUE9PWUhPWddKT09Yls6MV0qZi5jb3VudChiWzBdKV1bMF0KCiMjCmRlZiBwKGcpOgogZj1zdW0oZyxbXSk7KnIsYj1zb3J0ZWQoeypmfSxrZXk9Zi5jb3VudCk7VyxIPWxlbihnWzBdKSxsZW4oZyk7VD17Qzp7KGksailmb3IgaSxyIGluIGVudW1lcmF0ZShnKWZvciBqLHYgaW4gZW51bWVyYXRlKHIpaWYgQz09dn1mb3IgQyBpbiByfQogZm9yIGMgaW4gcjoKICBmb3IgbCBpbiByOgogICBpZiBUW2NdaW4oeyhpKjIrcSthLGoqMitRK0EpZm9yIGksaiBpbiBUW2xdZm9yIGEgaW4oMCwxKWZvciBBIGluKDAsMSlpZiBIPmkqMitxK2E+LTE8aioyK1ErQTxXfWZvciBxIGluIHJhbmdlKC1IKjIsSCoyKWZvciBRIGluIHJhbmdlKC1XKjIsVyoyKSk6cmV0dXJuW1tbYixsXVt2PT1sXWZvcipjLHYgaW4gemlwKCpnLHIpaWYgbCBpbiBjXWZvciByIGluIGcgaWYgbCBpbiByXQ==",
+                "size_uncompressed": 293,
+                "compressed": "I2NvZGluZzpMMQppbXBvcnQgemxpYgpleGVjKHpsaWIuZGVjb21wcmVzcyhieXRlcygnlY+BZoRBDIRfZU+VZEX1/7nSbfMkKzjtpqIue7a3tH/13XuhVAFccuIzEzHz3DSdwLFMPh7eoRd+m0ewwk5VkF7bB/ebpz79jA+jnefweplJJtWYh2gfWcmSedrsBNlJ0TSNEDTcpIGe/oqBn7l/BW8hj4O/NFjv9iuaVnkELVw9he+/750iXZCRIQEgYV7usW7X+6UI/uN8LRJBfcfRY8dTkFlrWST/FAatt4JyWVffJywiTDEiKSwtOSkp",
+                "size_compressed": 240,
+                "method": "zopfli",
+                "window": -15,
+                "escape_cost": 1
             },
             "ovs": {
                 "source": "IyBzZWUgam9raW5nJ3Mgc29sdXRpb24gZm9yIGRldGFpbHMKcD1sYW1iZGEgaTpbW1t0WzNdLHldW3k9PWxdZm9yKnMseSBpbiB6aXAoKmkseClpZiBsIGluIHNdZm9yIHggaW4gaSBpZihsOj0odDo9c29ydGVkKHsqKHo6PXN1bShpLFtdKSl9LGtleT16LmNvdW50KSlbMSZiJwgCAgYIMRgBIAECAkQICAJzAQEICWBFAgQCJEAMASABCAIEICEQJRAIAgQwYSwpBQIEHAIEEBUQAQIEGQIIQAJcbgICICACAgQQAgIgQCVABAIeAgICQARAJ1sobTo9aGFzaCgoKnosKSklMzk5OSUyNTI5JTE1NzclOTg5JTYxNikvLzddPj5tJTddKWluIHhdCgojIyBsZWdpdCBzb2x2ZSwgemlwcyB0byAyNzU6CgpkZWYgcChnKTpmPXN1bShnLFtdKTsqcixiPVQ9e0M6e2kqMWoraiBmb3IgaSxyIGluIGVudW1lcmF0ZShnKWZvciBqLHYgaW4gZW51bWVyYXRlKHIpaWYgQz09dn1mb3IgQyBpbiBzb3J0ZWQoZixrZXk9Zi5jb3VudCl9O3JldHVybltbW1tiLGxdW3Y9PWxdZm9yKmMsdiBpbiB6aXAoKmcscilpZiBsIGluIGNdZm9yIHIgaW4gZyBpZiBsIGluIHJdZm9yIGMgaW4gciBmb3IgbCBpbiByIGZvciBvIGluIFRbbF1pZiBUW2NdaW4oe2kqMitxK2EtbyoyZm9yIGkgaW4gVFtsXWZvciBhIGluKDAsMSwxaiwxKzFqKX0mc2V0KCkudW5pb24oKlQudmFsdWVzKCkpZm9yIHEgaW4gVFtjXSldWzBdCg==",
