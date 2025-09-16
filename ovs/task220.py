@@ -1,4 +1,4 @@
-p=lambda i,k=3:-k*i or[[y or-(s*2^s-7)%7for y,s in zip(x,[0]+x)]for*x,in zip(*p(i,k-1)[::-1])]
+p=lambda i:[*eval("map(lambda*x,s=0:[-(s*2^s-7)%7>>y|(s:=y)for y in x][::-1],*"*4+"i))))")]
 
 ##
 
