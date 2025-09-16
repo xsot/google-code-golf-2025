@@ -1,4 +1,7 @@
-# xsot (136 vs 129 bytes for gold)
+# att (133 vs 129 bytes for gold)
+def p(g):f=sum(g,[]);return[[(i:=j-71)*0+max(v*(f[(i:=i+1):i+2]==[v,v])for v in f)for j in R]for R in b"9988 9``8 S``R SSRR".split()]
+
+### xsot (136 bytes)
 def p(g):f=sum(g,[]);i=-71;return[[max(v*({*(f*20)[(i:=i+1)+j:][:2]}=={v})for v in f)for j in R]for R in b"9988 9``8 S``R SSRR".split()]
 ##
 # -13 -14 13 12
