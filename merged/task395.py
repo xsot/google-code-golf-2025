@@ -1,4 +1,7 @@
-# combined (56 vs 53 bytes for gold)
+# joking (53 bytes, gold)
+p=lambda a,n=[]:a*0!=0and[*map(p,a,a[3:]+n)]or~a+~n&2
+
+### combined (56 bytes)
 p=lambda a:[[2-c-b.pop(0)&6for c in a.pop(3)]for b in a]
 
 ### att (57 bytes)

@@ -1,13 +1,10 @@
-# att (59 vs 53 bytes for gold)
+# joking (53 bytes, gold)
+p=lambda a,n=[]:a*0!=0and[*map(p,a,a[5:]+n)]or 3>>a+n
+
+### att (59 bytes)
 p=lambda a:[[3>>c+b.pop(0)for c in a.pop(0)]for b in a[5:]]
 
-### joking (tied, 59 bytes)
-p=lambda a:[[3>>c+f for c,f in d]for d in map(zip,a,a[5:])]
-
-##
-p=lambda a:[[3>>sum(c)for c in d]for d in map(zip,a,a[5:])]
-
-### combined (tied, 59 bytes)
+### combined (59 bytes)
 p=lambda a:[[3>>c+b.pop(0)for c in a.pop(0)]for b in a[5:]]
 
 ### ovs (61 bytes)

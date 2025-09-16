@@ -1,0 +1,1 @@
+p=lambda a,n=[]:a*0!=0and[*map(p,a,a[4:]+n)]or~a+n&2

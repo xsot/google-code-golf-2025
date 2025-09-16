@@ -1,4 +1,1 @@
-p=lambda a:[[3>>c+f for c,f in d]for d in map(zip,a,a[5:])]
-
-##
-p=lambda a:[[3>>sum(c)for c in d]for d in map(zip,a,a[5:])]
+p=lambda a,n=[]:a*0!=0and[*map(p,a,a[5:]+n)]or 3>>a+n

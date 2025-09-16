@@ -1,1 +1,1 @@
-p=lambda i:[[any(y)*3for y in x]for x in map(zip,i,i[5:])]
+p=lambda a,n=[]:a*0!=0and[*map(p,a,a[5:]+n)]or(-a<n)*3
