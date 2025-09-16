@@ -518,8 +518,8 @@ def p(g):j=D=0;P=[];exec("for r in g:F=r[j]==4;P+=[r[j]]*D;D^=F;r[j]*=D|F<1\nj+=
 p=lambda a:[[*map(min,*[c for c in a if max(b)in c])]for b in a if len({*b,0})<3]or[*zip(*p([*zip(*a)]))]
 # task 203: 67 vs 64 bytes for gold, https://arcprize.org/play?task=85c4e7cd
 p=lambda i:[[i[g:=len(i)//2][g+i[g].index(y)]for y in x]for x in i]
-# task 204: 102 vs 93 bytes for gold, https://arcprize.org/play?task=868de0fa
-import re;p=lambda i:eval(re.sub("(?<!1, )1,([^1]+)1(?!, 1)",r"1,*[(s:=len([\1]))%2*5+2]*s,1",str(i)))
+# task 204: 93 bytes, gold, https://arcprize.org/play?task=868de0fa
+import re;p=lambda i:eval(re.sub("(?<!1, )1,(.+?)1",r"1,*[(s:=len([\1]))%2*5+2]*s,1",str(i)))
 # task 205: 170 vs 166 bytes for gold, https://arcprize.org/play?task=8731374e
 p=lambda i:[[[min(f+q,key=f.count)for*f,in zip(*s)]for q in s]for y in range(5**6)if len({*str(s:=[r[y//625:][:10-y//5%5]for r in i[y//25%25:][:10-y%5]])})<7and s[5:]][0]
 # task 206: 156 vs 144 bytes for gold, https://arcprize.org/play?task=88a10436
