@@ -555,8 +555,8 @@ p=lambda a:a+a[::-1]
 p=lambda g:[l[::-1]+l for l in(g[::-1]+g)*2][:9]
 # task 212: 115 vs 105 bytes for gold, https://arcprize.org/play?task=8d510a79
 p=lambda i,k=39:-k*i or[[x[-b]or 5in x[:-b]and 2-x[~b]%5&1-x[(-b<9)-b]for b in range(-9,1)]for x in zip(*p(i,k-1))]
-# task 213: 109 vs 92 bytes for gold, https://arcprize.org/play?task=8e1813be
-p=lambda i:len({*i[-1]})<=(n:=len({*i[0]}))>2and~-n*[[*filter(int,i[0])]]or[*zip(*p([*zip(*i[::-1])]))][::-1]
+# task 213: 100 vs 92 bytes for gold, https://arcprize.org/play?task=8e1813be
+p=lambda i:[*zip(*all(w:=[sum({*r}-{5})for r in i])and p([*zip(*i)])or[w:=[*filter(int,w)]]*len(w))]
 # task 214: 63 vs 62 bytes for gold, https://arcprize.org/play?task=8e5a5113
 p=lambda a:[b[:4]+c[::-1]+a.pop()[3::-1]for*c,b in[*zip(*a,a)]]
 # task 215: 45 vs 42 bytes for gold, https://arcprize.org/play?task=8eb1be9a
