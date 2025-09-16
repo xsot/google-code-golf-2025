@@ -184,8 +184,8 @@ def p(g):
  for a,r in enumerate(g):
   for I in G:P=min(J:={(x-a//4*x.real*2)*1j**a:G[x]for x in s},key=J.get)-I;g=g*any(13%-~J[y]^G.get(y-P,1)for y in J)or[[J.get(i*1j+j+P,v^2)^2for j,v in enumerate(r)]for i,r in enumerate(g)]
  return g
-# task 77: 119 vs 126 bytes for gold, https://arcprize.org/play?task=36fdfd69
-p=lambda i,k=5,*w,r=[[0]*25]:-k*i or i*0!=0and p([*map(p,i,*r,r+i,i[1:]+r,*w)],k-1)or((c:=w.count)(2)+c(4)>=2!=i)*4or i
+# task 77: 111 vs 126 bytes for gold, https://arcprize.org/play?task=36fdfd69
+p=lambda i,k=7,*w:k and p([*map(p,i,[k>1]*99,i[:1]+i,i[1:]+i[-1:],*w)],k-1)or((c:=w.count)(2)+c(4)>=2!=i)*4or i
 # task 78: 59 vs 60 bytes for gold, https://arcprize.org/play?task=3906de3d
 p=lambda i,*n:sorted(n,key=0 .__eq__)or[*zip(*map(p,i,*i))]
 # task 79: 123 bytes, gold, https://arcprize.org/play?task=39a8645d
