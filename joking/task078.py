@@ -1,0 +1,1 @@
+p=lambda i,*n:sorted(n,key=0 .__eq__)or[*zip(*map(p,i,*i))]

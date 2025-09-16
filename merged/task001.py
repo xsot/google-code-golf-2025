@@ -10,6 +10,9 @@ p=lambda g:[[v&V for v in l for V in L]for l in g for L in g]
 ### combined (tied, 61 bytes)
 p=lambda i:[[y&t for y in x for t in s]for x in i for s in i]
 
+### joking (63 bytes)
+exec("p=lambda a:[[d&e "+"for %s in %s%s"*4%(*'db ec]ba ca]',))
+
 ### xsot (71 bytes)
 p=lambda m,R=range(9):[[m[r//3][c//3]&m[r%3][c%3]for c in R]for r in R]
 

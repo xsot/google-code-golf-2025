@@ -186,8 +186,8 @@ def p(g):
  return g
 # task 77: 126 bytes, gold, https://arcprize.org/play?task=36fdfd69
 import re;p=lambda i,k=23:-k*i or p(eval(re.sub(f"(?<=[24], )[^2](?=(.{ {len(i)*3}}|.) [24])","4",str([*zip(*i[::-1])]))),k-1)
-# task 78: 61 vs 60 bytes for gold, https://arcprize.org/play?task=3906de3d
-p=lambda i:[*zip(*[sorted(x,key=0 .__eq__)for x in zip(*i)])]
+# task 78: 59 vs 60 bytes for gold, https://arcprize.org/play?task=3906de3d
+p=lambda i,*n:sorted(n,key=0 .__eq__)or[*zip(*map(p,i,*i))]
 # task 79: 123 bytes, gold, https://arcprize.org/play?task=39a8645d
 p=lambda i:max(t:=[h for a in range(144)if all(map(any,(h:=[x[a//12:][:3]for x in i[a%12:][:3]])+[*zip(*h)]))],key=t.count)
 # task 80: 252 (272 unzipped) vs 253 bytes for gold, https://arcprize.org/play?task=39e1d7f9
@@ -313,8 +313,8 @@ p=lambda i,k=15:-k*i or p(eval(re.sub('[83](?='+(k%3>0)*', 4|, 6'+'.{43}6)','344
 p=lambda a:a[:-1]+[[4*(0<sum(c)in c)for c in zip(*a)]]
 # task 127: 65 bytes, gold, https://arcprize.org/play?task=54d9e175
 p=lambda a,q=3:a*0==0and 5+a%5or a[1:]and[p(a[1])]*q+p(a[2:],4-q)
-# task 128: 64 bytes, gold, https://arcprize.org/play?task=5521c0d9
-p=lambda i:[*zip(*[x[(j:=-x.count(0)):]+x[:j]for x in zip(*i)])]
+# task 128: 62 vs 64 bytes for gold, https://arcprize.org/play?task=5521c0d9
+p=lambda i,*n:n[(j:=-n.count(0)):]+n[:j]or[*zip(*map(p,i,*i))]
 # task 129: 47 bytes, gold, https://arcprize.org/play?task=5582e5ca
 p=lambda a:[[max(b:=sum(a,a),key=b.count)]*3]*3
 # task 130: 65 bytes, gold, https://arcprize.org/play?task=5614dbcf
@@ -865,8 +865,8 @@ p=lambda i:[[((x|y)>>sum({*sum(i,[])})&1)*5for y in[0,6,8]]for x in[4,2,8]]
 p=lambda a,n=10,d=0:~n*a or p([[b.pop()|4*(n%6*2in b)*(d:=d^any({*c}-{4}))for c in a[::-1]]for*b,in zip(*a)],n-3)
 # task 336: 105 vs 93 bytes for gold, https://arcprize.org/play?task=d4f3cd78
 p=lambda i,k=3:-k*i or[[x[b]or(sum(x[:b])%8|1in x[:4])*8for b in range(10)]for x in zip(*p(i,k-1)[::-1])]
-# task 337: 46 bytes, gold, https://arcprize.org/play?task=d511f180
-p=lambda g:[[x^84%x%3*13for x in r]for r in g]
+# task 337: 43 vs 46 bytes for gold, https://arcprize.org/play?task=d511f180
+p=lambda x:x*-1and x^84%x%3*13or[*map(p,x)]
 # task 338: 71 vs 64 bytes for gold, https://arcprize.org/play?task=d5d6de2d
 p=lambda i,s=0:[[~y%~(s:=y-s>>t&2)%4for y,t in zip(x,[0]+x)]for x in i]
 # task 339: 37 bytes, gold, https://arcprize.org/play?task=d631b094

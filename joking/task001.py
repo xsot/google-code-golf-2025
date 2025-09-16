@@ -1,0 +1,1 @@
+exec("p=lambda a:[[d&e "+"for %s in %s%s"*4%(*'db ec]ba ca]',))

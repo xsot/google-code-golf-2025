@@ -1,7 +1,10 @@
-# ovs (46 bytes, gold)
+# joking (43 vs 46 bytes for gold)
+p=lambda x:x*-1and x^84%x%3*13or[*map(p,x)]
+
+### ovs (46 bytes)
 p=lambda g:[[x^84%x%3*13for x in r]for r in g]
 
-### combined (tied, 46 bytes)
+### combined (46 bytes)
 p=lambda g:[[x^84%x%3*13for x in r]for r in g]
 
 ### att (48 bytes)
