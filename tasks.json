@@ -45,7 +45,8 @@
                 "size_compressed": 63,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 61
     },
     "task002": {
         "gold": 90,
@@ -92,7 +93,8 @@
                 "size_compressed": 91,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 90
     },
     "task003": {
         "gold": 58,
@@ -119,7 +121,8 @@
                 "size_compressed": 60,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 58
     },
     "task004": {
         "gold": 80,
@@ -153,7 +156,8 @@
                 "size_compressed": 83,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 80
     },
     "task005": {
         "gold": 206,
@@ -204,7 +208,8 @@
                 "window": -15,
                 "escape_cost": 0
             }
-        }
+        },
+        "public_gold": 206
     },
     "task006": {
         "gold": 51,
@@ -238,7 +243,8 @@
                 "size_compressed": 51,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 51
     },
     "task007": {
         "gold": 62,
@@ -272,7 +278,8 @@
                 "size_compressed": 67,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 62
     },
     "task008": {
         "gold": 84,
@@ -299,7 +306,8 @@
                 "size_compressed": 94,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 84
     },
     "task009": {
         "gold": 109,
@@ -326,7 +334,8 @@
                 "size_compressed": 109,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 109
     },
     "task010": {
         "gold": 68,
@@ -360,7 +369,8 @@
                 "size_compressed": 72,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 68
     },
     "task011": {
         "gold": 121,
@@ -387,7 +397,8 @@
                 "size_compressed": 160,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 121
     },
     "task012": {
         "gold": 127,
@@ -421,7 +432,8 @@
                 "size_compressed": 132,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 127
     },
     "task013": {
         "gold": 140,
@@ -448,7 +460,8 @@
                 "size_compressed": 150,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 140
     },
     "task014": {
         "gold": 69,
@@ -468,7 +481,8 @@
                 "size_compressed": 76,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 70
     },
     "task015": {
         "gold": 93,
@@ -509,7 +523,8 @@
                 "size_compressed": 104,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 93
     },
     "task016": {
         "gold": 43,
@@ -536,7 +551,8 @@
                 "size_compressed": 46,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 43
     },
     "task017": {
         "gold": 99,
@@ -570,7 +586,8 @@
                 "size_compressed": 118,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 99
     },
     "task018": {
         "gold": 313,
@@ -603,7 +620,8 @@
                 "window": -15,
                 "escape_cost": 1
             }
-        }
+        },
+        "public_gold": 323
     },
     "task019": {
         "gold": 105,
@@ -630,7 +648,8 @@
                 "size_compressed": 105,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 105
     },
     "task020": {
         "gold": 139,
@@ -657,7 +676,8 @@
                 "size_compressed": 139,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 146
     },
     "task021": {
         "gold": 51,
@@ -698,7 +718,8 @@
                 "size_compressed": 51,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 57
     },
     "task022": {
         "gold": 91,
@@ -732,7 +753,8 @@
                 "size_compressed": 99,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 91
     },
     "task023": {
         "gold": 195,
@@ -759,7 +781,8 @@
                 "size_compressed": 216,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 195
     },
     "task024": {
         "gold": 62,
@@ -786,7 +809,8 @@
                 "size_compressed": 62,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 62
     },
     "task025": {
         "gold": 131,
@@ -813,7 +837,8 @@
                 "size_compressed": 153,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 131
     },
     "task026": {
         "gold": 52,
@@ -840,7 +865,8 @@
                 "size_compressed": 52,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 52
     },
     "task027": {
         "gold": 103,
@@ -860,7 +886,8 @@
                 "size_compressed": 104,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 103
     },
     "task028": {
         "gold": 63,
@@ -887,7 +914,8 @@
                 "size_compressed": 70,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 63
     },
     "task029": {
         "gold": 108,
@@ -914,7 +942,8 @@
                 "size_compressed": 118,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 108
     },
     "task030": {
         "gold": 94,
@@ -934,7 +963,8 @@
                 "size_compressed": 97,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 94
     },
     "task031": {
         "gold": 45,
@@ -968,7 +998,8 @@
                 "size_compressed": 45,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 45
     },
     "task032": {
         "gold": 39,
@@ -1002,7 +1033,8 @@
                 "size_compressed": 39,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 39
     },
     "task033": {
         "gold": 73,
@@ -1029,7 +1061,8 @@
                 "size_compressed": 77,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 73
     },
     "task034": {
         "gold": 125,
@@ -1056,7 +1089,8 @@
                 "size_compressed": 181,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 125
     },
     "task035": {
         "gold": 83,
@@ -1076,7 +1110,8 @@
                 "size_compressed": 87,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 83
     },
     "task036": {
         "gold": 75,
@@ -1110,7 +1145,8 @@
                 "size_compressed": 90,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 75
     },
     "task037": {
         "gold": 105,
@@ -1130,7 +1166,8 @@
                 "size_compressed": 109,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 105
     },
     "task038": {
         "gold": 51,
@@ -1157,7 +1194,8 @@
                 "size_compressed": 52,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 51
     },
     "task039": {
         "gold": 60,
@@ -1191,7 +1229,8 @@
                 "size_compressed": 61,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 60
     },
     "task040": {
         "gold": 69,
@@ -1218,7 +1257,8 @@
                 "size_compressed": 97,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 69
     },
     "task041": {
         "gold": 49,
@@ -1245,7 +1285,8 @@
                 "size_compressed": 49,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 49
     },
     "task042": {
         "gold": 139,
@@ -1272,7 +1313,8 @@
                 "size_compressed": 167,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 139
     },
     "task043": {
         "gold": 56,
@@ -1306,7 +1348,8 @@
                 "size_compressed": 57,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 56
     },
     "task044": {
         "gold": 244,
@@ -1339,7 +1382,8 @@
                 "window": -15,
                 "escape_cost": 0
             }
-        }
+        },
+        "public_gold": 255
     },
     "task045": {
         "gold": 45,
@@ -1359,7 +1403,8 @@
                 "size_compressed": 45,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 45
     },
     "task046": {
         "gold": 170,
@@ -1379,7 +1424,8 @@
                 "size_compressed": 170,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 170
     },
     "task047": {
         "gold": 55,
@@ -1399,7 +1445,8 @@
                 "size_compressed": 55,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 55
     },
     "task048": {
         "gold": 92,
@@ -1426,7 +1473,8 @@
                 "size_compressed": 118,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 92
     },
     "task049": {
         "gold": 81,
@@ -1453,7 +1501,8 @@
                 "size_compressed": 87,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 81
     },
     "task050": {
         "gold": 85,
@@ -1480,7 +1529,8 @@
                 "size_compressed": 91,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 85
     },
     "task051": {
         "gold": 115,
@@ -1507,7 +1557,8 @@
                 "size_compressed": 115,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 115
     },
     "task052": {
         "gold": 40,
@@ -1548,7 +1599,8 @@
                 "size_compressed": 41,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 40
     },
     "task053": {
         "gold": 21,
@@ -1582,7 +1634,8 @@
                 "size_compressed": 21,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 21
     },
     "task054": {
         "gold": 278,
@@ -1615,7 +1668,8 @@
                 "window": -15,
                 "escape_cost": 1
             }
-        }
+        },
+        "public_gold": 280
     },
     "task055": {
         "gold": 77,
@@ -1649,7 +1703,8 @@
                 "size_compressed": 77,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 83
     },
     "task056": {
         "gold": 40,
@@ -1676,7 +1731,8 @@
                 "size_compressed": 40,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 40
     },
     "task057": {
         "gold": 48,
@@ -1703,7 +1759,8 @@
                 "size_compressed": 49,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 48
     },
     "task058": {
         "gold": 103,
@@ -1723,7 +1780,8 @@
                 "size_compressed": 114,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 103
     },
     "task059": {
         "gold": 156,
@@ -1750,7 +1808,8 @@
                 "size_compressed": 191,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 156
     },
     "task060": {
         "gold": 48,
@@ -1777,7 +1836,8 @@
                 "size_compressed": 48,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 48
     },
     "task061": {
         "gold": 63,
@@ -1811,7 +1871,8 @@
                 "size_compressed": 93,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 63
     },
     "task062": {
         "gold": 143,
@@ -1831,7 +1892,8 @@
                 "size_compressed": 175,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 143
     },
     "task063": {
         "gold": 74,
@@ -1879,7 +1941,8 @@
                 "size_compressed": 75,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 74
     },
     "task064": {
         "gold": 152,
@@ -1906,7 +1969,8 @@
                 "size_compressed": 184,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 152
     },
     "task065": {
         "gold": 91,
@@ -1926,7 +1990,8 @@
                 "size_compressed": 91,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 91
     },
     "task066": {
         "gold": 268,
@@ -1959,7 +2024,8 @@
                 "window": -15,
                 "escape_cost": 0
             }
-        }
+        },
+        "public_gold": 268
     },
     "task067": {
         "gold": 33,
@@ -1993,7 +2059,8 @@
                 "size_compressed": 33,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 33
     },
     "task068": {
         "gold": 116,
@@ -2013,7 +2080,8 @@
                 "size_compressed": 122,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 116
     },
     "task069": {
         "gold": 151,
@@ -2049,7 +2117,8 @@
                 "size_compressed": 207,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 151
     },
     "task070": {
         "gold": 78,
@@ -2076,7 +2145,8 @@
                 "size_compressed": 114,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 78
     },
     "task071": {
         "gold": 119,
@@ -2105,7 +2175,8 @@
                 "window": -15,
                 "escape_cost": 0
             }
-        }
+        },
+        "public_gold": 119
     },
     "task072": {
         "gold": 54,
@@ -2139,7 +2210,8 @@
                 "size_compressed": 54,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 54
     },
     "task073": {
         "gold": 46,
@@ -2173,7 +2245,8 @@
                 "size_compressed": 46,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 46
     },
     "task074": {
         "gold": 77,
@@ -2207,7 +2280,8 @@
                 "size_compressed": 80,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 79
     },
     "task075": {
         "gold": 86,
@@ -2220,7 +2294,8 @@
                 "size_compressed": 88,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 86
     },
     "task076": {
         "gold": 276,
@@ -2253,7 +2328,8 @@
                 "window": -15,
                 "escape_cost": 0
             }
-        }
+        },
+        "public_gold": 276
     },
     "task077": {
         "gold": 111,
@@ -2273,7 +2349,8 @@
                 "size_compressed": 152,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 126
     },
     "task078": {
         "gold": 59,
@@ -2300,7 +2377,8 @@
                 "size_compressed": 59,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 60
     },
     "task079": {
         "gold": 123,
@@ -2313,7 +2391,8 @@
                 "size_compressed": 123,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 123
     },
     "task080": {
         "gold": 250,
@@ -2346,7 +2425,8 @@
                 "window": -9,
                 "escape_cost": 0
             }
-        }
+        },
+        "public_gold": 253
     },
     "task081": {
         "gold": 87,
@@ -2373,7 +2453,8 @@
                 "size_compressed": 87,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 91
     },
     "task082": {
         "gold": 50,
@@ -2400,7 +2481,8 @@
                 "size_compressed": 50,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 50
     },
     "task083": {
         "gold": 40,
@@ -2434,7 +2516,8 @@
                 "size_compressed": 40,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 40
     },
     "task084": {
         "gold": 62,
@@ -2461,7 +2544,8 @@
                 "size_compressed": 63,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 62
     },
     "task085": {
         "gold": 50,
@@ -2481,7 +2565,8 @@
                 "size_compressed": 56,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 50
     },
     "task086": {
         "gold": 172,
@@ -2510,7 +2595,8 @@
                 "size_compressed": 172,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 172
     },
     "task087": {
         "gold": 36,
@@ -2544,7 +2630,8 @@
                 "size_compressed": 36,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 36
     },
     "task088": {
         "gold": 101,
@@ -2564,7 +2651,8 @@
                 "size_compressed": 109,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 101
     },
     "task089": {
         "gold": 236,
@@ -2597,7 +2685,8 @@
                 "window": -15,
                 "escape_cost": 0
             }
-        }
+        },
+        "public_gold": 236
     },
     "task090": {
         "gold": 153,
@@ -2631,7 +2720,8 @@
                 "size_compressed": 156,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 159
     },
     "task091": {
         "gold": 63,
@@ -2651,7 +2741,8 @@
                 "size_compressed": 63,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 63
     },
     "task092": {
         "gold": 86,
@@ -2671,7 +2762,8 @@
                 "size_compressed": 93,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 86
     },
     "task093": {
         "gold": 99,
@@ -2698,7 +2790,8 @@
                 "size_compressed": 100,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 99
     },
     "task094": {
         "gold": 102,
@@ -2718,7 +2811,8 @@
                 "size_compressed": 137,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 102
     },
     "task095": {
         "gold": 73,
@@ -2745,7 +2839,8 @@
                 "size_compressed": 75,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 73
     },
     "task096": {
         "gold": 320,
@@ -2778,7 +2873,8 @@
                 "window": -15,
                 "escape_cost": 0
             }
-        }
+        },
+        "public_gold": 325
     },
     "task097": {
         "gold": 108,
@@ -2798,7 +2894,8 @@
                 "size_compressed": 113,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 108
     },
     "task098": {
         "gold": 64,
@@ -2825,7 +2922,8 @@
                 "size_compressed": 64,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 88
     },
     "task099": {
         "gold": 115,
@@ -2852,7 +2950,8 @@
                 "size_compressed": 116,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 115
     },
     "task100": {
         "gold": 85,
@@ -2886,7 +2985,8 @@
                 "size_compressed": 88,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 85
     },
     "task101": {
         "gold": 279,
@@ -2919,7 +3019,8 @@
                 "window": -9,
                 "escape_cost": 0
             }
-        }
+        },
+        "public_gold": 281
     },
     "task102": {
         "gold": 150,
@@ -2948,7 +3049,8 @@
                 "size_compressed": 206,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 150
     },
     "task103": {
         "gold": 29,
@@ -2982,7 +3084,8 @@
                 "size_compressed": 29,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 29
     },
     "task104": {
         "gold": 84,
@@ -3009,7 +3112,8 @@
                 "size_compressed": 94,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 84
     },
     "task105": {
         "gold": 148,
@@ -3043,7 +3147,8 @@
                 "size_compressed": 153,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 148
     },
     "task106": {
         "gold": 67,
@@ -3063,7 +3168,8 @@
                 "size_compressed": 75,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 67
     },
     "task107": {
         "gold": 162,
@@ -3083,7 +3189,8 @@
                 "size_compressed": 194,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 162
     },
     "task108": {
         "gold": 46,
@@ -3110,7 +3217,8 @@
                 "size_compressed": 58,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 56
     },
     "task109": {
         "gold": 81,
@@ -3130,7 +3238,8 @@
                 "size_compressed": 91,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 81
     },
     "task110": {
         "gold": 85,
@@ -3164,7 +3273,8 @@
                 "size_compressed": 89,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 85
     },
     "task111": {
         "gold": 60,
@@ -3184,7 +3294,8 @@
                 "size_compressed": 61,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 60
     },
     "task112": {
         "gold": 109,
@@ -3197,7 +3308,8 @@
                 "size_compressed": 112,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 109
     },
     "task113": {
         "gold": 25,
@@ -3231,7 +3343,8 @@
                 "size_compressed": 25,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 25
     },
     "task114": {
         "gold": 64,
@@ -3251,7 +3364,8 @@
                 "size_compressed": 65,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 64
     },
     "task115": {
         "gold": 54,
@@ -3278,7 +3392,8 @@
                 "size_compressed": 54,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 54
     },
     "task116": {
         "gold": 20,
@@ -3312,7 +3427,8 @@
                 "size_compressed": 20,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 20
     },
     "task117": {
         "gold": 148,
@@ -3332,7 +3448,8 @@
                 "size_compressed": 154,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 148
     },
     "task118": {
         "gold": 236,
@@ -3383,7 +3500,8 @@
                 "window": -15,
                 "escape_cost": 1
             }
-        }
+        },
+        "public_gold": 271
     },
     "task119": {
         "gold": 106,
@@ -3410,7 +3528,8 @@
                 "size_compressed": 106,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 106
     },
     "task120": {
         "gold": 79,
@@ -3437,7 +3556,8 @@
                 "size_compressed": 79,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 97
     },
     "task121": {
         "gold": 89,
@@ -3457,7 +3577,8 @@
                 "size_compressed": 96,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 89
     },
     "task122": {
         "gold": 81,
@@ -3484,7 +3605,8 @@
                 "size_compressed": 82,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 82
     },
     "task123": {
         "gold": 75,
@@ -3504,7 +3626,8 @@
                 "size_compressed": 76,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 75
     },
     "task124": {
         "gold": 96,
@@ -3531,7 +3654,8 @@
                 "size_compressed": 100,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 96
     },
     "task125": {
         "gold": 125,
@@ -3558,7 +3682,8 @@
                 "size_compressed": 125,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 126
     },
     "task126": {
         "gold": 54,
@@ -3585,7 +3710,8 @@
                 "size_compressed": 57,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 54
     },
     "task127": {
         "gold": 65,
@@ -3612,7 +3738,8 @@
                 "size_compressed": 65,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 65
     },
     "task128": {
         "gold": 62,
@@ -3639,7 +3766,8 @@
                 "size_compressed": 62,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 64
     },
     "task129": {
         "gold": 47,
@@ -3673,7 +3801,8 @@
                 "size_compressed": 47,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 47
     },
     "task130": {
         "gold": 65,
@@ -3707,7 +3836,8 @@
                 "size_compressed": 65,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 65
     },
     "task131": {
         "gold": 125,
@@ -3734,7 +3864,8 @@
                 "size_compressed": 125,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 125
     },
     "task132": {
         "gold": 86,
@@ -3761,7 +3892,8 @@
                 "size_compressed": 86,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 86
     },
     "task133": {
         "gold": 289,
@@ -3785,7 +3917,8 @@
                 "window": -15,
                 "escape_cost": 0
             }
-        }
+        },
+        "public_gold": 298
     },
     "task134": {
         "gold": 174,
@@ -3807,7 +3940,8 @@
                 "size_compressed": 174,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 181
     },
     "task135": {
         "gold": 32,
@@ -3841,7 +3975,8 @@
                 "size_compressed": 32,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 32
     },
     "task136": {
         "gold": 105,
@@ -3875,7 +4010,8 @@
                 "size_compressed": 107,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 105
     },
     "task137": {
         "gold": 141,
@@ -3902,7 +4038,8 @@
                 "size_compressed": 141,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 141
     },
     "task138": {
         "gold": 104,
@@ -3922,7 +4059,8 @@
                 "size_compressed": 152,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 104
     },
     "task139": {
         "gold": 89,
@@ -3956,7 +4094,8 @@
                 "size_compressed": 89,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 94
     },
     "task140": {
         "gold": 36,
@@ -3990,7 +4129,8 @@
                 "size_compressed": 36,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 36
     },
     "task141": {
         "gold": 94,
@@ -4017,7 +4157,8 @@
                 "size_compressed": 102,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 94
     },
     "task142": {
         "gold": 40,
@@ -4051,7 +4192,8 @@
                 "size_compressed": 40,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 40
     },
     "task143": {
         "gold": 135,
@@ -4078,7 +4220,8 @@
                 "size_compressed": 150,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 135
     },
     "task144": {
         "gold": 53,
@@ -4119,7 +4262,8 @@
                 "size_compressed": 53,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 53
     },
     "task145": {
         "gold": 191,
@@ -4139,7 +4283,8 @@
                 "size_compressed": 191,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 191
     },
     "task146": {
         "gold": 58,
@@ -4166,7 +4311,8 @@
                 "size_compressed": 58,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 58
     },
     "task147": {
         "gold": 83,
@@ -4193,7 +4339,8 @@
                 "size_compressed": 87,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 83
     },
     "task148": {
         "gold": 141,
@@ -4220,7 +4367,8 @@
                 "size_compressed": 147,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 141
     },
     "task149": {
         "gold": 75,
@@ -4254,7 +4402,8 @@
                 "size_compressed": 82,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 75
     },
     "task150": {
         "gold": 30,
@@ -4281,7 +4430,8 @@
                 "size_compressed": 30,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 30
     },
     "task151": {
         "gold": 108,
@@ -4294,7 +4444,8 @@
                 "size_compressed": 108,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 108
     },
     "task152": {
         "gold": 40,
@@ -4328,7 +4479,8 @@
                 "size_compressed": 40,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 40
     },
     "task153": {
         "gold": 133,
@@ -4357,7 +4509,8 @@
                 "size_compressed": 153,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 133
     },
     "task154": {
         "gold": 99,
@@ -4384,7 +4537,8 @@
                 "size_compressed": 112,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 99
     },
     "task155": {
         "gold": 18,
@@ -4418,7 +4572,8 @@
                 "size_compressed": 18,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 18
     },
     "task156": {
         "gold": 146,
@@ -4452,7 +4607,8 @@
                 "size_compressed": 156,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 146
     },
     "task157": {
         "gold": 246,
@@ -4503,7 +4659,8 @@
                 "window": -15,
                 "escape_cost": 0
             }
-        }
+        },
+        "public_gold": 248
     },
     "task158": {
         "gold": 267,
@@ -4545,7 +4702,8 @@
                 "window": -15,
                 "escape_cost": 0
             }
-        }
+        },
+        "public_gold": 269
     },
     "task159": {
         "gold": 109,
@@ -4572,7 +4730,8 @@
                 "size_compressed": 110,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 109
     },
     "task160": {
         "gold": 105,
@@ -4606,7 +4765,8 @@
                 "size_compressed": 106,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 105
     },
     "task161": {
         "gold": 82,
@@ -4633,7 +4793,8 @@
                 "size_compressed": 83,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 82
     },
     "task162": {
         "gold": 96,
@@ -4674,7 +4835,8 @@
                 "size_compressed": 101,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 96
     },
     "task163": {
         "gold": 131,
@@ -4701,7 +4863,8 @@
                 "size_compressed": 143,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 131
     },
     "task164": {
         "gold": 32,
@@ -4735,7 +4898,8 @@
                 "size_compressed": 32,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 32
     },
     "task165": {
         "gold": 136,
@@ -4762,7 +4926,8 @@
                 "size_compressed": 136,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 136
     },
     "task166": {
         "gold": 61,
@@ -4789,7 +4954,8 @@
                 "size_compressed": 65,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 61
     },
     "task167": {
         "gold": 71,
@@ -4809,7 +4975,8 @@
                 "size_compressed": 72,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 71
     },
     "task168": {
         "gold": 111,
@@ -4829,7 +4996,8 @@
                 "size_compressed": 116,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 111
     },
     "task169": {
         "gold": 121,
@@ -4849,7 +5017,8 @@
                 "size_compressed": 121,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 129
     },
     "task170": {
         "gold": 196,
@@ -4882,7 +5051,8 @@
                 "window": -9,
                 "escape_cost": 1
             }
-        }
+        },
+        "public_gold": 196
     },
     "task171": {
         "gold": 51,
@@ -4923,7 +5093,8 @@
                 "size_compressed": 51,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 51
     },
     "task172": {
         "gold": 20,
@@ -4957,7 +5128,8 @@
                 "size_compressed": 20,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 20
     },
     "task173": {
         "gold": 213,
@@ -4999,7 +5171,8 @@
                 "window": -15,
                 "escape_cost": 0
             }
-        }
+        },
+        "public_gold": 218
     },
     "task174": {
         "gold": 97,
@@ -5033,7 +5206,8 @@
                 "size_compressed": 97,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 97
     },
     "task175": {
         "gold": 75,
@@ -5053,7 +5227,8 @@
                 "size_compressed": 92,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 75
     },
     "task176": {
         "gold": 64,
@@ -5073,7 +5248,8 @@
                 "size_compressed": 74,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 64
     },
     "task177": {
         "gold": 51,
@@ -5107,7 +5283,8 @@
                 "size_compressed": 55,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 51
     },
     "task178": {
         "gold": 47,
@@ -5141,7 +5318,8 @@
                 "size_compressed": 55,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 47
     },
     "task179": {
         "gold": 21,
@@ -5175,7 +5353,8 @@
                 "size_compressed": 21,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 21
     },
     "task180": {
         "gold": 78,
@@ -5209,7 +5388,8 @@
                 "size_compressed": 81,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 79
     },
     "task181": {
         "gold": 67,
@@ -5243,7 +5423,8 @@
                 "size_compressed": 67,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 67
     },
     "task182": {
         "gold": 169,
@@ -5263,7 +5444,8 @@
                 "size_compressed": 187,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 169
     },
     "task183": {
         "gold": 93,
@@ -5276,7 +5458,8 @@
                 "size_compressed": 94,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 93
     },
     "task184": {
         "gold": 100,
@@ -5289,7 +5472,8 @@
                 "size_compressed": 101,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 100
     },
     "task185": {
         "gold": 138,
@@ -5309,7 +5493,8 @@
                 "size_compressed": 138,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 143
     },
     "task186": {
         "gold": 60,
@@ -5329,7 +5514,8 @@
                 "size_compressed": 66,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 60
     },
     "task187": {
         "gold": 91,
@@ -5349,7 +5535,8 @@
                 "size_compressed": 91,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 92
     },
     "task188": {
         "gold": 61,
@@ -5376,7 +5563,8 @@
                 "size_compressed": 68,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 61
     },
     "task189": {
         "gold": 111,
@@ -5396,7 +5584,8 @@
                 "size_compressed": 140,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 111
     },
     "task190": {
         "gold": 108,
@@ -5416,7 +5605,8 @@
                 "size_compressed": 108,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 109
     },
     "task191": {
         "gold": 241,
@@ -5449,7 +5639,8 @@
                 "window": -9,
                 "escape_cost": 0
             }
-        }
+        },
+        "public_gold": 241
     },
     "task192": {
         "gold": 110,
@@ -5476,7 +5667,8 @@
                 "size_compressed": 115,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 110
     },
     "task193": {
         "gold": 79,
@@ -5510,7 +5702,8 @@
                 "size_compressed": 79,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 81
     },
     "task194": {
         "gold": 67,
@@ -5537,7 +5730,8 @@
                 "size_compressed": 68,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 67
     },
     "task195": {
         "gold": 105,
@@ -5557,7 +5751,8 @@
                 "size_compressed": 105,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 105
     },
     "task196": {
         "gold": 112,
@@ -5577,7 +5772,8 @@
                 "size_compressed": 112,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 112
     },
     "task197": {
         "gold": 54,
@@ -5611,7 +5807,8 @@
                 "size_compressed": 54,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 54
     },
     "task198": {
         "gold": 122,
@@ -5638,7 +5835,8 @@
                 "size_compressed": 122,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 122
     },
     "task199": {
         "gold": 84,
@@ -5665,7 +5863,8 @@
                 "size_compressed": 87,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 84
     },
     "task200": {
         "gold": 84,
@@ -5692,7 +5891,8 @@
                 "size_compressed": 93,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 84
     },
     "task201": {
         "gold": 207,
@@ -5723,7 +5923,8 @@
                 "window": -15,
                 "escape_cost": 0
             }
-        }
+        },
+        "public_gold": 208
     },
     "task202": {
         "gold": 102,
@@ -5757,7 +5958,8 @@
                 "size_compressed": 106,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 102
     },
     "task203": {
         "gold": 64,
@@ -5784,7 +5986,8 @@
                 "size_compressed": 67,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 64
     },
     "task204": {
         "gold": 93,
@@ -5811,7 +6014,8 @@
                 "size_compressed": 93,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 93
     },
     "task205": {
         "gold": 166,
@@ -5840,7 +6044,8 @@
                 "size_compressed": 170,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 166
     },
     "task206": {
         "gold": 144,
@@ -5867,7 +6072,8 @@
                 "size_compressed": 176,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 144
     },
     "task207": {
         "gold": 81,
@@ -5901,7 +6107,8 @@
                 "size_compressed": 81,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 81
     },
     "task208": {
         "gold": 215,
@@ -5952,7 +6159,8 @@
                 "window": -15,
                 "escape_cost": 0
             }
-        }
+        },
+        "public_gold": 215
     },
     "task209": {
         "gold": 275,
@@ -5985,7 +6193,8 @@
                 "window": -15,
                 "escape_cost": 0
             }
-        }
+        },
+        "public_gold": 289
     },
     "task210": {
         "gold": 20,
@@ -6019,7 +6228,8 @@
                 "size_compressed": 20,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 20
     },
     "task211": {
         "gold": 48,
@@ -6053,7 +6263,8 @@
                 "size_compressed": 48,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 48
     },
     "task212": {
         "gold": 105,
@@ -6073,7 +6284,8 @@
                 "size_compressed": 115,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 105
     },
     "task213": {
         "gold": 92,
@@ -6100,7 +6312,8 @@
                 "size_compressed": 109,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 92
     },
     "task214": {
         "gold": 62,
@@ -6127,7 +6340,8 @@
                 "size_compressed": 63,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 62
     },
     "task215": {
         "gold": 42,
@@ -6161,7 +6375,8 @@
                 "size_compressed": 45,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 42
     },
     "task216": {
         "gold": 114,
@@ -6188,7 +6403,8 @@
                 "size_compressed": 125,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 114
     },
     "task217": {
         "gold": 95,
@@ -6215,7 +6431,8 @@
                 "size_compressed": 95,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 95
     },
     "task218": {
         "gold": 56,
@@ -6242,7 +6459,8 @@
                 "size_compressed": 56,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 56
     },
     "task219": {
         "gold": 267,
@@ -6284,7 +6502,8 @@
                 "window": -15,
                 "escape_cost": 0
             }
-        }
+        },
+        "public_gold": 267
     },
     "task220": {
         "gold": 87,
@@ -6311,7 +6530,8 @@
                 "size_compressed": 93,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 87
     },
     "task221": {
         "gold": 87,
@@ -6345,7 +6565,8 @@
                 "size_compressed": 98,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 87
     },
     "task222": {
         "gold": 103,
@@ -6374,7 +6595,8 @@
                 "window": -15,
                 "escape_cost": 1
             }
-        }
+        },
+        "public_gold": 103
     },
     "task223": {
         "gold": 46,
@@ -6408,7 +6630,8 @@
                 "size_compressed": 52,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 51
     },
     "task224": {
         "gold": 171,
@@ -6430,7 +6653,8 @@
                 "size_compressed": 171,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 171
     },
     "task225": {
         "gold": 128,
@@ -6457,7 +6681,8 @@
                 "size_compressed": 145,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 132
     },
     "task226": {
         "gold": 125,
@@ -6491,7 +6716,8 @@
                 "size_compressed": 125,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 139
     },
     "task227": {
         "gold": 52,
@@ -6525,7 +6751,8 @@
                 "size_compressed": 52,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 52
     },
     "task228": {
         "gold": 119,
@@ -6552,7 +6779,8 @@
                 "size_compressed": 189,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 119
     },
     "task229": {
         "gold": 73,
@@ -6586,7 +6814,8 @@
                 "size_compressed": 73,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 73
     },
     "task230": {
         "gold": 114,
@@ -6620,7 +6849,8 @@
                 "size_compressed": 126,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 114
     },
     "task231": {
         "gold": 43,
@@ -6654,7 +6884,8 @@
                 "size_compressed": 43,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 43
     },
     "task232": {
         "gold": 58,
@@ -6688,7 +6919,8 @@
                 "size_compressed": 61,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 58
     },
     "task233": {
         "gold": 297,
@@ -6739,7 +6971,8 @@
                 "window": -15,
                 "escape_cost": 0
             }
-        }
+        },
+        "public_gold": 297
     },
     "task234": {
         "gold": 118,
@@ -6752,11 +6985,12 @@
                 "size_compressed": 120,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 118
     },
     "task235": {
         "gold": 61,
-        "best": 62,
+        "best": 61,
         "solutions": {
             "ovs": {
                 "source": "cD1sYW1iZGEgZzpbWzEtZ1syXVtzKzFdKjItZ1sxXVtzXSZnWzNdW3MrMl0rNl0qM2ZvciBzIGluKDAsNSwxMCld",
@@ -6778,8 +7012,16 @@
                 "compressed": "cD1sYW1iZGEgZzpbW2dbMV1beF0qc3VtKGdbMl1beDp4KzNdKSUxM144XSozZm9yIHggaW5bMSw2LDExXV0=",
                 "size_compressed": 62,
                 "method": "none"
+            },
+            "joking": {
+                "source": "cD1sYW1iZGEgZzpbW2dbMV1beF0qc3VtKGdbMl1beDp4KzNdKSUxM144XSozZm9yIHggaW4gYicBBgsnXQ==",
+                "size_uncompressed": 61,
+                "compressed": "cD1sYW1iZGEgZzpbW2dbMV1beF0qc3VtKGdbMl1beDp4KzNdKSUxM144XSozZm9yIHggaW4gYicBBgsnXQ==",
+                "size_compressed": 61,
+                "method": "none"
             }
-        }
+        },
+        "public_gold": 61
     },
     "task236": {
         "gold": 54,
@@ -6813,7 +7055,8 @@
                 "size_compressed": 54,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 54
     },
     "task237": {
         "gold": 67,
@@ -6840,7 +7083,8 @@
                 "size_compressed": 67,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 67
     },
     "task238": {
         "gold": 222,
@@ -6873,7 +7117,8 @@
                 "window": -15,
                 "escape_cost": 0
             }
-        }
+        },
+        "public_gold": 223
     },
     "task239": {
         "gold": 99,
@@ -6907,7 +7152,8 @@
                 "size_compressed": 108,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 99
     },
     "task240": {
         "gold": 99,
@@ -6934,7 +7180,8 @@
                 "size_compressed": 105,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 99
     },
     "task241": {
         "gold": 21,
@@ -6968,7 +7215,8 @@
                 "size_compressed": 21,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 21
     },
     "task242": {
         "gold": 54,
@@ -7002,7 +7250,8 @@
                 "size_compressed": 54,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 54
     },
     "task243": {
         "gold": 79,
@@ -7036,7 +7285,8 @@
                 "size_compressed": 79,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 79
     },
     "task244": {
         "gold": 64,
@@ -7070,7 +7320,8 @@
                 "size_compressed": 64,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 64
     },
     "task245": {
         "gold": 106,
@@ -7097,7 +7348,8 @@
                 "size_compressed": 108,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 106
     },
     "task246": {
         "gold": 105,
@@ -7131,7 +7383,8 @@
                 "size_compressed": 109,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 105
     },
     "task247": {
         "gold": 95,
@@ -7158,7 +7411,8 @@
                 "size_compressed": 96,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 95
     },
     "task248": {
         "gold": 72,
@@ -7185,7 +7439,8 @@
                 "size_compressed": 74,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 72
     },
     "task249": {
         "gold": 26,
@@ -7219,7 +7474,8 @@
                 "size_compressed": 26,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 26
     },
     "task250": {
         "gold": 118,
@@ -7246,7 +7502,8 @@
                 "size_compressed": 126,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 118
     },
     "task251": {
         "gold": 89,
@@ -7273,7 +7530,8 @@
                 "size_compressed": 94,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 89
     },
     "task252": {
         "gold": 57,
@@ -7300,7 +7558,8 @@
                 "size_compressed": 61,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 57
     },
     "task253": {
         "gold": 129,
@@ -7341,7 +7600,8 @@
                 "size_compressed": 133,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 129
     },
     "task254": {
         "gold": 84,
@@ -7375,7 +7635,8 @@
                 "size_compressed": 95,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 84
     },
     "task255": {
         "gold": 242,
@@ -7408,7 +7669,8 @@
                 "window": -15,
                 "escape_cost": 1
             }
-        }
+        },
+        "public_gold": 242
     },
     "task256": {
         "gold": 95,
@@ -7428,7 +7690,8 @@
                 "size_compressed": 96,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 95
     },
     "task257": {
         "gold": 74,
@@ -7454,8 +7717,16 @@
                 "compressed": "cD1ldmFsKCdsYW1iZGEgYTpbW21heChzdW0oYSwoKSksa2V5PWJvb2wpJysnZm9yKmEsaW4gbWFwKHppcCxhLGFbNTpdKV0nKjIp",
                 "size_compressed": 75,
                 "method": "none"
+            },
+            "joking": {
+                "source": "CnA9bGFtYmRhIGk6KHQ6PVsqaV0pWzQ6XWFuZFsqbWFwKHAsbWFwKHppcCx0LHRbNTpdKSldb3IgbWF4KHN1bSh0LCgpKSxrZXk9Ym9vbCkKIyMKcD1sYW1iZGEqaTppWzBdKjAhPTBhbmRbKm1hcChwLCpzdW0oW1thLGFbNTpdXWZvciBhIGluIGldLFtdKSldb3IgbWF4KGksa2V5PWJvb2wpCnA9bGFtYmRhKmk6aVswXSowIT0wYW5kWyptYXAocCwqW2FbeDpdZm9yIGEgaW4gaSBmb3IgeCBpblswLDVdXSldb3IgbWF4KGksa2V5PWJvb2wpCnA9bGFtYmRhIGksKnc6aSowIT0wYW5kWyptYXAocCxpLGlbNTpdLCp3IGFuZFsqdyx3WzBdWzU6XV0pXW9yIG1heChbaSwqd10sa2V5PWJvb2wp",
+                "size_uncompressed": 79,
+                "compressed": "cD1sYW1iZGEgaToodDo9WyppXSlbNDpdYW5kWyptYXAocCxtYXAoemlwLHQsdFs1Ol0pKV1vciBtYXgoc3VtKHQsKCkpLGtleT1ib29sKQ==",
+                "size_compressed": 79,
+                "method": "none"
             }
-        }
+        },
+        "public_gold": 74
     },
     "task258": {
         "gold": 61,
@@ -7489,7 +7760,8 @@
                 "size_compressed": 61,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 61
     },
     "task259": {
         "gold": 85,
@@ -7516,7 +7788,8 @@
                 "size_compressed": 85,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 85
     },
     "task260": {
         "gold": 135,
@@ -7536,7 +7809,8 @@
                 "size_compressed": 150,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 135
     },
     "task261": {
         "gold": 47,
@@ -7570,7 +7844,8 @@
                 "size_compressed": 47,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 47
     },
     "task262": {
         "gold": 39,
@@ -7604,7 +7879,8 @@
                 "size_compressed": 39,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 39
     },
     "task263": {
         "gold": 122,
@@ -7624,7 +7900,8 @@
                 "size_compressed": 122,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 122
     },
     "task264": {
         "gold": 216,
@@ -7644,7 +7921,8 @@
                 "size_compressed": 216,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 216
     },
     "task265": {
         "gold": 104,
@@ -7678,7 +7956,8 @@
                 "size_compressed": 131,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 104
     },
     "task266": {
         "gold": 102,
@@ -7698,7 +7977,8 @@
                 "size_compressed": 103,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 102
     },
     "task267": {
         "gold": 46,
@@ -7725,7 +8005,8 @@
                 "size_compressed": 52,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 46
     },
     "task268": {
         "gold": 236,
@@ -7767,7 +8048,8 @@
                 "window": -15,
                 "escape_cost": 0
             }
-        }
+        },
+        "public_gold": 239
     },
     "task269": {
         "gold": 63,
@@ -7801,7 +8083,8 @@
                 "size_compressed": 64,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 63
     },
     "task270": {
         "gold": 117,
@@ -7835,7 +8118,8 @@
                 "size_compressed": 117,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 117
     },
     "task271": {
         "gold": 86,
@@ -7862,7 +8146,8 @@
                 "size_compressed": 86,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 86
     },
     "task272": {
         "gold": 89,
@@ -7896,7 +8181,8 @@
                 "size_compressed": 95,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 89
     },
     "task273": {
         "gold": 116,
@@ -7916,7 +8202,8 @@
                 "size_compressed": 116,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 116
     },
     "task274": {
         "gold": 71,
@@ -7936,7 +8223,8 @@
                 "size_compressed": 75,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 71
     },
     "task275": {
         "gold": 136,
@@ -7956,7 +8244,8 @@
                 "size_compressed": 137,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 136
     },
     "task276": {
         "gold": 38,
@@ -7990,7 +8279,8 @@
                 "size_compressed": 38,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 38
     },
     "task277": {
         "gold": 194,
@@ -8010,7 +8300,8 @@
                 "size_compressed": 199,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 194
     },
     "task278": {
         "gold": 118,
@@ -8051,7 +8342,8 @@
                 "size_compressed": 119,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 118
     },
     "task279": {
         "gold": 107,
@@ -8078,7 +8370,8 @@
                 "size_compressed": 113,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 107
     },
     "task280": {
         "gold": 179,
@@ -8098,7 +8391,8 @@
                 "size_compressed": 182,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 179
     },
     "task281": {
         "gold": 145,
@@ -8118,7 +8412,8 @@
                 "size_compressed": 146,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 145
     },
     "task282": {
         "gold": 83,
@@ -8145,7 +8440,8 @@
                 "size_compressed": 83,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 83
     },
     "task283": {
         "gold": 81,
@@ -8179,7 +8475,8 @@
                 "size_compressed": 81,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 82
     },
     "task284": {
         "gold": 220,
@@ -8199,7 +8496,8 @@
                 "size_compressed": 228,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 220
     },
     "task285": {
         "gold": 288,
@@ -8241,7 +8539,8 @@
                 "window": -15,
                 "escape_cost": 1
             }
-        }
+        },
+        "public_gold": 288
     },
     "task286": {
         "gold": 109,
@@ -8268,7 +8567,8 @@
                 "size_compressed": 121,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 109
     },
     "task287": {
         "gold": 56,
@@ -8295,7 +8595,8 @@
                 "size_compressed": 63,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 56
     },
     "task288": {
         "gold": 89,
@@ -8308,7 +8609,8 @@
                 "size_compressed": 112,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 89
     },
     "task289": {
         "gold": 63,
@@ -8342,7 +8644,8 @@
                 "size_compressed": 64,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 63
     },
     "task290": {
         "gold": 67,
@@ -8362,7 +8665,8 @@
                 "size_compressed": 69,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 67
     },
     "task291": {
         "gold": 61,
@@ -8389,7 +8693,8 @@
                 "size_compressed": 62,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 61
     },
     "task292": {
         "gold": 56,
@@ -8416,7 +8721,8 @@
                 "size_compressed": 58,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 56
     },
     "task293": {
         "gold": 59,
@@ -8436,7 +8742,8 @@
                 "size_compressed": 60,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 59
     },
     "task294": {
         "gold": 70,
@@ -8463,7 +8770,8 @@
                 "size_compressed": 77,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 70
     },
     "task295": {
         "gold": 54,
@@ -8490,7 +8798,8 @@
                 "size_compressed": 54,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 54
     },
     "task296": {
         "gold": 63,
@@ -8517,7 +8826,8 @@
                 "size_compressed": 63,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 63
     },
     "task297": {
         "gold": 43,
@@ -8551,7 +8861,8 @@
                 "size_compressed": 44,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 43
     },
     "task298": {
         "gold": 55,
@@ -8564,7 +8875,8 @@
                 "size_compressed": 55,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 55
     },
     "task299": {
         "gold": 54,
@@ -8584,7 +8896,8 @@
                 "size_compressed": 54,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 54
     },
     "task300": {
         "gold": 87,
@@ -8611,7 +8924,8 @@
                 "size_compressed": 87,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 87
     },
     "task301": {
         "gold": 31,
@@ -8645,7 +8959,8 @@
                 "size_compressed": 31,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 31
     },
     "task302": {
         "gold": 89,
@@ -8658,7 +8973,8 @@
                 "size_compressed": 93,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 89
     },
     "task303": {
         "gold": 62,
@@ -8692,7 +9008,8 @@
                 "size_compressed": 75,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 62
     },
     "task304": {
         "gold": 92,
@@ -8712,7 +9029,8 @@
                 "size_compressed": 92,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 92
     },
     "task305": {
         "gold": 62,
@@ -8732,7 +9050,8 @@
                 "size_compressed": 62,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 62
     },
     "task306": {
         "gold": 71,
@@ -8759,7 +9078,8 @@
                 "size_compressed": 81,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 71
     },
     "task307": {
         "gold": 46,
@@ -8793,7 +9113,8 @@
                 "size_compressed": 52,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 50
     },
     "task308": {
         "gold": 226,
@@ -8835,7 +9156,8 @@
                 "window": -15,
                 "escape_cost": 0
             }
-        }
+        },
+        "public_gold": 226
     },
     "task309": {
         "gold": 38,
@@ -8869,7 +9191,8 @@
                 "size_compressed": 38,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 38
     },
     "task310": {
         "gold": 78,
@@ -8896,7 +9219,8 @@
                 "size_compressed": 81,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 78
     },
     "task311": {
         "gold": 32,
@@ -8930,7 +9254,8 @@
                 "size_compressed": 32,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 32
     },
     "task312": {
         "gold": 44,
@@ -8964,7 +9289,8 @@
                 "size_compressed": 45,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 44
     },
     "task313": {
         "gold": 63,
@@ -8984,7 +9310,8 @@
                 "size_compressed": 65,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 63
     },
     "task314": {
         "gold": 96,
@@ -9004,7 +9331,8 @@
                 "size_compressed": 102,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 96
     },
     "task315": {
         "gold": 63,
@@ -9031,7 +9359,8 @@
                 "size_compressed": 63,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 63
     },
     "task316": {
         "gold": 71,
@@ -9044,7 +9373,8 @@
                 "size_compressed": 72,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 71
     },
     "task317": {
         "gold": 43,
@@ -9078,7 +9408,8 @@
                 "size_compressed": 43,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 59
     },
     "task318": {
         "gold": 54,
@@ -9112,7 +9443,8 @@
                 "size_compressed": 54,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 54
     },
     "task319": {
         "gold": 194,
@@ -9159,7 +9491,8 @@
                 "window": -15,
                 "escape_cost": 0
             }
-        }
+        },
+        "public_gold": 194
     },
     "task320": {
         "gold": 68,
@@ -9179,7 +9512,8 @@
                 "size_compressed": 72,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 68
     },
     "task321": {
         "gold": 55,
@@ -9206,7 +9540,8 @@
                 "size_compressed": 57,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 55
     },
     "task322": {
         "gold": 48,
@@ -9247,7 +9582,8 @@
                 "size_compressed": 49,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 48
     },
     "task323": {
         "gold": 102,
@@ -9274,7 +9610,8 @@
                 "size_compressed": 125,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 102
     },
     "task324": {
         "gold": 259,
@@ -9307,7 +9644,8 @@
                 "window": -15,
                 "escape_cost": 0
             }
-        }
+        },
+        "public_gold": 259
     },
     "task325": {
         "gold": 160,
@@ -9336,7 +9674,8 @@
                 "size_compressed": 172,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 160
     },
     "task326": {
         "gold": 30,
@@ -9370,7 +9709,8 @@
                 "size_compressed": 30,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 30
     },
     "task327": {
         "gold": 67,
@@ -9390,7 +9730,8 @@
                 "size_compressed": 67,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 67
     },
     "task328": {
         "gold": 163,
@@ -9417,7 +9758,8 @@
                 "size_compressed": 175,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 163
     },
     "task329": {
         "gold": 54,
@@ -9451,7 +9793,8 @@
                 "size_compressed": 54,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 54
     },
     "task330": {
         "gold": 134,
@@ -9480,7 +9823,8 @@
                 "size_compressed": 135,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 134
     },
     "task331": {
         "gold": 83,
@@ -9500,7 +9844,8 @@
                 "size_compressed": 84,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 83
     },
     "task332": {
         "gold": 58,
@@ -9520,7 +9865,8 @@
                 "size_compressed": 61,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 58
     },
     "task333": {
         "gold": 89,
@@ -9540,7 +9886,8 @@
                 "size_compressed": 93,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 89
     },
     "task334": {
         "gold": 66,
@@ -9560,7 +9907,8 @@
                 "size_compressed": 75,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 66
     },
     "task335": {
         "gold": 107,
@@ -9594,7 +9942,8 @@
                 "size_compressed": 113,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 107
     },
     "task336": {
         "gold": 93,
@@ -9614,7 +9963,8 @@
                 "size_compressed": 105,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 93
     },
     "task337": {
         "gold": 43,
@@ -9655,7 +10005,8 @@
                 "size_compressed": 43,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 46
     },
     "task338": {
         "gold": 64,
@@ -9682,7 +10033,8 @@
                 "size_compressed": 104,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 64
     },
     "task339": {
         "gold": 37,
@@ -9716,7 +10068,8 @@
                 "size_compressed": 37,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 37
     },
     "task340": {
         "gold": 119,
@@ -9736,7 +10089,8 @@
                 "size_compressed": 122,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 119
     },
     "task341": {
         "gold": 132,
@@ -9763,7 +10117,8 @@
                 "size_compressed": 137,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 132
     },
     "task342": {
         "gold": 111,
@@ -9776,7 +10131,8 @@
                 "size_compressed": 119,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 111
     },
     "task343": {
         "gold": 65,
@@ -9796,7 +10152,8 @@
                 "size_compressed": 112,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 65
     },
     "task344": {
         "gold": 75,
@@ -9816,7 +10173,8 @@
                 "size_compressed": 75,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 78
     },
     "task345": {
         "gold": 90,
@@ -9836,7 +10194,8 @@
                 "size_compressed": 108,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 90
     },
     "task346": {
         "gold": 58,
@@ -9870,7 +10229,8 @@
                 "size_compressed": 68,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 58
     },
     "task347": {
         "gold": 50,
@@ -9904,7 +10264,8 @@
                 "size_compressed": 50,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 50
     },
     "task348": {
         "gold": 94,
@@ -9924,7 +10285,8 @@
                 "size_compressed": 101,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 94
     },
     "task349": {
         "gold": 214,
@@ -9948,7 +10310,8 @@
                 "window": -15,
                 "escape_cost": 1
             }
-        }
+        },
+        "public_gold": 214
     },
     "task350": {
         "gold": 91,
@@ -9968,7 +10331,8 @@
                 "size_compressed": 96,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 91
     },
     "task351": {
         "gold": 67,
@@ -10002,7 +10366,8 @@
                 "size_compressed": 68,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 67
     },
     "task352": {
         "gold": 84,
@@ -10036,7 +10401,8 @@
                 "size_compressed": 84,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 84
     },
     "task353": {
         "gold": 92,
@@ -10063,7 +10429,8 @@
                 "size_compressed": 104,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 92
     },
     "task354": {
         "gold": 96,
@@ -10097,7 +10464,8 @@
                 "size_compressed": 99,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 96
     },
     "task355": {
         "gold": 98,
@@ -10126,7 +10494,8 @@
                 "size_compressed": 101,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 98
     },
     "task356": {
         "gold": 105,
@@ -10146,7 +10515,8 @@
                 "size_compressed": 105,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 105
     },
     "task357": {
         "gold": 86,
@@ -10173,7 +10543,8 @@
                 "size_compressed": 92,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 86
     },
     "task358": {
         "gold": 97,
@@ -10193,7 +10564,8 @@
                 "size_compressed": 97,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 97
     },
     "task359": {
         "gold": 64,
@@ -10213,7 +10585,8 @@
                 "size_compressed": 64,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 64
     },
     "task360": {
         "gold": 45,
@@ -10247,7 +10620,8 @@
                 "size_compressed": 45,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 45
     },
     "task361": {
         "gold": 192,
@@ -10298,7 +10672,8 @@
                 "window": -15,
                 "escape_cost": 0
             }
-        }
+        },
+        "public_gold": 193
     },
     "task362": {
         "gold": 69,
@@ -10332,7 +10707,8 @@
                 "size_compressed": 92,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 69
     },
     "task363": {
         "gold": 213,
@@ -10363,7 +10739,8 @@
                 "window": -15,
                 "escape_cost": 1
             }
-        }
+        },
+        "public_gold": 213
     },
     "task364": {
         "gold": 155,
@@ -10392,7 +10769,8 @@
                 "size_compressed": 156,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 155
     },
     "task365": {
         "gold": 111,
@@ -10419,7 +10797,8 @@
                 "size_compressed": 134,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 111
     },
     "task366": {
         "gold": 363,
@@ -10461,7 +10840,8 @@
                 "window": -15,
                 "escape_cost": 0
             }
-        }
+        },
+        "public_gold": 365
     },
     "task367": {
         "gold": 129,
@@ -10481,7 +10861,8 @@
                 "size_compressed": 129,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 129
     },
     "task368": {
         "gold": 138,
@@ -10501,7 +10882,8 @@
                 "size_compressed": 138,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 138
     },
     "task369": {
         "gold": 113,
@@ -10528,7 +10910,8 @@
                 "size_compressed": 114,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 113
     },
     "task370": {
         "gold": 260,
@@ -10561,7 +10944,8 @@
                 "window": -15,
                 "escape_cost": 1
             }
-        }
+        },
+        "public_gold": 260
     },
     "task371": {
         "gold": 109,
@@ -10595,7 +10979,8 @@
                 "size_compressed": 114,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 109
     },
     "task372": {
         "gold": 48,
@@ -10629,7 +11014,8 @@
                 "size_compressed": 48,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 48
     },
     "task373": {
         "gold": 39,
@@ -10663,7 +11049,8 @@
                 "size_compressed": 39,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 39
     },
     "task374": {
         "gold": 112,
@@ -10699,7 +11086,8 @@
                 "size_compressed": 112,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 112
     },
     "task375": {
         "gold": 53,
@@ -10726,7 +11114,8 @@
                 "size_compressed": 53,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 53
     },
     "task376": {
         "gold": 30,
@@ -10760,7 +11149,8 @@
                 "size_compressed": 30,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 30
     },
     "task377": {
         "gold": 55,
@@ -10787,7 +11177,8 @@
                 "size_compressed": 57,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 55
     },
     "task378": {
         "gold": 143,
@@ -10823,7 +11214,8 @@
                 "size_compressed": 190,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 143
     },
     "task379": {
         "gold": 141,
@@ -10843,7 +11235,8 @@
                 "size_compressed": 141,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 141
     },
     "task380": {
         "gold": 27,
@@ -10877,7 +11270,8 @@
                 "size_compressed": 27,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 27
     },
     "task381": {
         "gold": 79,
@@ -10911,7 +11305,8 @@
                 "size_compressed": 91,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 79
     },
     "task382": {
         "gold": 134,
@@ -10938,7 +11333,8 @@
                 "size_compressed": 144,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 134
     },
     "task383": {
         "gold": 121,
@@ -10958,7 +11354,8 @@
                 "size_compressed": 121,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 121
     },
     "task384": {
         "gold": 62,
@@ -10992,7 +11389,8 @@
                 "size_compressed": 63,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 62
     },
     "task385": {
         "gold": 25,
@@ -11026,7 +11424,8 @@
                 "size_compressed": 25,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 25
     },
     "task386": {
         "gold": 52,
@@ -11060,7 +11459,8 @@
                 "size_compressed": 52,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 52
     },
     "task387": {
         "gold": 218,
@@ -11091,7 +11491,8 @@
                 "size_compressed": 232,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 218
     },
     "task388": {
         "gold": 61,
@@ -11125,7 +11526,8 @@
                 "size_compressed": 62,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 61
     },
     "task389": {
         "gold": 57,
@@ -11159,7 +11561,8 @@
                 "size_compressed": 57,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 57
     },
     "task390": {
         "gold": 99,
@@ -11200,7 +11603,8 @@
                 "size_compressed": 121,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 99
     },
     "task391": {
         "gold": 63,
@@ -11234,7 +11638,8 @@
                 "size_compressed": 63,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 63
     },
     "task392": {
         "gold": 149,
@@ -11261,7 +11666,8 @@
                 "size_compressed": 161,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 149
     },
     "task393": {
         "gold": 63,
@@ -11295,7 +11701,8 @@
                 "size_compressed": 63,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 63
     },
     "task394": {
         "gold": 91,
@@ -11322,7 +11729,8 @@
                 "size_compressed": 126,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 91
     },
     "task395": {
         "gold": 53,
@@ -11363,7 +11771,8 @@
                 "size_compressed": 53,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 53
     },
     "task396": {
         "gold": 179,
@@ -11403,7 +11812,8 @@
                 "window": -15,
                 "escape_cost": 0
             }
-        }
+        },
+        "public_gold": 179
     },
     "task397": {
         "gold": 121,
@@ -11430,7 +11840,8 @@
                 "size_compressed": 125,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 121
     },
     "task398": {
         "gold": 77,
@@ -11457,7 +11868,8 @@
                 "size_compressed": 80,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 77
     },
     "task399": {
         "gold": 64,
@@ -11491,7 +11903,8 @@
                 "size_compressed": 64,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 64
     },
     "task400": {
         "gold": 67,
@@ -11525,6 +11938,7 @@
                 "size_compressed": 68,
                 "method": "none"
             }
-        }
+        },
+        "public_gold": 67
     }
 }

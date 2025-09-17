@@ -613,8 +613,8 @@ def p(g):
  return g
 # task 234: 120 vs 118 bytes for gold, https://arcprize.org/play?task=98cf29f8
 p=lambda i,k=3,h={0}:-k*i or p([*zip(*([x for x in i if len(h:=h|{*x})-3+sum(x)-max(x)]+i[-1:]*99)[:len(i)])][::-1],k-1)
-# task 235: 62 vs 61 bytes for gold, https://arcprize.org/play?task=995c5fa3
-p=lambda g:[[g[1][x]*sum(g[2][x:x+3])%13^8]*3for x in[1,6,11]]
+# task 235: 61 bytes, gold, https://arcprize.org/play?task=995c5fa3
+p=lambda g:[[g[1][x]*sum(g[2][x:x+3])%13^8]*3for x in b'']
 # task 236: 54 bytes, gold, https://arcprize.org/play?task=99b1bc43
 p=lambda a,n=[]:a*0!=0and[*map(p,a,a[5:]+n)]or-n%5^3*a
 # task 237: 67 bytes, gold, https://arcprize.org/play?task=99fa7670
