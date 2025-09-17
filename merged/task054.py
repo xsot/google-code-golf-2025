@@ -1,13 +1,15 @@
-# ovs (282 (362 unzipped) vs 280 bytes for gold)
+# mwi (278 (366 unzipped) bytes, gold)
+# zip-optimized version of ovs's 284
 def p(g):
- f=sum(g,[]);*C,_,B=sorted({*f},key=f.count);M={i*1j+j:v for i,r in enumerate(g)for j,v in enumerate(r)if v in C};T={i for i in M for I in M if abs(I-i)==1}
+ f=sum(g,[]);*C,p,B=sorted({*f},key=f.count);M={i*1j+j:v for i,r in enumerate(g)for j,v in enumerate(r)if v in C};T={i for i in M for I in M if abs(I-i)==1}
  for i in{*M}-T:
   for I in T:
-   d=I-sum(T)/len(T);g[int(I.imag)][int(I.real)]=B;F=1;u=d+i
-   while(g[int(u.imag)][int(u.real)]^B)*F:g[int(u.imag)][int(u.real)]=M[I];u+=d/2;F-=abs(d)<2
+   d=I-sum(T)/len(T);g[int(I.imag)][int(I.real)]=B;F=1;p=I;I=d+i
+   while(g[int(I.imag)][int(I.real)]^B)*F:g[int(I.imag)][int(I.real)]=M[p];I+=d/2;F-=abs(d)<2
  return g
 
-### mwi (305 (379 unzipped) bytes)
+
+##
 def p(g):
  f=sum(g,[]);*C,p,B=sorted({*f},key=f.count);M={(i,I):J for(i,j)in enumerate(g)for(I,J)in enumerate(j)if J in C};T={(i,j)for(i,j)in M for(I,J)in M if(I-i)**2+(J-j)**2==1}
  for(i,j)in{*M}-T:
@@ -25,6 +27,15 @@ def p(g):
    N,O=Q%3-1,Q//3-1;D,E=N*2,O*2;P=g[I+D][J+E]
    while(N+O)*(C!=P!=A<len(g[0])>G+E>-1<F+D<len(g)>g[F+D][G+E]!=A):g[F+D][G+E]=P;D+=N;E+=O
  for Q in range(25):g[I-2+Q//5][J-2+Q%5]=A
+ return g
+
+### ovs (282 (362 unzipped) bytes)
+def p(g):
+ f=sum(g,[]);*C,_,B=sorted({*f},key=f.count);M={i*1j+j:v for i,r in enumerate(g)for j,v in enumerate(r)if v in C};T={i for i in M for I in M if abs(I-i)==1}
+ for i in{*M}-T:
+  for I in T:
+   d=I-sum(T)/len(T);g[int(I.imag)][int(I.real)]=B;F=1;u=d+i
+   while(g[int(u.imag)][int(u.real)]^B)*F:g[int(u.imag)][int(u.real)]=M[I];u+=d/2;F-=abs(d)<2
  return g
 
 ### combined (377 (589 unzipped) bytes)
