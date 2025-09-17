@@ -230,7 +230,7 @@ for i, path in enumerate(changed_tasks):
     if improvement > 0:
         tasks[task_name]["best"] = len(compressed)
         total_save += improvement
-        
+
         # Update gold
         if len(compressed) < tasks[task_name]["gold"]:
             tasks[task_name]["gold"] = len(compressed)
@@ -338,7 +338,7 @@ if promptYN("Commit changes? [Y]es/[N]o", default_commit):
     repo.git.add("*/task*.py")
     repo.git.add("merged/*")
     repo.git.add("tasks.json")
-    repo.git.commit([f'-m +{total_save}={total_score}/{1_000_000 - sum(gold_score)}'])
+    repo.git.commit([f'-m +{total_save}={total_score}/{max_size * task_count - sum(task["gold"] for task in tasks.values())}'])
 
 # Push
 if promptYN("Push improved solutions to remote? [Y]es/[N]o", default_push):
