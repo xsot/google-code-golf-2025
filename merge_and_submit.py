@@ -148,6 +148,7 @@ df = pd.read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vQ7RUqwrtwRD2E
 gold_score = df.loc[7:,"BEST"].reset_index(drop=True).astype(int)
 
 for n in range(1, task_count + 1):
+    tasks[num_to_task_name(n)]["public_gold"] = int(gold_score[n-1])
     tasks[num_to_task_name(n)]["gold"] = min(int(gold_score[n-1]), tasks[num_to_task_name(n)]["best"])
 
 # Update changed tasks
