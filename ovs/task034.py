@@ -1,3 +1,7 @@
+import re;p=lambda i,k=27:-k*[x[1:10]for x in i[1:10]]or p(eval(re.sub("(([13-9]).*)2, 0(.%s.)0, 0"%{len(i)*3},r"\1\2,\2\3\2,2",str([*zip(*i[::-1],[0]*11)]))),k-1)
+
+##
+
 p=lambda i,k=27:-k*i or p([[(u==2>1>s+t)*2or(s*t*y>1or 2in[s,t]*u)*max({*sum(i,[])}-{2})or y for y,s,t,u in zip(x,[0]+x,f,[0,*f])]for*x,f in zip(*i,[[0]*9,*zip(*i)])][::-1],k-1)
 
 ##
