@@ -1,3 +1,12 @@
+def	p(g):
+	l=range(len(g));(J,E),*B,(C,F)=[[A,D]for	A	in	l	for	D	in	l	if	g[A][D]]
+	if	g[C][F-2]<1:
+		for	A	in	l[J+1:]:
+			for	D	in({*l[E+2:F-1],F+A-C-2,E-A+C+2}&{*l},l[E+1:F])[A<C]:g[A][D]=4
+		return	g
+	return[*zip(*p([*map(list,zip(*g[::-1]))]))][::-1]
+
+##
 def p(g,k=3):
  l=range(len(g));B=[sum(A>0for A in A)for A in g if any(A)]
  if B[0]==max(B)>0<B.count(B[0])<2:
