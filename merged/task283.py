@@ -1,8 +1,11 @@
-# att (94 vs 82 bytes for gold)
+# joking (81 vs 82 bytes for gold)
+p=lambda i,r=[[0]*25]*25,*w:r and[*map(p,i,r,r[:1]+i,i[1:]+r,*w)]or sum(w)%8*i//8
+
+### att (94 bytes)
 z=0,
 p=lambda a:[*map(f:=lambda*b:[c[0]*sum(c,7)%32%6for c in zip(b,z+b,b[1:]+z)],*map(f,*a))]
 
-### combined (tied, 94 bytes)
+### combined (94 bytes)
 z=0,
 p=lambda a:[*map(f:=lambda*b:[c[0]*sum(c,7)%32%6for c in zip(b,z+b,b[1:]+z)],*map(f,*a))]
 

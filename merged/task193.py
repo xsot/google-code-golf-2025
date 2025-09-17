@@ -1,4 +1,7 @@
-# ovs (86 vs 81 bytes for gold)
+# joking (79 vs 81 bytes for gold)
+p=lambda i,r=[[0]*25]*25,*w:r and[*map(p,i,r,r[:1]+i,i[1:]+r,*w)]or(sum(w)>i)*i
+
+### ovs (86 bytes)
 p=lambda m,*a:[[b*any(a)for*a,b in zip([0]+r,r[1:]+[0],r)]for*r,in zip(*a or p(m,*m))]
 
 ##
