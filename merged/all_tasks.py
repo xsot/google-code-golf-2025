@@ -585,8 +585,8 @@ p=lambda a:a>a*0!=0and[p(a[0])]*3+p(a[1:])or a
 p=lambda i,k=3,s=0:-k*i or p([[y or(s==5in{*(h:=[*map(max,i)])[b+1:]}&{*h[:b]})*sum({*sum(i,[])},-5)for b,y in enumerate(x)]*1**(s:=s*2+max(x))for x in zip(*i)][::-1],k-1)
 # task 225: 128 bytes, gold, https://arcprize.org/play?task=93b581b8
 p=eval(f'lambda i:[[max([i{" for i in i[a-3:a]+i[a+3:a:-1]for a in[b]"*2}if i][:-3]+[i[a][b]])'+'for %c in range(6)]'*2%(98,97))
-# task 226: 125 bytes, gold, https://arcprize.org/play?task=941d9a10
-p=lambda i,y=0:[[-s+(s:=s+v)or-~int(a:=y*2/sum(c))*(a==s*2/sum(r)>=0==a%1)for*c,v in zip(*i,r)]for r in i if[s:=0,y:=y+r[0]]]
+# task 226: 123 bytes, gold, https://arcprize.org/play?task=941d9a10
+p=lambda i,y=0:[[-s+(s:=s+v)or-~int(a:=y*2/sum(c))*(a==s*2/sum(r)>=0==a%1)for*c,v in zip(*i,r)]for r in i if[y:=y+r[s:=0]]]
 # task 227: 52 bytes, gold, https://arcprize.org/play?task=94f9d214
 p=lambda a,n=[]:a*0!=0and[*map(p,a,a[4:]+n)]or~a+n&2
 # task 228: 119 bytes, gold, https://arcprize.org/play?task=952a094c
@@ -619,8 +619,8 @@ p=lambda g:[[g[1][x]*sum(g[2][x:x+3])%13^8]*3for x in b'']
 p=lambda a,n=[]:a*0!=0and[*map(p,a,a[5:]+n)]or-n%5^3*a
 # task 237: 67 bytes, gold, https://arcprize.org/play?task=99fa7670
 p=lambda a,c=0:[(b:=0)or[c:=(b:=b or d)for d in r+[c]]for*r,_ in a]
-# task 238: 222 (282 unzipped) bytes, gold, https://arcprize.org/play?task=9aec4887
-def p(i):l,m=[[[a[0]for a in zip(b,*i)if{*a}&m]for b in i if{*b}&m]for m in[{8},{*range(1,8),9}]];return[[a<len(m)-1>b>0and((k:=l[a-1][b-1])and m[1-(b>a<len(m)-1-b)|-(b<a>len(m)-1-b)][1-(b<a<len(m)-1-b)|-(b>a>len(m)-1-b)]or k)or m[a][b]for b in range(len(m))]for a in range(len(m))]
+# task 238: 216 (313 unzipped) bytes, gold, https://arcprize.org/play?task=9aec4887
+def p(i):m=[[a[0]for a in zip(b,*i)if{*a}-{0,8}]for b in i if{*b}-{0,8}];return[[a<len(m)-1>b>0and((k:=[[a[0]for a in zip(b,*i)if{*a}&{8}]for b in i if{*b}&{8}][a-1][b-1])and m[1-(b>a<len(m)-1-b)|-(b<a>len(m)-1-b)][1-(b<a<len(m)-1-b)|-(b>a>len(m)-1-b)]or k)or m[a][b]for b in range(len(m))]for a in range(len(m))]
 # task 239: 99 bytes, gold, https://arcprize.org/play?task=9af7a82c
 p=lambda i:[b:=sum(i,[]),*filter(any,zip(*sorted([c:=-b.count(e)]+[e]*-c+[0]*11for e in{*b})))][2:]
 # task 240: 105 vs 99 bytes for gold, https://arcprize.org/play?task=9d9215db
