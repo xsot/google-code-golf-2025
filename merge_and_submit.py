@@ -148,7 +148,7 @@ df = pd.read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vQ7RUqwrtwRD2E
 gold_score = df.loc[7:,"BEST"].reset_index(drop=True).astype(int)
 
 for n in range(1, task_count + 1):
-    tasks[num_to_task_name(n)]["gold"] = int(gold_score[n-1])
+    tasks[num_to_task_name(n)]["gold"] = min(int(gold_score[n-1]), tasks[num_to_task_name(n)]["best"])
 
 # Update changed tasks
 changed_tasks = [diff.a_path for diff in repo.index.diff(None)
@@ -230,6 +230,10 @@ for i, path in enumerate(changed_tasks):
     if improvement > 0:
         tasks[task_name]["best"] = len(compressed)
         total_save += improvement
+        
+        # Update gold
+        if len(compressed) < tasks[task_name]["gold"]:
+            tasks[task_name]["gold"] = len(compressed)
 
 if any(improved):
     print(f"{len(improved)} TASK{'S' * (len(improved) != 1)} IMPROVED:")
