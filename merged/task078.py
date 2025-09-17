@@ -1,4 +1,4 @@
-# joking (59 vs 60 bytes for gold)
+# joking (59 bytes, gold)
 p=lambda i,*n:sorted(n,key=0 .__eq__)or[*zip(*map(p,i,*i))]
 
 ### combined (61 bytes)

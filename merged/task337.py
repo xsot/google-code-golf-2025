@@ -1,4 +1,4 @@
-# joking (43 vs 46 bytes for gold)
+# joking (43 bytes, gold)
 p=lambda x:x*-1and x^84%x%3*13or[*map(p,x)]
 
 ### ovs (46 bytes)

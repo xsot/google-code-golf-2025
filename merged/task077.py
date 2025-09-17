@@ -1,4 +1,4 @@
-# joking (111 vs 126 bytes for gold)
+# joking (111 bytes, gold)
 p=lambda i,k=7,*w:k and p([*map(p,i,[k>1]*99,i[:1]+i,i[1:]+i[-1:],*w)],k-1)or((c:=w.count)(2)+c(4)>=2!=i)*4or i
 
 ##

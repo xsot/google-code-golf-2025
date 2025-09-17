@@ -1,4 +1,4 @@
-# joking (62 vs 64 bytes for gold)
+# joking (62 bytes, gold)
 p=lambda i,*n:n[(j:=-n.count(0)):]+n[:j]or[*zip(*map(p,i,*i))]
 
 ### combined (64 bytes)

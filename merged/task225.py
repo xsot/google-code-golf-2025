@@ -1,4 +1,4 @@
-# ovs (128 vs 132 bytes for gold)
+# ovs (128 bytes, gold)
 p=eval(f'lambda i:[[max([i{" for i in i[a-3:a]+i[a+3:a:-1]for a in[b]"*2}if i][:-3]+[i[a][b]])'+'for %c in range(6)]'*2%(98,97))
 
 ##

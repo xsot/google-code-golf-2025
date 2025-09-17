@@ -1,4 +1,4 @@
-# ovs (46 vs 50 bytes for gold)
+# ovs (46 bytes, gold)
 p=lambda a:a>a*0!=0and[p(a[0])]*2+p(a[1:])or a
 
 ##

@@ -1,4 +1,4 @@
-# joking (81 vs 82 bytes for gold)
+# joking (81 bytes, gold)
 p=lambda i,r=[[0]*25]*25,*w:r and[*map(p,i,r,r[:1]+i,i[1:]+r,*w)]or sum(w)%8*i//8
 
 ### att (94 bytes)

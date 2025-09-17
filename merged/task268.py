@@ -1,4 +1,4 @@
-# joking (237 (253 unzipped) vs 239 bytes for gold)
+# joking (237 (253 unzipped) bytes, gold)
 def p(g):
  l=range(len(g));(J,E),*B,(C,F)=[[A,D]for A in l for D in l if g[A][D]]
  if g[C][F-2]<1:

@@ -1,4 +1,4 @@
-# joking (64 vs 88 bytes for gold)
+# joking (64 bytes, gold)
 p=lambda i,*w:i*0!=0and[*map(p,i,i[:1]+i,i[1:]+i,*w)]or i^min(w)
 
 ##

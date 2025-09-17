@@ -1,4 +1,4 @@
-# att (78 vs 79 bytes for gold)
+# att (78 bytes, gold)
 p=lambda a,*b:a*0!=0and[*map(p,a,a[4:],*b,[*b,a][0][4:])]or max(*b,a,key=bool)
 
 ### combined (81 bytes)

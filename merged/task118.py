@@ -1,4 +1,4 @@
-# joking (241 (282 unzipped) vs 271 bytes for gold)
+# joking (241 (282 unzipped) bytes, gold)
 def p(I):
  for n in 2,3:
   z,t,T,*R=[{(l,n)for l,I in enumerate(I)for n,I in enumerate(I)if I>=C}for C in(0,2,5,7)]

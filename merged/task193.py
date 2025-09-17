@@ -1,4 +1,4 @@
-# joking (79 vs 81 bytes for gold)
+# joking (79 bytes, gold)
 p=lambda i,r=[[0]*25]*25,*w:r and[*map(p,i,r,r[:1]+i,i[1:]+r,*w)]or(sum(w)>i)*i
 
 ### ovs (86 bytes)

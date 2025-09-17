@@ -1,4 +1,4 @@
-# joking (77 vs 79 bytes for gold)
+# joking (77 bytes, gold)
 p=lambda i,*c:[*map(min,i,[9,9]+i[::-1],c)]or[i:=[*map(p,i,*i)]for _ in i][2]
 
 ##

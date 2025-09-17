@@ -1,4 +1,4 @@
-# ovs (69 vs 70 bytes for gold)
+# ovs (69 bytes, gold)
 p=lambda i,*I:[w for*w,r in zip(*I or p(zip(*i),*i),i)if len({*r})>2]
 
 ##

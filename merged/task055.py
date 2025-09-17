@@ -1,4 +1,4 @@
-# ovs (77 vs 83 bytes for gold)
+# ovs (77 bytes, gold)
 p=lambda i,z=0:i*0!=0and[p(y,3*(z:=z+([y]>i)))for y in i]or i or 2222096>>z&7
 
 ### joking (95 bytes)

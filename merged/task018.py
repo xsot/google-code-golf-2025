@@ -1,4 +1,4 @@
-# ovs (316 (390 unzipped) vs 323 bytes for gold)
+# ovs (316 (390 unzipped) bytes, gold)
 def p(g):
  def p(i,v):g[int(i.imag)][int(i.real)]=v
  G={i*1j+j:v for i,r in enumerate(g)for j,v in enumerate(r)if v}

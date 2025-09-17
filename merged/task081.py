@@ -1,4 +1,4 @@
-# joking (87 vs 91 bytes for gold)
+# joking (87 bytes, gold)
 p=lambda i,*w:i*0!=0and[*map(p,i,i[:1]+i,i[1:]+i[-1:],*w)]or i or any(w[:2])*any(w[2:])
 
 ##
