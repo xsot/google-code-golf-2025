@@ -1,6 +1,6 @@
 # based on mwi's alternate approach
 def p(g):
- f,*z=sum(g,[]),g;*_,m,b,B=sorted({*f},key=f.count)
+ r,*z=sum(g,[]),g;*_,m,b,B=sorted({*r},key=r.count)
  for _ in z*6:
   for t in z+(z:=[]):
    z+=[],
@@ -8,7 +8,7 @@ def p(g):
  for _,s in sorted((-sum(x^m for t in s for x in t),s)for s in z):
   for y,r in enumerate(g):
    for x,r in enumerate(r):
-    for h,R in zip(g[y:],all([a==r!=m,r==m][B==a]for h,R in zip(g[y:]+g,s)for a,r in zip(h[x:x+len(R)]+g,R))*s):h[x:x+len(R)]=R
+    for h,r in zip(g[y:],all((a!=r)==(r==m)==(B==a)for h,r in zip(g[y:]+g,s)for a,r in zip(h[x:x+len(r)]+g,r))*s):h[x:x+len(r)]=r
  return[r for r in zip(*[r for r in zip(*g)if B in r])if B in r]
 
 ## 455 without compression:

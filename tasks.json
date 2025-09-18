@@ -11264,8 +11264,8 @@
         "public_best": 128
     },
     "task366": {
-        "gold": 321,
-        "best": 321,
+        "gold": 317,
+        "best": 317,
         "solutions": {
             "mwi": {
                 "source": "ZGVmIHAobSk6CiAqSCxCLFMsRD1zb3J0ZWQoeypzdW0obSxDOj1bXSl9LGtleT1zdW0obSxDOj1bXSkuY291bnQpCiBmb3IgeSxyIGluIGVudW1lcmF0ZShtKToKICBmb3IgeCx2IGluIGVudW1lcmF0ZShyKToKICAgaWYgRCE9diE9UyBpbiByOmM9eyh5LHgpfTtbQy5yZW1vdmUoZClvcihjOj1jfGQpZm9yIGQgaW5bKkNdaWZ7KHktMSx4KSwoeSx4LTEpfSZkXTtDKz1bY10KIGZvciB5LChHLEgpLChnLGgpLCpDIGluIHNvcnRlZCgoLXN1bShCIT1tW3JdW2NdZm9yIHIsYyBpbiBDKSxtaW4oQyksbWF4KEMpLCpDKWZvciBDIGluIEMpOgogIGZvciB5LHIgaW4gZW51bWVyYXRlKG1bOkctZ10pOgogICBmb3IgeCx2IGluIGVudW1lcmF0ZShyWzpILWhdKToKICAgIGZvciByLGMgaW4gQyphbGwoQiE9bVtyXVtjXT09bVt5LUcrcl1beC1IK2Ndb3IgQj09bVtyXVtjXSE9RD09bVt5LUcrcl1beC1IK2NdZm9yIHIsYyBpbiBDKTptW3ktRytyXVt4LUgrY109bVtyXVtjXQogcmV0dXJuW3IgZm9yIHIgaW4gemlwKCpbciBmb3IgciBpbiB6aXAoKm0paWYgRCBpbiByXSlpZiBEIGluIHJdCgojIyBhbHRlcm5hdGUgYXBwcm9hY2ggdGhhdCBleHRyYWN0cyBzaGFwZXMgaW5zdGVhZCBvZiBnZXR0aW5nIHRoZWlyIGNvb3JkcwpkZWYgcChnKToKIGYsej1zdW0oZyxbXSksW2ddOypfLG0sYixCPXNvcnRlZCh7KmZ9LGtleT1mLmNvdW50KQogZm9yIF8gaW4geio2OgogIGZvciB0IGluIHorKHo6PVtdKToKICAgeis9W1tdXQogICBmb3IgciBpbiB6aXAoKnQpOnorPVt6LnBvcCgpK1tyXWlmKHsqcn0te2J9YW5keypyfS17Qn09PXsqcn0pb3J7KnJ9PntifWVsc2VbXV0KIGZvciBfLHMgaW4gc29ydGVkKCgtc3VtKHghPW0gZm9yIHggaW4gc3VtKHMsKDAsKSkpLHMpZm9yIHMgaW4geiBpZiBzKToKICBmb3IgeSxyIGluIGVudW1lcmF0ZShnWzoxLWxlbihzKV0pOgogICBmb3IgeCxjIGluIGVudW1lcmF0ZShyWzoxLWxlbihzWzBdKV0pOgogICAgRz1bcls6XWZvciByIGluIGddO2s9MQogICAgZm9yIGgsUiBpbiBlbnVtZXJhdGUocyk6ayY9YWxsKEIhPWc9PXIhPW0gb3IgZz09QiE9cj09bSBmb3IgZyxyIGluIHppcChHW3kraF1beDp4K2xlbihSKV0sUikpO0dbeStoXVt4OngrbGVuKFIpXT1SCiAgICBpZiBrOmc9RwogcmV0dXJuW3IgZm9yIHIgaW4gemlwKCpbciBmb3IgciBpbiB6aXAoKmcpaWYgQiBpbiByXSlpZiBCIGluIHJd",
@@ -11304,10 +11304,10 @@
                 "escape_cost": 0
             },
             "ovs": {
-                "source": "IyBiYXNlZCBvbiBtd2kncyBhbHRlcm5hdGUgYXBwcm9hY2gKZGVmIHAoZyk6CiBmLCp6PXN1bShnLFtdKSxnOypfLG0sYixCPXNvcnRlZCh7KmZ9LGtleT1mLmNvdW50KQogZm9yIF8gaW4geio2OgogIGZvciB0IGluIHorKHo6PVtdKToKICAgeis9W10sCiAgIGZvciByIGluIHppcCgqdCk6eis9ei5wb3AoKStbcl1pZntiLEJ9LXsqcn0+e2J9b3J7KnJ9PntifWVsc2VbXSwKIGZvciBfLHMgaW4gc29ydGVkKCgtc3VtKHhebSBmb3IgdCBpbiBzIGZvciB4IGluIHQpLHMpZm9yIHMgaW4geik6CiAgZm9yIHksciBpbiBlbnVtZXJhdGUoZyk6CiAgIGZvciB4LHIgaW4gZW51bWVyYXRlKHIpOgogICAgZm9yIGgsUiBpbiB6aXAoZ1t5Ol0sYWxsKFthPT1yIT1tLHI9PW1dW0I9PWFdZm9yIGgsUiBpbiB6aXAoZ1t5Ol0rZyxzKWZvciBhLHIgaW4gemlwKGhbeDp4K2xlbihSKV0rZyxSKSkqcyk6aFt4OngrbGVuKFIpXT1SCiByZXR1cm5bciBmb3IgciBpbiB6aXAoKltyIGZvciByIGluIHppcCgqZylpZiBCIGluIHJdKWlmIEIgaW4gcl0KCiMjIDQ1NSB3aXRob3V0IGNvbXByZXNzaW9uOgoKRT1lbnVtZXJhdGU7Uz1zb3J0ZWQ7Wj16aXAKZGVmIHAoZyk6CiBmLCp6PXN1bShnLFtdKSxnOypfLG0sYixCPVMoeypmfSxrZXk9Zi5jb3VudCkKIGZvciBfIGluIHoqNjoKICBmb3IgdCBpbiB6Kyh6Oj1bXSk6CiAgIHorPVtdLAogICBmb3IgciBpbiBaKCp0KTp6Kz16LnBvcCgpK1tyXWlme2IsQn0teypyfT57Yn1vcnsqcn0+e2J9ZWxzZVtdLAogWzBmb3IgcyBpbiBTKHosa2V5PWxhbWJkYSBzOi1zdW0oeF5tIGZvciB4IGluIHN1bShzLCgpKSkpZm9yIHksciBpbiBFKGcpZm9yIHgsXyBpbiBFKHIpZm9yIGgsaFt4OngrbGVuKHNbMF0pXWluIFooZ1t5Ol0sYWxsKFthPT1yIT1tLHI9PW1dW0I9PWFdZm9yIGgsUiBpbiBaKGdbeTpdK2cscylmb3IgYSxyIGluIFooaFt4OngrbGVuKFIpXStnLFIpKSpzKV07W2c6PVtyIGZvciByIGluIFooKmcpaWYgQiBpbiByXWZvciBfIGluJyAgJ107cmV0dXJuIGcK",
-                "size_uncompressed": 491,
-                "compressed": "I2NvZGluZzpMMQppbXBvcnQgemxpYgpleGVjKHpsaWIuZGVjb21wcmVzcyhieXRlcygibVDNTsQgEL73KfDG0Nk9eqjBFyG4aew0IfLT0HKQpu9uYduoq7fvj5mPaQYa2cQJuoaNKAY5J8cJlQakF3HDhAGNnENcaOCrGDf8oE85Xt9D8gvsb0JkN2Y8G8TzPqLyufKWD51UGoq6sx1iQSWQSyCbiYsZut0arlOYOLQqazOu+8Ltsoq8va5hC/FEZGcqM+4r0ZYZRy9+Ka3dW/pebyt0NQRooTBbe8FZs8dcBPLJUewXuh/h7rlHLxfvMBf05wdI9Z3G3lquopT5SSbMUiatjJRR/xdu6WgTMZ/GolznWkueeygBDyAsdL9k6RsWaUnRq/xwxD8CgRmZqVT/gM0XIiwiTDEiKSwtOSkp",
-                "size_compressed": 321,
+                "source": "IyBiYXNlZCBvbiBtd2kncyBhbHRlcm5hdGUgYXBwcm9hY2gKZGVmIHAoZyk6CiByLCp6PXN1bShnLFtdKSxnOypfLG0sYixCPXNvcnRlZCh7KnJ9LGtleT1yLmNvdW50KQogZm9yIF8gaW4geio2OgogIGZvciB0IGluIHorKHo6PVtdKToKICAgeis9W10sCiAgIGZvciByIGluIHppcCgqdCk6eis9ei5wb3AoKStbcl1pZntiLEJ9LXsqcn0+e2J9b3J7KnJ9PntifWVsc2VbXSwKIGZvciBfLHMgaW4gc29ydGVkKCgtc3VtKHhebSBmb3IgdCBpbiBzIGZvciB4IGluIHQpLHMpZm9yIHMgaW4geik6CiAgZm9yIHksciBpbiBlbnVtZXJhdGUoZyk6CiAgIGZvciB4LHIgaW4gZW51bWVyYXRlKHIpOgogICAgZm9yIGgsciBpbiB6aXAoZ1t5Ol0sYWxsKChhIT1yKT09KHI9PW0pPT0oQj09YSlmb3IgaCxyIGluIHppcChnW3k6XStnLHMpZm9yIGEsciBpbiB6aXAoaFt4OngrbGVuKHIpXStnLHIpKSpzKTpoW3g6eCtsZW4ocildPXIKIHJldHVybltyIGZvciByIGluIHppcCgqW3IgZm9yIHIgaW4gemlwKCpnKWlmIEIgaW4gcl0paWYgQiBpbiByXQoKIyMgNDU1IHdpdGhvdXQgY29tcHJlc3Npb246CgpFPWVudW1lcmF0ZTtTPXNvcnRlZDtaPXppcApkZWYgcChnKToKIGYsKno9c3VtKGcsW10pLGc7Kl8sbSxiLEI9Uyh7KmZ9LGtleT1mLmNvdW50KQogZm9yIF8gaW4geio2OgogIGZvciB0IGluIHorKHo6PVtdKToKICAgeis9W10sCiAgIGZvciByIGluIFooKnQpOnorPXoucG9wKCkrW3JdaWZ7YixCfS17KnJ9PntifW9yeypyfT57Yn1lbHNlW10sCiBbMGZvciBzIGluIFMoeixrZXk9bGFtYmRhIHM6LXN1bSh4Xm0gZm9yIHggaW4gc3VtKHMsKCkpKSlmb3IgeSxyIGluIEUoZylmb3IgeCxfIGluIEUocilmb3IgaCxoW3g6eCtsZW4oc1swXSldaW4gWihnW3k6XSxhbGwoW2E9PXIhPW0scj09bV1bQj09YV1mb3IgaCxSIGluIFooZ1t5Ol0rZyxzKWZvciBhLHIgaW4gWihoW3g6eCtsZW4oUildK2csUikpKnMpXTtbZzo9W3IgZm9yIHIgaW4gWigqZylpZiBCIGluIHJdZm9yIF8gaW4nICAnXTtyZXR1cm4gZwo=",
+                "size_uncompressed": 493,
+                "compressed": "I2NvZGluZzpMMQppbXBvcnQgemxpYgpleGVjKHpsaWIuZGVjb21wcmVzcyhieXRlcygibZCFbsQwDEDFcF+RCePWd8JRp+xDjsmVogWq1Bnv3xdnDALTMx+pV4OO0E0UY+PNmL2OuFgBxqtmg4QJrRljYjrqp4Zf8IYeDM8OMQeGiepjUhtlg/LNWWlR/cfqt9p3pvSRaPGKiWJJAkvCox108whdQX42xEFDu+CV7Z/KwJepjLp+Si8xfVjkRqo96kjM0uN9Lz2Vrd2avsbnaro6CDCDeLnuBR9rjlj3oJA9pR2TjhVV5n4zFvYOe/w8IC7GboU757QOJ4bBGM3GkGhrTID/0tv4vk/4Av3Cda51FMogSWCAJkP3I2x4ohJxTmHBv974JxDB9sqKy6tv5isiLCJMMSIpLC05KSk=",
+                "size_compressed": 317,
                 "method": "zopfli",
                 "window": -15,
                 "escape_cost": 0
@@ -11339,8 +11339,8 @@
         "public_best": 129
     },
     "task368": {
-        "gold": 138,
-        "best": 138,
+        "gold": 132,
+        "best": 132,
         "solutions": {
             "xsot": {
                 "source": "ZGVmIHAobSk6cz1zdW0obSxbXSk7YT1beCU1PjBmb3IgeCBpbiBzXTt4PWEuaW5kZXgoMSk7dz1hW3g6XS5pbmRleChpOj0wKTtleGVjKCJmb3IgaiBpbiByYW5nZSgoYVt4Ol1bOjoxMF0rYSkuaW5kZXgoMCkqKG1bcjo9aS8vMTBdW2M6PWklMTBdPT01KSk6bVtyK2pdW2M6Yyt3XT1zW3grMTAqajpdWzp3XVxuaSs9MVxuIio5OSk7cmV0dXJuIG0KCiMjCmRlZiBwKG0pOnM9c3VtKG0sW10pO2E9W3glNT4wZm9yIHggaW4gc107eD1hLmluZGV4KDEpO3c9YVt4Ol0uaW5kZXgoaTo9MCk7ZXhlYygiZm9yIGogaW4gcmFuZ2UoKGFbeDpdWzo6MTBdK2EpLmluZGV4KDApKihtW3I6PWkvLzEwXVtjOj1pJTEwXT09NSkpOm1bcitqXVtjOmMrd109c1t4KzEwKmo6XVs6d11cbmkrPTFcbiIqOTkpO3JldHVybiBtCmRlZiBwKG0pOmE9W3glNT4wZm9yIHggaW4gc3VtKG0sW10pXTt4PWEuaW5kZXgoMSk7dz1hW3g6XS5pbmRleChpOj0wKTtleGVjKCJmb3IgaiBpbiByYW5nZSgoYVt4Ol1bOjoxMF0rYSkuaW5kZXgoMCkqKG1bcjo9aS8vMTBdW2M6PWklMTBdPT01KSk6bVtyK2pdW2M6Yyt3XT1tW3gvLzEwK2pdW3glMTA6eCUxMCt3XVxuaSs9MVxuIio5OSk7cmV0dXJuIG0KCmRlZiBwKG0pOgogICAgYT1beCU1PjBmb3IgeCBpbiBzdW0obSxbXSldCiAgICB4PWEuaW5kZXgoMSkKICAgIGg9KGFbeDpdWzo6MTBdK1swXSkuaW5kZXgoMCkKICAgIHc9KGFbeDpdK1swXSkuaW5kZXgoMCkKICAgIGZvciBpIGluIHJhbmdlKDEwMCk6CiAgICAgICAgZm9yIGogaW4gcmFuZ2UoaCoobVtyOj1pLy8xMF1bYzo9aSUxMF09PTUpKTptW3Iral1bYzpjK3ddPW1beC8vMTAral1beCUxMDp4JTEwK3ddCiAgICByZXR1cm4gbQoKZGVmIHAobWF0cml4OiBsaXN0W2xpc3RbaW50XV0pIC0+IGxpc3RbbGlzdFtpbnRdXToKICAgICIiIgogICAgQ29sb3JzIHJlY3RhbmdsZXMgbWFkZSBvZiA1cyB3aXRoIHRoZSBwYXR0ZXJuIG9mIGEgbm9uLTUgcmVjdGFuZ2xlLgoKICAgIEFyZ3M6CiAgICAgICAgbWF0cml4OiBBIDEweDEwIGxpc3Qgb2YgbGlzdHMgY29udGFpbmluZyAwcyAoYmFja2dyb3VuZCksIG9uZQogICAgICAgICAgICAgICAgcmVjdGFuZ2xlIG9mIHZhcmlvdXMgZGlnaXRzLCBhbmQgb3RoZXIgcmVjdGFuZ2xlcyBvZiA1cy4KICAgICAgICAgICAgICAgIEFsbCByZWN0YW5nbGVzIGhhdmUgdGhlIHNhbWUgYXJlYS4KCiAgICBSZXR1cm5zOgogICAgICAgIEEgbmV3IDEweDEwIG1hdHJpeCB3aXRoIHRoZSA1LXJlY3RhbmdsZXMgY29sb3JlZCBpbi4KICAgICIiIgogICAgIyAxLiBGaW5kIHRoZSB0YXJnZXQgcGF0dGVybiBhbmQgaXRzIGRpbWVuc2lvbnMuCiAgICB0cnk6CiAgICAgICAgIyBGaW5kIHRoZSB0b3AtbGVmdCBjb3JuZXIgb2YgdGhlIG5vbi01L25vbi0wIHJlY3RhbmdsZSBjb25jaXNlbHkuCiAgICAgICAgc3RhcnRfciwgc3RhcnRfYyA9IG5leHQoCiAgICAgICAgICAgIChyLCBjKSBmb3Igciwgcm93IGluIGVudW1lcmF0ZShtYXRyaXgpCiAgICAgICAgICAgIGZvciBjLCB2YWwgaW4gZW51bWVyYXRlKHJvdykgaWYgdmFsIG5vdCBpbiBbMCwgNV0KICAgICAgICApCiAgICBleGNlcHQgU3RvcEl0ZXJhdGlvbjoKICAgICAgICAjIElmIG5vIHRhcmdldCByZWN0YW5nbGUgZXhpc3RzLCByZXR1cm4gYSBjb3B5IG9mIHRoZSBvcmlnaW5hbC4KICAgICAgICByZXR1cm4gW3Jvd1s6XSBmb3Igcm93IGluIG1hdHJpeF0KCiAgICAjIERldGVybWluZSB0aGUgaGVpZ2h0IGFuZCB3aWR0aCBmcm9tIHRoZSBzdGFydGluZyBjb3JuZXIuCiAgICBoID0gMAogICAgd2hpbGUgc3RhcnRfciArIGggPCAxMCBhbmQgbWF0cml4W3N0YXJ0X3IgKyBoXVtzdGFydF9jXSAhPSAwOgogICAgICAgIGggKz0gMQogICAgdyA9IDAKICAgIHdoaWxlIHN0YXJ0X2MgKyB3IDwgMTAgYW5kIG1hdHJpeFtzdGFydF9yXVtzdGFydF9jICsgd10gIT0gMDoKICAgICAgICB3ICs9IDEKCiAgICAjIEV4dHJhY3QgdGhlIHBhdHRlcm4gdXNpbmcgbGlzdCBzbGljaW5nLgogICAgcGF0dGVybiA9IFtyb3dbc3RhcnRfYyA6IHN0YXJ0X2MgKyB3XSBmb3Igcm93IGluIG1hdHJpeFtzdGFydF9yIDogc3RhcnRfciArIGhdXQoKICAgICMgMi4gQ3JlYXRlIGEgbmV3IG1hdHJpeCB0byBtb2RpZnkuCiAgICBuZXdfbWF0cml4ID0gW3Jvd1s6XSBmb3Igcm93IGluIG1hdHJpeF0KCiAgICAjIDMuIEZpbmQgZXZlcnkgNS1yZWN0YW5nbGUgYW5kIGFwcGx5IHRoZSBwYXR0ZXJuLgogICAgZm9yIHIgaW4gcmFuZ2UoMTAgLSBoICsgMSk6CiAgICAgICAgZm9yIGMgaW4gcmFuZ2UoMTAgLSB3ICsgMSk6CiAgICAgICAgICAgICMgQSB0b3AtbGVmdCBjb3JuZXIgb2YgYSA1LXJlY3RhbmdsZSBpcyBhIDUgcHJlY2VkZWQgYnkgMHMgKG9yIGF0IGFuIGVkZ2UpLgogICAgICAgICAgICBpc190b3BfbGVmdF9vZl81X3JlY3QgPSAoCiAgICAgICAgICAgICAgICBuZXdfbWF0cml4W3JdW2NdID09IDUgYW5kCiAgICAgICAgICAgICAgICAociA9PSAwIG9yIG5ld19tYXRyaXhbciAtIDFdW2NdID09IDApIGFuZAogICAgICAgICAgICAgICAgKGMgPT0gMCBvciBuZXdfbWF0cml4W3JdW2MgLSAxXSA9PSAwKQogICAgICAgICAgICApCiAgICAgICAgICAgIGlmIGlzX3RvcF9sZWZ0X29mXzVfcmVjdDoKICAgICAgICAgICAgICAgICMgIkNvbG9yIiB0aGUgYXJlYSBieSByZXBsYWNpbmcgNXMgd2l0aCB0aGUgcGF0dGVybi4KICAgICAgICAgICAgICAgIGZvciBpIGluIHJhbmdlKGgpOgogICAgICAgICAgICAgICAgICAgIGZvciBqIGluIHJhbmdlKHcpOgogICAgICAgICAgICAgICAgICAgICAgICBuZXdfbWF0cml4W3IgKyBpXVtjICsgal0gPSBwYXR0ZXJuW2ldW2pdCgogICAgcmV0dXJuIG5ld19tYXRyaXg=",
@@ -11354,6 +11354,13 @@
                 "size_uncompressed": 138,
                 "compressed": "aW1wb3J0IHJlCnA9bGFtYmRhIGk6ZXZhbChyZS5zdWIoIjUoLCA1KSsiLGxhbWJkYSBtLHE9W3JlLmZpbmRhbGwoIihbXjUwXSgsIFsxLTldKSspIixzdHIoaSkqOSlmb3IgXyBpbiBpXTpxW20uZW5kKCklOF0ucG9wKDApWzBdLHN0cihpKSkp",
                 "size_compressed": 138,
+                "method": "none"
+            },
+            "ovs": {
+                "source": "aW1wb3J0IHJlCnA9bGFtYmRhIGk6ZXZhbChyZS5zdWIoIjUoLCA1KSsiLGxhbWJkYSBtOnJlLmZpbmRhbGwoIihbXjUwXSgsIFsxLTldKSspIixzKjIpWy1zW20uZW5kKCktMTo6MzJdLmNvdW50KCc1JyldWzBdLHM6PXN0cihpKSkpCg==",
+                "size_uncompressed": 132,
+                "compressed": "aW1wb3J0IHJlCnA9bGFtYmRhIGk6ZXZhbChyZS5zdWIoIjUoLCA1KSsiLGxhbWJkYSBtOnJlLmZpbmRhbGwoIihbXjUwXSgsIFsxLTldKSspIixzKjIpWy1zW20uZW5kKCktMTo6MzJdLmNvdW50KCc1JyldWzBdLHM6PXN0cihpKSkp",
+                "size_compressed": 132,
                 "method": "none"
             }
         },
@@ -11390,8 +11397,8 @@
         "public_best": 114
     },
     "task370": {
-        "gold": 260,
-        "best": 267,
+        "gold": 255,
+        "best": 255,
         "solutions": {
             "mwi": {
                 "source": "ZGVmIHAoZyxrPTMpOgogeSwqdD1beSBmb3IgeSxyIGluIGVudW1lcmF0ZShnKWlmIDBpbiByXTt4LCp0PVt5IGZvciB5LHIgaW4gZW51bWVyYXRlKHppcCgqZykpaWYgMGluIHJdO1Y9Z1t5XVt4XTt2PVY+MAogZm9yIHMgaW4gcmFuZ2UoMTApOgogIGZvciBpIGluIHJhbmdlKGxlbih0KSsxKToKICAgZm9yIGogaW4gcmFuZ2UobGVuKHQpKzEpOgogICAgYSxiPXktaS1zKihsZW4odCkrMS12KSt2LTEseC1qLXMqKGxlbih0KSsxLXYpK3YtMQogICAgaWYtZ1t5K2ldW3gral0+LTE8YT4tMTxiOmdbYV1bYl09Z1t5LTErVi8vOCp2XVt4LTErViU4KnZdCiByZXR1cm4taypnIG9yIHAoWyptYXAobGlzdCx6aXAoKmdbOjotMV0pKV0say0xKQ==",
@@ -11412,13 +11419,13 @@
                 "escape_cost": 1
             },
             "ovs": {
-                "source": "ZGVmIHAoZyxrPTMpOgogeSwqdD1beSBmb3IgeSxyIGluIGVudW1lcmF0ZShnKWlmIDBpbiByXTt4LCp0PVt5IGZvciB5LHIgaW4gZW51bWVyYXRlKHppcCgqZykpaWYgMGluIHJdO1Y9Z1t5XVt4XTt2PVY+MAogZm9yIHMgaW4gcmFuZ2UoMTApOgogIGZvciBpIGluIHJhbmdlKGxlbih0KSsxKToKICAgZm9yIGogaW4gcmFuZ2UobGVuKHQpKzEpOgogICAgYSxiPXktaS1zKihsZW4odCkrMS12KSt2LTEseC1qLXMqKGxlbih0KSsxLXYpK3YtMQogICAgaWYtZ1t5K2ldW3gral0+LTE8YT4tMTxiOmdbYV1bYl09Z1t5LTErVi8vOF1beC0xK1YlOF0KIHJldHVybi1rKmcgb3IgcChbKm1hcChsaXN0LHppcCgqZykpXVs6Oi0xXSxrLTEpCgojIwoKUj1yYW5nZQpkZWYgcChnLGs9Myk6CiBULHQ9W1swaW4gciBmb3IgciBpbiB3XWZvciB3IGluKGcsemlwKCpnKSldO1Y9Z1t5Oj1ULmluZGV4KDEpXVt4Oj10LmluZGV4KDEpXTtOPXN1bSh0KQogZm9yIHMgaW4gUig5KToKICBmb3IgaSBpbiBSKE4pOgogICBmb3IgaiBpbiBSKE4pOgogICAgaD1WLy8tOSp+cy1OKnM7YSxiPXkrfmkraCx4K35qK2gKICAgIGlmLWdbeStpXVt4K2pdPi0xPGF8YjpnW2FdW2JdPWdbeS0xK1YvLzhdW3gtMStWJThdCiByZXR1cm4taypnIG9yIHAoWyptYXAobGlzdCx6aXAoKmdbOjotMV0pKV0say0xKQo=",
-                "size_uncompressed": 357,
-                "compressed": "I2NvZGluZzpMMQppbXBvcnQgemxpYgpleGVjKHpsaWIuZGVjb21wcmVzcyhieXRlcygifVDLagQhELzPV3gJ+Gp2JJdlNu6PiAchOgijM/Q6F78+KuwmhySXpqgHXd2fPpCDonT6nS0TqZKf2lQSdmx4IzETn8/k0RVPkcVA5kZt9pb+M9Z4UI7shz1rNNWaZG+rzvd5GrnSU+jy6qma+/bBhm9285meTKihXHJx/0skXkZdIUDhLwVWJlZQMsH+Cz1SMUArJkKrJnZ7B/Xh+4gLGm9NtL02KJEvl2uzdPR2tRNBX07M4HhrhO1/hid30C0+inzebs2ygLLSgWJfIiwiTDEiKSwtOSkp",
-                "size_compressed": 267,
-                "method": "zlib",
+                "source": "ZGVmIHAoZyxrPTMpOgogVj1nW3k6PVsqbWFwKG1pbixnKV0uaW5kZXgoMCldW3g6PVsqbWFwKG1pbiwqZyldLmluZGV4KDApXTtOPVsqbWFwKG1pbiwqZyldLmNvdW50KDApCiBmb3IgcyBpbiByYW5nZSg5KToKICBmb3IgaSBpbiByYW5nZShOKToKICAgZm9yIGogaW4gcmFuZ2UoTik6CiAgICBhPXkrfmkrVi8vLTkqfnMtTipzO2I9eCt+aitWLy8tOSp+cy1OKnMKICAgIGlmLWdbeStpXVt4K2pdPi0xPGF8YjpnW2FdW2JdPWdbeS0xK1YvLzhdW3gtMStWJThdCiByZXR1cm4taypnIG9yIHAoWyptYXAobGlzdCx6aXAoKmdbOjotMV0pKV0say0xKQoKIyMKCmRlZiBwKGcsaz0zKToKICp0LD1tYXAobWluLCpnKTtWPWdbeTo9WyptYXAobWluLGcpXS5pbmRleCgwKV1beDo9dC5pbmRleCgwKV07Tj10LmNvdW50KDApCiBmb3IgcyBpbiByYW5nZSg5Kk4qTik6CiAgaT1zLy85O3MlPTk7aD1WLy8tOSp+cy1OKnM7YSxiPXktaSVOLTEraCx4K35pLy9OK2gKICBpZi1nW3kraSVOXVt4K2kvL05dPi0xPGF8YjpnW2FdW2JdPWdbeS0xK1YvLzhdW3gtMStWJThdCiByZXR1cm4taypnIG9yIHAoWyptYXAobGlzdCx6aXAoKmdbOjotMV0pKV0say0xKQo=",
+                "size_uncompressed": 310,
+                "compressed": "I2NvZGluZzpMMQppbXBvcnQgemxpYgpleGVjKHpsaWIuZGVjb21wcmVzcyhieXRlcygnZc/BSgUhFMbx/TzF2QSqY7ehzb3e7EXkLCR1EPI4mBciYp69GVvU1E5+f0U+HyIsLI/FPHI9QDLZNm2syG7TRGPmeJ/Ih3f2wNH630kc2pX+ppdyo7alAWKpMEMiqI7mwC77Tx3DD1LHrvGfQjVNrkGm00ldxDorEvPVGS/XeLB+N0W1jZABrZcRn9X0VD+dzraidbjvU9P+6Lz1/XR3xgFqaLdKqogMpcLCvqe8prc2fqSFiWy1VhNyjmNRE/8CJywiTDEiKSwtOSkp",
+                "size_compressed": 255,
+                "method": "zopfli",
                 "window": -15,
-                "escape_cost": 1
+                "escape_cost": 0
             }
         },
         "public_gold": 260,
