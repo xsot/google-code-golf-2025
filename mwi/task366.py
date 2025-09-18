@@ -3,10 +3,10 @@ def p(m):
  for y,r in enumerate(m):
   for x,v in enumerate(r):
    if D!=v!=S in r:c={(y,x)};[C.remove(d)or(c:=c|d)for d in[*C]if{(y-1,x),(y,x-1)}&d];C+=[c]
- for y,(G,H),*C in sorted((-sum(B!=m[r][c]for r,c in C),min(C),*C)for C in C):
-  for y,r in enumerate(m):
-   for x,v in enumerate(r):
-    for r,c in C*all(len(m[0])>x-H+c>-1<y-G+r<len(m)and(B!=m[r][c]==m[y-G+r][x-H+c]or B==m[r][c]!=D==m[y-G+r][x-H+c])for r,c in C):m[y-G+r][x-H+c]=m[r][c]
+ for y,(G,H),(g,h),*C in sorted((-sum(B!=m[r][c]for r,c in C),min(C),max(C),*C)for C in C):
+  for y,r in enumerate(m[:G-g]):
+   for x,v in enumerate(r[:H-h]):
+    for r,c in C*all(B!=m[r][c]==m[y-G+r][x-H+c]or B==m[r][c]!=D==m[y-G+r][x-H+c]for r,c in C):m[y-G+r][x-H+c]=m[r][c]
  return[r for r in zip(*[r for r in zip(*m)if D in r])if D in r]
 
 ## alternate approach that extracts shapes instead of getting their coords
