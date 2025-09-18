@@ -924,17 +924,18 @@ def p(g):
 p=lambda i,k=39:-k*i or p([[[y.bit_count()*5%14%9,y and(u*t>0)<<k%4+2|y|u][k>0]for y,t,u in zip(x,[0]+x,s)]for*x,s in zip(*i,[[0]*99,*zip(*i)])][::-1],k-1)
 # task 365: 128 vs 111 bytes for gold, https://arcprize.org/play?task=e50d258f
 p=lambda i:max((-(r:=str(p:=[x[a%9:10-a//9%9]for x in i[a//81%9:10-a//729]]).count)("0"),*map(r,"21"),p)for a in range(9**4))[3]
-# task 366: 339 (555 unzipped) bytes, gold, https://arcprize.org/play?task=e6721834
-def p(m):
- *H,B,S,D=sorted({*sum(m,C:=[])},key=sum(m,C:=[]).count)
- for y,r in enumerate(m):
-  for x,v in enumerate(r):
-   if D!=v!=S in r:c={(y,x)};[C.remove(d)or(c:=c|d)for d in[*C]if{(y-1,x),(y,x-1)}&d];C+=[c]
- for y,(G,H),(g,h),*C in sorted((-sum(B!=m[r][c]for r,c in C),min(C),max(C),*C)for C in C):
-  for y,r in enumerate(m[:G-g]):
-   for x,v in enumerate(r[:H-h]):
-    for r,c in C*all(B!=m[r][c]==m[y-G+r][x-H+c]or B==m[r][c]!=D==m[y-G+r][x-H+c]for r,c in C):m[y-G+r][x-H+c]=m[r][c]
- return[r for r in zip(*[r for r in zip(*m)if D in r])if D in r]
+# task 366: 321 (491 unzipped) bytes, gold, https://arcprize.org/play?task=e6721834
+def p(g):
+ f,*z=sum(g,[]),g;*_,m,b,B=sorted({*f},key=f.count)
+ for _ in z*6:
+  for t in z+(z:=[]):
+   z+=[],
+   for r in zip(*t):z+=z.pop()+[r]if{b,B}-{*r}>{b}or{*r}>{b}else[],
+ for _,s in sorted((-sum(x^m for t in s for x in t),s)for s in z):
+  for y,r in enumerate(g):
+   for x,r in enumerate(r):
+    for h,R in zip(g[y:],all([a==r!=m,r==m][B==a]for h,R in zip(g[y:]+g,s)for a,r in zip(h[x:x+len(R)]+g,R))*s):h[x:x+len(R)]=R
+ return[r for r in zip(*[r for r in zip(*g)if B in r])if B in r]
 # task 367: 129 bytes, gold, https://arcprize.org/play?task=e73095fd
 import re
 p=lambda g,k=-23:k*g or p(eval(re.sub(f"(0.{(N:={len(g)*3-2})}0, 5, 5.{N}5,|4,) 0","\\1 4",str([*zip(*g)][::-1]))),k+1)
