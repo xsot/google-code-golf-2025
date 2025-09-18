@@ -147,8 +147,12 @@ except:
 df = pd.read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vQ7RUqwrtwRD2EJbgMRrccAHkwUQZgFe2fsROCR1WV5LA1naxL0pU2grjQpcWC2HU3chdGwIOUpeuoK/pub?gid=1427788625&single=true&output=csv")
 gold_score = df.loc[7:,"BEST"].reset_index(drop=True).astype(int)
 
+df = pd.read_csv("https://docs.google.com/spreadsheets/d/1-PWgStNEcAz3hGChHZ3ShS56BmB0vnAaUNF4gVUbJsw/export?format=csv")
+public_score = df.loc[10:,"ox jam"].reset_index(drop=True).astype(int)
+
 for n in range(1, task_count + 1):
     tasks[num_to_task_name(n)]["public_gold"] = int(gold_score[n-1])
+    tasks[num_to_task_name(n)]["public_best"] = int(public_score[n-1])
     tasks[num_to_task_name(n)]["gold"] = min(int(gold_score[n-1]), tasks[num_to_task_name(n)]["best"])
 
 # Update changed tasks
