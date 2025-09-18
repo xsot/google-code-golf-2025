@@ -1,4 +1,4 @@
-# att (61 vs 58 bytes for gold)
+# att (61 vs 56 bytes for gold)
 p=lambda a:[[d&e for d in b for e in c]for b in a for c in a]
 
 ### mwi (tied, 61 bytes)

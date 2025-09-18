@@ -1,8 +1,8 @@
-# joking (80 bytes, gold)
-p=lambda i:[p([*zip(i.pop(0),n)])for n in i[3:]]or min(b:=sum(i,()),key=b.count)
+# att (74 bytes, gold)
+p=lambda a:[p(b)for*b,in map(zip,a,a[3:])]or min(b:=sum(a,()),key=b.count)
 
-### att (81 bytes)
-p=eval('lambda a:[[min(b:=sum(a,()),key=b.count)'+'for*a,in map(zip,a,a[3:])]'*2)
+### joking (80 bytes)
+p=lambda i:[p([*zip(i.pop(0),n)])for n in i[3:]]or min(b:=sum(i,()),key=b.count)
 
 ### combined (81 bytes)
 p=eval('lambda a:[[min(b:=sum(a,()),key=b.count)'+'for*a,in map(zip,a,a[3:])]'*2)

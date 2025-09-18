@@ -1,4 +1,4 @@
-# joking (277 (325 unzipped) vs 267 bytes for gold)
+# joking (277 (325 unzipped) vs 257 bytes for gold)
 def p(i,n=0,k=0):
  t=2;f=len(r:=[x[k:]for x in i if(t:=~any(x)%3%-~t)*any(x)])
  for l in range(3,len(i)-f):
