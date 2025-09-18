@@ -4,6 +4,9 @@ p=lambda a,n=-79:a*n or[*zip(*eval(str(p(a,n+1)[::-1]).replace('1, 0','1,1')))]
 ### combined (tied, 79 bytes)
 p=lambda i,k=79:-k*i or[*zip(*eval(str(p(i,k-1)[::-1]).replace("1, 0","1,1")))]
 
+### joking (81 bytes)
+p=lambda g,n=-31:n*g or[n:=[n:=v or n==1for v in r]for r in zip(*p(g,n+1))][::-1]
+
 ### ovs (89 bytes)
 p=lambda g:[g:=[[v<q<2or(q:=v)for v in r]for*r,in zip(*g)if[q:=2]][::-1]for _ in g*4][-1]
 

@@ -1,4 +1,8 @@
-# ovs (125 vs 118 bytes for gold)
+# joking (121 vs 118 bytes for gold)
+import re
+p=lambda i:[i:=eval(re.sub("5((.{35})+(?=.{66}2)|[0, ]+(?=, 2))",r"0\1+5",str([*zip(*i[::-1])])))for _ in i][7]
+
+### ovs (125 bytes)
 import re
 p=lambda i:[i:=eval(re.sub("5(((.{34}0)+)(.{32})|([0, ]+)), 2",r"0\2\5+5\4,2",str([*zip(*i[::-1])])))for _ in i][7]
 

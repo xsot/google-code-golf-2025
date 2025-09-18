@@ -1,0 +1,1 @@
+p=lambda g,n=-31:n*g or[n:=[n:=v or n==1for v in r]for r in zip(*p(g,n+1))][::-1]

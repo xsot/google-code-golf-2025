@@ -1,12 +1,15 @@
-# ovs (99 bytes, gold)
+# joking (99 bytes, gold)
+p=lambda i:[b:=sum(i,[]),*filter(any,zip(*sorted([c:=-b.count(e),e]*-c+[0]*22for e in{*b})))][2::2]
+
+##
+p=lambda i:[b:=sum(i,[]),*filter(any,zip(*sorted({(e,~e)*b.count(e)+(0,)*99for e in b},key=sum)))][1::2]
+
+### ovs (tied, 99 bytes)
 p=lambda i:[b:=sum(i,[]),*filter(any,zip(*sorted([c:=-b.count(e)]+[e]*-c+[0]*11for e in{*b})))][2:]
 
 ###
 
 def p(g):f=sum(g,[]);q=f.count;C=sorted({*f},key=q)[::-1];return[[c*(q(c)>i)for c in C]for i in range(q(C[0]))]
-
-### joking (104 bytes)
-p=lambda i:[b:=sum(i,[]),*filter(any,zip(*sorted({(e,~e)*b.count(e)+(0,)*99for e in b},key=sum)))][1::2]
 
 ### att (108 bytes)
 p=lambda a,i=0:[b:=sum(a,[]),c:=b.count]*any(r:=sorted([e*(c(e)>i)for e in{*b}],key=c)[::-1])and[r]+p(a,i+1)
