@@ -925,14 +925,14 @@ def p(g):
 p=lambda i,k=39:-k*i or p([[[y.bit_count()*5%14%9,y and(u*t>0)<<k%4+2|y|u][k>0]for y,t,u in zip(x,[0]+x,s)]for*x,s in zip(*i,[[0]*99,*zip(*i)])][::-1],k-1)
 # task 365: 128 vs 111 bytes for gold, https://arcprize.org/play?task=e50d258f
 p=lambda i:max((-(r:=str(p:=[x[a%9:10-a//9%9]for x in i[a//81%9:10-a//729]]).count)("0"),*map(r,"21"),p)for a in range(9**4))[3]
-# task 366: 317 (493 unzipped) bytes, gold, https://arcprize.org/play?task=e6721834
+# task 366: 310 (493 unzipped) bytes, gold, https://arcprize.org/play?task=e6721834
 def p(g):
- r,*z=sum(g,[]),g;*_,m,b,B=sorted({*r},key=r.count)
- for _ in z*6:
-  for t in z+(z:=[]):
-   z+=[],
-   for r in zip(*t):z+=z.pop()+[r]if{b,B}-{*r}>{b}or{*r}>{b}else[],
- for _,s in sorted((-sum(x^m for t in s for x in t),s)for s in z):
+ r,*s=sum(g,[]),g;*r,m,b,B=sorted({*r},key=r.count)
+ for t in s*6:
+  for t in s+(s:=[]):
+   s+=[],
+   for r in zip(*t):s+=s.pop()+[r]if{b,B}-{*r}>{b}or{*r}>{b}else[],
+ for r,s in sorted((-sum(m^s for s in s for s in s),s)for s in s):
   for y,r in enumerate(g):
    for x,r in enumerate(r):
     for h,r in zip(g[y:],all((a!=r)==(r==m)==(B==a)for h,r in zip(g[y:]+g,s)for a,r in zip(h[x:x+len(r)]+g,r))*s):h[x:x+len(r)]=r
