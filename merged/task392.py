@@ -1,4 +1,7 @@
-# ovs (157 vs 149 bytes for gold)
+# joking (155 vs 149 bytes for gold)
+exec("p=lambda n:[[(a:=max(max(n)),5,5)[min(max(abs(f-b),abs(m-s))"+'for %s in range(10)%s'*4%(*'b s',"if n[b][s])%(3-(f'{a}, 0, {a}'in'%s'%n))]",*'m]f]'))
+
+### ovs (157 bytes)
 # (garry_moss)
 p=lambda n,r=range(10):[[(a:=max(max(n)),5,5)[min(max(abs(f-b),abs(m-s))for b in r for s in r if n[b][s])%(3-(f'{a}, 0, {a}'in'%s'%n))]for m in r]for f in r]
 
