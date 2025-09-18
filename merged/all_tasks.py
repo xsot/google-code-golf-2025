@@ -456,8 +456,8 @@ p=lambda a,*n:[*filter(any,zip(*n or p(*a)[::-1]))]
 p=lambda a:a*-1*-1or[p(b)for b in a if a!=(a:=b)]
 # task 179: 21 bytes, gold, https://arcprize.org/play?task=74dd1130
 p=lambda a:[*zip(*a)]
-# task 180: 78 bytes, gold, https://arcprize.org/play?task=75b8110e
-p=lambda a,*b:a*0!=0and[*map(p,a,a[4:],*b,[*b,a][0][4:])]or max(*b,a,key=bool)
+# task 180: 74 bytes, gold, https://arcprize.org/play?task=75b8110e
+p=lambda a:[p(b)for*b,in map(zip,a,a[4:])]or max(sum(a+a,())[1:],key=bool)
 # task 181: 67 bytes, gold, https://arcprize.org/play?task=760b3cac
 def p(a):
 	for b in a[:3]:c=6>>a[3][3];b[c:c+3]=b[5:2:-1]
@@ -661,8 +661,8 @@ def p(g):
  return g
 # task 256: 96 vs 95 bytes for gold, https://arcprize.org/play?task=a65b410d
 def p(g):s=sum(m:=max(g))//2;i=s-~g.index(m);return[[2-((i:=i+i%~i)<s)+(i>s)]*i+r[i:]for r in g]
-# task 257: 74 bytes, gold, https://arcprize.org/play?task=a68b268e
-p=lambda i:[p([*zip(i.pop(0),n)])for n in i[5:]]or max(sum(i,()),key=bool)
+# task 257: 68 bytes, gold, https://arcprize.org/play?task=a68b268e
+p=lambda a:[p(b)for*b,in map(zip,a,a[5:])]or max(sum(a,()),key=bool)
 # task 258: 61 bytes, gold, https://arcprize.org/play?task=a699fb00
 import re
 p=lambda a:eval(re.sub('1, 0(?=, 1)','1,2',str(a)))

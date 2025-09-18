@@ -5557,14 +5557,14 @@
         "public_best": 21
     },
     "task180": {
-        "gold": 78,
-        "best": 78,
+        "gold": 74,
+        "best": 74,
         "solutions": {
             "att": {
-                "source": "cD1sYW1iZGEgYSwqYjphKjAhPTBhbmRbKm1hcChwLGEsYVs0Ol0sKmIsWypiLGFdWzBdWzQ6XSldb3IgbWF4KCpiLGEsa2V5PWJvb2wp",
-                "size_uncompressed": 78,
-                "compressed": "cD1sYW1iZGEgYSwqYjphKjAhPTBhbmRbKm1hcChwLGEsYVs0Ol0sKmIsWypiLGFdWzBdWzQ6XSldb3IgbWF4KCpiLGEsa2V5PWJvb2wp",
-                "size_compressed": 78,
+                "source": "cD1sYW1iZGEgYTpbcChiKWZvcipiLGluIG1hcCh6aXAsYSxhWzQ6XSldb3IgbWF4KHN1bShhK2EsKCkpWzE6XSxrZXk9Ym9vbCkKCiMjCnA9bGFtYmRhIGEsKmI6YSowIT0wYW5kWyptYXAocCxhLGFbNDpdLCpiLFsqYixhXVswXVs0Ol0pXW9yIG1heCgqYixhLGtleT1ib29sKQ==",
+                "size_uncompressed": 74,
+                "compressed": "cD1sYW1iZGEgYTpbcChiKWZvcipiLGluIG1hcCh6aXAsYSxhWzQ6XSldb3IgbWF4KHN1bShhK2EsKCkpWzE6XSxrZXk9Ym9vbCk=",
+                "size_compressed": 74,
                 "method": "none"
             },
             "ovs": {
@@ -8006,14 +8006,14 @@
         "public_best": 96
     },
     "task257": {
-        "gold": 74,
-        "best": 74,
+        "gold": 68,
+        "best": 68,
         "solutions": {
             "att": {
-                "source": "cD1ldmFsKCdsYW1iZGEgYTpbW21heChzdW0oYSwoKSksa2V5PWJvb2wpJysnZm9yKmEsaW4gbWFwKHppcCxhLGFbNTpdKV0nKjIp",
-                "size_uncompressed": 75,
-                "compressed": "cD1ldmFsKCdsYW1iZGEgYTpbW21heChzdW0oYSwoKSksa2V5PWJvb2wpJysnZm9yKmEsaW4gbWFwKHppcCxhLGFbNTpdKV0nKjIp",
-                "size_compressed": 75,
+                "source": "cD1sYW1iZGEgYTpbcChiKWZvcipiLGluIG1hcCh6aXAsYSxhWzU6XSldb3IgbWF4KHN1bShhLCgpKSxrZXk9Ym9vbCk=",
+                "size_uncompressed": 68,
+                "compressed": "cD1sYW1iZGEgYTpbcChiKWZvcipiLGluIG1hcCh6aXAsYSxhWzU6XSldb3IgbWF4KHN1bShhLCgpKSxrZXk9Ym9vbCk=",
+                "size_compressed": 68,
                 "method": "none"
             },
             "ovs": {
