@@ -1,0 +1,1 @@
+p=lambda a,n=-42:[*map(lambda*b,d=0:[max(n,14>>d&(d:=c))for c in b][::-1],*n*a or p(a,n+1))]

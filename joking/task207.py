@@ -1,0 +1,1 @@
+p=lambda i:[p([*zip(i.pop(0),n)])for n in i[3:]]or min(b:=sum(i,()),key=b.count)
