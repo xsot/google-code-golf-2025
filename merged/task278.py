@@ -1,5 +1,5 @@
-# joking (119 vs 118 bytes for gold)
-import re;p=lambda i:[i:=eval(re.sub(f"0(?=(.{ {len(i)*3-5}}.{{,9}}|..)2, 2)","3",str([*zip(*i[::-1])])))for _ in i][3]
+# joking (116 bytes, gold)
+import re;p=lambda i:[i:=eval(re.sub("0(?=(.%s.{,9}|..)2, 2)"%{len(i)*3-5},"3",str([*zip(*i[::-1])])))for _ in i][3]
 
 ##
 p=lambda i,e=enumerate:[i:=[[y or("2, 2"in"%s"%[h[a:a+3]for h in i[b+b%~b:b+2]])*3for b,y in e(x)]for a,x in e(zip(*i))][::-1]for _ in i][3]

@@ -1,6 +1,6 @@
 {
     "task001": {
-        "gold": 60,
+        "gold": 58,
         "best": 61,
         "solutions": {
             "att": {
@@ -46,7 +46,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 60
+        "public_gold": 58
     },
     "task002": {
         "gold": 90,
@@ -2063,8 +2063,8 @@
         "public_gold": 33
     },
     "task068": {
-        "gold": 116,
-        "best": 119,
+        "gold": 115,
+        "best": 115,
         "solutions": {
             "att": {
                 "source": "cz0nZm9yKmEsaW4gbWFwKHppcCxbc10rYSxhLGEsYVsxOl0rW3NdKV0nCnA9bGFtYmRhIGE6ZXZhbChmJ1tbWzAsMiwyLCphWzFdXVtbKm1hcCgie2F9Ii5jb3VudCxzdHIoYSkpXS5jb3VudCgxKV0nK3MqMik=",
@@ -2078,6 +2078,13 @@
                 "size_uncompressed": 122,
                 "compressed": "ej1bWzBdKjEwXQpwPWxhbWJkYSBhOmV2YWwoZidbW1swLDIsMiwqYVsxXV1bWyptYXAoInthfSIuY291bnQsc3RyKGEpKV0uY291bnQoMSldJysnZm9yKmEsaW4gbWFwKHppcCx6K2EsYSxhLGFbMTpdK3opXScqMik=",
                 "size_compressed": 122,
+                "method": "none"
+            },
+            "joking": {
+                "source": "cD1sYW1iZGEgYTpldmFsKGYnW1tbMCwyLDIsKmFbMV1dW1sqbWFwKCJ7YX0iLmNvdW50LHN0cihhKSldLmNvdW50KDEpXVxuZm9yKmEsaW4gbWFwKHppcCxhWzoxXSthLGEsYSxhWzE6XSthKV0jJyoyKQ==",
+                "size_uncompressed": 115,
+                "compressed": "cD1sYW1iZGEgYTpldmFsKGYnW1tbMCwyLDIsKmFbMV1dW1sqbWFwKCJ7YX0iLmNvdW50LHN0cihhKSldLmNvdW50KDEpXVxuZm9yKmEsaW4gbWFwKHppcCxhWzoxXSthLGEsYSxhWzE6XSthKV0jJyoyKQ==",
+                "size_compressed": 115,
                 "method": "none"
             }
         },
@@ -7793,7 +7800,7 @@
     },
     "task260": {
         "gold": 135,
-        "best": 150,
+        "best": 145,
         "solutions": {
             "att": {
                 "source": "cj1yYW5nZSgxMCkKcD1sYW1iZGEgYTpbWyhjOj1tYXgoeyptYXgoYSl9LXs1fSkpKihjPT1hW2ldW2pdb3Igc3VtKG0tbi1pK2orayU1LTI9PTA8YVttXVtuXWZvciBtIGluIHIgZm9yIG4gaW4gciBmb3IgayBpbiByKT09Milmb3IgaiBpbiByXWZvciBpIGluIHJd",
@@ -7807,6 +7814,13 @@
                 "size_uncompressed": 150,
                 "compressed": "cj1yYW5nZSgxMCkKcD1sYW1iZGEgYTpbWyhjOj1tYXgoeyptYXgoYSl9LXs1fSkpKihjPT1hW2ldW2pdb3Igc3VtKG0tbi1pK2orayU1LTI9PTA8YVttXVtuXWZvciBtIGluIHIgZm9yIG4gaW4gciBmb3IgayBpbiByKT09Milmb3IgaiBpbiByXWZvciBpIGluIHJd",
                 "size_compressed": 150,
+                "method": "none"
+            },
+            "joking": {
+                "source": "cz0nZm9yICVzIGluIHJhbmdlKDEwKSc7ZXhlYygicD1sYW1iZGEgYTpbWyhjOj1tYXgoeyptYXgoYSl9LXs1fSkpKihjPT1hW2ldW2pdb3Igc3VtKG0tbi1pK2orayU1LTI9PTA8YVttXVtuXSIrZiJ7cyozfSk9PTIpe3N9XXtzfV0iJSgqJ21ua2ppJywpKQ==",
+                "size_uncompressed": 145,
+                "compressed": "cz0nZm9yICVzIGluIHJhbmdlKDEwKSc7ZXhlYygicD1sYW1iZGEgYTpbWyhjOj1tYXgoeyptYXgoYSl9LXs1fSkpKihjPT1hW2ldW2pdb3Igc3VtKG0tbi1pK2orayU1LTI9PTA8YVttXVtuXSIrZiJ7cyozfSk9PTIpe3N9XXtzfV0iJSgqJ21ua2ppJywpKQ==",
+                "size_compressed": 145,
                 "method": "none"
             }
         },
@@ -7961,7 +7975,7 @@
     },
     "task266": {
         "gold": 102,
-        "best": 103,
+        "best": 102,
         "solutions": {
             "ovs": {
                 "source": "cD1sYW1iZGEgZzpbKFswLDAsMCxyJTksMCxyLy85XSoyKVs0LW1heChnKS5pbmRleCgyKTpdWzo1XWZvciByIGluIGInXDA5XDBHXDAnWzItZy5pbmRleChtYXgoZykpOl1bOjNdXQ==",
@@ -7975,6 +7989,13 @@
                 "size_uncompressed": 103,
                 "compressed": "cD1sYW1iZGEgZzpbKFswLDAsMCxyJTksMCxyLy85XSoyKVs0LW1heChnKS5pbmRleCgyKTpdWzo1XWZvciByIGluIGInXDA5XDBHXDAnWzItZy5pbmRleChtYXgoZykpOl1bOjNdXQ==",
                 "size_compressed": 103,
+                "method": "none"
+            },
+            "joking": {
+                "source": "cD1sYW1iZGEgZzpbKFswLDAsMCxyJTksMCxyLy85LTRdKjIpWzQtbWF4KGcpLmluZGV4KDIpOl1bOjVdZm9yIHIgaW4gYickXSRrJCdbMi1nLmluZGV4KG1heChnKSk6XVs6M11d",
+                "size_uncompressed": 102,
+                "compressed": "cD1sYW1iZGEgZzpbKFswLDAsMCxyJTksMCxyLy85LTRdKjIpWzQtbWF4KGcpLmluZGV4KDIpOl1bOjVdZm9yIHIgaW4gYickXSRrJCdbMi1nLmluZGV4KG1heChnKSk6XVs6M11d",
+                "size_compressed": 102,
                 "method": "none"
             }
         },
@@ -8053,7 +8074,7 @@
     },
     "task269": {
         "gold": 63,
-        "best": 64,
+        "best": 63,
         "solutions": {
             "att": {
                 "source": "cD1sYW1iZGEgYTpldmFsKCdbW2EgJysiZm9yIGEgaW4gYSBmb3IgXyBpblsqeyonJXMnfV1bNTpdXSIlYSoyKQ==",
@@ -8081,6 +8102,13 @@
                 "size_uncompressed": 64,
                 "compressed": "cD1sYW1iZGEgYTpldmFsKCdbW2EgJysiZm9yIGEgaW4gYSBmb3IgXyBpblsqeyonJXMnfV1bNTpdXSIlYSoyKQ==",
                 "size_compressed": 64,
+                "method": "none"
+            },
+            "joking": {
+                "source": "cD1sYW1iZGEgYTpldmFsKCJbW2FcbmZvciBhIGluIGEgZm9yIF8gaW5bKnsqJyVzJ31dWzU6XV0jIiVhKjIp",
+                "size_uncompressed": 63,
+                "compressed": "cD1sYW1iZGEgYTpldmFsKCJbW2FcbmZvciBhIGluIGEgZm9yIF8gaW5bKnsqJyVzJ31dWzU6XV0jIiVhKjIp",
+                "size_compressed": 63,
                 "method": "none"
             }
         },
@@ -8304,8 +8332,8 @@
         "public_gold": 194
     },
     "task278": {
-        "gold": 118,
-        "best": 119,
+        "gold": 116,
+        "best": 116,
         "solutions": {
             "ovs": {
                 "source": "cD1sYW1iZGEgaSxlPWVudW1lcmF0ZTpbaTo9W1t5IG9yKCIyLCAyImluIiVzIiVbaFthOmErM11mb3IgaCBpbiBpW2ItKGI+MCk6YisyXV0pKjNmb3IgYix5IGluIGUoeCldZm9yIGEseCBpbiBlKHppcCgqaSkpXVs6Oi0xXWZvciBfIGluIGldWzNdCgojIwoKZGVmIHAoZyk6RT1lbnVtZXJhdGU7TD1hYnM7Uz17KGksailmb3IgaSxyIGluIEUoZylmb3Igaix2IGluIEUocilpZiB2fTtyZXR1cm5bW3Ygb3IgMyphbnkoTChhLUkpK0woQS1KKT09MT09TChpLUkpfEwoai1KKWZvciBhLEEgaW4gUyBmb3IgSSxKIGluIFMpZm9yIGosdiBpbiBFKHIpXWZvciBpLHIgaW4gRShnKV0K",
@@ -8336,10 +8364,10 @@
                 "method": "none"
             },
             "joking": {
-                "source": "aW1wb3J0IHJlO3A9bGFtYmRhIGk6W2k6PWV2YWwocmUuc3ViKGYiMCg/PSgueyB7bGVuKGkpKjMtNX19Lnt7LDl9fXwuLikyLCAyKSIsIjMiLHN0cihbKnppcCgqaVs6Oi0xXSldKSkpZm9yIF8gaW4gaV1bM10KCiMjCnA9bGFtYmRhIGksZT1lbnVtZXJhdGU6W2k6PVtbeSBvcigiMiwgMiJpbiIlcyIlW2hbYTphKzNdZm9yIGggaW4gaVtiK2IlfmI6YisyXV0pKjNmb3IgYix5IGluIGUoeCldZm9yIGEseCBpbiBlKHppcCgqaSkpXVs6Oi0xXWZvciBfIGluIGldWzNd",
-                "size_uncompressed": 119,
-                "compressed": "aW1wb3J0IHJlO3A9bGFtYmRhIGk6W2k6PWV2YWwocmUuc3ViKGYiMCg/PSgueyB7bGVuKGkpKjMtNX19Lnt7LDl9fXwuLikyLCAyKSIsIjMiLHN0cihbKnppcCgqaVs6Oi0xXSldKSkpZm9yIF8gaW4gaV1bM10=",
-                "size_compressed": 119,
+                "source": "aW1wb3J0IHJlO3A9bGFtYmRhIGk6W2k6PWV2YWwocmUuc3ViKCIwKD89KC4lcy57LDl9fC4uKTIsIDIpIiV7bGVuKGkpKjMtNX0sIjMiLHN0cihbKnppcCgqaVs6Oi0xXSldKSkpZm9yIF8gaW4gaV1bM10KCiMjCnA9bGFtYmRhIGksZT1lbnVtZXJhdGU6W2k6PVtbeSBvcigiMiwgMiJpbiIlcyIlW2hbYTphKzNdZm9yIGggaW4gaVtiK2IlfmI6YisyXV0pKjNmb3IgYix5IGluIGUoeCldZm9yIGEseCBpbiBlKHppcCgqaSkpXVs6Oi0xXWZvciBfIGluIGldWzNd",
+                "size_uncompressed": 116,
+                "compressed": "aW1wb3J0IHJlO3A9bGFtYmRhIGk6W2k6PWV2YWwocmUuc3ViKCIwKD89KC4lcy57LDl9fC4uKTIsIDIpIiV7bGVuKGkpKjMtNX0sIjMiLHN0cihbKnppcCgqaVs6Oi0xXSldKSkpZm9yIF8gaW4gaV1bM10=",
+                "size_compressed": 116,
                 "method": "none"
             }
         },
@@ -9033,7 +9061,7 @@
         "public_gold": 92
     },
     "task305": {
-        "gold": 62,
+        "gold": 57,
         "best": 62,
         "solutions": {
             "ovs": {
@@ -9051,7 +9079,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 62
+        "public_gold": 57
     },
     "task306": {
         "gold": 71,
@@ -11181,14 +11209,14 @@
         "public_gold": 55
     },
     "task378": {
-        "gold": 143,
-        "best": 143,
+        "gold": 142,
+        "best": 142,
         "solutions": {
             "joking": {
-                "source": "aW1wb3J0IHJlO3A9bGFtYmRhIGksaz0zOi1rKmkgb3JbKnppcCgqZXZhbChyZS5zdWIoZiIwKD89KHsoczo9ZicueyB7MypsZW4oaSkrMX19MCcpfSwgMCkqe3N9LCAuLCBbXjBde3MqMn0sICguKSkiLCJcXDIiLHN0cihwKGksay0xKSkpKSldWzo6LTFd",
-                "size_uncompressed": 144,
-                "compressed": "aW1wb3J0IHJlO3A9bGFtYmRhIGksaz0zOi1rKmkgb3JbKnppcCgqZXZhbChyZS5zdWIoZiIwKD89KHsoczo9ZicueyB7MypsZW4oaSkrMX19MCcpfSwgMCkqe3N9LCAuLCBbXjBde3MqMn0sICguKSkiLCJcXDIiLHN0cihwKGksay0xKSkpKSldWzo6LTFd",
-                "size_compressed": 144,
+                "source": "aW1wb3J0IHJlO3A9bGFtYmRhIGksaz0zOi1rKmkgb3JbKnppcCgqZXZhbChyZS5zdWIoZiIwKD89KHsoczo9Jy4lcy4wJyV7MypsZW4oaSl9KX0sIDApKntzfSwgLiwgW14wXXtzKjJ9LCAoLikpIiwiXFwyIixzdHIocChpLGstMSkpKSkpXVs6Oi0xXQ==",
+                "size_uncompressed": 142,
+                "compressed": "aW1wb3J0IHJlO3A9bGFtYmRhIGksaz0zOi1rKmkgb3JbKnppcCgqZXZhbChyZS5zdWIoZiIwKD89KHsoczo9Jy4lcy4wJyV7MypsZW4oaSl9KX0sIDApKntzfSwgLiwgW14wXXtzKjJ9LCAoLikpIiwiXFwyIixzdHIocChpLGstMSkpKSkpXVs6Oi0xXQ==",
+                "size_compressed": 142,
                 "method": "none"
             },
             "ovs": {
