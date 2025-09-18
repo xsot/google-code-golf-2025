@@ -924,10 +924,9 @@ def p(g):
 p=lambda i,k=39:-k*i or p([[[y.bit_count()*5%14%9,y and(u*t>0)<<k%4+2|y|u][k>0]for y,t,u in zip(x,[0]+x,s)]for*x,s in zip(*i,[[0]*99,*zip(*i)])][::-1],k-1)
 # task 365: 128 vs 111 bytes for gold, https://arcprize.org/play?task=e50d258f
 p=lambda i:max((-(r:=str(p:=[x[a%9:10-a//9%9]for x in i[a//81%9:10-a//729]]).count)("0"),*map(r,"21"),p)for a in range(9**4))[3]
-# task 366: 363 (604 unzipped) bytes, gold, https://arcprize.org/play?task=e6721834
+# task 366: 343 (566 unzipped) bytes, gold, https://arcprize.org/play?task=e6721834
 def p(m):
  *H,B,S,D=sorted({*sum(m,C:=[])},key=sum(m,C:=[]).count)
- if{*m[0]}>={S,D}:return[*zip(*p([[*C]for C in zip(*m)]))]
  for y,r in enumerate(m):
   for x,v in enumerate(r):
    if D!=v!=S in r:c={(y,x)};[C.remove(d)or(c:=c|d)for d in[*C]if{(y-1,x),(y,x-1)}&d];C+=[c]
@@ -935,7 +934,7 @@ def p(m):
   for y,r in enumerate(m):
    for x,v in enumerate(r):
     for r,c in C*all(len(m[0])>x-H+c>-1<y-G+r<len(m)and(B!=m[r][c]==m[y-G+r][x-H+c]or B==m[r][c]!=D==m[y-G+r][x-H+c])for r,c in C):m[y-G+r][x-H+c]=m[r][c]
- return[r for y,r in enumerate(m)if D in r]
+ return[r for r in zip(*[r for r in zip(*m)if D in r])if D in r]
 # task 367: 129 bytes, gold, https://arcprize.org/play?task=e73095fd
 import re
 p=lambda g,k=-23:k*g or p(eval(re.sub(f"(0.{(N:={len(g)*3-2})}0, 5, 5.{N}5,|4,) 0","\\1 4",str([*zip(*g)][::-1]))),k+1)
