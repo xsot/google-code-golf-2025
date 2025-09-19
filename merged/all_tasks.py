@@ -888,7 +888,7 @@ p=lambda a,n=-13:n*a or p([[c|-d%15for c,d in zip(a.pop(0),[0]+b)][::-1]for*b,in
 # task 349: 233 (267 unzipped) vs 214 bytes for gold, https://arcprize.org/play?task=db93a21d
 p=lambda i,n=6,l=0:-n*i or[[i:=[[(i[x][y]>1)*i[x][y]or(a<=x+n<n*4+a)*(b<=y+n<n*4+b)*3or 9in[*zip(*i[:x+1])][y]for y in range(l)]for x in range(l)]for a in range(-n*2,l)for b in range(l-n*2+1)if{min(x[b*(b>0):n*2+b])for x in i[a*(a>0):n*2+a]}=={9}]]and p(i,n-1,len(i))
 # task 350: 96 vs 91 bytes for gold, https://arcprize.org/play?task=dbc1a6ce
-p=lambda i,*n:[[y or(1in x[b:]!=1in x[:b])*8for b,y in enumerate(x)]for x in zip(*n or p(i,*i))]
+p=lambda i,*n:[[y or(1in{*x[b:]}&{*x[:b]})*8for b,y in enumerate(x)]for x in zip(*n or p(i,*i))]
 # task 351: 68 vs 67 bytes for gold, https://arcprize.org/play?task=dc0a314f
 p=lambda i:[s[~x.index(3)::-1][:5]for x,s in zip(i,i[::-1])if 3in x]
 # task 352: 84 bytes, gold, https://arcprize.org/play?task=dc1df850

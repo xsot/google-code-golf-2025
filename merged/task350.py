@@ -1,9 +1,15 @@
-# combined (96 vs 91 bytes for gold)
-p=lambda i,*n:[[y or(1in x[b:]!=1in x[:b])*8for b,y in enumerate(x)]for x in zip(*n or p(i,*i))]
+# joking (96 vs 91 bytes for gold)
+p=lambda i,*n:[[y or(1in{*x[b:]}&{*x[:b]})*8for b,y in enumerate(x)]for x in zip(*n or p(i,*i))]
 
-### joking (103 bytes)
-#regex solution
+##regex solution
 import re;p=lambda i,*n:eval(re.sub("1,([^)]+?)(?=1)","1,*[8]*len([\\1]),",str([*zip(*n or p(i,*i))])))
+
+p=lambda i,*n:[(s:=0)or[(y+1in(s:=s|x.pop(0)&1)*x)*8or y for y in[*x]]for*x,in zip(*n or p(i,*i))]
+
+p=lambda i,*n:[*map(lambda*x,b=0:[(y+1in{*x[b:]}&{*x[:(b:=b+1)]})*8or y for y in x],*n or p(i,*i))]
+
+### combined (tied, 96 bytes)
+p=lambda i,*n:[[y or(1in x[b:]!=1in x[:b])*8for b,y in enumerate(x)]for x in zip(*n or p(i,*i))]
 
 ### xsot (162 bytes)
 def p(m,E=enumerate):N=len(m[0]);a=sum(m,[]);return[[[v,v or 8][1 in m[r][:c]!=1 in m[r][c:]or 1 in a[c::N][:r]!=1 in a[c::N][r:]]for c,v in E(l)]for r,l in E(m)]
