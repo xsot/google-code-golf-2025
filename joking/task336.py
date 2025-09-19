@@ -1,0 +1,1 @@
+p=lambda i,k=3:-k*i or[[x.pop(0)or(sum(x)%8|1in x[-4:])*8for _ in i]for*x,in zip(*p(i,k-1)[::-1])]

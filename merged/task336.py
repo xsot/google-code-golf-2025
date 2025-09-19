@@ -1,4 +1,7 @@
-# combined (105 vs 93 bytes for gold)
+# joking (98 vs 93 bytes for gold)
+p=lambda i,k=3:-k*i or[[x.pop(0)or(sum(x)%8|1in x[-4:])*8for _ in i]for*x,in zip(*p(i,k-1)[::-1])]
+
+### combined (105 bytes)
 p=lambda i,k=3:-k*i or[[x[b]or(sum(x[:b])%8|1in x[:4])*8for b in range(10)]for x in zip(*p(i,k-1)[::-1])]
 
 ### att (115 bytes)
