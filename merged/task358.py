@@ -1,4 +1,7 @@
-# combined (97 bytes, gold)
+# joking (93 bytes, gold)
+p=lambda i,k=39:-k*i or[[*map(max,x,-14//len({*x,0})%7*(0,)+x)]for x in zip(*p(i,k-1)[::-1])]
+
+### combined (97 bytes)
 p=lambda i,k=39:-k*i or[[*map(max,x,x[6-13//len({*x,0}):]+(0,0)*9)]for x in zip(*p(i,k-1)[::-1])]
 
 ### att (105 bytes)

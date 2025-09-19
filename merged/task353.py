@@ -4,6 +4,10 @@ p=lambda a,n=-3,i=0:n*a or 3in a[i]and p([*zip(a.pop(('4'in'%s'%a[:i])*i-1),*a[:
 ### combined (tied, 104 bytes)
 p=lambda a,n=-3,i=0:n*a or 3in a[i]and p([*zip(a.pop(('4'in'%s'%a[:i])*i-1),*a[::-1])],n+1)or p(a,n,i+1)
 
+### joking (114 bytes)
+#regex sol
+import re;p=lambda i,k=3:-k*i or p(eval(re.sub(f"3(.%s.)0(?=.*4)"%{len(i)*3},r"0\1 3",str([*zip(*i)][::-1]))),k-1)
+
 ### xsot (126 bytes)
 def p(m):a=sum(m,[]).index;R,C=divmod(a(4),N:=len(m[0]));m[r:=a(3)//N][c:=a(3)%N]=0;m[r+(R>r)-(R<r)][c+(C>c)-(C<c)]=3;return m
 

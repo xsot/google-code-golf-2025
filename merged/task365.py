@@ -1,4 +1,7 @@
-# ovs (128 vs 111 bytes for gold)
+# joking (124 vs 111 bytes for gold)
+exec(f'p=lambda i:max((-{"str(s:=[x[a:10-b]for x in i[c:10-d]]).count(%r),"*3}s){"for %s in range(9)"*4})[3]'%(*"021abcd",))
+
+### ovs (128 bytes)
 p=lambda i:max((-(r:=str(p:=[x[a%9:10-a//9%9]for x in i[a//81%9:10-a//729]]).count)("0"),*map(r,"21"),p)for a in range(9**4))[3]
 
 ### combined (134 bytes)

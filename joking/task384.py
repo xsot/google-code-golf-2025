@@ -1,0 +1,1 @@
+p=lambda a,*n:[b for b in zip(*n or p(*a))for _ in"00"*any(b)]

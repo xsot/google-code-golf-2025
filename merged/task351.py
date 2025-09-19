@@ -1,4 +1,7 @@
-# combined (68 vs 67 bytes for gold)
+# joking (66 bytes, gold)
+p=lambda i:[r[:5]for x in[*i]if(r:=i.pop()[~[*x,3].index(3)::-1])]
+
+### combined (68 bytes)
 p=lambda i:[s[~x.index(3)::-1][:5]for x,s in zip(i,i[::-1])if 3in x]
 
 ### ovs (70 bytes)

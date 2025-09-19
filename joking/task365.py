@@ -1,0 +1,1 @@
+exec(f'p=lambda i:max((-{"str(s:=[x[a:10-b]for x in i[c:10-d]]).count(%r),"*3}s){"for %s in range(9)"*4})[3]'%(*"021abcd",))

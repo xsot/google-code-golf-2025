@@ -1,4 +1,7 @@
-# ovs (62 bytes, gold)
+# joking (62 bytes, gold)
+p=lambda a,*n:[b for b in zip(*n or p(*a))for _ in"00"*any(b)]
+
+### ovs (tied, 62 bytes)
 p=lambda a,*n:sum([[b,b]for*b,in zip(*n or p(*a))if 4in b],[])
 
 ### att (63 bytes)
