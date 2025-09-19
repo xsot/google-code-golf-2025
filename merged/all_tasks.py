@@ -1008,9 +1008,8 @@ p=lambda m:[*zip(sorted(set(a:=sum(m,[])),key=a.count))][2::-1]
 p=lambda i:[[x[:2*(n:=122%len(i))][b-n]for b,y in enumerate(x)if y<1]for x in i if 0in x]
 # task 395: 53 bytes, gold, https://arcprize.org/play?task=fafffa47
 p=lambda a,n=[]:a*0!=0and[*map(p,a,a[3:]+n)]or~a+~n&2
-# task 396: 188 vs 179 bytes for gold, https://arcprize.org/play?task=fcb5c309
-E=enumerate
-p=lambda m,X=8:[*[[[min(a:=sum(m,[]),key=a.count)*(e>0)for e in e[x:x+X]]for e in m[y:]if(f:=f*e[x]==b)]for y,r in E(m)for x,b in E(r)if(f:=[b]*X==r[x:x+X])*b],0][0]or p(m,X-1)
+# task 396: 156 bytes, gold, https://arcprize.org/play?task=fcb5c309
+p=lambda m,X=8,f=0:[[sum({*e*sum(m,[-f])})for e in r[x:x+X]]for x in range(len(m[0]))for r in m+[[0]*99]if(f:=r[x]*(X*[r[x]]in(r[x:x+X],[f]*X)))]or p(m,X-1)
 # task 397: 125 vs 121 bytes for gold, https://arcprize.org/play?task=fcc82909
 p=lambda m,k=0:exec('r=k//9;exec("m[2%s=3,3;r+=1;"*len(a:={*m[%s+m[1%s})*(not{0,3}&a));k+=1;'%(('+r][k%9:k%9+2]',)*3)*81)or m
 # task 398: 79 vs 77 bytes for gold, https://arcprize.org/play?task=feca6190
