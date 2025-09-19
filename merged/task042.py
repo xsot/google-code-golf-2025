@@ -1,7 +1,9 @@
-# mwi (153 vs 139 bytes for gold)
-# looks for green only in the positive direction, rotating 4 times.
-# i had trouble finding a good out-of-bounds check that works with the rotation,
-# wouldn't be surprised if theres a better idea than min(idx,9)
+# mwi (145 vs 139 bytes for gold)
+# improved oob check over previous version
+def p(g,Q=range(10)):C=sum(b'%r'%g)//38%4;return[g:=[[g[j][~i]|8*all((i>y<j)&g[j-3*C+y][~i+y]for y in(C,2*C))for j in Q]for i in Q]for k in Q][3]
+## looks for green only in the positive direction, rotating 4 times.
+## i had trouble finding a good out-of-bounds check that works with the rotation,
+## wouldn't be surprised if theres a better idea than min(idx,9)
 def p(g,Q=range(10)):C=sum(b'%r'%g)//38%4;return[g:=[[g[j][~i]|8*all(1&g[min(j+3*C-y,9)][~min(i+y,9)]for y in(C,2*C))for j in Q]for i in Q]for k in Q][3]
 ## inlining the assignment of C doesn't seem to save, since the
 ## bytesum changes between rotations, and requires a longer
