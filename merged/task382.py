@@ -1,5 +1,5 @@
-# ovs (126 bytes, gold)
-p=lambda i,k=-3:k*i or p([*zip(w:=i.pop(0),*[[*map(max,r,w:=r*('8'in'%s'%i)or[0,*w,0][r[-1]or[1]>r:])]for*r,in i])][::-1],k+1)
+# ovs (125 bytes, gold)
+p=lambda i,k=-3:k*i or p([*zip(w:=i.pop(0),*[[*map(max,r,w:=r*('8'in'%s'%i)+[0,*w,0][r[-1]or[1]>r:])]for*r,in i])][::-1],k+1)
 
 ### mwi (144 bytes)
 f=lambda b,*a:[b:=(*b[d>0:-1],*{0,d})for*_,d in[b,*a]]

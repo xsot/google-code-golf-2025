@@ -1,4 +1,7 @@
-# joking (92 vs 91 bytes for gold)
+# ovs (89 bytes, gold)
+p=lambda i:[[x[:2*(n:=122%len(i))][b-n]for b,y in enumerate(x)if y<1]for x in i if 0in x]
+
+### joking (92 bytes)
 p=lambda i:[[max(x[b%(n:=2+len(i)//7)::n])for b,y in enumerate(x)if y<1]for x in i if 0in x]
 
 ### combined (126 bytes)
