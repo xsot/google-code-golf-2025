@@ -980,8 +980,8 @@ p=lambda i,k=7,r=re.sub:-k*i or[*zip(*eval(r(", 4, ","|8,8,8|",r("0, 8, ((0, )+)
 p=lambda a:[*zip(*a)][::-1]
 # task 381: 86 vs 79 bytes for gold, https://arcprize.org/play?task=ef135b50
 p=lambda i,a=8:[[-s+(s:=s+y)or(a%9>0<s<sum(x))*9for y in x]for x in i if[s:=0,a:=a+1]]
-# task 382: 137 vs 134 bytes for gold, https://arcprize.org/play?task=f15e1fac
-p=lambda i,k=-7:k*i or p([*zip(w:=i.pop(0),*[i,[[f]+(w:=[0,*w][f<1:])[1:]for f,*_ in i]][max(i)[0]and'8'not in'%s'%i])][::k%4<1or-1],k+1)
+# task 382: 126 bytes, gold, https://arcprize.org/play?task=f15e1fac
+p=lambda i,k=-3:k*i or p([*zip(w:=i.pop(0),*[[*map(max,r,w:=r*('8'in'%s'%i)or[0,*w,0][r[-1]or[1]>r:])]for*r,in i])][::-1],k+1)
 # task 383: 121 bytes, gold, https://arcprize.org/play?task=f1cefba8
 p=lambda g,*G:[[r,[(o:=[*{}.fromkeys(r)]*3)[1+0**v]for v in r]][str(o)[1:8]in f'{r+r[::-1]}']for r in zip(*G or p(g,*g))]
 # task 384: 62 bytes, gold, https://arcprize.org/play?task=f25fbde4

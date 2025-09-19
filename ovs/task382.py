@@ -1,1 +1,1 @@
-p=lambda i,k=-7:k*i or p([*zip(w:=i.pop(0),*[i,[[f]+(w:=[0,*w][f<1:])[1:]for f,*_ in i]][max(i)[0]and'8'not in'%s'%i])][::k%4<1or-1],k+1)
+p=lambda i,k=-3:k*i or p([*zip(w:=i.pop(0),*[[*map(max,r,w:=r*('8'in'%s'%i)or[0,*w,0][r[-1]or[1]>r:])]for*r,in i])][::-1],k+1)
