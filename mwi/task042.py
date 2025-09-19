@@ -1,3 +1,9 @@
+# collapsed `all` into single check
+def p(g,Q=range(10)):C=sum(b'%r'%g)//38%4;return[g:=[[g[j][~i]|8*((i>C<j)&g[j-C-C][~i+C]&g[j-C][~i+C+C])for j in Q]for i in Q]for _ in Q][3]
+
+## same length using exec
+exec(f"def p(g):C=sum(b'%r'%g)//38%4;return[g:=[[g[j][~i]|8*((i>C<j)&g[j-C-C][~i+C]&g[j-C][~i+C+C]){'for %s in range(10)]'*3%(*'ji_',)}[3]")
+
 # improved oob check over previous version
 def p(g,Q=range(10)):C=sum(b'%r'%g)//38%4;return[g:=[[g[j][~i]|8*all((i>y<j)&g[j-3*C+y][~i+y]for y in(C,2*C))for j in Q]for i in Q]for k in Q][3]
 ## looks for green only in the positive direction, rotating 4 times.
