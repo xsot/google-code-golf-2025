@@ -1,0 +1,1 @@
+p=lambda i,*w:i*0!=0and[*map(p,i,i[::-1],*w)]or max({i,*w}-{4})

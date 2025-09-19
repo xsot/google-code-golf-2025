@@ -1,8 +1,14 @@
-# ovs (153 vs 131 bytes for gold)
+# joking (151 vs 131 bytes for gold)
+p=lambda g:[g:=[[max([k*(2>i*i<=k in[r,r[:j],r[j:]][i])for i,k in E(map(min,g),-j)if k]or[v])for j,v in E(r)]for r in zip(*g)]for E in[enumerate]*2][1]
+
+## 
+E=enumerate;p=lambda g:[g:=[[max([k*(2>i*i<=k in[r,r[:j],r[j:]][i])for i,k in E(map(min,g),-j)if k]or[v])for j,v in E(r)]for r in zip(*g)]for _ in g][1]
+
+### ovs (153 bytes)
 E=enumerate
 p=lambda g,k=-1:g*k or p([[max([k*(2>i*i<=k in[r,r[:j],r[j:]][i])for i,k in E(map(min,g),-j)if k]or[v])for j,v in E(r)]for r in zip(*g)],k+1)
 
-### combined (tied, 153 bytes)
+### combined (153 bytes)
 E=enumerate
 p=lambda g,k=-1:g*k or p([[max([k*(2>i*i<=k in[r,r[:j],r[j:]][i])for i,k in E(map(min,g),-j)if k]or[v])for j,v in E(r)]for r in zip(*g)],k+1)
 

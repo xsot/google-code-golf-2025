@@ -1,0 +1,1 @@
+p=lambda g,v=0:g*0!=0and[*map(p,g,b''*7)]or g*v//4
