@@ -1,4 +1,11 @@
 def p(g):
+ z,v,V=[{x+x//10*80for x in range(100)if C==g[x//10][x%10]}for C in(0,2,5)]
+ for y in z|V:
+  for Y in(m:=[Y+y-min(v)for Y in v])*(hash((*g[0],))%263+y//90!=7!={*m}<z):g[Y//90][Y%90]=2;z-={Y}
+ return g
+
+## old version
+def p(g):
  v=[[y,x]for y,r in enumerate(g)for x,c in enumerate(r)if c%5];i,j=min(v)
  for y,r in enumerate(g):
   for x,c in enumerate(r):
