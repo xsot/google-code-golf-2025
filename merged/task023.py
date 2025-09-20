@@ -1,4 +1,7 @@
-# ovs (205 vs 195 bytes for gold)
+# joking (204 vs 195 bytes for gold)
+import re;p=lambda i:max([i[("5"in(s:=str(i)))*(k:=len(i[0])*3-2):]]+[p(eval(r))for l in[("5,? ?"*3,"2,"*3),("5(.%s)?"%{k+3}*3,r"2\1 2\2 2\3"),("5, 5(.%s)5, 5"%{k},r"8,8\1 8,8")]if(r:=re.sub(*l,s,1))!=s])
+
+### ovs (205 bytes)
 import re
 p=lambda i:max([i[("5"in(s:=str(i)))*(k:=len(i[0])*3-2):]]+[p(eval(r))for l in[("5,? ?"*3,"2,"*3),("5(.{%d}...)?"%k*3,r"2\1 2\2 2\3"),("5, 5(.{%d})5, 5"%k,r"8,8\1 8,8")]if(r:=re.sub(*l,s,1))!=s])
 

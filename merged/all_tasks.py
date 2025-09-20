@@ -46,9 +46,8 @@ p=eval(f"lambda g:[g:=[[g[J][I]|((g*2)[I-{S}]*2)[4{S}-J]{'for %s in range(10)]'*
 p=lambda i:i*-1*-1or-~min(map(i.count,i))*[p(i[0])]
 # task 22: 97 vs 91 bytes for gold, https://arcprize.org/play?task=137eaa0f
 p=lambda i:[[*map(max,*[s[t:t+3]for t in range(132)if(s:=sum(i*2,[]))[t-x]==5])]for x in b'mx\n']
-# task 23: 205 vs 195 bytes for gold, https://arcprize.org/play?task=150deff5
-import re
-p=lambda i:max([i[("5"in(s:=str(i)))*(k:=len(i[0])*3-2):]]+[p(eval(r))for l in[("5,? ?"*3,"2,"*3),("5(.{%d}...)?"%k*3,r"2\1 2\2 2\3"),("5, 5(.{%d})5, 5"%k,r"8,8\1 8,8")]if(r:=re.sub(*l,s,1))!=s])
+# task 23: 204 vs 195 bytes for gold, https://arcprize.org/play?task=150deff5
+import re;p=lambda i:max([i[("5"in(s:=str(i)))*(k:=len(i[0])*3-2):]]+[p(eval(r))for l in[("5,? ?"*3,"2,"*3),("5(.%s)?"%{k+3}*3,r"2\1 2\2 2\3"),("5, 5(.%s)5, 5"%{k},r"8,8\1 8,8")]if(r:=re.sub(*l,s,1))!=s])
 # task 24: 62 bytes, gold, https://arcprize.org/play?task=178fcbfb
 p=lambda i:[[3%-~sum(x)or(2in y)*2for y in zip(*i)]for x in i]
 # task 25: 151 vs 131 bytes for gold, https://arcprize.org/play?task=1a07d186
@@ -74,8 +73,8 @@ p=lambda g,i=-1:[[v|(v<g[(i:=i+1)//17%6][i%17%6])*r[5]for v in r]for r in g]
 import re;p=lambda i,k=27:-k*[x[1:10]for x in i[1:10]]or p(eval(re.sub("(([13-9]).*)2, 0(.%s.)0, 0"%{len(i)*3},r"\1\2,\2\3\2,2",str([*zip(*i[::-1],[0]*11)]))),k-1)
 # task 35: 87 vs 83 bytes for gold, https://arcprize.org/play?task=1f642eb9
 p=lambda i,k=3:-k*i or[[x[0**k<=(k:=y)^8]or y for y in x]for x in zip(*p(i,k-1)[::-1])]
-# task 36: 90 vs 75 bytes for gold, https://arcprize.org/play?task=1f85a75f
-p=lambda i,n=1:(len(l:=(f:=lambda g:[x for x in zip(*g)if n in x])(f(i)))<6)*l or p(i,n+1)
+# task 36: 88 vs 75 bytes for gold, https://arcprize.org/play?task=1f85a75f
+p=lambda i,n=2,*t:t*(~n%2*6>len(t))or p(i,n+1,*[x for x in zip(*n%2*t or i)if n//2in x])
 # task 37: 109 vs 105 bytes for gold, https://arcprize.org/play?task=1f876c06
 p=lambda g,a=-1:[[max(sum({*(f:=sum(g,[]))[(a:=a+9//d)::d]}&{*f[a::-d]})for d in(9,11))for _ in g]for _ in g]
 # task 38: 51 bytes, gold, https://arcprize.org/play?task=1fad071e
