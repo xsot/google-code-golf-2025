@@ -224,10 +224,10 @@ p=lambda g:[g:=eval(re.sub("[^50],([^(]+5)",r"\1,5",str([*zip(*g[::-1])])))for _
 p=lambda i,*h:[h:=[(y>2==x.count((c:=h.count)(1)%5-1)>=c(6))*6or y for y in x]for x in zip(*h or p(i,*i))]
 # task 95: 75 vs 73 bytes for gold, https://arcprize.org/play?task=4258a5f9
 p=lambda a,n=6:~n*a or[[n%2|(n:=b.pop())for _ in a]for*b,in zip(*p(a,n-2))]
-# task 96: 317 (375 unzipped) bytes, gold, https://arcprize.org/play?task=4290ef0e
+# task 96: 301 (378 unzipped) bytes, gold, https://arcprize.org/play?task=4290ef0e
 def p(g,*S):
- for c in{b:=max(d:=sum(g,[]),key=d.count)}^{*d}:r=max([[i for i in range(len(r))if r[i]==c]for*r,in[*g,*zip(*g)]],key=len);D=max(d:=min(d:=[x-r.pop(0)for x in r[1:]],d[::-1])+[0]);S+=((d.index(D)*2or~-len(d))+D|1,D-2,c),
- R=range(d:=max(S)[0]);return[[([C for W,G,C in S if G<(r:=sorted(abs(d//2-v)for v in(i,j)))[0]*2<r[1]*2+1==W]+[b])[0]for j in R]for i in R]
+ for c in{b:=max(d:=sum(g,[]),key=d.count)}^{*d}:d=max([*g,*zip(*g)],key=lambda r:r.count(c));I=0;D=max(d:=min(d:=[-I+(I:=d.index(c,I)+1)for v in d if v==c][1:],d[::-1])+[0]);S+=((2*d.index(D)or~-len(d))+D|1,D-2,c),
+ R=range(d:=max(S)[0]);return[[[*[C for W,G,C in S if W==1+max(abs(d+~v-v)for v in(i,v))>min(abs(d+~v-v)for v in(i,v))>G],b][0]for v in R]for i in R]
 # task 97: 100 bytes, gold, https://arcprize.org/play?task=42a50994
 p=lambda i,r=[[0]*99]*99,*w:r and[*map(p,*sum([[x,r,x[1:]+r,r[:1]+x]for x in[i,*w]],[]))]or any(w)*i
 # task 98: 64 bytes, gold, https://arcprize.org/play?task=4347f46a
