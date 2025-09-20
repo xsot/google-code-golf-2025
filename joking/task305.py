@@ -1,5 +1,9 @@
 p=lambda g,y=0:[(sorted({*x}-{0})*9)[y:(y:=y+1)+15]for x in g]
 
+## recursive alts
+p=lambda i,s=0:i*-1and s%i+1or[p(max(i),s+n)for n in range(16)]
+p=lambda i,s=0:[p(max(i),s+n)for n in range(i*-1or 16)]or s%i+1
+
 ##bunch of experiments
 p=lambda g:[([*range(1,1+max(g[0]))]*9)[y:y+16]for y in range(16)]
 p=lambda g,r=range(16):[([*r[1:1+max(g[0])]]*9)[y:y+16]for y in r]

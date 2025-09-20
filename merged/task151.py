@@ -1,4 +1,14 @@
-# combined (108 bytes, gold)
+# joking (108 bytes, gold)
+def p(g):
+ x=y=0
+ for _ in g:x+=1>g[0][x];y+=0in g[y]
+ for N in b"":g[y+N//3-6][x+N%3-1]=4
+ return g
+
+## recursive, not working
+p=lambda i,*w:i*0!=0and[*map(p,*sum([[x,x[1:]+x,x[:1]+x]for x in[i,*w]],[]))]or (len({i,*w})==3)*4 or i
+
+### combined (tied, 108 bytes)
 def p(g):
  x=y=0
  for _ in g:x+=1>g[0][x];y+=0in g[y]
