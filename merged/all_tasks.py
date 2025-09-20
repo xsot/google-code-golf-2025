@@ -913,9 +913,9 @@ p=lambda a:[[*map(max,b,b[:4:-1])]for b in a]
 def p(a):I=[a*2for a in a+a];return[[[max(I[x][y],I[a+b+n+~y][b-a+x],I[a-b+y][a+b+n+~x],I[a+a+n+~x][b+b+n+~y])for y in range(10)]for x in range(10)]for n in range(10)for a in range(10)for b in range(10)if all(all(x[b:b+n])for x in I[a:a+n])][-1]
 # task 362: 69 bytes, gold, https://arcprize.org/play?task=e48d4e1a
 p=lambda g:[r[(n:=g.count(g[0])):9]+r[:1]+r[:n]for r in g*2][10-n:-n]
-# task 363: 205 bytes, gold, https://arcprize.org/play?task=e5062a87
+# task 363: 204 bytes, gold, https://arcprize.org/play?task=e5062a87
 def p(g):
- v=(f:=lambda C:{x+x//10*80for x in range(100)if C==g[x//10][x%10]})(2)
+ f=lambda C:{x+x//10*80for x in range(100)if C==g[x//10][x%10]};v=f(2)
  for y in f(0)|f(5):
   for Y in(m:=[Y+y-min(v)for Y in v])*(hash((*g[0],))%263+y!=99!={*m}<f(0)):g[Y//90][Y%90]=2
  return g
