@@ -1,4 +1,4 @@
-import re;p=lambda i,k=7:-k*i or[*zip(*eval(re.sub("(?=(.{32})*(., |.{29})?2, [^0].{25}([13-9]))\d","\\3",str(p(i,k-1)))))][::-1]
+import re;p=lambda i,k=7:-k*i or[*zip(*eval(re.sub("(?=(.{32})*(., |.{29})?2, [^0].{25}([^02]))\d","\\3",str(p(i,k-1)))))][::-1]
 
 ##
 import re;p=lambda i,k=27:-k*[x[1:10]for x in i[1:10]]or p(eval(re.sub(f"(([13-9]).*)2, 0(.{ {len(i)*3}}.)0, 0",r"\1\2,\2\3\2,2",str([*zip(*i[::-1],[0]*11)]))),k-1)

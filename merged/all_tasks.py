@@ -69,8 +69,8 @@ p=lambda a,*n:[*filter(any,zip(*n or p(*a)))]
 p=lambda a:[*zip(*map(sorted,zip(*a)))]
 # task 33: 76 vs 73 bytes for gold, https://arcprize.org/play?task=1e32b0e9
 p=lambda g,i=-1:[[v|(v<g[(i:=i+1)//17%6][i%17%6])*r[5]for v in r]for r in g]
-# task 34: 129 vs 125 bytes for gold, https://arcprize.org/play?task=1f0c79e5
-import re;p=lambda i,k=7:-k*i or[*zip(*eval(re.sub("(?=(.{32})*(., |.{29})?2, [^0].{25}([13-9]))\d","\\3",str(p(i,k-1)))))][::-1]
+# task 34: 128 vs 125 bytes for gold, https://arcprize.org/play?task=1f0c79e5
+import re;p=lambda i,k=7:-k*i or[*zip(*eval(re.sub("(?=(.{32})*(., |.{29})?2, [^0].{25}([^02]))\d","\\3",str(p(i,k-1)))))][::-1]
 # task 35: 87 vs 83 bytes for gold, https://arcprize.org/play?task=1f642eb9
 p=lambda i,k=3:-k*i or[[x[0**k<=(k:=y)^8]or y for y in x]for x in zip(*p(i,k-1)[::-1])]
 # task 36: 88 vs 75 bytes for gold, https://arcprize.org/play?task=1f85a75f
