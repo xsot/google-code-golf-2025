@@ -1,10 +1,10 @@
-# att (72 vs 68 bytes for gold)
+# ovs (70 vs 68 bytes for gold)
+p=lambda g,c=[0]*9:[c:=[V or v*sum(r)%6for V,v in zip(c,r)]for r in g]
+
+### att (72 bytes)
 p=lambda a:[[sum(c<e*s for*s,in zip(*a))for*c,e in zip(*a,r)]for r in a]
 
-### ovs (tied, 72 bytes)
-p=lambda g,c=[0]*9:[c:=[V or v%2*-~max(c)for V,v in zip(c,r)]for r in g]
-
-### combined (tied, 72 bytes)
+### combined (72 bytes)
 p=lambda a:[[sum(c<e*s for*s,in zip(*a))for*c,e in zip(*a,r)]for r in a]
 
 ### xsot (80 bytes)

@@ -13,19 +13,19 @@ def p(g):R=max([{(i,j)for i in range(21)[x:x+3]for j in range(21)[y:y+3]if g[i][
 p=lambda a:[[2*c*b.pop(0)for c in b[4:]]for b in a]
 # task 7: 65 vs 62 bytes for gold, https://arcprize.org/play?task=05269061
 p=lambda a:[[max(sum(a:=a[1:3]+a,[0])[::3])for _ in r]for r in a]
-# task 8: 94 vs 84 bytes for gold, https://arcprize.org/play?task=05f2a901
-p=lambda g:[g:=sorted(zip(*g[::-1]),key=lambda x,P={0}:any((P.add(8in x),*P)+x))for _ in g][3]
+# task 8: 90 vs 84 bytes for gold, https://arcprize.org/play?task=05f2a901
+p=lambda g:exec('*G,f=0,\nfor r in g:M=max(r);f|=M;G[M-f&11-f:0]=r,\ng[:]=zip(*G);'*4)or g
 # task 9: 109 bytes, gold, https://arcprize.org/play?task=06df4c85
 p=lambda g,E=enumerate:[[max({*r[:j+1]}&{*r[j::3]}|{*c[:i]}&{*c[i::3]})for j,c in E(zip(*g))]for i,r in E(g)]
-# task 10: 72 vs 68 bytes for gold, https://arcprize.org/play?task=08ed6ac7
-p=lambda a:[[sum(c<e*s for*s,in zip(*a))for*c,e in zip(*a,r)]for r in a]
+# task 10: 70 vs 68 bytes for gold, https://arcprize.org/play?task=08ed6ac7
+p=lambda g,c=[0]*9:[c:=[V or v*sum(r)%6for V,v in zip(c,r)]for r in g]
 # task 11: 125 vs 121 bytes for gold, https://arcprize.org/play?task=09629e4f
 v=[[5]*11]*9
 p=eval(f"lambda a:[a {'for*a,in map(zip,a,a,a,v,*[a[1:]]*3,v,*[a[2:]]*3)'*2}if(c:=sum(a,()).count)(5)<c(0)][0]")
 # task 12: 132 vs 127 bytes for gold, https://arcprize.org/play?task=0962bcdd
 import re;p=lambda i:[i:=eval(re.sub("(([^0]).{37}([^0]), )0(, 0.{31})0, 0,",r"\1\2\4\3,0,\2+",str([*zip(*i[::-1])])))for _ in i][7]
-# task 13: 146 vs 140 bytes for gold, https://arcprize.org/play?task=0a938d79
-def p(i):f,*r=map(i.index,filter(any,i));a=62+f;return[len(x)*[max(i[f+61%(a:=a-1)%(r[0]-f<<1)])]for x in i if i[len(x):]]or[*zip(*p([*zip(*i)]))]
+# task 13: 141 vs 140 bytes for gold, https://arcprize.org/play?task=0a938d79
+def p(i):*v,=map(max,*i);f,*r=map(v.index,filter(abs,v));N=len(v);return i[N:]and[*zip(*p([*zip(*i)]))]or[(v[:f]+v[f:2*r[0]-f]*8)[:N]]*len(i)
 # task 14: 69 bytes, gold, https://arcprize.org/play?task=0b148d64
 p=lambda i,*I:[w for*w,r in zip(*I or p(zip(*i),*i),i)if len({*r})>2]
 # task 15: 104 vs 93 bytes for gold, https://arcprize.org/play?task=0ca9ddb6
