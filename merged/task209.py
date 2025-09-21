@@ -1,4 +1,4 @@
-# xsot (275 (427 unzipped) bytes, gold)
+# xsot (275 (427 unzipped) vs 273 bytes for gold)
 def p(g):
  G=g[-5:]
  for s in range(20):G=[x for x in zip(*G)if{*x}-{b:=0,4}];g=[[*x]for x in zip(*g)if b|(b:=b^(4in x))]

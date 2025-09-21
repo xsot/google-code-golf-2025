@@ -1,5 +1,8 @@
-# att (72 vs 68 bytes for gold)
+# ovs (66 bytes, gold)
+p=lambda a:[*zip(*[c[:-(w:=sum(c)//4)]+w*[8]+c for*c,in zip(*a)])]
+
+### att (72 bytes)
 p=lambda a:[[c<<b.pop(0)for c in a.pop(0)]for*b,in(a[:1]*len(a)+a)[::2]]
 
-### combined (tied, 72 bytes)
+### combined (72 bytes)
 p=lambda a:[[c<<b.pop(0)for c in a.pop(0)]for*b,in(a[:1]*len(a)+a)[::2]]

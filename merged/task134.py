@@ -1,4 +1,4 @@
-# ovs (174 vs 168 bytes for gold)
+# ovs (174 vs 158 bytes for gold)
 def p(g):D,C=sorted({*sum(g,[])}-{0},key=lambda c:str(g).count(f'{c}, '*2));g=[[D*(v==C)for v in r]for r in g];exec("*h,=filter(any,zip(*g));g[:]=h[::len(h)//3];"*2);return g
 
 ##
