@@ -8243,8 +8243,8 @@
         "public_best": 39
     },
     "task263": {
-        "gold": 122,
-        "best": 122,
+        "gold": 117,
+        "best": 117,
         "solutions": {
             "ovs": {
                 "source": "cD1sYW1iZGEgZzpnWyhUOj1bKnppcCgqWyh4PjBmb3IgeSBpbiBnIGZvciB4IGluIHkpXSo5KV0pLmluZGV4KG1pbihULGtleT1ULmNvdW50KSkqMzpdWzozJWxlbihnKV1vclsqemlwKCpwKFsqemlwKCpnKV0pKV0=",
@@ -8258,6 +8258,13 @@
                 "size_uncompressed": 122,
                 "compressed": "cD1sYW1iZGEgZzpnWyhUOj1bKnppcCgqWyh4PjBmb3IgeSBpbiBnIGZvciB4IGluIHkpXSo5KV0pLmluZGV4KG1pbihULGtleT1ULmNvdW50KSkqMzpdWzozJWxlbihnKV1vclsqemlwKCpwKFsqemlwKCpnKV0pKV0=",
                 "size_compressed": 122,
+                "method": "none"
+            },
+            "att": {
+                "source": "cD1sYW1iZGEgZzpnWyhUOj1bKnppcCgqW21hcChib29sLHN1bShnLGcqMCkpXSo5KV0pLmluZGV4KG1pbihULGtleT1ULmNvdW50KSkqMzpdWzozJWxlbihnKV1vclsqemlwKCpwKCgqemlwKCpnKSwpKSld",
+                "size_uncompressed": 117,
+                "compressed": "cD1sYW1iZGEgZzpnWyhUOj1bKnppcCgqW21hcChib29sLHN1bShnLGcqMCkpXSo5KV0pLmluZGV4KG1pbihULGtleT1ULmNvdW50KSkqMzpdWzozJWxlbihnKV1vclsqemlwKCpwKCgqemlwKCpnKSwpKSld",
+                "size_compressed": 117,
                 "method": "none"
             }
         },
@@ -8984,13 +8991,13 @@
     },
     "task287": {
         "gold": 56,
-        "best": 63,
+        "best": 58,
         "solutions": {
             "att": {
-                "source": "cD1sYW1iZGEgYTpbW21heCh7YyxiLnBvcCgpfS17NH0pZm9yIGMgaW4gYS5wb3AoKV1mb3IqYixpblsqYV1d",
-                "size_uncompressed": 63,
-                "compressed": "cD1sYW1iZGEgYTpbW21heCh7YyxiLnBvcCgpfS17NH0pZm9yIGMgaW4gYS5wb3AoKV1mb3IqYixpblsqYV1d",
-                "size_compressed": 63,
+                "source": "cD1sYW1iZGEqYTphWzI6XWFuZCBtYXgoeyphfS17NH0pb3JbKm1hcChwLCphLGFbMF1bOjotMV0pXQoKIyMKcD1sYW1iZGEqYTphWzI6XWFuZCBzdW0oeyphLDR9KS00b3JbKm1hcChwLCphLGFbMF1bOjotMV0pXQpwPWxhbWJkYSBhOltbbWF4KHtjLGIucG9wKCl9LXs0fSlmb3IgYyBpbiBhLnBvcCgpXWZvcipiLGluWyphXV0=",
+                "size_uncompressed": 58,
+                "compressed": "cD1sYW1iZGEqYTphWzI6XWFuZCBtYXgoeyphfS17NH0pb3JbKm1hcChwLCphLGFbMF1bOjotMV0pXQ==",
+                "size_compressed": 58,
                 "method": "none"
             },
             "ovs": {

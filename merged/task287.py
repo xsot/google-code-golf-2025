@@ -1,10 +1,14 @@
-# att (63 vs 56 bytes for gold)
+# att (58 vs 56 bytes for gold)
+p=lambda*a:a[2:]and max({*a}-{4})or[*map(p,*a,a[0][::-1])]
+
+##
+p=lambda*a:a[2:]and sum({*a,4})-4or[*map(p,*a,a[0][::-1])]
 p=lambda a:[[max({c,b.pop()}-{4})for c in a.pop()]for*b,in[*a]]
 
-### joking (tied, 63 bytes)
+### joking (63 bytes)
 p=lambda i,*w:i*0!=0and[*map(p,i,i[::-1],*w)]or max({i,*w}-{4})
 
-### combined (tied, 63 bytes)
+### combined (63 bytes)
 p=lambda a:[[max({c,b.pop()}-{4})for c in a.pop()]for*b,in[*a]]
 
 ### ovs (123 bytes)
