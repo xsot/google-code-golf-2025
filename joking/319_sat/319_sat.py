@@ -16,28 +16,17 @@ def _PyHASH_XXROTATE(x):
 
 bits = 1 << 64
 
-def tuple_prefix(tup):
+def hash_tuple(tup):
     acc = _PyHASH_XXPRIME_5
     for lane in tup:
         acc += lane * _PyHASH_XXPRIME_2
-        acc &= bits - 1
-        acc = _PyHASH_XXROTATE(acc)
-        acc &= bits - 1
-        acc *= _PyHASH_XXPRIME_1
-        acc &= bits - 1
-
-    return acc
-
-def tuple_postfix(acc, length, tup):
-    for lane in tup:
-        acc += lane * _PyHASH_XXPRIME_2
         if type(acc) is int: acc &= bits - 1
         acc = _PyHASH_XXROTATE(acc)
         if type(acc) is int: acc &= bits - 1
         acc *= _PyHASH_XXPRIME_1
         if type(acc) is int: acc &= bits - 1
 
-    acc += length + len(tup) ^ (_PyHASH_XXPRIME_5 ^ 3527539)
+    acc += len(tup) ^ (_PyHASH_XXPRIME_5 ^ 3527539)
     if type(acc) is int: acc &= bits - 1
 
     #if acc == bits - 1: return 1546275796
@@ -52,15 +41,16 @@ ex = load_examples(319)
 
 # load examples
 ex = ex["train"] + ex["test"] + ex['arc-gen']
-ex = ex[:30]
-print('trying for %d cases'%len(ex))
+ex = ex[:15]
 
 # create the tuple
-tnum = 4 #max(1, len(ex)//7)  # estimate for min tuple length
+tnum = 2 #max(1, len(ex)//7)  # estimate for min tuple length
 tup = [BitVec('O%d'%t,64) for t in range(tnum)]
 for n in tup:
     sol.add(n > 0)
     sol.add(n < 128)
+
+print('trying for %d cases with size %d tuple'%(len(ex),tnum))
 
 target_bit = BitVec("bit", 64)
 sol.add(target_bit >= 0)
@@ -70,9 +60,8 @@ for t in ex:
     z = (*sum(t['input'],[]),)
     s = sorted({*z},key=z.count)
     g = {s.index(c)for c in {*sum(t['output'],[])}}
-    k = tuple_prefix(z)
 
-    r = tuple_postfix(k, len(z), tup) >> target_bit & 1 == min(g)
+    r = hash_tuple((*z,*tup)) >> target_bit & 1 == min(g)
     r = simplify(r)
     sol.add(r)
 
