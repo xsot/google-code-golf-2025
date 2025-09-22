@@ -235,12 +235,12 @@ p=lambda i,*w:i*0!=0and[*map(p,i,i[:1]+i,i[1:]+i,*w)]or i^min(w)
 p=lambda g,r=range(10):[[g[y][x]or max(sum(g[y:y+4],g[y-1]))*any(g[y-9][:x+1])*any(g[y-9][x:])for x in r]for y in r]
 # task 100: 88 vs 85 bytes for gold, https://arcprize.org/play?task=445eab21
 p=lambda a:[[max(range(1,10),key=[sum({*b}&{*c})for c in zip(*a)for b in a].count)]*2]*2
-# task 101: 279 (338 unzipped) bytes, gold, https://arcprize.org/play?task=447fd412
+# task 101: 270 (383 unzipped) bytes, gold, https://arcprize.org/play?task=447fd412
 def p(g):
- T=1,20;V,m,M,s,v=[{j+i*20for i,g in enumerate(g)for j,g in enumerate(g)if g==C}for C in range(5)];[s.add(I)for I in[*M]*2for i in m|s if abs(I-i)in T]
+ V,m,M,s,v=[{j+i*20for i,g in enumerate(g)for j,g in enumerate(g)if g==I}for I in range(5)];[s.add(I)for I in[*M]*2for i in m|s if abs(I-i)in[1,20]]
  for i in M-s:
-  A=min(len({*range(i-2*k,i+3*k,k)}&M)for k in T);N={i}-v and{i-A*(min(s)-max(s))}&M;v|=N
-  for k in N and{i-A*(min(s)-I)for I in m}&V:g[k//20][k%20]=1
+  j={i}-v and{i-min(len({*range(i-2*I,i+3*I,I)}&M)for I in[1,20])*(min(s)-max(s))}&M;v|=j
+  for I in j and{i-min(len({*range(i-2*I,i+3*I,I)}&M)for I in[1,20])*(min(s)-I)for I in m}&V:g[I//20][I%20]=1
  return g
 # task 102: 170 vs 150 bytes for gold, https://arcprize.org/play?task=44d8ac46
 import re

@@ -3140,8 +3140,8 @@
         "public_best": 88
     },
     "task101": {
-        "gold": 279,
-        "best": 279,
+        "gold": 270,
+        "best": 270,
         "solutions": {
             "mwi": {
                 "source": "ZGVmIHAoZyk6CiBHPWcKIGZvciBfIGluJyAnKjk2Okc9W3JbOjotMV1mb3IgciBpbiB6aXAoKkdbKDAsKSpsZW4oR1swXSlpbiBHWzptaW4oeSBmb3IgeSBpbiByYW5nZShsZW4oRykpaWYgMWluIEdbeV0pXTpdKV07aCx3PWxlbihHKSxsZW4oR1swXSkKIGZvciBzIGluWzMsMiwxXToKICBmb3IgeSBpbiByYW5nZSgxNSk6CiAgIGZvciB4IGluIHJhbmdlKC0yLDEyKToKICAgIG09WyhILFcsR1tILy9zXVtXLy9zXSxsZW4oZ1swXSk+eCtXPi0xPHkrSDxsZW4oZykpZm9yIEggaW4gcmFuZ2UocypoKWZvciBXIGluIHJhbmdlKHMqdyldCiAgICBpZiBhbGwoKDJedSBvciBWKSooVjwxb3IoZ1t5K0hdW3grV109PTIpPT0odT09MikpZm9yIEgsVyx1LFYgaW4gbSk6CiAgICAgZm9yIEgsVyx1LFYgaW4gbToKICAgICAgaWYgVjpnW3krSF1beCtXXT11K3UvLzIKIHJldHVybiBldmFsKHN0cihnKS5yZXBsYWNlKConMzInKSk=",
@@ -3169,6 +3169,15 @@
                 "method": "zlib",
                 "window": -9,
                 "escape_cost": 0
+            },
+            "joking": {
+                "source": "ZGVmIHAoZyk6CiBWLG0sTSxzLHY9W3tqK2kqMjBmb3IgaSxnIGluIGVudW1lcmF0ZShnKWZvciBqLGcgaW4gZW51bWVyYXRlKGcpaWYgZz09SX1mb3IgSSBpbiByYW5nZSg1KV07W3MuYWRkKEkpZm9yIEkgaW5bKk1dKjJmb3IgaSBpbiBtfHMgaWYgYWJzKEktaSlpblsxLDIwXV0KIGZvciBpIGluIE0tczoKICBqPXtpfS12IGFuZHtpLW1pbihsZW4oeypyYW5nZShpLTIqSSxpKzMqSSxJKX0mTSlmb3IgSSBpblsxLDIwXSkqKG1pbihzKS1tYXgocykpfSZNO3Z8PWoKICBmb3IgSSBpbiBqIGFuZHtpLW1pbihsZW4oeypyYW5nZShpLTIqSSxpKzMqSSxJKX0mTSlmb3IgSSBpblsxLDIwXSkqKG1pbihzKS1JKWZvciBJIGluIG19JlY6Z1tJLy8yMF1bSSUyMF09MQogcmV0dXJuIGc=",
+                "size_uncompressed": 383,
+                "compressed": "I2NvZGluZzpMMQppbXBvcnQgemxpYgpleGVjKHpsaWIuZGVjb21wcmVzcyhieXRlcygnpU7VWsAgFL7nKY5ccqw3W3kRGz8OJge/hbXt3QU7Lt3oP5lBC3fcil0GV6lO29SlRh2OPkFZl9a3gKmFKwKkwWGrewzc+Oz/Pl9ZsErRHGGKYKvpAvmGON47dLk2hpP4wA5leyzreMPI1JODINfnHacMRcCrtC6Pjxl8UtrMhY7g1YhzZkCTGTFzV8Rvkfgo37IwqyWlmDRhJTGvtp+Bb4ZC8ihxInP6MWyRsmcm5RnAZ23/b3P6REDPq1e79pCKIjAOaSWsqmLQYj+0BPYFJywiTDEiKSwtOSkp",
+                "size_compressed": 270,
+                "method": "zopfli",
+                "window": -15,
+                "escape_cost": 1
             }
         },
         "public_gold": 281,
