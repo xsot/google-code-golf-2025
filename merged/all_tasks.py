@@ -938,14 +938,13 @@ import re
 p=lambda i:eval(re.sub("5(, 5)+",lambda m:re.findall("([^50](, [1-9])+)",s*2)[-s[m.end()-1::32].count('5')][0],s:=str(i)))
 # task 369: 114 vs 113 bytes for gold, https://arcprize.org/play?task=e8593010
 p=lambda m,i=95:-i*m or[*zip(*eval(str(p(m,i-1)[::-1]).replace("2320,,,,    133"[i%5::4],"1213,,,,121"[i%5::4])))]
-# task 370: 255 (310 unzipped) bytes, gold, https://arcprize.org/play?task=e8dc4411
+# task 370: 249 (358 unzipped) bytes, gold, https://arcprize.org/play?task=e8dc4411
 def p(g,k=3):
- V=g[y:=[*map(min,g)].index(0)][x:=[*map(min,*g)].index(0)];N=[*map(min,*g)].count(0)
+ y=[*map(min,g)].index(0);x=[*map(min,*g)].index(0);N=[*map(min,*g)].count(0)
  for s in range(9):
   for i in range(N):
    for j in range(N):
-    a=y+~i+V//-9*~s-N*s;b=x+~j+V//-9*~s-N*s
-    if-g[y+i][x+j]>-1<a|b:g[a][b]=g[y-1+V//8][x-1+V%8]
+    if-g[y+i][x+j]>-1<y+g[y][x]//-9*~s-N*s+~i|x+g[y][x]//-9*~s-N*s+~j:g[y+g[y][x]//-9*~s-N*s+~i][x+g[y][x]//-9*~s-N*s+~j]=g[y-1+g[y][x]//8][x-1+g[y][x]%8]
  return-k*g or p([*map(list,zip(*g[::-1]))],k-1)
 # task 371: 109 bytes, gold, https://arcprize.org/play?task=e9614598
 def p(a):

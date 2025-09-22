@@ -11620,8 +11620,8 @@
         "public_best": 114
     },
     "task370": {
-        "gold": 255,
-        "best": 255,
+        "gold": 249,
+        "best": 249,
         "solutions": {
             "mwi": {
                 "source": "ZGVmIHAoZyxrPTMpOgogeSwqdD1beSBmb3IgeSxyIGluIGVudW1lcmF0ZShnKWlmIDBpbiByXTt4LCp0PVt5IGZvciB5LHIgaW4gZW51bWVyYXRlKHppcCgqZykpaWYgMGluIHJdO1Y9Z1t5XVt4XTt2PVY+MAogZm9yIHMgaW4gcmFuZ2UoMTApOgogIGZvciBpIGluIHJhbmdlKGxlbih0KSsxKToKICAgZm9yIGogaW4gcmFuZ2UobGVuKHQpKzEpOgogICAgYSxiPXktaS1zKihsZW4odCkrMS12KSt2LTEseC1qLXMqKGxlbih0KSsxLXYpK3YtMQogICAgaWYtZ1t5K2ldW3gral0+LTE8YT4tMTxiOmdbYV1bYl09Z1t5LTErVi8vOCp2XVt4LTErViU4KnZdCiByZXR1cm4taypnIG9yIHAoWyptYXAobGlzdCx6aXAoKmdbOjotMV0pKV0say0xKQ==",
@@ -11649,6 +11649,15 @@
                 "method": "zopfli",
                 "window": -15,
                 "escape_cost": 0
+            },
+            "xsot": {
+                "source": "IyBzZWUgb3ZzIGZvciB1bmlubGluZWQgdmVyc2lvbgpkZWYgcChnLGs9Myk6CiB5PVsqbWFwKG1pbixnKV0uaW5kZXgoMCk7eD1bKm1hcChtaW4sKmcpXS5pbmRleCgwKTtOPVsqbWFwKG1pbiwqZyldLmNvdW50KDApCiBmb3IgcyBpbiByYW5nZSg5KToKICBmb3IgaSBpbiByYW5nZShOKToKICAgZm9yIGogaW4gcmFuZ2UoTik6CiAgICBpZi1nW3kraV1beCtqXT4tMTx5K2dbeV1beF0vLy05Kn5zLU4qcyt+aXx4K2dbeV1beF0vLy05Kn5zLU4qcyt+ajpnW3krZ1t5XVt4XS8vLTkqfnMtTipzK35pXVt4K2dbeV1beF0vLy05Kn5zLU4qcyt+al09Z1t5LTErZ1t5XVt4XS8vOF1beC0xK2dbeV1beF0lOF0KIHJldHVybi1rKmcgb3IgcChbKm1hcChsaXN0LHppcCgqZ1s6Oi0xXSkpXSxrLTEp",
+                "size_uncompressed": 358,
+                "compressed": "I2NvZGluZzpMMQppbXBvcnQgemxpYgpleGVjKHpsaWIuZGVjb21wcmVzcyhieXRlcygndZDLXG7CMBBF9/2K2QhJ2qjFjVbrj4RZBE1kwExKrCAifrtRF/W5Gu453BmYrfPQCapcO5NNAb41KthOBOKKJI6Jt+4kpnIZX4R6M/xpNvHIfTZ5W0xggRiS5Z0Ti/uFB0wD5Dt80vBFgbwm48uEJpYB17pe+TKDHHEy0Qt1tZqVLa/pEn/y0JD500Dzp4Jtxroe5DyPIY/mWEBy/TGxdoogJujE8wV7OvTVmTqhyDSNrlFKrJyuZXEDJywiTDEiKSwtOSkp",
+                "size_compressed": 249,
+                "method": "libdeflate",
+                "window": -15,
+                "escape_cost": 1
             }
         },
         "public_gold": 260,
