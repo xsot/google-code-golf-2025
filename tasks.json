@@ -572,7 +572,7 @@
     },
     "task017": {
         "gold": 99,
-        "best": 118,
+        "best": 102,
         "solutions": {
             "att": {
                 "source": "cD1sYW1iZGEgYSxuPTE6WyptYXAoZjo9bGFtYmRhKmI6W21heChiW2klbjo6bl0pZm9yIGkgaW4gcmFuZ2UoMjEpXSwqbWFwKGYsKmEpKV0qYW55KGJbbjpdPT1iWzotbl1mb3IgYiBpbiBhKW9yIHAoYSxuKzEp",
@@ -582,10 +582,10 @@
                 "method": "none"
             },
             "ovs": {
-                "source": "Uj1yYW5nZSgyMSkKcD1sYW1iZGEgYSxuPTE6W1ttYXgobWF4KGFbaSVuOjpuXSlbaiVuOjpuXSlmb3IgaiBpbiBSXWZvciBpIGluIFJdKmFueShiW246XT09Yls6LW5dZm9yIGIgaW4gYSlvciBwKGEsbisxKQoKIyMKClI9cmFuZ2UoMjEpCnA9bGFtYmRhIGcsSz0tMzpLKmcgb3IgcChbKnppcCgqW1tbKm1hcChzdW0sdyldZm9yIGsgaW4gUiBpZiBtYXgobWFwKGxlbix3Oj1beypyW35pOjprKzFdfS17MH1mb3IgaSBpbiBSXSkpPDJdWzBdZm9yIHIgaW4gZ10pXSxLKzEpCg==",
-                "size_uncompressed": 118,
-                "compressed": "Uj1yYW5nZSgyMSkKcD1sYW1iZGEgYSxuPTE6W1ttYXgobWF4KGFbaSVuOjpuXSlbaiVuOjpuXSlmb3IgaiBpbiBSXWZvciBpIGluIFJdKmFueShiW246XT09Yls6LW5dZm9yIGIgaW4gYSlvciBwKGEsbisxKQ==",
-                "size_compressed": 118,
+                "source": "cD1sYW1iZGEgZzpbZzo9Wyp6aXAoKlttYXgoYSphbGwobGVuKHsqciwwfSk8M2ZvciByIGluIHppcChiLGEpKWZvciBhIGluIGcpZm9yIGIgaW4gZ10pXWZvciBfIGluIGddWzFdCgojIwoKUj1yYW5nZSgyMSk7cD1sYW1iZGEgYTpbW21heChtYXgoYVtpJShuOj0oczo9Ynl0ZXMobWF4KGEsa2V5PWFsbCkpKS5maW5kKHNbOjRdLDEpKTo6bl0pW2olbjo6bl0pZm9yIGogaW4gUl1mb3IgaSBpbiBSXQpSPXJhbmdlKDIxKTtwPWxhbWJkYSBhLG49MTpbW21heChtYXgoYVtpJW46Om5dKVtqJW46Om5dKWZvciBqIGluIFJdZm9yIGkgaW4gUl0qYW55KGJbbjpdPT1iWzotbl1mb3IgYiBpbiBhKW9yIHAoYSxuKzEpClI9cmFuZ2UoMjEpO3A9bGFtYmRhIGcsSz0tMzpLKmcgb3IgcChbKnppcCgqW1tbKm1hcChzdW0sdyldZm9yIGsgaW4gUiBpZiBtYXgobWFwKGxlbix3Oj1beypyW35pOjprKzFdfS17MH1mb3IgaSBpbiBSXSkpPDJdWzBdZm9yIHIgaW4gZ10pXSxLKzEpCg==",
+                "size_uncompressed": 102,
+                "compressed": "cD1sYW1iZGEgZzpbZzo9Wyp6aXAoKlttYXgoYSphbGwobGVuKHsqciwwfSk8M2ZvciByIGluIHppcChiLGEpKWZvciBhIGluIGcpZm9yIGIgaW4gZ10pXWZvciBfIGluIGddWzFd",
+                "size_compressed": 102,
                 "method": "none"
             },
             "combined_solutions": {

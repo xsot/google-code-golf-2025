@@ -32,8 +32,8 @@ p=lambda i,*I:[w for*w,r in zip(*I or p(zip(*i),*i),i)if len({*r})>2]
 p=lambda i,k=-2:[i:=[r.pop()|4*(k==2)|7*((k:=K)==1)for K in i]for*r,in zip(*i*k or p(i,k+1))]
 # task 16: 44 vs 43 bytes for gold, https://arcprize.org/play?task=0d3d703e
 p=lambda m:[[i^466%(1|12-i)for i in m[0]]]*3
-# task 17: 118 vs 99 bytes for gold, https://arcprize.org/play?task=0dfd9992
-R=range(21);p=lambda a,n=1:[[max(max(a[i%n::n])[j%n::n])for j in R]for i in R]*any(b[n:]==b[:-n]for b in a)or p(a,n+1)
+# task 17: 102 vs 99 bytes for gold, https://arcprize.org/play?task=0dfd9992
+p=lambda g:[g:=[*zip(*[max(a*all(len({*r,0})<3for r in zip(b,a))for a in g)for b in g])]for _ in g][1]
 # task 18: 296 (387 unzipped) bytes, gold, https://arcprize.org/play?task=0e206a2e
 def p(g):G={i*1j+j:g for i,g in enumerate(g)for j,g in enumerate(g)if g};[(s:={j},[abs(x-y)<2==s.add(x)for x in[*G]*5for y in[*s]],[*s][3:]and[5for a in[1,3,6,7]for O in G if all(G[x]in{max(f:=[G[j]for j in G],key=f.count),G.get((x-j-a//4*(x-j).real*2)*1j**a+O)}for x in s)for x in s for i,g[int(i.imag)][int(i.real)]in(((x-j-a//4*(x-j).real*2)*1j**a+O,G[x]),(x,0))])for j in G];return g
 # task 19: 105 bytes, gold, https://arcprize.org/play?task=10fcaaa3
