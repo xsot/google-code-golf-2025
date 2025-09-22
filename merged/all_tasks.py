@@ -854,8 +854,8 @@ p=lambda a,n=-3:n*a or[(d:=0)or[d:=b.pop()or d*(3in b)for _ in a]for*b,in zip(*p
 p=lambda i:[[((x|y)>>max(max(i))&1)*5for y in[0,6,8]]for x in[4,2,8]]
 # task 335: 113 vs 107 bytes for gold, https://arcprize.org/play?task=d4a91cb9
 p=lambda a,n=10,d=0:~n*a or p([[b.pop()|4*(n%6*2in b)*(d:=d^any({*c}-{4}))for c in a[::-1]]for*b,in zip(*a)],n-3)
-# task 336: 98 vs 93 bytes for gold, https://arcprize.org/play?task=d4f3cd78
-p=lambda i,k=3:-k*i or[[x.pop(0)or(sum(x)%8|1in x[-4:])*8for _ in i]for*x,in zip(*p(i,k-1)[::-1])]
+# task 336: 90 bytes, gold, https://arcprize.org/play?task=d4f3cd78
+p=lambda i,k=3:-k*i or[[x.pop()or(sum(x)%8|1in x[:5])*8for _ in i]for*x,in zip(*p(i,k-1))]
 # task 337: 43 bytes, gold, https://arcprize.org/play?task=d511f180
 p=lambda x:x*-1and x^84%x%3*13or[*map(p,x)]
 # task 338: 69 vs 64 bytes for gold, https://arcprize.org/play?task=d5d6de2d
