@@ -28,8 +28,8 @@ import re;p=lambda i:[i:=eval(re.sub("(([^0]).{37}([^0]), )0(, 0.{31})0, 0,",r"\
 def p(i):*v,=map(max,*i);f,*r=map(v.index,filter(abs,v));N=len(v);return i[N:]and[*zip(*p([*zip(*i)]))]or[(v[:f]+v[f:2*r[0]-f]*8)[:N]]*len(i)
 # task 14: 69 bytes, gold, https://arcprize.org/play?task=0b148d64
 p=lambda i,*I:[w for*w,r in zip(*I or p(zip(*i),*i),i)if len({*r})>2]
-# task 15: 104 vs 93 bytes for gold, https://arcprize.org/play?task=0ca9ddb6
-import re;p=lambda i:[i:=eval(re.sub("0(?=.{28,30}( 2|1))",r"\1^6",str([*zip(*i[::-1])])))for _ in i][7]
+# task 15: 93 bytes, gold, https://arcprize.org/play?task=0ca9ddb6
+p=lambda i,k=-2:[i:=[r.pop()|4*(k==2)|7*((k:=K)==1)for K in i]for*r,in zip(*i*k or p(i,k+1))]
 # task 16: 44 vs 43 bytes for gold, https://arcprize.org/play?task=0d3d703e
 p=lambda m:[[i^466%(1|12-i)for i in m[0]]]*3
 # task 17: 118 vs 99 bytes for gold, https://arcprize.org/play?task=0dfd9992

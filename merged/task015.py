@@ -1,4 +1,15 @@
-# joking (104 vs 93 bytes for gold)
+# ovs (93 bytes, gold)
+p=lambda i,k=-2:[i:=[r.pop()|4*(k==2)|7*((k:=K)==1)for K in i]for*r,in zip(*i*k or p(i,k+1))]
+
+##
+
+import re
+p=lambda i:[i:=eval(re.sub('0(?=.{31}(2)|.{28}(1))',r'6^\1\2',str([*zip(*i[::-1])])))for _ in i][3]
+
+E=enumerate
+p=lambda g:[[v+sum(V*-V&7for I,R in E(g,-i)for J,V in E(R,-j)if I*I+J*J==V)for j,v in E(r)]for i,r in E(g)]
+
+### joking (104 bytes)
 import re;p=lambda i:[i:=eval(re.sub("0(?=.{28,30}( 2|1))",r"\1^6",str([*zip(*i[::-1])])))for _ in i][7]
 
 ##
@@ -13,15 +24,6 @@ p=lambda i,r=range(9):[i:=[[i[~b][a]|(i[-b][a-1]==2)*4+(i[-b][a]==1)*7for b in r
 
 ### combined (107 bytes)
 p=lambda i,k=3,r=range(9):-k*i or p([[i[~b][a]|(i[-b][a-1]==2)*4+(i[-b][a]==1)*7for b in r]for a in r],k-1)
-
-### ovs (109 bytes)
-import re
-p=lambda i:[i:=eval(re.sub('0(?=.{31}(2)|.{28}(1))',r'6^\1\2',str([*zip(*i[::-1])])))for _ in i][3]
-
-##
-
-E=enumerate
-p=lambda g:[[v+sum(V*-V&7for I,R in E(g,-i)for J,V in E(R,-j)if I*I+J*J==V)for j,v in E(r)]for i,r in E(g)]
 
 ### att (111 bytes)
 p=eval('lambda a:[[(b:=sum(a,()))[4]or(1in b[1::2])*7|4*(2in b[::2])'+'for*a,in map(zip,a[8:]+a,a,a[1:]+a)]'*2)
