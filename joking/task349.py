@@ -1,0 +1,1 @@
+p=lambda i:[i:=[[(i[x][y]>1)*i[x][y]or(a<=x+n<n*4+a)*(b<=y+n<n*4+b)*3or 9in[*zip(*i[:x+1])][y]for y in range(len(i))]for x in range(len(i))]for n in range(6)for a in range(-n*2,len(i))for b in range(len(i)-n*2+1)if{min(x[max(0,b):n*2+b])for x in i[max(0,a):n*2+a]}=={9}][-1]
