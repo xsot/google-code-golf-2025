@@ -1,4 +1,12 @@
-# mwi (295 (381 unzipped) vs 276 bytes for gold)
+# joking (283 (381 unzipped) vs 276 bytes for gold)
+# variable renaming
+def p(g):
+ G={j+i*1j:I^2for i,r in enumerate(g)for j,I in enumerate(r)if I};[abs(j-i)<2!=I.add(i)for j in G if G[j]%2if[I:={j}]for i in[*G]*6for j in[*I]]
+ for i,r in enumerate(g):
+  for j in G:P=min(J:={(j-i//4*j.real*2)*1j**i:G[j]for j in I},key=J.get)-j;g=g*any(13%-~J[j]^G.get(j-P,1)for j in J)or[[J.get(i*1j+j+P,I^2)^2for j,I in enumerate(r)]for i,r in enumerate(g)]
+ return g
+
+### mwi (295 (381 unzipped) bytes)
 def p(g):
  G={j+i*1j:v^2for i,r in enumerate(g)for j,v in enumerate(r)if v};[abs(I-J)<2!=s.add(J)for P in G if G[P]%2if[s:={P}]for J in[*G]*6for I in[*s]]
  for a,r in enumerate(g):

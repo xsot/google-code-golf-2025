@@ -1,4 +1,6 @@
-#1b save by removing \g<1>, there might be a better way to handle this
+#  129b, 80 seconds
+import re;p=lambda g:[g:=eval(re.sub("[02], [02](.{52})([02], 0|0, 2)","2,2\\1 2,2",str(g)))for _ in-~hash((*g[0],))%881*[0]][-1]
+## 130b, 3 seconds
 import re;p=lambda g,i=2:eval([g:=re.sub("[0i], [0i](.{52})[0i], [02]","2, i\\1i, i",str(g))for _ in-~hash((*g[0],))%881*[0]][-1])
 
 ##
