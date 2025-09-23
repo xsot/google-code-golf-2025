@@ -1,4 +1,7 @@
-# mwi (129 vs 104 bytes for gold)
+# ovs (123 vs 104 bytes for gold)
+import re;p=lambda g:[g:=[*zip(*eval(re.sub("[02], [02](.{52})0, 0(?!(, 5){4}, 0, 0)","2,2\\1 2,2",str(g))))]for _ in g][7]
+
+### mwi (129 bytes)
 #  129b, 80 seconds
 import re;p=lambda g:[g:=eval(re.sub("[02], [02](.{52})([02], 0|0, 2)","2,2\\1 2,2",str(g)))for _ in-~hash((*g[0],))%881*[0]][-1]
 ## 130b, 3 seconds
