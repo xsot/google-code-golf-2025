@@ -751,8 +751,11 @@ def	p(g):
 p=lambda i,k=43:-k*i or[*map(lambda*x,t=0:[t:=y or([0,*{*sum(i,[])}-{y,t,8}]*2)[3]for y in x],*p(i,k-1)[::-1])]
 # task 287: 58 vs 56 bytes for gold, https://arcprize.org/play?task=b8825c91
 p=lambda*a:a[2:]and max({*a}-{4})or[*map(p,*a,a[0][::-1])]
-# task 288: 112 vs 89 bytes for gold, https://arcprize.org/play?task=b8cdaf2b
-p=lambda i,e=enumerate:[[y or i[-1][t:=len(i)//2]*(a+abs(b-t)==t*2-0**i[-2][-t])for b,y in e(x)]for a,x in e(i)]
+# task 288: 92 vs 89 bytes for gold, https://arcprize.org/play?task=b8cdaf2b
+def p(i,n=0):
+ l=len(i)//2
+ for x in i[l-0**i[-2][-l]:-2]:x[n]=x[~n]=i[-1][l];n+=1
+ return i
 # task 289: 63 bytes, gold, https://arcprize.org/play?task=b91ae062
 p=lambda a:eval("[[a\nfor a in a for _ in[*{*'%s'}][5:]]#"%a*2)
 # task 290: 69 vs 67 bytes for gold, https://arcprize.org/play?task=b94a9452
