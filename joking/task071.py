@@ -1,1 +1,1 @@
-p=lambda i,n=32,e=1:[[(e:=e-2%len({*t,l:=[*{}.fromkeys(sum(i,[]))][2]}))*t[t[0]==l]for t in zip(x,(x*9)[n::-1])]for x in i]*e or p(i,n-1)
+p=lambda i,n=32,e=1:[[(e:=e&len(r:={*t}-{[*{}.fromkeys(sum(i,[]))][2]}))*sum(r)for t in zip(x,(x*2)[n::-1])]for x in i]*e or p(i,n-1)

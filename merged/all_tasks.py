@@ -161,8 +161,8 @@ p=lambda a:eval(f'[[[0,2,2,*a[1]][[*map("{a}".count,str(a))].count(1)]\nfor*a,in
 def p(g):f=str(g+[E:=enumerate]*9);return[[v==8and int([K for k,K in E(f)if{'8'}=={f[32*i+2+j*3-k+h]for h,H in E(f)if{K,H}<{*'12345679'}}][0])for j,v in E(r)]for i,r in E(g)]
 # task 70: 82 vs 78 bytes for gold, https://arcprize.org/play?task=32597951
 p=lambda i:[[(c[0]+7in{*x}&{*c,hash(c)%1070})*2+c[0]for c in zip(x,*i)]for x in i]
-# task 71: 137 vs 119 bytes for gold, https://arcprize.org/play?task=3345333e
-p=lambda i,n=32,e=1:[[(e:=e-2%len({*t,l:=[*{}.fromkeys(sum(i,[]))][2]}))*t[t[0]==l]for t in zip(x,(x*9)[n::-1])]for x in i]*e or p(i,n-1)
+# task 71: 133 vs 119 bytes for gold, https://arcprize.org/play?task=3345333e
+p=lambda i,n=32,e=1:[[(e:=e&len(r:={*t}-{[*{}.fromkeys(sum(i,[]))][2]}))*sum(r)for t in zip(x,(x*2)[n::-1])]for x in i]*e or p(i,n-1)
 # task 72: 54 bytes, gold, https://arcprize.org/play?task=3428a4f5
 p=lambda a,n=[]:a*0!=0and[*map(p,a,a[7:]+n)]or(a!=n)*3
 # task 73: 46 bytes, gold, https://arcprize.org/play?task=3618c87e
@@ -796,12 +796,12 @@ p=lambda g,y=0:[(sorted({*x}-{0})*9)[y:(y:=y+1)+15]for x in g]
 p=lambda i,k=7:-k*i or[[*map(max,x,[0]*10+x)]for*x,in zip(*p(i,k-1))][::-1]
 # task 307: 46 bytes, gold, https://arcprize.org/play?task=c59eb873
 p=lambda a:a>a*0!=0and[p(a[0])]*2+p(a[1:])or a
-# task 308: 242 (253 unzipped) vs 226 bytes for gold, https://arcprize.org/play?task=c8cbb738
+# task 308: 237 (266 unzipped) vs 226 bytes for gold, https://arcprize.org/play?task=c8cbb738
 def	p(g):
-	A=[9*[M:=max(E:=sum(g,[]),key=E.count)]for(A)in	g]
-	for	N	in{*E}-{M}:
-		(F,G),*B,(P,Q)=C=[[A,C]for(A,B)in	enumerate(g)for(C,E)in	enumerate(B)if	E==N];B=max(P-F,Q-G)+1
-		for(J,K)in	C:A[J*2-F+B-P>>1][K*2-G+B-Q>>1]=N
+	A=[9*[m:=max(sum(g,[]),key=sum(g,[]).count)]for	A	in	g]
+	for	N	in{*sum(g,[])}-{m}:
+		(F,G),*B,(P,Q)=D=[[A,C]for(A,g)in	enumerate(g)for(C,E)in	enumerate(g)if	E==N];B=max(P-F,Q-G)+1
+		for(C,E)in	D:A[B-F-P+C*2>>1][B-G-Q+E*2>>1]=N
 	return[A[:B]for	A	in	A[:B]]
 # task 309: 38 bytes, gold, https://arcprize.org/play?task=c8f0f002
 p=lambda a:eval(str(a).replace(*'75'))
