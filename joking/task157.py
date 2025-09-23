@@ -1,4 +1,3 @@
-# brute force
 def p(g):
  r=[*map(max,*g[6:]),0,5,0].index;w=r(0,t:=r(5))
  for l in range(16+t%15-w):

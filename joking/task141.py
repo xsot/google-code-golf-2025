@@ -1,0 +1,1 @@
+exec("p=lambda i:[[max((k:=i[t]+[0]*29)[b+t-a]|k[b-t+a]"+"for %s in range(len(i))%s"*3%(*'t)b]a]',))

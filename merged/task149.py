@@ -1,4 +1,7 @@
-# att (79 vs 75 bytes for gold)
+# joking (75 bytes, gold)
+p=lambda a:a[3:]and[p([*zip(*a[t:t+3])])for t in[0,4,8]]or 9<sum(sum(a,()))
+
+### att (79 bytes)
 p=eval('lambda a:[[9<sum(sum(a,()))'+'for*a,in map(zip,a,a[1:],a[2:])][::4]'*2)
 
 ### mwi (80 bytes)

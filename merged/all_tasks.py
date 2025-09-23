@@ -345,8 +345,8 @@ p=lambda a,n=35:-n*a or p([*map(lambda*b,d=0:[d:=c|d*(d==b[0]>n-3)for c in b[::-
 p=lambda i,k=4,*w:k and p([*map(p,i,[k>1]*99,i[:1]+i,i[1:]+i,*w)],k-1)or i or(sum(w)>7)*7
 # task 140: 36 bytes, gold, https://arcprize.org/play?task=6150a2bd
 p=lambda a:[b[::-1]for b in a[::-1]]
-# task 141: 102 vs 94 bytes for gold, https://arcprize.org/play?task=623ea044
-def p(i):e=range(len(i));return[[max((k:=i[t]+[0]*29)[b+t-a]|k[b-t+a]for t in e)for b in e]for a in e]
+# task 141: 100 vs 94 bytes for gold, https://arcprize.org/play?task=623ea044
+exec("p=lambda i:[[max((k:=i[t]+[0]*29)[b+t-a]|k[b-t+a]"+"for %s in range(len(i))%s"*3%(*'t)b]a]',))
 # task 142: 40 bytes, gold, https://arcprize.org/play?task=62c24649
 p=lambda a:[b+b[::-1]for b in a+a[::-1]]
 # task 143: 137 vs 135 bytes for gold, https://arcprize.org/play?task=63613498
@@ -361,8 +361,8 @@ p=lambda g:(x:=g[:3])*([*map(list,zip(*x))]!=x)or p(g[3:])
 p=lambda i,r=[[0]*9]*9,*w:r and[*map(p,i,r,r[:1]+i,i[1:]+r,*w)]or-i%~max(w)%8+i
 # task 148: 147 vs 141 bytes for gold, https://arcprize.org/play?task=673ef223
 p=lambda g,w=[]:[[-v%12&6or(any(r[:j])*any(r[j:])|c)*8for j,v in enumerate(r)]for r in g if(w:=[r]*any(r)+w,c:=2in r!=r[0]!=w[-1][0]!=8in w.pop())]
-# task 149: 79 vs 75 bytes for gold, https://arcprize.org/play?task=6773b310
-p=eval('lambda a:[[9<sum(sum(a,()))'+'for*a,in map(zip,a,a[1:],a[2:])][::4]'*2)
+# task 149: 75 bytes, gold, https://arcprize.org/play?task=6773b310
+p=lambda a:a[3:]and[p([*zip(*a[t:t+3])])for t in[0,4,8]]or 9<sum(sum(a,()))
 # task 150: 30 bytes, gold, https://arcprize.org/play?task=67a3c6ac
 p=lambda g:[r[::-1]for r in g]
 # task 151: 108 bytes, gold, https://arcprize.org/play?task=67a423a3
@@ -393,12 +393,12 @@ def p(g):
     for b in range(t,w):u[s][b-t+l]+=x[b]>4;x[b]=0
    g=p(u)or g
  if{*g[1]+g[2]}=={1,2}:return g
-# task 158: 267 (488 unzipped) bytes, gold, https://arcprize.org/play?task=6aa20dc0
+# task 158: 266 (482 unzipped) bytes, gold, https://arcprize.org/play?task=6aa20dc0
 def p(g):
- s,t=max((len({*str(a:=[R[x:x+3]for R in g[y:y+3]])}),a)for y in range(len(g))for x in range(len(g[1])))
+ t,t=max((len({*str(s:=[z[x:x+3]for z in g[y:y+3]])}),s)for y in range(len(g))for x in range(len(g[1])))
  for s in range(len(g[1])):
-  for y in range(len(g))[:-s*3]:
-   for x in range(len(g[1]))[:-s*3]:
+  for y in range(len(g)-s*3):
+   for x in range(len(g[1])-s*3):
     for z in range(len(g[1])):
      t=*zip(*t[::-1]),
      for Y in range(s*3*all(g[y+Y][x+X]==t[Y//s][X//s]or g[y+Y][x+X]==g[1][-1]!=t[Y//s][X//s]==max({*t[1]}-{g[1][-1]})for Y in range(s*3)for X in range(s*3))):

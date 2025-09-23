@@ -1,4 +1,7 @@
-# ovs (102 vs 94 bytes for gold)
+# joking (100 vs 94 bytes for gold)
+exec("p=lambda i:[[max((k:=i[t]+[0]*29)[b+t-a]|k[b-t+a]"+"for %s in range(len(i))%s"*3%(*'t)b]a]',))
+
+### ovs (102 bytes)
 def p(i):e=range(len(i));return[[max((k:=i[t]+[0]*29)[b+t-a]|k[b-t+a]for t in e)for b in e]for a in e]
 
 ##

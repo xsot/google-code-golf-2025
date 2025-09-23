@@ -22,8 +22,20 @@ def p(g):
  K,C=zip(*[([*c,5].index(5),c.count(2))for c in zip(*g)]);K=b'\n%0s\n'%bytes(K);S={*K.split(b'\n')};Q(0,{});return g
 # the 0 in %0s is necessary to avoid variable substitution replacing the s with another letter
 
-### joking (257 (271 unzipped) bytes)
-# brute force
+### joking (247 (281 unzipped) bytes)
+def p(g):
+ w=[*map(max,*g[6:]),0,5,0].index(0,t:=[*map(max,*g[6:]),0,5,0].index(5))
+ for l in range(t%15+16-w):
+  for s in 0,1:
+   u=*map(list,g),
+   for x in u[6:]:
+    s+=any(x[t:w])
+    for b in range(t,w):u[s][b-t+l]+=x[b]>4;x[b]=0
+   g=p(u)or g
+ if{*g[1]+g[2]}=={1,2}:return g
+
+
+## shorter unzipped
 def p(g):
  r=[*map(max,*g[6:]),0,5,0].index;w=r(0,t:=r(5))
  for l in range(16+t%15-w):
