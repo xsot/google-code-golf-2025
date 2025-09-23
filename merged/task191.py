@@ -1,8 +1,8 @@
-# ovs (250 (373 unzipped) vs 241 bytes for gold)
+# ovs (248 (364 unzipped) vs 241 bytes for gold)
 def p(g):
  A=[[c[0]for c in zip(r,*g)if 1in c]for r in g if 1in r]
- for E in 0,1,0,1,0,1,0,1,:g=E*g[::-1]or[c for*c,in zip(*g)];[0for C,H in enumerate(g,-1)for D,I in enumerate(g,-1)for F,H in enumerate(A*all(g[C+F][D+G]==I&-2if-1<D+G<23>C+F>-1else I<4for F,H in enumerate(A)for G,I in enumerate(H)))for G,I in enumerate(H)for g[C+F][D+G]in[I]*(-1<D+G<23>C+F>-1)]
-# for E in[0,1]*4:g=E*g[::-1]or[c for*c,in zip(*g)];[0for C,H in enumerate(g,-1)for D,I in enumerate(g,-1)for F,H in enumerate(A*all(g[C+F][D+G]==I&-2if-1<D+G<23>C+F>-1else I<4for F,H in enumerate(A)for G,I in enumerate(H)))for G,I in enumerate(H)if-1<D+G<23>C+F>-1for g[C+F][D+G]in[I]]
+# for E in[0,1]*4:g=E*g[::-1]or[c for*c,in zip(*g)];[0for C,H in enumerate(g,-1)for D,I in enumerate(g,-1)for F,H in enumerate(A*all(g[C+F][D+G]==I&-2if-1<D+G<23>C+F>-1else I<4for F,H in enumerate(A)for G,I in enumerate(H)))for G,I in enumerate(H)for g[C+F][D+G]in[I]*(-1<D+G<23>C+F>-1)]
+ for E in[0,1]*4:g=E*g[::-1]or[[*c]for c in zip(*g)];[0for C,H in enumerate(g,-1)for D,I in enumerate(g,-1)for F,H in enumerate(A*all(g[C+F][D+G]==I&-2if-1<D+G<23>C+F>-1else I<4for F,H in enumerate(A)for G,I in enumerate(H)))for G,I in enumerate(H)if-1<D+G<23>C+F>-1for g[C+F][D+G]in[I]]
  return g
 
 ## better golf, 274/302:
