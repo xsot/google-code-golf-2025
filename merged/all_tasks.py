@@ -157,8 +157,8 @@ def	p(g):
 p=lambda a:[b[:len(a)]for b in a]
 # task 68: 115 bytes, gold, https://arcprize.org/play?task=31aa019c
 p=lambda a:eval(f'[[[0,2,2,*a[1]][[*map("{a}".count,str(a))].count(1)]\nfor*a,in map(zip,a[:1]+a,a,a,a[1:]+a)]#'*2)
-# task 69: 174 vs 151 bytes for gold, https://arcprize.org/play?task=321b1fc6
-def p(g):f=str(g+[E:=enumerate]*9);return[[v==8and int([K for k,K in E(f)if{'8'}=={f[32*i+2+j*3-k+h]for h,H in E(f)if{K,H}<{*'12345679'}}][0])for j,v in E(r)]for i,r in E(g)]
+# task 69: 163 vs 151 bytes for gold, https://arcprize.org/play?task=321b1fc6
+def p(g):E=enumerate;*f,=E(sum(zip(*g*2),()));return[[v==8and[V for I,V in f if V%8*all((i+j*20-I+J,8)in f for J,V in f if V%8)][0]for j,v in E(r)]for i,r in E(g)]
 # task 70: 82 vs 78 bytes for gold, https://arcprize.org/play?task=32597951
 p=lambda i:[[(c[0]+7in{*x}&{*c,hash(c)%1070})*2+c[0]for c in zip(x,*i)]for x in i]
 # task 71: 133 vs 119 bytes for gold, https://arcprize.org/play?task=3345333e
