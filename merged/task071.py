@@ -1,4 +1,7 @@
-# joking (133 vs 119 bytes for gold)
+# ovs (120 vs 119 bytes for gold)
+p=lambda i,n=16,e=1:[[(e:=e&len(r:={*t}&{*max(i,key=any)}))*sum(r)for t in zip(x,(x*2)[n::-1])]for x in i]*e or p(i,n+1)
+
+### joking (133 bytes)
 p=lambda i,n=32,e=1:[[(e:=e&len(r:={*t}-{[*{}.fromkeys(sum(i,[]))][2]}))*sum(r)for t in zip(x,(x*2)[n::-1])]for x in i]*e or p(i,n-1)
 
 ### mwi (195 bytes)
