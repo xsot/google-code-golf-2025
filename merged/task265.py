@@ -1,4 +1,7 @@
-# ovs (123 vs 104 bytes for gold)
+# xsot (118 vs 104 bytes for gold)
+import re;p=lambda g:[g:=[*zip(*eval(re.sub("[^5]{4}(.{52})0, 0(?![^0]{14}0, 0)","2,2\\1 2,2",str(g))))]for _ in g][7]
+
+### ovs (123 bytes)
 import re;p=lambda g:[g:=[*zip(*eval(re.sub("[02], [02](.{52})0, 0(?!(, 5){4}, 0, 0)","2,2\\1 2,2",str(g))))]for _ in g][7]
 
 ### mwi (129 bytes)
@@ -31,12 +34,6 @@ import re;p=lambda g,i=2:eval(max(g:=re.sub("[02], [02](.{52})[02], [0i]","i, 2\
 ## fails one test case
 ## somehow still longer than gold
 import re;p=lambda g,i=2:eval(max(g:=re.sub("[02], [02](.{52})[02], [0i]","i, 2\g<1>2, 2",str(g))for _ in g))
-
-### xsot (149 bytes)
-def p(i):
- for n in range(289):
-  for x in i[(a:=n//17)+3%~-sum(i[a][(b:=n%17):b+2]+i[a+1][b:b+2]):a+2]*(sum(i[1])!=49or a!=8):x[b:b+2]=2,2
- return i
 
 ### combined (149 bytes)
 def p(i):
