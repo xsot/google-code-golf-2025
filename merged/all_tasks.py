@@ -107,8 +107,8 @@ p=lambda g:[[sum({*r+c})%13for*c,in zip(*g)]for r in g]
 p=lambda m,i=99,s="":-i*[[8-8*("2"in'%s'%m)]]or p([*zip(*eval(str(m).replace("282"[i%3]+s,"1"+s,2)))][::-1],i-1,", 1")
 # task 49: 81 bytes, gold, https://arcprize.org/play?task=23b5c85d
 p=lambda a:[c*[e]for b in a if(c:=b.count(e:=min(d:=sum(a,[0]*99),key=d.count)))]
-# task 50: 91 vs 85 bytes for gold, https://arcprize.org/play?task=253bf280
-p=lambda a:[*map(f:=lambda*b,i=0:[c|3*(8in{*b[:i]}&{*b[(i:=i+1):]})for c in b],*map(f,*a))]
+# task 50: 85 bytes, gold, https://arcprize.org/play?task=253bf280
+p=lambda a:[*map(f:=lambda*b,s=0:[c|(s&(s:=s^c)&~sum(b))//8*3for c in b],*map(f,*a))]
 # task 51: 115 bytes, gold, https://arcprize.org/play?task=25d487eb
 p=lambda i:[*eval("map(lambda*x,l=0,b=1,a=1:[0*(l:=l|(b!=y>a<1)*(a:=b))+(b:=y)or l for y in x][::-1],*"*4+"i))))")]
 # task 52: 41 vs 40 bytes for gold, https://arcprize.org/play?task=25d8a9c8
@@ -675,14 +675,8 @@ import re;p=lambda g:[g:=[*zip(*eval(re.sub("[^5]{4}(.{52})0, 0(?![^0]{14}0, 0)"
 p=lambda g:[([0,0,0,r%9,0,r//9-4]*2)[4-max(g).index(2):][:5]for r in b'$]$k$'[2-g.index(max(g)):][:3]]
 # task 267: 52 vs 46 bytes for gold, https://arcprize.org/play?task=aabf363d
 p=lambda i:[[i[-y>>8][x==i[6]]for y in x]for x in i]
-# task 268: 236 (253 unzipped) bytes, gold, https://arcprize.org/play?task=aba27056
-def	p(g):
-	l=range(len(g));(J,E),*B,(C,F)=[[A,D]for	A	in	l	for	D	in	l	if	g[A][D]]
-	if	g[C][F-2]<1:
-		for	A	in	l[J+1:]:
-			for	D	in({*l[E+2:F-1],F+A-C-2,E-A+C+2}&{*l},l[E+1:F])[A<C]:g[A][D]=4
-		return	g
-	return[*zip(*p([*map(list,zip(*g[::-1]))]))][::-1]
+# task 268: 232 (242 unzipped) bytes, gold, https://arcprize.org/play?task=aba27056
+def p(g):l=range(len(g));(J,E),*B,(C,F)=[[A,D]for A in l for D in l if g[A][D]];return g[C][F-2]and[*zip(*p([*map(list,zip(*g[::-1]))]))][::-1]or[g for A in l[J+1:]for D in({*l[E+2:F-1],F+A-C-2,E-A+C+2}&{*l},l[E+1:F])[A<C]for g[A][D]in[4]][0]
 # task 269: 63 bytes, gold, https://arcprize.org/play?task=ac0a08a4
 p=lambda a:eval("[[a\nfor a in a for _ in[*{*'%s'}][5:]]#"%a*2)
 # task 270: 117 bytes, gold, https://arcprize.org/play?task=ae3edfdc

@@ -1,1 +1,1 @@
-p=lambda g,*G:[[v or(8in{*r[:j]}&{*r[j:]})*3for j,v in enumerate(r)]for*r,in zip(*G or p(g,*g))]
+p=lambda a:[*map(f:=lambda*b,s=0:[c|(s&(s:=s^c)&~sum(b))//8*3for c in b],*map(f,*a))]
