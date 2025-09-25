@@ -219,8 +219,8 @@ p=lambda a:[*map(f:=lambda*b,i=-1:[b[i:=i+1]or sum({*b[i:]}&{*b[:i]})for _ in b]
 # task 93: 100 vs 99 bytes for gold, https://arcprize.org/play?task=4093f84a
 import re
 p=lambda g:[g:=eval(re.sub("[^50],([^(]+5)",r"\1,5",str([*zip(*g[::-1])])))for _ in g][11]
-# task 94: 106 vs 102 bytes for gold, https://arcprize.org/play?task=41e4d17e
-p=lambda i,*h:[h:=[(y>2==x.count((c:=h.count)(1)%5-1)>=c(6))*6or y for y in x]for x in zip(*h or p(i,*i))]
+# task 94: 99 bytes, gold, https://arcprize.org/play?task=41e4d17e
+p=lambda i,*h:[h:=[(1<x.count(y>1)==h.count(h>[7])%5)*6or y for y in x]for x in zip(*h or p(i,*i))]
 # task 95: 75 vs 73 bytes for gold, https://arcprize.org/play?task=4258a5f9
 p=lambda a,n=6:~n*a or[[n%2|(n:=b.pop())for _ in a]for*b,in zip(*p(a,n-2))]
 # task 96: 301 (378 unzipped) bytes, gold, https://arcprize.org/play?task=4290ef0e
