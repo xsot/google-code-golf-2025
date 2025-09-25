@@ -161,8 +161,8 @@ p=lambda a:eval(f'[[[0,2,2,*a[1]][[*map("{a}".count,str(a))].count(1)]\nfor*a,in
 def p(g):E=enumerate;*f,=E(sum(zip(*g*2),()));return[[sum(V*all((i+j*20-I+J,8)in f for J,V in f if V%8)for I,V in f if v==8!=V)for j,v in E(r)]for i,r in E(g)]
 # task 70: 82 vs 78 bytes for gold, https://arcprize.org/play?task=32597951
 p=lambda i:[[(c[0]+7in{*x}&{*c,hash(c)%1070})*2+c[0]for c in zip(x,*i)]for x in i]
-# task 71: 106 bytes, gold, https://arcprize.org/play?task=3345333e
-p=lambda i:min([[[sum({*t}&{*max(i,key=any)})for t in zip(x,(x*2)[~n::-1])]for x in i]for n in range(16)])
+# task 71: 104 bytes, gold, https://arcprize.org/play?task=3345333e
+p=lambda i:min([[sum({*t}&{*max(i,key=any)})for t in zip(x,(x*2)[~n::-1])]for x in i]for n in range(16))
 # task 72: 54 bytes, gold, https://arcprize.org/play?task=3428a4f5
 p=lambda a,n=[]:a*0!=0and[*map(p,a,a[7:]+n)]or(a!=n)*3
 # task 73: 46 bytes, gold, https://arcprize.org/play?task=3618c87e
@@ -171,11 +171,11 @@ p=lambda a:a[:2]+a[::3]+[[5-b*4for b in a[2]]]
 p=lambda i,*c:[*map(min,i,[9,9]+i[::-1],c)]or[i:=[*map(p,i,*i)]for _ in i][2]
 # task 75: 88 vs 86 bytes for gold, https://arcprize.org/play?task=363442ee
 p=lambda i,r=range(9):[i[a][:4]+[i[a//3*3+1][b//3*3+5]*i[a%3][b%3]for b in r]for a in r]
-# task 76: 283 (381 unzipped) vs 276 bytes for gold, https://arcprize.org/play?task=36d67576
+# task 76: 280 (380 unzipped) vs 276 bytes for gold, https://arcprize.org/play?task=36d67576
 def p(g):
- G={j+i*1j:I^2for i,r in enumerate(g)for j,I in enumerate(r)if I};[abs(j-i)<2!=I.add(i)for j in G if G[j]%2if[I:={j}]for i in[*G]*6for j in[*I]]
+ I={min(J:={j+i*1j:I for i,r in enumerate(g)for j,I in enumerate(r)if I},key=J.get)};G=J;[abs(j-i)<2!=I.add(i)for i in[*G]*6for j in[*I]]
  for i,r in enumerate(g):
-  for j in G:P=min(J:={(j-i//4*j.real*2)*1j**i:G[j]for j in I},key=J.get)-j;g=g*any(13%-~J[j]^G.get(j-P,1)for j in J)or[[J.get(i*1j+j+P,I^2)^2for j,I in enumerate(r)]for i,r in enumerate(g)]
+  for j in G:P=min(J:={(j-i//4*j.real*2)*1j**i:G[j]^2for j in I},key=J.get)-j;g=all(13%-~J[j]^G.get(j-P,3)==2for j in J)*[[J.get(i*1j+j+P,I^2)^2for j,I in enumerate(r)]for i,r in enumerate(g)]or g
  return g
 # task 77: 111 bytes, gold, https://arcprize.org/play?task=36fdfd69
 p=lambda i,k=7,*w:k and p([*map(p,i,[k>1]*99,i[:1]+i,i[1:]+i[-1:],*w)],k-1)or((c:=w.count)(2)+c(4)>=2!=i)*4or i
