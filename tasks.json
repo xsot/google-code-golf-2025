@@ -3360,7 +3360,7 @@
     },
     "task107": {
         "gold": 162,
-        "best": 176,
+        "best": 165,
         "solutions": {
             "joking": {
                 "source": "ZGVmIHAoaSk6Zz1zdW0oaSxbXSk7ej1sZW4oeypnfSktMTtyPXJhbmdlKDUqeik7cmV0dXJuW1tpW3M6PXgvL3pdW3Q6PXkvL3pdb3IoZ1sodC1zKSU2Ojo2XS5jb3VudChmOj1pWzFdWzFdKT4+KHgteSklenxnWyh0K3MpJTU6OjRdLmNvdW50KGYpPj4oeC1+eSkleikmMmZvciB5IGluIHJdZm9yIHggaW4gcl0KCgojIwpkZWYgcChpKTpnPXN1bShpLFtdKTt6PWxlbih7Kmd9KS0xO3I9cmFuZ2UoNSp6KTtyZXR1cm5bW2lbczo9eC8vel1bdDo9eS8vel1vcihnWyh0LXMpJTY6OjZdLmNvdW50KGY6PWlbMV1bMV0pPjE9PXglei15JXorMW9yIHgleit5JXo9PXoqZ1sodCtzKSU1Ojo0XS5jb3VudChmKSt+eikqMmZvciB5IGluIHJdZm9yIHggaW4gcl0KZGVmIHAoaSk6Zz1zdW0oaSxbXSk7ej1sZW4oeypnfSktMTtyPXJhbmdlKDUqeik7cmV0dXJuW1tpW3M6PXgvL3pdW3Q6PXkvL3pdb3IoKHgteSklejwxPGdbKHQtcyklNjo6Nl0uY291bnQoZjo9aVsxXVsxXSlvcih4K3kpJXo9PXoqZ1sodCtzKSU1Ojo0XS5jb3VudChmKSt+eikqMmZvciB5IGluIHJdZm9yIHggaW4gcl0KZGVmIHAoaSk6Zz1zdW0oaSxbXSk7ej1sZW4oeypnfSktMTtyPXJhbmdlKDUqeik7cmV0dXJuW1tpW3M6PXgvL3pdW3Q6PXkvL3pdb3IoKHgteSklejwxPGdbKHQtcyklNjo6Nl0uY291bnQoZjo9aVsxXVsxXSlvcn4oeCt5KSV6PDE8Z1sodCtzKSU1Ojo0XS5jb3VudChmKSkqMmZvciB5IGluIHJdZm9yIHggaW4gcl0=",
@@ -3374,6 +3374,13 @@
                 "size_uncompressed": 194,
                 "compressed": "cD1sYW1iZGEgaSxyPXJhbmdlOih6Oj1sZW4oeyooZzo9c3VtKGksW10pKX0pLTEpYW5kW1tpW3M6PXgvL3pdW3Q6PXkvL3pdb3IoZ1sodC1zKSU2Ojo2XS5jb3VudChmOj1pWzFdWzFdKT4xPT14JXoteSV6KzFvciBnWyh0K3MpJTU6OjRdLmNvdW50KGYpPjE9PXgleit5JXoteisyKSoyZm9yIHkgaW4gcig1KnopXWZvciB4IGluIHIoNSp6KV0=",
                 "size_compressed": 194,
+                "method": "none"
+            },
+            "ovs": {
+                "source": "ZXhlYygoJ2RlZiBwKGkpOmc9c3VtKGksW10pO3o9bGVuKHsqZ30pLTE7cmV0dXJuW1tpW3gvL3pdW3kvL3pdb3IgMCcrJ3xnWyh5JXN4KS8veiUlJXM6OiVzXS5jb3VudChnWzZdKT4+KHgtJXN5KSUleiYyJyoyKydmb3IgJXMgaW4gcmFuZ2UoNSp6KV0nKjIpJSgqJy02NisrNTR+eXgnLCkpCg==",
+                "size_uncompressed": 165,
+                "compressed": "ZXhlYygoJ2RlZiBwKGkpOmc9c3VtKGksW10pO3o9bGVuKHsqZ30pLTE7cmV0dXJuW1tpW3gvL3pdW3kvL3pdb3IgMCcrJ3xnWyh5JXN4KS8veiUlJXM6OiVzXS5jb3VudChnWzZdKT4+KHgtJXN5KSUleiYyJyoyKydmb3IgJXMgaW4gcmFuZ2UoNSp6KV0nKjIpJSgqJy02NisrNTR+eXgnLCkp",
+                "size_compressed": 165,
                 "method": "none"
             }
         },
