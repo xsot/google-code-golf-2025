@@ -36,9 +36,8 @@ p=lambda m:[[i^466%(1|12-i)for i in m[0]]]*3
 p=lambda g:[g:=[*zip(*[max(a*all(len({*r,0})<3for r in zip(b,a))for a in g)for b in g])]for _ in g][1]
 # task 18: 296 (387 unzipped) bytes, gold, https://arcprize.org/play?task=0e206a2e
 def p(g):G={i*1j+j:g for i,g in enumerate(g)for j,g in enumerate(g)if g};[(s:={j},[abs(x-y)<2==s.add(x)for x in[*G]*5for y in[*s]],[*s][3:]and[5for a in[1,3,6,7]for O in G if all(G[x]in{max(f:=[G[j]for j in G],key=f.count),G.get((x-j-a//4*(x-j).real*2)*1j**a+O)}for x in s)for x in s for i,g[int(i.imag)][int(i.real)]in(((x-j-a//4*(x-j).real*2)*1j**a+O,G[x]),(x,0))])for j in G];return g
-# task 19: 105 bytes, gold, https://arcprize.org/play?task=10fcaaa3
-z=[[0]*9]
-p=eval('lambda a:[[a[1][1]or 8*any(sum(a,())[::2])'+'for*a,in map(zip,z+a+a,a+a,a[1:]+a+z)]'*2)
+# task 19: 104 bytes, gold, https://arcprize.org/play?task=10fcaaa3
+*z,p=[0]*9,eval('lambda a:[[a[1][1]or 8*any(sum(a,())[::2])'+'for*a,in map(zip,z+a+a,a+a,a[1:]+a+z)]'*2)
 # task 20: 139 bytes, gold, https://arcprize.org/play?task=11852cab
 S='+[*map(any,g:=[*zip(*g)])].index(1)'*2
 p=eval(f"lambda g:[g:=[[g[J][I]|((g*2)[I-{S}]*2)[4{S}-J]{'for %s in range(10)]'*3%(*'IJ_',)}[3]")
@@ -263,12 +262,12 @@ p=lambda a:eval(f'[[a and{a[i:=len(a)//2]}[0]\nfor a in a[:{i}]+a[{i}-1::-1]]#'*
 p=lambda g:[max([[0in{x,y,x^y}and(x|y)for x,y in zip(b,a)]for a in g],key=all)for b in g]
 # task 111: 60 bytes, gold, https://arcprize.org/play?task=48d8fb45
 p=lambda g:[(f:=sum(g,g))[f.index(5)+d:][:3]for d in b'	']
-# task 112: 112 vs 109 bytes for gold, https://arcprize.org/play?task=4938f0c2
-p=lambda i,k=1:-k*i or p([[y or(x*2)[[*map(max,i)].index(3)*2-b+1]for b,y in enumerate(x)]for x in zip(*i)],k-1)
+# task 112: 106 bytes, gold, https://arcprize.org/play?task=4938f0c2
+p=lambda i,k=1:-k*i or p([*map(lambda*x,b=2+[*map(max,i)].index(3)*2:[y|(x*2)[b:=b-1]for y in x],*i)],k-1)
 # task 113: 25 bytes, gold, https://arcprize.org/play?task=496994bd
 p=lambda a:a[:5]+a[4::-1]
-# task 114: 65 vs 64 bytes for gold, https://arcprize.org/play?task=49d1d64f
-p=lambda g:[[0,*g[0],0],*[r[:1]+r+r[-1:]for r in g],[0,*g[-1],0]]
+# task 114: 64 bytes, gold, https://arcprize.org/play?task=49d1d64f
+*R,p=0,lambda g:[R+g[0]+R,*[r[:1]+r+r[-1:]for r in g],R+g[-1]+R]
 # task 115: 54 bytes, gold, https://arcprize.org/play?task=4be741c5
 s={}.fromkeys
 p=lambda a:[*s(zip(*s(zip(*map(s,a)))))]

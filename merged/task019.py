@@ -1,14 +1,18 @@
-# att (105 bytes, gold)
+# ovs (104 bytes, gold)
+*z,p=[0]*9,eval('lambda a:[[a[1][1]or 8*any(sum(a,())[::2])'+'for*a,in map(zip,z+a+a,a+a,a[1:]+a+z)]'*2)
+
+##
+
+E=enumerate
+p=lambda g:[[v or 8*any([*[*g*2,[0]*9][y+d%5-1]*2,0][x+d%3-1]for d in b'-/29')for x,v in E(l*2)]for y,l in E(g*2)]
+
+### att (105 bytes)
 z=[[0]*9]
 p=eval('lambda a:[[a[1][1]or 8*any(sum(a,())[::2])'+'for*a,in map(zip,z+a+a,a+a,a[1:]+a+z)]'*2)
 
-### joking (tied, 105 bytes)
+### joking (105 bytes)
 #alt
 z=[[0]*9];p=eval('lambda a:[[a[1][1]or 8*any(sum(a,())[::2])\nfor*a,in map(zip,z+a+a,a+a,a[1:]+a+z)]#'*2)
-
-### ovs (126 bytes)
-E=enumerate
-p=lambda g:[[v or 8*any([*[*g*2,[0]*9][y+d%5-1]*2,0][x+d%3-1]for d in b'-/29')for x,v in E(l*2)]for y,l in E(g*2)]
 
 ### combined (126 bytes)
 E=enumerate
