@@ -247,10 +247,10 @@ import re
 p=lambda i,k=20:-k*i or p(eval(re.sub(f'({(h:=(5,)*-~(n:=k%5))}.{(s:={34-n*3})}(?={(r:=f"5, [^5]{ {n*3}}5.{s}")*n}{h})({r})*5)(, 0)+',"\\1"+",2"*n,str(i))),k-1)
 # task 103: 29 bytes, gold, https://arcprize.org/play?task=44f52bb0
 p=lambda a:[[a==a[::-1]or 7]]
-# task 104: 92 vs 84 bytes for gold, https://arcprize.org/play?task=4522001f
-p=lambda g,R=range(9):[[3*((7%~g[2][1]^A)%9//4==(7%~g[1][2]^B)%9//4<2)for B in R]for A in R]
-# task 105: 153 vs 148 bytes for gold, https://arcprize.org/play?task=4612dd53
-A=any;p=lambda g:[g:=[[v or A([r*(m:=[*map(A,g)])[j],sum(map(bool,r))//4*m[j:]][A(m[:j])])*2for j,v in enumerate(r)]for r in zip(*g)][::-1]for _ in g][3]
+# task 104: 88 vs 84 bytes for gold, https://arcprize.org/play?task=4522001f
+p=lambda g,h=0,w=0:h<2and[p(g,h+1,w^A>>w//8)for A in range(9)][::g[h][1-h]-2|1]or(w<4)*3
+# task 105: 147 bytes, gold, https://arcprize.org/play?task=4612dd53
+A=any;p=lambda g:[g:=[[v or A([r*(m:=[*map(A,g)])[j],sorted(r)[-4]*m[j:]][A(m[:j])])*2for j,v in enumerate(r)]for r in zip(*g)][::-1]for _ in g][3]
 # task 106: 72 vs 67 bytes for gold, https://arcprize.org/play?task=46442a0e
 S='[::-1]for*x,a in zip(*i,i)]';p=eval(f'lambda i:[a+x{S}+[x+a'+S+S[:6])
 # task 107: 176 vs 162 bytes for gold, https://arcprize.org/play?task=469497ad

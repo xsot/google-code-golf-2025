@@ -1750,7 +1750,7 @@
                 "escape_cost": 1
             }
         },
-        "public_gold": 280,
+        "public_gold": 279,
         "public_best": 283
     },
     "task055": {
@@ -3273,7 +3273,7 @@
     },
     "task104": {
         "gold": 84,
-        "best": 92,
+        "best": 88,
         "solutions": {
             "joking": {
                 "source": "cD1sYW1iZGEgZyxSPXJhbmdlKDkpOltbMyooKDclfmdbMl1bMV1eQSklOS8vND09KDclfmdbMV1bMl1eQiklOS8vNDwyKWZvciBCIGluIFJdZm9yIEEgaW4gUl0KCiMjCnA9bGFtYmRhIGcsUj1yYW5nZSg5KTpbWzMqKChnWzJdWzFdJS0yXkEpJTkmMTI9PShnWzFdWzJdJS0yXkIpJTkmMTI8Nylmb3IgQiBpbiBSXWZvciBBIGluIFJdCnA9bGFtYmRhIGcsUj1yYW5nZSg5KTpbWzMqKCg3JX5nWzJdWzFdXkEpJTkmMTI9PSg3JX5nWzFdWzJdXkIpJTkmMTI8Nylmb3IgQiBpbiBSXWZvciBBIGluIFJdCnA9bGFtYmRhIGcsUj1bMV0qNCtbMl0qNCtbMF06W1tBJX5CKjMlNmZvciBCIGluIFJdWzo6fi1nWzFdWzBdLy8yXWZvciBBIGluIFJdWzo6fi1nWzBdWzFdLy8yXQpwPWxhbWJkYSBnLFI9cmFuZ2UoOSk6W1szKihCLy80PT1BLy80PDIpZm9yIEIgaW4gUl1bOjp+LWdbMV1bMF0vLzJdZm9yIEEgaW4gUl1bOjp+LWdbMF1bMV0vLzJd",
@@ -3283,10 +3283,10 @@
                 "method": "none"
             },
             "ovs": {
-                "source": "UT1bMF0KcD1sYW1iZGEgZzpbUSo5XVsodDo9Z1swXVsxXT4wKTpdKyhbUVsoZjo9Z1sxXVswXT4wKTpdKyhIOj1bM10qNCtRKmYpK1EqNF0qNCtbUSooNS1mKStIXSo0KVs6Oi10Xi1mfDFdK1tRKjldKnQ=",
-                "size_uncompressed": 116,
-                "compressed": "UT1bMF0KcD1sYW1iZGEgZzpbUSo5XVsodDo9Z1swXVsxXT4wKTpdKyhbUVsoZjo9Z1sxXVswXT4wKTpdKyhIOj1bM10qNCtRKmYpK1EqNF0qNCtbUSooNS1mKStIXSo0KVs6Oi10Xi1mfDFdK1tRKjldKnQ=",
-                "size_compressed": 116,
+                "source": "cD1sYW1iZGEgZyxoPTAsdz0wOmg8MmFuZFtwKGcsaCsxLHdeQT4+dy8vOClmb3IgQSBpbiByYW5nZSg5KV1bOjpnW2hdWzEtaF0tMnwxXW9yKHc8NCkqMwoKIyMKCnA9ZXZhbCgnbGFtYmRhIGc6W1szKihBXkI8ND5BLTQpJysnZm9yICVzIGluIHJhbmdlKDkpWzo6Z1slc11bJXNdLTJ8MV1dJyoyJSgqJ0IxMEEwMScsKSkK",
+                "size_uncompressed": 88,
+                "compressed": "cD1sYW1iZGEgZyxoPTAsdz0wOmg8MmFuZFtwKGcsaCsxLHdeQT4+dy8vOClmb3IgQSBpbiByYW5nZSg5KV1bOjpnW2hdWzEtaF0tMnwxXW9yKHc8NCkqMw==",
+                "size_compressed": 88,
                 "method": "none"
             },
             "combined_solutions": {
@@ -3301,8 +3301,8 @@
         "public_best": 92
     },
     "task105": {
-        "gold": 148,
-        "best": 153,
+        "gold": 147,
+        "best": 147,
         "solutions": {
             "att": {
                 "source": "cD1sYW1iZGEgYSxuPTcsaT0zOi1uKmEgb3IgYVs6KGI6PVsqbWFwKGFueSxhKV0uaW5kZXgoMSkpXStbKnppcCgqcChbKnppcCgqW1tbYyBvcn4taXxzdW0oLWQmMmZvciBkIGluIGIpLy9sZW4oYikqMmZvciBjIGluIGJdKihpOj0xKWZvciBiIGluIGFdLGFbYjpdXVtuPjNdWzo6LTFdKV0sbi0xKSldWzo6LTFd",
@@ -3312,10 +3312,10 @@
                 "method": "none"
             },
             "ovs": {
-                "source": "QT1hbnkKcD1sYW1iZGEgZyxrPS0zOmsqZyBvciBwKFtbdiBvciBBKFtyKihtOj1bKm1hcChBLGcpXSlbal0sc3VtKG1hcChib29sLHIpKS8vNCptW2o6XV1bQShtWzpqXSldKSoyZm9yIGosdiBpbiBlbnVtZXJhdGUocildZm9yIHIgaW4gemlwKCpnKV1bOjotMV0saysxKQ==",
-                "size_uncompressed": 154,
-                "compressed": "QT1hbnkKcD1sYW1iZGEgZyxrPS0zOmsqZyBvciBwKFtbdiBvciBBKFtyKihtOj1bKm1hcChBLGcpXSlbal0sc3VtKG1hcChib29sLHIpKS8vNCptW2o6XV1bQShtWzpqXSldKSoyZm9yIGosdiBpbiBlbnVtZXJhdGUocildZm9yIHIgaW4gemlwKCpnKV1bOjotMV0saysxKQ==",
-                "size_compressed": 154,
+                "source": "QT1hbnk7cD1sYW1iZGEgZzpbZzo9W1t2IG9yIEEoW3IqKG06PVsqbWFwKEEsZyldKVtqXSxzb3J0ZWQocilbLTRdKm1bajpdXVtBKG1bOmpdKV0pKjJmb3Igaix2IGluIGVudW1lcmF0ZShyKV1mb3IgciBpbiB6aXAoKmcpXVs6Oi0xXWZvciBfIGluIGddWzNdCgojIwoKcD1sYW1iZGEgZzpbZzo9W1t2IG9yW2FueShyKSphbnkoZ1tqXSksc29ydGVkKHIpWy00XT4wIT0nMSdpbiclcyclZ1tqOl1dWycxJ2luJyVzJyVnWzpqXV0qMmZvciBqLHYgaW4gZW51bWVyYXRlKHIpXWZvciByIGluIHppcCgqZyldWzo6LTFdZm9yIF8gaW4gZ11bM10K",
+                "size_uncompressed": 147,
+                "compressed": "QT1hbnk7cD1sYW1iZGEgZzpbZzo9W1t2IG9yIEEoW3IqKG06PVsqbWFwKEEsZyldKVtqXSxzb3J0ZWQocilbLTRdKm1bajpdXVtBKG1bOmpdKV0pKjJmb3Igaix2IGluIGVudW1lcmF0ZShyKV1mb3IgciBpbiB6aXAoKmcpXVs6Oi0xXWZvciBfIGluIGddWzNd",
+                "size_compressed": 147,
                 "method": "none"
             },
             "combined_solutions": {
