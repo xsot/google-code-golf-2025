@@ -273,8 +273,8 @@ s={}.fromkeys
 p=lambda a:[*s(zip(*s(zip(*map(s,a)))))]
 # task 116: 20 bytes, gold, https://arcprize.org/play?task=4c4377d9
 p=lambda a:a[::-1]+a
-# task 117: 154 vs 148 bytes for gold, https://arcprize.org/play?task=4c5c2cf0
-p=lambda i:[i:=[*zip(*map(max,i,(i*2)[[w.index(1)for n in range(10)if[*filter(abs,w:=[x.count(n)for x in i])]==[2,1,2]][0]*2::-1]+i[:1]*9))]for _ in i][1]
+# task 117: 134 bytes, gold, https://arcprize.org/play?task=4c5c2cf0
+p=lambda i:[i:=[*zip(*map(max,i,(i*2)[j*2::-1]+i[::-1]))]for j in b'	'*2if[x.count(max(i[j]))for x in i[j-2:j+3]]==[0,2,1,2,0]][1]
 # task 118: 236 (282 unzipped) bytes, gold, https://arcprize.org/play?task=50846271
 def	p(I):
 	for	n	in	2,3:
