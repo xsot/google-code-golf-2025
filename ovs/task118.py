@@ -1,11 +1,11 @@
 # based on Garry Moss' solution
 def p(I):
- for n in 2,3:
-  z,t,T,*R=[{(l,n)for l,I in enumerate(I)for n,I in enumerate(I)if I>=C}for C in(0,2,5,7)]
-  for d,i in z:v={(D,I)for D,I in z if abs(d-D+(i-I)*1j)in{0,1,2,n}};R+=[l|v for l in R if t-l>v]
+ for n in(2,3):
+  t,z,T,*R=[{(l,N)for l,I in enumerate(I)for N,I in enumerate(I)if I>=n}for n in(2,0,5,7)]
+  for d,i in z:v={(l,N)for l,N in z if abs(d-l+(i-N)*1j)in(2,0,1,n)};R+=[l|v for l in R if t-l>v]
   for l in R:
    if t-T<l:
-    for l,n in l&T:I[l][n]=8
+    for d,i in l&T:I[d][i]=8
     return I
 
 ##
