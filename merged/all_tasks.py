@@ -345,8 +345,8 @@ p=lambda a,n=35:-n*a or p([*map(lambda*b,d=0:[d:=c|d*(d==b[0]>n-3)for c in b[::-
 p=lambda i,k=4,*w:k and p([*map(p,i,[k>1]*99,i[:1]+i,i[1:]+i,*w)],k-1)or i or(sum(w)>7)*7
 # task 140: 36 bytes, gold, https://arcprize.org/play?task=6150a2bd
 p=lambda a:[b[::-1]for b in a[::-1]]
-# task 141: 100 vs 94 bytes for gold, https://arcprize.org/play?task=623ea044
-exec("p=lambda i:[[max((k:=i[t]+[0]*29)[b+t-a]|k[b-t+a]"+"for %s in range(len(i))%s"*3%(*'t)b]a]',))
+# task 141: 93 bytes, gold, https://arcprize.org/play?task=623ea044
+p=eval("lambda a:[[max((x-i in(y-j,j-y))*b[y]"+"for %s,b in enumerate(a)%s"*4%(*'y x)j]i]',))
 # task 142: 40 bytes, gold, https://arcprize.org/play?task=62c24649
 p=lambda a:[b+b[::-1]for b in a+a[::-1]]
 # task 143: 137 vs 135 bytes for gold, https://arcprize.org/play?task=63613498

@@ -1,4 +1,7 @@
-# joking (100 vs 94 bytes for gold)
+# att (93 bytes, gold)
+p=eval("lambda a:[[max((x-i in(y-j,j-y))*b[y]"+"for %s,b in enumerate(a)%s"*4%(*'y x)j]i]',))
+
+### joking (100 bytes)
 exec("p=lambda i:[[max((k:=i[t]+[0]*29)[b+t-a]|k[b-t+a]"+"for %s in range(len(i))%s"*3%(*'t)b]a]',))
 
 ### ovs (102 bytes)
