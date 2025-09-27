@@ -304,8 +304,8 @@ p=lambda i,k=15:-k*i or p(eval(re.sub('[83](?='+(k%3>0)*', 4|, 6'+'.{43}6)','344
 p=lambda a:a[:-1]+[[4*(0<sum(c)in c)for c in zip(*a)]]
 # task 127: 65 bytes, gold, https://arcprize.org/play?task=54d9e175
 p=lambda a,q=3:a*0==0and 5+a%5or a[1:]and[p(a[1])]*q+p(a[2:],4-q)
-# task 128: 62 vs 61 bytes for gold, https://arcprize.org/play?task=5521c0d9
-p=lambda i,*n:n[(j:=-n.count(0)):]+n[:j]or[*zip(*map(p,i,*i))]
+# task 128: 59 bytes, gold, https://arcprize.org/play?task=5521c0d9
+p=lambda i,*n:n[-n.count(0):]+n or[*zip(*map(p,i,*i))][:15]
 # task 129: 47 bytes, gold, https://arcprize.org/play?task=5582e5ca
 p=lambda a:[[max(b:=sum(a,a),key=b.count)]*3]*3
 # task 130: 65 bytes, gold, https://arcprize.org/play?task=5614dbcf
@@ -329,8 +329,8 @@ def p(g):
      for Q in{G}^A:
       for V in(E:=[k for k in I if M[D]==M[k]==M[G]]):V+=(len(E)^6)%6*(Q-G);g[V//90][V%90],={M[k]for k in I}-{M[D]}
  return g
-# task 134: 174 vs 158 bytes for gold, https://arcprize.org/play?task=5ad4f10b
-def p(g):D,C=sorted({*sum(g,[])}-{0},key=lambda c:str(g).count(f'{c}, '*2));g=[[D*(v==C)for v in r]for r in g];exec("*h,=filter(any,zip(*g));g[:]=h[::len(h)//3];"*2);return g
+# task 134: 151 bytes, gold, https://arcprize.org/play?task=5ad4f10b
+p=lambda g,D=1:(G:=[[D*(D!=v>0)for v in r]for r in g])*(f'0, {D}, 0'in'%s'%g)and(exec("*h,=filter(any,zip(*G));G[:]=h[::len(h)//3];"*2)or G)or p(g,D+1)
 # task 135: 32 bytes, gold, https://arcprize.org/play?task=5bd6f4ac
 p=lambda a:[b[6:]for b in a[:3]]
 # task 136: 107 vs 105 bytes for gold, https://arcprize.org/play?task=5c0a986e
@@ -491,8 +491,8 @@ p=lambda a:eval('[[[sum({*d}&{b,c}),a][f"{a}, "*2in"%s"]'%a+b*2)
 p=lambda i,r=[[0]*25]*25,*w:r and[*map(p,i,r,r[:1]+i,i[1:]+r,*w)]or(sum(w)>i)*i
 # task 194: 68 vs 67 bytes for gold, https://arcprize.org/play?task=7fe24cdd
 p=lambda g,a=-3:-a*g and[r:=g[a]+sum(g,[])[a::-3],*p(g,a+1),r[::-1]]
-# task 195: 105 bytes, gold, https://arcprize.org/play?task=80af3007
-p=lambda a,n=-1:n*[[d&e for d in b for e in c]for b in a for c in a]or p([*filter(any,zip(*a[::3]))],n+1)
+# task 195: 104 bytes, gold, https://arcprize.org/play?task=80af3007
+p=lambda a,n=1:[[d&e for d in b for e in c]for b in a for c in-n*a]or p([*filter(any,zip(*a[::3]))],n-1)
 # task 196: 112 bytes, gold, https://arcprize.org/play?task=810b9b61
 p=lambda i,k=-99:k*i or p([*map(lambda*r,a=-4:[[b%4,b or-4&a,b|2*(a%3<(a:=b))][k//50]for b in r],*i[::-1])],k+1)
 # task 197: 54 bytes, gold, https://arcprize.org/play?task=82819916
