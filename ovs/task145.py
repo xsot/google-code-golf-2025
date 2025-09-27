@@ -1,5 +1,1 @@
-p=lambda x,k=79,v=2:-k*x or p([[(k and a|(b or(v:=v*2))or max(h:={*map(C:=(f:=sum(x,[])).count,{*f}-{2})})==C(b)or(C(b)==min(h))*8,b)[b==2]for a,b in zip([0]+r,r)]for*r,in zip(*x[::-1])],k-1)
-
-## this (barely?) exceeds recursion limit. passes on my testing notebook:
-
-p=lambda x,k=3:-k*x or p([[(max(a,b or(k:=k+4))*(k>0)or max(h:={*map(C:=(f:=sum(x,[])).count,{*f}-{2})})==C(b)or(C(b)==min(h))*8,b)[b==2]for a,b in zip([0]+r,r)]for*r,in zip(*x[::-1])],k-1)
+p=lambda x,k=79,v=2:-k*x or p([[(k>1and a|(b or(v:=v*2))or[b==max(f:=sum(x,[]))or(b==min({*f}-{2}))*8,f.count(b)+2][k],b)[b==2]for a,b in zip([0]+r,r)]for*r,in zip(*x[::-1])],k-1)

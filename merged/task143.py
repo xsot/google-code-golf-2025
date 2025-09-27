@@ -1,5 +1,5 @@
-# ovs (136 vs 135 bytes for gold)
-p=lambda i,n=1,*w:any(w==(w:=[*map(len,str(i).split(str(n))[1:-1])])for n in{n,max(i[:3])[0]})*eval(str(i).replace(*f"{n}5"))or p(i,n+1)
+# ovs (130 bytes, gold)
+p=lambda i,n=1,*w:any(w==(w:=[*map(len,s:=str(i).split(str(n)))][1:-1])for n in{max(i[:3])[0]:0,n:0})*eval('5'.join(s))or p(i,n+1)
 
 ### mwi (137 bytes)
 p=lambda i,n=1,w=0:any(w==(w:=[*map(len,str(i).split(str(n))[1:-1])])for n in{n,max(i[:3])[0]})*eval(str(i).replace(*f"{n}5"))or p(i,n+1)

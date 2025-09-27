@@ -348,12 +348,12 @@ p=lambda a:[b[::-1]for b in a[::-1]]
 p=eval("lambda a:[[max((x-i in(y-j,j-y))*b[y]"+"for %s,b in enumerate(a)%s"*4%(*'y x)j]i]',))
 # task 142: 40 bytes, gold, https://arcprize.org/play?task=62c24649
 p=lambda a:[b+b[::-1]for b in a+a[::-1]]
-# task 143: 136 vs 135 bytes for gold, https://arcprize.org/play?task=63613498
-p=lambda i,n=1,*w:any(w==(w:=[*map(len,str(i).split(str(n))[1:-1])])for n in{n,max(i[:3])[0]})*eval(str(i).replace(*f"{n}5"))or p(i,n+1)
+# task 143: 130 bytes, gold, https://arcprize.org/play?task=63613498
+p=lambda i,n=1,*w:any(w==(w:=[*map(len,s:=str(i).split(str(n)))][1:-1])for n in{max(i[:3])[0]:0,n:0})*eval('5'.join(s))or p(i,n+1)
 # task 144: 53 bytes, gold, https://arcprize.org/play?task=6430c8c4
 p=lambda a,n=[]:a*0!=0and[*map(p,a,a[5:]+n)]or 3>>a+n
-# task 145: 191 bytes, gold, https://arcprize.org/play?task=6455b5f5
-p=lambda x,k=79,v=2:-k*x or p([[(k and a|(b or(v:=v*2))or max(h:={*map(C:=(f:=sum(x,[])).count,{*f}-{2})})==C(b)or(C(b)==min(h))*8,b)[b==2]for a,b in zip([0]+r,r)]for*r,in zip(*x[::-1])],k-1)
+# task 145: 179 bytes, gold, https://arcprize.org/play?task=6455b5f5
+p=lambda x,k=79,v=2:-k*x or p([[(k>1and a|(b or(v:=v*2))or[b==max(f:=sum(x,[]))or(b==min({*f}-{2}))*8,f.count(b)+2][k],b)[b==2]for a,b in zip([0]+r,r)]for*r,in zip(*x[::-1])],k-1)
 # task 146: 58 bytes, gold, https://arcprize.org/play?task=662c240a
 p=lambda g:(x:=g[:3])*([*map(list,zip(*x))]!=x)or p(g[3:])
 # task 147: 79 bytes, gold, https://arcprize.org/play?task=67385a82
