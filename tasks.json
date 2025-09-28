@@ -4876,7 +4876,7 @@
     },
     "task156": {
         "gold": 146,
-        "best": 156,
+        "best": 150,
         "solutions": {
             "combined_solutions": {
                 "source": "cD1sYW1iZGEgaSxrPTc5LHQ9MDotayppIG9yIHAoW1t7KnkqW3Q6PXQrMV19aWYgaz43OGVsc2UoeXwoeS17MH1hbmQgZS17MH1vcnswfSkpaWYgayBlbHNlIHNvcnRlZCh7Km1hcChsZW4sc3VtKGksW10pKX0pLmluZGV4KGxlbih5KSkqKjIlMTIlN2ZvciB5LGUgaW4gemlwKHgsW3sqKCl9LCp4XSldZm9yIHggaW4gemlwKCppWzo6LTFdKV0say0xKQ==",
@@ -4886,10 +4886,10 @@
                 "method": "none"
             },
             "ovs": {
-                "source": "cD1sYW1iZGEgaSxrPTc5LHQ9MDotayppIG9yIHAoW1t7KnkqW3Q6PXQrMV19aWYgaz43OGVsc2UgeXwoeS17MH1hbmQgZS17MH1vcnswfSlpZiBrIGVsc2Ugc3VtKHg8bGVuKHkpZm9yIHggaW57Km1hcChsZW4sc3VtKGksW10pKX0pKioyJTEyJTdmb3IgeSxlIGluIHppcCh4LFt7MH1dK3gpXWZvcip4LGluIHppcCgqaVs6Oi0xXSldLGstMSkK",
-                "size_uncompressed": 194,
-                "compressed": "cD1sYW1iZGEgaSxrPTc5LHQ9MDotayppIG9yIHAoW1t7KnkqW3Q6PXQrMV19aWYgaz43OGVsc2UgeXwoeS17MH1hbmQgZS17MH1vcnswfSlpZiBrIGVsc2Ugc3VtKHg8bGVuKHkpZm9yIHggaW57Km1hcChsZW4sc3VtKGksW10pKX0pKioyJTEyJTdmb3IgeSxlIGluIHppcCh4LFt7MH1dK3gpXWZvcip4LGluIHppcCgqaVs6Oi0xXSldLGstMSk=",
-                "size_compressed": 194,
+                "source": "cD1sYW1iZGEgaSxyPXJhbmdlKDEwKSxTPXN1bTpbW2lbYV1bYl0tUyhTKHRbYi0xOmIrMl0pZm9yIHQgaW4gaVthLTE6YSsyXSkvLzM2KihTKHQ6PVsqbWFwKFMsaSldKS8vUyh0Wzp0LmluZGV4KDAsMSldKjIpKzJeYS8vNSlmb3IgYiBpbiByXWZvciBhIGluIHJdCgojIwoKcD1sYW1iZGEgaSxrPTc5LHQ9MDotayppIG9yIHAoW1t7KnkqW3Q6PXQrMV19aWYgaz43OGVsc2UgeXwoeS17MH1hbmQgZS17MH1vcnswfSlpZiBrIGVsc2Ugc3VtKHg8bGVuKHkpZm9yIHggaW57Km1hcChsZW4sc3VtKGksW10pKX0pKioyJTEyJTdmb3IgeSxlIGluIHppcCh4LFt7MH1dK3gpXWZvcip4LGluIHppcCgqaVs6Oi0xXSldLGstMSkK",
+                "size_uncompressed": 150,
+                "compressed": "cD1sYW1iZGEgaSxyPXJhbmdlKDEwKSxTPXN1bTpbW2lbYV1bYl0tUyhTKHRbYi0xOmIrMl0pZm9yIHQgaW4gaVthLTE6YSsyXSkvLzM2KihTKHQ6PVsqbWFwKFMsaSldKS8vUyh0Wzp0LmluZGV4KDAsMSldKjIpKzJeYS8vNSlmb3IgYiBpbiByXWZvciBhIGluIHJd",
+                "size_compressed": 150,
                 "method": "none"
             },
             "mwi": {
@@ -7901,7 +7901,7 @@
         "public_best": 26
     },
     "task250": {
-        "gold": 118,
+        "gold": 117,
         "best": 121,
         "solutions": {
             "ovs": {
@@ -7933,7 +7933,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 118,
+        "public_gold": 117,
         "public_best": 121
     },
     "task251": {
