@@ -358,8 +358,8 @@ p=lambda x,k=79,v=2:-k*x or p([[(k>1and a|(b or(v:=v*2))or[b==max(f:=sum(x,[]))o
 p=lambda g:(x:=g[:3])*([*map(list,zip(*x))]!=x)or p(g[3:])
 # task 147: 79 bytes, gold, https://arcprize.org/play?task=67385a82
 p=lambda i,r=[[0]*9]*9,*w:r and[*map(p,i,r,r[:1]+i,i[1:]+r,*w)]or-i%~max(w)%8+i
-# task 148: 126 bytes, gold, https://arcprize.org/play?task=673ef223
-p=lambda g,*w:[[-v%12&6|(c:=c^(v>0<8in r))*8>>v for v in r]for r in g if[c:=any(r)and(w:=[r,*w])[0][0]!=g[4][0]!=8in w.pop()]]
+# task 148: 124 bytes, gold, https://arcprize.org/play?task=673ef223
+p=lambda g,*w:[[-v%12&6|(c:=c^(8in r*v))*8>>v for v in r]for r in g if[c:=any(r)and(w:=[r,*w])[0][0]!=g[4][0]!=8in w.pop()]]
 # task 149: 75 bytes, gold, https://arcprize.org/play?task=6773b310
 p=lambda a:a[3:]and[p([*zip(*a[t:t+3])])for t in[0,4,8]]or 9<sum(sum(a,()))
 # task 150: 30 bytes, gold, https://arcprize.org/play?task=67a3c6ac
@@ -372,9 +372,9 @@ def p(g):
  return g
 # task 152: 40 bytes, gold, https://arcprize.org/play?task=67e8384a
 p=lambda a:[r+r[::-1]for r in a+a[::-1]]
-# task 153: 153 vs 133 bytes for gold, https://arcprize.org/play?task=681b3aeb
-s=' in[a '+'for*a,in map(zip,a[9:]+a,a,a[1:]+a)'*2
-p=eval(f'lambda a:max(all(sum(d:=[[*map(int.__xor__,*e)]for*e,in zip(b,c)],a))*d for b{s}]for c{s}])')
+# task 153: 144 vs 133 bytes for gold, https://arcprize.org/play?task=681b3aeb
+r=-1,0,1
+p=lambda g:[w for a in range(5000)if len({*str(w:=[[max(g[(y+A)%10][(x+A//10)%10]for A in(a,a%99))for x in r]for y in r])}^{'0'})>6][0]
 # task 154: 111 vs 99 bytes for gold, https://arcprize.org/play?task=6855a6e4
 p=lambda g:[g:=[*zip(*[g[a-sum(k for k in b'	'if g[a-k*8%15].count(2)>4)]for a in range(15)])]for _ in g][1]
 # task 155: 18 bytes, gold, https://arcprize.org/play?task=68b16354
