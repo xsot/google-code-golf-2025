@@ -1,6 +1,6 @@
-# ovs (144 vs 133 bytes for gold)
+# ovs (139 vs 133 bytes for gold)
 r=-1,0,1
-p=lambda g:[w for a in range(5000)if len({*str(w:=[[max(g[(y+A)%10][(x+A//10)%10]for A in(a,a%99))for x in r]for y in r])}^{'0'})>6][0]
+p=lambda g:max(({*str(w:=[[max(g[(y+A)%10][(x+A//10)%10]for A in(a,a%99))for x in r]for y in r])}^{'0'},w)for a in range(5000))[1]
 
 ### att (153 bytes)
 s=' in[a '+'for*a,in map(zip,a[9:]+a,a,a[1:]+a)'*2
