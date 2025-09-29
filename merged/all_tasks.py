@@ -381,26 +381,26 @@ p=lambda g:[g:=[*zip(*[g[a-sum(k*(g[a-k*8%15].count(2)>4)for k in b'	')]for a
 p=lambda a:a[::-1]
 # 💎 task 156: 145 bytes, gold, https://arcprize.org/play?task=694f12f3
 p=lambda i,a=-38:[[v-(str(i)[(a:=a+3)::35][:3]=='444')*(sum(t:=[*map(sum,i)])//sum(t[:t.index(0,1)]*2)+2^a//126)for v in r]for r in i if[a:=a+2]]
-# 🥇 task 157: 246 (256 unzipped) bytes, gold, https://arcprize.org/play?task=6a1e5592
+# 💎 task 157: 244 (256 unzipped) bytes, gold, https://arcprize.org/play?task=6a1e5592
 def p(g):
  r=[*map(max,*g[6:]),0,5,0].index;w=r(0,t:=r(5))
  for l in range(16+t%15-w):
   for s in 0,1:
    u=*map(list,g),
-   for x in u[6:]:
+   for x in g[6:]:
     s+=any(x[t:w])
-    for b in range(t,w):u[s][b-t+l]+=x[b]>4;x[b]=0
-   g=p(u)or g
+    for b in range(t,w):g[s][b-t+l]+=x[b]>4;x[b]=0
+   g=p(g)or u
  if{*g[1]+g[2]}=={1,2}:return g
-# 💎 task 158: 266 (482 unzipped) bytes, gold, https://arcprize.org/play?task=6aa20dc0
+# 💎 task 158: 265 (482 unzipped) bytes, gold, https://arcprize.org/play?task=6aa20dc0
 def p(g):
  t,t=max((len({*str(s:=[z[x:x+3]for z in g[y:y+3]])}),s)for y in range(len(g))for x in range(len(g[1])))
  for s in range(len(g[1])):
   for y in range(len(g)-s*3):
    for x in range(len(g[1])-s*3):
-    for z in range(len(g[1])):
+    for Y in range(len(g[1])):
      t=*zip(*t[::-1]),
-     for Y in range(s*3*all(g[y+Y][x+X]==t[Y//s][X//s]or g[y+Y][x+X]==g[1][-1]!=t[Y//s][X//s]==max({*t[1]}-{g[1][-1]})for Y in range(s*3)for X in range(s*3))):
+     for Y in range(all(g[y+Y][x+X]==t[Y//s][X//s]or g[y+Y][x+X]==g[1][-1]!=t[Y//s][X//s]==max({*t[1]}-{g[1][-1]})for Y in range(s*3)for X in range(s*3))*s*3):
       for X in range(s*3):g[y+Y][x+X]=t[Y//s][X//s]
  return g
 # 💎 task 159: 105 bytes, gold, https://arcprize.org/play?task=6b9890af
@@ -409,9 +409,8 @@ p=lambda g,*G:sum([[[2,*r,2]]*[str(g).count('2')//12,all(r)][{*r}<={0,2}]for*r,i
 import re;p=lambda i,*n:eval(re.sub("1, "*2+'1(.{26}).{5}'*2,r"0,2,0\1*2,2,2\2*0,2,0*",str(n or p(i,*i))))
 # 💎 task 161: 80 bytes, gold, https://arcprize.org/play?task=6cdd2623
 p=lambda m:[[4//(C:=sum(m,[]).count)(x)*x|4//C(i)*i for i in m[0]]for x,*_ in m]
-# 🥉 task 162: 98 vs 96 bytes for gold, https://arcprize.org/play?task=6cf79266
-import re
-p=lambda i:eval(eval('re.sub("0, 0, 0(.{55})?"*3,"*(1,)*3\%d"*3%(1,2,3),'*2+f'"{i}"))'))
+# 🥈 task 162: 97 vs 96 bytes for gold, https://arcprize.org/play?task=6cf79266
+import re;p=lambda i,*I:eval(re.sub("0, 0, 0(.{55})?"*3,"*[1]*3\%d"*3%(1,2,3),str(I or p(i,*i))))
 # 🥈 task 163: 136 vs 131 bytes for gold, https://arcprize.org/play?task=6d0160f0
 R=0,4,8
 e=range(11)

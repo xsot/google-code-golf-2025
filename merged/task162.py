@@ -1,9 +1,9 @@
-# att (98 vs 96 bytes for gold)
+# ovs (97 vs 96 bytes for gold)
+import re;p=lambda i,*I:eval(re.sub("0, 0, 0(.{55})?"*3,"*[1]*3\%d"*3%(1,2,3),str(I or p(i,*i))))
+
+### att (98 bytes)
 import re
 p=lambda i:eval(eval('re.sub("0, 0, 0(.{55})?"*3,"*(1,)*3\%d"*3%(1,2,3),'*2+f'"{i}"))'))
-
-### ovs (99 bytes)
-import re;p=lambda i:eval('eval(re.sub("0, 0, 0(.{55})?"*3,"1,1,1\%d "*3%(1,2,3),str('*3+'i'+')'*9)
 
 ### mwi (101 bytes)
 import re;p=lambda i:[i:=eval(re.sub("0, 0, 0(.{55})?"*3,"1,1,1\%d "*3%(1,2,3),str(i)))for _ in i][2]
