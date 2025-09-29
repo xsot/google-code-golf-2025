@@ -964,8 +964,8 @@ import re
 p=lambda i,k=7,r=re.sub:-k*i or[*zip(*eval(r(", 4, ","|8,8,8|",r("0, 8, ((0, )+)2","4,2,4,*[2]*len([\\1])",str(p(i,k-1)[::-1])))))]
 # 🥇 task 380: 27 bytes, gold, https://arcprize.org/play?task=ed36ccf7
 p=lambda a:[*zip(*a)][::-1]
-# 🥉 task 381: 86 vs 79 bytes for gold, https://arcprize.org/play?task=ef135b50
-p=lambda i,a=8:[[-s+(s:=s+y)or(a%9>0<s<sum(x))*9for y in x]for x in i if[s:=0,a:=a+1]]
+# 🥈 task 381: 83 vs 79 bytes for gold, https://arcprize.org/play?task=ef135b50
+p=lambda i,s=9:[[-s+(s:=s+y)or(1<s<sum(x))*9for y in x]*(s:=1)for x in i[:9]]+i[9:]
 # 💎 task 382: 125 bytes, gold, https://arcprize.org/play?task=f15e1fac
 p=lambda i,k=-3:k*i or p([*zip(w:=i.pop(0),*[[*map(max,r,w:=r*('8'in'%s'%i)+[0,*w,0][r[-1]or[1]>r:])]for*r,in i])][::-1],k+1)
 # 🥇 task 383: 121 bytes, gold, https://arcprize.org/play?task=f1cefba8
