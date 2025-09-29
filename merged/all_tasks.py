@@ -403,12 +403,12 @@ def p(g):
      for Y in range(s*3*all(g[y+Y][x+X]==t[Y//s][X//s]or g[y+Y][x+X]==g[1][-1]!=t[Y//s][X//s]==max({*t[1]}-{g[1][-1]})for Y in range(s*3)for X in range(s*3))):
       for X in range(s*3):g[y+Y][x+X]=t[Y//s][X//s]
  return g
-# 🥉 task 159: 110 vs 109 bytes for gold, https://arcprize.org/play?task=6b9890af
-p=lambda g,*G:sum([[[2,*r,2]]*(any({*r}-{2})*str(g).count('2')//12or{*r}=={2})for*r,in zip(*G or p(g,*g))],[])
+# 💎 task 159: 105 bytes, gold, https://arcprize.org/play?task=6b9890af
+p=lambda g,*G:sum([[[2,*r,2]]*[str(g).count('2')//12,all(r)][{*r}<={0,2}]for*r,in zip(*G or p(g,*g))],[])
 # 🥈 task 160: 106 vs 105 bytes for gold, https://arcprize.org/play?task=6c434453
 import re;p=lambda i,*n:eval(re.sub("1, "*2+'1(.{26}).{5}'*2,r"0,2,0\1*2,2,2\2*0,2,0*",str(n or p(i,*i))))
-# ❌ task 161: 83 vs 82 bytes for gold, https://arcprize.org/play?task=6cdd2623
-p=lambda m:[[sum({x,i}-{*sum([*zip(*m[1:9])][1:-1],())})for i in m[0]]for*_,x in m]
+# 💎 task 161: 80 bytes, gold, https://arcprize.org/play?task=6cdd2623
+p=lambda m:[[4//(C:=sum(m,[]).count)(x)*x|4//C(i)*i for i in m[0]]for x,*_ in m]
 # 🥉 task 162: 98 vs 96 bytes for gold, https://arcprize.org/play?task=6cf79266
 import re
 p=lambda i:eval(eval('re.sub("0, 0, 0(.{55})?"*3,"*(1,)*3\%d"*3%(1,2,3),'*2+f'"{i}"))'))

@@ -1,4 +1,7 @@
-# joking (83 vs 82 bytes for gold)
+# ovs (80 bytes, gold)
+p=lambda m:[[4//(C:=sum(m,[]).count)(x)*x|4//C(i)*i for i in m[0]]for x,*_ in m]
+
+### joking (83 bytes)
 p=lambda m:[[sum({x,i}-{*sum([*zip(*m[1:9])][1:-1],())})for i in m[0]]for*_,x in m]
 
 ##
