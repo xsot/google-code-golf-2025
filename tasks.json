@@ -1,6 +1,6 @@
 {
     "task001": {
-        "gold": 56,
+        "gold": 58,
         "best": 61,
         "solutions": {
             "att": {
@@ -46,7 +46,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 56,
+        "public_gold": 58,
         "public_best": 61
     },
     "task002": {
@@ -11776,7 +11776,7 @@
                 "escape_cost": 1
             }
         },
-        "public_gold": 257,
+        "public_gold": 256,
         "public_best": 269
     },
     "task371": {

@@ -4,6 +4,7 @@ import json
 import kaggle
 import os
 import pandas as pd
+import numpy as np
 import random
 import sys
 import warnings
@@ -146,10 +147,12 @@ except:
 # Update golds
 df = pd.read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vQ7RUqwrtwRD2EJbgMRrccAHkwUQZgFe2fsROCR1WV5LA1naxL0pU2grjQpcWC2HU3chdGwIOUpeuoK/pub?gid=1427788625&single=true&output=csv")
 gold_score = df.loc[7:,"BEST"].reset_index(drop=True).astype(int)
-gold_score[0] = min(gold_score[0], 56) # by jailctf
+# gold_score[0] = min(gold_score[0], 56) # by jailctf (this was a joke)
 
 df = pd.read_csv("https://docs.google.com/spreadsheets/d/1-PWgStNEcAz3hGChHZ3ShS56BmB0vnAaUNF4gVUbJsw/export?format=csv")
 public_score = df.loc[10:,"ox jam"].reset_index(drop=True).astype(int)
+
+other_scores = df[10:].replace(" ", np.nan).astype("float").drop(columns=["Unnamed: 0", "ox jam"]).reset_index(drop=True)
 
 for n in range(1, task_count + 1):
     tasks[num_to_task_name(n)]["public_gold"] = int(gold_score[n-1])
@@ -279,6 +282,8 @@ all_tasks_lines = []
 
 task_ids = [s.strip() for s in open("task_ids.txt")]
 
+medal_counts = [0, 0, 0, 0]
+
 for i in range(1, task_count + 1):
     task_name = num_to_task_name(i)
     task_data = tasks[task_name]
@@ -311,7 +316,15 @@ for i in range(1, task_count + 1):
         score_string = f"{prefix}{score}{f' ({unzipped_score} unzipped)' * (unzipped_score != score)} {postfix}"
 
         if is_best:
-            all_tasks_lines.append(f"# task {i}: {score_string}, https://arcprize.org/play?task={task_ids[i-1]}\n" + preprocess(code))
+            row = other_scores.loc[i-1]
+            diamond = score < row.min()
+            medal = int((row < score).sum())
+            medal_str = "❌"
+            if medal < 3:
+                medal_str = '💎' if diamond else '🥇🥈🥉'[medal]
+                medal_counts[medal] += 1
+                if diamond: medal_counts[3] += 1
+            all_tasks_lines.append(f"# {medal_str} task {i}: {score_string}, https://arcprize.org/play?task={task_ids[i-1]}\n" + preprocess(code))
         else:
             lines.append("")
 
@@ -344,7 +357,8 @@ if promptYN("Commit changes? [Y]es/[N]o", default_commit):
     repo.git.add("*/task*.py")
     repo.git.add("merged/*")
     repo.git.add("tasks.json")
-    repo.git.commit([f'-m +{total_save}={total_score}/{max_size * task_count - sum(task["gold"] for task in tasks.values())}'])
+    medals = "{3}💎 {0}🥇 {1}🥈 {2}🥉".format(*medal_counts)
+    repo.git.commit([f'-m +{total_save}={total_score}/{max_size * task_count - sum(task["gold"] for task in tasks.values())} {medals}'])
 
 # Push
 if promptYN("Push improved solutions to remote? [Y]es/[N]o", default_push):
