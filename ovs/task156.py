@@ -1,4 +1,4 @@
-p=lambda i,r=range(10),S=sum:[[i[a][b]-S(S(t[b-1:b+2])for t in i[a-1:a+2])//36*(S(t:=[*map(S,i)])//S(t[:t.index(0,1)]*2)+2^a//5)for b in r]for a in r]
+p=lambda i,a=-38:[[v-(str(i)[(a:=a+3)::35][:3]=='444')*(sum(t:=[*map(sum,i)])//sum(t[:t.index(0,1)]*2)+2^a//126)for v in r]for r in i if[a:=a+2]]
 
 ##
 
