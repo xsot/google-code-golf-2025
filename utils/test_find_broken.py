@@ -67,7 +67,10 @@ slow = []
 
 for n in range(1,401):
  path = "submission\\task%03d.py"%n
+ # use old path if you want to exclude tasks that haven't changed since a previous version
+ old_path = "submission\\old\\task%03d.py"%n
  if os.path.exists(path):
+     if os.path.exists(old_path) and open(path,'rb').read() == open(old_path,'rb').read(): continue
      start = time.time()
      if verify_task_test(n, path):pass_cnt += 1;print(f"{n:03d}: PASS")
      else:fail_cnt += 1;failed += [n];print(f"{n:03d}: FAIL")

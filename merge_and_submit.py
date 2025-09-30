@@ -111,7 +111,7 @@ def test_task(task_name, src, subsets=('train', 'test', 'arc-gen')):
 
 def writelines_with_newline(file, lines):
     file.writelines(
-        line if line.endswith("\n") else line + "\n"
+        (line if line.endswith("\n") else line + "\n").encode("u8")
         for line in lines
     )
 
@@ -331,10 +331,10 @@ for i in range(1, task_count + 1):
         lines.append(f"{hashes} {player.replace('combined_solutions', 'combined')} ({score_string})")
         lines.append(code)
 
-        with open(as_path(output_dir, task_name), "w") as file:
+        with open(as_path(output_dir, task_name), "wb") as file:
             writelines_with_newline(file, lines)
 
-with open(as_path(output_dir, "all_tasks"), "w") as file:
+with open(as_path(output_dir, "all_tasks"), "wb") as file:
     writelines_with_newline(file, all_tasks_lines)
 
 with open(as_path(output_dir, "scores", "txt"), "w") as file:
