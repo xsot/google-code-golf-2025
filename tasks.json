@@ -4875,8 +4875,8 @@
         "public_best": 18
     },
     "task156": {
-        "gold": 145,
-        "best": 145,
+        "gold": 128,
+        "best": 128,
         "solutions": {
             "combined_solutions": {
                 "source": "cD1sYW1iZGEgaSxrPTc5LHQ9MDotayppIG9yIHAoW1t7KnkqW3Q6PXQrMV19aWYgaz43OGVsc2UoeXwoeS17MH1hbmQgZS17MH1vcnswfSkpaWYgayBlbHNlIHNvcnRlZCh7Km1hcChsZW4sc3VtKGksW10pKX0pLmluZGV4KGxlbih5KSkqKjIlMTIlN2ZvciB5LGUgaW4gemlwKHgsW3sqKCl9LCp4XSldZm9yIHggaW4gemlwKCppWzo6LTFdKV0say0xKQ==",
@@ -4900,10 +4900,10 @@
                 "method": "none"
             },
             "joking": {
-                "source": "cD1sYW1iZGEgaSxyPXJhbmdlKDEwKSxTPXN1bTpbW2lbYV1bYl0tUyhTKHRbYi0xOmIrMl0pZm9yIHQgaW4gaVthLTE6YSsyXSkvLzM2KihTKHQ6PVsqbWFwKFMsaSldKS8vUyh0WzooaDo9dC5pbmRleCgwLDEpKV0qMikrMl4oaDxhKSlmb3IgYiBpbiByXWZvciBhIGluIHJd",
-                "size_uncompressed": 156,
-                "compressed": "cD1sYW1iZGEgaSxyPXJhbmdlKDEwKSxTPXN1bTpbW2lbYV1bYl0tUyhTKHRbYi0xOmIrMl0pZm9yIHQgaW4gaVthLTE6YSsyXSkvLzM2KihTKHQ6PVsqbWFwKFMsaSldKS8vUyh0WzooaDo9dC5pbmRleCgwLDEpKV0qMikrMl4oaDxhKSlmb3IgYiBpbiByXWZvciBhIGluIHJd",
-                "size_compressed": 156,
+                "source": "cD1sYW1iZGEgaSxhPTksUz1zdW06W1t2LShTKGc6PVMoaSxbXSkpLy9TKGdbOmkuaW5kZXgobWluKGkpLDEpKjEwXSoyKSsyXmEvLzYwKSooUyhnW2EtMTg6KGE6PWErMSk6OV0pPjExKWZvciB2IGluIHJdZm9yIHIgaW4gaV0KCiMjCnA9bGFtYmRhIGksYT05LFM9c3VtOltbdi1TKFMoaSxbXSlbYS0xODooYTo9YSsxKTo5XSkvLzEyKihTKHQ6PVsqbWFwKFMsaSldKS8vUyh0Wzp0LmluZGV4KDAsMSldKjIpKzJeYS8vNjApZm9yIHYgaW4gcl1mb3IgciBpbiBpXQ==",
+                "size_uncompressed": 128,
+                "compressed": "cD1sYW1iZGEgaSxhPTksUz1zdW06W1t2LShTKGc6PVMoaSxbXSkpLy9TKGdbOmkuaW5kZXgobWluKGkpLDEpKjEwXSoyKSsyXmEvLzYwKSooUyhnW2EtMTg6KGE6PWErMSk6OV0pPjExKWZvciB2IGluIHJdZm9yIHIgaW4gaV0=",
+                "size_compressed": 128,
                 "method": "none"
             }
         },
@@ -5235,7 +5235,7 @@
         "public_best": 32
     },
     "task165": {
-        "gold": 136,
+        "gold": 135,
         "best": 136,
         "solutions": {
             "combined_solutions": {
@@ -5260,7 +5260,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 136,
+        "public_gold": 135,
         "public_best": 136
     },
     "task166": {
