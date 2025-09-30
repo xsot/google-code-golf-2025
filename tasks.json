@@ -254,7 +254,7 @@
     },
     "task007": {
         "gold": 62,
-        "best": 65,
+        "best": 64,
         "solutions": {
             "att": {
                 "source": "cD1sYW1iZGEgYTpbW21heChzdW0oYTo9YVsxOjNdK2EsWzBdKVs6OjNdKWZvciBfIGluIHJdZm9yIHIgaW4gYV0=",
@@ -282,6 +282,13 @@
                 "size_uncompressed": 67,
                 "compressed": "cD1sYW1iZGEgYSwqYjpbW21heChzdW0oYSxiOj1bKmIsMCwwXSlbMjo6M10pZm9yIF8gaW4gYV1mb3IgXyBpbiBhXQ==",
                 "size_compressed": 67,
+                "method": "none"
+            },
+            "joking": {
+                "source": "cD1sYW1iZGEgYTpbW21heChzdW0oYTo9YVsxOjNdK2EscilbOTo6M10pZm9yIF8gaW4gcl1mb3IgciBpbiBhXQ==",
+                "size_uncompressed": 64,
+                "compressed": "cD1sYW1iZGEgYTpbW21heChzdW0oYTo9YVsxOjNdK2EscilbOTo6M10pZm9yIF8gaW4gcl1mb3IgciBpbiBhXQ==",
+                "size_compressed": 64,
                 "method": "none"
             }
         },
@@ -2401,13 +2408,20 @@
     },
     "task075": {
         "gold": 86,
-        "best": 88,
+        "best": 86,
         "solutions": {
             "combined_solutions": {
                 "source": "cD1sYW1iZGEgaSxyPXJhbmdlKDkpOltpW2FdWzo0XStbaVthLy8zKjMrMV1bYi8vMyozKzVdKmlbYSUzXVtiJTNdZm9yIGIgaW4gcl1mb3IgYSBpbiByXQ==",
                 "size_uncompressed": 88,
                 "compressed": "cD1sYW1iZGEgaSxyPXJhbmdlKDkpOltpW2FdWzo0XStbaVthLy8zKjMrMV1bYi8vMyozKzVdKmlbYSUzXVtiJTNdZm9yIGIgaW4gcl1mb3IgYSBpbiByXQ==",
                 "size_compressed": 88,
+                "method": "none"
+            },
+            "joking": {
+                "source": "cD1sYW1iZGEgaSxyPXJhbmdlKDkpOltpW2FdWzo0XStbaVthLWElMysxXVtiLWIlMys1XSppW2ElM11bYiUzXWZvciBiIGluIHJdZm9yIGEgaW4gcl0=",
+                "size_uncompressed": 86,
+                "compressed": "cD1sYW1iZGEgaSxyPXJhbmdlKDkpOltpW2FdWzo0XStbaVthLWElMysxXVtiLWIlMys1XSppW2ElM11bYiUzXWZvciBiIGluIHJdZm9yIGEgaW4gcl0=",
+                "size_compressed": 86,
                 "method": "none"
             }
         },
@@ -4003,7 +4017,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 61,
+        "public_gold": 59,
         "public_best": 64
     },
     "task129": {

@@ -1,4 +1,7 @@
-# att (65 vs 62 bytes for gold)
+# joking (64 vs 62 bytes for gold)
+p=lambda a:[[max(sum(a:=a[1:3]+a,r)[9::3])for _ in r]for r in a]
+
+### att (65 bytes)
 p=lambda a:[[max(sum(a:=a[1:3]+a,[0])[::3])for _ in r]for r in a]
 
 ### ovs (66 bytes)
