@@ -419,8 +419,8 @@ p=lambda a:[[5*(a[i][j]==5)or sum((4==a[k+i//4][l+j//4])*a[k+i%4][l+j%4]for k in
 p=lambda a:[b+b[::-1]for b in a]
 # 🥈 task 165: 136 vs 135 bytes for gold, https://arcprize.org/play?task=6d58a25d
 def p(i):a,b,s={}.fromkeys(sum(i[::-1],[0]));return[[t[a-1]or(s in t[:a]!=b in t[t.index(s):])*b for t in zip(*i)]for x in i if(a:=a+1)]
-# ❌ task 166: 65 vs 61 bytes for gold, https://arcprize.org/play?task=6d75e8bb
-p=lambda a:[[d or any(b)*2*any(c)for*c,d in zip(*a,b)]for b in a]
+# ❌ task 166: 64 vs 61 bytes for gold, https://arcprize.org/play?task=6d75e8bb
+p=lambda a:[[v or any(c*b)*2for v,c in zip(b,max(a))]for b in a]
 # 🥈 task 167: 72 vs 71 bytes for gold, https://arcprize.org/play?task=6e02f1e3
 p=lambda i:[[5*(y==x*5%len({*str(i)})%3)for x in(6,5,4)]for y in(0,1,2)]
 # 🥉 task 168: 116 vs 111 bytes for gold, https://arcprize.org/play?task=6e19193c
@@ -428,8 +428,8 @@ import re
 p=lambda i,k=3:-k*i or[*zip(*eval(re.sub(r"0, (?=(.{35})+([^0], ).{26}\2\2)",r"\2",str(p(i,k-1))))[::-1])]
 # 💎 task 169: 121 bytes, gold, https://arcprize.org/play?task=6e82a1ae
 p=lambda i,k=39,t=1:-k*i or[[[y%2*(t:=t*16),-y%5,y and y|e][k//-38]for y,e in zip(x,[0]+x)]for*x,in zip(*p(i,k-1)[::-1])]
-# ❌ task 170: 212 (246 unzipped) vs 196 bytes for gold, https://arcprize.org/play?task=6ecd11f4
-def	p(g):y,x=max((y+1,x+1)for	y,g	in	enumerate(g)for	x,c	in	enumerate(g)if	c);s=4-0**g[y-1][x-4];v=-~len(h:=[*filter(max,zip(*filter(max,zip(*g[:y-s]))))])//s;return[[h[Y*v][X*v]and	g	for	X,g	in	enumerate(g[x-s:x])]for	Y,g	in	enumerate(g[y-s:y])]
+# 🥉 task 170: 206 (237 unzipped) vs 196 bytes for gold, https://arcprize.org/play?task=6ecd11f4
+def p(g):y,x=max((h,r)for h,g in enumerate(g)for r,g in enumerate(g)if g);s=4-0**g[y][x-3];v=-~len(h:=[*filter(max,zip(*filter(max,zip(*g[:y+1-s]))))])//s;return[[h and g for h,g in zip(h[::v],g[-s-~x:])]for h,g in zip(h[::v],g[-s-~y:])]
 # 🥇 task 171: 51 bytes, gold, https://arcprize.org/play?task=6f8cd79b
 p=lambda a:a*all(a[0])or p([*zip(*a[:0:-1],[8]*9)])
 # 🥇 task 172: 20 bytes, gold, https://arcprize.org/play?task=6fa7a44f
