@@ -428,8 +428,8 @@ import re
 p=lambda i,k=3:-k*i or[*zip(*eval(re.sub(r"0, (?=(.{35})+([^0], ).{26}\2\2)",r"\2",str(p(i,k-1))))[::-1])]
 # 💎 task 169: 121 bytes, gold, https://arcprize.org/play?task=6e82a1ae
 p=lambda i,k=39,t=1:-k*i or[[[y%2*(t:=t*16),-y%5,y and y|e][k//-38]for y,e in zip(x,[0]+x)]for*x,in zip(*p(i,k-1)[::-1])]
-# 🥉 task 170: 206 (237 unzipped) vs 196 bytes for gold, https://arcprize.org/play?task=6ecd11f4
-def p(g):y,x=max((h,r)for h,g in enumerate(g)for r,g in enumerate(g)if g);s=4-0**g[y][x-3];v=-~len(h:=[*filter(max,zip(*filter(max,zip(*g[:y+1-s]))))])//s;return[[h and g for h,g in zip(h[::v],g[-s-~x:])]for h,g in zip(h[::v],g[-s-~y:])]
+# 🥈 task 170: 198 (236 unzipped) vs 196 bytes for gold, https://arcprize.org/play?task=6ecd11f4
+def p(g):[(y:=h,x:=r)for h,g in enumerate(g)for r,g in enumerate(g)if g];s=0**g[y-3][x]-4;h=*filter(max,zip(*filter(max,zip(*g[:y-3])))),;return[[h and g for h,g in zip(h[::~len(h)//s],g[s-~x:])]for h,g in zip(h[::~len(h)//s],g[s-~y:])]
 # 🥇 task 171: 51 bytes, gold, https://arcprize.org/play?task=6f8cd79b
 p=lambda a:a*all(a[0])or p([*zip(*a[:0:-1],[8]*9)])
 # 🥇 task 172: 20 bytes, gold, https://arcprize.org/play?task=6fa7a44f
@@ -824,7 +824,7 @@ p=lambda a:[[*map(max,*a[:n]*2)]for n in(1,2,3)]
 p=lambda i,r=range(13):[[i[a][b]|5*(abs((y:=a-(n:=sum(i,[]).index(8))//13)-n%13-~b-(y>0)*2)<2-y%2>0!=y)for b in r]for a in r]
 # 🥈 task 324: 260 (313 unzipped) vs 259 bytes for gold, https://arcprize.org/play?task=d07ae81c
 def p(g):s=sum(g,[]);k,K,b,B=sorted({*s},key=s.count);b=[b,B][any({*r}in({k,B},{K,b})for r in[*zip(*g)]+g)];[0for y,r in enumerate(eval(str(g)))for x,c in enumerate(r)for z,s in enumerate(g)for Y in(-z,z)for X in(-z,z)if c in{k,K}!=len(g)>Y+y>-1<X+x<len(g[0])for g[Y+y][X+x]in[[K,k][g[Y+y][X+x]in(b,k)]]];return g
-# 🥉 task 325: 172 vs 160 bytes for gold, https://arcprize.org/play?task=d0f5fe59
+# ❌ task 325: 172 vs 160 bytes for gold, https://arcprize.org/play?task=d0f5fe59
 p=lambda i,k=39,z=0:-k*[x*[0]+[8]+(z+~x)*[0]for x in range(z)]or p([(s:=1)*[(k<39)*max(h and s,s:=h)or(z:=z+1)*h for h in x]for x in zip(*i[::-1])],k-1,len({*sum(i,[])})-1)
 # 🥇 task 326: 30 bytes, gold, https://arcprize.org/play?task=d10ecb37
 p=lambda a:[a[0][:2],a[1][:2]]

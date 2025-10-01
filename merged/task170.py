@@ -1,4 +1,11 @@
-# ovs (206 (237 unzipped) vs 196 bytes for gold)
+# joking (198 (236 unzipped) vs 196 bytes for gold)
+# zip fiddling
+def p(g):[(y:=h,x:=r)for h,g in enumerate(g)for r,g in enumerate(g)if g];s=0**g[y-3][x]-4;h=*filter(max,zip(*filter(max,zip(*g[:y-3])))),;return[[h and g for h,g in zip(h[::~len(h)//s],g[s-~x:])]for h,g in zip(h[::~len(h)//s],g[s-~y:])]
+
+## zips about the same
+def p(g):[(y:=h,x:=r)for h,g in enumerate(g)for r,g in enumerate(g)if g];s=0**g[y-3][x]-3;h=*filter(max,zip(*filter(max,zip(*g[:y-3])))),;return[[h and g for h,g in zip(h[::~len(h)//~-s],g[s+x:])]for h,g in zip(h[::~len(h)//~-s],g[s+y:])]
+
+### ovs (206 (237 unzipped) bytes)
 def p(g):y,x=max((h,r)for h,g in enumerate(g)for r,g in enumerate(g)if g);s=4-0**g[y][x-3];v=-~len(h:=[*filter(max,zip(*filter(max,zip(*g[:y+1-s]))))])//s;return[[h and g for h,g in zip(h[::v],g[-s-~x:])]for h,g in zip(h[::v],g[-s-~y:])]
 
 ## 223 without compression:
