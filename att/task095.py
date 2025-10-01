@@ -1,1 +1,1 @@
-p=lambda a,n=6:~n*a or[[n%2|(n:=b.pop())for _ in a]for*b,in zip(*p(a,n-2))]
+p=lambda a,n=6:~n*a or[[n%2|(n:=m)for m in a]for a[::-1]in zip(*p(a,n-2))]

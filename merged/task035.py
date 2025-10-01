@@ -1,4 +1,7 @@
-# ovs (85 vs 83 bytes for gold)
+# att (84 vs 83 bytes for gold)
+p=lambda i,k=3:-k*i or[[i[k>(k:=y)%9-8]or k for y in i]for i[::-1]in zip(*p(i,k-1))]
+
+### ovs (85 bytes)
 p=lambda i,k=3:-k*i or[[x[k>(k:=y)%9-8]or k for y in x]for x in zip(*p(i,k-1)[::-1])]
 
 ##
