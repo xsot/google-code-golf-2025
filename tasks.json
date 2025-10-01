@@ -7537,8 +7537,8 @@
         "public_best": 67
     },
     "task238": {
-        "gold": 216,
-        "best": 216,
+        "gold": 207,
+        "best": 207,
         "solutions": {
             "mwi": {
                 "source": "ZGVmIHAoaSk6bCxtPVtbW2FbMF1mb3IgYSBpbiB6aXAoYiwqaSlpZnsqYX0mbV1mb3IgYiBpbiBpIGlmeypifSZtXWZvciBtIGluW3s4fSx7KnJhbmdlKDEsOCksOX1dXTtyZXR1cm5bW2E8bGVuKG0pLTE+Yj4wYW5kKChrOj1sW2EtMV1bYi0xXSlhbmQgbVsxLShiPmE8bGVuKG0pLTEtYil8LShiPGE+bGVuKG0pLTEtYildWzEtKGI8YTxsZW4obSktMS1iKXwtKGI+YT5sZW4obSktMS1iKV1vciBrKW9yIG1bYV1bYl1mb3IgYiBpbiByYW5nZShsZW4obSkpXWZvciBhIGluIHJhbmdlKGxlbihtKSld",
@@ -7566,6 +7566,15 @@
                 "method": "zopfli",
                 "window": -15,
                 "escape_cost": 2
+            },
+            "att": {
+                "source": "ZGVmIHAoYSk6Yj1baiBmb3IgaiBpbiB6aXAoKltqIGZvciBqIGluIHppcCgqYSlpZnsqan0tezAsOH1dKWlmeypqfS17MCw4fV07cmV0dXJuW1tbKltjOj1baiBmb3IgaiBpbiB6aXAoKltqIGZvciBqIGluIHppcCgqYSlpZnsqan0tezB9Jns4fV0paWZ7Kmp9LXswfSZ7OH1dLCpjLGNdW2ldLCpiW2ldXVtqLTFdYW5kKGJbMS0oaj5pPGxlbihiKSt+ail8LShqPGk+bGVuKGIpK35qKV1bMS0oajxpPGxlbihiKSt+ail8LShqPmk+bGVuKGIpK35qKV1vciA4KWZvciBqIGluIHJhbmdlKGxlbihiKSldZm9yIGkgaW4gcmFuZ2UobGVuKGIpKV0KCiMjIDIxMwpkZWYgcChhKTpiLGM9ZXZhbChmInsnW2IgZm9yKmIsaW4gemlwKConKjJ9YXsnKWlmeypifS17MH0lc3s4fV0nKjJ9LCIqMiUoKictLSYmJywpKTtyPXJhbmdlKGw6PWxlbihiKSk7cmV0dXJuW1soYltpXStbYywqYyxjXVtpXSlbLShGOj1sK35qKV1hbmQoYlsxLShGPmk8ail8LShqPGk+RildWzEtKGo8aTxGKXwtKGo+aT5GKV1vciA4KWZvciBqIGluIHJdZm9yIGkgaW4gcl0=",
+                "size_uncompressed": 305,
+                "compressed": "I2NvZGluZzpMMQppbXBvcnQgemxpYgpleGVjKHpsaWIuZGVjb21wcmVzcyhieXRlcygnlY6BBsNADIZfJWDubi0rUF3XF4lDaTJh0opcctZ1z77bRqsrGET+L59fOmIYnPpKTkjAvQGBKNxlcGED1AuPgaZ8PGTlFNfpaHS9mSJiQKv+a5t249y35CxYZhE5LZJmRMqL2GrnBIvcUcP1hdSJ3z/JPxKouVlA/Dj1r9OsnN6g9PNX1uqZ3Pfs4xvzFsMLJywiTDEiKSwtOSkp",
+                "size_compressed": 207,
+                "method": "zopfli",
+                "window": -15,
+                "escape_cost": 1
             }
         },
         "public_gold": 223,

@@ -607,8 +607,8 @@ p=lambda g:[[g[1][x]*sum(g[2][x:x+3])%13^8]*3for x in b'']
 p=lambda a,n=[]:a*0!=0and[*map(p,a,a[5:]+n)]or-n%5^3*a
 # 💎 task 237: 67 bytes, gold, https://arcprize.org/play?task=99fa7670
 p=lambda a,c=0:[(b:=0)or[c:=(b:=b or d)for d in r+[c]]for*r,_ in a]
-# 💎 task 238: 216 (313 unzipped) bytes, gold, https://arcprize.org/play?task=9aec4887
-def p(i):m=[[a[0]for a in zip(b,*i)if{*a}-{0,8}]for b in i if{*b}-{0,8}];return[[a<len(m)-1>b>0and((k:=[[a[0]for a in zip(b,*i)if{*a}&{8}]for b in i if{*b}&{8}][a-1][b-1])and m[1-(b>a<len(m)-1-b)|-(b<a>len(m)-1-b)][1-(b<a<len(m)-1-b)|-(b>a>len(m)-1-b)]or k)or m[a][b]for b in range(len(m))]for a in range(len(m))]
+# 💎 task 238: 207 (305 unzipped) bytes, gold, https://arcprize.org/play?task=9aec4887
+def p(a):b=[j for j in zip(*[j for j in zip(*a)if{*j}-{0,8}])if{*j}-{0,8}];return[[[*[c:=[j for j in zip(*[j for j in zip(*a)if{*j}-{0}&{8}])if{*j}-{0}&{8}],*c,c][i],*b[i]][j-1]and(b[1-(j>i<len(b)+~j)|-(j<i>len(b)+~j)][1-(j<i<len(b)+~j)|-(j>i>len(b)+~j)]or 8)for j in range(len(b))]for i in range(len(b))]
 # 💎 task 239: 99 bytes, gold, https://arcprize.org/play?task=9af7a82c
 p=lambda i:[b:=sum(i,[]),*filter(any,zip(*sorted([c:=-b.count(e),e]*-c+[0]*22for e in{*b})))][2::2]
 # 🥈 task 240: 104 vs 99 bytes for gold, https://arcprize.org/play?task=9d9215db
