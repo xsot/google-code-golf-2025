@@ -1,4 +1,7 @@
-# ovs (100 vs 92 bytes for gold)
+# att (94 vs 92 bytes for gold)
+p=lambda i:[*zip(*[u:=[*filter(int,w:=[sum({*r}-{5})for r in i])]]*len(u)*(u>w)or p(zip(*i)))]
+
+### ovs (100 bytes)
 p=lambda i:[*zip(*all(w:=[sum({*r}-{5})for r in i])and p([*zip(*i)])or[w:=[*filter(int,w)]]*len(w))]
 
 ##

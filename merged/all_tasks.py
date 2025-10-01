@@ -464,7 +464,7 @@ def p(g):
  return g
 # 🥈 task 183: 94 vs 93 bytes for gold, https://arcprize.org/play?task=77fdfe62
 def p(g):A=len(g);B=range(2,A-2);return[[g[C][B]%7*g[0-C*2//A][0-B*2//A]for B in B]for C in B]
-# 🥉 task 184: 101 vs 100 bytes for gold, https://arcprize.org/play?task=780d0b14
+# ❌ task 184: 101 vs 100 bytes for gold, https://arcprize.org/play?task=780d0b14
 p=lambda i,k=0,s=[0]*99:[s+0*(s:=[*x])for x in zip(*k or p(i,i))if-~-any(x)*(s:=[*map(max,s,x)])]+[s]
 # 💎 task 185: 138 bytes, gold, https://arcprize.org/play?task=7837ac64
 p=eval(('lambda i:'+'[[sum({r.pop()}&)r,r[1:])]*'*2+'[[r[0]r,*i)if]i if])])]').translate([0,"{*r}-{*i[0]}","zip(","for*r,in "]))
@@ -542,8 +542,8 @@ p=lambda a:a+a[::-1]
 p=lambda g:[l[::-1]+l for l in(g[::-1]+g)*2][:9]
 # 🥉 task 212: 115 vs 105 bytes for gold, https://arcprize.org/play?task=8d510a79
 p=lambda i,k=39:-k*i or[[x[-b]or 5in x[:-b]and 2-x[~b]%5&1-x[(-b<9)-b]for b in range(-9,1)]for x in zip(*p(i,k-1))]
-# 🥉 task 213: 100 vs 92 bytes for gold, https://arcprize.org/play?task=8e1813be
-p=lambda i:[*zip(*all(w:=[sum({*r}-{5})for r in i])and p([*zip(*i)])or[w:=[*filter(int,w)]]*len(w))]
+# 🥉 task 213: 94 vs 92 bytes for gold, https://arcprize.org/play?task=8e1813be
+p=lambda i:[*zip(*[u:=[*filter(int,w:=[sum({*r}-{5})for r in i])]]*len(u)*(u>w)or p(zip(*i)))]
 # 🥇 task 214: 62 bytes, gold, https://arcprize.org/play?task=8e5a5113
 p=lambda a:[b[:4]+(a.pop()[:4]+c)[::-1]for*c,b in[*zip(*a,a)]]
 # 🥉 task 215: 45 vs 42 bytes for gold, https://arcprize.org/play?task=8eb1be9a
@@ -738,8 +738,8 @@ def	p(g):
 	return	g
 # 🥈 task 286: 111 vs 109 bytes for gold, https://arcprize.org/play?task=b782dc8a
 p=lambda i,k=43:-k*i or[*map(lambda*x,t=0:[t:=y or([0,*{*sum(i,[])}-{y,t,8}]*2)[3]for y in x],*p(i,k-1)[::-1])]
-# 🥈 task 287: 58 vs 56 bytes for gold, https://arcprize.org/play?task=b8825c91
-p=lambda*a:a[2:]and max({*a}-{4})or[*map(p,*a,a[0][::-1])]
+# 💎 task 287: 55 bytes, gold, https://arcprize.org/play?task=b8825c91
+p=lambda*a:sum({*a[3:]}-{4})or[*map(p,*a+a,a[0][::-1])]
 # 🥉 task 288: 92 vs 89 bytes for gold, https://arcprize.org/play?task=b8cdaf2b
 def p(i,n=0):
  l=len(i)//2
