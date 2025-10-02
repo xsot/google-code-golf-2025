@@ -1,3 +1,7 @@
+p=lambda a,n=-42:[[max(n,14>>d&b.pop())for d in[0]+b[:0:-1]]for*b,in zip(*n*a or p(a,n+1))]
+
+##
+
 def p(g):
  def t(*I):
   for i in I:
