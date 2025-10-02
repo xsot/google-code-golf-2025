@@ -1,4 +1,7 @@
-# joking (162 vs 160 bytes for gold)
+# att (158 bytes, gold)
+p=lambda i,k=39,z=8:-k*[*zip(*z*[iter(z*[*z*[0],8])])][1:]or p([(s:=1)*[s:=h and(h<9)*(z:=z*2)+s|h for h in x]for x in zip(*i[::-1])],k-1,len({*sum(i,[])})-1)
+
+### joking (162 bytes)
 p=lambda i,k=39,z=8:-k*[x*[0]+[8]+(z+~x)*[0]for x in range(z)]or p([(s:=1)*[s:=h and(h<9)*(z:=z*2)+s|h for h in x]for x in zip(*i[::-1])],k-1,len({*sum(i,[])})-1)
 
 
