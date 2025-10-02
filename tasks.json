@@ -10525,8 +10525,8 @@
         "public_best": 54
     },
     "task330": {
-        "gold": 123,
-        "best": 123,
+        "gold": 122,
+        "best": 122,
         "solutions": {
             "xsot": {
                 "source": "ZGVmIHAobSk6CiBmb3IgaSBpbiByYW5nZSg5OSk6CiAgeiwqcz0wLDtxPShtW3I6PWkvLzEwXVtjOj1pJTEwXT09NSkqWyhyLGMpXQogIHdoaWxlIHE6CiAgIG1bcl1bY109OTsoeSx4KSwqcT1xO3orPTE7cys9KHkseCksCiAgIGZvciBpLGogaW5bKHkseCsxKSwoeSx4LTEpLCh5KzEseCksKHktMSx4KV06CiAgICBpZi0xPGk8MTA+aj4tMTw1PT1tW2ldW2pdOm1baV1bal09OTtxKz0oaSxqKSwKICBmb3IgcixjIGluIHM6bVtyXVtjXT0xKyh6PT02KQogcmV0dXJuIG0KCiMgdmVyeSBzaW1pbGFyIHRvIDM2OSwgYnV0IHNob3J0ZXIgc2luY2UgaW5wdXQgc2l6ZSBpcyBjb25zdGFudAo=",
@@ -10552,10 +10552,10 @@
                 "method": "none"
             },
             "joking": {
-                "source": "cD1sYW1iZGEgaSxrPTc5LHo9MTotayppIG9yIHAoWyhlOj0wKW9yW2U6PXkgYW5kWyh5PDYpKih6Oj16Kjgpb3IgZXx5LHklNy8vNisxXVtrPDFdZm9yIHkgaW4geF1mb3IgeCBpbiB6aXAoKmlbOjotMV0pXSxrLTEpCgojIyAKcD1sYW1iZGEgaSxrPTc5LHo9MTotayppIG9yIHAoWyhlOj0wKW9yW2U6PXkgYW5kWyh5PDYpKih6Oj16KjgpfGV8eSwoeSU3PT00KSsxXVtrPDFdZm9yIHkgaW4geF1mb3IgeCBpbiB6aXAoKmlbOjotMV0pXSxrLTEp",
-                "size_uncompressed": 123,
-                "compressed": "cD1sYW1iZGEgaSxrPTc5LHo9MTotayppIG9yIHAoWyhlOj0wKW9yW2U6PXkgYW5kWyh5PDYpKih6Oj16Kjgpb3IgZXx5LHklNy8vNisxXVtrPDFdZm9yIHkgaW4geF1mb3IgeCBpbiB6aXAoKmlbOjotMV0pXSxrLTEp",
-                "size_compressed": 123,
+                "source": "cD1sYW1iZGEgaSxrPTc5LHo9MTotayppIG9yIHAoWyhlOj0xKSpbZTo9eSBhbmRbKHk8NikqKHo6PXoqOCl8ZXx5LCh5JTc9PTQpKzFdW2s8MV1mb3IgeSBpbiB4XWZvciB4IGluIHppcCgqaVs6Oi0xXSldLGstMSkKCiMjCnA9bGFtYmRhIGksaz03OSx6PTE6LWsqaSBvciBwKFsoZTo9MClvcltlOj15IGFuZFsoeTw2KSooejo9eio4KW9yIGV8eSx5JTcvLzYrMV1bazwxXWZvciB5IGluIHhdZm9yIHggaW4gemlwKCppWzo6LTFdKV0say0xKQ==",
+                "size_uncompressed": 122,
+                "compressed": "cD1sYW1iZGEgaSxrPTc5LHo9MTotayppIG9yIHAoWyhlOj0xKSpbZTo9eSBhbmRbKHk8NikqKHo6PXoqOCl8ZXx5LCh5JTc9PTQpKzFdW2s8MV1mb3IgeSBpbiB4XWZvciB4IGluIHppcCgqaVs6Oi0xXSldLGstMSk=",
+                "size_compressed": 122,
                 "method": "none"
             }
         },
