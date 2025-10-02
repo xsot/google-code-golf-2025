@@ -3804,7 +3804,7 @@
     },
     "task121": {
         "gold": 89,
-        "best": 95,
+        "best": 92,
         "solutions": {
             "ovs": {
                 "source": "cD1sYW1iZGEgZyxrPTM5Oltbc3VtKHsqZ1swXSp2fSlmb3IgdiBpbiByXWZvciByIGluLWsqZ11vciBwKFsqemlwKCpnWyg4aW4gZ1stMl0pLTI6Oi0xXSldLGstMSkKCiMjCgpwPWxhbWJkYSBnLGs9Mzk6W1tzdW0oeypnWzBdKnZ9KWZvciB2IGluIHJdZm9yIHIgaW4taypnXW9yIHAoWyp6aXAoKmdbMS0oOGluIGdbMV0pOjIra3wxXSldLGstMSkKZGVmIHAoZyk6eD1zdW0oZyxbXSkuaW5kZXgoOCktMTQ7Qz1bZ1t4JTEzOl1bOjNdZm9yIGcgaW4gZ1t4Ly8xMzpdWzozXV07Q1sxXVsxXT1tYXgoQ1swXSk7cmV0dXJuIEMK",
@@ -3818,6 +3818,13 @@
                 "size_uncompressed": 96,
                 "compressed": "cD1sYW1iZGEgZyxrPS0zOTpbW3N1bSh7KmdbMF0qdn0pZm9yIHYgaW4gcl1mb3IgciBpbiBrKmddb3IgcChbKnppcCgqZ1soOGluIGdbLTJdKS0yOjotMV0pXSxrKzEp",
                 "size_compressed": 96,
+                "method": "none"
+            },
+            "joking": {
+                "source": "ZGVmIHAoZyk6CiBmb3IgXyBpbiBnKjQ6KmcsPW1hcChsaXN0LHppcCgqZ1soOGluIGdbLTJdKS0yOjotMV0pKQogZ1sxXVsxXT1tYXgoZ1swXSk7cmV0dXJuIGc=",
+                "size_uncompressed": 92,
+                "compressed": "ZGVmIHAoZyk6CiBmb3IgXyBpbiBnKjQ6KmcsPW1hcChsaXN0LHppcCgqZ1soOGluIGdbLTJdKS0yOjotMV0pKQogZ1sxXVsxXT1tYXgoZ1swXSk7cmV0dXJuIGc=",
+                "size_compressed": 92,
                 "method": "none"
             }
         },
@@ -5606,7 +5613,7 @@
     },
     "task176": {
         "gold": 64,
-        "best": 74,
+        "best": 64,
         "solutions": {
             "ovs": {
                 "source": "cD1sYW1iZGEgZzpbWyptYXAobWF4LCgoWzRdKjMrWzBdKjkpKjkpW2ElODo6YSUzXSxnW2ElNV0pXWZvciBhIGluIGIiNylhIl0=",
@@ -5620,6 +5627,13 @@
                 "size_uncompressed": 74,
                 "compressed": "cD1sYW1iZGEgZzpbWyptYXAobWF4LCgoWzRdKjMrWzBdKjkpKjkpW2ElODo6YSUzXSxnW2ElNV0pXWZvciBhIGluIGIiNylhIl0=",
                 "size_compressed": 74,
+                "method": "none"
+            },
+            "joking": {
+                "source": "cD1sYW1iZGEgZyxyPTU6W1tyLShyOj1yLXgpb3ItciU2JjRmb3IgeCBpbiBzXSoocjo9MSlmb3IgcyBpbiBnXQ==",
+                "size_uncompressed": 64,
+                "compressed": "cD1sYW1iZGEgZyxyPTU6W1tyLShyOj1yLXgpb3ItciU2JjRmb3IgeCBpbiBzXSoocjo9MSlmb3IgcyBpbiBnXQ==",
+                "size_compressed": 64,
                 "method": "none"
             }
         },
@@ -6908,7 +6922,7 @@
         "public_best": 56
     },
     "task219": {
-        "gold": 257,
+        "gold": 245,
         "best": 276,
         "solutions": {
             "att": {
@@ -6948,7 +6962,7 @@
                 "escape_cost": 0
             }
         },
-        "public_gold": 257,
+        "public_gold": 245,
         "public_best": 277
     },
     "task220": {
