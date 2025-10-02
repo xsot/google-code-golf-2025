@@ -1,4 +1,10 @@
-# ovs (135 vs 134 bytes for gold)
+# joking (123 bytes, gold)
+p=lambda i,k=79,z=1:-k*i or p([(e:=0)or[e:=y and[(y<6)*(z:=z*8)or e|y,y%7//6+1][k<1]for y in x]for x in zip(*i[::-1])],k-1)
+
+## 
+p=lambda i,k=79,z=1:-k*i or p([(e:=0)or[e:=y and[(y<6)*(z:=z*8)|e|y,(y%7==4)+1][k<1]for y in x]for x in zip(*i[::-1])],k-1)
+
+### ovs (135 bytes)
 p=lambda i,k=179:-k*i or p([[[k>78and 1<<4*(k:=k-1)or e|y,118%~(y%15)%3][k<1]*(y>0)for y,e in zip(x,[0]+x)]for*x,in zip(*i[::-1])],k-1)
 
 ### combined (139 bytes)

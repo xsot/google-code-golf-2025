@@ -1,4 +1,7 @@
-# mwi (112 bytes, gold)
+# joking (108 bytes, gold)
+p=lambda g,i=5,l=39:-l*g or p([*zip(*(a:=eval(str(g).replace(l//4*"5, ",l//4*"16%i,"))))][::-1],i+(g>a),l-1)
+
+### mwi (112 bytes)
 p=lambda g,i=2,l=39:-l*g or p([*zip(*(a:=eval(str(g).replace(l//4*"5, ",l//4*f"{i*3%5},"))))][::-1],i+(g>a),l-1)
 
 ### ovs (150 bytes)
