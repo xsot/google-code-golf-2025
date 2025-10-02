@@ -1,21 +1,42 @@
-# joking (257 (402 unzipped) bytes, gold)
+# joking (249 (387 unzipped) bytes, gold)
 def p(g):
- G=g[-5:]
- for s in range(1,53):G=[[*s]for s in zip(*G)if{*s}-{0,4}];g=[[*s]for s in zip(*g[(4in g[-1])-2::-1])]
- for s in range(1,53):
-  for y in range(1,53):
-   for x in range(1,53):
-    if[0for Y in range(len(G)*s*all(g[Y][X]in[0,((G+[[]]*53)[(Y-y)//s]+[4]*53)[(X-x)//s]]for Y in range(len(g))for X in range(len(g[0]))))for X in range(len(G[0])*s)for g[Y+y][X+x]in[G[Y//s][X//s]]]:return g
+ G=g
+ for s in G*4:G=[[*s]for s in zip(*G[-5:])if{*s}-{0,4}];g=[[*s]for s in zip(*g[(4in g[-1])-2::-1])]
+ for s,r in enumerate(g):
+  if[1for y,r in enumerate(g)for x,r in enumerate(s*r)for Y,r in enumerate(s*G*all(g in[0,((G+32*[[]])[(Y-y)//s]+32*[4])[(X-x)//s]]for Y,g in enumerate(g)for X,g in enumerate(g)))for X,r in enumerate(s*r)for g[Y+y][X+x]in[G[Y//s][X//s]]]:return g
 
 
-## faster for +2b
+## experimenting with more specific zip replacing
 def p(g):
- G=g[-5:]
- for s in g*4:G=[[*s]for s in zip(*G)if{*s}-{0,4}];g=[[*s]for s in zip(*g[(4in g[-1])-2::-1])]
- for s in range(1,20):
-  for y in range(1,20):
-   for x in range(1,20):
-    if[0for Y in range(len(G)*s*all(g[Y][X]in[0,((G+[[]]*20)[(Y-y)//s]+[4]*20)[(X-x)//s]]for Y in range(len(g))for X in range(len(g[0]))))for X in range(len(G[0])*s)for g[Y+y][X+x]in[G[Y//s][X//s]]]:return g
+ G=g
+ for s in G*4:G=[[*s]for s in zip(*G[#['~4','-5']#:])if{*s}-{0,4}];g=[[*s]for s in zip(*g[(4in g[-1])-2::-1])]
+ for s,r in enumerate(g):
+  if[#range(7)#for y,r in enumerate(g)for x,r in enumerate(s*r)for Y,r in enumerate(s*all(g in[0,((G+#range(20,60)#*[[]])[(Y-y)//s]+#[prev_vals[-1]]#*[4])[(X-x)//s]]for Y,g in enumerate(g)for X,g in enumerate(g))*G)for X,r in enumerate(s*r)for g[Y+y][X+x]in[G[Y//s][X//s]]]:return g
+
+## parser
+totals = {}
+h = {}
+
+def zip_replace(src,target,prev_vals = []):
+ if "#" in src:
+    z = re.search(r"#([^#]+)#", src)[1]
+    a = 0
+    if z not in totals: totals[z] = {}
+    for t in eval(z):
+        l = zip_replace(re.sub(r"#[^#]+#", str(t), src, 1), target, prev_vals + [t])
+        a += l
+        if t not in totals[z]: totals[z][t] = 0
+        totals[z][t] += l
+    return a
+ else:
+    zipped_src = compress_with_zlib(src.encode())
+    if len(zipped_src) <= target:
+        if len(zipped_src) not in h:
+         print(len(zipped_src))
+         h[len(zipped_src)] = src
+         print(src)
+        return 1
+    return 0
 
 ### xsot (274 (417 unzipped) bytes)
 def p(g):
