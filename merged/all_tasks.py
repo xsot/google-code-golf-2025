@@ -530,14 +530,14 @@ def p(g):
    if(c!=M)>sum(sum(A[1+C:C+E-1])for A in g[B+1:B+D-1]):
     for g[B][C:C+E]in A:B+=1
     return g
-# 🥉 task 209: 274 (417 unzipped) vs 273 bytes for gold, https://arcprize.org/play?task=8a004b2b
+# 💎 task 209: 257 (402 unzipped) bytes, gold, https://arcprize.org/play?task=8a004b2b
 def p(g):
  G=g[-5:]
- for s in range(20):G=[x for x in zip(*G)if{*x}-{b:=0,4}];g=[[*x]for x in zip(*g)if b|(b:=b^(4in x))]
- for s in range(20):
-  for y in range(20):
-   for x in range(20):
-    if all(g[Y][X]in[0,4-4*(len(G)*s>Y-y>-1<X-x<len(G[0])*s)or G[(Y-y)//s][(X-x)//s]]for Y in range(len(g))for X in range(len(g[0]))):[0for Y in range(len(G)*s)for X in range(len(G[0])*s)for g[Y+y][X+x]in[G[Y//s][X//s]]];return g
+ for s in range(1,53):G=[[*s]for s in zip(*G)if{*s}-{0,4}];g=[[*s]for s in zip(*g[(4in g[-1])-2::-1])]
+ for s in range(1,53):
+  for y in range(1,53):
+   for x in range(1,53):
+    if[0for Y in range(len(G)*s*all(g[Y][X]in[0,((G+[[]]*53)[(Y-y)//s]+[4]*53)[(X-x)//s]]for Y in range(len(g))for X in range(len(g[0]))))for X in range(len(G[0])*s)for g[Y+y][X+x]in[G[Y//s][X//s]]]:return g
 # 🥇 task 210: 20 bytes, gold, https://arcprize.org/play?task=8be77c9e
 p=lambda a:a+a[::-1]
 # 🥇 task 211: 48 bytes, gold, https://arcprize.org/play?task=8d5021e8
@@ -880,8 +880,8 @@ p=lambda i:[i:=[[(i[x][y]>1)*i[x][y]or(a<=x+n<n*4+a)*(b<=y+n<n*4+b)*3or 9in[*zip
 p=lambda i:[*map(f:=lambda*x,b=0:[y|(y+1in{*x[:b]}&{*x[(b:=b+1):]})*8for y in x],*map(f,*i))]
 # 💎 task 351: 66 bytes, gold, https://arcprize.org/play?task=dc0a314f
 p=lambda i:[r[:5]for x in[*i]if(r:=i.pop()[~[*x,3].index(3)::-1])]
-# 🥇 task 352: 84 bytes, gold, https://arcprize.org/play?task=dc1df850
-p=lambda i:[*eval("map(lambda*x,t=0:[max(0<t<3,t:=y)for y in x][::-1],*"*4+"i))))")]
+# 💎 task 352: 82 bytes, gold, https://arcprize.org/play?task=dc1df850
+p=lambda i:[i:=[[x.pop()or[0]<x[-1:]<[3]for _ in i]for*x,in zip(*i)]for _ in i][3]
 # 🥉 task 353: 104 vs 92 bytes for gold, https://arcprize.org/play?task=dc433765
 p=lambda a,n=-3,i=0:n*a or 3in a[i]and p([*zip(a.pop(('4'in'%s'%a[:i])*i-1),*a[::-1])],n+1)or p(a,n,i+1)
 # 🥇 task 354: 96 bytes, gold, https://arcprize.org/play?task=ddf7fa4f
