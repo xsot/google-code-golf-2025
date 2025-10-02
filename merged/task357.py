@@ -1,5 +1,5 @@
-# ovs (90 vs 86 bytes for gold)
-p=lambda m,x=1,d=1:m and p(m,x:=x-d,x%(l:=len(m.pop())-1)and d or-d)+[[8]*x+[1]+[8]*(l-x)]
+# ovs (86 bytes, gold)
+p=lambda m,x=1,d=1:m and p(m,x:=x-d*2+1,1>>x*(l:=len(m.pop())+~x)^d)+[[8]*x+[1]+[8]*l]
 
 ### xsot (92 bytes)
 p=lambda m,x=1,d=-1:m and p(m[1:],x:=x+d,x%(l:=len(m[0])-1)and d or-d)+[[8]*x+[1]+[8]*(l-x)]

@@ -11266,7 +11266,7 @@
     },
     "task353": {
         "gold": 92,
-        "best": 104,
+        "best": 97,
         "solutions": {
             "att": {
                 "source": "cD1sYW1iZGEgYSxuPS0zLGk9MDpuKmEgb3IgM2luIGFbaV1hbmQgcChbKnppcChhLnBvcCgoJzQnaW4nJXMnJWFbOmldKSppLTEpLCphWzo6LTFdKV0sbisxKW9yIHAoYSxuLGkrMSk=",
@@ -11294,6 +11294,13 @@
                 "size_uncompressed": 114,
                 "compressed": "aW1wb3J0IHJlO3A9bGFtYmRhIGksaz0zOi1rKmkgb3IgcChldmFsKHJlLnN1YihmIjMoLiVzLikwKD89Lio0KSIle2xlbihpKSozfSxyIjBcMSAzIixzdHIoWyp6aXAoKmkpXVs6Oi0xXSkpKSxrLTEp",
                 "size_compressed": 114,
+                "method": "none"
+            },
+            "ovs": {
+                "source": "cD1sYW1iZGEgYSxuPS0zOm4qYSBvciBwKFsqemlwKGEucG9wKCgoSTo9WyptYXAobWF4LGEpLDNdLmluZGV4KSg0KTxJKDMpKSpJKDMpLTEpLCphWzo6LTFdKV0sbisxKQo=",
+                "size_uncompressed": 97,
+                "compressed": "cD1sYW1iZGEgYSxuPS0zOm4qYSBvciBwKFsqemlwKGEucG9wKCgoSTo9WyptYXAobWF4LGEpLDNdLmluZGV4KSg0KTxJKDMpKSpJKDMpLTEpLCphWzo6LTFdKV0sbisxKQ==",
+                "size_compressed": 97,
                 "method": "none"
             }
         },
@@ -11398,13 +11405,13 @@
     },
     "task357": {
         "gold": 86,
-        "best": 90,
+        "best": 86,
         "solutions": {
             "ovs": {
-                "source": "cD1sYW1iZGEgbSx4PTEsZD0xOm0gYW5kIHAobSx4Oj14LWQseCUobDo9bGVuKG0ucG9wKCkpLTEpYW5kIGQgb3ItZCkrW1s4XSp4K1sxXStbOF0qKGwteCldCg==",
-                "size_uncompressed": 90,
-                "compressed": "cD1sYW1iZGEgbSx4PTEsZD0xOm0gYW5kIHAobSx4Oj14LWQseCUobDo9bGVuKG0ucG9wKCkpLTEpYW5kIGQgb3ItZCkrW1s4XSp4K1sxXStbOF0qKGwteCld",
-                "size_compressed": 90,
+                "source": "cD1sYW1iZGEgbSx4PTEsZD0xOm0gYW5kIHAobSx4Oj14LWQqMisxLDE+PngqKGw6PWxlbihtLnBvcCgpKSt+eCleZCkrW1s4XSp4K1sxXStbOF0qbF0K",
+                "size_uncompressed": 86,
+                "compressed": "cD1sYW1iZGEgbSx4PTEsZD0xOm0gYW5kIHAobSx4Oj14LWQqMisxLDE+PngqKGw6PWxlbihtLnBvcCgpKSt+eCleZCkrW1s4XSp4K1sxXStbOF0qbF0=",
+                "size_compressed": 86,
                 "method": "none"
             },
             "xsot": {
