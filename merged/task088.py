@@ -1,4 +1,7 @@
-# ovs (107 vs 101 bytes for gold)
+# joking (106 vs 101 bytes for gold)
+p=lambda i,k=79:[[v%~v&i[0][0]for v in r[1:-1]]for r in-k*i[1:-1]]or p([*zip(*i[1-any(i[0]):])][::-1],k-1)
+
+### ovs (107 bytes)
 p=lambda i,k=79:[[v and i[0][0]for v in r[1:-1]]for r in-k*i[1:-1]]or p([*zip(*i[1-any(i[0]):])][::-1],k-1)
 
 ## this can probably shortened by doing the color replacement during the iteration, here is an attempt 2 bytes longer:
