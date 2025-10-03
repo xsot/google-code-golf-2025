@@ -599,7 +599,7 @@ def p(g):
     for n,p in e(s*all((2*(2*g)[n+y])[m+x]==2*(2!=p)for n,p in e(s)for m,p in e(p))):g[n+y][x:x+3],*s=p,
   s[:]=zip(*s[::-1])
  return g
-# 💎 task 234: 116 bytes, gold, https://arcprize.org/play?task=98cf29f8
+# 🥇 task 234: 116 bytes, gold, https://arcprize.org/play?task=98cf29f8
 p=lambda i,k=3,*h:-k*i or p([*zip(*([x for x in i if len(h:={*h,*x})-3+sum(x)-max(x)]+i[:1]*13)[len(i)-1::-1])],k-1)
 # 🥇 task 235: 61 bytes, gold, https://arcprize.org/play?task=995c5fa3
 p=lambda g:[[g[1][x]*sum(g[2][x:x+3])%13^8]*3for x in b'']
@@ -638,8 +638,8 @@ import re
 p=lambda i:[i:=eval(re.sub("5((.{35})+(?=.{66}2)|[0, ]+(?=, 2))",r"0\1+5",str([*zip(*i[::-1])])))for _ in i][7]
 # ❌ task 251: 91 vs 89 bytes for gold, https://arcprize.org/play?task=a5313dff
 p=lambda a,n=-42:[[max(n,14>>d&b.pop())for d in[0]+b[:0:-1]]for*b,in zip(*n*a or p(a,n+1))]
-# 🥇 task 252: 57 bytes, gold, https://arcprize.org/play?task=a5f85a15
-p=lambda a:[(i:=1)*[(i:=-i)*4%(c+4)for c in b]for b in a]
+# 💎 task 252: 53 bytes, gold, https://arcprize.org/play?task=a5f85a15
+p=lambda g,v=0:g*0!=0and[*map(p,g,[-1,4]*9)]or-g//v&v
 # 🥉 task 253: 133 vs 129 bytes for gold, https://arcprize.org/play?task=a61ba2ce
 def p(g):f=sum(g,[]);return[[(i:=j-71)*0+max(v*(f[(i:=i+1):i+2]==[v,v])for v in f)for j in R]for R in b"9988 9``8 S``R SSRR".split()]
 # 🥉 task 254: 95 vs 84 bytes for gold, https://arcprize.org/play?task=a61f2674
@@ -798,8 +798,8 @@ p=lambda a:eval(str(a).replace(*'75'))
 p=lambda a,*n:[b for b in zip(*n or p(a,*a))if min(c:=sum(a,[]),key=c.count)in b]
 # 🥇 task 311: 32 bytes, gold, https://arcprize.org/play?task=c9e6f938
 p=lambda a:[r+r[::-1]for r in a]
-# ❌ task 312: 45 vs 44 bytes for gold, https://arcprize.org/play?task=c9f8e694
-p=lambda a:[[e and r[0]for e in r]for r in a]
+# 🥇 task 312: 44 bytes, gold, https://arcprize.org/play?task=c9f8e694
+p=lambda a:[[e%~e&r[0]for e in r]for r in a]
 # 🥈 task 313: 64 vs 63 bytes for gold, https://arcprize.org/play?task=caa06a1f
 p=lambda g,x=1:[(g[x:=x^1][1:3+l//12]*9)[:l]for l in map(len,g)]
 # 💎 task 314: 82 bytes, gold, https://arcprize.org/play?task=cbded52d
