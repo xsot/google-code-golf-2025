@@ -909,8 +909,8 @@ def p(g):
  return g
 # 🥇 task 364: 155 bytes, gold, https://arcprize.org/play?task=e509e548
 p=lambda i,k=39:-k*i or p([[[y.bit_count()*5%14%9,y and(u*t>0)<<k%4+2|y|u][k>0]for y,t,u in zip(x,[0]+x,s)]for*x,s in zip(*i,[[0]*99,*zip(*i)])][::-1],k-1)
-# 🥉 task 365: 124 vs 111 bytes for gold, https://arcprize.org/play?task=e50d258f
-exec(f'p=lambda i:max((-{"str(s:=[x[a:10-b]for x in i[c:10-d]]).count(%r),"*3}s){"for %s in range(9)"*4})[3]'%(*"021abcd",))
+# 🥉 task 365: 119 vs 111 bytes for gold, https://arcprize.org/play?task=e50d258f
+exec(f'p=lambda i:max((-{"str(s:=[x[a:b]for x in i[c:d]]).count(%r),"*3}s){"for %s in range(11)"*4})[3]'%(*"021abcd",))
 # 💎 task 366: 309 (493 unzipped) bytes, gold, https://arcprize.org/play?task=e6721834
 def p(g):
  r,*s=sum(g,[]),g;*r,m,b,B=sorted({*r},key=r.count)

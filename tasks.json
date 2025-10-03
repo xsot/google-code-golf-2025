@@ -11721,13 +11721,13 @@
     },
     "task365": {
         "gold": 111,
-        "best": 124,
+        "best": 119,
         "solutions": {
             "ovs": {
-                "source": "cD1sYW1iZGEgaTptYXgoKC0ocjo9c3RyKHA6PVt4W2ElOToxMC1hLy85JTldZm9yIHggaW4gaVthLy84MSU5OjEwLWEvLzcyOV1dKS5jb3VudCkoIjAiKSwqbWFwKHIsIjIxIikscClmb3IgYSBpbiByYW5nZSg5Kio0KSlbM10K",
-                "size_uncompressed": 128,
-                "compressed": "cD1sYW1iZGEgaTptYXgoKC0ocjo9c3RyKHA6PVt4W2ElOToxMC1hLy85JTldZm9yIHggaW4gaVthLy84MSU5OjEwLWEvLzcyOV1dKS5jb3VudCkoIjAiKSwqbWFwKHIsIjIxIikscClmb3IgYSBpbiByYW5nZSg5Kio0KSlbM10=",
-                "size_compressed": 128,
+                "source": "ZXhlYyhmJ3A9bGFtYmRhIGk6bWF4KCgteyJzdHIoczo9W3hbYTpiXWZvciB4IGluIGlbYzpkXV0pLmNvdW50KCVyKSwiKjN9cyl7ImZvciAlcyBpbiByYW5nZSgxMSkiKjR9KVszXSclKCoiMDIxYWJjZCIsKSkKCiMjCgpwPWxhbWJkYSBpOm1heCgoLShyOj1zdHIocDo9W3hbYSU5OjEwLWEvLzklOV1mb3IgeCBpbiBpW2EvLzgxJTk6MTAtYS8vNzI5XV0pLmNvdW50KSgiMCIpLCptYXAociwiMjEiKSxwKWZvciBhIGluIHJhbmdlKDkqKjQpKVszXQo=",
+                "size_uncompressed": 119,
+                "compressed": "ZXhlYyhmJ3A9bGFtYmRhIGk6bWF4KCgteyJzdHIoczo9W3hbYTpiXWZvciB4IGluIGlbYzpkXV0pLmNvdW50KCVyKSwiKjN9cyl7ImZvciAlcyBpbiByYW5nZSgxMSkiKjR9KVszXSclKCoiMDIxYWJjZCIsKSk=",
+                "size_compressed": 119,
                 "method": "none"
             },
             "xsot": {
@@ -11891,6 +11891,13 @@
                 "size_uncompressed": 114,
                 "compressed": "cD1sYW1iZGEgbSxpPTk1Oi1pKm0gb3JbKnppcCgqZXZhbChzdHIocChtLGktMSlbOjotMV0pLnJlcGxhY2UoIjIzMjAsLCwsICAgIDEzMyJbaSU1Ojo0XSwiMTIxMywsLCwxMjEiW2klNTo6NF0pKSld",
                 "size_compressed": 114,
+                "method": "none"
+            },
+            "ovs": {
+                "source": "cD1sYW1iZGEgaSxrPTExLFY9MjA6LWsqaSBvciBwKFtbW3Z8cSoocSE9NTx2KW9yKFY6PVYqNjQpfDQsdiU3XVtrPDFdZm9yIHEsdiBpbiB6aXAoWzVdK3IscildWzo6LTFdZm9yKnIsaW4gemlwKCppKV0say0xKQo=",
+                "size_uncompressed": 121,
+                "compressed": "cD1sYW1iZGEgaSxrPTExLFY9MjA6LWsqaSBvciBwKFtbW3Z8cSoocSE9NTx2KW9yKFY6PVYqNjQpfDQsdiU3XVtrPDFdZm9yIHEsdiBpbiB6aXAoWzVdK3IscildWzo6LTFdZm9yKnIsaW4gemlwKCppKV0say0xKQ==",
+                "size_compressed": 121,
                 "method": "none"
             }
         },
