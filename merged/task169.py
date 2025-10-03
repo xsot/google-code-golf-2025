@@ -1,4 +1,7 @@
-# joking (118 bytes, gold)
+# att (117 bytes, gold)
+p=lambda i,k=39,t=1:-k*i or[(e:=0)or[e:=[y%2*(t:=t*16),-y%5,y%~y&e|y][k//-38]for y in i]for i[::-1]in zip(*p(i,k-1))]
+
+### joking (118 bytes)
 p=lambda i,k=39,t=1:-k*i or[(e:=0)or[e:=[y%2*(t:=t*16),-y%5,y%~y&e|y][k//-38]for y in x]for*x,in zip(*p(i,k-1)[::-1])]
 
 ##
