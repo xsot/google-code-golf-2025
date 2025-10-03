@@ -1,0 +1,2 @@
+# zip fiddling
+def p(g):E=g.index(min(g,key=set))+1;c={j*1j+i:g for j,g in enumerate(g[::E])for i,g in enumerate(g[::E])};return[[[g or[c[k:=j//E*1j+i//E],*[c[u+k-K]for K in c if(c[K]==c[u])*2>abs(k-K)]][-1]for i,g in enumerate(g)]for j,g in enumerate(g)]for u in c if all(c.get(u+1j**j)for j,g in enumerate(g))][-1]

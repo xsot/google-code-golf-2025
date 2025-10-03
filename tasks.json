@@ -2555,8 +2555,8 @@
         "public_best": 123
     },
     "task080": {
-        "gold": 250,
-        "best": 250,
+        "gold": 232,
+        "best": 232,
         "solutions": {
             "ovs": {
                 "source": "ZGVmIHAoZyk6ZT1lbnVtZXJhdGU7RT1nLmluZGV4KG1pbihnLGtleT1zZXQpKSsxO2M9e2kqMWorajpWIGZvciBpLEEgaW4gZShnWzo6RV0pZm9yIGosViBpbiBlKEFbOjpFXSl9O3JldHVybltbW3kgb3JbY1trOj1hLy9FKjFqK3EvL0VdLCpbY1t1K2stS11mb3IgSyBpbiBjIGlmKGNbS109PWNbdV0pKjI+YWJzKGstSyldXVstMV1mb3IgcSx5IGluIGUoYildZm9yIGEsYiBpbiBlKGcpXWZvciB1IGluIGMgaWYgYWxsKGMuZ2V0KHUrMWoqKlApZm9yIFAsXyBpbiBlKGcpKV1bMF0K",
@@ -2581,6 +2581,15 @@
                 "size_uncompressed": 300,
                 "compressed": "I2NvZGluZzpMMQppbXBvcnQgemxpYgpleGVjKHpsaWIuZGVjb21wcmVzcyhieXRlcygnXY9JDsMgDEWvwhIIHdIlFb2I5QUVpiIDiQhIrarevRnURbqy9J/9bDvybORF6GjKMURHT96HyItq6WUmykJU9dWady/rpmq0Z35IrFfEQmQUS0/JZuIFtI4oFtYov2e0sc81US4pAkDLhgQWJm2G0yku4m6uqOQcumo6JFxEadFYFjy3kNCYmaGQl5u9T3zuEYhwqNfOTrX7lVms+aDy35lb7n5mZruO2+ODMndV3UgZ1heCGv/nBMIZvycsIkwxIiksLTkpKQ==",
                 "size_compressed": 250,
+                "method": "zlib",
+                "window": -9,
+                "escape_cost": 0
+            },
+            "joking": {
+                "source": "IyB6aXAgZmlkZGxpbmcKZGVmIHAoZyk6RT1nLmluZGV4KG1pbihnLGtleT1zZXQpKSsxO2M9e2oqMWoraTpnIGZvciBqLGcgaW4gZW51bWVyYXRlKGdbOjpFXSlmb3IgaSxnIGluIGVudW1lcmF0ZShnWzo6RV0pfTtyZXR1cm5bW1tnIG9yW2Nbazo9ai8vRSoxaitpLy9FXSwqW2NbdStrLUtdZm9yIEsgaW4gYyBpZihjW0tdPT1jW3VdKSoyPmFicyhrLUspXV1bLTFdZm9yIGksZyBpbiBlbnVtZXJhdGUoZyldZm9yIGosZyBpbiBlbnVtZXJhdGUoZyldZm9yIHUgaW4gYyBpZiBhbGwoYy5nZXQodSsxaioqailmb3IgaixnIGluIGVudW1lcmF0ZShnKSldWy0xXQ==",
+                "size_uncompressed": 301,
+                "compressed": "I2NvZGluZzpMMQppbXBvcnQgemxpYgpleGVjKHpsaWIuZGVjb21wcmVzcyhieXRlcygidY5BDgIhDEWvwpLCqMElBi9CusBMMdUZxlRMNMa7y4xxp6sm/7Xvt6esLprBU+A1l57ueuSiuTvTI1ypAli3k/Csxp1s9qzyJKp2rLgoKreRJFXSHL0nhJnlP+y1E6o3KTFGVpNEiZMPdbOhRdwmdqaFyU6rgrOozBpRnLXEgiE0hmC2+3S46rYDiHHl8Hcl4O83P3n6mlUaBi3rI1WdrDsZU+HPHSxlbyIsIkwxIiksLTkpKQ==",
+                "size_compressed": 232,
                 "method": "zlib",
                 "window": -9,
                 "escape_cost": 0
@@ -7495,7 +7504,7 @@
         "public_best": 297
     },
     "task234": {
-        "gold": 116,
+        "gold": 115,
         "best": 116,
         "solutions": {
             "combined_solutions": {
@@ -7513,7 +7522,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 116,
+        "public_gold": 115,
         "public_best": 120
     },
     "task235": {
