@@ -599,8 +599,8 @@ def p(g):
     for n,p in e(s*all((2*(2*g)[n+y])[m+x]==2*(2!=p)for n,p in e(s)for m,p in e(p))):g[n+y][x:x+3],*s=p,
   s[:]=zip(*s[::-1])
  return g
-# 🥇 task 234: 116 bytes, gold, https://arcprize.org/play?task=98cf29f8
-p=lambda i,k=3,*h:-k*i or p([*zip(*([x for x in i if len(h:={*h,*x})-3+sum(x)-max(x)]+i[:1]*13)[len(i)-1::-1])],k-1)
+# 💎 task 234: 109 bytes, gold, https://arcprize.org/play?task=98cf29f8
+p=lambda i:[i:=[*zip(*(i[:1]*11+[x for x in i if{sum(x),0}^{*x+max(i,key=any)}])[:~len(i):-1])]for _ in i][3]
 # 🥇 task 235: 61 bytes, gold, https://arcprize.org/play?task=995c5fa3
 p=lambda g:[[g[1][x]*sum(g[2][x:x+3])%13^8]*3for x in b'']
 # 🥇 task 236: 54 bytes, gold, https://arcprize.org/play?task=99b1bc43
