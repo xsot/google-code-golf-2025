@@ -28,7 +28,7 @@ def zip_replace(src,target,prev_vals = []):
         totals[z][t] += l
     return a
  else:
-    zipped_src = compress_with_zlib(src.encode())
+    zipped_src, _ = compress(src.encode())
     if len(zipped_src) <= target:
         if len(zipped_src) not in h:
          print(len(zipped_src))
