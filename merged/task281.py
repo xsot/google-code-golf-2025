@@ -1,4 +1,4 @@
-# ovs (145 bytes, gold)
+# ovs (145 vs 138 bytes for gold)
 import re
 p=lambda i,k=39:-k*i or p(eval(re.sub("(\((?=[^)]+[1-9])[^)]+., )(\([^)]+.), \((?=.*8)[08, ]+\)",r"\1\1\2",str([*zip(*i[::-1])]))),k-1)
 
