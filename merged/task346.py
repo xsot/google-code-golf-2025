@@ -1,18 +1,17 @@
-# att (68 vs 58 bytes for gold)
-p=lambda i:[max([n]for n in sum(i,[])if str(i).count(f"{n}, "*3)<2)]
+# att (52 bytes, gold)
+p=lambda a:[[min(b:=sum(a[1:-1],a[3]),key=b.count)]]
 
 ##
-p=lambda i:[max((str(i).count(f"{n}, "*3)<2)*[n]for n in sum(i,[]))]
-p=lambda i:[[n]for n in{*sum(i,[])}if(str(i).count(f"{n}, "*3)<2)*n]
+p=lambda a:[[min(b:=sum(a+a[1:8],a[2]),key=b.count)]]
 
-### mwi (tied, 68 bytes)
+### mwi (68 bytes)
 p=lambda i:[max([n]for n in sum(i,[])if str(i).count(f"{n}, "*3)<2)]
 
 ##
 p=lambda i:[[n for n in{*sum(i,[])}if n>str(i).count(f"{n}, "*3)<2]]
 p=lambda i:[max([str(i).count(f"{n}, "*3)>1or n]for n in sum(i,[]))]
 
-### combined (tied, 68 bytes)
+### combined (68 bytes)
 p=lambda i:[max([n]for n in sum(i,[])if str(i).count(f"{n}, "*3)<2)]
 
 ### xsot (111 bytes)

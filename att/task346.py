@@ -1,5 +1,4 @@
-p=lambda i:[max([n]for n in sum(i,[])if str(i).count(f"{n}, "*3)<2)]
+p=lambda a:[[min(b:=sum(a[1:-1],a[3]),key=b.count)]]
 
 ##
-p=lambda i:[max((str(i).count(f"{n}, "*3)<2)*[n]for n in sum(i,[]))]
-p=lambda i:[[n]for n in{*sum(i,[])}if(str(i).count(f"{n}, "*3)<2)*n]
+p=lambda a:[[min(b:=sum(a+a[1:8],a[2]),key=b.count)]]

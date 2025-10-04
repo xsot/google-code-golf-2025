@@ -1,10 +1,16 @@
-# joking (83 vs 74 bytes for gold)
+# att (83 vs 74 bytes for gold)
+import re
+p=lambda i:eval(re.sub(r"((.)(, \2)*), 0(?=.*\2.*].*\2)",r"0,\1",str(i)))
+
+##
+import re;p=lambda i:eval(re.sub(r"((.)(, \2)*), 0(?=.*\2.*].*\2)",r"0,\1",str(i)))
+import re;p=lambda i:eval(re.sub(r"(((.), )\2*)0,?(?=.*\3.*].*\3)",r"0,\1",str(i)))
+p=lambda a:[[b.pop(sum([-1,~b[::-1].index(m:=max(b))][:~sum(c)//~m]))]+b for b,c in zip(a,a[1:]+a)]
+p=lambda a:[[b.pop(sum([-1,bytes(b).rfind(m:=max(b))][:~sum(c)//~m]))]+b for b,c in zip(a,a[1:]+a)]
+
+### joking (tied, 83 bytes)
 import re
 p=lambda i:eval(re.sub(r"(([1-9]).*?), 0(?=.*\2.*].*\2)",r"0,\1",str(i)))
-
-### att (85 bytes)
-import re
-p=lambda i:eval(re.sub(r"(([^0])(, .)+), 0(?=.*\2.*].*\2)",r"0,\1",str(i)))
 
 ### combined (86 bytes)
 import re
