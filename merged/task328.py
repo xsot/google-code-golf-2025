@@ -1,4 +1,4 @@
-# joking (167 vs 163 bytes for gold)
+# joking (167 vs 160 bytes for gold)
 exec("p=lambda g:[[(D:=sorted((sum(T:=[abs(x-r),abs(y-c)]),~max(T)%2*v)"+'for %s in range(len(g))%s'*4%(*'x y','if(v:=g[x][y])))and(D[0][0]<D[1][0])*D[0][1]',*'c]r]'))
 
 

@@ -1,4 +1,4 @@
-# ovs (297 (394 unzipped) bytes, gold)
+# ovs (297 (394 unzipped) vs 286 bytes for gold)
 e=enumerate
 def p(g):
  for G in[g]*60:*g,=map(list,zip(*g[max(map(len,str(g[0]).split('0')))<12:][::-1]))

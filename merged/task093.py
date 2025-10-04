@@ -1,4 +1,4 @@
-# ovs (100 vs 99 bytes for gold)
+# ovs (100 vs 98 bytes for gold)
 import re
 p=lambda g:[g:=eval(re.sub("[^50],([^(]+5)",r"\1,5",str([*zip(*g[::-1])])))for _ in g][11]
 

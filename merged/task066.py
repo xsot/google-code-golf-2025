@@ -1,4 +1,4 @@
-# mwi (275 (322 unzipped) vs 268 bytes for gold)
+# mwi (275 (322 unzipped) vs 267 bytes for gold)
 # zip-optimized version of ovs's 277
 def	p(g):
 	M={A*1j+g:y	for	A,C	in	enumerate(g)for	g,y	in	enumerate(C)};A,C=[y	for	y	in	M	if	M[y]==3];S=[(C+C-A,C-A,0,0),(A+A-C,A-C,0,0)]

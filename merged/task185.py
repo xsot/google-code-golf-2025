@@ -1,4 +1,4 @@
-# ovs (138 bytes, gold)
+# ovs (138 vs 137 bytes for gold)
 p=eval(('lambda i:'+'[[sum({r.pop()}&)r,r[1:])]*'*2+'[[r[0]r,*i)if]i if])])]').translate([0,"{*r}-{*i[0]}","zip(","for*r,in "]))
 
 ## without the `str.translate` compression:

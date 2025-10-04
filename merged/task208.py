@@ -1,4 +1,4 @@
-# xsot (223 (291 unzipped) vs 215 bytes for gold)
+# xsot (223 (291 unzipped) vs 199 bytes for gold)
 # random bullshit go
 def p(g):
  M=min(sum(A:=g,[]),key=sum(A:=g,[]).count);E=len(A:=[A for A in zip(*A)if M in A])

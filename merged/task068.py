@@ -1,4 +1,4 @@
-# joking (115 bytes, gold)
+# joking (115 vs 112 bytes for gold)
 p=lambda a:eval(f'[[[0,2,2,*a[1]][[*map("{a}".count,str(a))].count(1)]\nfor*a,in map(zip,a[:1]+a,a,a,a[1:]+a)]#'*2)
 
 ### att (119 bytes)

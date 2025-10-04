@@ -1,4 +1,4 @@
-# mwi (296 (423 unzipped) vs 288 bytes for gold)
+# mwi (296 (423 unzipped) vs 286 bytes for gold)
 def	p(g):
 	for	E	in	range(8):
 		I=[]

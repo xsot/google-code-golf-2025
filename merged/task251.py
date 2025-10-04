@@ -1,4 +1,4 @@
-# ovs (91 vs 89 bytes for gold)
+# ovs (91 vs 88 bytes for gold)
 p=lambda a,n=-42:[[max(n,14>>d&b.pop())for d in[0]+b[:0:-1]]for*b,in zip(*n*a or p(a,n+1))]
 
 ##

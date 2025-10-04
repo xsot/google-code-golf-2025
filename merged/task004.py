@@ -1,4 +1,4 @@
-# joking (83 vs 80 bytes for gold)
+# joking (83 vs 74 bytes for gold)
 import re
 p=lambda i:eval(re.sub(r"(([1-9]).*?), 0(?=.*\2.*].*\2)",r"0,\1",str(i)))
 

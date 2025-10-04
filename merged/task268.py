@@ -1,4 +1,4 @@
-# ovs (232 (242 unzipped) bytes, gold)
+# ovs (232 (242 unzipped) vs 218 bytes for gold)
 def p(g):l=range(len(g));(J,E),*B,(C,F)=[[A,D]for A in l for D in l if g[A][D]];return g[C][F-2]and[*zip(*p([*map(list,zip(*g[::-1]))]))][::-1]or[g for A in l[J+1:]for D in({*l[E+2:F-1],F+A-C-2,E-A+C+2}&{*l},l[E+1:F])[A<C]for g[A][D]in[4]][0]
 
 ### mwi (236 (253 unzipped) bytes)

@@ -1,4 +1,4 @@
-# joking (82 vs 81 bytes for gold)
+# joking (82 vs 80 bytes for gold)
 p=lambda a:eval(f'[[a and{a[i:=len(a)//2]}[0]\nfor a in a[:{i}]+a[{i}-1::-1]]#'*2)
 
 ### att (83 bytes)

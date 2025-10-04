@@ -1,4 +1,4 @@
-# joking (101 bytes, gold)
+# joking (101 vs 100 bytes for gold)
 p=lambda i,k=7:-k*i or p([*map(lambda*r,w=0:[[v,w%3][(w:=v)<=2in max(i,key=any)]for v in r],*i)],k-1)
 
 ##

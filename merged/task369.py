@@ -1,4 +1,4 @@
-# att (114 vs 113 bytes for gold)
+# att (114 vs 109 bytes for gold)
 p=lambda m,i=95:-i*m or[*zip(*eval(str(p(m,i-1)[::-1]).replace("2320,,,,    133"[i%5::4],"1213,,,,121"[i%5::4])))]
 
 ### combined (tied, 114 bytes)

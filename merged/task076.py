@@ -1,4 +1,4 @@
-# ovs (276 (380 unzipped) bytes, gold)
+# ovs (276 (380 unzipped) vs 273 bytes for gold)
 def p(g):
  I={min(J:={j+i*1j:I for i,r in enumerate(g)for j,I in enumerate(r)if I},key=J.get)};G=J;[abs(j-i)<2!=I.add(i)for i in[*G]*6for j in[*I]]
  for i,r in enumerate(g):

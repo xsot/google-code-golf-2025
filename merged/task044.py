@@ -1,4 +1,4 @@
-# joking (232 (361 unzipped) bytes, gold)
+# joking (232 (361 unzipped) vs 195 bytes for gold)
 # zip fiddling
 def p(i):
  for n in range(10):

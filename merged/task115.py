@@ -1,4 +1,4 @@
-# att (54 bytes, gold)
+# att (54 vs 52 bytes for gold)
 s={}.fromkeys
 p=lambda a:[*s(zip(*s(zip(*map(s,a)))))]
 

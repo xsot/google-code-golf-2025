@@ -1,4 +1,4 @@
-# joking (164 bytes, gold)
+# joking (164 vs 148 bytes for gold)
 p=lambda i:[[[min(f+q,key=f.count)for*f,in zip(*s)]for q in s]for y in range(5**6)if len({*str(s:=[r[y//625:][:10-y//5%5]for r in(i*9)[y//25%25:][:10-y%5]])})<7][0]
 
 ## faster for +1b
