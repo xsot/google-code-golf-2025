@@ -144,14 +144,15 @@ p=lambda g:[[v+3-3*(c>[-v]*99<r[1:-1])for _,*c,_,v in zip(*g,r)]for r in g]
 p=lambda a,n=-3:n*a or[[d:=[e:=b.pop(),d][g[2]!=d>0<e!=g[1]in b]for _ in[*b]]for*b,in zip(*p(a,n+1))if[d:=0,g:=sorted(set(c:=sum(a,a[5])),key=c.count)]]
 # 💎 task 65: 84 bytes, gold, https://arcprize.org/play?task=2dc579da
 p=lambda a:[p(b)for*b,in map(zip,a,a[len(a)//2+1:])]or min(b:=sum(a,()),key=b.count)
-# 🥉 task 66: 275 (322 unzipped) vs 267 bytes for gold, https://arcprize.org/play?task=2dd70a9a
-def	p(g):
-	M={A*1j+g:y	for	A,C	in	enumerate(g)for	g,y	in	enumerate(C)};A,C=[y	for	y	in	M	if	M[y]==3];S=[(C+C-A,C-A,0,0),(A+A-C,A-C,0,0)]
-	for*V,y,A,C,G	in	S:
-		if(y	in	M)*16>G|C+13:
-			for	y	in(M[y]==2)*V:g[int(y.imag)][int(y.real)]=3
-			F=M[y]>7;y-=A*F;S+=[(y,*V,y+D,D,C+F,~-F*~G)for	D	in[A][F:]or[A*1j,A/1j]*G]
-	return	g
+# 💎 task 66: 253 (319 unzipped) bytes, gold, https://arcprize.org/play?task=2dd70a9a
+def p(g):
+ M={A*1j+C:g for A,g in enumerate(g)for C,g in enumerate(g)};A,C=[y for y in M if M[y]==3]
+ for*V,y,A,G in(S:=[(A,C-A,1),(A,A-C,1)]):
+  if(y in M)*G%8:
+   if M[y]==2:
+    for D in V:g[int(D.imag)][int(D.real)]=3
+    return g
+   S+=[(y-M[y]//8*A,*V,y-M[y]//8*A+D,D,~M[y]//8*G)for D in M[y]//8*[A/1j,A*1j]or[A]]
 # 🥇 task 67: 33 bytes, gold, https://arcprize.org/play?task=2dee498d
 p=lambda a:[b[:len(a)]for b in a]
 # 🥈 task 68: 115 vs 112 bytes for gold, https://arcprize.org/play?task=31aa019c
@@ -170,11 +171,11 @@ p=lambda a:a[:2]+a[::3]+[[5-b*4for b in a[2]]]
 p=lambda i,*c:[*map(min,i,[9,9]+i[::-1],c)]or[i:=[*map(p,i,*i)]for _ in i][2]
 # 🥇 task 75: 86 bytes, gold, https://arcprize.org/play?task=363442ee
 p=lambda i,r=range(9):[i[a][:4]+[i[a-a%3+1][b-b%3+5]*i[a%3][b%3]for b in r]for a in r]
-# 🥈 task 76: 276 (380 unzipped) vs 273 bytes for gold, https://arcprize.org/play?task=36d67576
+# 🥈 task 76: 275 (380 unzipped) vs 273 bytes for gold, https://arcprize.org/play?task=36d67576
 def p(g):
- I={min(J:={j+i*1j:I for i,r in enumerate(g)for j,I in enumerate(r)if I},key=J.get)};G=J;[abs(j-i)<2!=I.add(i)for i in[*G]*6for j in[*I]]
+ I={min(J:={i*1j+j:r for i,r in enumerate(g)for j,r in enumerate(r)if r},key=J.get)};G=J;[abs(j-i)<2!=I.add(i)for i in[*G]*6for j in[*I]]
  for i,r in enumerate(g):
-  for j in G:P=min(J:={(j-i//4*j.real*2)*1j**i:G[j]^2for j in I},key=J.get)-j;g=all(G.get(j-P,3)==13%-~J[j]^2for j in J)*[[J.get(i*1j+j+P,I^2)^2for j,I in enumerate(r)]for i,r in enumerate(g)]or g
+  for j in G:P=min(J:={(j-i//4*j.real*2)*1j**i:G[j]^2for j in I},key=J.get)-j;g=all(G.get(j-P,3)==13%-~J[j]^2for j in J)*[[J.get(i*1j+j+P,r^2)^2for j,r in enumerate(r)]for i,r in enumerate(g)]or g
  return g
 # 💎 task 77: 111 bytes, gold, https://arcprize.org/play?task=36fdfd69
 p=lambda i,k=7,*w:k and p([*map(p,i,[k>1]*99,i[:1]+i,i[1:]+i[-1:],*w)],k-1)or((c:=w.count)(2)+c(4)>=2!=i)*4or i

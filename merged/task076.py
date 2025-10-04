@@ -1,16 +1,16 @@
-# ovs (276 (380 unzipped) vs 273 bytes for gold)
+# joking (275 (380 unzipped) vs 273 bytes for gold)
+# zip fiddling
+def p(g):
+ I={min(J:={i*1j+j:r for i,r in enumerate(g)for j,r in enumerate(r)if r},key=J.get)};G=J;[abs(j-i)<2!=I.add(i)for i in[*G]*6for j in[*I]]
+ for i,r in enumerate(g):
+  for j in G:P=min(J:={(j-i//4*j.real*2)*1j**i:G[j]^2for j in I},key=J.get)-j;g=all(G.get(j-P,3)==13%-~J[j]^2for j in J)*[[J.get(i*1j+j+P,r^2)^2for j,r in enumerate(r)]for i,r in enumerate(g)]or g
+ return g
+
+### ovs (276 (380 unzipped) bytes)
 def p(g):
  I={min(J:={j+i*1j:I for i,r in enumerate(g)for j,I in enumerate(r)if I},key=J.get)};G=J;[abs(j-i)<2!=I.add(i)for i in[*G]*6for j in[*I]]
  for i,r in enumerate(g):
   for j in G:P=min(J:={(j-i//4*j.real*2)*1j**i:G[j]^2for j in I},key=J.get)-j;g=all(G.get(j-P,3)==13%-~J[j]^2for j in J)*[[J.get(i*1j+j+P,I^2)^2for j,I in enumerate(r)]for i,r in enumerate(g)]or g
- return g
-
-### joking (283 (381 unzipped) bytes)
-# variable renaming
-def p(g):
- G={j+i*1j:I^2for i,r in enumerate(g)for j,I in enumerate(r)if I};[abs(j-i)<2!=I.add(i)for j in G if G[j]%2if[I:={j}]for i in[*G]*6for j in[*I]]
- for i,r in enumerate(g):
-  for j in G:P=min(J:={(j-i//4*j.real*2)*1j**i:G[j]for j in I},key=J.get)-j;g=g*any(13%-~J[j]^G.get(j-P,1)for j in J)or[[J.get(i*1j+j+P,I^2)^2for j,I in enumerate(r)]for i,r in enumerate(g)]
  return g
 
 ### mwi (295 (381 unzipped) bytes)
