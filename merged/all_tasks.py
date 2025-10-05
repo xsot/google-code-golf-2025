@@ -868,8 +868,8 @@ p=lambda a:[[min(b:=sum(a[1:-1],a[3]),key=b.count)]]
 p=lambda a:[[6^6>>e+r.pop(3)for e in r]for r in a]
 # 💎 task 348: 94 bytes, gold, https://arcprize.org/play?task=db3e9e38
 p=lambda a,n=-13:n*a or p([[c|-d%15for c,d in zip(a.pop(0),[0]+b)][::-1]for*b,in a[1:]]+a,n+1)
-# 🥉 task 349: 224 (274 unzipped) vs 194 bytes for gold, https://arcprize.org/play?task=db93a21d
-p=lambda i:[i:=[[(i[x][y]>1)*i[x][y]or(a<=x+n<n*4+a)*(b<=y+n<n*4+b)*3or 9in[*zip(*i[:x+1])][y]for y in range(len(i))]for x in range(len(i))]for n in range(6)for a in range(-n*2,len(i))for b in range(len(i)-n*2+1)if{min(x[max(0,b):n*2+b])for x in i[max(0,a):n*2+a]}=={9}][-1]
+# 🥈 task 349: 213 (260 unzipped) vs 194 bytes for gold, https://arcprize.org/play?task=db93a21d
+p=lambda i:[i:=[[max(i[x][y],(a<=x+n<n*4+a)*(b<=y+n<n*4+b)*3,9in(x[y]for x in i[:x+1]))for y in range(len(i))]for x in range(len(i))]for n in range(6)for a in range(-n*2,len(i))for b in range(len(i)-n*2+1)if{min(x[b:n*2+b])for x in i[max(a,0):n*2+a]}=={9}][-1]
 # 🥈 task 350: 93 vs 91 bytes for gold, https://arcprize.org/play?task=dbc1a6ce
 p=lambda i:[*map(f:=lambda*x,b=0:[y|(y+1in{*x[:b]}&{*x[(b:=b+1):]})*8for y in x],*map(f,*i))]
 # 💎 task 351: 66 bytes, gold, https://arcprize.org/play?task=dc0a314f

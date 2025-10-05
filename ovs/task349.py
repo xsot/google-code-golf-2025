@@ -1,0 +1,1 @@
+p=lambda i:[i:=[[max(i[x][y],(a<=x+n<n*4+a)*(b<=y+n<n*4+b)*3,9in(x[y]for x in i[:x+1]))for y in range(len(i))]for x in range(len(i))]for n in range(6)for a in range(-n*2,len(i))for b in range(len(i)-n*2+1)if{min(x[b:n*2+b])for x in i[max(a,0):n*2+a]}=={9}][-1]
