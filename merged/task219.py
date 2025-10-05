@@ -1,4 +1,4 @@
-# joking (276 (325 unzipped) vs 245 bytes for gold)
+# joking (276 (325 unzipped) vs 244 bytes for gold)
 # zip fiddling
 def p(i,n=0,k=0,t=2):
  f=len(r:=[i[k:]for i in i if(t:=~any(i)%3%-~t)*any(i)])

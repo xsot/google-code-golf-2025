@@ -1,4 +1,7 @@
-# joking (69 vs 64 bytes for gold)
+# xsot (68 vs 64 bytes for gold)
+p=lambda i,s=0:[(t:=1)*[(s:=t<y-s&6)*3>>(t:=y)for y in x]for x in i]
+
+### joking (69 bytes)
 p=lambda i,s=0:[(t:=0)or[(s:=t<y-s&6)*3>>(t:=y)for y in x]for x in i]
 
 ## regex solution

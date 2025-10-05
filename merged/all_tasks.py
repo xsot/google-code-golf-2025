@@ -556,7 +556,7 @@ p=lambda a:max([-(c:=sum(b:=[b[x>>5:y>>5]for b in a[x%32:y%32]],a).count)(0),c(2
 p=lambda a,*n:[*filter(any,zip(*[[d&e for d in b for e in c]for b in n for c in a]or p(a,*a)))]
 # 🥇 task 218: 56 bytes, gold, https://arcprize.org/play?task=90c28cc7
 p=lambda a,*n:[*{b:0for b in zip(*n or p(*a))if any(b)}]
-# 🥉 task 219: 276 (325 unzipped) vs 245 bytes for gold, https://arcprize.org/play?task=90f3ed37
+# 🥉 task 219: 276 (325 unzipped) vs 244 bytes for gold, https://arcprize.org/play?task=90f3ed37
 def p(i,n=0,k=0,t=2):
  f=len(r:=[i[k:]for i in i if(t:=~any(i)%3%-~t)*any(i)])
  for l in range(3,len(i)-f):
@@ -852,8 +852,8 @@ p=lambda a,n=10,d=0:~n*a or p([[b.pop()|4*(n%6*2in b)*(d:=d^any({*c}-{4}))for c 
 p=lambda i,k=3:-k*i or[[x.pop()or(sum(x)%8|1in x[:5])*8for _ in i]for*x,in zip(*p(i,k-1))]
 # 💎 task 337: 43 bytes, gold, https://arcprize.org/play?task=d511f180
 p=lambda x:x*-1and x^84%x%3*13or[*map(p,x)]
-# 🥉 task 338: 69 vs 64 bytes for gold, https://arcprize.org/play?task=d5d6de2d
-p=lambda i,s=0:[(t:=0)or[(s:=t<y-s&6)*3>>(t:=y)for y in x]for x in i]
+# 🥉 task 338: 68 vs 64 bytes for gold, https://arcprize.org/play?task=d5d6de2d
+p=lambda i,s=0:[(t:=1)*[(s:=t<y-s&6)*3>>(t:=y)for y in x]for x in i]
 # 🥇 task 339: 37 bytes, gold, https://arcprize.org/play?task=d631b094
 p=lambda a:[[*filter(int,sum(a,[]))]]
 # 💎 task 340: 115 bytes, gold, https://arcprize.org/play?task=d687bc17
@@ -980,7 +980,7 @@ p=lambda a:a[:4:-1]+a[5:]
 p=lambda a:[[3>>e+r.pop(0)for e in r[4:]]for r in a]
 # ❌ task 387: 221 vs 202 bytes for gold, https://arcprize.org/play?task=f35d900a
 p=lambda i,k=3,e=enumerate,S=sum:-k*i or p([[y or([(S(x[b+1:])%5>0<S(x[:b])%5>x[b-1]|x[b+1]<x[b-2]+x[b+2])*5,*{*S(i,[])}-{*S([*zip(*i[b+b%~b:b+2])][a+a%~a:a+2],()),5}]*3)[3>>k*2]for b,y in e(x)]for a,x in e(zip(*i))],k-1)
-# 🥉 task 388: 62 vs 61 bytes for gold, https://arcprize.org/play?task=f5b8619d
+# ❌ task 388: 62 vs 61 bytes for gold, https://arcprize.org/play?task=f5b8619d
 p=lambda a:2*[2*[d or any(c)*8for*c,d in zip(*a,b)]for b in a]
 # 🥇 task 389: 57 bytes, gold, https://arcprize.org/play?task=f76d97a5
 p=lambda a:[[sum({*sum(a,r)}-{e,5})for e in r]for r in a]
