@@ -3676,13 +3676,13 @@
     },
     "task115": {
         "gold": 52,
-        "best": 54,
+        "best": 52,
         "solutions": {
             "att": {
-                "source": "cz17fS5mcm9ta2V5cwpwPWxhbWJkYSBhOlsqcyh6aXAoKnMoemlwKCptYXAocyxhKSkpKSld",
-                "size_uncompressed": 54,
-                "compressed": "cz17fS5mcm9ta2V5cwpwPWxhbWJkYSBhOlsqcyh6aXAoKnMoemlwKCptYXAocyxhKSkpKSld",
-                "size_compressed": 54,
+                "source": "cD1sYW1iZGEgYSwqbjpbKnppcCgqbWFwKHt9LmZyb21rZXlzLG4gb3IgcChhLCphKSkpXQ==",
+                "size_uncompressed": 52,
+                "compressed": "cD1sYW1iZGEgYSwqbjpbKnppcCgqbWFwKHt9LmZyb21rZXlzLG4gb3IgcChhLCphKSkpXQ==",
+                "size_compressed": 52,
                 "method": "none"
             },
             "xsot": {

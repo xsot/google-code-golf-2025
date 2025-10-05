@@ -1,8 +1,7 @@
-# att (54 vs 52 bytes for gold)
-s={}.fromkeys
-p=lambda a:[*s(zip(*s(zip(*map(s,a)))))]
+# att (52 bytes, gold)
+p=lambda a,*n:[*zip(*map({}.fromkeys,n or p(a,*a)))]
 
-### combined (tied, 54 bytes)
+### combined (54 bytes)
 s={}.fromkeys
 p=lambda a:[*s(zip(*s(zip(*map(s,a)))))]
 

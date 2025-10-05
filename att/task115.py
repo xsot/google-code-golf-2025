@@ -1,2 +1,1 @@
-s={}.fromkeys
-p=lambda a:[*s(zip(*s(zip(*map(s,a)))))]
+p=lambda a,*n:[*zip(*map({}.fromkeys,n or p(a,*a)))]

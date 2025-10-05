@@ -269,9 +269,8 @@ p=lambda i,k=1:-k*i or p([*map(lambda*x,b=2+[*map(max,i)].index(3)*2:[y|(x*2)[b:
 p=lambda a:a[:5]+a[4::-1]
 # 🥇 task 114: 64 bytes, gold, https://arcprize.org/play?task=49d1d64f
 *R,p=0,lambda g:[R+g[0]+R,*[r[:1]+r+r[-1:]for r in g],R+g[-1]+R]
-# 🥉 task 115: 54 vs 52 bytes for gold, https://arcprize.org/play?task=4be741c5
-s={}.fromkeys
-p=lambda a:[*s(zip(*s(zip(*map(s,a)))))]
+# 🥇 task 115: 52 bytes, gold, https://arcprize.org/play?task=4be741c5
+p=lambda a,*n:[*zip(*map({}.fromkeys,n or p(a,*a)))]
 # 🥇 task 116: 20 bytes, gold, https://arcprize.org/play?task=4c4377d9
 p=lambda a:a[::-1]+a
 # 💎 task 117: 134 bytes, gold, https://arcprize.org/play?task=4c5c2cf0
