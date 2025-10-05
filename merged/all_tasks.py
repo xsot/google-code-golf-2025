@@ -88,14 +88,8 @@ p=lambda a,b=0:[[e|(b:=b^e)for e in r]for r in a]
 p=lambda g,Q=range(10):[g:=[[g[j][~i]|8*((i>C<j)&g[j-C-C][~i+C]&g[j-C][~i+C+C])for j in Q]for i in Q]for C in[sum(b'%r'%g)//38%4]*4][3]
 # ❌ task 43: 57 vs 56 bytes for gold, https://arcprize.org/play?task=2281f1f4
 p=lambda a:[[c*b[-1]//9|b.pop(0)for c in a[0]]for*b,in a]
-# 🥈 task 44: 232 (361 unzipped) vs 195 bytes for gold, https://arcprize.org/play?task=228f6490
-def p(i):
- for n in range(10):
-  for a in range(10):
-   for b in range(10):
-    k=[[5]+[i*(i==n)or 5for i,*a in zip(a,*i)if n in a]+[5]for a in i if n in a]or i;k=[[5]*len(k[0])]+k+[[5]*len(k[0])]
-    if all(i+k in(10,n)for i,k in zip(i[a:]+i,k)for i,k in zip(i[b:]+i,k)):i=[[i-i*(i==n)for i in i]for i in i];[5for i,i[b:b+len(k[0])]in zip(i[a:]+i,k)]
- return i
+# 🥈 task 44: 222 (461 unzipped) vs 195 bytes for gold, https://arcprize.org/play?task=228f6490
+def p(i):f=sum(i,[]);w=sum(2<<J for J in range(50)if f[J]<5in{*f[J//10*10:J]}&{*f[J:J//10*10+10]});i=[[J^c*(1&(w:=w>>1)or J==c)for J in J]for c in{*f}if bin(sum(512<<J for J in range(100)if f[J]==c))in bin(w<<100)for J in i][::-1];f=sum(i,[]);w=sum(2<<J for J in range(50)if f[J]<5in{*f[J//10*10:J]}&{*f[J:J//10*10+10]});i=[[J^c*(1&(w:=w>>1)or J==c)for J in J]for c in{*f}if bin(sum(512<<J for J in range(100)if f[J]==c))in bin(w<<100)for J in i][::-1];return i
 # 🥇 task 45: 45 bytes, gold, https://arcprize.org/play?task=22eb0ac0
 p=lambda g:[10*r[:r[0]==r[9]]or r for r in g]
 # 🥈 task 46: 169 vs 168 bytes for gold, https://arcprize.org/play?task=234bbc79
