@@ -1,0 +1,1 @@
+p=lambda a,n=87,i=0:[[min(b+c,key=b.count)for c in zip(*a)]for b in-n*a]or p([*zip(*a[(6in(i:=1+i*(a==(a:=b))for b in a[-1]))-2::-1])],n-1)
