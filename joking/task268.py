@@ -1,3 +1,10 @@
+# 224
+def p(g):J,E=[(C:=A,F:=D)for A in range(len(g))for D in range(len(g))if g[A][D]][0];return g[C][F-2]and[*zip(*p([[*A]for A in zip(*g[::-1])]))][::-1]or[g for A in range(J+1,len(g))for D in({*range(E+2,F-1),C-A+E+2,F-2+A-C}&{*range(len(g))},range(E+1,F))[A<C]for g[A][D]in[4]][0]
+
+##
+def p(g):J,E=[#['[C:=A,F:=D]','(C:=A,F:=D)']##for A in range(len(g))for D in range(len(g))if g[A][D]][0];return g[C][F-2]and[*zip(*p([[*A]for A in zip(*g[::-1])]))][::-1]or[g for A in range(J+1,len(g))for D in({*range(E+2,F-1),C-A+E+2,F-2+A-C}&{*range(len(g))},range(E+1,F))[A<C]for g[A][D]in[4]][0]
+
+##
 def p(g):
  l=range(len(g));(J,E),*B,(C,F)=[[A,D]for A in l for D in l if g[A][D]]
  if g[C][F-2]<1:
