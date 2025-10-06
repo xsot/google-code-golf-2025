@@ -510,7 +510,7 @@
             }
         },
         "public_gold": 67,
-        "public_best": 76
+        "public_best": 68
     },
     "task015": {
         "gold": 92,
@@ -618,7 +618,7 @@
             }
         },
         "public_gold": 99,
-        "public_best": 118
+        "public_best": 102
     },
     "task018": {
         "gold": 283,
@@ -1494,7 +1494,7 @@
             }
         },
         "public_gold": 195,
-        "public_best": 281
+        "public_best": 222
     },
     "task045": {
         "gold": 45,
@@ -2279,7 +2279,7 @@
             }
         },
         "public_gold": 150,
-        "public_best": 174
+        "public_best": 159
     },
     "task070": {
         "gold": 78,
@@ -3141,8 +3141,8 @@
                 "escape_cost": 1
             }
         },
-        "public_gold": 312,
-        "public_best": 325
+        "public_gold": 284,
+        "public_best": 284
     },
     "task097": {
         "gold": 100,
@@ -5537,7 +5537,7 @@
             }
         },
         "public_gold": 196,
-        "public_best": 213
+        "public_best": 196
     },
     "task171": {
         "gold": 51,
@@ -6001,7 +6001,7 @@
             }
         },
         "public_gold": 137,
-        "public_best": 162
+        "public_best": 138
     },
     "task186": {
         "gold": 60,
@@ -9428,7 +9428,7 @@
             }
         },
         "public_gold": 89,
-        "public_best": 112
+        "public_best": 92
     },
     "task289": {
         "gold": 63,
