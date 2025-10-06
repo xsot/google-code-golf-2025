@@ -151,8 +151,8 @@ def p(g):
 p=lambda a:[b[:len(a)]for b in a]
 # 🥈 task 68: 115 vs 112 bytes for gold, https://arcprize.org/play?task=31aa019c
 p=lambda a:eval(f'[[[0,2,2,*a[1]][[*map("{a}".count,str(a))].count(1)]\nfor*a,in map(zip,a[:1]+a,a,a,a[1:]+a)]#'*2)
-# 🥉 task 69: 159 vs 150 bytes for gold, https://arcprize.org/play?task=321b1fc6
-def p(g):E=enumerate;*f,=E(sum(zip(*g*2),()));return[[sum(V*all((i+j*20-I+J,8)in f for J,V in f if V%8)for I,V in f if v==8!=V)for j,v in E(r)]for i,r in E(g)]
+# 🥇 task 69: 150 bytes, gold, https://arcprize.org/play?task=321b1fc6
+def p(g):E=range(10);f={*enumerate(sum(zip(*g*2),()))};return[[sum(V*(f>{(i+j*20-I+J,8)for J,V in f if V%8})for I,V in f if 8^V)for j in E]for i in E]
 # 🥉 task 70: 82 vs 78 bytes for gold, https://arcprize.org/play?task=32597951
 p=lambda i:[[(c[0]+7in{*x}&{*c,hash(c)%1070})*2+c[0]for c in zip(x,*i)]for x in i]
 # 💎 task 71: 104 bytes, gold, https://arcprize.org/play?task=3345333e
@@ -175,8 +175,8 @@ def p(g):
 p=lambda i,k=7,*w:k and p([*map(p,i,[k>1]*99,i[:1]+i,i[1:]+i[-1:],*w)],k-1)or((c:=w.count)(2)+c(4)>=2!=i)*4or i
 # 💎 task 78: 59 bytes, gold, https://arcprize.org/play?task=3906de3d
 p=lambda i,*n:sorted(n,key=0 .__eq__)or[*zip(*map(p,i,*i))]
-# 🥈 task 79: 123 vs 122 bytes for gold, https://arcprize.org/play?task=39a8645d
-p=lambda i:max(t:=[h for a in range(144)if all(map(any,(h:=[x[a//12:][:3]for x in i[a%12:][:3]])+[*zip(*h)]))],key=t.count)
+# 💎 task 79: 121 bytes, gold, https://arcprize.org/play?task=39a8645d
+p=lambda i:max(t:=[q for a in range(144)if any(min((h:=[*zip(*i[a%12:][:3])][a//12:][:3])+(q:=[*zip(*h)])))],key=t.count)
 # 💎 task 80: 232 (301 unzipped) bytes, gold, https://arcprize.org/play?task=39e1d7f9
 def p(g):E=g.index(min(g,key=set))+1;c={j*1j+i:g for j,g in enumerate(g[::E])for i,g in enumerate(g[::E])};return[[[g or[c[k:=j//E*1j+i//E],*[c[u+k-K]for K in c if(c[K]==c[u])*2>abs(k-K)]][-1]for i,g in enumerate(g)]for j,g in enumerate(g)]for u in c if all(c.get(u+1j**j)for j,g in enumerate(g))][-1]
 # 💎 task 81: 87 bytes, gold, https://arcprize.org/play?task=3aa6fb7a
