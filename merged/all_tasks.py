@@ -888,8 +888,8 @@ p=lambda i,k=39:-k*i or[[*map(max,x,-14//len({*x,0})%7*[0]+x)]for*x,in zip(*p(i,
 p=lambda g:[[max(w:=c+r,key=w.count)for*c,in zip(*g)]for r in g]
 # 🥇 task 360: 45 bytes, gold, https://arcprize.org/play?task=e3497940
 p=lambda a:[[*map(max,b,b[:4:-1])]for b in a]
-# 💎 task 361: 192 (245 unzipped) bytes, gold, https://arcprize.org/play?task=e40b9e2f
-def p(a):I=[a*2for a in a+a];return[[[max(I[x][y],I[a+b+n+~y][b-a+x],I[a-b+y][a+b+n+~x],I[a+a+n+~x][b+b+n+~y])for y in range(10)]for x in range(10)]for n in range(10)for a in range(10)for b in range(10)if all(all(x[b:b+n])for x in I[a:a+n])][-1]
+# 💎 task 361: 185 (241 unzipped) bytes, gold, https://arcprize.org/play?task=e40b9e2f
+def p(a):I=[a+a for a in a+a];return[[[I[x][y]|I[a-b+y][a+b+n+~x]|I[a+a+n+~x][b+b+n+~y]|I[a+b+n+~y][b-a+x]for y in range(10)]for x in range(10)]for n in range(10)for b in range(10)for a in range(10)if all(all(a[b:b+n])for a in I[a:a+n])][-1]
 # 🥇 task 362: 69 bytes, gold, https://arcprize.org/play?task=e48d4e1a
 p=lambda g:[r[(n:=g.count(g[0])):9]+r[:1]+r[:n]for r in g*2][10-n:-n]
 # 💎 task 363: 204 bytes, gold, https://arcprize.org/play?task=e5062a87
@@ -902,18 +902,15 @@ def p(g):
 p=lambda i,k=39:-k*i or p([[[y.bit_count()*5%14%9,y and(u*t>0)<<k%4+2|y|u][k>0]for y,t,u in zip(x,[0]+x,s)]for*x,s in zip(*i,[[0]*99,*zip(*i)])][::-1],k-1)
 # 🥉 task 365: 119 vs 111 bytes for gold, https://arcprize.org/play?task=e50d258f
 exec(f'p=lambda i:max((-{"str(s:=[x[a:b]for x in i[c:d]]).count(%r),"*3}s){"for %s in range(11)"*4})[3]'%(*"021abcd",))
-# 💎 task 366: 309 (493 unzipped) bytes, gold, https://arcprize.org/play?task=e6721834
+# 💎 task 366: 302 (495 unzipped) bytes, gold, https://arcprize.org/play?task=e6721834
 def p(g):
- r,*s=sum(g,[]),g;*r,m,b,B=sorted({*r},key=r.count)
- for t in s*6:
-  for t in s+(s:=[]):
+ *s,m,b,B=sorted({*sum(g,[])},key=sum(g,[]).count)
+ *s,=g,
+ for r in s*6:
+  for r in s+(s:=[]):
    s+=[],
-   for r in zip(*t):s+=s.pop()+[r]if{b,B}-{*r}>{b}or{*r}>{b}else[],
- for r,s in sorted((-sum(m^s for s in s for s in s),s)for s in s):
-  for y,r in enumerate(g):
-   for x,r in enumerate(r):
-    for h,r in zip(g[y:],all((a!=r)==(m==r)==(B==a)for h,r in zip(g[y:]+g,s)for a,r in zip(h[x:x+len(r)]+g,r))*s):h[x:x+len(r)]=r
- return[r for r in zip(*[r for r in zip(*g)if B in r])if B in r]
+   for r in zip(*r):s+=s.pop()+[r]if{b,B}-{*r}>{b}or{*r}>{b}else[],
+ [6for y,s in sorted((-sum(m^s for s in s for s in s),s)for s in s)for y,r in enumerate(g)for x,r in enumerate(r)for h,r in zip(g[y:]+g,s*all((a==r)!=(m==r)==(a==B)for h,r in zip(g[y:]+g,s)for a,r in zip(h[x:x+len(r)]+g,r)))for h[x:x+len(r)]in[r]];return[r for r in zip(*[r for r in zip(*g)if B in r])if B in r]
 # 🥈 task 367: 129 vs 128 bytes for gold, https://arcprize.org/play?task=e73095fd
 import re
 p=lambda g,k=-23:k*g or p(eval(re.sub(f"(0.{(N:={len(g)*3-2})}0, 5, 5.{N}5,|4,) 0","\\1 4",str([*zip(*g)][::-1]))),k+1)
@@ -922,15 +919,10 @@ import re
 p=lambda i:eval(re.sub("5(, 5)+",lambda m:re.findall("([^50](, [1-9])+)",s*2)[-s[m.end()-1::32].count('5')][0],s:=str(i)))
 # ❌ task 369: 114 vs 109 bytes for gold, https://arcprize.org/play?task=e8593010
 p=lambda m,i=95:-i*m or[*zip(*eval(str(p(m,i-1)[::-1]).replace("2320,,,,    133"[i%5::4],"1213,,,,121"[i%5::4])))]
-# 💎 task 370: 234 (367 unzipped) bytes, gold, https://arcprize.org/play?task=e8dc4411
-def p(g):
- for s in range(8):
-  N=[*map(min,g)].count(0);x=[*map(min,g)].index(0);g=[*map(list,zip(*g))][::-1];y=[*map(min,g)].index(0)
-  for s in range(8):
-   for i in range(N):
-    for j in range(N):
-     if-g[y+i][x+j]>-1<y+g[y][x]//-9*~s-N*s+~i|x+g[y][x]//-9*~s-N*s+~j:g[y+g[y][x]//-9*~s-N*s+~i][x+g[y][x]//-9*~s-N*s+~j]=g[y+g[y][x]//8-1][x+g[y][x]%8-1]
- return g
+# 💎 task 370: 229 (357 unzipped) bytes, gold, https://arcprize.org/play?task=e8dc4411
+def	p(g):
+	for	s	in	range(4):x=[*map(min,g)].index(0);N=[*map(min,g)].count(0);g=[*map(list,zip(*g))][::-1];y=[*map(min,g)].index(0);[0for	s	in	range(4)for	i	in	range(N)for	j	in	range(N)for	g[y-1+g[y][x]//-9*~s-N*s-i][x-1+g[y][x]//-9*~s-N*s-j]in	g[y-1+g[y][x]//8][x-1+g[y][x]%8:][:1>g[y+i][x+j]<=y-1+g[y][x]//-9*~s-N*s-i|x-1+g[y][x]//-9*~s-N*s-j]]
+	return	g
 # 💎 task 371: 109 bytes, gold, https://arcprize.org/play?task=e9614598
 def p(a):
  for i in[l:=len(a[0]),-l,1,0,-1]:b=sum(a,[]).index;i+=b(1,b(1)+1)+b(1)>>1;a[i//l][i%l]=3
