@@ -1,4 +1,8 @@
-# ovs (167 vs 164 bytes for gold)
+# att (166 vs 164 bytes for gold)
+z=[0]
+p=lambda g,k=-15,h=1,q=z*9:k*g or p([q:=[v and[2-v//max(f:=sum(g,z)),h:=h*2,*[P|p|v]*6,f.count(v)][k//2]for P,p,v in zip(z+q,z+r,r)]for*r,in zip(*g[::-1])],k+1)
+
+### ovs (167 bytes)
 p=lambda g,k=-15,h=1,q=[0]*9:k*g or p([q:=[v and[2-v//max(f:=sum(g,[])),h:=h*2,*[P|p|v]*6,f.count(v)][k//2]for P,p,v in zip([0]+q,[0]+r,r)]for*r,in zip(*g[::-1])],k+1)
 
 ## 187
