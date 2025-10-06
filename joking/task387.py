@@ -1,1 +1,1 @@
-p=lambda i,k=3,e=enumerate:-k*i or p([[(y<1>k)*([*{*sum(i,[])}-{*sum([*zip(*i[b+b%~b:b+2])][a+a%~a:a+2],()),5},0]*2)[2]+(sum(x[b+1:])%5>0<sum(x[:b])%5>x[b-1]+x[b+1]==0<x[b-2]+x[b+2])*5or y for b,y in e(x)]for a,x in e(zip(*i))],k-1)
+p=lambda i,k=7,e=enumerate,S=sum:-k*i or p([[y or([(S(x[b:])*S(x[:b])%5>S(r:=S([*zip(*i[b+b%~b:b+2])][a+a%~a:a+2],()))<x[b-2]+x[b+2])*5,*{*S(i,[])}-{*r,5}]*3)[7>>k]for b,y in e(x)]for a,x in e(zip(*i))],k-2)
