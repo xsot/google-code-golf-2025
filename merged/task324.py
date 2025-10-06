@@ -1,5 +1,4 @@
 # joking (253 (317 unzipped) vs 242 bytes for gold)
-# 254
 def	p(g):k,K,b,B=sorted({*sum(g,[])},key=sum(g,[]).count);b=[B,b][all({K,b}!={*r}!={k,B}for	r	in[*zip(*g)]+g)];[0for	y,r	in	enumerate(zip(*zip(*g)))for	x,r	in	enumerate(r)for	z,Y	in	enumerate(g)for	Y	in(-z,z)if	r	in(k,K)for	X	in(-z,z)if	len(g)>Y+y>-1<X+x<len(g[0])for	g[Y+y][X+x]in[(k,K)[k!=g[Y+y][X+x]!=b]]];return	g
 
 ##

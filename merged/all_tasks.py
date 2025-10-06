@@ -217,10 +217,9 @@ p=lambda g:[g:=eval(re.sub("[^50],([^(]+5)",r"\1,5",str([*zip(*g[::-1])])))for _
 p=lambda i,*h:[h:=[(1<x.count(y>1)==h.count(h>[7])%5)*6or y for y in x]for x in zip(*h or p(i,*i))]
 # 🥈 task 95: 74 vs 73 bytes for gold, https://arcprize.org/play?task=4258a5f9
 p=lambda a,n=6:~n*a or[[n%2|(n:=m)for m in a]for a[::-1]in zip(*p(a,n-2))]
-# 💎 task 96: 298 (380 unzipped) bytes, gold, https://arcprize.org/play?task=4290ef0e
-def p(g,*S):
- for C in{b:=max(d:=sum(g,[]),key=d.count)}^{*d}:d=max([*g,*zip(*g)],key=lambda d:d.count(C));I=0;D=max(d:=min(d:=[-I+(I:=d.index(C,I)+1)for v in d if v==C][1:],d[::-1])+[0]);S+=((2*d.index(D)or len(d)-1)+D|1,D,C),
- R=range(d:=max(S)[0]);return[[[*[C for W,G,C in S if W-1==max(abs(d+~v-v)for v in(i,v))>=min(abs(d+~v-v)for v in(i,v))>G-2],b][0]for v in R]for i in R]
+# 💎 task 96: 284 (377 unzipped) bytes, gold, https://arcprize.org/play?task=4290ef0e
+import re
+def p(r):l={0:(i:=max(r:=re.sub(', ','',str(r+[*zip(*r)])),key=r.count),2)}|{(d:=len(re.findall(t+t+'([^]+)'+t+']+)'+t+'|$',r+r[::-1])[0]))-len(max(re.findall(t+'+',r)))*~(d>0)>>1:(t,d-1>>1)for t in{*r}-{i,*'([]+)'}};return[[int([i,*l[max(abs(t),abs(d))]][l[max(abs(t),abs(d))][1]<min(abs(t),abs(d))])for t in range(-max(l),max(l)+1)]for d in range(-max(l),max(l)+1)]
 # 💎 task 97: 100 bytes, gold, https://arcprize.org/play?task=42a50994
 p=lambda i,r=[[0]*99]*99,*w:r and[*map(p,*sum([[x,r,x[1:]+r,r[:1]+x]for x in[i,*w]],[]))]or any(w)*i
 # 💎 task 98: 64 bytes, gold, https://arcprize.org/play?task=4347f46a
@@ -864,8 +863,8 @@ p=lambda a:[[min(b:=sum(a[1:-1],a[3]),key=b.count)]]
 p=lambda a:[[6^6>>e+r.pop(3)for e in r]for r in a]
 # 💎 task 348: 94 bytes, gold, https://arcprize.org/play?task=db3e9e38
 p=lambda a,n=-13:n*a or p([[c|-d%15for c,d in zip(a.pop(0),[0]+b)][::-1]for*b,in a[1:]]+a,n+1)
-# 🥈 task 349: 213 (260 unzipped) vs 194 bytes for gold, https://arcprize.org/play?task=db93a21d
-p=lambda i:[i:=[[max(i[x][y],(a<=x+n<n*4+a)*(b<=y+n<n*4+b)*3,9in(x[y]for x in i[:x+1]))for y in range(len(i))]for x in range(len(i))]for n in range(6)for a in range(-n*2,len(i))for b in range(len(i)-n*2+1)if{min(x[b:n*2+b])for x in i[max(a,0):n*2+a]}=={9}][-1]
+# 🥈 task 349: 205 (277 unzipped) vs 194 bytes for gold, https://arcprize.org/play?task=db93a21d
+p=lambda	i:[i:=[[max(i[x][y],(x-a+n	in	range(n*4))*(y-b+n	in	range(n*4))*3,9in(x[y]for	x	in	i[:x]))for	y	in	range(len(i))]for	x	in	range(len(i))]for	n	in	range(len(i))for	a	in	range(-n*2,len(i))for	b	in	range(len(i)-n*2+1)if{min(x[b:n*2+b])for	x	in	i[max(a,0):n*2+a]}=={9}][-1]
 # 🥈 task 350: 93 vs 91 bytes for gold, https://arcprize.org/play?task=dbc1a6ce
 p=lambda i:[*map(f:=lambda*x,b=0:[y|(y+1in{*x[:b]}&{*x[(b:=b+1):]})*8for y in x],*map(f,*i))]
 # 💎 task 351: 66 bytes, gold, https://arcprize.org/play?task=dc0a314f
