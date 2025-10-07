@@ -549,12 +549,18 @@ p=lambda a:max([-(c:=sum(b:=[b[x>>5:y>>5]for b in a[x%32:y%32]],a).count)(0),c(2
 p=lambda a,*n:[*filter(any,zip(*[[d&e for d in b for e in c]for b in n for c in a]or p(a,*a)))]
 # 🥇 task 218: 56 bytes, gold, https://arcprize.org/play?task=90c28cc7
 p=lambda a,*n:[*{b:0for b in zip(*n or p(*a))if any(b)}]
-# 🥉 task 219: 276 (325 unzipped) vs 244 bytes for gold, https://arcprize.org/play?task=90f3ed37
-def p(i,n=0,k=0,t=2):
- f=len(r:=[i[k:]for i in i if(t:=~any(i)%3%-~t)*any(i)])
- for l in range(3,len(i)-f):
-  for x in range(all(sum(q:=[[0**i+r*(i!=1)for i,r in zip(i[n:],r)]for i,r in zip(i[l:],r)],[sum([9in i[:2]for i in q]+i[l-1])<1]))*(len(i[0])-n-k)*f):i[l+x%f][x//f+n]=(-q[x%f][x//f]&9)%9
- return k*i or p(i,-~n%3,n>1)
+# 🥉 task 219: 267 (322 unzipped) vs 244 bytes for gold, https://arcprize.org/play?task=90f3ed37
+E=enumerate
+def p(g):
+ S=H=i=0
+ while g[i:]:
+  if g[i]>g[0]:
+   H=H or g[i:].index(g[0]);s={(o,h)for o,O in E(g[i:i+H],i)for h,H in E(O)if H};S=S or s;o,O=next((o,O)for O in(0,-1,1,2)for o in range(i)if(A:={(h-o,H-O)for h,H in s if-1<H-O<10})<=S)
+   for h,k in S-A:
+    if-1<k+O<10:g[h+o][k+O]=1
+   i+=H-1
+  i+=1
+ return g
 # 🥈 task 220: 90 vs 87 bytes for gold, https://arcprize.org/play?task=913fb3ed
 p=lambda i:[i:=[[x.pop()or-(s*2^s-7)%7for s in[0]+x[:0:-1]]for*x,in zip(*i)]for _ in i][3]
 # 🥇 task 221: 87 bytes, gold, https://arcprize.org/play?task=91413438
