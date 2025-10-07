@@ -1,10 +1,9 @@
-# ovs (267 (322 unzipped) vs 244 bytes for gold)
-E=enumerate
+# ovs (257 (316 unzipped) vs 244 bytes for gold)
 def p(g):
  S=H=i=0
  while g[i:]:
   if g[i]>g[0]:
-   H=H or g[i:].index(g[0]);s={(o,h)for o,O in E(g[i:i+H],i)for h,H in E(O)if H};S=S or s;o,O=next((o,O)for O in(0,-1,1,2)for o in range(i)if(A:={(h-o,H-O)for h,H in s if-1<H-O<10})<=S)
+   H=H or g[i:].index(g[0]);s={(i+o,O)for o in range(H)for O in range(10)if g[i+o][O]};S=S or s;o,O=next((o,O)for O in(0,-1,1,2)for o in range(i)if(A:={(h-o,H-O)for h,H in s if-1<H-O<10})<=S)
    for h,k in S-A:
     if-1<k+O<10:g[h+o][k+O]=1
    i+=H-1
