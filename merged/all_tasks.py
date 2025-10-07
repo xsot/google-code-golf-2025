@@ -498,8 +498,8 @@ p=lambda a,n=-23:n*a or p([*map(lambda*b,d=1:[[c,4-(sum(25>>e&d for e in b)>9)][
 p=lambda g:[([4,0]*8)[(m:=max(g)).index(max(m))%2:][:len(g)]]*-~(i:=g.index(m))+g[i:-1]
 # 🥈 task 200: 86 vs 84 bytes for gold, https://arcprize.org/play?task=8403a5d5
 p=lambda g:[([0]*g[9].index(c:=max(g[9]))+[c,i%7,c,i%6]*3)[:10]for i in b'6********M']
-# 🥈 task 201: 207 vs 199 bytes for gold, https://arcprize.org/play?task=846bdb03
-def p(g):j=D=0;P=[];exec("for r in g:F=r[j]==4;P+=[r[j]]*D;D^=F;r[j]*=D|F<1\nj+=1\n"*13+"g[:]=filter(any,zip(*g));"*2);A,*_,B=map(max,*g);E=4,*[0]*len(g[0]),4;return[E,*[[A,*r,B][::A==P[0]or-1]for r in g],E]
+# 🥈 task 201: 203 vs 199 bytes for gold, https://arcprize.org/play?task=846bdb03
+def p(g):j=D=0;P=[];exec("for r in g:F=r[j]==4;P+=r[j:]*D;D^=F;r[j]*=D|F<1\nj+=1\n"*13+"g[:]=filter(any,zip(*g));"*3);A,*_,B=map(max,g);E=4,*[0]*len(g),4;return E,*zip(*([A]*9,*g,[B]*9)[::A==P[0]or-1]),E
 # 🥉 task 202: 105 vs 102 bytes for gold, https://arcprize.org/play?task=855e0971
 p=lambda a:[[*map(min,*[c for c in a if max(b)in c])]for b in a if len({*b,0})<3]or[*zip(*p([*zip(*a)]))]
 # 🥉 task 203: 67 vs 64 bytes for gold, https://arcprize.org/play?task=85c4e7cd
@@ -658,8 +658,8 @@ p=lambda a:[[e%3for e in r]for r in[a.pop()]+a]
 p=lambda i:[[~b//~a^2]*3for a,b,_ in i]
 # 💎 task 263: 117 bytes, gold, https://arcprize.org/play?task=a87f7484
 p=lambda g:g[(T:=[*zip(*[map(bool,sum(g,g*0))]*9)]).index(min(T,key=T.count))*3:][:3%len(g)]or[*zip(*p((*zip(*g),)))]
-# 🥉 task 264: 216 vs 189 bytes for gold, https://arcprize.org/play?task=a8c38be5
-p=lambda g,R=range:[[sorted([sum([s[x:x+3]for s in g[y:y+3]],[])for y in R(len(g)-2)for x in R(len(g[0])-2)],key=lambda v:[-all(v)]+[A==5for A in v])[b"\0"[B//3*3+C//3]][B%3*3+C%3]for C in R(9)]for B in R(9)]
+# 🥈 task 264: 193 (241 unzipped) vs 189 bytes for gold, https://arcprize.org/play?task=a8c38be5
+p=lambda g:[[sorted([g[+y][x:3+x]+g[1+y][x:3+x]+g[1+1+y][x:3+x]for y in range(len(g)-2)for x in range(len(g[0])-2)],key=lambda g:[0==y for y in g]+[5==y for y in g])[b'mloeb( ra'[y//3*3+x//3]%9][y%3*3+x%3]for x in range(9)]for y in range(9)]
 # 🥉 task 265: 118 vs 104 bytes for gold, https://arcprize.org/play?task=a8d7556c
 import re;p=lambda g:[g:=[*zip(*eval(re.sub("[^5]{4}(.{52})0, 0(?![^0]{14}0, 0)","2,2\\1 2,2",str(g))))]for _ in g][7]
 # 🥇 task 266: 102 bytes, gold, https://arcprize.org/play?task=a9f96cdd
