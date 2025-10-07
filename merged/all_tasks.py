@@ -1,7 +1,7 @@
 # ❌ task 1: 61 vs 58 bytes for gold, https://arcprize.org/play?task=007bbfb7
 p=lambda a:[[d&e for d in b for e in c]for b in a for c in a]
-# 🥈 task 2: 91 vs 90 bytes for gold, https://arcprize.org/play?task=00d62c1b
-p=lambda a,n=-62:[*map(lambda*b,d=0:[d:=c%(d+4)+(n>c)*4for c in b][::-1],*n*a or p(a,n+1))]
+# 💎 task 2: 88 bytes, gold, https://arcprize.org/play?task=00d62c1b
+p=lambda a,n=11:-n*a or[*map(lambda*b,d=0:[d:=c^c-0**n>>d&4for c in b][::-1],*p(a,n-1))]
 # 🥇 task 3: 58 bytes, gold, https://arcprize.org/play?task=017c7c7b
 p=lambda g:[[v*2for v in l]for l in g+g[g[:3]*2==g:][2:5]]
 # 🥉 task 4: 83 vs 74 bytes for gold, https://arcprize.org/play?task=025d127b
@@ -549,17 +549,17 @@ p=lambda a:max([-(c:=sum(b:=[b[x>>5:y>>5]for b in a[x%32:y%32]],a).count)(0),c(2
 p=lambda a,*n:[*filter(any,zip(*[[d&e for d in b for e in c]for b in n for c in a]or p(a,*a)))]
 # 🥇 task 218: 56 bytes, gold, https://arcprize.org/play?task=90c28cc7
 p=lambda a,*n:[*{b:0for b in zip(*n or p(*a))if any(b)}]
-# 🥈 task 219: 257 (316 unzipped) vs 244 bytes for gold, https://arcprize.org/play?task=90f3ed37
-def p(g):
- S=H=i=0
- while g[i:]:
-  if g[i]>g[0]:
-   H=H or g[i:].index(g[0]);s={(i+o,O)for o in range(H)for O in range(10)if g[i+o][O]};S=S or s;o,O=next((o,O)for O in(0,-1,1,2)for o in range(i)if(A:={(h-o,H-O)for h,H in s if-1<H-O<10})<=S)
-   for h,k in S-A:
-    if-1<k+O<10:g[h+o][k+O]=1
-   i+=H-1
-  i+=1
- return g
+# 🥈 task 219: 254 (318 unzipped) vs 244 bytes for gold, https://arcprize.org/play?task=90f3ed37
+def	p(g):
+	t=S=i=0
+	while	g[i:]:
+		if	g[0]<g[i]:
+			t=t	or	g[i:].index(g[0]);s={(o,O)for	o	in	range(i,i+t)for	O	in	range(10)if	g[o][O]};S=S	or	s;o,O=next((o,O)for	O	in(0,-1,1,2)for	o	in	range(i)if(A:={(h-o,H-O)for	h,H	in	s	if-1<H-O<10})<=S)
+			for	h,H	in	S-A:
+				if-1<H--O<10:g[o+h][H--O]=1
+			i+=t-1
+		i+=1
+	return	g
 # 🥈 task 220: 90 vs 87 bytes for gold, https://arcprize.org/play?task=913fb3ed
 p=lambda i:[i:=[[x.pop()or-(s*2^s-7)%7for s in[0]+x[:0:-1]]for*x,in zip(*i)]for _ in i][3]
 # 🥇 task 221: 87 bytes, gold, https://arcprize.org/play?task=91413438

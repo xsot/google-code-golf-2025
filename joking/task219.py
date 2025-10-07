@@ -1,13 +1,22 @@
-# zip fiddling
-def p(i,n=0,k=0,t=2):
- f=len(r:=[i[k:]for i in i if(t:=~any(i)%3%-~t)*any(i)])
- for l in range(3,len(i)-f):
-  for x in range(all(sum(q:=[[0**i+r*(i!=1)for i,r in zip(i[n:],r)]for i,r in zip(i[l:],r)],[sum([9in i[:2]for i in q]+i[l-1])<1]))*(len(i[0])-n-k)*f):i[l+x%f][x//f+n]=(-q[x%f][x//f]&9)%9
- return k*i or p(i,-~n%3,n>1)
+def	p(g):
+	t=S=i=0
+	while	g[i:]:
+		if	g[0]<g[i]:
+			t=t	or	g[i:].index(g[0]);s={(o,O)for	o	in	range(i,i+t)for	O	in	range(10)if	g[o][O]};S=S	or	s;o,O=next((o,O)for	O	in(0,-1,1,2)for	o	in	range(i)if(A:={(h-o,H-O)for	h,H	in	s	if-1<H-O<10})<=S)
+			for	h,H	in	S-A:
+				if-1<H--O<10:g[o+h][H--O]=1
+			i+=t-1
+		i+=1
+	return	g
 
 ##
-def p(i,n=0,k=0):
- t=2;f=len(r:=[x[k:]for x in i if(t:=~any(x)%3%-~t)*any(x)])
- for l in range(3,len(i)-f):
-  for x in range(all(sum(q:=[[0**i+r*(i!=1)for i,r in zip(i[n:],r)]for i,r in zip(i[l:],r)],[sum([9in x[:2]for x in q]+i[l-1])<1]))*(len(i[0])-n-k)*f):i[l+x%f][x//f+n]=(-q[x%f][x//f]&9)%9
- return k*i or p(i,-~n%3,n>1)
+def p(g):
+ #[*perms('S=t=i','=')]##=0
+ while g[i:]:
+  if g[0]<g[i]:
+   t=t or g[i:].index(g[0])#[';','\n   ']##s={(o,O)for o in range(i,i+t)for O in range(10)if g[o][O]}#[';','\n   ']##S=S or s#[';','\n   ']##o,O=next((o,O)for O in(0,-1,1,2)for o in range(i)if(A:={(h-o,H-O)for h,H in s if-1<H-O<10})<=S)
+   for h,H in S-A:
+    if-1<H--O<10:g[o+h][H--O]=1
+   i+=t-1
+  i+=1
+ return g
