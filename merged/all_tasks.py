@@ -30,8 +30,8 @@ def p(i):*v,=map(max,*i);f,*r=map(v.index,filter(abs,v));N=len(v);return i[N:]an
 p=lambda i,*I:[w for*w,r in zip(*I or p(zip(*i),*i),i)if[*{*r}][2:]]
 # 💎 task 15: 92 bytes, gold, https://arcprize.org/play?task=0ca9ddb6
 p=lambda i,k=-3:i*k or[i:=[r.pop()|4*(k==2)|7*((k:=K)==1)for K in i]for*r,in zip(*p(i,k+1))]
-# ❌ task 16: 44 vs 43 bytes for gold, https://arcprize.org/play?task=0d3d703e
-p=lambda m:[[i^466%(1|12-i)for i in m[0]]]*3
+# 🥇 task 16: 43 bytes, gold, https://arcprize.org/play?task=0d3d703e
+p=lambda m:[[109//i&12%i+7for i in m[0]]]*3
 # 🥈 task 17: 102 vs 99 bytes for gold, https://arcprize.org/play?task=0dfd9992
 p=lambda g:[g:=[*zip(*[max(a*all(len({*r,0})<3for r in zip(b,a))for a in g)for b in g])]for _ in g][1]
 # 💎 task 18: 283 (409 unzipped) bytes, gold, https://arcprize.org/play?task=0e206a2e
@@ -78,8 +78,8 @@ p=lambda i,n=2,*t:t*(~n%2*6>len(t))or p(i,n+1,*[x for x in zip(*n%2*t or i)if n/
 p=lambda g,a=-1:[[max(sum({*(f:=sum(g,[]))[(a:=a+9//d)::d]}&{*f[a::-d]})for d in(9,11))for _ in g]for _ in g]
 # 🥇 task 38: 51 bytes, gold, https://arcprize.org/play?task=1fad071e
 p=lambda g:[(str(g).count('1, 1')*[1]+[0]*9)[:9:2]]
-# 🥉 task 39: 61 vs 60 bytes for gold, https://arcprize.org/play?task=2013d3e2
-p=lambda a,f=filter:[*zip(*[*f(any,zip(*f(any,a)))][:3])][:3]
+# 🥇 task 39: 60 bytes, gold, https://arcprize.org/play?task=2013d3e2
+p=lambda a,n=7:-n*a[:3]or p([*zip(*a[1-any(a[0]):3+n])],n-1)
 # 🥉 task 40: 71 vs 69 bytes for gold, https://arcprize.org/play?task=2204b7a8
 p=lambda i,c=9:[[(y>0)*i[59-(c:=c+1)>>9][c//5%-2]for y in x]for x in i]
 # 🥇 task 41: 49 bytes, gold, https://arcprize.org/play?task=22168020

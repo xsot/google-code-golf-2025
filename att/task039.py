@@ -1,1 +1,4 @@
-p=lambda a:[b[:3]for*b,in zip(*filter(any,zip(*a)))if any(b)][:3]
+p=lambda a,n=7:-n*a[:3]or p([*zip(*a[1-any(a[0]):3+n])],n-1)
+
+##
+p=lambda a,n=7:-n*a or p([*zip(*a[1-any(a[n<1]):2+n|1])],n-1)

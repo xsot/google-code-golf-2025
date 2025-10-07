@@ -1,4 +1,7 @@
-# ovs (44 vs 43 bytes for gold)
+# att (43 bytes, gold)
+p=lambda m:[[109//i&12%i+7for i in m[0]]]*3
+
+### ovs (44 bytes)
 p=lambda m:[[i^466%(1|12-i)for i in m[0]]]*3
 
 ### xsot (46 bytes)
