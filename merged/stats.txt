@@ -4,7 +4,6 @@ Biggest diffs (current - gold):
 	task044: 27
 	task048: 26
 	task208: 24
-	task284: 20
 	task102: 20
 	task182: 18
 	task265: 14
@@ -14,6 +13,7 @@ Biggest diffs (current - gold):
 	task253: 12
 	task206: 12
 	task154: 12
+	task349: 11
 Biggest diffs (current / gold):
 	task048: 1.283
 	task319: 1.216
