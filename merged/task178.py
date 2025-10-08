@@ -1,7 +1,10 @@
-# att (49 vs 47 bytes for gold)
+# joking (47 bytes, gold)
+p=lambda a:a*-1*-1or[p(a:=b)for b in a if a!=b]
+
+### att (49 bytes)
 p=lambda a:a*-1*-1or[p(b)for b in a if a!=(a:=b)]
 
-### combined (tied, 49 bytes)
+### combined (49 bytes)
 p=lambda a:a*-1*-1or[p(b)for b in a if a!=(a:=b)]
 
 ### xsot (55 bytes)
