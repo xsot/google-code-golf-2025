@@ -1,4 +1,7 @@
-# ovs (87 vs 84 bytes for gold)
+# att (84 bytes, gold)
+p=lambda g:-~(i:=g.index(m:=max(g)))*[([4,0]*15)[m.index(max(m)):][:len(g)]]+g[i:-1]
+
+### ovs (87 bytes)
 p=lambda g:[([4,0]*8)[(m:=max(g)).index(max(m))%2:][:len(g)]]*-~(i:=g.index(m))+g[i:-1]
 
 ### joking (100 bytes)
