@@ -709,10 +709,8 @@ p=lambda i,k=39:-k*i or p(eval(re.sub("(\((?=[^)]+[1-9])[^)]+., )(\([^)]+.), \((
 p=lambda i,*x,c=0:[c|(c:=i)>>2|(i:=y)for y in x+x[7:]]or[*map(p,*map(p,*i))]
 # 💎 task 283: 81 bytes, gold, https://arcprize.org/play?task=b6afb2da
 p=lambda i,r=[[0]*25]*25,*w:r and[*map(p,i,r,r[:1]+i,i[1:]+r,*w)]or sum(w)%8*i//8
-# 🥈 task 284: 208 vs 201 bytes for gold, https://arcprize.org/play?task=b7249182
-def p(i):
- for E in[enumerate]*2:m=max(i);*i,=zip(*len(l:=[n for n,y in E(m)if y])%2*i or[[(23//(X:=sum(l)-b-b)**2*9+(l[0]<=b<=l[-1])>>(a-i.index(m))**2&1)*m[l[X<0]]for b,_ in E(x)]for a,x in E(i)])
- return i
+# 🥈 task 284: 205 vs 201 bytes for gold, https://arcprize.org/play?task=b7249182
+p=lambda i:[i:=[*zip(*len(l:=[n for n,y in E(m)if y])%2*i)]or[[(23//(X:=sum(l)-b-b)**2*9+(l[0]<=b<=l[1])>>a**2&1)*m[l[X<0]]for a,_ in E(i,-i.index(m))]for b,_ in E(m)]for E in[enumerate]*2if[m:=max(i)]][1]
 # 💎 task 285: 275 (431 unzipped) bytes, gold, https://arcprize.org/play?task=b775ac94
 def	p(g):
 	for*I,in[[]]*8:
