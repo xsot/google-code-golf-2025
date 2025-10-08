@@ -1,4 +1,9 @@
-# joking (143 vs 130 bytes for gold)
+# ovs (125 bytes, gold)
+def p(g):
+ for*q,in[[]]*8:[q:=(q[::-1]*({*r}^{2}=={3}<{*q[0]})or[[v or 3for v in r]])+q for r in zip(*g)];g=q[-10:]
+ return g
+
+### joking (143 bytes)
 p=lambda i:{*i[s:=str(i).index(", 2")//31]+i[s+1]}-{2,3}and[*zip(*p(eval(str([*zip(*i)][::-1]).replace(*"03")))[9::-1])]or i[:s]+(i*2)[9+s::-1]
 
 ##

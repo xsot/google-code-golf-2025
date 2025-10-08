@@ -130,8 +130,10 @@ p=lambda g,R=range(11):[[(g[r][c]==5)*5or(max(f:=[sum(sum(v[c//3*4:][:3])for v i
 p=lambda g:[r[:1]*5+[5*(l>0)]+5*[l]for*r,l in g]
 # 🥇 task 61: 63 bytes, gold, https://arcprize.org/play?task=29ec7d0e
 p=lambda i,r=range(18):[[y*x%max(i[~0])+1for y in r]for x in r]
-# 🥈 task 62: 143 vs 130 bytes for gold, https://arcprize.org/play?task=2bcee788
-p=lambda i:{*i[s:=str(i).index(", 2")//31]+i[s+1]}-{2,3}and[*zip(*p(eval(str([*zip(*i)][::-1]).replace(*"03")))[9::-1])]or i[:s]+(i*2)[9+s::-1]
+# 💎 task 62: 125 bytes, gold, https://arcprize.org/play?task=2bcee788
+def p(g):
+ for*q,in[[]]*8:[q:=(q[::-1]*({*r}^{2}=={3}<{*q[0]})or[[v or 3for v in r]])+q for r in zip(*g)];g=q[-10:]
+ return g
 # 🥈 task 63: 75 vs 74 bytes for gold, https://arcprize.org/play?task=2bee17df
 p=lambda g:[[v+3-3*(c>[-v]*99<r[1:-1])for _,*c,_,v in zip(*g,r)]for r in g]
 # 🥇 task 64: 152 bytes, gold, https://arcprize.org/play?task=2c608aff
