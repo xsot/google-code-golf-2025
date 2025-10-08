@@ -130,10 +130,8 @@ p=lambda g,R=range(11):[[(g[r][c]==5)*5or(max(f:=[sum(sum(v[c//3*4:][:3])for v i
 p=lambda g:[r[:1]*5+[5*(l>0)]+5*[l]for*r,l in g]
 # 🥇 task 61: 63 bytes, gold, https://arcprize.org/play?task=29ec7d0e
 p=lambda i,r=range(18):[[y*x%max(i[~0])+1for y in r]for x in r]
-# 💎 task 62: 125 bytes, gold, https://arcprize.org/play?task=2bcee788
-def p(g):
- for*q,in[[]]*8:[q:=(q[::-1]*({*r}^{2}=={3}<{*q[0]})or[[v or 3for v in r]])+q for r in zip(*g)];g=q[-10:]
- return g
+# 💎 task 62: 121 bytes, gold, https://arcprize.org/play?task=2bcee788
+p=lambda g:exec("q=[]\nfor r in zip(*g):q+=q[::-1]*({*r}^{2}=={3}<{*q[-1]})or[[v or 3for v in r]]\ng[:]=q[9::-1];"*8)or g
 # 🥈 task 63: 75 vs 74 bytes for gold, https://arcprize.org/play?task=2bee17df
 p=lambda g:[[v+3-3*(c>[-v]*99<r[1:-1])for _,*c,_,v in zip(*g,r)]for r in g]
 # 🥇 task 64: 152 bytes, gold, https://arcprize.org/play?task=2c608aff
@@ -450,11 +448,11 @@ p=lambda a:[p(b)for*b,in map(zip,a,a[4:])]or max(sum(a+a,())[1:],key=bool)
 def p(a):
 	for b in a[:3]:c=6>>a[3][3];b[c:c+3]=b[5:2:-1]
 	return a
-# 🥉 task 182: 187 vs 169 bytes for gold, https://arcprize.org/play?task=776ffc46
+# 🥉 task 182: 186 vs 169 bytes for gold, https://arcprize.org/play?task=776ffc46
 def p(g):
  R=F=sum(g,[])
- while C:=[*{*F}][-2]:
-  o=F.index(C)-2;N={d for d in range(70)if d%20<6>F[d+o]==C}
+ while C:=max(F):
+  o=F.index(C)-2;N={d for d in range(65)if d%20<6!=F[d+o:]>=[C]}
   for i in N:i+=o;F[i]=0;g[i//20][i%20]+=N==R and~-W
   if~-C:R,W=N,C
  return g
