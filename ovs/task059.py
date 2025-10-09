@@ -1,1 +1,1 @@
-def p(g):f=sum(g,[]);C=[sum(R[i%11&~3:][:4].count(0)for R in g[i//11&~3:][:4])for i in range(121)];return[[v*(v==5)or(C[i]==min(C))*max({*f}-{5})for i,v in r]for r in zip(*[enumerate(f)]*11)]
+p=lambda g,w=89,R=range(11):(W:=[[(g[r][c]==5)*5or(w%9<sum(v[c&12:][:3].count(a:=w//9)for v in g[r&12:][:3]))*a for c in R]for r in R])*(5!=a in sum(W,W))or p(g,w-1)

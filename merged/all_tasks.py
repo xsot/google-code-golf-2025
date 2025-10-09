@@ -124,8 +124,8 @@ p=lambda i:[[0**i[0][0]+0**i[0][2]*3^2]]
 p=lambda a,*n:[*filter(any,zip(*n or p(a,*a)*2))]
 # ❌ task 58: 114 vs 103 bytes for gold, https://arcprize.org/play?task=28e73c20
 def p(i,k=7):r=range(l:=len(i));return-k*i or p([[i[~b][a]or~a%2*(a-1//k<=b<l-a-30%k)*3for b in r]for a in r],k-2)
-# 🥈 task 59: 167 vs 156 bytes for gold, https://arcprize.org/play?task=29623171
-p=lambda g,R=range(11):[[(g[r][c]==5)*5or(max(f:=[sum(sum(v[c//3*4:][:3])for v in g[c%3*4:][:3])for c in R])==f[r//4+c//4*3])*sum({*sum(g,[-5])})for c in R]for r in R]
+# 🥈 task 59: 165 vs 156 bytes for gold, https://arcprize.org/play?task=29623171
+p=lambda g,w=89,R=range(11):(W:=[[(g[r][c]==5)*5or(w%9<sum(v[c&12:][:3].count(a:=w//9)for v in g[r&12:][:3]))*a for c in R]for r in R])*(5!=a in sum(W,W))or p(g,w-1)
 # 🥈 task 60: 48 vs 47 bytes for gold, https://arcprize.org/play?task=29c11459
 p=lambda g:[r[:1]*5+[5*(l>0)]+5*[l]for*r,l in g]
 # 🥇 task 61: 63 bytes, gold, https://arcprize.org/play?task=29ec7d0e
@@ -813,8 +813,8 @@ p=lambda a:[[*map(max,*a[:n]*2)]for n in(1,2,3)]
 # 🥉 task 323: 112 vs 102 bytes for gold, https://arcprize.org/play?task=d06dbe63
 r=range(13)
 p=lambda a:[[a[i][j]|5*((b:=abs(41*i+3*j+2-str(a).find('8')))>~b%76in b'KHE"')for j in r]for i in r]
-# 💎 task 324: 230 (266 unzipped) bytes, gold, https://arcprize.org/play?task=d07ae81c
-def p(g):k,K,b,B=sorted({*sum(g,[])},key=sum(g,[]).count);return[[([[k,K][k!=C!=[B,b][all({k,B}!={*r}!={K,b}for r in[*zip(*g)]+g)]]for y,r in enumerate(g)for x,c in enumerate(r)if c in(k,K)!=abs(x-X)==abs(y-Y)]+[C])[0]for X,C in enumerate(r)]for Y,r in enumerate(g)]
+# 💎 task 324: 228 (261 unzipped) bytes, gold, https://arcprize.org/play?task=d07ae81c
+def p(g):k,K,b,B=T=sorted({*sum(g,[])},key=sum(g,[]).count);return[[([T[k!=C!=T[~all({k,B}!={*r}!={K,b}for r in[*zip(*g)]+g)]]for y,r in enumerate(g)for x,c in enumerate(r)if c in(k,K)!=abs(x-X)==abs(y-Y)]+[C])[0]for X,C in enumerate(r)]for Y,r in enumerate(g)]
 # 💎 task 325: 158 bytes, gold, https://arcprize.org/play?task=d0f5fe59
 p=lambda i,k=39,z=8:-k*[*zip(*z*[iter(z*[*z*[0],8])])][1:]or p([(s:=1)*[s:=h and(h<9)*(z:=z*2)+s|h for h in x]for x in zip(*i[::-1])],k-1,len({*sum(i,[])})-1)
 # 🥇 task 326: 30 bytes, gold, https://arcprize.org/play?task=d10ecb37
