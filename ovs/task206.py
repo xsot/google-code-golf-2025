@@ -1,8 +1,6 @@
 def p(g):
- B=len(g[a:=0]);F=sum(g,[]);i=9;Y=F.index(5)-~B
- while i:
-  if{*g[a//B]}-{0,5}and{*F[a%B::B]}-{0,5}:i-=1;g[Y//B-i//3][Y%B-i%3]=F[a]
-  a+=1
+ W=len(g[0]);s=sum(G:=g,[]).index(5)+~W
+ for g[s//W][s%W:s%W+3]in[G:=[r for*r,in zip(*G)if{*r}-{0,5}]for _ in g][1]:s+=W
  return g
 
 ##

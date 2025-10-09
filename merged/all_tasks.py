@@ -507,10 +507,10 @@ p=lambda i:[[i[g:=len(i)//2][g+i[g].index(y)]for y in x]for x in i]
 import re;p=lambda i:eval(re.sub("(?<!1, )1,(.+?)1",r"1,*[(s:=len([\1]))%2*5+2]*s,1",str(i)))
 # 💎 task 205: 139 bytes, gold, https://arcprize.org/play?task=8731374e
 p=lambda a,n=87,i=0:[[min(b+c,key=b.count)for c in zip(*a)]for b in-n*a]or p([*zip(*a[(6in(i:=1+i*(a==(a:=b))for b in a[-1]))-2::-1])],n-1)
-# ❌ task 206: 156 vs 144 bytes for gold, https://arcprize.org/play?task=88a10436
-def p(g,E=enumerate):
- r,c=map(min,*[(a,b)for a,x in E(g)for b,y in E(x)if y%5or y>0==(s:=a,t:=b)])
- for i in-1,0,1:g[s+i][t-1:t+2]=g[r-~i][c:c+3]
+# 💎 task 206: 140 bytes, gold, https://arcprize.org/play?task=88a10436
+def p(g):
+ W=len(g[0]);s=sum(G:=g,[]).index(5)+~W
+ for g[s//W][s%W:s%W+3]in[G:=[r for*r,in zip(*G)if{*r}-{0,5}]for _ in g][1]:s+=W
  return g
 # 💎 task 207: 74 bytes, gold, https://arcprize.org/play?task=88a62173
 p=lambda a:[p(b)for*b,in map(zip,a,a[3:])]or min(b:=sum(a,()),key=b.count)
