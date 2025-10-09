@@ -813,8 +813,8 @@ p=lambda a:[[*map(max,*a[:n]*2)]for n in(1,2,3)]
 # 🥉 task 323: 112 vs 102 bytes for gold, https://arcprize.org/play?task=d06dbe63
 r=range(13)
 p=lambda a:[[a[i][j]|5*((b:=abs(41*i+3*j+2-str(a).find('8')))>~b%76in b'KHE"')for j in r]for i in r]
-# 🥈 task 324: 253 (317 unzipped) vs 242 bytes for gold, https://arcprize.org/play?task=d07ae81c
-def	p(g):k,K,b,B=sorted({*sum(g,[])},key=sum(g,[]).count);b=[B,b][all({K,b}!={*r}!={k,B}for	r	in[*zip(*g)]+g)];[0for	y,r	in	enumerate(zip(*zip(*g)))for	x,r	in	enumerate(r)for	z,Y	in	enumerate(g)for	Y	in(-z,z)if	r	in(k,K)for	X	in(-z,z)if	len(g)>Y+y>-1<X+x<len(g[0])for	g[Y+y][X+x]in[(k,K)[k!=g[Y+y][X+x]!=b]]];return	g
+# 💎 task 324: 230 (266 unzipped) bytes, gold, https://arcprize.org/play?task=d07ae81c
+def p(g):k,K,b,B=sorted({*sum(g,[])},key=sum(g,[]).count);return[[([[k,K][k!=C!=[B,b][all({k,B}!={*r}!={K,b}for r in[*zip(*g)]+g)]]for y,r in enumerate(g)for x,c in enumerate(r)if c in(k,K)!=abs(x-X)==abs(y-Y)]+[C])[0]for X,C in enumerate(r)]for Y,r in enumerate(g)]
 # 💎 task 325: 158 bytes, gold, https://arcprize.org/play?task=d0f5fe59
 p=lambda i,k=39,z=8:-k*[*zip(*z*[iter(z*[*z*[0],8])])][1:]or p([(s:=1)*[s:=h and(h<9)*(z:=z*2)+s|h for h in x]for x in zip(*i[::-1])],k-1,len({*sum(i,[])})-1)
 # 🥇 task 326: 30 bytes, gold, https://arcprize.org/play?task=d10ecb37
