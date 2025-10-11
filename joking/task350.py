@@ -2,6 +2,7 @@ p=lambda i:[*map(f:=lambda*x,s=0:[y|(x.count(1)>(s:=s+y%8)>y<1)*8for y in x],*ma
 
 ##
 p=lambda i:[*map(f:=lambda*x,s=0:[y|(x.count(y+1)>(s:=s+y%8)>0)*8for y in x],*map(f,*i))]
+p=lambda i,*x,s=0:[y|(x.count(1)>(s:=s+y%8)>y<1)*8for y in x]or[*map(p,i,*map(p,i*2,*i))]
 p=lambda i:[*map(f:=lambda*x,b=0:[y|(y+1in{*x[:b]}&{*x[(b:=b+1):]})*8for y in x],*map(f,*i))]
 
 ## recursion alt

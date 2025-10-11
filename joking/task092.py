@@ -1,0 +1,1 @@
+p=lambda a,*b,i=-1:[b[i:=i+1]or sum({*b[i:]}&{*b[:i]})for _ in b]or[*map(p,a,*map(p,a*3,*a))]
