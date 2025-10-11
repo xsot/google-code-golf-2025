@@ -547,17 +547,13 @@ p=lambda a:max([-(c:=sum(b:=[b[x>>5:y>>5]for b in a[x%32:y%32]],a).count)(0),c(2
 p=lambda a,*n:[*filter(any,zip(*[[d&e for d in b for e in c]for b in n for c in a]or p(a,*a)))]
 # 🥇 task 218: 56 bytes, gold, https://arcprize.org/play?task=90c28cc7
 p=lambda a,*n:[*{b:0for b in zip(*n or p(*a))if any(b)}]
-# 🥈 task 219: 254 (318 unzipped) vs 244 bytes for gold, https://arcprize.org/play?task=90f3ed37
-def	p(g):
-	t=S=i=0
-	while	g[i:]:
-		if	g[0]<g[i]:
-			t=t	or	g[i:].index(g[0]);s={(o,O)for	o	in	range(i,i+t)for	O	in	range(10)if	g[o][O]};S=S	or	s;o,O=next((o,O)for	O	in(0,-1,1,2)for	o	in	range(i)if(A:={(h-o,H-O)for	h,H	in	s	if-1<H-O<10})<=S)
-			for	h,H	in	S-A:
-				if-1<H--O<10:g[o+h][H--O]=1
-			i+=t-1
-		i+=1
-	return	g
+# 🥇 task 219: 244 (261 unzipped) bytes, gold, https://arcprize.org/play?task=90f3ed37
+def p(g):
+ q=H=i=0
+ while g[i:]:
+  if g[i]>g[0]:q=q or i;H=H or g[i:].index(g[0]);g[i-1:i+H]=[A for O in(0,-1,1,2)for o in(q-1,q)if 7not in sum(A:=[[g%7-2%~R for R,g in zip(R,g[:O%4%3]+g[O<0:]+[0])]for R,g in zip(g[i-1:i+H],g[o:])],[])][0];i+=H
+  i+=1
+ return g
 # 🥈 task 220: 90 vs 87 bytes for gold, https://arcprize.org/play?task=913fb3ed
 p=lambda i:[i:=[[x.pop()or-(s*2^s-7)%7for s in[0]+x[:0:-1]]for*x,in zip(*i)]for _ in i][3]
 # 🥇 task 221: 87 bytes, gold, https://arcprize.org/play?task=91413438
