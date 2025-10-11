@@ -7192,12 +7192,12 @@
                 "escape_cost": 0
             },
             "ovs": {
-                "source": "ZGVmIHAoZyk6CiBTPUg9aT0wCiB3aGlsZSBnW2k6XToKICBpZiBnW2ldPmdbMF06CiAgIEg9SCBvciBnW2k6XS5pbmRleChnWzBdKTtzPXsoaStvLE8pZm9yIG8gaW4gcmFuZ2UoSClmb3IgTyBpbiByYW5nZSgxMClpZiBnW2krb11bT119O1M9UyBvciBzO28sTz1uZXh0KChvLE8pZm9yIE8gaW4oMCwtMSwxLDIpZm9yIG8gaW4gcmFuZ2UoaSlpZihBOj17KGgtbyxILU8pZm9yIGgsSCBpbiBzIGlmLTE8SC1PPDEwfSk8PVMpCiAgIGZvciBoLGsgaW4gUy1BOgogICAgaWYtMTxrK088MTA6Z1toK29dW2srT109MQogICBpKz1ILTEKICBpKz0xCiByZXR1cm4gZwoKIyMgMjgzLzMwOQpkZWYgcChhLGg9MCk6CiBiPVsqbWFwKGFueSxhKV0uaW5kZXg7ZD1iKDAsYzo9YigxKSk7cT1hW2M6ZF07az1oLy80O2o9aCU0PjI7aT1oJTQlMzt1LCpyLHY9YVtrOmsrZC1jKzJdOypzLD16aXAoKnIpO2w9LVsqbWFwKGFueSxzWzo6LTFdKSwxXS5pbmRleCgxKTtzPXNbOmxdO2U9Wyp6aXAoKnEpXVtqOmwrai1pXT09c1tpOl0hPXNbOmldPT1zW2k6aStpXSE9dT09dgogZm9yIG0sbiBpbiB6aXAocSxyKTpuW2w6XT1beCsoZSp5PngpZm9yIHgseSBpbiB6aXAobltsOl0sbVtsK2otaTpdK3UpXQogcmV0dXJuIGgvLzUyKmEgb3IgcChhLGgrMSkK",
-                "size_uncompressed": 316,
-                "compressed": "I2NvZGluZzpMMQppbXBvcnQgemxpYgpleGVjKHpsaWIuZGVjb21wcmVzcyhieXRlcygiXY7BagQhDIbv+xQ5KmrRHp1JX2TwMGC0QnFKsHSh7LvXrIdCb+bL9/8mU4FPRTreoCBjRX+D7/f2QUBHjWliaEXe6Y0O/5yBkeHiJby0numuZKe3jD+qmmG7LnM/oHXgs1dS/AT9DwSvV60Z6ejpsRUs0pm3mcZO96HU6lkx5a0LNtjX/8119qgW58eXG5bdilyWRcnQigv7pHvwD71j0XL/Mk4ximtR0BJPI2Kk45Kz5pQwyLYaZCevagQwjS/uQL8iLCJMMSIpLC05KSk=",
-                "size_compressed": 257,
-                "method": "zopfli",
-                "window": -15,
+                "source": "ZGVmIHAoZyk6CiBTPUg9aT0wCiB3aGlsZSBnW2k6XToKICBpZiBnW2ldPmdbMF06CiAgIEg9SCBvciBnW2k6XS5pbmRleChnWzBdKTtzPXsoaStvLE8pZm9yIG8gaW4gcmFuZ2UoSClmb3IgTyBpbiByYW5nZSgxMClpZiBnW2krb11bT119O1M9UyBvciBzO28sTz1uZXh0KChvLE8pZm9yIE8gaW4oMCwtMSwxLDIpZm9yIG8gaW4gcmFuZ2UoaSlpZihBOj17KGgtbyxILU8pZm9yIGgsSCBpbiBzIGlmLTE8SC1PPDEwfSk8PVMpCiAgIGZvciBoLGsgaW4gUy1BOgogICAgaWYtMTxrK088MTA6Z1toK29dW2srT109MQogICBpKz1ICiAgaSs9MQogcmV0dXJuIGcKCiMjIDI2Mi8yOTIKZGVmIHAoZyk6CiBTPUg9aT0wCiB3aGlsZSBnW2k6XToKICBpZiBnW2ldPmdbMF06SD1IIG9yIGdbaTpdLmluZGV4KGdbMF0pO3M9eyhhLG8vL0gpZm9yIG8gaW4gcmFuZ2UoSCoxMClpZiBnW2E6PWkrbyVIXVtvLy9IXX07Uz1TIG9yIHM7bmV4dChbMGZvciBoLGsgaW4gUy1BIGlmLTE8aytPPDEwZm9yIGdbaCtvXVtrK09daW5bMV1dZm9yIE8gaW4oMCwtMSwxLDIpZm9yIG8gaW4gcmFuZ2UoaSlpZihBOj17KGgtbyxILU8pZm9yIGgsSCBpbiBzIGlmLTE8SC1PPDEwfSk8PVMpO2krPUgKICBpKz0xCiByZXR1cm4gZwoKIyMgMjQ0LzI0NCB3aXRoIDggZmFpbHVyZXM6IGRvZXNuJ3QgaGFuZGxlIHRoZSBjYXNlIHdoZXJlIHRoZSBmaXJzdCByb3cgYSBwYXR0ZXJuIGlzIG1pc3NpbmcgY29tcGxldGVseQpkZWYgcChnKToKIG89SD1pPTAKIHdoaWxlIGdbaTpdOgogIGlmIGdbaV0+Z1swXTpvPW8gb3IgaTtIPUggb3IgZ1tpOl0uaW5kZXgoZ1swXSk7Z1tpOmkrSF09W0EgZm9yIE8gaW4oMCwtMSwxLDIpaWYoQTo9W1t5JTctMiV+eCBmb3IgeCx5IGluIHppcChSLHJbOk8lNCUzXStyW088MDpdK1swXSldZm9yIFIsciBpbiB6aXAoZ1tpOl0sZ1tvOm8rSF0pXSlpZic3J25vdCBpbiclcyclQV1bMF07aSs9SAogIGkrPTEKIHJldHVybiBnCg==",
+                "size_uncompressed": 314,
+                "compressed": "I2NvZGluZzpMMQppbXBvcnQgemxpYgpleGVjKHpsaWIuZGVjb21wcmVzcyhieXRlcygiXU/NisMgEL7nKeaoRBftMcn0RYKHQNUOLLqIpcLSd68TKQt70u/Xz5sP8COyXCYISBjRTPC807eHvMfFdRoo8N1d825ODIQEuQzDF6Wbb4I1uVb8FXFuKsnQ9QaUoBwpekEnkf4Ia+SonZvbk3utAQN31rWnMflWhfj0cEwYpa2y6vK/OfYeUZb+sNdNkR4Rr4gttW/XduvsZs1Lbhgk7x+Ogx1Bl/NLw3jMbFzy7nlWRw4tq3FGms6jw+LroyTIbyIsIkwxIiksLTkpKQ==",
+                "size_compressed": 256,
+                "method": "zlib",
+                "window": -9,
                 "escape_cost": 0
             },
             "joking": {
