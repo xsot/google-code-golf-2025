@@ -649,8 +649,8 @@ import re
 p=lambda a:eval(re.sub('1, 0(?=, 1)','1,2',str(a)))
 # 🥈 task 259: 85 vs 84 bytes for gold, https://arcprize.org/play?task=a740d043
 p=lambda i,k=39:-k*i or p([*zip(*eval(str(i).replace(*"10"))[any(i[-1])-2::-1])],k-1)
-# 🥈 task 260: 140 vs 135 bytes for gold, https://arcprize.org/play?task=a78176bb
-exec("p=lambda a:[[(c:=max({*max(a)}-{5}))*(c==a[i][j]or sum(m-n-i+j+k%5-2==0<a[m][n]"+'for %s in range(10)%s'*5%(*'m n k',')==2)',*'j]i]'))
+# 💎 task 260: 134 bytes, gold, https://arcprize.org/play?task=a78176bb
+exec("p=lambda a:[[max({*max(a)}-{5})*any(0<a[i][j]%5or 2==sum(m-n-i+j+k%5-2==0<a[m][n]"+'for %s in range(10)%s'*6%(*'m n k)_)j]i]',))
 # 🥇 task 261: 47 bytes, gold, https://arcprize.org/play?task=a79310a0
 p=lambda a:[[e%3for e in r]for r in[a.pop()]+a]
 # 🥇 task 262: 39 bytes, gold, https://arcprize.org/play?task=a85d4709
