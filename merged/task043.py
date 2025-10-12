@@ -1,7 +1,10 @@
-# att (57 vs 56 bytes for gold)
+# joking (56 bytes, gold)
+p=lambda a:[[c+b[-1]&2|b.pop(0)for c in a[0]]for*b,in a]
+
+### att (57 bytes)
 p=lambda a:[[c*b[-1]//9|b.pop(0)for c in a[0]]for*b,in a]
 
-### combined (tied, 57 bytes)
+### combined (57 bytes)
 p=lambda a:[[c*b[-1]//9|b.pop(0)for c in a[0]]for*b,in a]
 
 ### xsot (58 bytes)

@@ -1,4 +1,7 @@
-# att (84 vs 83 bytes for gold)
+# joking (83 bytes, gold)
+p=lambda i,k=3:-k*i or[[k:=i[y!=8+k*2]or y for y in i]for i[::-1]in zip(*p(i,k-1))]
+
+### att (84 bytes)
 p=lambda i,k=3:-k*i or[[i[k>(k:=y)%9-8]or k for y in i]for i[::-1]in zip(*p(i,k-1))]
 
 ### ovs (85 bytes)

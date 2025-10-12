@@ -1,4 +1,7 @@
-# ovs (76 vs 73 bytes for gold)
+# joking (73 bytes, gold)
+p=lambda g,t=[],s=0:g*0!=0and[*map(p,g,(t+g)[:6]*3,[g[5]]*17)]or(t>g)*s|g
+
+### ovs (76 bytes)
 p=lambda g,i=-1:[[v|(v<g[(i:=i+1)//17%6][i%17%6])*r[5]for v in r]for r in g]
 
 ##
