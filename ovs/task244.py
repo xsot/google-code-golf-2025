@@ -1,1 +1,1 @@
-p=lambda g:[r[::(w:=~[len({*r})for r in g].index(1))]for r in g][::-w]
+p=lambda a:[b[::(n:=~a.index(min(a,key=set)))]for b in a][::-n]

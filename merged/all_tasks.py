@@ -558,8 +558,8 @@ def p(g):
 p=lambda i:[i:=[[x.pop()or-(s*2^s-7)%7for s in[0]+x[:0:-1]]for*x,in zip(*i)]for _ in i][3]
 # 🥇 task 221: 87 bytes, gold, https://arcprize.org/play?task=91413438
 def p(i):j=str(i).count("0");a=2;return[(q*(9-(a:=a+1)//3*j)+[0]*21)[:j*3]for q in i*j]
-# 💎 task 222: 103 bytes, gold, https://arcprize.org/play?task=91714a58
-p=lambda g:[g:=[[c*(2*f"{c}, "in"%s"%r)*(sum(g,g).count(c)>4)for c in r]for*r,in zip(*g)]for _ in g][5]
+# 💎 task 222: 102 bytes, gold, https://arcprize.org/play?task=91714a58
+p=lambda g:[g:=[[c*(sum(g,g).count(c)>8!=2*f"{c}, "in"%s"%r)for c in r]for*r,in zip(*g)]for _ in g][5]
 # 💎 task 223: 46 bytes, gold, https://arcprize.org/play?task=9172f3a0
 p=lambda a:a>a*0!=0and[p(a[0])]*3+p(a[1:])or a
 # 💎 task 224: 165 bytes, gold, https://arcprize.org/play?task=928ad970
@@ -611,14 +611,14 @@ p=lambda a:[*zip(*a)]
 p=lambda g:[r[~r.index(0)::-1][:3]for r in g if 0in r]
 # 🥇 task 243: 79 bytes, gold, https://arcprize.org/play?task=9edfc990
 p=lambda a,n=-79:a*n or[*zip(*eval(str(p(a,n+1)[::-1]).replace('1, 0','1,1')))]
-# 🥈 task 244: 64 vs 63 bytes for gold, https://arcprize.org/play?task=9f236235
-p=lambda a,n=1:[b[::~n]for b in(a[n]!=a[0])*a][::1+n]or p(a,n+1)
+# 🥇 task 244: 63 bytes, gold, https://arcprize.org/play?task=9f236235
+p=lambda a:[b[::(n:=~a.index(min(a,key=set)))]for b in a][::-n]
 # 🥈 task 245: 101 vs 100 bytes for gold, https://arcprize.org/play?task=a1570a43
 p=lambda i,k=7:-k*i or p([*map(lambda*r,w=0:[[v,w%3][(w:=v)<=2in max(i,key=any)]for v in r],*i)],k-1)
 # 🥇 task 246: 105 bytes, gold, https://arcprize.org/play?task=a2fd1cf0
 p=lambda a,n=3,d=0:-n*a or p([[b.pop()|4*(n|2in b)*(d:=d^sum(c)&2)for c in a[::-1]]for*b,in zip(*a)],n-1)
-# 🥉 task 247: 96 vs 95 bytes for gold, https://arcprize.org/play?task=a3325580
-p=lambda a:(m:=max(map(c:=(b:=sum(zip(*a),())).count,{*b}-{0})))*[[*{d:0for d in b if c(d)==m}]]
+# 💎 task 247: 93 bytes, gold, https://arcprize.org/play?task=a3325580
+p=lambda a,m=9:[*zip(*{(d,)*m:0for d in sum(zip(*a),())if sum(a,[]).count(d)==m})]or p(a,m-1)
 # 🥉 task 248: 74 vs 72 bytes for gold, https://arcprize.org/play?task=a3df8b1e
 def p(m,c=0,d=1):
  for r in m[::-1]:r[c]=1;c+=d;r[1:-c]or(d:=-d)
