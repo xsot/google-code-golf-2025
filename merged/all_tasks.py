@@ -634,8 +634,8 @@ p=lambda a,n=-42:[[max(n,14>>d&b.pop())for d in[0]+b[:0:-1]]for*b,in zip(*n*a or
 p=lambda g,v=0:g*0!=0and[*map(p,g,[-1,4]*9)]or-g//v&v
 # 💎 task 253: 114 bytes, gold, https://arcprize.org/play?task=a61ba2ce
 p=lambda g:[[(i:=a&b)*0+max(v*(sum(g,g)[i-1:(i:=i+1)]==[v,v])for v in sum(g,[]))for a in b'[Z']for b in b'A[']
-# 🥉 task 254: 95 vs 84 bytes for gold, https://arcprize.org/play?task=a61f2674
-def p(i):k=*zip(*i),;return[[x.pop(0)>>(s!=max(k))+2*(s!=sorted({*k})[1])for s in k]for x in i]
+# 🥉 task 254: 93 vs 84 bytes for gold, https://arcprize.org/play?task=a61f2674
+def p(i):k=*zip(*i),;return[[x.pop(0)>>(s<max(k))+2*(s>sorted({*k})[1])for s in k]for x in i]
 # 💎 task 255: 231 (268 unzipped) bytes, gold, https://arcprize.org/play?task=a64e4611
 def p(g):
  for S in[{0,3}]*12:g=[[g[y][~x]+13*any({*r[-2%(30-x):31-x]}-S for r in g[y+y%~y:y+2])for y in range(30)]for x in range(30)];g=[[r[x]%13|3*({*r[:10]}<=S)*(len(w:=[r[x]for r in g if{*r[:10]}<=S])>3!=S>={*w}or 3in r[x:])for x in range(30)]for r in g]

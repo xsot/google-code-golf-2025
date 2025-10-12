@@ -1,2 +1,1 @@
-E=enumerate
-def p(g):a,*_,b={j%9:1for j,v in E(sum(g,[]))if v};return[[v%2*(j==a or(j==b)*2)for j,v in E(r)]for r in g]
+def p(i):k=*zip(*i),;return[[x.pop(0)>>(s<max(k))+2*(s>sorted({*k})[1])for s in k]for x in i]
