@@ -1,1 +1,1 @@
-p=lambda a,*b,s=0:[c|(s&(s:=s^c)&~sum(b))//8*3for c in b]or[*map(p,a,*map(p,a*9,*a))]
+p=lambda a,*b,s=0:[c|(s&(s:=s^c)&~sum(b)>7)*3for c in b]or[*map(p,a,*map(p,a*9,*a))]

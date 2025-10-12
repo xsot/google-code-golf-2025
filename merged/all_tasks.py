@@ -91,18 +91,18 @@ p=lambda a:[[c+b[-1]&2|b.pop(0)for c in a[0]]for*b,in a]
 def p(i):f=sum(i,[]);w=sum(2<<J for J in range(50)if f[J]<5in{*f[J//10*10:J]}&{*f[J:J//10*10+10]});i=[[J^c*(1&(w:=w>>1)or J==c)for J in J]for c in{*f}if bin(sum(512<<J for J in range(100)if f[J]==c))in bin(w<<100)for J in i][::-1];f=sum(i,[]);w=sum(2<<J for J in range(50)if f[J]<5in{*f[J//10*10:J]}&{*f[J:J//10*10+10]});i=[[J^c*(1&(w:=w>>1)or J==c)for J in J]for c in{*f}if bin(sum(512<<J for J in range(100)if f[J]==c))in bin(w<<100)for J in i][::-1];return i
 # 🥇 task 45: 45 bytes, gold, https://arcprize.org/play?task=22eb0ac0
 p=lambda g:[10*r[:r[0]==r[9]]or r for r in g]
-# 🥈 task 46: 169 vs 168 bytes for gold, https://arcprize.org/play?task=234bbc79
-p=lambda i,n=0,Z=zip:[*Z(*[[y%~y&max({*p,*x,*q}-{5})for y in x[n:]+x[:n]]for*x,p,q in Z(*i,[[],*Z(*i)],[*Z(*i),[5]][1:])if any(x)or(n:=n-[*p,5].index(5)+q.index(5))*0])]
+# 🥇 task 46: 168 bytes, gold, https://arcprize.org/play?task=234bbc79
+p=lambda i,n=3,Z=zip:[*Z(*[[y%~y&max({*p,*x,*q}-{5})for y in x*3][n:n+3]for*x,p,q in Z(*i,[[],*Z(*i)],[*Z(*i),[5]][1:])if any(x)or(n:=n-[*p,5].index(5)+q.index(5))*0])]
 # 🥇 task 47: 55 bytes, gold, https://arcprize.org/play?task=23581191
 p=lambda g:[[sum({*r+c})%13for*c,in zip(*g)]for r in g]
 # 🥉 task 48: 118 vs 92 bytes for gold, https://arcprize.org/play?task=239be575
 p=lambda m,i=99,s="":-i*[[8-8*("2"in'%s'%m)]]or p([*zip(*eval(str(m).replace("282"[i%3]+s,"1"+s,2)))][::-1],i-1,", 1")
 # 🥇 task 49: 81 bytes, gold, https://arcprize.org/play?task=23b5c85d
 p=lambda a:[c*[e]for b in a if(c:=b.count(e:=min(d:=sum(a,[0]*99),key=d.count)))]
-# 🥇 task 50: 85 bytes, gold, https://arcprize.org/play?task=253bf280
-p=lambda a,*b,s=0:[c|(s&(s:=s^c)&~sum(b))//8*3for c in b]or[*map(p,a,*map(p,a*9,*a))]
-# 🥇 task 51: 115 bytes, gold, https://arcprize.org/play?task=25d487eb
-p=lambda i:[*eval("map(lambda*x,l=0,b=1,a=1:[0*(l:=l|(b!=y>a<1)*(a:=b))+(b:=y)or l for y in x][::-1],*"*4+"i))))")]
+# 💎 task 50: 84 bytes, gold, https://arcprize.org/play?task=253bf280
+p=lambda a,*b,s=0:[c|(s&(s:=s^c)&~sum(b)>7)*3for c in b]or[*map(p,a,*map(p,a*9,*a))]
+# 💎 task 51: 111 bytes, gold, https://arcprize.org/play?task=25d487eb
+p=lambda i:[*eval("map(lambda*x,l=0,b=1,a=1:[[l:=l|(b!=y>a<1)*(a:=b),b:=y][y>0]for y in x][::-1],*"*4+"i))))")]
 # ❌ task 52: 41 vs 40 bytes for gold, https://arcprize.org/play?task=25d8a9c8
 p=lambda a:[3*[1//len({*b})*5]for b in a]
 # 🥇 task 53: 21 bytes, gold, https://arcprize.org/play?task=25ff71a9
