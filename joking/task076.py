@@ -1,6 +1,12 @@
-# zip fiddling
+def	p(g):
+	I={min(J:={i*1j+j:r	for	i,r	in	enumerate(g)for	j,r	in	enumerate(r)if	r},key=J.get)};G=J;[abs(j-i)<2!=I.add(i)for	i	in[*G]*6for	j	in[*I]]
+	for	i,r	in	enumerate(g):
+		for	j	in	G:P=min(J:={(j-i//4*j.real*2)*1j**i:G[j]^2for	j	in[*I]},key=J.get)-j;g=min(G.get(j-P,3)==13%-~J[j]^2for	j	in[*J])*[[J.get(i*1j+j+P,r^2)^2for	j,r	in	enumerate(r)]for	i,r	in	enumerate(g)]or	g
+	return	g
+
+##
 def p(g):
- I={min(J:={i*1j+j:r for i,r in enumerate(g)for j,r in enumerate(r)if r},key=J.get)};G=J;[abs(j-i)<2!=I.add(i)for i in[*G]*6for j in[*I]]
+ I={min(J:={i*1j+j:r for i,r in enumerate(g)for j,r in enumerate(r)if r},key=J.get)}#[';','\n ']##G=J#[';','\n ']##[abs(j-i)<2!=I.add(i)for i in[*#[*'GJ']##]*6for j in[*I]]
  for i,r in enumerate(g):
-  for j in G:P=min(J:={(j-i//4*j.real*2)*1j**i:G[j]^2for j in I},key=J.get)-j;g=all(G.get(j-P,3)==13%-~J[j]^2for j in J)*[[J.get(i*1j+j+P,r^2)^2for j,r in enumerate(r)]for i,r in enumerate(g)]or g
+  for j in#['[*G]',' G']##:P=min(J:={(j-i//4*j.real*2)*1j**i:G[j]^2for j in[*I]},key=J.get)-j;g=min(G.get(j-P,3)==#[13,73]##%-~J[j]^2for j in[*J])*[[J.get(i*1j+j+P,r^2)^2for j,r in enumerate(r)]for i,r in enumerate(g)]or g
  return g
