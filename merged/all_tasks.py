@@ -243,8 +243,8 @@ p=lambda g,h=2,w=0:h and[p(g,h-1,w^A>>w//8)for A in range(9)][::1-g[h][-h]|1]or(
 p=lambda g:[g:=[[v or A([r*(m:=[*map(A,g)])[j],sorted(r)[-4]*m[j:]][A(m[:j])])*2for j,v in enumerate(r)]for r in zip(*g)][::-1]for A in[any]*4][3]
 # 💎 task 106: 55 bytes, gold, https://arcprize.org/play?task=46442a0e
 p=lambda i,s=[],k=3:-k*i or p([*zip(*i+s)],i[::-1],k-1)
-# 🥈 task 107: 165 vs 162 bytes for gold, https://arcprize.org/play?task=469497ad
-exec(('def p(i):g=sum(i,[]);z=len({*g})-1;return[[i[x//z][y//z]or 0'+'|g[(y%sx)//z%%%s::%s].count(g[6])>>(x-%sy)%%z&2'*2+'for %s in range(5*z)]'*2)%(*'-66++54~yx',))
+# 🥈 task 107: 163 vs 162 bytes for gold, https://arcprize.org/play?task=469497ad
+exec(('def p(i):g=sum(i,[]);z=len({*g})-1;return[[i[x//z][y//z]'+'or g[(y%sx)//z%%%s::%s].count(g[6])>>(x-%sy)%%z&2'*2+'for %s in range(5*z)]'*2)%(*'-66++54~yx',))
 # 💎 task 108: 46 bytes, gold, https://arcprize.org/play?task=46f33fce
 p=lambda a:a>a*0!=0and[p(a[1])]*4+p(a[2:])or a
 # 🥉 task 109: 82 vs 80 bytes for gold, https://arcprize.org/play?task=47c1f68c
@@ -263,17 +263,15 @@ p=lambda a:a[:5]+a[4::-1]
 p=lambda a,*n:[*zip(*map({}.fromkeys,n or p(a,*a)))]
 # 🥇 task 116: 20 bytes, gold, https://arcprize.org/play?task=4c4377d9
 p=lambda a:a[::-1]+a
-# 💎 task 117: 134 bytes, gold, https://arcprize.org/play?task=4c5c2cf0
-p=lambda i:[i:=[*zip(*map(max,i,(i*2)[j*2::-1]+i[::-1]))]for j in b'	'*2if[x.count(max(i[j]))for x in i[j-2:j+3]]==[0,2,1,2,0]][1]
-# 💎 task 118: 233 (283 unzipped) bytes, gold, https://arcprize.org/play?task=50846271
+# 💎 task 117: 130 bytes, gold, https://arcprize.org/play?task=4c5c2cf0
+p=lambda i:[i:=[*zip(*map(max,i,(i*2)[j*2::-1]+i[::-1]))]for j in b'	'*2if[x.count(max(i[j]))for x in i[j-1:j+2]]==[2,1,2]][1]
+# 💎 task 118: 229 (300 unzipped) bytes, gold, https://arcprize.org/play?task=50846271
 def p(I):
  for n in(2,3):
-  t,z,T,*R=[{(l,N)for l,I in enumerate(I)for N,I in enumerate(I)if I>=n}for n in(2,0,5,7)]
-  for d,i in z:v={(l,N)for l,N in z if abs(d-l+(i-N)*1j)in(2,0,1,n)};R+=[l|v for l in R if t-l>v]
-  for l in R:
-   if t-T<l:
-    for d,i in l&T:I[d][i]=8
-    return I
+  t,z,T,*R=[{N-l*1jfor l,I in enumerate(I)for N,I in enumerate(I)if I>=n}for n in(2,0,5,6)]
+  for l in z:v={N for N in z if abs(N-l)in(2,0,1,n)};R+=[n|v for n in R if t-n>v]
+  for n in R:
+   if t-T<n:return[[I+3*(N-l*1jin n&T)for N,I in enumerate(I)]for l,I in enumerate(I)]
 # 🥇 task 119: 106 bytes, gold, https://arcprize.org/play?task=508bd3b6
 import re;p=lambda i,k=39:-k*i or[*zip(*eval(re.sub("0(?=.{34}[38].{34}[382])","3",str(p(i,k-1))))[::-1])]
 # 💎 task 120: 79 bytes, gold, https://arcprize.org/play?task=50cb2852
