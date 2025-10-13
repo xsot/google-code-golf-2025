@@ -174,8 +174,8 @@ def	p(g):
 p=lambda i,k=7,*w:k and p([*map(p,i,[k>1]*99,i[:1]+i,i[1:]+i[-1:],*w)],k-1)or((c:=w.count)(2)+c(4)>=2!=i)*4or i
 # 💎 task 78: 59 bytes, gold, https://arcprize.org/play?task=3906de3d
 p=lambda i,*n:sorted(n,key=0 .__eq__)or[*zip(*map(p,i,*i))]
-# 💎 task 79: 121 bytes, gold, https://arcprize.org/play?task=39a8645d
-p=lambda i:max(t:=[q for a in range(144)if any(min((h:=[*zip(*i[a%12:][:3])][a//12:][:3])+(q:=[*zip(*h)])))],key=t.count)
+# 💎 task 79: 105 bytes, gold, https://arcprize.org/play?task=39a8645d
+p=eval(f"lambda a:max(b:=[a {'for*a,in map(zip,a,a[1:],a[2:])'*2}if any(min(*a,*zip(*a)))],key=b.count)")
 # 💎 task 80: 232 (301 unzipped) bytes, gold, https://arcprize.org/play?task=39e1d7f9
 def p(g):E=g.index(min(g,key=set))+1;c={j*1j+i:g for j,g in enumerate(g[::E])for i,g in enumerate(g[::E])};return[[[g or[c[k:=j//E*1j+i//E],*[c[u+k-K]for K in c if(c[K]==c[u])*2>abs(k-K)]][-1]for i,g in enumerate(g)]for j,g in enumerate(g)]for u in c if all(c.get(u+1j**j)for j,g in enumerate(g))][-1]
 # 💎 task 81: 87 bytes, gold, https://arcprize.org/play?task=3aa6fb7a
