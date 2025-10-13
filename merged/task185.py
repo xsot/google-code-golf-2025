@@ -1,5 +1,5 @@
-# att (136 vs 120 bytes for gold)
-p=eval(('lambda i:'+'[[sum({r.pop()}&r,r[1:])]*'*2+'((r[0]r,*i)ifi if)])]').translate([0,"{*r}-{*i[0]})","zip(","for*r,in "]))
+# att (133 vs 120 bytes for gold)
+p=eval(f"lambda i:{'[[sum({r.pop()}&r,r[1:])]*'*2}((r[0]r,*i)ifi if)])]".translate([0,"{*r}-{*i[0]})","zip(","for*r,in "]))
 
 ### ovs (138 bytes)
 p=eval(('lambda i:'+'[[sum({r.pop()}&)r,r[1:])]*'*2+'[[r[0]r,*i)if]i if])])]').translate([0,"{*r}-{*i[0]}","zip(","for*r,in "]))

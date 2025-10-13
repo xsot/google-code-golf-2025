@@ -1,1 +1,1 @@
-p=eval(('lambda i:'+'[[sum({r.pop()}&r,r[1:])]*'*2+'((r[0]r,*i)ifi if)])]').translate([0,"{*r}-{*i[0]})","zip(","for*r,in "]))
+p=eval(f"lambda i:{'[[sum({r.pop()}&r,r[1:])]*'*2}((r[0]r,*i)ifi if)])]".translate([0,"{*r}-{*i[0]})","zip(","for*r,in "]))
