@@ -1,1 +1,1 @@
-p=lambda a,n=-3:n*a[1:-1]or p([a[1:],[[d and(b:=max(a[n%2]))for d in c]for c in zip(*a[:0:-1])]][e:=b>0],n+e)
+p=lambda a,n=44:a*(-3-n)or p([[d%~d&max(max(a))for d in c]for c in zip(*a[any(n*a[-1])-2::-1])],n-1)

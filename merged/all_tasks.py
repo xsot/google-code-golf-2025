@@ -192,8 +192,8 @@ p=lambda i:[i:=[f:=y*(x!=i or f<y)for y in x]for x in i]
 p=lambda i,k=7,s=0:-k*i or[[[-((s:=[abs(s)or 1,s&s//4][y>0]-1)>1)|y,*[x for x in sum(i,x)if 0<x!=y!=0],0][k>6]for y in x]for*x,in zip(*p(i,k-1)[::-1])]
 # 🥇 task 87: 36 bytes, gold, https://arcprize.org/play?task=3c9b0459
 p=lambda a:[b[::-1]for b in a[::-1]]
-# 🥉 task 88: 104 vs 101 bytes for gold, https://arcprize.org/play?task=3de23699
-p=lambda i,k=79:[[v%~v&i[0][0]for v in r[1:-1]]for r in-k*i[1:-1]]or p([*zip(*i[any(i[-1])-2::-1])],k-1)
+# 💎 task 88: 100 bytes, gold, https://arcprize.org/play?task=3de23699
+p=lambda a,n=44:a*(-3-n)or p([[d%~d&max(max(a))for d in c]for c in zip(*a[any(n*a[-1])-2::-1])],n-1)
 # 💎 task 89: 233 (279 unzipped) bytes, gold, https://arcprize.org/play?task=3e980e27
 def p(g):
  for i in(M:={i*1j+j:g for i,g in enumerate(g)for j,g in enumerate(g)if g}):
