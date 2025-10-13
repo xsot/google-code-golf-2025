@@ -1,4 +1,8 @@
-# ovs (72 vs 67 bytes for gold)
+# joking (55 bytes, gold)
+# i blacked out and this was here when i woke up
+p=lambda i,s=[],k=3:-k*i or p([*zip(*i+s)],i[::-1],k-1)
+
+### ovs (72 bytes)
 S='[::-1]for*x,a in zip(*i,i)]';p=eval(f'lambda i:[a+x{S}+[x+a'+S+S[:6])
 
 ##
