@@ -658,10 +658,10 @@ p=lambda g:g[(T:=[*zip(*[map(bool,sum(g,g*0))]*9)]).index(min(T,key=T.count))*3:
 p=lambda g:[[sorted([g[+y][x:3+x]+g[1+y][x:3+x]+g[1+1+y][x:3+x]for y in range(len(g)-2)for x in range(len(g[0])-2)],key=lambda g:[0==y for y in g]+[5==y for y in g])[b'mloeb( ra'[y//3*3+x//3]%9][y%3*3+x%3]for x in range(9)]for y in range(9)]
 # 🥉 task 265: 118 vs 104 bytes for gold, https://arcprize.org/play?task=a8d7556c
 import re;p=lambda g:[g:=[*zip(*eval(re.sub("[^5]{4}(.{52})0, 0(?![^0]{14}0, 0)","2,2\\1 2,2",str(g))))]for _ in g][7]
-# 🥇 task 266: 102 bytes, gold, https://arcprize.org/play?task=a9f96cdd
-p=lambda g:[([0,0,0,r%9,0,r//9-4]*2)[4-max(g).index(2):][:5]for r in b'$]$k$'[2-g.index(max(g)):][:3]]
-# ❌ task 267: 52 vs 46 bytes for gold, https://arcprize.org/play?task=aabf363d
-p=lambda i:[[i[-y>>8][x==i[6]]for y in x]for x in i]
+# 💎 task 266: 99 bytes, gold, https://arcprize.org/play?task=a9f96cdd
+p=lambda g:[([0,0,0,r%9,0,r%8]*2)[4-max(g).index(2):][:5]for r in b'HfHGH'[2-g.index(max(g)):][:3]]
+# 🥇 task 267: 46 bytes, gold, https://arcprize.org/play?task=aabf363d
+p=lambda i:[[i[6][[y]<x]for y in x]for x in i]
 # 🥈 task 268: 224 (278 unzipped) vs 218 bytes for gold, https://arcprize.org/play?task=aba27056
 def p(g):J,E=[(C:=A,F:=D)for A in range(len(g))for D in range(len(g))if g[A][D]][0];return g[C][F-2]and[*zip(*p([[*A]for A in zip(*g[::-1])]))][::-1]or[g for A in range(J+1,len(g))for D in({*range(E+2,F-1),C-A+E+2,F-2+A-C}&{*range(len(g))},range(E+1,F))[A<C]for g[A][D]in[4]][0]
 # 🥇 task 269: 63 bytes, gold, https://arcprize.org/play?task=ac0a08a4
@@ -920,7 +920,7 @@ def p(a):
  return a
 # 🥇 task 372: 48 bytes, gold, https://arcprize.org/play?task=e98196ab
 p=lambda a:[b for*b,in map(map,[max]*5,a,a[6:])]
-# 🥇 task 373: 39 bytes, gold, https://arcprize.org/play?task=e9afcf9a
+# 🥉 task 373: 39 vs 38 bytes for gold, https://arcprize.org/play?task=e9afcf9a
 p=lambda a:[b:=[*map(max,a)]*3,b[::-1]]
 # 💎 task 374: 108 bytes, gold, https://arcprize.org/play?task=ea32f347
 p=lambda g,i=5,l=39:-l*g or p([*zip(*(a:=eval(str(g).replace(l//4*"5, ",l//4*"16%i,"))))][::-1],i+(g>a),l-1)
