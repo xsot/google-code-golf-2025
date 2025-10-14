@@ -290,8 +290,8 @@ p=lambda i:i[9:]and i or p(i+[((w:=i[4]!=i[1])*[0for k in(1,2)if[0]*k+i[0]>i[2]]
 import re;p=lambda i,k=15:-k*i or p(eval(re.sub('[83](?='+k*k%3*', 4|, 6'+'.{43}6)','k*k%3+3',str([*zip(*i[::-1])]))),k-1)
 # 🥇 task 126: 54 bytes, gold, https://arcprize.org/play?task=54d82841
 p=lambda a:a[:-1]+[[4*(0<sum(c)in c)for c in zip(*a)]]
-# 💎 task 127: 64 bytes, gold, https://arcprize.org/play?task=54d9e175
-p=lambda a,q=3:5+a%5if-1*a else a[1:]and[p(a[1])]*q+p(a[2:],4-q)
+# 💎 task 127: 63 bytes, gold, https://arcprize.org/play?task=54d9e175
+p=lambda a,q=3:a*-1and 5+a%5or a[1:]and[p(a[1])]*q+p(a[2:],4-q)
 # 🥇 task 128: 59 bytes, gold, https://arcprize.org/play?task=5521c0d9
 p=lambda i,*n:n[-n.count(0):]+n or[*zip(*map(p,i,*i))][:15]
 # 🥇 task 129: 47 bytes, gold, https://arcprize.org/play?task=5582e5ca
@@ -318,8 +318,8 @@ def p(g):
      for Q in D-{G}:
       for V in([V for V in I if M[A]==M[V]==M[G]]):V+=(len([V for V in I if M[A]==M[V]==M[G]])^6)%6*(Q-G);g[V//66][V%66],={M[V]for V in I}-{M[A]}
  return g
-# 💎 task 134: 128 bytes, gold, https://arcprize.org/play?task=5ad4f10b
-p=lambda g,D=10:(G:=[[D*(D!=v>0)for v in r]for r in('0, %g, 0'%D in'%s'%g)*g])or(h:=[*filter(any,zip(*p(g,D-.5)))])[::len(h)//3]
+# 💎 task 134: 123 bytes, gold, https://arcprize.org/play?task=5ad4f10b
+p=lambda g,D=10:[[D*(D!=v>0)for v in r]for r in('0, %g, 0'%D in'%s'%g)*g]or(h:=[*filter(any,zip(*p(g,D-.5)))])[::len(h)//3]
 # 🥇 task 135: 32 bytes, gold, https://arcprize.org/play?task=5bd6f4ac
 p=lambda a:[b[6:]for b in a[:3]]
 # 💎 task 136: 104 bytes, gold, https://arcprize.org/play?task=5c0a986e
