@@ -1,4 +1,7 @@
-# ovs (65 bytes, gold)
+# joking (64 bytes, gold)
+p=lambda a,q=3:5+a%5if-1*a else a[1:]and[p(a[1])]*q+p(a[2:],4-q)
+
+### ovs (65 bytes)
 p=lambda a,q=3:a*0==0and 5+a%5or a[1:]and[p(a[1])]*q+p(a[2:],4-q)
 
 ##

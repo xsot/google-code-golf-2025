@@ -1,0 +1,1 @@
+p=lambda a,q=3:5+a%5if-1*a else a[1:]and[p(a[1])]*q+p(a[2:],4-q)

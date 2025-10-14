@@ -242,7 +242,7 @@ p=lambda g,h=2,w=0:h and[p(g,h-1,w^A>>w//8)for A in range(9)][::1-g[h][-h]|1]or(
 p=lambda g:[g:=[[v or A([r*(m:=[*map(A,g)])[j],sorted(r)[-4]*m[j:]][A(m[:j])])*2for j,v in enumerate(r)]for r in zip(*g)][::-1]for A in[any]*4][3]
 # 💎 task 106: 55 bytes, gold, https://arcprize.org/play?task=46442a0e
 p=lambda i,s=[],k=3:-k*i or p([*zip(*i+s)],i[::-1],k-1)
-# 🥈 task 107: 163 vs 162 bytes for gold, https://arcprize.org/play?task=469497ad
+# 🥉 task 107: 163 vs 161 bytes for gold, https://arcprize.org/play?task=469497ad
 exec(('def p(i):g=sum(i,[]);z=len({*g})-1;return[[i[x//z][y//z]'+'or g[(y%sx)//z%%%s::%s].count(g[6])>>(x-%sy)%%z&2'*2+'for %s in range(5*z)]'*2)%(*'-66++54~yx',))
 # 💎 task 108: 46 bytes, gold, https://arcprize.org/play?task=46f33fce
 p=lambda a:a>a*0!=0and[p(a[1])]*4+p(a[2:])or a
@@ -286,13 +286,12 @@ R=range(10)
 p=lambda g:[[g[0][max(i,j)%(4+any(g[4]))]for j in R]for i in R]
 # 💎 task 124: 95 bytes, gold, https://arcprize.org/play?task=53b68214
 p=lambda i:i[9:]and i or p(i+[((w:=i[4]!=i[1])*[0for k in(1,2)if[0]*k+i[0]>i[2]]+i[w-3])[:10]])
-# 💎 task 125: 125 bytes, gold, https://arcprize.org/play?task=543a7ed5
-import re
-p=lambda i,k=15:-k*i or p(eval(re.sub('[83](?='+(k%3>0)*', 4|, 6'+'.{43}6)','344'[k%3],str([*zip(*i[::-1])]))),k-1)
+# 💎 task 125: 122 bytes, gold, https://arcprize.org/play?task=543a7ed5
+import re;p=lambda i,k=15:-k*i or p(eval(re.sub('[83](?='+k*k%3*', 4|, 6'+'.{43}6)','k*k%3+3',str([*zip(*i[::-1])]))),k-1)
 # 🥇 task 126: 54 bytes, gold, https://arcprize.org/play?task=54d82841
 p=lambda a:a[:-1]+[[4*(0<sum(c)in c)for c in zip(*a)]]
-# 🥇 task 127: 65 bytes, gold, https://arcprize.org/play?task=54d9e175
-p=lambda a,q=3:a*0==0and 5+a%5or a[1:]and[p(a[1])]*q+p(a[2:],4-q)
+# 💎 task 127: 64 bytes, gold, https://arcprize.org/play?task=54d9e175
+p=lambda a,q=3:5+a%5if-1*a else a[1:]and[p(a[1])]*q+p(a[2:],4-q)
 # 🥇 task 128: 59 bytes, gold, https://arcprize.org/play?task=5521c0d9
 p=lambda i,*n:n[-n.count(0):]+n or[*zip(*map(p,i,*i))][:15]
 # 🥇 task 129: 47 bytes, gold, https://arcprize.org/play?task=5582e5ca
@@ -303,23 +302,24 @@ p=lambda a:[[sum({*b[c:c+3]}-{5})for c in(0,3,6)]for b in a[::3]]
 p=lambda a:[a:=[[*b[:[*b,1].index(~b[l:=len(a)]%5%3)],*b[l:],8,*[0]*l][l-1::-1]for*b,in zip(*a,*filter(any,a))]for _ in a][3]
 # 🥇 task 132: 86 bytes, gold, https://arcprize.org/play?task=56ff96f3
 p=lambda i,v=0:[i:=[[v|(v:=v^sum({*A}&{*y}))for A in i]for y in zip(*i)]for _ in i][1]
-# 💎 task 133: 286 (390 unzipped) bytes, gold, https://arcprize.org/play?task=57aa92db
-def	p(g):
-	*C,M={i*66+j:g	for	i,g	in	enumerate(g)for	j,g	in	enumerate(g)if	g},
-	for	A	in	M:
-		G={A}
-		for	D	in*C,:
-			if{A-66,A-1}&D:C.remove(D);G|=D
-		C+=G,
-	for	A	in	C:
-		for	D	in	A:
-			for	G	in	A:
-				for	I	in	1//sum(M[D]==M[k]for	k	in	A)*C:
-					for	Q	in{G}^A:
-						for	V	in(E:=[k	for	k	in	I	if	M[G]==M[D]==M[k]]):V+=(len(E)^6)%6*(Q-G);g[V//66][V%66],={M[k]for	k	in	I}-{M[D]}
-	return	g
-# 💎 task 134: 150 bytes, gold, https://arcprize.org/play?task=5ad4f10b
-p=lambda g,D=1:(G:=[[D*(D!=v>0)for v in r]for r in(f'0, {D}, 0'in'%s'%g)*g])and exec("*h,=filter(any,zip(*G));G[:]=h[::len(h)//3];"*2)or G or p(g,D+1)
+# 💎 task 133: 278 (439 unzipped) bytes, gold, https://arcprize.org/play?task=57aa92db
+def p(g):
+ *C,M={A*66+j:(g)for A,g in enumerate(g)for j,g in enumerate(g)if g},
+ for A in M:
+  G={A}
+  for D in*C,:
+   if{A-66,A-1}&D:C.remove(D);G|=D
+  C+=G,
+ for D in*C,:
+  for A in D:
+   for G in D:
+    I=D
+    for I in 1//len([V for V in I if M[A]==M[V]])*C:
+     for Q in D-{G}:
+      for V in([V for V in I if M[A]==M[V]==M[G]]):V+=(len([V for V in I if M[A]==M[V]==M[G]])^6)%6*(Q-G);g[V//66][V%66],={M[V]for V in I}-{M[A]}
+ return g
+# 💎 task 134: 128 bytes, gold, https://arcprize.org/play?task=5ad4f10b
+p=lambda g,D=10:(G:=[[D*(D!=v>0)for v in r]for r in('0, %g, 0'%D in'%s'%g)*g])or(h:=[*filter(any,zip(*p(g,D-.5)))])[::len(h)//3]
 # 🥇 task 135: 32 bytes, gold, https://arcprize.org/play?task=5bd6f4ac
 p=lambda a:[b[6:]for b in a[:3]]
 # 🥉 task 136: 107 vs 105 bytes for gold, https://arcprize.org/play?task=5c0a986e
