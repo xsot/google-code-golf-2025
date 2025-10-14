@@ -352,17 +352,15 @@ p=lambda g,*w:[[-v%12&6|(c:=c^(8in r*v))*8>>v for v in r]for r in g if[c:=any(r)
 p=lambda a:a[3:]and[p([*zip(*a[t:t+3])])for t in[0,4,8]]or 9<sum(sum(a,()))
 # 🥇 task 150: 30 bytes, gold, https://arcprize.org/play?task=67a3c6ac
 p=lambda g:[r[::-1]for r in g]
-# 🥇 task 151: 108 bytes, gold, https://arcprize.org/play?task=67a423a3
+# 💎 task 151: 103 bytes, gold, https://arcprize.org/play?task=67a423a3
 def p(g):
- x=y=0
- for _ in g:x+=1>g[0][x];y+=0in g[y]
+ y,x,*_=[z.index(max(z))for z in[g]+g]
  for N in b"":g[y+N//3-6][x+N%3-1]=4
  return g
 # 🥇 task 152: 40 bytes, gold, https://arcprize.org/play?task=67e8384a
 p=lambda a:[r+r[::-1]for r in a+a[::-1]]
-# 🥈 task 153: 139 vs 133 bytes for gold, https://arcprize.org/play?task=681b3aeb
-r=-1,0,1
-p=lambda g:max(({*str(w:=[[max(g[(y+A)%10][(x+A//10)%10]for A in(a,a%99))for x in r]for y in r])}^{'0'},w)for a in range(5000))[1]
+# 🥈 task 153: 134 vs 133 bytes for gold, https://arcprize.org/play?task=681b3aeb
+r=2,1,0;p=lambda g:max(({*str(w:=[[max(g[A%10-y][A//10%10-x]for A in(a,a%99))for x in r]for y in r])}^{'0'},w)for a in range(7000))[1]
 # ❌ task 154: 110 vs 98 bytes for gold, https://arcprize.org/play?task=6855a6e4
 p=lambda g:[g:=[*zip(*[g[a-sum(k*(g[a-k*8%15].count(2)>4)for k in b'	')]for a in range(15)])]for _ in g][1]
 # 🥇 task 155: 18 bytes, gold, https://arcprize.org/play?task=68b16354
@@ -393,8 +391,8 @@ def p(g):
  return g
 # 💎 task 159: 105 bytes, gold, https://arcprize.org/play?task=6b9890af
 p=lambda g,*G:sum([[[2,*r,2]]*[str(g).count('2')//12,all(r)][{*r}<={0,2}]for*r,in zip(*G or p(g,*g))],[])
-# 🥉 task 160: 106 vs 105 bytes for gold, https://arcprize.org/play?task=6c434453
-import re;p=lambda i,*n:eval(re.sub("1, "*2+'1(.{26}).{5}'*2,r"0,2,0\1*2,2,2\2*0,2,0*",str(n or p(i,*i))))
+# 💎 task 160: 102 bytes, gold, https://arcprize.org/play?task=6c434453
+import re;p=lambda i,*n:eval(re.sub("1.{5}1(.{25})??"*3,r"0,2,0\1 2,2,2\2 0,2,0\3",str(n or p(i,*i))))
 # 💎 task 161: 80 bytes, gold, https://arcprize.org/play?task=6cdd2623
 p=lambda m:[[4//(C:=sum(m,[]).count)(x)*x|4//C(i)*i for i in m[0]]for x,*_ in m]
 # 🥈 task 162: 97 vs 96 bytes for gold, https://arcprize.org/play?task=6cf79266

@@ -1,0 +1,1 @@
+r=2,1,0;p=lambda g:max(({*str(w:=[[max(g[A%10-y][A//10%10-x]for A in(a,a%99))for x in r]for y in r])}^{'0'},w)for a in range(7000))[1]

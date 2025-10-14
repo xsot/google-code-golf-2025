@@ -1,4 +1,7 @@
-# ovs (139 vs 133 bytes for gold)
+# joking (134 vs 133 bytes for gold)
+r=2,1,0;p=lambda g:max(({*str(w:=[[max(g[A%10-y][A//10%10-x]for A in(a,a%99))for x in r]for y in r])}^{'0'},w)for a in range(7000))[1]
+
+### ovs (139 bytes)
 r=-1,0,1
 p=lambda g:max(({*str(w:=[[max(g[(y+A)%10][(x+A//10)%10]for A in(a,a%99))for x in r]for y in r])}^{'0'},w)for a in range(5000))[1]
 
