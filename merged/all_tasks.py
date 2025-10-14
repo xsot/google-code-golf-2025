@@ -359,8 +359,8 @@ def p(g):
  return g
 # 🥇 task 152: 40 bytes, gold, https://arcprize.org/play?task=67e8384a
 p=lambda a:[r+r[::-1]for r in a+a[::-1]]
-# 🥈 task 153: 134 vs 133 bytes for gold, https://arcprize.org/play?task=681b3aeb
-r=2,1,0;p=lambda g:max(({*str(w:=[[max(g[A%10-y][A//10%10-x]for A in(a,a%99))for x in r]for y in r])}^{'0'},w)for a in range(7000))[1]
+# 💎 task 153: 131 bytes, gold, https://arcprize.org/play?task=681b3aeb
+r=3,2,1;p=lambda g:max(({*str(w:=[[max(g[A%10-y][A%11-x]for A in(a,a%119))for x in r]for y in r])}^{'0'},w)for a in range(6666))[1]
 # ❌ task 154: 110 vs 98 bytes for gold, https://arcprize.org/play?task=6855a6e4
 p=lambda g:[g:=[*zip(*[g[a-sum(k*(g[a-k*8%15].count(2)>4)for k in b'	')]for a in range(15)])]for _ in g][1]
 # 🥇 task 155: 18 bytes, gold, https://arcprize.org/play?task=68b16354
