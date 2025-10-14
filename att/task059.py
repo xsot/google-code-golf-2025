@@ -1,0 +1,1 @@
+p=eval(f"lambda a,n=0:(sum(sum(b:=[[sorted(sum(a,()))[n]{'for*a,in[*map(zip,a,a[1:],a[2:])][::4]for a in[[(5,)*3]*11,a,a,a]][1:]'*2},[]))>200)*b or p(a,n+1)")
