@@ -690,9 +690,8 @@ def p(a,n=3,i=0):
   B=bytes(b+[0]).find;d=B(0,c:=B(b'\0')+1)+~c;i+=1
   for e in a[i+~d:i+d]:e[:c]=[e[c]]*len(e[:c])
  return-n*a or p([b[::-1]for*b,in zip(*a)],n-1)
-# 🥈 task 281: 145 vs 138 bytes for gold, https://arcprize.org/play?task=b548a754
-import re
-p=lambda i,k=39:-k*i or p(eval(re.sub("(\((?=[^)]+[1-9])[^)]+., )(\([^)]+.), \((?=.*8)[08, ]+\)",r"\1\1\2",str([*zip(*i[::-1])]))),k-1)
+# 💎 task 281: 103 bytes, gold, https://arcprize.org/play?task=b548a754
+p=lambda a,n=47,*P:-n*a or p([*zip(*[max(P*({0,8}in map(set,a)),P:=a.pop(),key=set)for _ in a*1])],n-1)
 # 💎 task 282: 76 bytes, gold, https://arcprize.org/play?task=b60334d2
 p=lambda i,*x,c=0:[c|(c:=i)>>2|(i:=y)for y in x+x[7:]]or[*map(p,*map(p,*i))]
 # 💎 task 283: 81 bytes, gold, https://arcprize.org/play?task=b6afb2da
