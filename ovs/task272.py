@@ -1,2 +1,1 @@
-P=[[0]*9]
-p=lambda g:[[v>>1-any(c)for*c,v in zip(*X,[0]+r,r[1:]+[0],r)]for*X,r in zip(P+g,g[1:]+P,g)]
+*r,p=[0]*9,lambda i,*w:i*0!=0and[*map(p,i,r+i,i[1:]+r,*w)]or~(2in w)*i%3

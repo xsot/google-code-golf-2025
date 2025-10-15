@@ -1,1 +1,1 @@
-p=lambda g:g[:2]+[len(g[0])*[v]for v in g[0]*2]
+p=lambda i:i[:2]+[*zip(*i[:1]*len(i[0]))]*2
