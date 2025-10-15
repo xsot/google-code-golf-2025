@@ -1,4 +1,4 @@
-*r,p=[0]*10,lambda i,*w:i*0!=0and[*map(p,i,r+i,i[1:]+r,*w)]or-i%8*w.count(5)%5
+p=lambda i,*w:i*0!=0and[*map(p,i,[i]+i,i[1:]+[i],*w)]or-i%8*w.count(5)%5
 
 ##
 E=enumerate

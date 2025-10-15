@@ -1,4 +1,4 @@
-*r,p='0'*25,lambda i,*w:i*0!=0and[*map(p,i,r+i,i[1:]+r,*w)]or(w.count(i)>1)*i
+p=lambda i,*w:i*0!=0and[*map(p,i,[i]+i,i[1:]+[i],*w)]or(w.count(i)>1)*i
 
 ##
 

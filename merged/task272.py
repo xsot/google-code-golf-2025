@@ -1,5 +1,5 @@
-# ovs (72 bytes, gold)
-*r,p=[0]*9,lambda i,*w:i*0!=0and[*map(p,i,r+i,i[1:]+r,*w)]or~(2in w)*i%3
+# ovs (71 bytes, gold)
+p=lambda i,*w:i*0!=0and[*map(p,i,[i*2]+i,i[1:]+[i*2],*w)]or~(2in w)*i%3
 
 ### joking (73 bytes)
 p=lambda i,*w,r=[[0]*9]:i*0!=0and[*map(p,i,r+i,i[1:]+r,*w)]or~(2in w)*i%3
