@@ -1,1 +1,1 @@
-p=lambda i,k=7:-k*i or[[*map(max,x,[0]*10+x)]for*x,in zip(*p(i,k-1))][::-1]
+p=lambda i:[i:=[*zip(*map(max,i,i[10:]+i[9:]+i))][::-1]for _ in i][7]

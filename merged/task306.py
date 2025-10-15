@@ -1,5 +1,5 @@
-# ovs (75 vs 71 bytes for gold)
-p=lambda i,k=7:-k*i or[[*map(max,x,[0]*10+x)]for*x,in zip(*p(i,k-1))][::-1]
+# ovs (69 bytes, gold)
+p=lambda i:[i:=[*zip(*map(max,i,i[10:]+i[9:]+i))][::-1]for _ in i][7]
 
 ### combined (81 bytes)
 p=lambda i,k=7:-k*i or[[*x[:10],*map(max,x,x[10:])]for x in zip(*p(i,k-1))][::-1]
