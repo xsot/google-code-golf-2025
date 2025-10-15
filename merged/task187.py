@@ -1,4 +1,7 @@
-# att (89 bytes, gold)
+# joking (88 bytes, gold)
+p=lambda i,k=7:-k*i or[*map(lambda*x,z=3:[z:=y|(y*z==6)or 2for y in x],*p(i,k-1)[::-1])]
+
+### att (89 bytes)
 p=lambda i,k=59:-k*i or[*map(lambda*x,z=3:[z:=y|(y*z==6)or 2for y in x],*p(i,k-1)[::-1])]
 
 ### ovs (91 bytes)
