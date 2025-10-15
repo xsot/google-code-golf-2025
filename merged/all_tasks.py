@@ -757,8 +757,8 @@ p=lambda a:[[d^2^2*any(b)*any(c)for*c,d in zip(*a,b)]for b in a]
 p=lambda i:[[t*(y==max(z:=sum(i,i),key=z.count))for y in x for t in s]for x in i for s in i]
 # 🥇 task 305: 57 bytes, gold, https://arcprize.org/play?task=c3f564a4
 p=lambda g:[([*{*g[0]}-{0}]*9)[y:y+16]for y in range(16)]
-# 💎 task 306: 69 bytes, gold, https://arcprize.org/play?task=c444b776
-p=lambda i:[i:=[*zip(*map(max,i,i[10:]+i[9:]+i))][::-1]for _ in i][7]
+# 💎 task 306: 63 bytes, gold, https://arcprize.org/play?task=c444b776
+p=lambda i:[i:=[*zip(*map(max,i,i[:10]+i))][::-1]for _ in i][7]
 # 💎 task 307: 46 bytes, gold, https://arcprize.org/play?task=c59eb873
 p=lambda a:a>a*0!=0and[p(a[0])]*2+p(a[1:])or a
 # 🥈 task 308: 231 (253 unzipped) vs 226 bytes for gold, https://arcprize.org/play?task=c8cbb738
