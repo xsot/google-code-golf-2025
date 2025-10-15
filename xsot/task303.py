@@ -1,1 +1,4 @@
-p=lambda m,i=1:-i*m or p([*zip(*[r*(sum(r)>4)or[2]*len(r)for r in m])],i-1)
+# alts
+p=lambda a:[[d|2&~len({*b}&{*c})for*c,d in zip(*a,b)]for b in a]
+##
+p=lambda a:[[d^2^2*any(min(b,c))for*c,d in zip(*a,b)]for b in a]
