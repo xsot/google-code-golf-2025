@@ -1,4 +1,4 @@
-# att (111 bytes, gold)
+# att (111 vs 110 bytes for gold)
 p=lambda i,k=-99:k*i or p([*map(lambda*r,a=8:[[b%5,b or 8&a,b|2*(a%3<(a:=b))][k//50]for b in r],*i[::-1])],k+1)
 
 ### ovs (112 bytes)
