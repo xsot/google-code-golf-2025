@@ -102,8 +102,8 @@ p=lambda a:[c*[e]for b in a if(c:=b.count(e:=min(d:=sum(a,[0]*99),key=d.count)))
 p=lambda a,*b,s=0:[c|(s&(s:=s^c)&~sum(b)>7)*3for c in b]or[*map(p,a,*map(p,a*9,*a))]
 # 💎 task 51: 111 bytes, gold, https://arcprize.org/play?task=25d487eb
 p=lambda i:[*eval("map(lambda*x,l=0,b=1,a=1:[[l:=l|(b!=y>a<1)*(a:=b),b:=y][y>0]for y in x][::-1],*"*4+"i))))")]
-# ❌ task 52: 41 vs 40 bytes for gold, https://arcprize.org/play?task=25d8a9c8
-p=lambda a:[3*[1//len({*b})*5]for b in a]
+# 🥇 task 52: 40 bytes, gold, https://arcprize.org/play?task=25d8a9c8
+p=lambda a:[3*[len({*b})%2*5]for b in a]
 # 🥇 task 53: 21 bytes, gold, https://arcprize.org/play?task=25ff71a9
 p=lambda a:(a+a)[2:5]
 # 💎 task 54: 272 (372 unzipped) bytes, gold, https://arcprize.org/play?task=264363fd

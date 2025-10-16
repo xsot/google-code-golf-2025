@@ -1,1 +1,1 @@
-p=lambda a:[3*[1//len({*b})*5]for b in a]
+p=lambda a:[3*[len({*b})%2*5]for b in a]
