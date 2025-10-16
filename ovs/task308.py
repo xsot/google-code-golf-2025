@@ -1,6 +1,9 @@
-def p(g):
- A=[9*[M:=max(E:=sum(g,[]),key=E.count)]for(A)in g]
- for N in{*E}-{M}:
-  (F,G),*B,(P,Q)=C=[[A,C]for(A,B)in enumerate(g)for(C,E)in enumerate(B)if E==N];B=max(P-F,Q-G)+1
-  for(J,K)in C:A[J*2-F+B-P>>1][K*2-G+B-Q>>1]=N
- return[A[:B]for A in A[:B]]
+def p(g,**Q):
+ for N in sum(g,[]):C=[C+A*32for A,g in enumerate(g)for C,g in enumerate(g)if g==N];Q|={J+99-sum(C)//4:N for J in C if len(C)<5}
+ return[[Q.get(C+A*32,*{*g[0]}&{*g[5]})for C in range(min(Q)>>5,max(Q)//32+1)]for A in range(min(Q)>>5,max(Q)//32+1)]
+
+## this can probably use some more compression optimization. Best uncompressed I have is 232:
+e=enumerate
+def p(g,**A):
+ for N in sum(g,[]):C=[C+A*16for(A,B)in e(g)for(C,E)in e(B)if E==N];A|={J+51-sum(C)//4:N for J in C if len(C)<5}
+ q=range(min(A)>>4,max(A)//16+1);return[[A.get(y*16+x,*{*g[0]}&{*g[5]})for x in q]for y in q]

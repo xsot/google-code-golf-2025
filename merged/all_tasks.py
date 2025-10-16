@@ -761,13 +761,10 @@ p=lambda g:[([*{*g[0]}-{0}]*9)[y:y+16]for y in range(16)]
 p=lambda i:[i:=[*zip(*map(max,i,i[:10]+i))][::-1]for _ in i][7]
 # 💎 task 307: 46 bytes, gold, https://arcprize.org/play?task=c59eb873
 p=lambda a:a>a*0!=0and[p(a[0])]*2+p(a[1:])or a
-# 🥈 task 308: 231 (253 unzipped) vs 226 bytes for gold, https://arcprize.org/play?task=c8cbb738
-def	p(g):
-	A=[9*[Q:=max(P:=sum(g,[]),key=P.count)]for	A	in	g]
-	for	N	in{*P}-{Q}:
-		D=[(P:=A,Q:=C)for	A,g	in	enumerate(g)for	C,E	in	enumerate(g)if	E==N];F,G=D[0];B=max(P-F,Q-G)+1
-		for	C,E	in	D:A[B-F-P+C*2>>1][B-G-Q+E*2>>1]=N
-	return[A[:B]for	A	in	A[:B]]
+# 🥈 task 308: 228 (260 unzipped) vs 226 bytes for gold, https://arcprize.org/play?task=c8cbb738
+def p(g,**Q):
+ for N in sum(g,[]):C=[C+A*32for A,g in enumerate(g)for C,g in enumerate(g)if g==N];Q|={J+99-sum(C)//4:N for J in C if len(C)<5}
+ return[[Q.get(C+A*32,*{*g[0]}&{*g[5]})for C in range(min(Q)>>5,max(Q)//32+1)]for A in range(min(Q)>>5,max(Q)//32+1)]
 # 🥇 task 309: 38 bytes, gold, https://arcprize.org/play?task=c8f0f002
 p=lambda a:eval(str(a).replace(*'75'))
 # 🥈 task 310: 81 vs 78 bytes for gold, https://arcprize.org/play?task=c909285e
