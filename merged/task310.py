@@ -1,7 +1,10 @@
-# att (81 vs 78 bytes for gold)
+# ovs (70 bytes, gold)
+p=lambda a,*n:[b for b in zip(*n or p(a,*a))if{*b}-({*a[1]}&{*a[12]})]
+
+### att (81 bytes)
 p=lambda a,*n:[b for b in zip(*n or p(a,*a))if min(c:=sum(a,[]),key=c.count)in b]
 
-### combined (tied, 81 bytes)
+### combined (81 bytes)
 p=lambda a,*n:[b for b in zip(*n or p(a,*a))if min(c:=sum(a,[]),key=c.count)in b]
 
 ### xsot (96 bytes)

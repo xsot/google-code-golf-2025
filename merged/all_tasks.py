@@ -766,8 +766,8 @@ e=enumerate
 def p(g):q=range(m:=min(A:={J-sum(C)//4:N for N in sum(g,g)if len(C:=[C+A*8for(A,B)in e(g)for(C,E)in e(B)if E==N])<5or(M:=N)*0for J in C})+3>>3,1-m);return[[A.get(y*8+x,M)for x in q]for y in q]
 # 🥇 task 309: 38 bytes, gold, https://arcprize.org/play?task=c8f0f002
 p=lambda a:eval(str(a).replace(*'75'))
-# 🥈 task 310: 81 vs 78 bytes for gold, https://arcprize.org/play?task=c909285e
-p=lambda a,*n:[b for b in zip(*n or p(a,*a))if min(c:=sum(a,[]),key=c.count)in b]
+# 💎 task 310: 70 bytes, gold, https://arcprize.org/play?task=c909285e
+p=lambda a,*n:[b for b in zip(*n or p(a,*a))if{*b}-({*a[1]}&{*a[12]})]
 # 🥇 task 311: 32 bytes, gold, https://arcprize.org/play?task=c9e6f938
 p=lambda a:[r+r[::-1]for r in a]
 # 🥇 task 312: 44 bytes, gold, https://arcprize.org/play?task=c9f8e694
