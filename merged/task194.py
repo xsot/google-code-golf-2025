@@ -1,4 +1,8 @@
-# ovs (68 vs 67 bytes for gold)
+# joking (55 bytes, gold)
+# same as 106
+p=lambda i,s=[],k=3:-k*i or p([*zip(*i+s)],i[::-1],k-1)
+
+### ovs (68 bytes)
 p=lambda g,a=-3:-a*g and[r:=g[a]+sum(g,[])[a::-3],*p(g,a+1),r[::-1]]
 
 ### combined (74 bytes)

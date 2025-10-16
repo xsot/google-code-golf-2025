@@ -1,4 +1,7 @@
-# att (111 vs 110 bytes for gold)
+# joking (107 bytes, gold)
+p=lambda i,k=19:-k*i or[*map(lambda*r,a=8:[a:=[b or 8&a,b|2*(a%3<b),b%5][k//8]for b in r],*p(i,k-1)[::-1])]
+
+### att (111 bytes)
 p=lambda i,k=-99:k*i or p([*map(lambda*r,a=8:[[b%5,b or 8&a,b|2*(a%3<(a:=b))][k//50]for b in r],*i[::-1])],k+1)
 
 ### ovs (112 bytes)

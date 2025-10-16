@@ -1,0 +1,1 @@
+p=lambda a,n=1:[[y&a[(n:=n+3)//9%9][n%9]for y in x]for x in-n*a]or p([*filter(any,zip(*a))],n-1)
