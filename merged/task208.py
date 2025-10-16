@@ -1,4 +1,13 @@
-# xsot (223 (291 unzipped) vs 199 bytes for gold)
+# joking (213 (270 unzipped) vs 199 bytes for gold)
+def p(g):
+ M=min(sum(A:=g,[]),key=sum(A:=g,[]).count);E=len(A:=[A for A in zip(*A)if M in A])
+ D=len(A:=[A for A in zip(*A)if M in A])
+ for C in range(22-E):
+  for B in range(22-D):
+   for g[B][C:C+E]in A*0**sum(sum(A[C:C+E][1:-1])for A in g[B:B+D][1:-1]):B+=1
+ return g
+
+### xsot (223 (291 unzipped) bytes)
 # random bullshit go
 def p(g):
  M=min(sum(A:=g,[]),key=sum(A:=g,[]).count);E=len(A:=[A for A in zip(*A)if M in A])
@@ -6,18 +15,6 @@ def p(g):
  for B,r in enumerate(g):
   for C,c in enumerate(r[:-E]):
    if(c!=M)>sum(sum(A[1+C:C+E-1])for A in g[B+1:B+D-1]):
-    for g[B][C:C+E]in A:B+=1
-    return g
-
-### joking (tied, 223 (292 unzipped) bytes)
-# minor zlib improvements?
-def p(g):
- M=min(sum(A:=g,[]),key=sum(A:=g,[]).count)
- E=len(A:=[A for A in zip(*A)if M in A])
- D=len(A:=[A for A in zip(*A)if M in A])
- for B,r in enumerate(g):
-  for C,r in enumerate(r[:-E]):
-   if(r!=M)>sum(sum(A[1+C:C+E-1])for A in g[B+1:B+D-1]):
     for g[B][C:C+E]in A:B+=1
     return g
 

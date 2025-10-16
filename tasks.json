@@ -6988,15 +6988,15 @@
     },
     "task208": {
         "gold": 199,
-        "best": 223,
+        "best": 213,
         "solutions": {
             "joking": {
-                "source": "IyBtaW5vciB6bGliIGltcHJvdmVtZW50cz8KZGVmIHAoZyk6CiBNPW1pbihzdW0oQTo9ZyxbXSksa2V5PXN1bShBOj1nLFtdKS5jb3VudCkKIEU9bGVuKEE6PVtBIGZvciBBIGluIHppcCgqQSlpZiBNIGluIEFdKQogRD1sZW4oQTo9W0EgZm9yIEEgaW4gemlwKCpBKWlmIE0gaW4gQV0pCiBmb3IgQixyIGluIGVudW1lcmF0ZShnKToKICBmb3IgQyxyIGluIGVudW1lcmF0ZShyWzotRV0pOgogICBpZihyIT1NKT5zdW0oc3VtKEFbMStDOkMrRS0xXSlmb3IgQSBpbiBnW0IrMTpCK0QtMV0pOgogICAgZm9yIGdbQl1bQzpDK0VdaW4gQTpCKz0xCiAgICByZXR1cm4gZw==",
-                "size_uncompressed": 292,
-                "compressed": "I2NvZGluZzpMMQppbXBvcnQgemxpYgpleGVjKHpsaWIuZGVjb21wcmVzcyhieXRlcygijY4xDgIhEEX7PcXYgeya0JLgRQiF0SGZKMMGl0JPL4yJMVaW89//8C6YYFVFuwmaz8Tq3rJi58scop6v+PDfweFcGm96guRvyCMODKlUYCCGJ61qz5oStHFy7MX6Z1EgzXncyC1jPW349hKEvygHt6QoHCipvPNNH4er+AZr0KFJi436820JZKwjU0cqQ3m6xzFIOw6ZXvBWYMWt1T57ASIsIkwxIiksLTkpKQ==",
-                "size_compressed": 223,
-                "method": "zopfli",
-                "window": -15,
+                "source": "ZGVmIHAoZyk6CiBNPW1pbihzdW0oQTo9ZyxbXSksa2V5PXN1bShBOj1nLFtdKS5jb3VudCk7RT1sZW4oQTo9W0EgZm9yIEEgaW4gemlwKCpBKWlmIE0gaW4gQV0pCiBEPWxlbihBOj1bQSBmb3IgQSBpbiB6aXAoKkEpaWYgTSBpbiBBXSkKIGZvciBDIGluIHJhbmdlKDIyLUUpOgogIGZvciBCIGluIHJhbmdlKDIyLUQpOgogICBmb3IgZ1tCXVtDOkMrRV1pbiBBKjAqKnN1bShzdW0oQVtDOkMrRV1bMTotMV0pZm9yIEEgaW4gZ1tCOkIrRF1bMTotMV0pOkIrPTEKIHJldHVybiBn",
+                "size_uncompressed": 270,
+                "compressed": "I2NvZGluZzpMMQppbXBvcnQgemxpYgpleGVjKHpsaWIuZGVjb21wcmVzcyhieXRlcygijY6xDsIwDET3foXHJG0R7RiUL4kyIHCQBXWQaQb4epIIEGxsvne2744Y4aqyth0ktxCrW14UW5cHH/Rwxrv7BptDyrzqHboLcqWeISYBBmJ40FUZ1hQhVclBdxD/XiymVCV7PqGa5xFrp8bph8fGm5E9BS9Wegz1j9kaU9u2xi/uJztOQX+yy4mlPr55md3UgeCapZhPIiwiTDEiKSwtOSkp",
+                "size_compressed": 213,
+                "method": "zlib",
+                "window": -9,
                 "escape_cost": 0
             },
             "mwi": {
@@ -11480,7 +11480,7 @@
         "public_best": 122
     },
     "task341": {
-        "gold": 122,
+        "gold": 121,
         "best": 126,
         "solutions": {
             "combined_solutions": {
@@ -11512,7 +11512,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 122,
+        "public_gold": 121,
         "public_best": 137
     },
     "task342": {

@@ -505,15 +505,14 @@ def p(g):
  return g
 # 💎 task 207: 74 bytes, gold, https://arcprize.org/play?task=88a62173
 p=lambda a:[p(b)for*b,in map(zip,a,a[3:])]or min(b:=sum(a,()),key=b.count)
-# 🥈 task 208: 223 (291 unzipped) vs 199 bytes for gold, https://arcprize.org/play?task=890034e9
+# 🥈 task 208: 213 (270 unzipped) vs 199 bytes for gold, https://arcprize.org/play?task=890034e9
 def p(g):
  M=min(sum(A:=g,[]),key=sum(A:=g,[]).count);E=len(A:=[A for A in zip(*A)if M in A])
  D=len(A:=[A for A in zip(*A)if M in A])
- for B,r in enumerate(g):
-  for C,c in enumerate(r[:-E]):
-   if(c!=M)>sum(sum(A[1+C:C+E-1])for A in g[B+1:B+D-1]):
-    for g[B][C:C+E]in A:B+=1
-    return g
+ for C in range(22-E):
+  for B in range(22-D):
+   for g[B][C:C+E]in A*0**sum(sum(A[C:C+E][1:-1])for A in g[B:B+D][1:-1]):B+=1
+ return g
 # 💎 task 209: 247 (387 unzipped) bytes, gold, https://arcprize.org/play?task=8a004b2b
 def	p(g):
 	G=g
@@ -829,7 +828,7 @@ p=lambda i,s=0:[(t:=1)*[(s:=t<y-s&6)*3>>(t:=y)for y in x]for x in i]
 p=lambda a:[[*filter(int,sum(a,[]))]]
 # 💎 task 340: 115 bytes, gold, https://arcprize.org/play?task=d687bc17
 p=lambda i:[i:=[[sum({v,r[0]}&{r[-1],*i[1],*r[j**5:]})for j,v in enumerate(r)][::-1]for*r,in zip(*i)]for _ in i][3]
-# 🥉 task 341: 126 vs 122 bytes for gold, https://arcprize.org/play?task=d6ad076f
+# 🥉 task 341: 126 vs 121 bytes for gold, https://arcprize.org/play?task=d6ad076f
 p=lambda i:[i:=[[i[b][a]or all({*s}>{*s[b:]}>{0}for s in[[],*zip(*i)][a:a+3])*8for b in r]for a in r]for r in[range(10)]*2][1]
 # 🥈 task 342: 112 vs 110 bytes for gold, https://arcprize.org/play?task=d89b689b
 import re;p=lambda i,k=3:-k*i or p(eval(re.sub("([1-9])((.{32})+?[0, ]+)8",r"0\2\1",str([*zip(*i)][::-1]))),k-1)
