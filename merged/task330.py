@@ -1,5 +1,5 @@
-# ovs (120 bytes, gold)
-p=lambda i,k=79,z=1:-k*i or p([(e:=1)*[e:=y and[5//y*(z:=z*8)|e|y,(y%7==4)+1][k<1]for y in i]for i[::-1]in zip(*i)],k-1)
+# ovs (117 bytes, gold)
+p=lambda i,k=79,z=5:-k*i or p([[e:=y and[5//y*(z:=z*8)|e|y,(y%7<1)+1][k<1]for y in[0]+i][:0:-1]for*i,in zip(*i)],k-1)
 
 ### att (121 bytes)
 p=lambda i,k=79,z=1:-k*i or p([(e:=1)*[e:=y and[(y<6)*(z:=z*8)|e|y,(y%7==4)+1][k<1]for y in i]for i[::-1]in zip(*i)],k-1)
