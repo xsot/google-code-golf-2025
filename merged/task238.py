@@ -1,4 +1,7 @@
-# att (207 (305 unzipped) bytes, gold)
+# joking (202 (313 unzipped) bytes, gold)
+def p(a):b=[j for j in zip(*[j for j in zip(*a)if{*j}-{0}-{8}])if{*j}-{0}-{8}];return[[[*[c:=[j for j in zip(*[j for j in zip(*a)if{*j}-{0}&{8}])if{*j}-{0}&{8}],*c,c][i],*b[i]][j-1]and(b[1-(len(b)-j-1>i<j)|-(len(b)-j-1<i>j)][1-(len(b)-j-1>i>j)|-(len(b)-j-1<i<j)]or 8)for j in range(len(b))]for i in range(len(b))]
+
+### att (207 (305 unzipped) bytes)
 def p(a):b=[j for j in zip(*[j for j in zip(*a)if{*j}-{0,8}])if{*j}-{0,8}];return[[[*[c:=[j for j in zip(*[j for j in zip(*a)if{*j}-{0}&{8}])if{*j}-{0}&{8}],*c,c][i],*b[i]][j-1]and(b[1-(j>i<len(b)+~j)|-(j<i>len(b)+~j)][1-(j<i<len(b)+~j)|-(j>i>len(b)+~j)]or 8)for j in range(len(b))]for i in range(len(b))]
 
 ## 213
