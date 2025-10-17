@@ -1,4 +1,7 @@
-# ovs (70 vs 68 bytes for gold)
+# joking (67 bytes, gold)
+p=lambda g:[g:=[V*-1*-1or v*sum(r)%6for V,v in zip(g,r)]for r in g]
+
+### ovs (70 bytes)
 p=lambda g,c=[0]*9:[c:=[V or v*sum(r)%6for V,v in zip(c,r)]for r in g]
 
 ### att (72 bytes)
