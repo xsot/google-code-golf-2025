@@ -795,8 +795,8 @@ p=lambda a:[[*map(max,*a[:n]*2)]for n in(1,2,3)]
 p=lambda a,B=3:[[v|5*((b:=abs((B:=B-3)+str(a).find('8')))>~b%76in b'KHE"')for v in r]for r in a if[B:=B-2]]
 # 💎 task 324: 228 (261 unzipped) bytes, gold, https://arcprize.org/play?task=d07ae81c
 def p(g):k,K,b,B=T=sorted({*sum(g,[])},key=sum(g,[]).count);return[[([T[k!=C!=T[~all({k,B}!={*r}!={K,b}for r in[*zip(*g)]+g)]]for y,r in enumerate(g)for x,c in enumerate(r)if c in(k,K)!=abs(x-X)==abs(y-Y)]+[C])[0]for X,C in enumerate(r)]for Y,r in enumerate(g)]
-# 💎 task 325: 150 bytes, gold, https://arcprize.org/play?task=d0f5fe59
-p=lambda i,z=8:[*zip(*(s:=len({*sum(i,[])})-1)*[iter(i[25:]and[*s*[0],8]*s)])][1:]or p([[s:=h and(z:=z*2)|s|h for h in[0]+x]for*x,in zip(*i[::-1])],0)
+# 💎 task 325: 145 bytes, gold, https://arcprize.org/play?task=d0f5fe59
+p=lambda i,z=8,s=0,*w:i[22:]and[[8*(a==b)for b in w]for a in w]or p([[s:=h and(z:=z*2)|s|h for h in[0]+x]for*x,in zip(*i[::-1])],0,*{*sum(i,[])})
 # 🥇 task 326: 30 bytes, gold, https://arcprize.org/play?task=d10ecb37
 p=lambda a:[a[0][:2],a[1][:2]]
 # 🥇 task 327: 67 bytes, gold, https://arcprize.org/play?task=d13f3404
