@@ -1,4 +1,7 @@
-# xsot (61 vs 58 bytes for gold)
+# ovs (58 bytes, gold)
+p=lambda m:[[x-len(r)*r.pop(0)%2*2for x in[*r]]for r in m]
+
+### xsot (61 bytes)
 p=lambda m:[[len(r)*r.pop(0)%2*3or x for x in[*r]]for r in m]
 ##
 p=lambda m:[[len(r)%2*r.pop(0)*.6or x for x in[*r]]for r in m]
@@ -13,5 +16,5 @@ p=lambda m:[eval("3*(len(r)&((x:=r.pop(0))>0))or x,"*len(r))for r in m]
 p=lambda m:[[3*((r[j]>0)&len(r[j:]))or r[j]for j in range(len(r))]for r in m]
 p=lambda m:[[3*(len(r)+j&(r[j]>0))or r[j]for j in range(len(r))]for r in m]
 
-### combined (tied, 61 bytes)
+### combined (61 bytes)
 p=lambda m:[[len(r)*r.pop(0)%2*3or x for x in[*r]]for r in m]
