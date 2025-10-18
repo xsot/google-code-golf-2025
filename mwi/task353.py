@@ -1,0 +1,1 @@
+p=lambda a,n=-3:n*a or p([*zip(*[a.pop(-~sum(r)in sum(a,r))for r in a*1][::-1])],n+1)
