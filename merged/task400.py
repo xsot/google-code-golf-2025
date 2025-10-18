@@ -1,4 +1,7 @@
-# joking (68 vs 67 bytes for gold)
+# mwi (66 bytes, gold)
+p=lambda g:[h[:5]for r in[*g]if(h:=g.pop()[~[*r,1].index(1)::-1])]
+
+### joking (68 bytes)
 p=lambda g:[h[:5]for r in[*g]if(h:=g.pop()[::-1][[*r,1].index(1):])]
 
 ## recursive approach

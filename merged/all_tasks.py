@@ -963,5 +963,5 @@ p=lambda m,k=71:exec('r=k//9;exec("%s=3,3;"*len(a:={*%s+%s})*all(a));k-=1;'%(('m
 p=lambda a,b=45:[*zip(*[2*((b:=b-1)*[0]+a[0])for c in 5*a[0]if c])][b:45]
 # 🥇 task 399: 64 bytes, gold, https://arcprize.org/play?task=ff28f65a
 p=lambda m:[[1,0,(c:=sum(sum(m,[]))/8)>1],[0,c>2,0],[c>3,0,c>4]]
-# ❌ task 400: 68 vs 67 bytes for gold, https://arcprize.org/play?task=ff805c23
-p=lambda g:[h[:5]for r in[*g]if(h:=g.pop()[::-1][[*r,1].index(1):])]
+# 💎 task 400: 66 bytes, gold, https://arcprize.org/play?task=ff805c23
+p=lambda g:[h[:5]for r in[*g]if(h:=g.pop()[~[*r,1].index(1)::-1])]
