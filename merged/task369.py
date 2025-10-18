@@ -1,7 +1,10 @@
-# att (114 vs 109 bytes for gold)
+# ovs (110 vs 109 bytes for gold)
+p=lambda g,k=-11,z=1:k*g or p([[P:=v&5or[4-v%7,z:=z*8,P&~5|v][k>>3]for v in[5]+r][:0:-1]for*r,in zip(*g)],k+1)
+
+### att (114 bytes)
 p=lambda m,i=95:-i*m or[*zip(*eval(str(p(m,i-1)[::-1]).replace("2320,,,,    133"[i%5::4],"1213,,,,121"[i%5::4])))]
 
-### combined (tied, 114 bytes)
+### combined (114 bytes)
 p=lambda m,i=95:-i*m or[*zip(*eval(str(p(m,i-1)[::-1]).replace("2320,,,,    133"[i%5::4],"1213,,,,121"[i%5::4])))]
 
 ### xsot (118 bytes)
@@ -79,6 +82,3 @@ def p(matrix):
                     matrix[fr][fc] = 4-size
 
     return matrix
-
-### ovs (120 bytes)
-p=lambda i,k=11,V=6:-k*i or p([[[v|q*(q!=5<v)or(V:=V*64)|4,v%7][k<1]for q,v in zip([5]+r,r)][::-1]for*r,in zip(*i)],k-1)

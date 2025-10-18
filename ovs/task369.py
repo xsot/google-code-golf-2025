@@ -1,1 +1,1 @@
-p=lambda i,k=11,V=6:-k*i or p([[[v|q*(q!=5<v)or(V:=V*64)|4,v%7][k<1]for q,v in zip([5]+r,r)][::-1]for*r,in zip(*i)],k-1)
+p=lambda g,k=-11,z=1:k*g or p([[P:=v&5or[4-v%7,z:=z*8,P&~5|v][k>>3]for v in[5]+r][:0:-1]for*r,in zip(*g)],k+1)
