@@ -86,8 +86,8 @@ p=lambda a,b=0:[[e|(b:=b^e)for e in r]for r in a]
 p=lambda g,Q=range(10):[g:=[[g[j][~i]|g[j-C-C][~i+C]*g[j-C][~i+C+C]%~(i>C<j)%9for j in Q]for i in Q]for C in[sum(b'%r'%g)//38%4]*4][3]
 # 🥇 task 43: 56 bytes, gold, https://arcprize.org/play?task=2281f1f4
 p=lambda a:[[c+b[-1]&2|b.pop(0)for c in a[0]]for*b,in a]
-# 🥈 task 44: 222 (461 unzipped) vs 195 bytes for gold, https://arcprize.org/play?task=228f6490
-def p(i):f=sum(i,[]);w=sum(2<<J for J in range(50)if f[J]<5in{*f[J//10*10:J]}&{*f[J:J//10*10+10]});i=[[J^c*(1&(w:=w>>1)or J==c)for J in J]for c in{*f}if bin(sum(512<<J for J in range(100)if f[J]==c))in bin(w<<100)for J in i][::-1];f=sum(i,[]);w=sum(2<<J for J in range(50)if f[J]<5in{*f[J//10*10:J]}&{*f[J:J//10*10+10]});i=[[J^c*(1&(w:=w>>1)or J==c)for J in J]for c in{*f}if bin(sum(512<<J for J in range(100)if f[J]==c))in bin(w<<100)for J in i][::-1];return i
+# 🥈 task 44: 215 (272 unzipped) vs 195 bytes for gold, https://arcprize.org/play?task=228f6490
+p=lambda i:[i:=[[J^c*(1&(w:=w>>1)>>99or J==c)for J in J]for c in{*sum(i,[])}if bin(sum((sum(i,[])[J]==c)<<J+9for J in range(100)))in bin(w:=sum((sum(i,[])[J]<5in{*sum(i,[])[J//10*10:J]}&{*sum(i,[])[J:J//10*10+10]})<<J+100for J in range(50)))for J in i][::-1]for J in i][1]
 # 🥇 task 45: 45 bytes, gold, https://arcprize.org/play?task=22eb0ac0
 p=lambda g:[10*r[:r[0]==r[9]]or r for r in g]
 # 🥇 task 46: 168 bytes, gold, https://arcprize.org/play?task=234bbc79
@@ -825,8 +825,8 @@ p=lambda i,s=0:[(t:=1)*[(s:=t<y-s&6)*3>>(t:=y)for y in x]for x in i]
 p=lambda a:[[*filter(int,sum(a,[]))]]
 # 💎 task 340: 115 bytes, gold, https://arcprize.org/play?task=d687bc17
 p=lambda i:[i:=[[sum({v,r[0]}&{r[-1],*i[1],*r[j**5:]})for j,v in enumerate(r)][::-1]for*r,in zip(*i)]for _ in i][3]
-# 🥉 task 341: 126 vs 121 bytes for gold, https://arcprize.org/play?task=d6ad076f
-p=lambda i:[i:=[[i[b][a]or all({*s}>{*s[b:]}>{0}for s in[[],*zip(*i)][a:a+3])*8for b in r]for a in r]for r in[range(10)]*2][1]
+# 💎 task 341: 118 bytes, gold, https://arcprize.org/play?task=d6ad076f
+p=lambda i,v=1:[i:=[[b[a]or(v:=1+v*({*s}>{*s[a:]}>{0}))*2&8for b,s in zip(i,i[1:]+i)]for a in range(10)]for r in i][1]
 # 🥈 task 342: 112 vs 110 bytes for gold, https://arcprize.org/play?task=d89b689b
 import re;p=lambda i,k=3:-k*i or p(eval(re.sub("([1-9])((.{32})+?[0, ]+)8",r"0\2\1",str([*zip(*i)][::-1]))),k-1)
 # 💎 task 343: 64 bytes, gold, https://arcprize.org/play?task=d8c310e9
