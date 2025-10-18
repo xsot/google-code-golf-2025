@@ -1,1 +1,1 @@
-p=lambda i,r=range(10):[[i[a][b]|2&6%~sum((t:=[*zip(*i)])[b-1][a+a%~a:])+max(t[b][a:])for b in r]for a in r]
+p=lambda i,*h:[[c[1]|2&6%~sum(h)+max((h:=c)[1:])for c in zip(*i[a:])]for a in[0,*range(9)]]

@@ -1,4 +1,7 @@
-# joking (112 vs 110 bytes for gold)
+# ovs (111 vs 110 bytes for gold)
+import re;p=lambda i,k=3:-k*i or[*zip(*eval(re.sub("([1-9])((.{32})+?[0, ]+)8",r"0\2\1",str(p(i,k-1)))))][::-1]
+
+### joking (112 bytes)
 import re;p=lambda i,k=3:-k*i or p(eval(re.sub("([1-9])((.{32})+?[0, ]+)8",r"0\2\1",str([*zip(*i)][::-1]))),k-1)
 
 ### combined (119 bytes)
