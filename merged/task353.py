@@ -1,4 +1,7 @@
-# ovs (87 bytes, gold)
+# mwi (85 bytes, gold)
+p=lambda a,n=-3:n*a or p([*zip(*[a.pop(-~sum(r)in sum(a,r))for r in a*1][::-1])],n+1)
+
+### ovs (87 bytes)
 p=lambda a,n=-3:n*a or p([*zip(*[a.pop(f'{sum(r)+1}'in'%s'%a)for r in a*1][::-1])],n+1)
 
 ### att (104 bytes)
