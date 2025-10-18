@@ -41,7 +41,8 @@ player_dirs = [
     'ovs',
     'xsot',
     'combined_solutions',
-    'garry_moss'
+    'garry_moss',
+    'compression_experiments',
 ]
 
 warnings.filterwarnings("ignore")
