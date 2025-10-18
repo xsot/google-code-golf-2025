@@ -1,4 +1,7 @@
-# ovs (91 vs 90 bytes for gold)
+# att (89 bytes, gold)
+p=lambda i,a=0,*h:i[1:]and[[c[1]|2&6%~sum(h)+max((h:=c)[1:])for c in zip(*i)]]+p(i[a:],1)
+
+### ovs (91 bytes)
 p=lambda i,*h:[[c[1]|2&6%~sum(h)+max((h:=c)[1:])for c in zip(*i[a:])]for a in[0,*range(9)]]
 
 ### joking (93 bytes)
