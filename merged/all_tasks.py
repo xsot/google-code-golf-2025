@@ -403,8 +403,8 @@ e=range(11)
 p=lambda a:[[5*(a[i][j]==5)or sum((4==a[k+i//4][l+j//4])*a[k+i%4][l+j%4]for k in R for l in R)for j in e]for i in e]
 # 🥇 task 164: 32 bytes, gold, https://arcprize.org/play?task=6d0aefbc
 p=lambda a:[b+b[::-1]for b in a]
-# 🥉 task 165: 136 vs 131 bytes for gold, https://arcprize.org/play?task=6d58a25d
-def p(i):a,b,s={}.fromkeys(sum(i[::-1],[0]));return[[t[a-1]or(s in t[:a]!=b in t[t.index(s):])*b for t in zip(*i)]for x in i if(a:=a+1)]
+# 💎 task 165: 130 bytes, gold, https://arcprize.org/play?task=6d58a25d
+def p(i):_,b,s={}.fromkeys(sum(i[::-1],[0]));return[[t[a]or(b in t[[*t[:a]+i,s].index(s):])*b for*t,in zip(*i)]for a in range(20)]
 # 🥈 task 166: 63 vs 61 bytes for gold, https://arcprize.org/play?task=6d75e8bb
 p=lambda a:[[~v*c*any(b)%10for v,c in zip(b,max(a))]for b in a]
 # 🥈 task 167: 72 vs 71 bytes for gold, https://arcprize.org/play?task=6e02f1e3
