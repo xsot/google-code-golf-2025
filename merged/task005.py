@@ -1,4 +1,7 @@
-# ovs (210 (280 unzipped) vs 183 bytes for gold)
+# compression_experiments (209 (280 unzipped) vs 183 bytes for gold)
+def p(i):r=max([[(e,a)for e in range(21)[g:g+3]for a in range(21)[y:y+3]if i[e][a]]for g in range(21)for y in range(21)],key=len);return[[max(((y-o*f,g-o*n)in r)*i[e+f][a+n]for e,a in r for f in[-4,0,4]for n in[-4,0,4]for o in range(21)[1:4])for g in range(21)]for y in range(21)]
+
+### ovs (210 (280 unzipped) bytes)
 # W[1:4] -> W[1:] possible golf. doesn't save a byte when compressed
 def p(g):R=max([[(i,j)for i in range(21)[x:x+3]for j in range(21)[y:y+3]if g[i][j]]for x in range(21)for y in range(21)],key=len);return[[max(((y-k*d,x-k*D)in R)*g[i+d][j+D]for i,j in R for d in[-4,0,4]for D in[-4,0,4]for k in range(21)[1:4])for x in range(21)]for y in range(21)]
 

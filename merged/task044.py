@@ -1,4 +1,7 @@
-# ovs (215 (272 unzipped) vs 195 bytes for gold)
+# compression_experiments (214 (272 unzipped) vs 195 bytes for gold)
+p=lambda r:[r:=[[n^i*(1&(f:=f>>1)>>99or n==i)for n in n]for i in{*sum(r,[])}if bin(sum((sum(r,[])[n]==i)<<n+9for n in range(100)))in bin(f:=sum((sum(r,[])[n]<5in{*sum(r,[])[n//10*10:n]}&{*sum(r,[])[n:n//10*10+10]})<<n+100for n in range(50)))for n in r][::-1]for n in r][1]
+
+### ovs (215 (272 unzipped) bytes)
 p=lambda i:[i:=[[J^c*(1&(w:=w>>1)>>99or J==c)for J in J]for c in{*sum(i,[])}if bin(sum((sum(i,[])[J]==c)<<J+9for J in range(100)))in bin(w:=sum((sum(i,[])[J]<5in{*sum(i,[])[J//10*10:J]}&{*sum(i,[])[J:J//10*10+10]})<<J+100for J in range(50)))for J in i][::-1]for J in i][1]
 
 ## 222/461
