@@ -1,5 +1,5 @@
-# ovs (97 vs 92 bytes for gold)
-p=lambda a,n=-3:n*a or p([*zip(a.pop(((I:=[*map(max,a),3].index)(4)<I(3))*I(3)-1),*a[::-1])],n+1)
+# ovs (87 bytes, gold)
+p=lambda a,n=-3:n*a or p([*zip(*[a.pop(f'{sum(r)+1}'in'%s'%a)for r in a*1][::-1])],n+1)
 
 ### att (104 bytes)
 p=lambda a,n=-3,i=0:n*a or 3in a[i]and p([*zip(a.pop(('4'in'%s'%a[:i])*i-1),*a[::-1])],n+1)or p(a,n,i+1)
