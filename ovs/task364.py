@@ -1,1 +1,1 @@
-p=lambda i,k=39:-k*i or p([[[y.bit_count()*5%14%9,y and(u*t>0)<<k%4+2|y|u][k>0]for y,t,u in zip(x,[0]+x,s)]for*x,s in zip(*i,[[0]*99,*zip(*i)])][::-1],k-1)
+p=lambda i,k=39,s=[0]*99:-k*i or p([s:=[y and[y%7*9%13%9,(u*t>0)<<k%4*3+6|y|u][k>0]for y,t,u in zip(x,[0]+x,s)]for*x,in zip(*i)][::-1],k-1)

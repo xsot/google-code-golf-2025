@@ -1,0 +1,1 @@
+p=lambda i,*I:[[W[b]|sum({*w[b:]}&{*w[:b]})for b in range(10)]for*W,w in zip(*I or p(zip(*i),*i),i)]
