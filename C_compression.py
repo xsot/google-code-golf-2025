@@ -16,9 +16,10 @@ import time
 PREFIXES = [b"",b"\n", b"\r",b"\f",b"\n\f",b"\r\f"] + [bytes([c,ne]) for c in b"\t\n\f\r 0123456789#" for ne in b"\n\r"]
 POSTFIXES = [b"",b" ",b"\t",b"\n",b"\r",b"\f",b"#",b";",b"\t ",b" \t",b"\np"] + [b"#"+bytes([n]) for n in range(32,127)]
 DEFAULT_ALPHABET = b"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnoqrstuvwxyz"
+DEFAULT_TEMP = 15
 
 @functools.lru_cache(maxsize=2048)
-def compress(task_src: bytes, rand_passes = 0, pre_and_post = True) -> bytes:
+def compress(task_src: bytes, rand_passes = 0, pre_and_post = True, temperature = DEFAULT_TEMP) -> bytes:
     stats = {'method': 'none'}
 
     # Shortest compressible task is currently 184b
@@ -27,13 +28,13 @@ def compress(task_src: bytes, rand_passes = 0, pre_and_post = True) -> bytes:
     # Try random var orderings
     random.seed(time.time())
     rands = [
-        sub_vars(task_src, bytes(sorted(DEFAULT_ALPHABET, key = lambda c: random.random())))
+        sub_vars(task_src, bytes(sorted(DEFAULT_ALPHABET, key = lambda c: random.random())), temperature=temperature)
         for _ in [0] * rand_passes
     ]
 
     for task_src_2 in (
-        sub_vars(task_src, DEFAULT_ALPHABET),
-        sub_vars(task_src, DEFAULT_ALPHABET[::-1]),
+        sub_vars(task_src, DEFAULT_ALPHABET, temperature=temperature),
+        sub_vars(task_src, DEFAULT_ALPHABET[::-1], temperature=temperature),
         *rands,
         task_src):
 
@@ -124,7 +125,7 @@ def zip_src(src: bytes, method: str, window: int = None) -> bytes:
         delim + compressed + delim + \
         b',"L1")'+(b',%d'%window if window<15 else b'')+b'))', stats
 
-def sub_vars(src: bytes, alphabet:bytes = b"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnoqrstuvwxyz") -> bytes:
+def sub_vars(src: bytes, alphabet:bytes = b"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnoqrstuvwxyz", temperature=DEFAULT_TEMP) -> bytes:
 
     if set(alphabet) != set(b"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnoqrstuvwxyz"):
         raise ValueError("alphabet must be an ordering of all letters except lowercase p")
@@ -139,7 +140,7 @@ def sub_vars(src: bytes, alphabet:bytes = b"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghij
     # first try replacing variables with letters that already exist in the source,
     # most common first
     vars_new_1 = sorted(rest,
-        key=lambda c: (-varless.count(c) + random.randint(0,15), -alphabet.index(c)))
+        key=lambda c: (-varless.count(c) + random.randint(0,temperature), -alphabet.index(c)))
 
     # then use the rest of the letters. bruteforcing different orderings
     # may yield byte saves
