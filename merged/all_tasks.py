@@ -193,14 +193,14 @@ p=lambda i,k=7,s=0:-k*i or[[[-((s:=[abs(s)or 1,s&s//4][y>0]-1)>1)|y,*[x for x in
 p=lambda a:[b[::-1]for b in a[::-1]]
 # 💎 task 88: 100 bytes, gold, https://arcprize.org/play?task=3de23699
 p=lambda a,n=44:a*(-3-n)or p([[d%~d&max(max(a))for d in c]for c in zip(*a[any(n*a[-1])-2::-1])],n-1)
-# 💎 task 89: 233 (279 unzipped) bytes, gold, https://arcprize.org/play?task=3e980e27
-def p(g):
- for i in(M:={i*1j+j:g for i,g in enumerate(g)for j,g in enumerate(g)if g}):
-  for I in M:
-   s={I}
-   for j in[*M]*3:
-    if M[i]==M[I]!=any(0<abs(i-I)<2for I in M)<any(0<abs(j-I)<2for I in s):s|={j};g[int((j-I+i).imag)][int((-(-1)**M[I]*(j-I)+i).real)]=M[j]
- return g
+# 💎 task 89: 232 (279 unzipped) bytes, gold, https://arcprize.org/play?task=3e980e27
+def	p(i):
+	for	n	in(e:={n*1j+a:i	for	n,i	in	enumerate(i)for	a,i	in	enumerate(i)if	i}):
+		for	r	in	e:
+			t={r}
+			for	a	in[*e]*3:
+				if	e[n]==e[r]!=any(0<abs(n-r)<2for	r	in	e)<any(0<abs(a-r)<2for	r	in	t):t|={a};i[int((a-r+n).imag)][int((-(-1)**e[r]*(a-r)+n).real)]=e[a]
+	return	i
 # 💎 task 90: 153 bytes, gold, https://arcprize.org/play?task=3eda0437
 s='for %s,b in enumerate(%s)'
 exec(f"p=lambda a:max([j>i,-(C:=sum(g:=[[b|6*(i<=m<=j)*(k<=n<=l){s}]{s}],a).count)(7),C(6),g]{s*4})[3]"%(*'nbmaiakbjalb',))
@@ -300,22 +300,22 @@ p=lambda a:[[sum({*b[c:c+3]}-{5})for c in(0,3,6)]for b in a[::3]]
 p=lambda a:[a:=[[*b[:[*b,1].index(~b[l:=len(a)]%5%3)],*b[l:],8,*[0]*l][l-1::-1]for*b,in zip(*a,*filter(any,a))]for _ in a][3]
 # 🥇 task 132: 86 bytes, gold, https://arcprize.org/play?task=56ff96f3
 p=lambda i,v=0:[i:=[[v|(v:=v^sum({*A}&{*y}))for A in i]for y in zip(*i)]for _ in i][1]
-# 💎 task 133: 277 (439 unzipped) bytes, gold, https://arcprize.org/play?task=57aa92db
-def p(u):
- *i,e={f*66+m:(u)for f,u in enumerate(u)for m,u in enumerate(u)if u},
- for f in e:
-  r={f}
-  for n in*i,:
-   if{f-66,f-1}&n:i.remove(n);r|=n
-  i+=r,
- for n in*i,:
-  for f in n:
-   for r in n:
-    d=n
-    for d in 1//len([l for l in d if e[f]==e[l]])*i:
-     for o in n-{r}:
-      for l in([l for l in d if e[f]==e[l]==e[r]]):l+=(len([l for l in d if e[f]==e[l]==e[r]])^6)%6*(o-r);u[l//66][l%66],={e[l]for l in d}-{e[f]}
- return u
+# 💎 task 133: 276 (439 unzipped) bytes, gold, https://arcprize.org/play?task=57aa92db
+def	p(e):
+	*f,n={o*66+l:(e)for	o,e	in	enumerate(e)for	l,e	in	enumerate(e)if	e},
+	for	o	in	n:
+		u={o}
+		for	t	in*f,:
+			if{o-66,o-1}&t:f.remove(t);u|=t
+		f+=u,
+	for	t	in*f,:
+		for	o	in	t:
+			for	u	in	t:
+				i=t
+				for	i	in	1//len([r	for	r	in	i	if	n[o]==n[r]])*f:
+					for	a	in	t-{u}:
+						for	r	in([r	for	r	in	i	if	n[o]==n[r]==n[u]]):r+=(len([r	for	r	in	i	if	n[o]==n[r]==n[u]])^6)%6*(a-u);e[r//66][r%66],={n[r]for	r	in	i}-{n[o]}
+	return	e
 # 💎 task 134: 123 bytes, gold, https://arcprize.org/play?task=5ad4f10b
 p=lambda g,D=10:[[D*(D!=v>0)for v in r]for r in('0, %g, 0'%D in'%s'%g)*g]or(h:=[*filter(any,zip(*p(g,D-.5)))])[::len(h)//3]
 # 🥇 task 135: 32 bytes, gold, https://arcprize.org/play?task=5bd6f4ac
@@ -376,17 +376,17 @@ def	p(g):
 				for	b	in	range(t,w):g[s][b-t+l]+=x[b]>4;x[b]=0
 			g=p(g)or	u
 	if{*g[1]+g[2]}=={1,2}:return	g
-# 💎 task 158: 261 (488 unzipped) bytes, gold, https://arcprize.org/play?task=6aa20dc0
-def p(r):
- x,i=max((len({*str(o:=[x[l:l+3]for x in r[x:x+3]])}),o)for x in range(len(r))for l in range(len(r[-1])))
- for o in range(len(r[-1])):
-  for x in range(len(r)-o*3):
-   for l in range(len(r[-1])-o*3):
-    for a in range(len(r[-1])):
-     for a in range(o*3*all(r[x+a][l+n]==i[a//o][n//o]or r[x+a][l+n]==r[-1][-1]!=i[a//o][n//o]==max({*i[1]}-{r[-1][-1]})for a in range(o*3)for n in range(o*3))):
-      for n in range(o*3):r[x+a][l+n]=i[a//o][n//o]
-     i=*zip(*i[::-1]),
- return r
+# 💎 task 158: 260 (488 unzipped) bytes, gold, https://arcprize.org/play?task=6aa20dc0
+def	p(r):
+	f,l=max((len({*str(e:=[f[o:o+3]for	f	in	r[f:f+3]])}),e)for	f	in	range(len(r))for	o	in	range(len(r[-1])))
+	for	e	in	range(len(r[-1])):
+		for	f	in	range(len(r)-e*3):
+			for	o	in	range(len(r[-1])-e*3):
+				for	a	in	range(len(r[-1])):
+					for	a	in	range(e*3*all(r[f+a][o+n]==l[a//e][n//e]or	r[f+a][o+n]==r[-1][-1]!=l[a//e][n//e]==max({*l[1]}-{r[-1][-1]})for	a	in	range(e*3)for	n	in	range(e*3))):
+						for	n	in	range(e*3):r[f+a][o+n]=l[a//e][n//e]
+					l=*zip(*l[::-1]),
+	return	r
 # 💎 task 159: 105 bytes, gold, https://arcprize.org/play?task=6b9890af
 p=lambda g,*G:sum([[[2,*r,2]]*[str(g).count('2')//12,all(r)][{*r}<={0,2}]for*r,in zip(*G or p(g,*g))],[])
 # 💎 task 160: 100 bytes, gold, https://arcprize.org/play?task=6c434453
