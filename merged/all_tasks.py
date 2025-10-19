@@ -276,7 +276,7 @@ import re;p=lambda i,k=39:-k*i or[*zip(*eval(re.sub("0(?=.{34}[38].{34}[382])","
 # 💎 task 120: 78 bytes, gold, https://arcprize.org/play?task=50cb2852
 p=lambda i,*w:i*0!=0and[*map(p,i,[i*2]+i,i[1:]+[i*2],*w)]or[8,i]["0"in str(w)]
 # 🥉 task 121: 90 vs 89 bytes for gold, https://arcprize.org/play?task=5117e062
-p=lambda g:exec("g[:]=*map(list,zip(*g[(8in g[-2])-2::-1])),;"*96+"g[1][1]=max(g[0])")or g
+p=lambda g:exec("g[:]=*map(list,zip(*g[(8in g[-2])-2::-1])),;"*40+"g[1][1]=max(g[0])")or g
 # 🥉 task 122: 81 vs 75 bytes for gold, https://arcprize.org/play?task=5168d44c
 p=lambda a:7in map(sum,a)and a[-2:][::len(a)%-2|1]+a[:-2]or[*zip(*p([*zip(*a)]))]
 # 🥈 task 123: 75 vs 72 bytes for gold, https://arcprize.org/play?task=539a4f51
