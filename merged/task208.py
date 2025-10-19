@@ -1,4 +1,13 @@
-# joking (213 (270 unzipped) vs 199 bytes for gold)
+# compression_experiments (212 (270 unzipped) vs 199 bytes for gold)
+def	p(t):
+	u=min(sum(n:=t,[]),key=sum(n:=t,[]).count);r=len(n:=[n	for	n	in	zip(*n)if	u	in	n])
+	i=len(n:=[n	for	n	in	zip(*n)if	u	in	n])
+	for	e	in	range(22-r):
+		for	o	in	range(22-i):
+			for	t[o][e:e+r]in	n*0**sum(sum(n[e:e+r][1:-1])for	n	in	t[o:o+i][1:-1]):o+=1
+	return	t
+
+### joking (213 (270 unzipped) bytes)
 def p(g):
  M=min(sum(A:=g,[]),key=sum(A:=g,[]).count);E=len(A:=[A for A in zip(*A)if M in A])
  D=len(A:=[A for A in zip(*A)if M in A])
