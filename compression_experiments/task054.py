@@ -1,7 +1,7 @@
-def	p(t):
-	*e,i,i=sorted({*sum(t,[])},key=sum(t,[]).count);e={b*1j+r:t	for	b,t	in	enumerate(t)for	r,t	in	enumerate(t)if	t	in	e};o={b	for	b	in	e	for	r	in	e	if	abs(b-r)==1}
-	for	b	in{*e}-o:
-		for	r	in	o:
-			n=r-sum(o)/len(o);l=r;t[int(r.imag)][int(r.real)],f,r=i,2,n+b
-			while	t[int(r.imag)][int(r.real)]*f^i*f:t[int(r.imag)][int(r.real)],f,r=e[l],abs(n)>=2,n/2+r
-	return	t
+def	p(s):
+	*e,i,i=sorted({*sum(s,[])},key=sum(s,[]).count);e={u*1j+t:s	for	u,s	in	enumerate(s)for	t,s	in	enumerate(s)if	s	in	e};n={u	for	u	in	e	for	t	in	e	if	abs(u-t)==1}
+	for	u	in{*e}-n:
+		for	t	in	n:
+			k=t-sum(n)/len(n);l=t;s[int(t.imag)][int(t.real)],r,t=i,2,k+u
+			while	s[int(t.imag)][int(t.real)]*r^i*r:s[int(t.imag)][int(t.real)],r,t=e[l],abs(k)>=2,k/2+t
+	return	s
