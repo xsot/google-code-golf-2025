@@ -1,4 +1,13 @@
-# joking (272 (372 unzipped) bytes, gold)
+# compression_experiments (271 (372 unzipped) bytes, gold)
+def	p(t):
+	*e,i,i=sorted({*sum(t,[])},key=sum(t,[]).count);e={b*1j+r:t	for	b,t	in	enumerate(t)for	r,t	in	enumerate(t)if	t	in	e};o={b	for	b	in	e	for	r	in	e	if	abs(b-r)==1}
+	for	b	in{*e}-o:
+		for	r	in	o:
+			n=r-sum(o)/len(o);l=r;t[int(r.imag)][int(r.real)],f,r=i,2,n+b
+			while	t[int(r.imag)][int(r.real)]*f^i*f:t[int(r.imag)][int(r.real)],f,r=e[l],abs(n)>=2,n/2+r
+	return	t
+
+### joking (272 (372 unzipped) bytes)
 # zip fiddling
 def	p(g):
 	*M,B,B=sorted({*sum(g,[])},key=sum(g,[]).count);M={i*1j+I:g	for	i,g	in	enumerate(g)for	I,g	in	enumerate(g)if	g	in	M};T={i	for	i	in	M	for	I	in	M	if	abs(i-I)==1}

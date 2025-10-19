@@ -1,4 +1,11 @@
-# joking (263 (444 unzipped) bytes, gold)
+# compression_experiments (261 (444 unzipped) bytes, gold)
+def p(f):
+ o,n,d,e,a=[{r+m*20for m in range(len(f))for r in range(len(f[m]))if f[m][r]==b}for b in range(5)]
+ for b in d:e|={b for b in d for m in n|e if abs(b-m)in[1,20]}
+ for b in d:i={b}-a and{b-min(len({b+m*(g-2)for g in range(5)}&d)for m in[1,20])*(min(e)-max(e))}&d;a|=i;f=[[f[m][r]or r+m*20in(i and{b-min(len({b+m*(g-2)for g in range(5)}&d)for m in[1,20])*(min(e)-m)for m in n})for r in range(len(f[m]))]for m in range(len(f))]
+ return f
+
+### joking (263 (444 unzipped) bytes)
 def p(g):
  f,m,M,s,v=[{j+I*20for I in range(len(g))for j in range(len(g[I]))if g[I][j]==i}for i in range(5)]
  for i in M:s|={i for i in M for I in m|s if abs(i-I)in[1,20]}

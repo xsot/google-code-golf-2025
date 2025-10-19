@@ -1,1 +1,1 @@
-p=lambda r:[r:=[[n^i*(1&(f:=f>>1)>>99or n==i)for n in n]for i in{*sum(r,[])}if bin(sum((sum(r,[])[n]==i)<<n+9for n in range(100)))in bin(f:=sum((sum(r,[])[n]<5in{*sum(r,[])[n//10*10:n]}&{*sum(r,[])[n:n//10*10+10]})<<n+100for n in range(50)))for n in r][::-1]for n in r][1]
+p=lambda n:[n:=[[i^r*(1&(m:=m>>1)>>99or i==r)for i in i]for r in{*sum(n,[])}if bin(sum((sum(n,[])[i]==r)<<i+9for i in range(100)))in bin(m:=sum((sum(n,[])[i]<5in{*sum(n,[])[i//10*10:i]}&{*sum(n,[])[i:i//10*10+10]})<<i+100for i in range(50)))for i in n][::-1]for i in n][1]

@@ -1,4 +1,9 @@
-# joking (229 (357 unzipped) bytes, gold)
+# compression_experiments (228 (357 unzipped) bytes, gold)
+def	p(a):
+	for	f	in	range(4):m=[*map(min,a)].index(0);i=[*map(min,a)].count(0);a=[*map(list,zip(*a))][::-1];u=[*map(min,a)].index(0);[0for	f	in	range(4)for	d	in	range(i)for	n	in	range(i)for	a[u-1+a[u][m]//-9*~f-i*f-d][m-1+a[u][m]//-9*~f-i*f-n]in	a[u-1+a[u][m]//8][m-1+a[u][m]%8:][:1>a[u+d][m+n]<=u-1+a[u][m]//-9*~f-i*f-d|m-1+a[u][m]//-9*~f-i*f-n]]
+	return	a
+
+### joking (229 (357 unzipped) bytes)
 def	p(g):
 	for	s	in	range(4):x=[*map(min,g)].index(0);N=[*map(min,g)].count(0);g=[*map(list,zip(*g))][::-1];y=[*map(min,g)].index(0);[0for	s	in	range(4)for	i	in	range(N)for	j	in	range(N)for	g[y-1+g[y][x]//-9*~s-N*s-i][x-1+g[y][x]//-9*~s-N*s-j]in	g[y-1+g[y][x]//8][x-1+g[y][x]%8:][:1>g[y+i][x+j]<=y-1+g[y][x]//-9*~s-N*s-i|x-1+g[y][x]//-9*~s-N*s-j]]
 	return	g

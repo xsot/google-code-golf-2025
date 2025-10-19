@@ -1,4 +1,8 @@
-# joking (284 (377 unzipped) bytes, gold)
+# compression_experiments (283 (377 unzipped) bytes, gold)
+import re
+def p(n):f={0:(a:=max(n:=re.sub(', ','',str(n+[*zip(*n)])),key=n.count),2)}|{(m:=len(re.findall(e+e+'([^]+)'+e+']+)'+e+'|$',n+n[::-1])[0]))-len(max(re.findall(e+'+',n)))*~(m>0)>>1:(e,m-1>>1)for e in{*n}-{a,*'([]+)'}};return[[int([a,*f[max(abs(e),abs(m))]][f[max(abs(e),abs(m))][1]<min(abs(e),abs(m))])for e in range(-max(f),max(f)+1)]for m in range(-max(f),max(f)+1)]
+
+### joking (284 (377 unzipped) bytes)
 # derived from regex solution by kenkridge
 # 284
 import re

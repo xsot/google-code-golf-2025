@@ -1,0 +1,1 @@
+def p(f):n=f.index(min(f,key=set))+1;e={u*1j+o:f for u,f in enumerate(f[::n])for o,f in enumerate(f[::n])};return[[[f or[e[t:=u//n*1j+o//n],*[e[a+t-r]for r in e if(e[r]==e[a])*2>abs(t-r)]][-1]for o,f in enumerate(f)]for u,f in enumerate(f)]for a in e if all(e.get(a+1j**u)for u,f in enumerate(f))][-1]

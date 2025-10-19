@@ -1,0 +1,1 @@
+p=lambda	i:[i:=[[max(i[e][m],(e-r+a	in	range(a*4))*(m-n+a	in	range(a*4))*3,9in(e[m]for	e	in	i[:e]))for	m	in	range(len(i))]for	e	in	range(len(i))]for	a	in	range(len(i))for	r	in	range(-a*2,len(i))for	n	in	range(len(i)-a*2+1)if{min(e[n:a*2+n])for	e	in	i[max(r,0):a*2+r]}=={9}][-1]

@@ -1,4 +1,7 @@
-# joking (202 (313 unzipped) bytes, gold)
+# compression_experiments (201 (313 unzipped) bytes, gold)
+def p(i):r=[e for e in zip(*[e for e in zip(*i)if{*e}-{0}-{8}])if{*e}-{0}-{8}];return[[[*[f:=[e for e in zip(*[e for e in zip(*i)if{*e}-{0}&{8}])if{*e}-{0}&{8}],*f,f][n],*r[n]][e-1]and(r[1-(len(r)-e-1>n<e)|-(len(r)-e-1<n>e)][1-(len(r)-e-1>n>e)|-(len(r)-e-1<n<e)]or 8)for e in range(len(r))]for n in range(len(r))]
+
+### joking (202 (313 unzipped) bytes)
 def p(a):b=[j for j in zip(*[j for j in zip(*a)if{*j}-{0}-{8}])if{*j}-{0}-{8}];return[[[*[c:=[j for j in zip(*[j for j in zip(*a)if{*j}-{0}&{8}])if{*j}-{0}&{8}],*c,c][i],*b[i]][j-1]and(b[1-(len(b)-j-1>i<j)|-(len(b)-j-1<i>j)][1-(len(b)-j-1>i>j)|-(len(b)-j-1<i<j)]or 8)for j in range(len(b))]for i in range(len(b))]
 
 ### att (207 (305 unzipped) bytes)
