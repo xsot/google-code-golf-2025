@@ -1,1 +1,1 @@
-p=lambda i:[[x[:2*(n:=122%len(i))][b-n]for b,y in enumerate(x)if y<1]for x in i if 0in x]
+p=lambda i:[[v for y,v in zip(x,x[n:n*2]+x)if 1>y]for x in i if(n:=122%len(i))>0in x]

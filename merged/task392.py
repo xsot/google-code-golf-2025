@@ -1,8 +1,7 @@
-# joking (155 vs 149 bytes for gold)
-exec("p=lambda n:[[(a:=max(max(n)),5,5)[min(max(abs(f-b),abs(m-s))"+'for %s in range(10)%s'*4%(*'b s',"if n[b][s])%(3-(f'{a}, 0, {a}'in'%s'%n))]",*'m]f]'))
+# ovs (152 vs 149 bytes for gold)
+exec("p=lambda n:[[(a:=max(max(n)),5,5)[min(max(f-b,b-f,m-s,s-m)"+'for %s in range(10)%s'*4%(*'b s',"if n[b][s])%(3-(f', {a}, 0'*2in'%s'%n))]",*'m]f]'))
 
-### ovs (157 bytes)
-# (garry_moss)
+## (garry_moss)
 p=lambda n,r=range(10):[[(a:=max(max(n)),5,5)[min(max(abs(f-b),abs(m-s))for b in r for s in r if n[b][s])%(3-(f'{a}, 0, {a}'in'%s'%n))]for m in r]for f in r]
 
 ##
@@ -20,6 +19,9 @@ def p(g):
    I=i
    for*_,k in[S]*12:S[I]=S[k];I=[I+d,i][I+d in[*zip(*a)][0]]
  return[[S.get(i*J+j,5)for j in R]for i in R]
+
+### joking (155 bytes)
+exec("p=lambda n:[[(a:=max(max(n)),5,5)[min(max(abs(f-b),abs(m-s))"+'for %s in range(10)%s'*4%(*'b s',"if n[b][s])%(3-(f'{a}, 0, {a}'in'%s'%n))]",*'m]f]'))
 
 ### garry_moss (161 bytes)
 p=lambda n,r=range(10):[[(a:=max(sum(n,[])),5,5)[min(max(abs(f-b),abs(m-s))for b in r for s in r if n[b][s])%(3-(f'{a}, 0, {a}'in str(n)))]for m in r]for f in r]

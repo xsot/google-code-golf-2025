@@ -873,8 +873,8 @@ def p(g):
  for y in f(0)|f(5):
   for Y in(m:=[Y+y-min(v)for Y in v])*(hash((*g[0],))%263+y!=99!={*m}<f(0)):g[Y//90][Y%90]=2
  return g
-# 💎 task 364: 139 bytes, gold, https://arcprize.org/play?task=e509e548
-p=lambda i,k=39,s=[0]*99:-k*i or p([s:=[y and[y%7*9%13%9,(u*t>0)<<k%4*3+6|y|u][k>0]for y,t,u in zip(x,[0]+x,s)]for*x,in zip(*i)][::-1],k-1)
+# 💎 task 364: 137 bytes, gold, https://arcprize.org/play?task=e509e548
+p=lambda i,k=11,s=[0]*22:-k*i or p([s:=[y and[y%7*9%13%9,u*t%2<<k%4*3+6|y|u][k>0]for y,t,u in zip(x,[0]+x,s)]for*x,in zip(*i)][::-1],k-1)
 # 🥉 task 365: 119 vs 111 bytes for gold, https://arcprize.org/play?task=e50d258f
 exec(f'p=lambda i:max((-{"str(s:=[x[a:b]for x in i[c:d]]).count(%r),"*3}s){"for %s in range(11)"*4})[3]'%(*"021abcd",))
 # 💎 task 366: 302 (495 unzipped) bytes, gold, https://arcprize.org/play?task=e6721834
@@ -945,12 +945,12 @@ p=lambda a:[[sum({*sum(a,r)}-{e,5})for e in r]for r in a]
 p=lambda g:[g:=[*zip(*[g[a-sum(k for k in b'	'if g[a-k*8%15].count(2)>4)]for a in range(15)])]for _ in g][1]
 # 🥇 task 391: 63 bytes, gold, https://arcprize.org/play?task=f8b3ba0a
 p=lambda m:[*zip(sorted({*(a:=sum(m,[]))},key=a.count))][2::-1]
-# 🥉 task 392: 155 vs 149 bytes for gold, https://arcprize.org/play?task=f8c80d96
-exec("p=lambda n:[[(a:=max(max(n)),5,5)[min(max(abs(f-b),abs(m-s))"+'for %s in range(10)%s'*4%(*'b s',"if n[b][s])%(3-(f'{a}, 0, {a}'in'%s'%n))]",*'m]f]'))
+# 🥉 task 392: 152 vs 149 bytes for gold, https://arcprize.org/play?task=f8c80d96
+exec("p=lambda n:[[(a:=max(max(n)),5,5)[min(max(f-b,b-f,m-s,s-m)"+'for %s in range(10)%s'*4%(*'b s',"if n[b][s])%(3-(f', {a}, 0'*2in'%s'%n))]",*'m]f]'))
 # 🥇 task 393: 63 bytes, gold, https://arcprize.org/play?task=f8ff0b80
 p=lambda m:[*zip(sorted(set(a:=sum(m,[])),key=a.count))][2::-1]
-# 💎 task 394: 89 bytes, gold, https://arcprize.org/play?task=f9012d9b
-p=lambda i:[[x[:2*(n:=122%len(i))][b-n]for b,y in enumerate(x)if y<1]for x in i if 0in x]
+# 💎 task 394: 85 bytes, gold, https://arcprize.org/play?task=f9012d9b
+p=lambda i:[[v for y,v in zip(x,x[n:n*2]+x)if 1>y]for x in i if(n:=122%len(i))>0in x]
 # 🥇 task 395: 53 bytes, gold, https://arcprize.org/play?task=fafffa47
 p=lambda a,n=[]:a*0!=0and[*map(p,a,a[3:]+n)]or~a+~n&2
 # 💎 task 396: 156 bytes, gold, https://arcprize.org/play?task=fcb5c309
