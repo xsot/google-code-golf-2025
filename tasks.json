@@ -471,14 +471,14 @@
         "public_best": 132
     },
     "task013": {
-        "gold": 140,
-        "best": 141,
+        "gold": 136,
+        "best": 136,
         "solutions": {
             "ovs": {
-                "source": "ZGVmIHAoaSk6KnYsPW1hcChtYXgsKmkpO2YsKnI9bWFwKHYuaW5kZXgsZmlsdGVyKGFicyx2KSk7Tj1sZW4odik7cmV0dXJuIGlbTjpdYW5kWyp6aXAoKnAoWyp6aXAoKmkpXSkpXW9yWyh2WzpmXSt2W2Y6MipyWzBdLWZdKjgpWzpOXV0qbGVuKGkpCgojIwoKZGVmIHAoaSk6Ziwqcj1tYXAoaS5pbmRleCxmaWx0ZXIoYW55LGkpKTthPTYyK2Y7cmV0dXJuW2xlbih4KSpbbWF4KGlbZis2MSUoYTo9YS0xKSUoclswXS1mPDwxKV0pXWZvciB4IGluIGkgaWYgaVtsZW4oeCk6XV1vclsqemlwKCpwKFsqemlwKCppKV0pKV0KCmRlZiBwKGcpOmg9bGVuKGcpO3c9bGVuKGdbMF0pOypxLD1maWx0ZXIoYW55LGcpO2ksKmo9bWFwKGcuaW5kZXgscSk7cmV0dXJuIGg8dyBhbmRbKnppcCgqcChbKnppcCgqZyldKSldb3JbdypbKHk+PXklKGE6PWpbMF0taSk8MSkqbWF4KHFbeS8vYSUyXSldZm9yIHkgaW4gcmFuZ2UoLWksaC1pKV0K",
-                "size_uncompressed": 141,
-                "compressed": "ZGVmIHAoaSk6KnYsPW1hcChtYXgsKmkpO2YsKnI9bWFwKHYuaW5kZXgsZmlsdGVyKGFicyx2KSk7Tj1sZW4odik7cmV0dXJuIGlbTjpdYW5kWyp6aXAoKnAoWyp6aXAoKmkpXSkpXW9yWyh2WzpmXSt2W2Y6MipyWzBdLWZdKjgpWzpOXV0qbGVuKGkp",
-                "size_compressed": 141,
+                "source": "ZGVmIHAoaSk6KnYsPW1hcChtYXgsKmkpOypfLGYscj1zb3J0ZWQobWFwKHYuaW5kZXgsdikpO049bGVuKHYpO3JldHVybiBpW046XWFuZFsqemlwKCpwKFsqemlwKCppKV0pKV1vclsodls6Zl0rdltmOjIqci1mXSpOKVs6Tl1dKmxlbihpKQoKIyMKCmRlZiBwKGkpOmYsKnI9bWFwKGkuaW5kZXgsZmlsdGVyKGFueSxpKSk7YT02MitmO3JldHVybltsZW4oeCkqW21heChpW2YrNjElKGE6PWEtMSklKHJbMF0tZjw8MSldKV1mb3IgeCBpbiBpIGlmIGlbbGVuKHgpOl1db3JbKnppcCgqcChbKnppcCgqaSldKSldCgpkZWYgcChnKTpoPWxlbihnKTt3PWxlbihnWzBdKTsqcSw9ZmlsdGVyKGFueSxnKTtpLCpqPW1hcChnLmluZGV4LHEpO3JldHVybiBoPHcgYW5kWyp6aXAoKnAoWyp6aXAoKmcpXSkpXW9yW3cqWyh5Pj15JShhOj1qWzBdLWkpPDEpKm1heChxW3kvL2ElMl0pXWZvciB5IGluIHJhbmdlKC1pLGgtaSldCg==",
+                "size_uncompressed": 136,
+                "compressed": "ZGVmIHAoaSk6KnYsPW1hcChtYXgsKmkpOypfLGYscj1zb3J0ZWQobWFwKHYuaW5kZXgsdikpO049bGVuKHYpO3JldHVybiBpW046XWFuZFsqemlwKCpwKFsqemlwKCppKV0pKV1vclsodls6Zl0rdltmOjIqci1mXSpOKVs6Tl1dKmxlbihpKQ==",
+                "size_compressed": 136,
                 "method": "none"
             },
             "combined_solutions": {
