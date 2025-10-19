@@ -5258,6 +5258,15 @@
                 "compressed": "cD1sYW1iZGEgZyxrPTU5Oi1rKmcgb3IgcChbKnppcCgqZ1s6LShoOj1nW3Y6PWsvLzRdLmNvdW50KDIpPjRhbmQgayU0fDEpK3ZdK2dbdi1oOnYtfmhdWzo6LTFdK2dbdi1+aDpdKV0say0xKQ==",
                 "size_compressed": 109,
                 "method": "none"
+            },
+            "mwi": {
+                "source": "IyBhbHRzCnA9bGFtYmRhIGcsaz01OTotaypnIG9yIHAoWyp6aXAoKmdbOi0oaDo9Z1t2Oj1rLy80XVs1OjddPT0oMiwyKWFuZCBrJTR8MSkrdl0rZ1t2LWg6di1+aF1bOjotMV0rZ1t2LX5oOl0pXSxrLTEpCnA9bGFtYmRhIGcsaz01OTotaypnIG9yIHAoWyp6aXAoKmdbOi0oaDo9bWluKGdbdjo9ay8vNF1bNTo3XSklNWFuZCBrJTR8MSkrdl0rZ1t2LWg6di1+aF1bOjotMV0rZ1t2LX5oOl0pXSxrLTEpCnA9bGFtYmRhIGcsaz01OTotaypnIG9yIHAoWyp6aXAoKmdbOi0oaDo9eypnW3Y6PWsvLzRdWzU6N119PT17Mn1hbmQgayU0fDEpK3ZdK2dbdi1oOnYtfmhdWzo6LTFdK2dbdi1+aDpdKV0say0xKQ==",
+                "size_uncompressed": 333,
+                "compressed": "I2NvZGluZzpMMQppbXBvcnQgemxpYgpleGVjKHpsaWIuZGVjb21wcmVzcyhieXRlcygntc2BBsNADFwwUFww9hUH5e7aU63WLORLIsgEypKdAda13z4MKNgwgAev4k3sqhKkc5wvUDxLuD9CjZSfS41ZCEpUQCED9L6fmGY4M2IcuzGJa/BmelxyqTVuhawoWNmVCaAMH9kVOHHnZUinrztbPB7K1Mx/69Z8yDbEddx+/N4nLCJMMSIpLC05KSk=",
+                "size_compressed": 191,
+                "method": "zopfli",
+                "window": -15,
+                "escape_cost": 3
             }
         },
         "public_gold": 98,
@@ -13567,7 +13576,7 @@
                 "method": "none"
             },
             "mwi": {
-                "source": "cD1sYW1iZGEgZzpbZzo9Wyp6aXAoKltbKltnW2stfmtdZm9yIGsgaW4oMSwyLC0zLC00KWlmIGdba10uY291bnQoMik+NF0scl1bMF1mb3IgciBpbiBnIGlmKGc6PWdbMTpdK1tyXSldKV1mb3IgXyBpbiBnXVsxXQ==",
+                "source": "cD1sYW1iZGEgZzpbZzo9Wyp6aXAoKltbKltnW2stfmtdZm9yIGsgaW4oMSwyLC0zLC00KWlmIGdba10uY291bnQoMik+NF0scl1bMF1mb3IgciBpbiBnIGlmKGc6PWdbMTpdK1tyXSldKV1mb3IgXyBpbiBnXVsxXQoKIyMKcD1sYW1iZGEgZzpbZzo9Wyp6aXAoKiIyLCAiKjNpbiIlcyIlZyBhbmQgZ1s6KGk6PWcuaW5kZXgobWF4KGcpKSktM10rZ1tpKzM6aSsxOi0xXStnW2ktMTppKzJdK2dbOjJdK2dbaSs0Ol1vciBnKV1bOjotMV1mb3IgXyBpbiBnXVszXQ==",
                 "size_uncompressed": 121,
                 "compressed": "cD1sYW1iZGEgZzpbZzo9Wyp6aXAoKltbKltnW2stfmtdZm9yIGsgaW4oMSwyLC0zLC00KWlmIGdba10uY291bnQoMik+NF0scl1bMF1mb3IgciBpbiBnIGlmKGc6PWdbMTpdK1tyXSldKV1mb3IgXyBpbiBnXVsxXQ==",
                 "size_compressed": 121,
