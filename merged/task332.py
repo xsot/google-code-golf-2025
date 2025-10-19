@@ -18,3 +18,6 @@ p=lambda m:[[3*(len(r)+j&(r[j]>0))or r[j]for j in range(len(r))]for r in m]
 
 ### combined (61 bytes)
 p=lambda m:[[len(r)*r.pop(0)%2*3or x for x in[*r]]for r in m]
+
+### joking (63 bytes)
+p=lambda m,s=0:m*0!=0and[*map(p,m[::-1],[8,10]*19)][::-1]or-m%s

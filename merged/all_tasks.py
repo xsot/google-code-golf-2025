@@ -769,8 +769,8 @@ p=lambda a,*n:[b for b in zip(*n or p(a,*a))if{*b}-({*a[1]}&{*a[12]})]
 p=lambda a:[r+r[::-1]for r in a]
 # 🥇 task 312: 44 bytes, gold, https://arcprize.org/play?task=c9f8e694
 p=lambda a:[[e%~e&r[0]for e in r]for r in a]
-# 🥈 task 313: 64 vs 63 bytes for gold, https://arcprize.org/play?task=caa06a1f
-p=lambda g,x=1:[(g[x:=x^1][1:3+l//12]*9)[:l]for l in map(len,g)]
+# 💎 task 313: 62 bytes, gold, https://arcprize.org/play?task=caa06a1f
+p=lambda g,s=[0]:s*-1*-1or[*map(p,g,(s+g)[1:3+len(s)//12]*10)]
 # 💎 task 314: 82 bytes, gold, https://arcprize.org/play?task=cbded52d
 p=lambda i,*w:i*0!=0and[*map(p,i,i[:3]+i,i[3:]+i,*w)]or max(w[0]&w[1],w[2]&w[3],i)
 # 🥇 task 315: 63 bytes, gold, https://arcprize.org/play?task=cce03e0d
