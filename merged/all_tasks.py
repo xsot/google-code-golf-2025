@@ -264,13 +264,13 @@ p=lambda a,*n:[*zip(*map({}.fromkeys,n or p(a,*a)))]
 p=lambda a:a[::-1]+a
 # 💎 task 117: 130 bytes, gold, https://arcprize.org/play?task=4c5c2cf0
 p=lambda i:[i:=[*zip(*map(max,i,(i*2)[j*2::-1]+i[::-1]))]for j in b'	'*2if[x.count(max(i[j]))for x in i[j-1:j+2]]==[2,1,2]][1]
-# 💎 task 118: 227 (300 unzipped) bytes, gold, https://arcprize.org/play?task=50846271
-def	p(n):
-	for	e	in(2,3):
-		m,o,f,*i=[{r-u*1jfor	u,n	in	enumerate(n)for	r,n	in	enumerate(n)if	n>=e}for	e	in(2,0,5,6)]
-		for	u	in	o:t={r	for	r	in	o	if	abs(r-u)in(2,0,1,e)};i+=[e|t	for	e	in	i	if	m-e>t]
-		for	e	in	i:
-			if	m-f<e:return[[n+3*(r-u*1jin	e&f)for	r,n	in	enumerate(n)]for	u,n	in	enumerate(n)]
+# 💎 task 118: 226 (300 unzipped) bytes, gold, https://arcprize.org/play?task=50846271
+def	p(r):
+	for	f	in(2,3):
+		t,e,i,*n=[{s-o*1jfor	o,r	in	enumerate(r)for	s,r	in	enumerate(r)if	r>=f}for	f	in(2,0,5,6)]
+		for	o	in	e:j={s	for	s	in	e	if	abs(s-o)in(2,0,1,f)};n+=[f|j	for	f	in	n	if	t-f>j]
+		for	f	in	n:
+			if	t-i<f:return[[r+3*(s-o*1jin	f&i)for	s,r	in	enumerate(r)]for	o,r	in	enumerate(r)]
 # 🥇 task 119: 106 bytes, gold, https://arcprize.org/play?task=508bd3b6
 import re;p=lambda i,k=39:-k*i or[*zip(*eval(re.sub("0(?=.{34}[38].{34}[382])","3",str(p(i,k-1))))[::-1])]
 # 💎 task 120: 78 bytes, gold, https://arcprize.org/play?task=50cb2852
