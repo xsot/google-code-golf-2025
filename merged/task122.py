@@ -1,4 +1,7 @@
-# ovs (81 vs 75 bytes for gold)
+# mwi (79 vs 75 bytes for gold)
+p=lambda a:7in map(sum,a)and a[-2-len(a)%2:][:2]+a[:-2]or[*zip(*p([*zip(*a)]))]
+
+### ovs (81 bytes)
 p=lambda a:7in map(sum,a)and a[-2:][::len(a)%-2|1]+a[:-2]or[*zip(*p([*zip(*a)]))]
 
 ##

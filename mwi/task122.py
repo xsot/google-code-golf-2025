@@ -1,0 +1,1 @@
+p=lambda a:7in map(sum,a)and a[-2-len(a)%2:][:2]+a[:-2]or[*zip(*p([*zip(*a)]))]
