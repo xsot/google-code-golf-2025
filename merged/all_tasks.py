@@ -504,14 +504,14 @@ def p(g):
  return g
 # 💎 task 207: 74 bytes, gold, https://arcprize.org/play?task=88a62173
 p=lambda a:[p(b)for*b,in map(zip,a,a[3:])]or min(b:=sum(a,()),key=b.count)
-# 🥈 task 208: 212 (270 unzipped) vs 199 bytes for gold, https://arcprize.org/play?task=890034e9
-def	p(t):
-	u=min(sum(n:=t,[]),key=sum(n:=t,[]).count);r=len(n:=[n	for	n	in	zip(*n)if	u	in	n])
-	i=len(n:=[n	for	n	in	zip(*n)if	u	in	n])
-	for	e	in	range(22-r):
-		for	o	in	range(22-i):
-			for	t[o][e:e+r]in	n*0**sum(sum(n[e:e+r][1:-1])for	n	in	t[o:o+i][1:-1]):o+=1
-	return	t
+# 🥈 task 208: 211 (270 unzipped) vs 199 bytes for gold, https://arcprize.org/play?task=890034e9
+def	p(z):
+	t=min(sum(r:=z,[]),key=sum(r:=z,[]).count);o=len(r:=[r	for	r	in	zip(*r)if	t	in	r])
+	f=len(r:=[r	for	r	in	zip(*r)if	t	in	r])
+	for	n	in	range(22-o):
+		for	m	in	range(22-f):
+			for	z[m][n:n+o]in	r*0**sum(sum(r[n:n+o][1:-1])for	r	in	z[m:m+f][1:-1]):m+=1
+	return	z
 # 💎 task 209: 247 (387 unzipped) bytes, gold, https://arcprize.org/play?task=8a004b2b
 def	p(g):
 	G=g
