@@ -90,6 +90,7 @@ def zip_src(src: bytes, method: str, window: int = None) -> bytes:
 
     len_before_escape = len(compressed)
     compressed = sanitize(compressed)
+    if max(compressed) < 128: header = header.replace(b"#coding:L1\n","")
 
     delim = b'"""' if compressed[-1:] != b'"' else b"'''"
 
