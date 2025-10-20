@@ -886,14 +886,14 @@ def p(g):
    s+=[],
    for r in zip(*r):s+=s.pop()+[r]if{b,B}-{*r}>{b}or{*r}>{b}else[],
  [6for y,s in sorted((-sum(m^s for s in s for s in s),s)for s in s)for y,r in enumerate(g)for x,r in enumerate(r)for h,r in zip(g[y:]+g,s*all((a==r)!=(m==r)==(a==B)for h,r in zip(g[y:]+g,s)for a,r in zip(h[x:x+len(r)]+g,r)))for h[x:x+len(r)]in[r]];return[r for r in zip(*[r for r in zip(*g)if B in r])if B in r]
-# 💎 task 367: 127 bytes, gold, https://arcprize.org/play?task=e73095fd
+# 💎 task 367: 126 bytes, gold, https://arcprize.org/play?task=e73095fd
 import re
-p=lambda g,k=-23:k*g or p(eval(re.sub(f"0, (?=4|5.{(N:={len(g)*3-2})}5, 5, 0.{N}0)","4,",str([*zip(*g)][::-1]))),k+1)
+p=lambda g,k=-19:k*g or p(eval(re.sub(f"0(?=, 4|.{ {N:=len(g)*3+4}}5, 0.{ {N-6}}0)","4",str([*zip(*g)][::-1]))),k+1)
 # 💎 task 368: 132 bytes, gold, https://arcprize.org/play?task=e76a88a6
 import re
 p=lambda i:eval(re.sub("5(, 5)+",lambda m:re.findall("([^50](, [1-9])+)",s*2)[-s[m.end()-1::32].count('5')][0],s:=str(i)))
-# 🥈 task 369: 110 vs 109 bytes for gold, https://arcprize.org/play?task=e8593010
-p=lambda g,k=-11,z=1:k*g or p([[P:=v&5or[4-v%7,z:=z*8,P&~5|v][k>>3]for v in[5]+r][:0:-1]for*r,in zip(*g)],k+1)
+# 🥇 task 369: 109 bytes, gold, https://arcprize.org/play?task=e8593010
+p=lambda g,k=-11,z=1:k*g or[[P:=v&7or[z:=z*8,4-v%7,P&~5|v][k>>3]for v in[5]+r][:0:-1]for*r,in zip(*p(g,k+1))]
 # 💎 task 370: 228 (357 unzipped) bytes, gold, https://arcprize.org/play?task=e8dc4411
 def	p(a):
 	for	f	in	range(4):m=[*map(min,a)].index(0);i=[*map(min,a)].count(0);a=[*map(list,zip(*a))][::-1];u=[*map(min,a)].index(0);[0for	f	in	range(4)for	d	in	range(i)for	n	in	range(i)for	a[u-1+a[u][m]//-9*~f-i*f-d][m-1+a[u][m]//-9*~f-i*f-n]in	a[u-1+a[u][m]//8][m-1+a[u][m]%8:][:1>a[u+d][m+n]<=u-1+a[u][m]//-9*~f-i*f-d|m-1+a[u][m]//-9*~f-i*f-n]]
