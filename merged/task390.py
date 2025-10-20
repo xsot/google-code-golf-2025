@@ -1,6 +1,6 @@
-# mwi (107 vs 98 bytes for gold)
+# mwi (105 vs 98 bytes for gold)
 import re
-p=lambda g:[g:=eval(re.sub("(., ., 0, 2, 0, ., .)",r"*[\1][::-1]","%s"%[*zip(*g)]))for _ in g][1]
+p=lambda g:[g:=eval(re.sub("([^2(]{9}2[^2)]{9})",r"*[\1][::-1]","%s"%[*zip(*g)]))for _ in g][1]
 
 ##
 p=lambda g:[g:=[*zip(*[[*[g[k-~k]for k in(1,2,-3,-4)if g[k].count(2)>4],r][0]for r in g if(g:=g[1:]+[r])])]for _ in g][1]
