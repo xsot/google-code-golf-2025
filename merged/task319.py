@@ -1,7 +1,7 @@
 # att (236 (303 unzipped) vs 194 bytes for gold)
 def p(a):g=max(f:=sum(A:=a,[]),key=f.count);return[[[[g,A][A==e]for*b,A in zip(*a,b)if e in b]for b in a if e in b]for e in{*f}for i in range(52)for j in range(52)if[]<(b:=[a for a,A in zip(a,sum(zip(A,A),((),)*19)[i:])for a,A in zip(a,sum(zip(A,A),((),)*19)[j:])if a!=A==e!=g])==b[:1]*f.count(b[0])][0]
 
-### mwi (240 (293 unzipped) bytes)
+### mwi (243 (293 unzipped) bytes)
 def p(a):g=max(f:=sum(A:=a,[]),key=f.count);return[[[[g,A][A==e]for*b,A in zip(*a,b)if e in b]for b in a if e in b]for e in{*f}for i in range(2652)if[]<(b:=[a for a,A in zip(a,sum(zip(A,A),((),)*19)[i%51:])for a,A in zip(a,sum(zip(A,A),((),)*19)[i%52:])if a!=A==e!=g])==b[:1]*f.count(b[0])][0]
 
 ##

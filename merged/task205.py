@@ -15,7 +15,7 @@ p=lambda i:[[[min(f+q,key=f.count)for*f,in zip(*s)]for q in s]for y in range(5**
 p=lambda i,r=range(25):[[[min(f+q,key=f.count)for*f,in zip(*s)]for q in s]for y in r for x in r for a in r if len({*str(s:=[r[y:y+10-a//5]for r in i[x:x+10-a%5]])})<7and s[5:]][0]
 p=eval("lambda i:[[[min(f+q,key=f.count)for*f,in zip(*s)]for q in s]"+"for %s in range(25)"*3%(*'yxa',)+"if len({*str(s:=[r[y:y+10-a//5]for r in i[x:x+10-a%5]])})<7and s[5:]][0]")
 
-### ovs (225 (235 unzipped) bytes)
+### ovs (226 (235 unzipped) bytes)
 p=lambda g:max([[min(w:=r+c,key=w.count)for*c,in zip(*S)]for r in S]for A in range(len(g.pop(0))-6)if(s:=lambda w:len({*sum([r[A:A+6]for r in g[:6]],w[:6])})<=2)for S in[[[v for v,*c in zip(r,*g)if s(c)]for r in g if s(r[A:])]])or p(g)
 
 ### combined (231 bytes)

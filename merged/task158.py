@@ -10,7 +10,7 @@ def	p(r):
 					l=*zip(*l[::-1]),
 	return	r
 
-### joking (262 (488 unzipped) bytes)
+### joking (265 (488 unzipped) bytes)
 # zip fiddling
 def p(g):
  y,t=max((len({*str(s:=[y[x:x+3]for y in g[y:y+3]])}),s)for y in range(len(g))for x in range(len(g[-1])))
@@ -35,7 +35,7 @@ def p(g):
      t=*zip(*t[::-1]),
  return g
 
-### ovs (265 (482 unzipped) bytes)
+### ovs (266 (482 unzipped) bytes)
 def p(g):
  t,t=max((len({*str(s:=[z[x:x+3]for z in g[y:y+3]])}),s)for y in range(len(g))for x in range(len(g[1])))
  for s in range(len(g[1])):
@@ -71,7 +71,7 @@ def p(g):
       for X in range(s*3):g[y+Y][x+X]=t[Y//s][X//s]
  return g
 
-### combined (319 (441 unzipped) bytes)
+### combined (320 (441 unzipped) bytes)
 def p(g):
  o=g[0][-1];e=enumerate;_,t=max((len({*sum(a:=[R[x:x+3]for R in g[y:y+3]],[])}),a)for y,r in e(g)for x,c in e(r))
  for s in[1,2,3]:

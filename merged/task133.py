@@ -50,7 +50,7 @@ def p(g):
       for V in([V for V in I if M[A]==M[V]==M[G]]):V+=(len([V for V in I if M[A]==M[V]==M[G]])^6)%6*(Q-G);g[V//#[prev_vals[0]]##][V%#[prev_vals[0]]##],={M[V]for V in I}-{M[A]}
  return g
 
-### ovs (289 (390 unzipped) bytes)
+### ovs (290 (390 unzipped) bytes)
 def p(g):
  *C,M={i*90+j:g for i,g in enumerate(g)for j,g in enumerate(g)if g},
  for A in M:
