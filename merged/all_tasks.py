@@ -522,8 +522,8 @@ def	p(g):
 p=lambda a:a+a[::-1]
 # 🥇 task 211: 48 bytes, gold, https://arcprize.org/play?task=8d5021e8
 p=lambda g:[l[::-1]+l for l in(g[::-1]+g)*2][:9]
-# 💎 task 212: 94 bytes, gold, https://arcprize.org/play?task=8d510a79
-p=lambda i,k=19:-k*i or[[x.pop()or[0,*x][k%2-1]%5&6-(5in x)for _ in i]for*x,in zip(*p(i,k-1))]
+# 💎 task 212: 93 bytes, gold, https://arcprize.org/play?task=8d510a79
+p=lambda i,k=18:~k*i or[[x.pop()or[0,*x][k%-2]%5&6-(5in x)for _ in i]for*x,in zip(*p(i,k-1))]
 # ❌ task 213: 94 vs 88 bytes for gold, https://arcprize.org/play?task=8e1813be
 p=lambda i:[*zip(*[u:=[*filter(int,w:=[sum({*r}-{5})for r in i])]]*len(u)*(u>w)or p(zip(*i)))]
 # 🥇 task 214: 62 bytes, gold, https://arcprize.org/play?task=8e5a5113
