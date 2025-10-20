@@ -1,4 +1,7 @@
-# this task is (almost) identical to task 154
+import re
+p=lambda g,*G:eval(re.sub("([^2(]{9}2[^2]{9})",r"*[\1][::-1]","%s"%[*zip(*G or p(g,*g))]))
+
+## this task is (almost) identical to task 154
 p=lambda g,k=-1:k*g or p([*zip(*[g[a+sum(k*2for k in(2,3,-2,-3)if(g*2)[a+k].count(2)>4)]for a in range(15)])],k+1)
 
 ## ovs' solution
