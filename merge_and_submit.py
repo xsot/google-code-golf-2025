@@ -22,7 +22,7 @@ default_push = ""
 default_kaggle = ""
 
 # Configuration: Skips testing whether solutions pass. Use with caution
-assume_passing = True
+assume_passing = False
 
 # Configuration: Force all solutions to be updated. Use, for example, if you have updated
 # the compression function and want to run it on all files
@@ -258,6 +258,7 @@ if any(failing) or any(too_long):
         for path, current, prev, best in too_long:
             print(f"\t{path} - current: {current}, prev: {prev}, best: {best}")
     print("ABORTING MERGE")
+    exit()
 
 # Update tasks.json
 with open("tasks.json", "w") as file:
