@@ -1,5 +1,7 @@
-# att (147 bytes, gold)
-p=lambda m,X=8,f=0:[[sum({*e*sum(m,[-f])})for e in s]for x in range(18)for r in m+[[]]if(f:=[]<X*r[x:x+1]in(s:=r[x:x+X],[f]*X)and r[x])]or p(m,X-1)
+# att (139 bytes, gold)
+p=lambda m,n=266,f=0:[[sum({*e*sum(m,[-f])})for e in s]for r in m if(f:=((X:=n>>5)*[a:=(r*3)[x:=n%32]]in(s:=r[x:x+X],[f]*X))*a)]or p(m,n-1)
+##
+p=lambda m,w=171,f=0:[[sum({*e*sum(m,[-f])})for e in s]for r in m if(f:=(w//20*[a:=(r*2)[w%20]]in(s:=r[w%20:w%19],w//20*[f]))*a)]or p(m,w-1)
 
 ### ovs (156 bytes)
 p=lambda m,X=8,f=0:[[sum({*e*sum(m,[-f])})for e in r[x:x+X]]for x in range(len(m[0]))for r in m+[[0]*99]if(f:=r[x]*(X*[r[x]]in(r[x:x+X],[f]*X)))]or p(m,X-1)
