@@ -1,0 +1,1 @@
+p=lambda a:[sorted([sum(e!=c in{*b}&{*d}for b in a for*d,e in zip(*a,b)),c]for c in range(10))[8][1:]]
