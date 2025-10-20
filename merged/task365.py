@@ -1,4 +1,7 @@
-# ovs (119 vs 111 bytes for gold)
+# att (111 bytes, gold)
+p=lambda a:max([-(c:=sum(b:=[b[x%8:x%11]for b in a[x%9:x%13]],a).count)(0),c(2),c(1),b]for x in range(5**6))[3]
+
+### ovs (119 bytes)
 exec(f'p=lambda i:max((-{"str(s:=[x[a:b]for x in i[c:d]]).count(%r),"*3}s){"for %s in range(11)"*4})[3]'%(*"021abcd",))
 
 ##

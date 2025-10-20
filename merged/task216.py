@@ -1,4 +1,14 @@
-# mwi (119 vs 114 bytes for gold)
+# att (113 bytes, gold)
+# ~3:30 locally
+p=lambda a:max([-(c:=sum(b:=[b[x%17:x%21]for b in a[x%19:x%22]],a).count)(0),c(2),c(1),b]for x in range(8**6))[3]
+
+## older
+# slow
+r=range(661);p=lambda a:max([-(c:=sum(b:=[b[x>>5:y>>5]for b in a[x%32:y%32]],a).count)(0),c(2),-x,b]for x in r for y in r)[3]
+# fast
+p=lambda a:max([d:=1,str(b:=[d for b in a[x%32:]if(d:=[c for c in b[x>>5:]if(d:=d*c)])]).count('2'),-x,b]for x in range(661))[3]
+
+### mwi (119 bytes)
 # exact copy of ovs/task365.py, just changed grid size
 # way slower though, grid is 20x20 instead of 10x10
 
@@ -7,14 +17,6 @@ exec(f'p=lambda i:max((-{"str(s:=[x[a:b]for x in i[c:d]]).count(%r),"*3}s){"for 
 
 ## 121 bytes, approx 6 minutes
 exec(f'p=lambda i:max((-{"sum(s:=[x[a:b]for x in i[c:d]],s).count(%s),"*3}s){"for %s in range(21)"*4})[3]'%(*"021abcd",))
-
-### att (125 bytes)
-r=range(661)
-p=lambda a:max([-(c:=sum(b:=[b[x>>5:y>>5]for b in a[x%32:y%32]],a).count)(0),c(2),-x,b]for x in r for y in r)[3]
-# slow bruteforce
-
-## fast
-p=lambda a:max([d:=1,str(b:=[d for b in a[x%32:]if(d:=[c for c in b[x>>5:]if(d:=d*c)])]).count('2'),-x,b]for x in range(661))[3]
 
 ### combined (125 bytes)
 r=range(661)
