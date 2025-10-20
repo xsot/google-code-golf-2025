@@ -1,1 +1,1 @@
-p=lambda m,X=8,f=0:[[sum({*e*sum(m,[-f])})for e in s]for x in range(len(m[0]))for r in m+[[0]*18]if(f:=r[x]*(X*[r[x]]in(s:=r[x:x+X],[f]*X)))]or p(m,X-1)
+p=lambda m,X=8,f=0:[[sum({*e*sum(m,[-f])})for e in s]for x in range(18)for r in m+[[]]if(f:=[]<X*r[x:x+1]in(s:=r[x:x+X],[f]*X)and r[x])]or p(m,X-1)
