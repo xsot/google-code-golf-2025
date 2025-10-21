@@ -12,10 +12,13 @@ p=lambda a,s=[],r=0:a*0!=0and[*map(p,a,[max(a)]*20,s+a)]or a+~a*s*r%3
 p=lambda a,s=[],*r:a or 2*any(s)*any(r)if r else[*map(p,a,[a]*20,*s)]
 p=lambda a,s=[],r=0:a*0!=0and[*map(p,a,[max(a)]*20,s+a)]or s*r>>~a%6
 
-### ovs (64 bytes)
-p=lambda a:[[v or any(c*b)*2for v,c in zip(b,max(a))]for b in a]
+### ovs (tied, 63 bytes)
+p=lambda a:[[c*any(b)%(v+6)for v,c in zip(b,max(a))]for b in a]
 
-## +1:
+##
+p=lambda a:[[v or any(c*b)*2for v,c in zip(b,max(a))]for b in a]
+p=lambda a:[[*map(m:=max,b,map(min,m(a),[m(b)%6]*99))]for b in a]
+p=lambda a:[[*map(m:=max,b,m(b)*[c%6for c in m(a)]+b)]for b in a]
 
 p=lambda g:[[v or 2*any(c)*any(r)for*c,v in zip(*g,r)]for r in g]
 p=lambda g:[[v or(8in{*c}&{*r})*2for*c,v in zip(*g,r)]for r in g]

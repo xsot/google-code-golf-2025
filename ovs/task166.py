@@ -1,6 +1,9 @@
-p=lambda a:[[v or any(c*b)*2for v,c in zip(b,max(a))]for b in a]
+p=lambda a:[[c*any(b)%(v+6)for v,c in zip(b,max(a))]for b in a]
 
-## +1:
+##
+p=lambda a:[[v or any(c*b)*2for v,c in zip(b,max(a))]for b in a]
+p=lambda a:[[*map(m:=max,b,map(min,m(a),[m(b)%6]*99))]for b in a]
+p=lambda a:[[*map(m:=max,b,m(b)*[c%6for c in m(a)]+b)]for b in a]
 
 p=lambda g:[[v or 2*any(c)*any(r)for*c,v in zip(*g,r)]for r in g]
 p=lambda g:[[v or(8in{*c}&{*r})*2for*c,v in zip(*g,r)]for r in g]
