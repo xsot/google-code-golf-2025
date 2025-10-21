@@ -120,8 +120,8 @@ p=lambda i,z=0:i*0!=0and[p(y,3*(z:=z+([y]>i)))for y in i]or i or 2222096>>z&7
 p=lambda i:[[0**i[0][0]+0**i[0][2]*3^2]]
 # 🥉 task 57: 49 vs 48 bytes for gold, https://arcprize.org/play?task=28bf18c6
 p=lambda a,*n:[*filter(any,zip(*n or p(a,*a)*2))]
-# ❌ task 58: 111 vs 103 bytes for gold, https://arcprize.org/play?task=28e73c20
-def p(i,k=7):r=range(l:=len(i));return-k*i or p([[i[~b][a]|~a%2*(a-2/k<b<l-a-30%k)*3for b in r]for a in r],k-2)
+# 💎 task 58: 94 bytes, gold, https://arcprize.org/play?task=28e73c20
+p=lambda a:a and[len(b:=a[0])*[3],[*b[:~(c:=3*[b]>a)]]+[3]*-~c,*zip(*p([*zip(*a[2:])])[::-1])]
 # 💎 task 59: 153 bytes, gold, https://arcprize.org/play?task=29623171
 p=lambda g,w=37,R=range(11),h=0:[[(g[r][c]==5)*5or(w<sum(t:=sum([*zip(*g[r&12:][:3])][c&12:][:3],()))>=(h:=1))*max(t)for c in R]for r in R]*h or p(g,w-1)
 # 🥇 task 60: 47 bytes, gold, https://arcprize.org/play?task=29c11459

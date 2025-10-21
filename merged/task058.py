@@ -1,4 +1,7 @@
-# joking (111 vs 103 bytes for gold)
+# att (94 bytes, gold)
+p=lambda a:a and[len(b:=a[0])*[3],[*b[:~(c:=3*[b]>a)]]+[3]*-~c,*zip(*p([*zip(*a[2:])])[::-1])]
+
+### joking (111 bytes)
 def p(i,k=7):r=range(l:=len(i));return-k*i or p([[i[~b][a]|~a%2*(a-2/k<b<l-a-30%k)*3for b in r]for a in r],k-2)
 
 ##
