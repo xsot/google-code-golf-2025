@@ -1,4 +1,7 @@
-# joking (108 vs 105 bytes for gold)
+# att (106 vs 105 bytes for gold)
+import re;p=lambda i,k=19:-k*i or[*zip(*eval(re.sub('.{31}0, ([^0])'*2,r"|\1\g<0>",str(p(i,k-1))))[::-1])]
+
+### joking (108 bytes)
 import re;p=lambda i,k=19:-k*i or[*zip(*eval(re.sub("0(?=.{34}(.), 0.{31}\\1)","\\1",str(p(i,k-1))))[::-1])]
 
 ##

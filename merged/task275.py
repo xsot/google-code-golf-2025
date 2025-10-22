@@ -1,4 +1,7 @@
-# ovs (136 bytes, gold)
+# att (130 bytes, gold)
+p=lambda i:('8'in str(j:=i[(u:=len(i[0])):]))*[[t*y/8for t in s for y in x]for s in i[:u]for x in j]or[*zip(*p([*zip(*j+i[:u])]))]
+
+### ovs (136 bytes)
 p=lambda i:"8"in"%s"%i[(u:=len(i[0])):]and[[t*y/8for t in s for y in x]for s in i[:u]for x in i[u:]]or[*zip(*p([*zip(*i[::-1])]))][::-1]
 
 ##

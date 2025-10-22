@@ -1,4 +1,4 @@
-# compression_experiments (194 (236 unzipped) bytes, gold)
+# compression_experiments (194 (236 unzipped) vs 180 bytes for gold)
 def p(r):[(o:=i,f:=e)for i,r in enumerate(r)for e,r in enumerate(r)if r];n=0**r[o-3][f]-4;e=*filter(max,zip(*filter(max,zip(*r[:o-3])))),;return[[e and(r)for e,r in zip(e[::~len(e)//n],r[n-~f:])]for e,r in zip(e[::~len(e)//n],r[n-~o:])]
 
 ### joking (197 (236 unzipped) bytes)
