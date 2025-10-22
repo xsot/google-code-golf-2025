@@ -1,7 +1,10 @@
-# att (118 vs 108 bytes for gold)
+# joking (117 vs 108 bytes for gold)
+exec("p=lambda a:min([d in sum(i:="+'[b[1:-1]for*b,in zip(*'*2+"a)if d in b])if{d}<{*b}],a),i]for d in sum(a,a))[1]")
+
+### att (118 bytes)
 p=lambda a:min([d in sum(i:=[b[1:-1]for*b,in zip(*[b for*b,in zip(*a)if d in b])if{d}<{*b}],a),i]for d in sum(a,a))[1]
 
-### combined (tied, 118 bytes)
+### combined (118 bytes)
 p=lambda a:min([d in sum(i:=[b[1:-1]for*b,in zip(*[b for*b,in zip(*a)if d in b])if{d}<{*b}],a),i]for d in sum(a,a))[1]
 
 ### ovs (131 bytes)

@@ -1,0 +1,1 @@
+exec("p=lambda a:min([d in sum(i:="+'[b[1:-1]for*b,in zip(*'*2+"a)if d in b])if{d}<{*b}],a),i]for d in sum(a,a))[1]")

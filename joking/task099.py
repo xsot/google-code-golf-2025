@@ -1,0 +1,1 @@
+exec(("p=lambda g:[[g[y][x]or max(sum(g[y:y+4],g[y-1]))"+'*any(g[y-9][x::%s1])'*2+'for %s in range(10)]'*2)%(*'+-xy',))

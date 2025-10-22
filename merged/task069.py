@@ -1,6 +1,14 @@
 # ovs (150 bytes, gold)
 def p(g):E=range(10);f={*enumerate(sum(zip(*g*2),()))};return[[sum(V*(f>{(i+j*20-I+J,8)for J,V in f if V%8})for I,V in f if 8^V)for j in E]for i in E]
 
+### joking (152 bytes)
+# very close to parity, maybe some way to use avoid assigning f?
+exec("def p(g):f={*enumerate(sum(zip(*g*2),()))};return[[sum({V*(f>{(i+j*20-I+J,8)"+('for %s,V in f if V%s8})'*2+'for %s in range(10)]'*2)%(*'J%I^ji',))
+
+## slow
+h='for %s,V in{*enumerate(sum(zip(*g*2),()))}if V%s8})';exec(("p=lambda g:[[sum({V*("+h[11:-9]+">{(i+j*20-I+J,8)"+h*2+'for %s in range(10)]'*2)%(*'J%I^ji',))
+h='for %s,V in{*enumerate(sum(zip(*g*2),()))}if V%s8})';exec(f"p=lambda g:[[sum({{V*({h[11:-9]}>{{(i+j*20-I+J,8){h*2+'for %s in range(10)]'*2}"%(*'J%I^ji',))
+
 ### mwi (207 bytes)
 def p(a,i=-1):
  for i in(I:={i//10+i:v*(v!=8)for v in sum(a,[])if[i:=i+1]*v}):s={i};[s.add(y)for y in[*I]*6if{y+1,y-1,y+11,y-11}&s];a[i//11][i%11]=I[[s for s in I if I[s]][sorted(s).index(i)]]-I[i]
