@@ -1,1 +1,1 @@
-p=lambda g,r=range(10):[[g[y][x]or max(sum([R:=g[y-9],*g][y:y+5],R))*any(R[:x+1])*any(R[x:])for x in r]for y in r]
+p=lambda g,R=[]:g and p(g[:-1],w:=[g[-1][x]or(1in{*R[:x+1]}&{*R[x:]})*max(sum(g[-2:],R))for x in range(10)])+[w]
