@@ -1,15 +1,17 @@
-# joking (88 vs 75 bytes for gold)
+# ovs (86 vs 75 bytes for gold)
+p=lambda i,n=2,*t:t*(t==t[n%2:5])or p(i,n+1,*[x for x in zip(*n%2*t or i)if n//2in x])
+
+##
+p=lambda i,n=1,w=0,*t:t*(t==t[w:5])or p(i,n+w,w^1,*[x for x in zip(*w*t or i)if n in x])
+p=lambda i,k=99,*r:-k*i or p([*zip(*i[~(a:={*sum(i,w:=i[-1]),*r}>{*w,*r})::-1])],k-1,*r,*a*w)
+p=lambda g:min([(h:=lambda g,k=-99:k*g or h([*zip(*g[C not in g[0]:][::-1])],k+1))(g)for C in{*sum(g,[])}],key=len)
+
+### joking (88 bytes)
 # this is clearly not the right approach lol
 p=lambda i,n=2,*t:t*(~n%2*6>len(t))or p(i,n+1,*[x for x in zip(*n%2*t or i)if n//2in x])
 
 ##
 p=lambda i,n=1:(len(l:=(f:=lambda g:[x for x in zip(*g)if n in x])(f(i)))<6)*l or p(i,n+1)
-
-### ovs (93 bytes)
-p=lambda i,k=99,*r:-k*i or p([*zip(*i[~(a:={*sum(i,w:=i[-1]),*r}>{*w,*r})::-1])],k-1,*r,*a*w)
-
-##
-p=lambda g:min([(h:=lambda g,k=-99:k*g or h([*zip(*g[C not in g[0]:][::-1])],k+1))(g)for C in{*sum(g,[])}],key=len)
 
 ### mwi (98 bytes)
 p=lambda i:max(l for n in range(10)if len(l:=(f:=lambda g:[x for x in zip(*g)if n in x])(f(i)))<6)
