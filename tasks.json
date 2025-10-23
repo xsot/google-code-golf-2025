@@ -1289,6 +1289,13 @@
                 "compressed": "cD1sYW1iZGEgaTpbbCBmb3IgbiBpbnsqc3VtKGksW10pfWlmIGxlbihsOj1bW3lbMF1mb3IgeSBpbiB6aXAoeCwqaSlpZiBuIGluIHldZm9yIHggaW4gaSBpZiBuIGluIHhdKTw2XVswXQ==",
                 "size_compressed": 106,
                 "method": "none"
+            },
+            "att": {
+                "source": "cD1sYW1iZGEgYSxjPTEsKm46KGxlbihkOj1bYiBmb3IqYixpbiB6aXAoKm4gb3IgcChhLGMsKmEpKWlmIGMgaW4gYl0pPDYpKmQgb3IgcChhLGMrMSk=",
+                "size_uncompressed": 86,
+                "compressed": "cD1sYW1iZGEgYSxjPTEsKm46KGxlbihkOj1bYiBmb3IqYixpbiB6aXAoKm4gb3IgcChhLGMsKmEpKWlmIGMgaW4gYl0pPDYpKmQgb3IgcChhLGMrMSk=",
+                "size_compressed": 86,
+                "method": "none"
             }
         },
         "public_gold": 75,

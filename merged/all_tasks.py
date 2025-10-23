@@ -70,7 +70,7 @@ import re;p=lambda i,k=7:-k*i or[*zip(*eval(re.sub("(?=(.{32})*(., |.{29})?2, [^
 # 🥇 task 35: 83 bytes, gold, https://arcprize.org/play?task=1f642eb9
 p=lambda i,k=3:-k*i or[[k:=i[y!=8+k*2]or y for y in i]for i[::-1]in zip(*p(i,k-1))]
 # ❌ task 36: 86 vs 75 bytes for gold, https://arcprize.org/play?task=1f85a75f
-p=lambda i,n=2,*t:t*(t==t[n%2:5])or p(i,n+1,*[x for x in zip(*n%2*t or i)if n//2in x])
+p=lambda a,c=1,*n:(len(d:=[b for*b,in zip(*n or p(a,c,*a))if c in b])<6)*d or p(a,c+1)
 # 💎 task 37: 104 bytes, gold, https://arcprize.org/play?task=1f876c06
 import re;p=lambda g,k=9:-k*g or p(eval(re.sub(r"(?<=(.).{28})(?=(.{29})+\1)0",r"\1",str(g)))[::-1],k-1)
 # 🥇 task 38: 51 bytes, gold, https://arcprize.org/play?task=1fad071e

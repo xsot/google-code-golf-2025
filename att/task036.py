@@ -1,0 +1,1 @@
+p=lambda a,c=1,*n:(len(d:=[b for*b,in zip(*n or p(a,c,*a))if c in b])<6)*d or p(a,c+1)

@@ -1,4 +1,7 @@
-# ovs (86 vs 75 bytes for gold)
+# att (86 vs 75 bytes for gold)
+p=lambda a,c=1,*n:(len(d:=[b for*b,in zip(*n or p(a,c,*a))if c in b])<6)*d or p(a,c+1)
+
+### ovs (tied, 86 bytes)
 p=lambda i,n=2,*t:t*(t==t[n%2:5])or p(i,n+1,*[x for x in zip(*n%2*t or i)if n//2in x])
 
 ##
