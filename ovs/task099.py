@@ -1,1 +1,1 @@
-p=lambda i,k=19:-k*i or p([[-(y<e<0)or(y<0<1!=e!=-2)*e or y or-2*(e>1<k>14or-2==e)or-(k==19>1==e)for y,e in zip(x,[0]+x)]for*x,in zip(*i[::-1])],k-1)
+p=lambda g,r=range(10):[[g[y][x]or max(sum([R:=g[y-9],*g][y:y+5],R))*any(R[:x+1])*any(R[x:])for x in r]for y in r]
