@@ -205,8 +205,8 @@ s='for %s,b in enumerate(%s)'
 exec(f"p=lambda a:max([j>i,-(C:=sum(g:=[[b|6*(i<=m<=j)*(k<=n<=l){s}]{s}],a).count)(7),C(6),g]{s*4})[3]"%(*'nbmaiakbjalb',))
 # 🥇 task 91: 63 bytes, gold, https://arcprize.org/play?task=3f7978a0
 p=lambda a,n=46:a*~n or p([*zip(*a[(5in a[n%2-2])-2::-1])],n-1)
-# 🥉 task 92: 93 vs 86 bytes for gold, https://arcprize.org/play?task=40853293
-p=lambda a:[*map(f:=lambda*b,i=-1:[b[i:=i+1]or sum({*b[i:]}&{*b[:i]})for _ in b],*map(f,*a))]
+# 🥇 task 92: 86 bytes, gold, https://arcprize.org/play?task=40853293
+p=lambda a:[*map(f:=lambda*b,i=0:[v|(i:=i^b.count(v)*v-v)>>v*9for v in b],*map(f,*a))]
 # 🥉 task 93: 100 vs 98 bytes for gold, https://arcprize.org/play?task=4093f84a
 import re
 p=lambda g:[g:=eval(re.sub("[^50],([^(]+5)",r"\1,5",str([*zip(*g[::-1])])))for _ in g][11]
