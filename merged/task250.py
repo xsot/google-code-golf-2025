@@ -1,5 +1,5 @@
-# att (96 bytes, gold)
-p=lambda a:[a:=[sorted(b[:(i:=str(a).index('2')>>5)])+b[i:]for*b,in zip(*a)][::-1]for _ in a][3]
+# att (95 bytes, gold)
+p=lambda a:[a:=[sorted(b[:(i:=str(a).find('2')>>5)])+b[i:]for*b,in zip(*a)][::-1]for _ in a][3]
 
 ### joking (121 bytes)
 import re
