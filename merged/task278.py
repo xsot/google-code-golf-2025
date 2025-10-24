@@ -1,4 +1,4 @@
-# joking (116 bytes, gold)
+# joking (116 vs 107 bytes for gold)
 import re;p=lambda i:[i:=eval(re.sub("0(?=(.%s.{,9}|..)2, 2)"%{len(i)*3-5},"3",str([*zip(*i[::-1])])))for _ in i][3]
 
 ##
