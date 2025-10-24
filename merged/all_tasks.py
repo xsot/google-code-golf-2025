@@ -778,8 +778,8 @@ p=lambda i:[(q:=[*filter(abs,map(max,*i))]+[0]*9)[:3],q[5:2:-1],q[6:9]]
 p=lambda a:a==5or a and[p(a[1])]*3+p(a[3:])
 # 🥇 task 318: 54 bytes, gold, https://arcprize.org/play?task=ce4f8723
 p=lambda a,n=[]:a*0!=0and[*map(p,a,a[5:]+n)]or(-a<n)*3
-# 🥉 task 319: 236 (303 unzipped) vs 194 bytes for gold, https://arcprize.org/play?task=ce602527
-def p(a):g=max(f:=sum(A:=a,[]),key=f.count);return[[[[g,A][A==e]for*b,A in zip(*a,b)if e in b]for b in a if e in b]for e in{*f}for i in range(52)for j in range(52)if[]<(b:=[a for a,A in zip(a,sum(zip(A,A),((),)*19)[i:])for a,A in zip(a,sum(zip(A,A),((),)*19)[j:])if a!=A==e!=g])==b[:1]*f.count(b[0])][0]
+# 🥉 task 319: 235 (303 unzipped) vs 194 bytes for gold, https://arcprize.org/play?task=ce602527
+def p(p):u=max(r:=sum(f:=p,[]),key=r.count);return[[[[u,f][f==n]for*i,f in zip(*p,i)if n in i]for i in p if n in i]for n in{*r}for e in range(52)for m in range(52)if[]<(i:=[p for p,f in zip(p,sum(zip(f,f),((),)*19)[e:])for p,f in zip(p,sum(zip(f,f),((),)*19)[m:])if p!=f==n!=u])==i[:1]*r.count(i[0])][0]
 # 🥇 task 320: 66 bytes, gold, https://arcprize.org/play?task=ce9e57f2
 p=lambda a:[*zip(*[c[:-(w:=sum(c)//4)]+w*[8]+c for*c,in zip(*a)])]
 # 🥇 task 321: 55 bytes, gold, https://arcprize.org/play?task=cf98881b
