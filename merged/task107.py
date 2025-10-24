@@ -1,4 +1,4 @@
-# joking (163 vs 161 bytes for gold)
+# joking (163 vs 143 bytes for gold)
 exec(('def p(i):g=sum(i,[]);z=len({*g})-1;return[[i[x//z][y//z]'+'or g[(y%sx)//z%%%s::%s].count(g[6])>>(x-%sy)%%z&2'*2+'for %s in range(5*z)]'*2)%(*'-66++54~yx',))
 
 

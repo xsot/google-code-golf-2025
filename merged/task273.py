@@ -1,4 +1,4 @@
-# joking (114 vs 108 bytes for gold)
+# joking (114 vs 88 bytes for gold)
 p=lambda g,R={*range(10)}:[[g[i][j]|len({g[I][J]*(i>I,j>J)for I in R^{i}for J in{j}^R})//5*2for j in R]for i in R]
 
 ##
