@@ -1,5 +1,5 @@
-# compression_experiments (204 (277 unzipped) vs 194 bytes for gold)
-p=lambda	i:[i:=[[max(i[e][m],(e-r+a	in	range(a*4))*(m-n+a	in	range(a*4))*3,9in(e[m]for	e	in	i[:e]))for	m	in	range(len(i))]for	e	in	range(len(i))]for	a	in	range(len(i))for	r	in	range(-a*2,len(i))for	n	in	range(len(i)-a*2+1)if{min(e[n:a*2+n])for	e	in	i[max(r,0):a*2+r]}=={9}][-1]
+# compression_experiments (203 (277 unzipped) vs 194 bytes for gold)
+p=lambda r:[r:=[[max(r[i][m],(i-n+a in range(a*4))*(m-e+a in range(a*4))*3,9in(i[m]for i in r[:i]))for m in range(len(r))]for i in range(len(r))]for a in range(len(r))for n in range(-a*2,len(r))for e in range(len(r)-a*2+1)if{min(i[e:a*2+e])for i in r[max(n,0):a*2+n]}=={9}][-1]
 
 ### joking (205 (277 unzipped) bytes)
 #206

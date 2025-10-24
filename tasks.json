@@ -8198,7 +8198,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 114,
+        "public_gold": 109,
         "public_best": 120
     },
     "task235": {
@@ -12097,7 +12097,7 @@
     },
     "task349": {
         "gold": 194,
-        "best": 204,
+        "best": 203,
         "solutions": {
             "joking": {
                 "source": "IzIwNgpwPWxhbWJkYQlpOltpOj1bW21heChpW3hdW3ldLCh4LWErbglpbglyYW5nZShuKjQpKSooeS1iK24JaW4JcmFuZ2Uobio0KSkqMyw5aW4oeFt5XWZvcgl4CWluCWlbOnhdKSlmb3IJeQlpbglyYW5nZShsZW4oaSkpXWZvcgl4CWluCXJhbmdlKGxlbihpKSldZm9yCW4JaW4JcmFuZ2UobGVuKGkpKWZvcglhCWluCXJhbmdlKC1uKjIsbGVuKGkpKWZvcgliCWluCXJhbmdlKGxlbihpKS1uKjIrMSlpZnttaW4oeFtiOm4qMitiXSlmb3IJeAlpbglpW21heChhLDApOm4qMithXX09PXs5fV1bLTFdCgojIwpwPWxhbWJkYSBpOltpOj1bW21heChpW3hdW3ldLCh4LWErbiBpbiByYW5nZShuKjQpKSooeS1iK24gaW4gcmFuZ2Uobio0KSkqMyw5aW4oI1sneFt5XWZvciB4IGluIGlbOnhdJywnaVt4XVt5XWZvciB4IGluIHJhbmdlKHgpJ10jIykpZm9yIHkgaW4gcmFuZ2UobGVuKGkpKV1mb3IgeCBpbiByYW5nZShsZW4oaSkpXWZvciBuIGluIHJhbmdlKGxlbihpKSlmb3IgYSBpbiByYW5nZSgtbioyLGxlbihpKSlmb3IgYiBpbiByYW5nZShsZW4oaSktbioyKzEpaWZ7bWluKHhbYjpuKjIrYl0pZm9yIHggaW4gaVttYXgoI1snYSwwJywnMCxhJ10jIyk6bioyK2FdfT09ezl9XSNbJ1stMV0nLCcqMCtpJ10jIwoKIyMgMjM4IGZvciB1bnppcHBlZApwPWxhbWJkYSBpLHI9cmFuZ2U6KGw6PWxlbihpKSkqMCpbaTo9W1ttYXgoaVt4XVt5XSwoYTw9eCtuPGErbio0KSooYjw9eStuPGIrbio0KSozLDlpbih4W3ldZm9yIHggaW4gaVs6eF0pKWZvciB5IGluIHIobCldZm9yIHggaW4gcihsKV1mb3IgbiBpbiByKDYpZm9yIGEgaW4gcigtbioyLGwpZm9yIGIgaW4gcihsLW4qMisxKWlme21pbih4W2I6bioyK2JdKWZvciB4IGluIGlbbWF4KGEsMCk6bioyK2FdfT09ezl9XStp",
@@ -12136,13 +12136,13 @@
                 "escape_cost": 0
             },
             "compression_experiments": {
-                "source": "cD1sYW1iZGEJaTpbaTo9W1ttYXgoaVtlXVttXSwoZS1yK2EJaW4JcmFuZ2UoYSo0KSkqKG0tbithCWluCXJhbmdlKGEqNCkpKjMsOWluKGVbbV1mb3IJZQlpbglpWzplXSkpZm9yCW0JaW4JcmFuZ2UobGVuKGkpKV1mb3IJZQlpbglyYW5nZShsZW4oaSkpXWZvcglhCWluCXJhbmdlKGxlbihpKSlmb3IJcglpbglyYW5nZSgtYSoyLGxlbihpKSlmb3IJbglpbglyYW5nZShsZW4oaSktYSoyKzEpaWZ7bWluKGVbbjphKjIrbl0pZm9yCWUJaW4JaVttYXgociwwKTphKjIrcl19PT17OX1dWy0xXQ==",
+                "source": "cD1sYW1iZGEgcjpbcjo9W1ttYXgocltpXVttXSwoaS1uK2EgaW4gcmFuZ2UoYSo0KSkqKG0tZSthIGluIHJhbmdlKGEqNCkpKjMsOWluKGlbbV1mb3IgaSBpbiByWzppXSkpZm9yIG0gaW4gcmFuZ2UobGVuKHIpKV1mb3IgaSBpbiByYW5nZShsZW4ocikpXWZvciBhIGluIHJhbmdlKGxlbihyKSlmb3IgbiBpbiByYW5nZSgtYSoyLGxlbihyKSlmb3IgZSBpbiByYW5nZShsZW4ociktYSoyKzEpaWZ7bWluKGlbZTphKjIrZV0pZm9yIGkgaW4gclttYXgobiwwKTphKjIrbl19PT17OX1dWy0xXQ==",
                 "size_uncompressed": 277,
-                "compressed": "I2NvZGluZzpMMQppbXBvcnQgemxpYgpleGVjKHpsaWIuZGVjb21wcmVzcyhieXRlcygnZY+BBsMwEIYB9E1ybcK6XHIa8iTnkNl1jt5tAkb13bcUMisg3/eF/15pyXq7504iSkyImt9OkAmVvONQhq+yrmR7sMv9FaB3GuxIL34Sc4xK87N0XLVgZAKob235wuYEoGVHnA+40tJoyP3Z/yj7/1CDYQSZV91XWazACNq4/dLiT7CrQltK67QRhpE+JywiTDEiKSwtOSkp",
-                "size_compressed": 204,
+                "compressed": "I2NvZGluZzpMMQppbXBvcnQgemxpYgpleGVjKHpsaWIuZGVjb21wcmVzcyhieXRlcygnZc+BBsMwEAbgVwkg1yas26AhT3ION0vn6N0mYFTffVJorYB8/x/+++SZ9fFkVxPWlBGVv76iECoFL9F6dmKusr2K5+4O0HmN5ay3MIp5QaXpXZ1sMSYhgPbWvT4X8xVgr52ZT9zUdo3cXcMhKv8fWqEfQKZFt1UlNSgEh3HtUgsX2CKjNedlXAnjQD8nLCJMMSIpLC05KSk=",
+                "size_compressed": 203,
                 "method": "zopfli",
                 "window": -15,
-                "escape_cost": 1
+                "escape_cost": 0
             }
         },
         "public_gold": 194,
