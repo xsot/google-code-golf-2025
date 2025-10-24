@@ -1,4 +1,7 @@
-# mwi (203 (261 unzipped) vs 183 bytes for gold)
+# compression_experiments (202 (261 unzipped) vs 183 bytes for gold)
+def p(g):f=max([(len(f:=[(i,r)for i in range(21)for r in range(21)if g[i][r]==o]),f)for o in range(21)[1:]])[1];return[[max(((t-u*n,o-u*e)in f)*g[i+n][r+e]for i,r in f for n in[-4,0,4]for e in[-4,0,4]for u in range(21)[1:])for o in range(21)]for t in range(21)]
+
+### mwi (203 (261 unzipped) bytes)
 def p(i):r=max([(len(r:=[(e,a)for e in range(21)for a in range(21)if i[e][a]==g]),r)for g in range(21)[1:]])[1];return[[max(((y-o*f,g-o*n)in r)*i[e+f][a+n]for e,a in r for f in[-4,0,4]for n in[-4,0,4]for o in range(21)[1:])for g in range(21)]for y in range(21)]
 
 ##
@@ -17,9 +20,6 @@ def p(g):R=max([{(i,j)for i in range(21)[x:x+3]for j in range(21)[y:y+3]if g[i][
 ##
 
 p=lambda g:(R:=max([{(i,j)for i in range(21)[I:I+3]for j in range(21)[J:J+3]if g[i][j]}for I in range(21)for J in range(21)],key=len),[[max((c==(y-k*d,x-k*D))*g[i+d][j+D]for i,j in R for d in(-4,0,4)for D in(-4,0,4)for k in range(21)[1:]for c in R)for x in range(21)]for y in range(21)])[1]
-
-### compression_experiments (209 (280 unzipped) bytes)
-def p(i):r=max([[(e,a)for e in range(21)[g:g+3]for a in range(21)[y:y+3]if i[e][a]]for g in range(21)for y in range(21)],key=len);return[[max(((y-o*f,g-o*n)in r)*i[e+f][a+n]for e,a in r for f in[-4,0,4]for n in[-4,0,4]for o in range(21)[1:4])for g in range(21)]for y in range(21)]
 
 ### ovs (210 (280 unzipped) bytes)
 # W[1:4] -> W[1:] possible golf. doesn't save a byte when compressed

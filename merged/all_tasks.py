@@ -6,8 +6,8 @@ p=lambda a,n=11:-n*a or[*map(lambda*b,d=0:[d:=c^c-0**n>>d&4for c in b][::-1],*p(
 p=lambda g:[[v*2for v in l]for l in g+g[g[:3]*2==g:][2:5]]
 # 💎 task 4: 73 bytes, gold, https://arcprize.org/play?task=025d127b
 import re;p=lambda i:eval(re.sub(r"(.),(?=.*\1.*0, \1)",r"0,\1|",str(i)))
-# 🥈 task 5: 203 (261 unzipped) vs 183 bytes for gold, https://arcprize.org/play?task=045e512c
-def p(i):r=max([(len(r:=[(e,a)for e in range(21)for a in range(21)if i[e][a]==g]),r)for g in range(21)[1:]])[1];return[[max(((y-o*f,g-o*n)in r)*i[e+f][a+n]for e,a in r for f in[-4,0,4]for n in[-4,0,4]for o in range(21)[1:])for g in range(21)]for y in range(21)]
+# 🥈 task 5: 202 (261 unzipped) vs 183 bytes for gold, https://arcprize.org/play?task=045e512c
+def p(g):f=max([(len(f:=[(i,r)for i in range(21)for r in range(21)if g[i][r]==o]),f)for o in range(21)[1:]])[1];return[[max(((t-u*n,o-u*e)in f)*g[i+n][r+e]for i,r in f for n in[-4,0,4]for e in[-4,0,4]for u in range(21)[1:])for o in range(21)]for t in range(21)]
 # 🥇 task 6: 51 bytes, gold, https://arcprize.org/play?task=0520fde7
 p=lambda a:[[2*c*b.pop(0)for c in b[4:]]for b in a]
 # 🥉 task 7: 63 vs 62 bytes for gold, https://arcprize.org/play?task=05269061

@@ -159,7 +159,7 @@
     },
     "task005": {
         "gold": 183,
-        "best": 203,
+        "best": 202,
         "solutions": {
             "joking": {
                 "source": "IyBmYXN0ZXIKZGVmIHAoZyk6Uj1tYXgoW3soaSxqKWZvciBpIGluIHJhbmdlKDIxKVtJOkkrM11mb3IgaiBpbiByYW5nZSgyMSlbSjpKKzNdaWYgZ1tpXVtqXX1mb3IgSSBpbiByYW5nZSgyMSlmb3IgSiBpbiByYW5nZSgyMSldLGtleT1sZW4pO3JldHVybltbbWF4KChjPT0oeS1rKmQseC1rKkQpKSpnW2krZF1baitEXWZvciBpLGogaW4gUiBmb3IgZCBpblstNCwwLDRdZm9yIEQgaW5bLTQsMCw0XWZvciBrIGluIHJhbmdlKDIxKVsxOjRdZm9yIGMgaW4gUilmb3IgeCBpbiByYW5nZSgyMSldZm9yIHkgaW4gcmFuZ2UoMjEpXQ==",
@@ -207,12 +207,12 @@
                 "escape_cost": 1
             },
             "compression_experiments": {
-                "source": "ZGVmIHAoaSk6cj1tYXgoW1soZSxhKWZvciBlIGluIHJhbmdlKDIxKVtnOmcrM11mb3IgYSBpbiByYW5nZSgyMSlbeTp5KzNdaWYgaVtlXVthXV1mb3IgZyBpbiByYW5nZSgyMSlmb3IgeSBpbiByYW5nZSgyMSldLGtleT1sZW4pO3JldHVybltbbWF4KCgoeS1vKmYsZy1vKm4paW4gcikqaVtlK2ZdW2Erbl1mb3IgZSxhIGluIHIgZm9yIGYgaW5bLTQsMCw0XWZvciBuIGluWy00LDAsNF1mb3IgbyBpbiByYW5nZSgyMSlbMTo0XSlmb3IgZyBpbiByYW5nZSgyMSldZm9yIHkgaW4gcmFuZ2UoMjEpXQ==",
-                "size_uncompressed": 280,
-                "compressed": "I2NvZGluZzpMMQppbXBvcnQgemxpYgpleGVjKHpsaWIuZGVjb21wcmVzcyhieXRlcygibU7LDgIhDPwVjnRhE1c5YfZLGg4kFkLUYogm8vcCN9RLk3l0Zi4UxEMmsGW/+7dElKQ9hFwEicSieI4kjxtgtFGdXBf8LFRbm5CCSEgOvRueOHk6UyfG6SvV/UYM50LPV2HEXi9lXfMSdGyXoT/A0mJVaMGKR3KbN5JEB62UcTX6oM0Q+QvneepmjYPfee7Pvg8iLCJMMSIpLC05KSk=",
-                "size_compressed": 209,
-                "method": "zlib",
-                "window": -9,
+                "source": "ZGVmIHAoZyk6Zj1tYXgoWyhsZW4oZjo9WyhpLHIpZm9yIGkgaW4gcmFuZ2UoMjEpZm9yIHIgaW4gcmFuZ2UoMjEpaWYgZ1tpXVtyXT09b10pLGYpZm9yIG8gaW4gcmFuZ2UoMjEpWzE6XV0pWzFdO3JldHVybltbbWF4KCgodC11Km4sby11KmUpaW4gZikqZ1tpK25dW3IrZV1mb3IgaSxyIGluIGYgZm9yIG4gaW5bLTQsMCw0XWZvciBlIGluWy00LDAsNF1mb3IgdSBpbiByYW5nZSgyMSlbMTpdKWZvciBvIGluIHJhbmdlKDIxKV1mb3IgdCBpbiByYW5nZSgyMSld",
+                "size_uncompressed": 261,
+                "compressed": "I2NvZGluZzpMMQppbXBvcnQgemxpYgpleGVjKHpsaWIuZGVjb21wcmVzcyhieXRlcygibY6BBsMwEIZfJYBLm7JOQSdPcg5hd3Wslzkbe/y1Geg2+OX/8/HdlSXcQeLseS0vQLixgc8ZQVOJUj1oUAtebGE4j20ph0UlCCphoZwrxeSNqQcGx5loS7o4P55uiLsMYBnWjlPd0uLOx05QeyYsvVGTp48s7IW3Jw5TOqWpfdpXX3+cf05p5HKc3iIsIkwxIiksLTkpKQ==",
+                "size_compressed": 202,
+                "method": "zopfli",
+                "window": -15,
                 "escape_cost": 0
             }
         },
