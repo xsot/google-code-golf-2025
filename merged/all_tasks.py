@@ -221,8 +221,8 @@ def p(n):f={0:(a:=max(n:=re.sub(', ','',str(n+[*zip(*n)])),key=n.count),2)}|{(m:
 p=lambda i,*w:i*0!=0and[*map(p,*sum([[x,x[1:]+[i*4],[i*4]+x]for x in[i,*w]],[]))]or(i in w)*i
 # 💎 task 98: 64 bytes, gold, https://arcprize.org/play?task=4347f46a
 p=lambda i,*w:i*0!=0and[*map(p,i,i[:1]+i,i[1:]+i,*w)]or i^min(w)
-# 🥇 task 99: 112 bytes, gold, https://arcprize.org/play?task=444801d8
-p=lambda g,R=[]:g and p(g[:-1],w:=[g[-1][x]or(1in{*R[:x+1]}&{*R[x:]})*max(sum(g[-2:],R))for x in range(10)])+[w]
+# 💎 task 99: 103 bytes, gold, https://arcprize.org/play?task=444801d8
+p=lambda g,R=[]:g and p(g[:-1],w:=[g[-1][x]or(1in R[x:]>[1])*max(sum(g[-2:],R))for x in range(10)])+[w]
 # 🥈 task 100: 88 vs 85 bytes for gold, https://arcprize.org/play?task=445eab21
 p=lambda a:[[max(range(1,10),key=[sum({*b}&{*c})for c in zip(*a)for b in a].count)]*2]*2
 # 💎 task 101: 261 (444 unzipped) bytes, gold, https://arcprize.org/play?task=447fd412

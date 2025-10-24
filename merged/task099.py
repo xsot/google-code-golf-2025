@@ -1,5 +1,5 @@
-# ovs (112 bytes, gold)
-p=lambda g,R=[]:g and p(g[:-1],w:=[g[-1][x]or(1in{*R[:x+1]}&{*R[x:]})*max(sum(g[-2:],R))for x in range(10)])+[w]
+# ovs (103 bytes, gold)
+p=lambda g,R=[]:g and p(g[:-1],w:=[g[-1][x]or(1in R[x:]>[1])*max(sum(g[-2:],R))for x in range(10)])+[w]
 
 ### mwi (116 bytes)
 p=lambda g,r=range(10):[[g[y][x]or max(sum(g[y:y+4],g[y-1]))*any(g[y-9][:x+1])*any(g[y-9][x:])for x in r]for y in r]
