@@ -663,8 +663,8 @@ import re;p=lambda i,k=7:-k*i or eval(re.sub(f"({k|3})([^)]*)0(, {2-k//4})",r"0\
 p=eval(f"lambda a:max([str(a).count('1'),a]{'for*a,in map(zip,a,a[1:],a[2:])'*2})[1]")
 # 💎 task 272: 71 bytes, gold, https://arcprize.org/play?task=aedd82e4
 p=lambda i,*w:i*0!=0and[*map(p,i,[i*2]+i,i[1:]+[i*2],*w)]or~(2in w)*i%3
-# 💎 task 273: 85 bytes, gold, https://arcprize.org/play?task=af902bf9
-p=lambda a,n=1,d=0:-n*a or[[c^(2%-~c|(d:=2&d-c%3))for c in b]for b in zip(*p(a,n-1))]
+# 💎 task 273: 81 bytes, gold, https://arcprize.org/play?task=af902bf9
+p=lambda a,*A,d=0:[[c^(2%-~c|(d:=2&d-c%3))for c in b]for b in zip(*A or p(a,*a))]
 # 🥇 task 274: 71 bytes, gold, https://arcprize.org/play?task=b0c4d837
 p=lambda i:[(h:=[8for x in i if sum(x)==10]+[0]*5)[:3],h[5:2:-1],[0]*3]
 # 💎 task 275: 130 bytes, gold, https://arcprize.org/play?task=b190f7f5
