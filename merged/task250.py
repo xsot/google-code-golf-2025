@@ -1,4 +1,7 @@
-# joking (121 vs 104 bytes for gold)
+# att (96 bytes, gold)
+p=lambda a:[a:=[sorted(b[:(i:=str(a).index('2')>>5)])+b[i:]for*b,in zip(*a)][::-1]for _ in a][3]
+
+### joking (121 bytes)
 import re
 p=lambda i:[i:=eval(re.sub("5((.{35})+(?=.{66}2)|[0, ]+(?=, 2))",r"0\1+5",str([*zip(*i[::-1])])))for _ in i][7]
 

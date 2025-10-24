@@ -613,9 +613,8 @@ def p(m,c=0,d=1):
  return m
 # 🥇 task 249: 26 bytes, gold, https://arcprize.org/play?task=a416b8f3
 p=lambda a:[r*2for r in a]
-# ❌ task 250: 121 vs 104 bytes for gold, https://arcprize.org/play?task=a48eeaf7
-import re
-p=lambda i:[i:=eval(re.sub("5((.{35})+(?=.{66}2)|[0, ]+(?=, 2))",r"0\1+5",str([*zip(*i[::-1])])))for _ in i][7]
+# 💎 task 250: 96 bytes, gold, https://arcprize.org/play?task=a48eeaf7
+p=lambda a:[a:=[sorted(b[:(i:=str(a).index('2')>>5)])+b[i:]for*b,in zip(*a)][::-1]for _ in a][3]
 # 🥉 task 251: 89 vs 88 bytes for gold, https://arcprize.org/play?task=a5313dff
 p=lambda a,n=43:-n*a or[[14>>d&b.pop()or n<1for d in[0]+b[:0:-1]]for*b,in zip(*p(a,n-1))]
 # 💎 task 252: 53 bytes, gold, https://arcprize.org/play?task=a5f85a15
