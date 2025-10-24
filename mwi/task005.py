@@ -1,4 +1,4 @@
-def p(i):r=max([(len(r:=[(e,a)for e in range(21)for a in range(21)if i[e][a]==g]),r)for g in range(21)[1:]])[1];return[[max(((y-o*f,g-o*n)in r)*i[e+f][a+n]for e,a in r for f in[-4,0,4]for n in[-4,0,4]for o in range(21)[1:])for g in range(21)]for y in range(21)]
+def p(i):r=max((len(e:=[(e,a)for e in range(21)for a in range(21)if i[e][a]==g]),e)for g in range(21)[1:])[1];return[[max(((y-o*f,g-o*n)in r)*i[e+f][a+n]for e,a in r for f in[-4,0,4]for n in[-4,0,4]for o in range(21)[1:])for g in range(21)]for y in range(21)]
 
 ##
 

@@ -1,8 +1,8 @@
-# compression_experiments (202 (261 unzipped) vs 183 bytes for gold)
-def p(g):f=max([(len(f:=[(i,r)for i in range(21)for r in range(21)if g[i][r]==o]),f)for o in range(21)[1:]])[1];return[[max(((t-u*n,o-u*e)in f)*g[i+n][r+e]for i,r in f for n in[-4,0,4]for e in[-4,0,4]for u in range(21)[1:])for o in range(21)]for t in range(21)]
+# compression_experiments (199 (259 unzipped) vs 183 bytes for gold)
+def p(i):g=max((len(n:=[(n,f)for n in range(21)for f in range(21)if i[n][f]==e]),n)for e in range(21)[1:])[1];return[[max(((a-l*r,e-l*o)in g)*i[n+r][f+o]for n,f in g for r in[-4,0,4]for o in[-4,0,4]for l in range(21)[1:])for e in range(21)]for a in range(21)]
 
-### mwi (203 (261 unzipped) bytes)
-def p(i):r=max([(len(r:=[(e,a)for e in range(21)for a in range(21)if i[e][a]==g]),r)for g in range(21)[1:]])[1];return[[max(((y-o*f,g-o*n)in r)*i[e+f][a+n]for e,a in r for f in[-4,0,4]for n in[-4,0,4]for o in range(21)[1:])for g in range(21)]for y in range(21)]
+### mwi (200 (259 unzipped) bytes)
+def p(i):r=max((len(e:=[(e,a)for e in range(21)for a in range(21)if i[e][a]==g]),e)for g in range(21)[1:])[1];return[[max(((y-o*f,g-o*n)in r)*i[e+f][a+n]for e,a in r for f in[-4,0,4]for n in[-4,0,4]for o in range(21)[1:])for g in range(21)]for y in range(21)]
 
 ##
 
