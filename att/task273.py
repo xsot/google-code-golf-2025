@@ -1,0 +1,1 @@
+p=lambda a,n=1,d=0:-n*a or[[c^(2%-~c|(d:=2&d-c%3))for c in b]for b in zip(*p(a,n-1))]

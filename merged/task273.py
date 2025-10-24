@@ -1,4 +1,7 @@
-# ovs (90 vs 88 bytes for gold)
+# att (85 bytes, gold)
+p=lambda a,n=1,d=0:-n*a or[[c^(2%-~c|(d:=2&d-c%3))for c in b]for b in zip(*p(a,n-1))]
+
+### ovs (90 bytes)
 p=lambda g,q=0:g and[max(g[:1]+[[2&(q:=q^v)>>v+g.count(r)for v in r]for r in g])]+p(g[1:])
 
 ### joking (114 bytes)
