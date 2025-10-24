@@ -1,5 +1,5 @@
-# ovs (94 vs 88 bytes for gold)
-p=lambda g,q=0:g and[max(g[0],[(q:=q^v)>>v+1for r in g[1:]for v in(g.count(r)<2)*r])]+p(g[1:])
+# ovs (90 vs 88 bytes for gold)
+p=lambda g,q=0:g and[max(g[:1]+[[2&(q:=q^v)>>v+g.count(r)for v in r]for r in g])]+p(g[1:])
 
 ### joking (114 bytes)
 p=lambda g,R={*range(10)}:[[g[i][j]|len({g[I][J]*(i>I,j>J)for I in R^{i}for J in{j}^R})//5*2for j in R]for i in R]
