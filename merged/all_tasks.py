@@ -283,8 +283,8 @@ R=range(10)
 p=lambda g:[[g[0][max(i,j)%(4+any(g[4]))]for j in R]for i in R]
 # 💎 task 124: 95 bytes, gold, https://arcprize.org/play?task=53b68214
 p=lambda i:i[9:]and i or p(i+[((w:=i[4]!=i[1])*[0for k in(1,2)if[0]*k+i[0]>i[2]]+i[w-3])[:10]])
-# 🥉 task 125: 122 vs 119 bytes for gold, https://arcprize.org/play?task=543a7ed5
-import re;p=lambda i,k=15:-k*i or p(eval(re.sub('[83](?='+k*k%3*', 4|, 6'+'.{43}6)','k*k%3+3',str([*zip(*i[::-1])]))),k-1)
+# 🥉 task 125: 120 vs 119 bytes for gold, https://arcprize.org/play?task=543a7ed5
+import re;p=lambda i:[i:=eval(re.sub('[83](?='+(k>'3')*', 4|, 6'+'.{43}6)',k,str([*zip(*i[::-1])])))for k in'344'*6][15]
 # 🥇 task 126: 54 bytes, gold, https://arcprize.org/play?task=54d82841
 p=lambda a:a[:-1]+[[4*(0<sum(c)in c)for c in zip(*a)]]
 # 💎 task 127: 63 bytes, gold, https://arcprize.org/play?task=54d9e175
