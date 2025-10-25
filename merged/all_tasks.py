@@ -409,8 +409,8 @@ p=lambda a:[[~v*c*any(b)%10for v,c in zip(b,max(a))]for b in a]
 p=lambda i:[[5*(y==x%len({*str(i)})%3)for x in b'']for y in(0,1,2)]
 # 🥉 task 168: 115 vs 110 bytes for gold, https://arcprize.org/play?task=6e19193c
 import re;p=lambda i,k=3:-k*i or[*zip(*eval(re.sub(r"0(?=(.{35})+,( [^0]).{27}\2,\2)",r"\2",str(p(i,k-1))))[::-1])]
-# 💎 task 169: 113 bytes, gold, https://arcprize.org/play?task=6e82a1ae
-p=lambda i,k=11,t=1:-k*i or[(e:=1)*[e:=y%2*[y|(t:=t*16),-y%5,e|y][k//-10]for y in i]for i[::-1]in zip(*p(i,k-1))]
+# 💎 task 169: 111 bytes, gold, https://arcprize.org/play?task=6e82a1ae
+p=lambda i,k=11,t=1:-k*i or p([(e:=1)*[e:=y%2*[y|(t:=t*16)|e,-y%5][k<1]for y in i]for i[::-1]in zip(*i)],k-1,0)
 # 🥈 task 170: 194 (236 unzipped) vs 180 bytes for gold, https://arcprize.org/play?task=6ecd11f4
 def p(r):[(o:=i,f:=e)for i,r in enumerate(r)for e,r in enumerate(r)if r];n=0**r[o-3][f]-4;e=*filter(max,zip(*filter(max,zip(*r[:o-3])))),;return[[e and(r)for e,r in zip(e[::~len(e)//n],r[n-~f:])]for e,r in zip(e[::~len(e)//n],r[n-~o:])]
 # 🥇 task 171: 51 bytes, gold, https://arcprize.org/play?task=6f8cd79b
