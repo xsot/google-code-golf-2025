@@ -1,0 +1,1 @@
+import re;p=lambda i,k=79:-k*i or p(eval(re.sub('8(?='+k//64*', 4|, 6'+'.{43}6)','k>>4',str([*zip(*i[::-1])]))),k-1)
