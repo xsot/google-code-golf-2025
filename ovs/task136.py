@@ -1,2 +1,1 @@
-import re
-p=lambda m:[m:=eval(re.sub("0(?=(.{34}(1)){2})|(?<=((2).{34}){2})0",r"\2\4",str(m)))for _ in m][9]
+import re;p=lambda m:eval([m:=re.sub("(?<=(%s.{34}){2})0"%i,i,str(m))[::-1]for i in'2103'*9][29])

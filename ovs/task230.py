@@ -1,5 +1,4 @@
-import re
-p=lambda m,i=3:-i*m or[*zip(*eval(re.sub("0(?=, 0.%s.5, 5)"%{len(m)*3},"3**i%5",str(p(m,i-1))))[::-1])]
+import re;p=lambda m:[m:=[*zip(*eval(re.sub("0(?=, 0.%s.5, 5)"%{len(m)*3},i,str(m)))[::-1])]for i in'1342'][3]
 
 ##
 

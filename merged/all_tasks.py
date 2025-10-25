@@ -319,8 +319,8 @@ def	p(e):
 p=lambda g,D=10:[[D*(D!=v>0)for v in r]for r in('0, %g, 0'%D in'%s'%g)*g]or(h:=[*filter(any,zip(*p(g,D-.5)))])[::len(h)//3]
 # 🥇 task 135: 32 bytes, gold, https://arcprize.org/play?task=5bd6f4ac
 p=lambda a:[b[6:]for b in a[:3]]
-# 💎 task 136: 104 bytes, gold, https://arcprize.org/play?task=5c0a986e
-import re;p=lambda m,i=30:i and p(re.sub(r:="(?<=(%d.{34}){2})0"%(i%4),r[5],str(m))[::-1],i-1)or eval(m)
+# 💎 task 136: 97 bytes, gold, https://arcprize.org/play?task=5c0a986e
+import re;p=lambda m:eval([m:=re.sub("(?<=(%s.{34}){2})0"%i,i,str(m))[::-1]for i in'2103'*9][29])
 # 🥈 task 137: 141 vs 137 bytes for gold, https://arcprize.org/play?task=5c2c9af4
 def p(a):r=range(len(a));*_,B,C=sorted(map(a.index,a));W=max(a[B]);return[[W>>max(i-B,B-i,abs(a[B].index(W)-j))%(C-B)*9for j in r]for i in r]
 # 🥈 task 138: 104 vs 103 bytes for gold, https://arcprize.org/play?task=5daaa586
@@ -563,9 +563,8 @@ import re
 p=lambda a,n=-3:n*a or[*zip(*eval(re.sub(r'([^0])((, (?!\1|0).).*0\3.{28})0',r'0\2\1',str(p(a,n+1)[::-1]))))]
 # 🥇 task 229: 73 bytes, gold, https://arcprize.org/play?task=9565186b
 p=lambda a:[[[5,c][c==max(d:=sum(a,a),key=d.count)]for c in b]for b in a]
-# 🥈 task 230: 113 vs 111 bytes for gold, https://arcprize.org/play?task=95990924
-import re
-p=lambda m,i=3:-i*m or[*zip(*eval(re.sub("0(?=, 0.%s.5, 5)"%{len(m)*3},"3**i%5",str(p(m,i-1))))[::-1])]
+# 💎 task 230: 110 bytes, gold, https://arcprize.org/play?task=95990924
+import re;p=lambda m:[m:=[*zip(*eval(re.sub("0(?=, 0.%s.5, 5)"%{len(m)*3},i,str(m)))[::-1])]for i in'1342'][3]
 # 🥇 task 231: 43 bytes, gold, https://arcprize.org/play?task=963e52fc
 p=lambda a:[(r[:6]*4)[:len(r)*2]for r in a]
 # 💎 task 232: 57 bytes, gold, https://arcprize.org/play?task=97999447
