@@ -1,5 +1,5 @@
-# mwi (159 vs 138 bytes for gold)
-import re;p=lambda g:[g:=eval(re.sub(" 0(?=,"+a,b,str([*zip(*g)][::-1])))for a,b in[["([0, ]*5)?[^5]*$)","0."]]*4+[[" 0.0|, 5)",max({*str(g)}-{*"[5]"})]]*4][7]
+# mwi (157 vs 138 bytes for gold)
+import re;p=lambda g:[g:=eval(re.sub(" 0(?=,"+a,b,str([*zip(*g)][::-1])))for a,b in[["[0, ]*5?[^5]*$)","0."]]*4+[[" 0.0|, 5)",max({*str(g)}-{*"[5]"})]]*4][7]
 
 ### joking (165 bytes)
 # feels golfable
