@@ -3,7 +3,6 @@ list of tasks by difficulty, as measured by vibes
 improvable (easy)
 029
 036
-122
 184
 213
 254
@@ -389,3 +388,4 @@ optimal (relatively)
 399
 400
 107
+122
