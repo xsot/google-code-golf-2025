@@ -1,1 +1,1 @@
-p=lambda a:[(i:=1)*[c|c>>1&(i:=-~i%3)for c in b]for b in a]
+p=lambda g,v=0:g*0!=0and[*map(p,g,b'\n'*7)]or-g%v

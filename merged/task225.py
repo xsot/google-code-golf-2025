@@ -1,4 +1,10 @@
-# joking (128 vs 127 bytes for gold)
+# att (126 bytes, gold)
+p=eval(f'lambda i:[[([i[a][b]]*4+[i{" for i in i[a-3:a]+i[a+3:a:-1]for a in[b]"*2}if i])[-4]'+'for %c in range(6)]'*2%(98,97))
+
+##
+import re;p=lambda a,n=-3:n*a or[*zip(*eval(re.sub(r'0(?=(, 0)?(.{20}){1,2}, ([^0]).{22}(?!\3|0)(.), 0)',r'\4',str(p(a,n+1)))))][::-1]
+
+### joking (128 bytes)
 # alt. i think there might be some way to rearrange this to save a byte or two
 p=eval(f'lambda i:[[max([i[c:=a][b]]+[i{" for i in i[c-3:c]+i[c+3:c:-1]if(c:=b)*i+i"*2}][:-3])'+'for %c in range(6)]'*2%(98,97))
 
@@ -11,7 +17,7 @@ p=eval(f'lambda i:[[max([i[c:=a][b]]+[i{" for i in i[c-3:c]+i[c+3:c:-1]if-~(c:=b
 
 p=lambda i,r=range(6):[[max([s for t in i[a-3:a]+i[a+3:a:-1]for s in t[b-3:b]+t[b+3:b:-1]if s][:-3]+[i[a][b]])for b in r]for a in r]
 
-### ovs (tied, 128 bytes)
+### ovs (128 bytes)
 p=eval(f'lambda i:[[max([i{" for i in i[a-3:a]+i[a+3:a:-1]for a in[b]"*2}if i][:-3]+[i[a][b]])'+'for %c in range(6)]'*2%(98,97))
 
 ##
