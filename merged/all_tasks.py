@@ -241,8 +241,8 @@ p=lambda g,h=2,w=3:h and[p(g,h-1,w&2-A//4)for A in range(9)][::1-g[h][-h]|1]or-w
 p=lambda g:[g:=[*map(lambda*r,j=0:[r[j:=j-1]or(1in[r*(m:=[*map(any,g)])[j],sorted(r)[-4]*m[j:]][1in m[:j]])*2for _ in r],*g)]for _ in g][3]
 # 💎 task 106: 55 bytes, gold, https://arcprize.org/play?task=46442a0e
 p=lambda i,s=[],k=3:-k*i or p([*zip(*i+s)],i[::-1],k-1)
-# 💎 task 107: 140 bytes, gold, https://arcprize.org/play?task=469497ad
-def p(i):z=len({*str(i)})-5;r=range(5*z);u=z*0**i[1][0];v=z*0**i[0][1];return[[i[x//z][y//z]or(x-v in[z*2+u+~y,y-u])*2for y in r]for x in r]
+# 💎 task 107: 132 bytes, gold, https://arcprize.org/play?task=469497ad
+def p(i):z=len({*str(i)})-5;r=range(5*z);return[[i[x//z][y//z]or(x-z*0**i[0][1]in[u:=y-z*0**i[1][0],z*2+~u])*2for y in r]for x in r]
 # 💎 task 108: 46 bytes, gold, https://arcprize.org/play?task=46f33fce
 p=lambda a:a>a*0!=0and[p(a[1])]*4+p(a[2:])or a
 # 💎 task 109: 77 bytes, gold, https://arcprize.org/play?task=47c1f68c
