@@ -6980,8 +6980,8 @@
         "public_best": 86
     },
     "task201": {
-        "gold": 199,
-        "best": 203,
+        "gold": 188,
+        "best": 188,
         "solutions": {
             "joking": {
                 "source": "ZGVmIHAoZyk6aj1EPTA7UD1bXTtleGVjKCJmb3IgciBpbiBnOkY9cltqXT09NDtQKz1yW2o6XSpEO0RePUY7cltqXSo9RHxGPDFcbmorPTFcbiIqMTMrImdbOl09ZmlsdGVyKGFueSx6aXAoKmcpKTsiKjMpO0EsKl8sQj1tYXAobWF4LGcpO0U9NCwqWzBdKmxlbihnKSw0O3JldHVybiBFLCp6aXAoKihbQV0qOSwqZyxbQl0qOSlbOjpBPT1QWzBdb3ItMV0pLEU=",
@@ -7000,10 +7000,10 @@
                 "escape_cost": 0
             },
             "ovs": {
-                "source": "ZGVmIHAoZyk6aj1EPTA7UD1bXTtleGVjKCJmb3IgciBpbiBnOkY9cltqXT09NDtQKz1bcltqXV0qRDtEXj1GO3Jbal0qPUR8RjwxXG5qKz0xXG4iKjEzKyJnWzpdPWZpbHRlcihhbnksemlwKCpnKSk7IioyKTtBLCpfLEI9bWFwKG1heCwqZyk7RT00LCpbMF0qbGVuKGdbMF0pLDQ7cmV0dXJuW0UsKltbQSwqcixCXVs6OkE9PVBbMF1vci0xXWZvciByIGluIGddLEVdCg==",
-                "size_uncompressed": 207,
-                "compressed": "ZGVmIHAoZyk6aj1EPTA7UD1bXTtleGVjKCJmb3IgciBpbiBnOkY9cltqXT09NDtQKz1bcltqXV0qRDtEXj1GO3Jbal0qPUR8RjwxXG5qKz0xXG4iKjEzKyJnWzpdPWZpbHRlcihhbnksemlwKCpnKSk7IioyKTtBLCpfLEI9bWFwKG1heCwqZyk7RT00LCpbMF0qbGVuKGdbMF0pLDQ7cmV0dXJuW0UsKltbQSwqcixCXVs6OkE9PVBbMF1vci0xXWZvciByIGluIGddLEVd",
-                "size_compressed": 207,
+                "source": "ZGVmIHAoZyk6UD1EPTA7W2c6PVtbdiooKFA6PVAgb3IgRCp2KSpEfChEOj1EXih2PT00KSk8MSlmb3IgdiBpbiBjXWZvcipjLGluIHppcCgqZylpZiBhbnkoYyldZm9yIF8gaW4gZ107QSwqXyxCPW1hcChtYXgsZyk7RT00LCpbMF0qbGVuKGcpLDQ7cmV0dXJuIEUsKnppcCgqKFtBXSo5LCpnLFtCXSo5KVs6OkE9PVAgb3ItMV0pLEUK",
+                "size_uncompressed": 188,
+                "compressed": "ZGVmIHAoZyk6UD1EPTA7W2c6PVtbdiooKFA6PVAgb3IgRCp2KSpEfChEOj1EXih2PT00KSk8MSlmb3IgdiBpbiBjXWZvcipjLGluIHppcCgqZylpZiBhbnkoYyldZm9yIF8gaW4gZ107QSwqXyxCPW1hcChtYXgsZyk7RT00LCpbMF0qbGVuKGcpLDQ7cmV0dXJuIEUsKnppcCgqKFtBXSo5LCpnLFtCXSo5KVs6OkE9PVAgb3ItMV0pLEU=",
+                "size_compressed": 188,
                 "method": "none"
             },
             "combined_solutions": {

@@ -1,8 +1,8 @@
-# joking (203 vs 199 bytes for gold)
-def p(g):j=D=0;P=[];exec("for r in g:F=r[j]==4;P+=r[j:]*D;D^=F;r[j]*=D|F<1\nj+=1\n"*13+"g[:]=filter(any,zip(*g));"*3);A,*_,B=map(max,g);E=4,*[0]*len(g),4;return E,*zip(*([A]*9,*g,[B]*9)[::A==P[0]or-1]),E
+# ovs (188 bytes, gold)
+def p(g):P=D=0;[g:=[[v*((P:=P or D*v)*D|(D:=D^(v==4))<1)for v in c]for*c,in zip(*g)if any(c)]for _ in g];A,*_,B=map(max,g);E=4,*[0]*len(g),4;return E,*zip(*([A]*9,*g,[B]*9)[::A==P or-1]),E
 
-### ovs (207 bytes)
-def p(g):j=D=0;P=[];exec("for r in g:F=r[j]==4;P+=[r[j]]*D;D^=F;r[j]*=D|F<1\nj+=1\n"*13+"g[:]=filter(any,zip(*g));"*2);A,*_,B=map(max,*g);E=4,*[0]*len(g[0]),4;return[E,*[[A,*r,B][::A==P[0]or-1]for r in g],E]
+### joking (203 bytes)
+def p(g):j=D=0;P=[];exec("for r in g:F=r[j]==4;P+=r[j:]*D;D^=F;r[j]*=D|F<1\nj+=1\n"*13+"g[:]=filter(any,zip(*g));"*3);A,*_,B=map(max,g);E=4,*[0]*len(g),4;return E,*zip(*([A]*9,*g,[B]*9)[::A==P[0]or-1]),E
 
 ### mwi (248 (312 unzipped) bytes)
 def p(g):
