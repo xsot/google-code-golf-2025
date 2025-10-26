@@ -886,9 +886,9 @@ def p(g):
 # 💎 task 367: 126 bytes, gold, https://arcprize.org/play?task=e73095fd
 import re
 p=lambda g,k=-19:k*g or p(eval(re.sub(f"0(?=, 4|.{ {N:=len(g)*3+4}}5, 0.{ {N-6}}0)","4",str([*zip(*g)][::-1]))),k+1)
-# 💎 task 368: 132 bytes, gold, https://arcprize.org/play?task=e76a88a6
+# 💎 task 368: 129 bytes, gold, https://arcprize.org/play?task=e76a88a6
 import re
-p=lambda i:eval(re.sub("5(, 5)+",lambda m:re.findall("([^50](, [1-9])+)",s*2)[-s[m.end()-1::32].count('5')][0],s:=str(i)))
+p=lambda i:eval(re.sub("5(, 5)+",lambda m:re.findall("[^50](?:, [1-9])+",s*2)[-s[m.end()-1::32].count('5')],s:=str(i)))
 # 🥇 task 369: 109 bytes, gold, https://arcprize.org/play?task=e8593010
 p=lambda g,k=-11,z=1:k*g or[[P:=v&7or[z:=z*8,4-v%7,P&~5|v][k>>3]for v in[5]+r][:0:-1]for*r,in zip(*p(g,k+1))]
 # 💎 task 370: 228 (357 unzipped) bytes, gold, https://arcprize.org/play?task=e8dc4411
