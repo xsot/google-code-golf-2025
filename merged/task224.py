@@ -1,4 +1,7 @@
-# joking (165 bytes, gold)
+# mwi (160 vs 138 bytes for gold)
+import re;p=lambda g:[g:=eval(re.sub(" 0(?=,"+a,b,str([*zip(*g)][::-1])))for a,b in[["([0, ]*5)?[^5]*$)","0."]]*4+[[" 0.0|, 5)",f"{sum({*sum(g,[-5])})}"]]*4][7]
+
+### joking (165 bytes)
 # feels golfable
 p=lambda i,k=3,s=0,S=sum:-k*i or p([[y|(s==5in{*(h:=[*map(S,i)])[b+1:]}&{*h[:b]})*S({*S(i,[-5])})for b,y in enumerate(x)]+0*[s:=s*2+S(x)]for x in zip(*i)][::-1],k-1)
 
