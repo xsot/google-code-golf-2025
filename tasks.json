@@ -3672,7 +3672,7 @@
         "public_best": 92
     },
     "task105": {
-        "gold": 127,
+        "gold": 126,
         "best": 139,
         "solutions": {
             "att": {
@@ -3711,7 +3711,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 127,
+        "public_gold": 126,
         "public_best": 153
     },
     "task106": {
@@ -7418,7 +7418,7 @@
     },
     "task213": {
         "gold": 87,
-        "best": 94,
+        "best": 90,
         "solutions": {
             "att": {
                 "source": "cD1sYW1iZGEgaTpbKnppcCgqW3U6PVsqZmlsdGVyKGludCx3Oj1bc3VtKHsqcn0tezV9KWZvciByIGluIGldKV1dKmxlbih1KSoodT53KW9yIHAoemlwKCppKSkpXQ==",
@@ -7428,10 +7428,10 @@
                 "method": "none"
             },
             "ovs": {
-                "source": "cD1sYW1iZGEgaTpbKnppcCgqYWxsKHc6PVtzdW0oeypyfS17NX0pZm9yIHIgaW4gaV0pYW5kIHAoWyp6aXAoKmkpXSlvclt3Oj1bKmZpbHRlcihpbnQsdyldXSpsZW4odykpXQoKIyMKCnA9bGFtYmRhIGk6MSVsZW4obTo9bWF4KFtbKnt4OjBmb3IgeCBpbiByIGlmIHglNX1dZm9yIHIgaW4gaV0sa2V5PWxlbikpKlttXSpsZW4obSlvclsqemlwKCpwKFsqemlwKCppKV0pKV0KcD1sYW1iZGEgaTptYXgoW3c6PXJbajo6M11dKmxlbih3KSooeyp3fV57MCw1fT57MCw1LHdbMF19KWZvciByIGluIGkgZm9yIGogaW4oMCwxLDIpKW9yIFsqemlwKCpwKFsqemlwKCppKV0pKV0KZGVmIHAoZyk6Uj1hbGwobWFwKGFueSxnKSk7Qz17djowIGZvciByIGluW2csemlwKCpnKV1bUl1mb3IgdiBpbiByIGlmIHYlNX07cmV0dXJuW1tbYyxiXVtSXWZvciBiIGluIENdZm9yIGMgaW4gQ10K",
-                "size_uncompressed": 100,
-                "compressed": "cD1sYW1iZGEgaTpbKnppcCgqYWxsKHc6PVtzdW0oeypyfS17NX0pZm9yIHIgaW4gaV0pYW5kIHAoWyp6aXAoKmkpXSlvclt3Oj1bKmZpbHRlcihpbnQsdyldXSpsZW4odykpXQ==",
-                "size_compressed": 100,
+                "source": "cD1sYW1iZGEgaTpbKnppcCgqbGVuKHU6PVtzIGZvciByIGluIGkgaWYoczo9c3VtKHsqcn0tezV9KSldKSVsZW4oaSkqW3Vdb3IgcChbKnppcCgqaSldKSldCgojIyA4NyBwcm9iYWJseSBsb29rcyBtb3JlIGxpa2UgdGhpczoKcD1sYW1iZGEgaSxrPTExOi1rKmkgb3IgcChbKnppcCgqW2ksW3U6PWlbMF1bayUzOjozXV0qbGVuKHUpXVthbGwodSktMWluIGlbMF1dWzo6LTFdKV0say0xKQpwPWxhbWJkYSBpLGs9MTE6LWsqaSBvciBwKFsqemlwKCpbaSxbdTo9aVswXVtrJTM6OjNdXSpsZW4odSldWzBpbnsqaVswXX0teyp1fV1bOjotMV0pXSxrLTEpCg==",
+                "size_uncompressed": 90,
+                "compressed": "cD1sYW1iZGEgaTpbKnppcCgqbGVuKHU6PVtzIGZvciByIGluIGkgaWYoczo9c3VtKHsqcn0tezV9KSldKSVsZW4oaSkqW3Vdb3IgcChbKnppcCgqaSldKSld",
+                "size_compressed": 90,
                 "method": "none"
             },
             "xsot": {
