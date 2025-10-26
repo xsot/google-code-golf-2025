@@ -957,7 +957,7 @@ p=lambda m,n=266,f=0:[[sum({*e*sum(m,[-f])})for e in s]for r in m if(f:=((X:=n>>
 p=lambda m,k=71:exec('r=k//9;exec("%s=3,3;"*len(a:={*%s+%s})*all(a));k-=1;'%(('m[r:=r+1][k%9:k%9+2]',)*3)*81)or m
 # 💎 task 398: 73 bytes, gold, https://arcprize.org/play?task=feca6190
 p=lambda a,b=45:[*zip(*[2*((b:=b-1)*[0]+a[0])for c in 5*a[0]if c])][b:45]
-# 🥈 task 399: 64 vs 63 bytes for gold, https://arcprize.org/play?task=ff28f65a
-p=lambda m:[[1,0,(c:=sum(sum(m,[]))/8)>1],[0,c>2,0],[c>3,0,c>4]]
+# 🥇 task 399: 63 bytes, gold, https://arcprize.org/play?task=ff28f65a
+p=lambda a:[*zip(*[iter(sum(sum(a,[]))//8*[1,0]+[0]*7)]*3)][:3]
 # 💎 task 400: 66 bytes, gold, https://arcprize.org/play?task=ff805c23
 p=lambda g:[h[:5]for r in[*g]if(h:=g.pop()[~[*r,1].index(1)::-1])]

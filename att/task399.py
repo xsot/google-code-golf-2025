@@ -1,1 +1,1 @@
-p=lambda a,i=0:[[4*i<(i:=i+1)%2*s(s(a,[]))for _ in[0]*3]for s in[sum]*3]
+p=lambda a:[*zip(*[iter(sum(sum(a,[]))//8*[1,0]+[0]*7)]*3)][:3]
