@@ -6394,13 +6394,20 @@
     },
     "task184": {
         "gold": 91,
-        "best": 101,
+        "best": 94,
         "solutions": {
             "combined_solutions": {
                 "source": "cD1sYW1iZGEgaSxrPTAscz1bMF0qOTk6W3MrMCooczo9Wyp4XSlmb3IgeCBpbiB6aXAoKmsgb3IgcChpLGkpKWlmLX4tYW55KHgpKihzOj1bKm1hcChtYXgscyx4KV0pXStbc10=",
                 "size_uncompressed": 101,
                 "compressed": "cD1sYW1iZGEgaSxrPTAscz1bMF0qOTk6W3MrMCooczo9Wyp4XSlmb3IgeCBpbiB6aXAoKmsgb3IgcChpLGkpKWlmLX4tYW55KHgpKihzOj1bKm1hcChtYXgscyx4KV0pXStbc10=",
                 "size_compressed": 101,
+                "method": "none"
+            },
+            "joking": {
+                "source": "cD1sYW1iZGEgaSxrPTAsKnM6W3MrKHM6PSgpKWZvciB4IGluIHppcCgqayBvciBwKGksaSkpaWYtfi1hbnkoeCkqKHM6PSgqbWFwKG1heCxzK3gseCksKSldK1tzXQojIHlvdSBtaWdodCBiZSBhYmxlIHRvIGRvIHRoaXMgcmVjdXJzaXZlbHkgdG8gaXRlcmF0ZSBhY3Jvc3MgZWFjaCBpdGVtLCBidXQgaWRrIGhvdyB5b3Ugd291bGQgYWxzbyBkbyB0aGUgemlwIHdpdGggdGhhdAoKIyMKcD1sYW1iZGEgaSxrPTAscz1bMF0qOTk6W3MrMCooczo9eClmb3IqeCxpbiB6aXAoKmsgb3IgcChpLGkpKWlmLX4tYW55KHgpKihzOj1bKm1hcChtYXgscyx4KV0pXStbc10Kcj1bMF0qOTk7cD1sYW1iZGEgaSxrPTAscz1yOltzKzAqKHM6PXgpZm9yKngsaW4gemlwKCprIG9yIHAoaSxpKSlpZiByKyhzOj1bKm1hcChtYXgscyx4KV0pPnhdK1tzXQpyPVswXSo5OTtwPWxhbWJkYSBpLGs9MCxzPXI6W3MrMCooczo9eClmb3IqeCxpblsqemlwKCprIG9yIHAoaSxpKSkscl1pZiByKyhzOj1bKm1hcChtYXgscyx4KV0pPnhdCnA9bGFtYmRhIGksaz0wLHM9W106W3MrMCooczo9eClmb3IqeCxpbiB6aXAoKmsgb3IgcChpLGkpKWlmLX4tYW55KHgpKihzOj1bKm1hcChtYXgscyt4LHgpXSldK1tzXQpwPWxhbWJkYSBpLGs9MCwqczpbcyswKihzOj14KWZvciB4IGluIHppcCgqayBvciBwKGksaSkpaWYtfi1hbnkoeCkqKHM6PSgqbWFwKG1heCxzK3gseCksKSldK1tzXQpwPWxhbWJkYSBpLCprLHM9W106W3MrKHM6PVtdKWZvcip4LGluIHppcCgqayBvciBwKGksKmkpKWlmLX4tYW55KHgpKihzOj1bKm1hcChtYXgscyt4LHgpXSldK1tzXQ==",
+                "size_uncompressed": 94,
+                "compressed": "cD1sYW1iZGEgaSxrPTAsKnM6W3MrKHM6PSgpKWZvciB4IGluIHppcCgqayBvciBwKGksaSkpaWYtfi1hbnkoeCkqKHM6PSgqbWFwKG1heCxzK3gseCksKSldK1tzXQ==",
+                "size_compressed": 94,
                 "method": "none"
             }
         },
