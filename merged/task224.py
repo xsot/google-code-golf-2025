@@ -1,7 +1,8 @@
-# ovs (154 vs 138 bytes for gold)
-import re;p=lambda g:[g:=eval(re.sub(" 0(?=,"+a,b,str([*zip(*g)][::-1])))for a,b in[["[^)]*[^5]*$)","0."]]*4+[[" 0.0|, 5)",max({*str(g)}-{*"[5]"})]]*4][7]
+# ovs (148 vs 138 bytes for gold)
+p=lambda g,k=11,w=0:-k*g or p([[b:=a+[(b*0is not 0is a)*max({*sum(g,r)}-{5}),0.][k>6>w]for a in r]for*r,in zip(*g)if[w:=w*2+max(r),b:=1]][::-1],k-1)
 
 ##
+import re;p=lambda g:[g:=eval(re.sub(" 0(?=,"+a,b,str([*zip(*g)][::-1])))for a,b in[["[^)]*[^5]*$)","0."]]*4+[[" 0.0|, 5)",max({*str(g)}-{*"[5]"})]]*4][7]
 import re;p=lambda g,k=7:-k*g or p(eval(re.sub(" 0(?=,"+["[^)]*[^5]*$)"," 0.0|, 5)"][k<4],["0.",max({*str(g)}-{*"[5]"})][k<4],str([*zip(*g)][::-1]))),k-1)
 import re;p=lambda g,k=7:-k*g or p(eval(re.sub(*[" 0(?=,[^)]*[^5]*$)","0."," 0(?=, 0.0|, 5)",max({*str(g)}-{*"[5]"})][k<4::2],str([*zip(*g)][::-1]))),k-1)
 
