@@ -474,10 +474,10 @@ b=c='for*d,c,b,a in zip(b,c,z+a,a[1:]+z,a)]'
 p=lambda i,*w:i*0!=0and[*map(p,i,[i]+i,i[1:]+[i],*w)]or(w.count(i)>1)*i
 # 💎 task 194: 55 bytes, gold, https://arcprize.org/play?task=7fe24cdd
 p=lambda i,s=[],k=3:-k*i or p([*zip(*i+s)],i[::-1],k-1)
-# 💎 task 195: 96 bytes, gold, https://arcprize.org/play?task=80af3007
-p=lambda a,n=1:[[y&a[(n:=n+3)//9%9][n%9]for y in x]for x in-n*a]or p([*filter(any,zip(*a))],n-1)
-# 💎 task 196: 107 bytes, gold, https://arcprize.org/play?task=810b9b61
-p=lambda i,k=19:-k*i or[*map(lambda*r,a=8:[a:=[b or 8&a,b|2*(a%3<b),b%5][k//8]for b in r],*p(i,k-1)[::-1])]
+# 💎 task 195: 94 bytes, gold, https://arcprize.org/play?task=80af3007
+p=lambda a,n=1:[[y&sum(a*3,())[n:=n+3]for y in x]for x in-n*a]or p([*filter(any,zip(*a))],n-1)
+# 💎 task 196: 106 bytes, gold, https://arcprize.org/play?task=810b9b61
+p=lambda i,k=19:-k*i or[*map(lambda*r,a=8:[a:=[b|8-b&a,b|2*(a%3<b),b%5][k//8]for b in r],*p(i,k-1)[::-1])]
 # 🥇 task 197: 54 bytes, gold, https://arcprize.org/play?task=82819916
 p=lambda a:[[b[a[1].index(c)]for c in a[1]]for b in a]
 # 💎 task 198: 118 bytes, gold, https://arcprize.org/play?task=83302e8f

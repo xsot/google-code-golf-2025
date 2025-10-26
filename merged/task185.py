@@ -4,13 +4,11 @@ p=eval(f"lambda i:{'[[sum({r.pop()}&r,r[1:])]*'*2}((r[0]r,*i)ifi if)])
 ### ovs (138 bytes)
 p=eval(('lambda i:'+'[[sum({r.pop()}&)r,r[1:])]*'*2+'[[r[0]r,*i)if]i if])])]').translate([0,"{*r}-{*i[0]}","zip(","for*r,in "]))
 
-## without the `str.translate` compression:
+##
+# 147
+exec(f"def p(i):I=i;A=0;{'i=[[A*(A==(A:=B)!=c[0])for*c,B in zip(*I,a)if all(c)]for*a,in zip(*i)];'*2+'*i,=zip(*i[any(i[-1])-2::-1]);'*40}return i")
 
 exec('def p(i):h={*i[0]};return'+'[[a*({a}=={b}-h)for a,b in zip(r,r[1:])]for*r,in zip(*'*2+'[[t[0]for t in zip(s,*i)if{*t}-h]for s in i if{*s}-h])])]')
-
-## idea for a shorter solution? Doesn't quite work, dealing with empty lines in the output is difficult.
-
-def p(i):h={*i[0]};[i:=[[b*({w}=={w:=b}-h)for b,*C in zip(r,*i)if len({*C}&h)<2]for*r,in zip(*i)if{*r,w:=0}-h]for _ in'  '];return[r[1:]for r in i]
 
 ### joking (147 bytes)
 exec("p=lambda i,k=-1:[[sum({r[1]}&{r[0]}-{*i[0]})if k<1else r[1]"+"for*r,in %s)if{*r[1:]}-{*k*i[0]}]"*2%("zip(r[1:],r,*i","k*i or zip(*p(i,k+1)"))
