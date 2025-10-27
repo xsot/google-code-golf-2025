@@ -687,23 +687,23 @@ p=lambda i,*x,c=0:[c|(c:=i)>>2|(i:=y)for y in x+x[7:]]or[*map(p,*map(p,*i))]
 p=lambda i,*w:i*0!=0and[*map(p,i,[i]+i,i[1:]+[i],*w)]or-i%8*w.count(5)%5
 # 🥈 task 284: 204 vs 201 bytes for gold, https://arcprize.org/play?task=b7249182
 p=lambda i:[i:=[*zip(*len(l:=[n for n,y in E(m)if y])%2*i)]or[[(23//(X:=sum(l)-b-b)**2*9+(l[0]<=b<=l[1])>>a*a&1)*m[l[X<0]]for a,_ in E(i,-i.index(m))]for b,_ in E(m)]for E in[enumerate]*2if[m:=max(i)]][1]
-# 🥈 task 285: 274 (431 unzipped) vs 262 bytes for gold, https://arcprize.org/play?task=b775ac94
-def	p(o):
+# 🥈 task 285: 272 (431 unzipped) vs 262 bytes for gold, https://arcprize.org/play?task=b775ac94
+def	p(f):
 	for*i,in[[]]*8:
-		o=[i[::-1]for*i,in	zip(*o)]
-		for	r,m	in	enumerate(o):
-			for	e,m	in	enumerate(m):
-				if	m:
-					n={(r,e)}
-					for	t	in*i,:
-						if{(r-1,e),(r,e-1),(r-1,e+1),(r-1,e-1)}&t:i.remove(t);n|=t
-					i+=[n]
-		for	r,m	in	enumerate(o):
-			for	e,m	in	enumerate(m):
-				for	t	in*i,:
-					for	n,f	in	t:
-						if{(n-e,f-~r),(n-~e,f-r)}&t:o[n-e][f-r]|=len({*str([i[f:f+2]for*i,in	o[n:n+2]])})//8*o[n][f]
-	return	o
+		f=[i[::-1]for*i,in	zip(*f)]
+		for	n,o	in	enumerate(f):
+			for	t,o	in	enumerate(o):
+				if	o:
+					u={(n,t)}
+					for	r	in*i,:
+						if{(~-n,t),(n,~-t),(~-n,~-t),(~-n,-~t)}&r:i.remove(r);u|=r
+					i+=[u]
+		for	n,o	in	enumerate(f):
+			for	t,o	in	enumerate(o):
+				for	r	in*i,:
+					for	u,e	in	r:
+						if{(u-t,e-~n),(u-~t,e-n)}&r:f[u-t][e-n]|=len({*str([i[e:e+2]for*i,in	f[u:u+2]])})//8*f[u][e]
+	return	f
 # 💎 task 286: 104 bytes, gold, https://arcprize.org/play?task=b782dc8a
 p=lambda i,k=39:-k*i or[[t:=y or sum({*t%8*sum(i,x)}-{t,8})for y in[8]+x][:0:-1]for*x,in zip(*p(i,k-1))]
 # 💎 task 287: 55 bytes, gold, https://arcprize.org/play?task=b8825c91
