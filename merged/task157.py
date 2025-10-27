@@ -1,4 +1,4 @@
-# joking (242 (256 unzipped) bytes, gold)
+# joking (242 (256 unzipped) vs 239 bytes for gold)
 # zip fiddling
 def	p(g):
 	r=[*map(max,*g[6:]),0,5,0].index;w=r(0,t:=r(5))

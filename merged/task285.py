@@ -1,4 +1,4 @@
-# compression_experiments (274 (431 unzipped) bytes, gold)
+# compression_experiments (274 (431 unzipped) vs 262 bytes for gold)
 def	p(o):
 	for*i,in[[]]*8:
 		o=[i[::-1]for*i,in	zip(*o)]

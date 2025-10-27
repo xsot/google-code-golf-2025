@@ -1,4 +1,4 @@
-# joking (107 bytes, gold)
+# joking (107 vs 106 bytes for gold)
 p=lambda g,l=128:-l*g or p([*zip(*(a:=eval(str(g).replace(l//12*"5, ",l//12*"4>>l%3,"))))][::-1],l-3+(g>a))
 
 ##

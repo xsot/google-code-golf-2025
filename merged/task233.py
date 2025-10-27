@@ -1,4 +1,4 @@
-# compression_experiments (281 (462 unzipped) bytes, gold)
+# compression_experiments (281 (462 unzipped) vs 273 bytes for gold)
 def p(e):
  for r in 92*[e]:e=[[*r]for r in zip(*e[all(r==r[:12]for r in str(e[0]).split('0')):][::-1])]
  for r in 92*[[r[i:3+i]for r in r[f:3+f]]for f,p in enumerate(r[2:])for i,p in enumerate(p[2:])][::-1]:
