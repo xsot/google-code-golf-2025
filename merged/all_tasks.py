@@ -727,8 +727,8 @@ p=lambda a:[[d^c^b[0]or d for*_,c,d in zip(*a,b)]for b in a]
 import re;p=lambda m:eval(re.sub('(?<=5.{34})5(?=.{34}5)','2',str(m)))
 # 🥇 task 295: 54 bytes, gold, https://arcprize.org/play?task=bbc9ae5d
 p=lambda a:[b:=a[0]]+[b:=b[:1]+b[:-1]for _ in b[2::2]]
-# 🥈 task 296: 63 vs 60 bytes for gold, https://arcprize.org/play?task=bc1d5164
-p=lambda g:[[*map(max,a,b,a[4:],b[4:])]for a,b in zip(g,g[2:])]
+# 🥈 task 296: 62 vs 60 bytes for gold, https://arcprize.org/play?task=bc1d5164
+p=lambda a,i=2:[p(b,4)for*b,in map(zip,a,a[i:])]or max(max(a))
 # 🥇 task 297: 43 bytes, gold, https://arcprize.org/play?task=bd4472b8
 p=lambda i:i[:2]+[*zip(*i[:1]*len(i[0]))]*2
 # 🥇 task 298: 55 bytes, gold, https://arcprize.org/play?task=bda2d7a6
