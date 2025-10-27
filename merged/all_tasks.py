@@ -551,7 +551,7 @@ p=lambda g:[g:=[[c*(sum(g,g).count(c)>8!=2*f"{c}, "in"%s"%r)for c in r]for*r,in 
 # 💎 task 223: 46 bytes, gold, https://arcprize.org/play?task=9172f3a0
 p=lambda a:a>a*0!=0and[p(a[0])]*3+p(a[1:])or a
 # 🥈 task 224: 147 vs 138 bytes for gold, https://arcprize.org/play?task=928ad970
-import re;p=lambda g:[g:=eval(r(" 0(?=..[-5])",max(set(g:=r(" [^5](?=,[^)]*[^5]*$)","-0.",str((*zip(*g),)[::-1])))-{"5"}),g))for r in[re.sub]*8][7]
+import re;p=lambda g:[g:=eval(r(" 0(?=..[-5])",str(max({*g[6]}-{5})),r(" [^5](?=,[^)]*[^5]*$)","-0.",str([*zip(*g)][::-1]))))for r in[re.sub]*8][7]
 # 💎 task 225: 126 bytes, gold, https://arcprize.org/play?task=93b581b8
 p=eval(f'lambda i:[[([i[a][b]]*4+[i{" for i in i[a-3:a]+i[a+3:a:-1]for a in[b]"*2}if i])[-4]'+'for %c in range(6)]'*2%(98,97))
 # 💎 task 226: 119 bytes, gold, https://arcprize.org/play?task=941d9a10
