@@ -541,8 +541,8 @@ def p(i):
   if i[f]>i[0]:t=t or f;r=r or i[f:].index(i[0]);i[f-1:f+r]=[n for o in(0,-1,1,2)for d in(t-1,t)if 7not in sum(n:=[[i%7-2%~e for e,i in zip(e,i[:o%4%3]+i[o<0:]+[0])]for e,i in zip(i[f-1:f+r],i[d:])],[])][0];f+=r
   f+=1
  return i
-# ❌ task 220: 90 vs 87 bytes for gold, https://arcprize.org/play?task=913fb3ed
-p=lambda i:[i:=[[x.pop()or-(s*2^s-7)%7for s in[0]+x[:0:-1]]for*x,in zip(*i)]for _ in i][3]
+# 🥉 task 220: 88 vs 87 bytes for gold, https://arcprize.org/play?task=913fb3ed
+p=lambda i:exec("i[::-1]=map(lambda*x,s=0:[v|139%(s|-~s)>>(s:=v)for v in x],*i);"*4)or i
 # 💎 task 221: 86 bytes, gold, https://arcprize.org/play?task=91413438
 def p(i):j=sum(i,i).count(a:=0);return[(q*(9+(a:=a-1)//3*j)+[0]*21)[:j*3]for q in i*j]
 # 💎 task 222: 102 bytes, gold, https://arcprize.org/play?task=91714a58
