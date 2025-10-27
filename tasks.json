@@ -5520,7 +5520,7 @@
                 "escape_cost": 1
             }
         },
-        "public_gold": 267,
+        "public_gold": 263,
         "public_best": 269
     },
     "task159": {
@@ -8558,8 +8558,8 @@
         "public_best": 54
     },
     "task243": {
-        "gold": 79,
-        "best": 79,
+        "gold": 75,
+        "best": 75,
         "solutions": {
             "att": {
                 "source": "cD1sYW1iZGEgYSxuPS03OTphKm4gb3JbKnppcCgqZXZhbChzdHIocChhLG4rMSlbOjotMV0pLnJlcGxhY2UoJzEsIDAnLCcxLDEnKSkpXQ==",
@@ -8576,10 +8576,10 @@
                 "method": "none"
             },
             "ovs": {
-                "source": "cD1sYW1iZGEgZzpbZzo9W1t2PHE8Mm9yKHE6PXYpZm9yIHYgaW4gcl1mb3IqcixpbiB6aXAoKmcpaWZbcTo9Ml1dWzo6LTFdZm9yIF8gaW4gZyo0XVstMV0=",
-                "size_uncompressed": 89,
-                "compressed": "cD1sYW1iZGEgZzpbZzo9W1t2PHE8Mm9yKHE6PXYpZm9yIHYgaW4gcl1mb3IqcixpbiB6aXAoKmcpaWZbcTo9Ml1dWzo6fjBdZm9yIF8gaW4gZyo0XVstMV0=",
-                "size_compressed": 89,
+                "source": "cD1sYW1iZGEgYTpleGVjKCJhWzo6LTFdPXppcCgqZXZhbChzdHIoYSkucmVwbGFjZSgnMSwgMCcsJzEsMScpKSk7Iio4MClvciBhCg==",
+                "size_uncompressed": 75,
+                "compressed": "cD1sYW1iZGEgYTpleGVjKCJhWzo6LTFdPXppcCgqZXZhbChzdHIoYSkucmVwbGFjZSgnMSwgMCcsJzEsMScpKSk7Iio4MClvciBh",
+                "size_compressed": 75,
                 "method": "none"
             },
             "xsot": {
@@ -8835,7 +8835,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 104,
+        "public_gold": 103,
         "public_best": 121
     },
     "task251": {
@@ -9796,7 +9796,7 @@
         "public_best": 194
     },
     "task278": {
-        "gold": 107,
+        "gold": 104,
         "best": 116,
         "solutions": {
             "joking": {
@@ -9835,7 +9835,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 107,
+        "public_gold": 104,
         "public_best": 119
     },
     "task279": {
@@ -10421,7 +10421,7 @@
         "public_best": 54
     },
     "task296": {
-        "gold": 63,
+        "gold": 60,
         "best": 63,
         "solutions": {
             "ovs": {
@@ -10446,7 +10446,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 63,
+        "public_gold": 60,
         "public_best": 63
     },
     "task297": {
@@ -12337,7 +12337,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 84,
+        "public_gold": 83,
         "public_best": 84
     },
     "task353": {

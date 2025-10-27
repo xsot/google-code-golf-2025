@@ -1,4 +1,4 @@
-# ovs (63 bytes, gold)
+# ovs (63 vs 60 bytes for gold)
 p=lambda g:[[*map(max,a,b,a[4:],b[4:])]for a,b in zip(g,g[2:])]
 
 ### combined (tied, 63 bytes)

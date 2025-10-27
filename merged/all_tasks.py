@@ -594,8 +594,8 @@ p=lambda i:[i:=[[(z:=i[b])[~a]|z[a]|z[a%2*(b<a<18-b)*b+2]for b in r]for a in r]f
 p=lambda a:[*zip(*a)]
 # 🥇 task 242: 54 bytes, gold, https://arcprize.org/play?task=9ecd008a
 p=lambda g:[r[~r.index(0)::-1][:3]for r in g if 0in r]
-# 🥇 task 243: 79 bytes, gold, https://arcprize.org/play?task=9edfc990
-p=lambda a,n=-79:a*n or[*zip(*eval(str(p(a,n+1)[::-1]).replace('1, 0','1,1')))]
+# 💎 task 243: 75 bytes, gold, https://arcprize.org/play?task=9edfc990
+p=lambda a:exec("a[::-1]=zip(*eval(str(a).replace('1, 0','1,1')));"*80)or a
 # 🥇 task 244: 63 bytes, gold, https://arcprize.org/play?task=9f236235
 p=lambda a:[b[::(n:=~a.index(min(a,key=set)))]for b in a][::-n]
 # 🥈 task 245: 101 vs 100 bytes for gold, https://arcprize.org/play?task=a1570a43
@@ -669,7 +669,7 @@ p=lambda i:('8'in str(j:=i[(u:=len(i[0])):]))*[[t*y/8for t in s for y in x]for s
 p=lambda a:eval(str(a).replace(*'62'))
 # 💎 task 277: 155 bytes, gold, https://arcprize.org/play?task=b230c067
 z=[0];p=lambda g,k=38,h=2,q=z*9:~k*g or p([q:=[v and[v%63,P|p|v,h:=h*64,v//sum(g,z).count(v)][k>>4]for P,p,v in zip(z+q,z+r,r)]for*r,in zip(*g[::-1])],k-1)
-# 🥈 task 278: 116 vs 107 bytes for gold, https://arcprize.org/play?task=b27ca6d3
+# 🥈 task 278: 116 vs 104 bytes for gold, https://arcprize.org/play?task=b27ca6d3
 import re;p=lambda i:[i:=eval(re.sub("0(?=(.%s.{,9}|..)2, 2)"%{len(i)*3-5},"3",str([*zip(*i[::-1])])))for _ in i][3]
 # 🥈 task 279: 107 vs 106 bytes for gold, https://arcprize.org/play?task=b2862040
 p=lambda g,f=18:~f*g or p([*map(lambda*r,a=0:[a:=9&b%(9|f//9%~5*~a-a+3)or(f<0)*9for b in r],*g[::-1])],f-1)
@@ -727,7 +727,7 @@ p=lambda a:[[d^c^b[0]or d for*_,c,d in zip(*a,b)]for b in a]
 import re;p=lambda m:eval(re.sub('(?<=5.{34})5(?=.{34}5)','2',str(m)))
 # 🥇 task 295: 54 bytes, gold, https://arcprize.org/play?task=bbc9ae5d
 p=lambda a:[b:=a[0]]+[b:=b[:1]+b[:-1]for _ in b[2::2]]
-# 🥇 task 296: 63 bytes, gold, https://arcprize.org/play?task=bc1d5164
+# 🥈 task 296: 63 vs 60 bytes for gold, https://arcprize.org/play?task=bc1d5164
 p=lambda g:[[*map(max,a,b,a[4:],b[4:])]for a,b in zip(g,g[2:])]
 # 🥇 task 297: 43 bytes, gold, https://arcprize.org/play?task=bd4472b8
 p=lambda i:i[:2]+[*zip(*i[:1]*len(i[0]))]*2
