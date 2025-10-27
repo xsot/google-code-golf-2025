@@ -88,7 +88,7 @@ def p(g):
   *g,=map(list,zip(*g[::-1]))
  return g
 
-### xsot (302 (426 unzipped) bytes)
+### xsot (301 (426 unzipped) bytes)
 def p(g):
  for E in range(8):
   I=[]
@@ -124,7 +124,7 @@ def p(g):
   *g,=map(list,zip(*g[::-1]))
  return g
 
-### combined (317 (400 unzipped) bytes)
+### combined (316 (400 unzipped) bytes)
 def p(g,k=7):
  I=[]
  for A,r in enumerate(g):

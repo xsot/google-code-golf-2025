@@ -13,7 +13,7 @@ exec("p=lambda i,n=12:[[i[a][b]or 2*any([sum(s[b-j:][:n])/5for s in i[a-k:][:n]]
 import re
 p=lambda i,k=7,r=re.sub:-k*i or p(eval(r((h:="("+"5, "*(n:=k%5)+"5)")+((s:=f"(.{ {34-n*3}})")+"(5, "+"0, "*n+"5)")*n+s+h,lambda m,s=1:"".join(r(str(s:=s^1),"2",z)for z in m.groups()),str(i))),k-1)
 
-### ovs (270 (310 unzipped) bytes)
+### ovs (269 (310 unzipped) bytes)
 R=range;W=R(12)
 def p(g):
  def t(C):

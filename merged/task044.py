@@ -1,7 +1,7 @@
 # compression_experiments (213 (272 unzipped) vs 195 bytes for gold)
 p=lambda n:[n:=[[i^r*(1&(m:=m>>1)>>99or i==r)for i in i]for r in{*sum(n,[])}if bin(sum((sum(n,[])[i]==r)<<i+9for i in range(100)))in bin(m:=sum((sum(n,[])[i]<5in{*sum(n,[])[i//10*10:i]}&{*sum(n,[])[i:i//10*10+10]})<<i+100for i in range(50)))for i in n][::-1]for i in n][1]
 
-### ovs (215 (272 unzipped) bytes)
+### ovs (214 (272 unzipped) bytes)
 p=lambda i:[i:=[[J^c*(1&(w:=w>>1)>>99or J==c)for J in J]for c in{*sum(i,[])}if bin(sum((sum(i,[])[J]==c)<<J+9for J in range(100)))in bin(w:=sum((sum(i,[])[J]<5in{*sum(i,[])[J//10*10:J]}&{*sum(i,[])[J:J//10*10+10]})<<J+100for J in range(50)))for J in i][::-1]for J in i][1]
 
 ## 222/461
@@ -17,7 +17,7 @@ def p(i):
  for I in-1,-1:f=sum(i,[]);w={J for J in range(50)if f[J]<5in{*f[J//10*10:J]}&{*f[J:J//10*10+10]}};i=[[J^c*(w>{I:=I+1}or J==c)for J in J]for c in{*f}if{J-min(w)+f.index(c)for J in w}=={J for J in range(100)if f[J]==c}for J in i][::-1]
  return i
 
-### joking (229 (463 unzipped) bytes)
+### joking (226 (463 unzipped) bytes)
 # zip fiddling
 def p(i):f=sum(i,[]);w=sum(2<<J for J in range(50)if f[J]<5in{*i[J//10][:J%10]}&{*i[J//10][J%10:]});i=[[J^c*(1&(w:=w>>1)or J==c)for J in J]for c in{*f}if bin(sum(2<<J for J in range(100)if f[J]==c)<<9)in bin(w<<95)for J in i][::-1];f=sum(i,[]);w=sum(2<<J 
 for J in range(50)if f[J]<5in{*i[J//10][:J%10]}&{*i[J//10][J%10:]});i=[[J^c*(1&(w:=w>>1)or J==c)for J in J]for c in{*f}if bin(sum(2<<J for J in range(100)if f[J]==c)<<9)in bin(w<<95)for J in i][::-1];return i

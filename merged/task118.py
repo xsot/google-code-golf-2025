@@ -71,7 +71,7 @@ def p(p):
    for l,n in l:p[l][n]+=3*(p[l][n]&1)
    return p
 
-### combined (330 (412 unzipped) bytes)
+### combined (329 (412 unzipped) bytes)
 def p(i,n=2,R=range):
  s=*R(-n,0),*R(1,n+1);z=*zip(s,z:=[0]*9),*zip(z,[*s,0]);f=eval(str(i))
  for x in R(30):

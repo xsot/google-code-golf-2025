@@ -15,7 +15,7 @@ def	p(e):
 						for	r	in([r	for	r	in	i	if	n[o]==n[r]==n[u]]):r+=(len([r	for	r	in	i	if	n[o]==n[r]==n[u]])^6)%6*(a-u);e[r//66][r%66],={n[r]for	r	in	i}-{n[o]}
 	return	e
 
-### joking (278 (439 unzipped) bytes)
+### joking (277 (439 unzipped) bytes)
 def p(g):
  *C,M={A*66+j:(g)for A,g in enumerate(g)for j,g in enumerate(g)if g},
  for A in M:
@@ -50,7 +50,7 @@ def p(g):
       for V in([V for V in I if M[A]==M[V]==M[G]]):V+=(len([V for V in I if M[A]==M[V]==M[G]])^6)%6*(Q-G);g[V//#[prev_vals[0]]##][V%#[prev_vals[0]]##],={M[V]for V in I}-{M[A]}
  return g
 
-### ovs (290 (390 unzipped) bytes)
+### ovs (288 (390 unzipped) bytes)
 def p(g):
  *C,M={i*90+j:g for i,g in enumerate(g)for j,g in enumerate(g)if g},
  for A in M:

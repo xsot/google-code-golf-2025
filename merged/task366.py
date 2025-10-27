@@ -96,7 +96,7 @@ def p(g):
  for r,s in sorted((-sum(m^s for s in s for s in s),s)for s in s):i=-1;g=eval(re.sub(('(.%s)'%{3*len(g[0])-3*len((s+g)[0])+4}).join(re.sub(str(m),str(B),str(s)[1:-1])for s in s),''.join(f'\g<{(i:=i+1)}>'*(i>0)+str(s)[1:-1]for s in s),str(g)))
  return[r for r in zip(*[r for r in zip(*g)if B in r])if B in r]
 
-### xsot (364 (613 unzipped) bytes)
+### xsot (362 (613 unzipped) bytes)
 def p(m):
  *_,B,S,D=sorted({*sum(m,C:=[])},key=sum(m,C:=[]).count)
  if(S in m[0])*(D in m[0]):return[*zip(*p([[*C]for C in zip(*m)]))]

@@ -6,7 +6,7 @@ def p(i):
   f+=1
  return i
 
-### ovs (244 (261 unzipped) bytes)
+### ovs (tied, 243 (261 unzipped) bytes)
 def p(g):
  q=H=i=0
  while g[i:]:

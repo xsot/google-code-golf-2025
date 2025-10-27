@@ -5,7 +5,7 @@ def	p(t):
 		for	s	in	e:o=min(n:={(s-g//4*s.real*2)*1j**g:e[s]^2for	s	in[*r]},key=n.get)-s;t=min(e.get(s-o,3)==13%-~n[s]^2for	s	in[*n])*[[n.get(g*1j+s+o,f^2)^2for	s,f	in	enumerate(f)]for	g,f	in	enumerate(t)]or	t
 	return	t
 
-### joking (272 (384 unzipped) bytes)
+### joking (271 (384 unzipped) bytes)
 def	p(g):
 	I={min(J:={i*1j+j:r	for	i,r	in	enumerate(g)for	j,r	in	enumerate(r)if	r},key=J.get)};G=J;[abs(j-i)<2!=I.add(i)for	i	in[*G]*6for	j	in[*I]]
 	for	i,r	in	enumerate(g):
@@ -19,7 +19,7 @@ def p(g):
   for j in#['[*G]',' G']##:P=min(J:={(j-i//4*j.real*2)*1j**i:G[j]^2for j in[*I]},key=J.get)-j;g=min(G.get(j-P,3)==#[13,73]##%-~J[j]^2for j in[*J])*[[J.get(i*1j+j+P,r^2)^2for j,r in enumerate(r)]for i,r in enumerate(g)]or g
  return g
 
-### ovs (276 (380 unzipped) bytes)
+### ovs (275 (380 unzipped) bytes)
 def p(g):
  I={min(J:={j+i*1j:I for i,r in enumerate(g)for j,I in enumerate(r)if I},key=J.get)};G=J;[abs(j-i)<2!=I.add(i)for i in[*G]*6for j in[*I]]
  for i,r in enumerate(g):

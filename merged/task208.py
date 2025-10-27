@@ -46,7 +46,7 @@ def p(g):
    for r,r[C:C-~E]in zip(g[B+19*sum(sum(A[C+1:C+E])for A in g[B+1:B+D]):],A):0
  return g
 
-### combined (255 (290 unzipped) bytes)
+### combined (254 (290 unzipped) bytes)
 def p(g):
  e=enumerate;A=g
  for G in'  ':A=[[*A]for A in zip(*A)if min(k:=sum(g,[]),key=k.count)in A];D,E=len(A),len(A[0])
@@ -54,7 +54,7 @@ def p(g):
   for C,c in e(r[:-E]):
    if c!=A[0][0]!=sum(sum(A[C+1:C+E-1])for A in g[B+1:B+D-1])<1:return g[:B]+[f[:C]+F+f[C+E:]for F,f in zip(A,g[B:])]+g[B+D:]
 
-### mwi (257 (294 unzipped) bytes)
+### mwi (254 (294 unzipped) bytes)
 def p(g):
  A=g
  for G in'zi':A=[[*A]for A in zip(*A)if min(k:=sum(g,[]),key=k.count)in A];D,E=len(A),len(A[0])

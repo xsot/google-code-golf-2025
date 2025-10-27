@@ -9,10 +9,10 @@ p=lambda n:[n for l,s in enumerate(n)for d,s in enumerate(s)for y,s in enumerate
 p=lambda n:[exec(((r:=[n[y-f//3][t-f%3]for f in range(9)])==r[::-1])*any(r[4]*r[:4])*(r[4]==n[l-1][d-1]or sum(n[l-f//3][d-f%3]==r[f]for f in range(9))>7)*'for f in range(9):n[l-f//3][d-f%3]=r[f]')for l in range(len(n))for y in range(len(n))for d in range(len(n[0]))for t in range(len(n[0]))]*0+n
 p=lambda n:[exec('for f in range(9):n[l-f//3][d-f%3]=r[f]')for l in range(len(n))for y in range(len(n))for d in range(len(n[0]))for t in range(len(n[0]))if((r:=[n[y-f//3][t-f%3]for f in range(9)])==r[::-1])*any(r[4]*r[:4])*(r[4]==n[l-1][d-1]or sum(n[l-f//3][d-f%3]==r[f]for f in range(9))>7)]*0+n
 
-### garry_moss (222 (313 unzipped) bytes)
+### garry_moss (221 (313 unzipped) bytes)
 def p(n):[((r:=[n[y+f//3][t+f%3]for f in range(9)])==r[::-1])*r[4]*any(r[:4])*(r[4]==n[l+1][d+1]or sum(n[l+f//3][d+f%3]==r[f]for f in range(9))==8)and exec('for f in range(9):n[l+f//3][d+f%3]=r[f]')for l in range(len(n)-2) for y in range(len(n)-2) for d in range(len(n[0])-2) for t in range(len(n[0])-2)];return n
 
-### ovs (228 (271 unzipped) bytes)
+### ovs (225 (271 unzipped) bytes)
 def p(g):o=[(Y,x,y)for Y,a in enumerate(g)for x,a in enumerate(a)if(y:=[a for a in g[Y:Y+3]for a in a[x:x+3]])==y[::-1]>y[:8]>[0]*8];[0for Y,X,a in o for Y,X,A in o for y,g[Y+y//3][X+y%3]in enumerate(a*(len({*a})==3*len({a[y]for y,r in enumerate(A)if r-a[y]})))];return g
 
 ## very close to not need compression, 241/245:

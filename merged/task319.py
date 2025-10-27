@@ -98,7 +98,7 @@ modchain(p, 5)
 ## this one checks if the hash modulo is in a list, unfortunately this means the list basically has to be the size of the number of ones
 p=lambda i:[[[t[-1],y][y==l]for*s,y in zip(*i,x)if l in s]for x in i if(l:=(t:=sorted({*(z:=sum(i,[]))},key=z.count))[(q:=0)+hash((*z,))%5009%2681in[q:=q+n for n in b' ">?,v%6&!!	B!Z%$7!0NK"?ND|Rt	']])in x]
 
-### combined (304 (392 unzipped) bytes)
+### combined (303 (392 unzipped) bytes)
 E=enumerate
 def p(g):
  f=sum(g,[]);*r,b=sorted({*f},key=f.count);W,H=len(g[0]),len(g);T={C:{(i,j)for i,r in E(g)for j,v in E(r)if C==v}for C in r}
