@@ -1,6 +1,5 @@
-# ovs (100 vs 98 bytes for gold)
-import re
-p=lambda g:[g:=eval(re.sub("[^50],([^(]+5)",r"\1,5",str([*zip(*g[::-1])])))for _ in g][11]
+# ovs (98 bytes, gold)
+import re;p=lambda g:exec(r'g[::-1]=zip(*eval(re.sub("[^50],([^[(]+5)",r"\1,5",str(g))));'*12)or g
 
 ### xsot (102 bytes)
 import re

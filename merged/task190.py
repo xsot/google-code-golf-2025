@@ -1,4 +1,7 @@
-# att (106 vs 105 bytes for gold)
+# ovs (103 bytes, gold)
+import re;p=lambda i:exec(r"i[::-1]=zip(*eval(re.sub('.{31}0, ([^0])'*2,r'|\1\g<0>',str(i))));"*20)or i
+
+### att (106 bytes)
 import re;p=lambda i,k=19:-k*i or[*zip(*eval(re.sub('.{31}0, ([^0])'*2,r"|\1\g<0>",str(p(i,k-1))))[::-1])]
 
 ### joking (108 bytes)

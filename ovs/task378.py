@@ -1,4 +1,4 @@
-import re;p=lambda i,k=3:-k*i or[*zip(*eval(re.sub("0(?=(%s 0)*%s ., [^0]%s?%s (.))"%(('.%s.0,'%{3*len(i)},)*4),"\\2",str(p(i,k-1)))))][::-1]
+import re;p=lambda i:exec(r"i[::-1]=zip(*eval(re.sub('0(?=(%s 0)*%s ., [^0]%s?%s (.))'%(('.%s.0,'%{3*len(i)},)*4),'\\2',str(i))));"*4)or i
 
 ##
 
