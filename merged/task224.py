@@ -9,8 +9,12 @@ import re;p=lambda g,k=7:-k*g or p(eval(re.sub(*[" 0(?=,[^)]*[^5]*$)","0."," 0(?
 
 def p(g):E=enumerate;(y,*_,Y),(x,*_,X)=map(sorted,zip(*[(i,j)for i,r in E(g)for j,v in E(r)if v]));f=sum(g,[]);c,={*f}-{0,5};return[[v|c*((x<j<X)*(i in{y+1,Y-1})|(y<i<Y)*(j in{x+1,X-1}))for j,v in E(r)]for i,r in E(g)]
 
-### mwi (157 bytes)
+### mwi (151 bytes)
+import re;p=lambda g:[g:=eval(r(" 0(?=, 0.0|, 5)",max(set(g:=r(" [^5](?=,[^)]*[^5]*$)","0.",str([*zip(*g)][::-1])))-{*"[5]"}),g))for r in[re.sub]*8][7]
+
+##
 import re;p=lambda g:[g:=eval(re.sub(" 0(?=,"+a,b,str([*zip(*g)][::-1])))for a,b in[["[0, ]*5?[^5]*$)","0."]]*4+[[" 0.0|, 5)",max({*str(g)}-{*"[5]"})]]*4][7]
+import re;p=lambda g:[g:=eval(re.sub(*a,str([*zip(*g)][::-1])))for a in[[" 0(?=,[0, ]*5?[^5]*$)","0."]]*4+[[" 0(?=, 0.0|, 5)",max({*str(g)}-{*"[5]"})]]*4][7]
 
 ### joking (165 bytes)
 # feels golfable
