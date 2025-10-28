@@ -1,4 +1,7 @@
-# combined (56 vs 50 bytes for gold)
+# joking (49 bytes, gold)
+p=lambda i:i*0!=0and[i:=[p(x),x][x!=i]for x in i]
+
+### combined (56 bytes)
 p=lambda i:[i:=[f:=y*(x!=i or f<y)for y in x]for x in i]
 
 ### ovs (57 bytes)

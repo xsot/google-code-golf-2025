@@ -184,8 +184,8 @@ p=lambda g:[f:=g[0],[*map(max,[0]+f,f[1:]+[0])]]*3
 p=lambda a:[b+b[::-1]for b in a+a[::-1]]
 # 🥇 task 84: 62 bytes, gold, https://arcprize.org/play?task=3bd67248
 def p(i,x=1):i[-1][x]=4;i[~x][x]=2;i[:~x]and p(i,x+1);return i
-# 🥈 task 85: 56 vs 50 bytes for gold, https://arcprize.org/play?task=3bdb4ada
-p=lambda i:[i:=[f:=y*(x!=i or f<y)for y in x]for x in i]
+# 💎 task 85: 49 bytes, gold, https://arcprize.org/play?task=3bdb4ada
+p=lambda i:i*0!=0and[i:=[p(x),x][x!=i]for x in i]
 # 💎 task 86: 151 bytes, gold, https://arcprize.org/play?task=3befdf3e
 p=lambda i,k=7,s=0:-k*i or[[[-((s:=[abs(s)or 1,s&s//4][y>0]-1)>1)|y,*[x for x in sum(i,x)if 0<x!=y!=0],0][k>6]for y in x]for*x,in zip(*p(i,k-1)[::-1])]
 # 🥇 task 87: 36 bytes, gold, https://arcprize.org/play?task=3c9b0459
