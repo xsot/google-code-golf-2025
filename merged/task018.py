@@ -1,5 +1,5 @@
-# compression_experiments (281 (369 unzipped) bytes, gold)
-def p(a):f={r*1j+n:a for r,a in enumerate(a)for n,a in enumerate(a)if a};[(e:={n},[abs(t-l)<2==e.add(t)for t in[*f]*5for l in[*e]],[*e][3:]and[5for i in[1,3,6,7]for o in f if all(sum(f[t]==f.get(n)for n in[*e,(t-n-i//4*(t-n).real*2)*1j**i+o])>1for t in e)for t in e for r,a[int(r.imag)][int(r.real)]in(((t-n-i//4*(t-n).real*2)*1j**i+o,f[t]),(t,0))])for n in f];return a
+# compression_experiments (280 (369 unzipped) bytes, gold)
+def p(i):n={m*1j+a:i for m,i in enumerate(i)for a,i in enumerate(i)if i};[(u:={a},[abs(e-t)<2==u.add(e)for e in[*n]*5for t in[*u]],[*u][3:]and[5for f in[1,3,6,7]for r in n if all(sum(n[e]==n.get(a)for a in[*u,(e-a-f//4*(e-a).real*2)*1j**f+r])>1for e in u)for e in u for m,i[int(m.imag)][int(m.real)]in(((e-a-f//4*(e-a).real*2)*1j**f+r,n[e]),(e,0))])for a in n];return i
 
 ### joking (283 (409 unzipped) bytes)
 # zip fiddling
