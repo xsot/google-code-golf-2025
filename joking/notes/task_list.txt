@@ -3,8 +3,6 @@ list of tasks by difficulty, as measured by vibes
 improvable (easy)
 029
 036
-184
-213
 254
 319
 
@@ -62,6 +60,8 @@ improvable (worth it)
 355
 365
 392
+184
+213
 
 improvable (hard)
 001
