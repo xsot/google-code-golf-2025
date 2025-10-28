@@ -1,5 +1,14 @@
-# compression_experiments (279 (401 unzipped) bytes, gold)
-def p(f):e={i*1j+o:f for i,f in enumerate(f)for o,f in enumerate(f)if f};[(u:={r},[abs(l-a)<2==u.add(l)for l in[*e]*5for a in[*u]],[*u][3:]and[5for d in[1,3,6,7]for n in e if all(sum(e[l]==e.get(o)for o in[*u,(l-r-d//4*(l-r).real*2)*1j**d+n])>1for l in u)for l in u if(f:=[[{l:0,(l-r-d//4*(l-r).real*2)*1j**d+n:e[l]}.get(i*1j+o,f)for o,f in enumerate(f)]for i,f in enumerate(f)])])for r in e];return f
+# compression_experiments (276 (402 unzipped) bytes, gold)
+def p(a):e={r*1j+o:a for r,a in enumerate(a)for o,a in enumerate(a)if a};[(m:={i},[m:={i}|m for i in[*e]*5for j in m if abs(i-j)<2],[*m][3:]and[5for n in[1,3,6,7]for f in e if all(sum(e[j]==e.get(o)for o in[*m,(j-i-n//4*(j-i).real*2)*1j**n+f])>1for j in m)for j in m if(a:=[[{j:0,(j-i-n//4*(j-i).real*2)*1j**n+f:e[j]}.get(r*1j+o,a)for o,a in enumerate(a)]for r,a in enumerate(a)])])for i in e];return a
+
+### ovs (279 (402 unzipped) bytes)
+def p(g):G={i*1j+j:g for i,g in enumerate(g)for j,g in enumerate(g)if g};[(s:={J},[s:={J}|s for J in[*G]*5for x in s if abs(J-x)<2],[*s][3:]and[5for a in[1,3,6,7]for O in G if all(sum(G[x]==G.get(j)for j in[*s,(x-J-a//4*(x-J).real*2)*1j**a+O])>1for x in s)for x in s if(g:=[[{x:0,(x-J-a//4*(x-J).real*2)*1j**a+O:G[x]}.get(i*1j+j,g)for j,g in enumerate(g)]for i,g in enumerate(g)])])for J in G];return g
+
+##
+def p(g):G={i*1j+j:g for i,g in enumerate(g)for j,g in enumerate(g)if g};[(s:={j},[abs(x-y)<2==s.add(x)for x in[*G]*5for y in[*s]],[*s][3:]and[5for a in[1,3,6,7]for O in G if all(sum(G[x]==G.get(j)for j in[*s,(x-j-a//4*(x-j).real*2)*1j**a+O])>1for x in s)for x in s for i,g[int(i.imag)][int(i.real)]in(((x-j-a//4*(x-j).real*2)*1j**a+O,G[x]),(x,0))])for j in G];return g
+
+##
+def p(g):G={i*1j+j:g for i,g in enumerate(g)for j,g in enumerate(g)if g};[(s:={j},[abs(x-y)<2==s.add(x)for x in[*G]*5for y in[*s]],[*s][3:]and[5for a in[1,3,6,7]for O in G if all(G[x]in{max(f:=[G[j]for j in G],key=f.count),G.get((x-j-a//4*(x-j).real*2)*1j**a+O)}for x in s)for x in s for i,g[int(i.imag)][int(i.real)]in(((x-j-a//4*(x-j).real*2)*1j**a+O,G[x]),(x,0))])for j in G];return g
 
 ### joking (283 (409 unzipped) bytes)
 # zip fiddling
@@ -7,15 +16,6 @@ def p(g):G={i*1j+j:g for i,g in enumerate(g)for j,g in enumerate(g)if g};[(s:={j
 
 ##
 def p(g):G={i*1j+j:g for i,g in enumerate(g)for j,g in enumerate(g)if g};[(s:={j},[abs(x-a)<2==s.add(x)for x in[*G]*#[*range(5,10)]##for a in[*s]],[#[*range(10)]##for a in[*s][#[3,4,5]##:]for a in[1,3,10,11]for O in[*G]if all(G[x]in(max([G[x]for x in[*G]],key=[G[x]for x in[*G]].count),G.get((x-j-a//#[4,5]##*(x-j).real)*1j**a+O))for x in s)for x in s for i,g[int(#['(-i*1j).real','i.imag']##)][int(i.real)]in(((x-j-a//#[prev_vals[-2]]##*(x-j).real)*1j**a+O,G[x]),(x,0))])for j in[*G]];return g
-
-### ovs (284 (401 unzipped) bytes)
-def p(g):G={i*1j+j:g for i,g in enumerate(g)for j,g in enumerate(g)if g};[(s:={J},[abs(x-y)<2==s.add(x)for x in[*G]*5for y in[*s]],[*s][3:]and[5for a in[1,3,6,7]for O in G if all(sum(G[x]==G.get(j)for j in[*s,(x-J-a//4*(x-J).real*2)*1j**a+O])>1for x in s)for x in s if(g:=[[{x:0,(x-J-a//4*(x-J).real*2)*1j**a+O:G[x]}.get(i*1j+j,g)for j,g in enumerate(g)]for i,g in enumerate(g)])])for J in G];return g
-
-##
-def p(g):G={i*1j+j:g for i,g in enumerate(g)for j,g in enumerate(g)if g};[(s:={j},[abs(x-y)<2==s.add(x)for x in[*G]*5for y in[*s]],[*s][3:]and[5for a in[1,3,6,7]for O in G if all(sum(G[x]==G.get(j)for j in[*s,(x-j-a//4*(x-j).real*2)*1j**a+O])>1for x in s)for x in s for i,g[int(i.imag)][int(i.real)]in(((x-j-a//4*(x-j).real*2)*1j**a+O,G[x]),(x,0))])for j in G];return g
-
-##
-def p(g):G={i*1j+j:g for i,g in enumerate(g)for j,g in enumerate(g)if g};[(s:={j},[abs(x-y)<2==s.add(x)for x in[*G]*5for y in[*s]],[*s][3:]and[5for a in[1,3,6,7]for O in G if all(G[x]in{max(f:=[G[j]for j in G],key=f.count),G.get((x-j-a//4*(x-j).real*2)*1j**a+O)}for x in s)for x in s for i,g[int(i.imag)][int(i.real)]in(((x-j-a//4*(x-j).real*2)*1j**a+O,G[x]),(x,0))])for j in G];return g
 
 ### mwi (312 (396 unzipped) bytes)
 def	p(g):
