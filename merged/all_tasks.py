@@ -262,13 +262,13 @@ p=lambda a,*n:[*zip(*map({}.fromkeys,n or p(a,*a)))]
 p=lambda a:a[::-1]+a
 # 💎 task 117: 130 bytes, gold, https://arcprize.org/play?task=4c5c2cf0
 p=lambda i:[i:=[*zip(*map(max,i,(i*2)[j*2::-1]+i[::-1]))]for j in b'	'*2if[x.count(max(i[j]))for x in i[j-1:j+2]]==[2,1,2]][1]
-# 💎 task 118: 226 (300 unzipped) bytes, gold, https://arcprize.org/play?task=50846271
-def	p(r):
+# 💎 task 118: 225 (300 unzipped) bytes, gold, https://arcprize.org/play?task=50846271
+def	p(u):
 	for	f	in(2,3):
-		t,e,i,*n=[{s-o*1jfor	o,r	in	enumerate(r)for	s,r	in	enumerate(r)if	r>=f}for	f	in(2,0,5,6)]
-		for	o	in	e:j={s	for	s	in	e	if	abs(s-o)in(2,0,1,f)};n+=[f|j	for	f	in	n	if	t-f>j]
-		for	f	in	n:
-			if	t-i<f:return[[r+3*(s-o*1jin	f&i)for	s,r	in	enumerate(r)]for	o,r	in	enumerate(r)]
+		a,e,n,*r=[{s-j*1jfor	j,u	in	enumerate(u)for	s,u	in	enumerate(u)if	u>=f}for	f	in(2,0,5,6)]
+		for	j	in	e:i={s	for	s	in	e	if	abs(s-j)in(2,0,1,f)};r+=[f|i	for	f	in	r	if	a-f>i]
+		for	f	in	r:
+			if	a-n<f:return[[u+3*(s-j*1jin	f&n)for	s,u	in	enumerate(u)]for	j,u	in	enumerate(u)]
 # 💎 task 119: 102 bytes, gold, https://arcprize.org/play?task=508bd3b6
 import re;p=lambda i:exec('i[::-1]=zip(*eval(re.sub("0(?=.{34}[38].{34}[382])","3",str(i))));'*40)or i
 # 💎 task 120: 78 bytes, gold, https://arcprize.org/play?task=50cb2852
@@ -872,15 +872,15 @@ def p(g):
 p=lambda i,k=11,s=[0]*22:-k*i or p([s:=[[y%7*9%13%9,u*t%2<<k%4*3+6|y|u][k>0<y]for y,t,u in zip(x,[0]+x,s)]for*x,in zip(*i)][::-1],k-1)
 # 🥇 task 365: 111 bytes, gold, https://arcprize.org/play?task=e50d258f
 p=lambda a:max([-(c:=sum(b:=[b[x%8:x%11]for b in a[x%9:x%13]],a).count)(0),c(2),c(1),b]for x in range(5**6))[3]
-# 💎 task 366: 302 (495 unzipped) bytes, gold, https://arcprize.org/play?task=e6721834
-def p(g):
- *s,m,b,B=sorted({*sum(g,[])},key=sum(g,[]).count)
- *s,=g,
- for r in s*6:
-  for r in s+(s:=[]):
-   s+=[],
-   for r in zip(*r):s+=s.pop()+[r]if{b,B}-{*r}>{b}or{*r}>{b}else[],
- [6for y,s in sorted((-sum(m^s for s in s for s in s),s)for s in s)for y,r in enumerate(g)for x,r in enumerate(r)for h,r in zip(g[y:]+g,s*all((a==r)!=(m==r)==(a==B)for h,r in zip(g[y:]+g,s)for a,r in zip(h[x:x+len(r)]+g,r)))for h[x:x+len(r)]in[r]];return[r for r in zip(*[r for r in zip(*g)if B in r])if B in r]
+# 💎 task 366: 301 (495 unzipped) bytes, gold, https://arcprize.org/play?task=e6721834
+def p(e):
+ *u,l,n,i=sorted({*sum(e,[])},key=sum(e,[]).count)
+ *u,=e,
+ for f in u*6:
+  for f in u+(u:=[]):
+   u+=[],
+   for f in zip(*f):u+=u.pop()+[f]if{n,i}-{*f}>{n}or{*f}>{n}else[],
+ [6for m,u in sorted((-sum(l^u for u in u for u in u),u)for u in u)for m,f in enumerate(e)for s,f in enumerate(f)for o,f in zip(e[m:]+e,u*all((r==f)!=(l==f)==(r==i)for o,f in zip(e[m:]+e,u)for r,f in zip(o[s:s+len(f)]+e,f)))for o[s:s+len(f)]in[f]];return[f for f in zip(*[f for f in zip(*e)if i in f])if i in f]
 # 💎 task 367: 126 bytes, gold, https://arcprize.org/play?task=e73095fd
 import re
 p=lambda g,k=-19:k*g or p(eval(re.sub(f"0(?=, 4|.{ {N:=len(g)*3+4}}5, 0.{ {N-6}}0)","4",str([*zip(*g)][::-1]))),k+1)

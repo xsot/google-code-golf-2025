@@ -1,10 +1,10 @@
-# compression_experiments (226 (300 unzipped) bytes, gold)
-def	p(r):
+# compression_experiments (225 (300 unzipped) bytes, gold)
+def	p(u):
 	for	f	in(2,3):
-		t,e,i,*n=[{s-o*1jfor	o,r	in	enumerate(r)for	s,r	in	enumerate(r)if	r>=f}for	f	in(2,0,5,6)]
-		for	o	in	e:j={s	for	s	in	e	if	abs(s-o)in(2,0,1,f)};n+=[f|j	for	f	in	n	if	t-f>j]
-		for	f	in	n:
-			if	t-i<f:return[[r+3*(s-o*1jin	f&i)for	s,r	in	enumerate(r)]for	o,r	in	enumerate(r)]
+		a,e,n,*r=[{s-j*1jfor	j,u	in	enumerate(u)for	s,u	in	enumerate(u)if	u>=f}for	f	in(2,0,5,6)]
+		for	j	in	e:i={s	for	s	in	e	if	abs(s-j)in(2,0,1,f)};r+=[f|i	for	f	in	r	if	a-f>i]
+		for	f	in	r:
+			if	a-n<f:return[[u+3*(s-j*1jin	f&n)for	s,u	in	enumerate(u)]for	j,u	in	enumerate(u)]
 
 ### joking (229 (300 unzipped) bytes)
 def p(I):
