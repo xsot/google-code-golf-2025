@@ -545,8 +545,8 @@ def p(i):
 p=lambda i:exec("i[::-1]=map(lambda*x,s=0:[v|139%(s|-~s)>>(s:=v)for v in x],*i);"*4)or i
 # 💎 task 221: 86 bytes, gold, https://arcprize.org/play?task=91413438
 def p(i):j=sum(i,i).count(a:=0);return[(q*(9+(a:=a-1)//3*j)+[0]*21)[:j*3]for q in i*j]
-# 💎 task 222: 102 bytes, gold, https://arcprize.org/play?task=91714a58
-p=lambda g:[g:=[[c*(sum(g,g).count(c)>8!=2*f"{c}, "in"%s"%r)for c in r]for*r,in zip(*g)]for _ in g][5]
+# 💎 task 222: 93 bytes, gold, https://arcprize.org/play?task=91714a58
+p=lambda g:[g:=[[c*(str(r*7+g).count(2*f"{c}, ")>9)for c in r]for*r,in zip(*g)]for _ in g][5]
 # 💎 task 223: 46 bytes, gold, https://arcprize.org/play?task=9172f3a0
 p=lambda a:a>a*0!=0and[p(a[0])]*3+p(a[1:])or a
 # 💎 task 224: 131 bytes, gold, https://arcprize.org/play?task=928ad970

@@ -1,5 +1,5 @@
-# ovs (102 bytes, gold)
-p=lambda g:[g:=[[c*(sum(g,g).count(c)>8!=2*f"{c}, "in"%s"%r)for c in r]for*r,in zip(*g)]for _ in g][5]
+# ovs (93 bytes, gold)
+p=lambda g:[g:=[[c*(str(r*7+g).count(2*f"{c}, ")>9)for c in r]for*r,in zip(*g)]for _ in g][5]
 
 ##
 
