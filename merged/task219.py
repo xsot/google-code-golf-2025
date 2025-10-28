@@ -1,4 +1,4 @@
-# compression_experiments (243 (261 unzipped) bytes, gold)
+# compression_experiments (243 (261 unzipped) vs 241 bytes for gold)
 def p(i):
  t=r=f=0
  while i[f:]:

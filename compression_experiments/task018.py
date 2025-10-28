@@ -1,0 +1,1 @@
+def p(a):f={r*1j+n:a for r,a in enumerate(a)for n,a in enumerate(a)if a};[(e:={n},[abs(t-l)<2==e.add(t)for t in[*f]*5for l in[*e]],[*e][3:]and[5for i in[1,3,6,7]for o in f if all(sum(f[t]==f.get(n)for n in[*e,(t-n-i//4*(t-n).real*2)*1j**i+o])>1for t in e)for t in e for r,a[int(r.imag)][int(r.real)]in(((t-n-i//4*(t-n).real*2)*1j**i+o,f[t]),(t,0))])for n in f];return a

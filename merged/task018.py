@@ -1,11 +1,17 @@
-# joking (283 (409 unzipped) bytes, gold)
+# compression_experiments (281 (369 unzipped) bytes, gold)
+def p(a):f={r*1j+n:a for r,a in enumerate(a)for n,a in enumerate(a)if a};[(e:={n},[abs(t-l)<2==e.add(t)for t in[*f]*5for l in[*e]],[*e][3:]and[5for i in[1,3,6,7]for o in f if all(sum(f[t]==f.get(n)for n in[*e,(t-n-i//4*(t-n).real*2)*1j**i+o])>1for t in e)for t in e for r,a[int(r.imag)][int(r.real)]in(((t-n-i//4*(t-n).real*2)*1j**i+o,f[t]),(t,0))])for n in f];return a
+
+### joking (283 (409 unzipped) bytes)
 # zip fiddling
 def p(g):G={i*1j+j:g for i,g in enumerate(g)for j,g in enumerate(g)if g};[(s:={j},[abs(x-a)<2==s.add(x)for x in[*G]*5for a in[*s]],[2for a in[*s][4:]for a in[1,3,10,11]for O in[*G]if all(G[x]in(max([G[x]for x in[*G]],key=[G[x]for x in[*G]].count),G.get((x-j-a//4*(x-j).real)*1j**a+O))for x in s)for x in s for i,g[int(i.imag)][int(i.real)]in(((x-j-a//4*(x-j).real)*1j**a+O,G[x]),(x,0))])for j in[*G]];return g
 
 ##
 def p(g):G={i*1j+j:g for i,g in enumerate(g)for j,g in enumerate(g)if g};[(s:={j},[abs(x-a)<2==s.add(x)for x in[*G]*#[*range(5,10)]##for a in[*s]],[#[*range(10)]##for a in[*s][#[3,4,5]##:]for a in[1,3,10,11]for O in[*G]if all(G[x]in(max([G[x]for x in[*G]],key=[G[x]for x in[*G]].count),G.get((x-j-a//#[4,5]##*(x-j).real)*1j**a+O))for x in s)for x in s for i,g[int(#['(-i*1j).real','i.imag']##)][int(i.real)]in(((x-j-a//#[prev_vals[-2]]##*(x-j).real)*1j**a+O,G[x]),(x,0))])for j in[*G]];return g
 
-### ovs (294 (387 unzipped) bytes)
+### ovs (284 (369 unzipped) bytes)
+def p(g):G={i*1j+j:g for i,g in enumerate(g)for j,g in enumerate(g)if g};[(s:={j},[abs(x-y)<2==s.add(x)for x in[*G]*5for y in[*s]],[*s][3:]and[5for a in[1,3,6,7]for O in G if all(sum(G[x]==G.get(j)for j in[*s,(x-j-a//4*(x-j).real*2)*1j**a+O])>1for x in s)for x in s for i,g[int(i.imag)][int(i.real)]in(((x-j-a//4*(x-j).real*2)*1j**a+O,G[x]),(x,0))])for j in G];return g
+
+##
 def p(g):G={i*1j+j:g for i,g in enumerate(g)for j,g in enumerate(g)if g};[(s:={j},[abs(x-y)<2==s.add(x)for x in[*G]*5for y in[*s]],[*s][3:]and[5for a in[1,3,6,7]for O in G if all(G[x]in{max(f:=[G[j]for j in G],key=f.count),G.get((x-j-a//4*(x-j).real*2)*1j**a+O)}for x in s)for x in s for i,g[int(i.imag)][int(i.real)]in(((x-j-a//4*(x-j).real*2)*1j**a+O,G[x]),(x,0))])for j in G];return g
 
 ### mwi (312 (396 unzipped) bytes)

@@ -1,9 +1,9 @@
-# compression_experiments (270 (384 unzipped) bytes, gold)
-def	p(t):
-	r={min(n:={g*1j+s:f	for	g,f	in	enumerate(t)for	s,f	in	enumerate(f)if	f},key=n.get)};e=n;[abs(s-g)<2!=r.add(g)for	g	in[*e]*6for	s	in[*r]]
-	for	g,f	in	enumerate(t):
-		for	s	in	e:o=min(n:={(s-g//4*s.real*2)*1j**g:e[s]^2for	s	in[*r]},key=n.get)-s;t=min(e.get(s-o,3)==13%-~n[s]^2for	s	in[*n])*[[n.get(g*1j+s+o,f^2)^2for	s,f	in	enumerate(f)]for	g,f	in	enumerate(t)]or	t
-	return	t
+# compression_experiments (269 (384 unzipped) bytes, gold)
+def	p(f):
+	r={min(n:={o*1j+t:u	for	o,u	in	enumerate(f)for	t,u	in	enumerate(u)if	u},key=n.get)};e=n;[abs(t-o)<2!=r.add(o)for	o	in[*e]*6for	t	in[*r]]
+	for	o,u	in	enumerate(f):
+		for	t	in	e:a=min(n:={(t-o//4*t.real*2)*1j**o:e[t]^2for	t	in[*r]},key=n.get)-t;f=min(e.get(t-a,3)==13%-~n[t]^2for	t	in[*n])*[[n.get(o*1j+t+a,u^2)^2for	t,u	in	enumerate(u)]for	o,u	in	enumerate(f)]or	f
+	return	f
 
 ### joking (271 (384 unzipped) bytes)
 def	p(g):
