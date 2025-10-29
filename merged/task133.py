@@ -1,19 +1,39 @@
-# compression_experiments (275 (439 unzipped) bytes, gold)
-def	p(n):
-	*f,e={u*66+o:(n)for	u,n	in	enumerate(n)for	o,n	in	enumerate(n)if	n},
-	for	u	in	e:
-		t={u}
-		for	m	in*f,:
-			if{u-66,u-1}&m:f.remove(m);t|=m
-		f+=t,
-	for	m	in*f,:
-		for	u	in	m:
-			for	t	in	m:
-				r=m
-				for	r	in	1//len([a	for	a	in	r	if	e[u]==e[a]])*f:
-					for	i	in	m-{t}:
-						for	a	in([a	for	a	in	r	if	e[u]==e[a]==e[t]]):a+=(len([a	for	a	in	r	if	e[u]==e[a]==e[t]])^6)%6*(i-t);n[a//66][a%66],={e[a]for	a	in	r}-{e[u]}
-	return	n
+# compression_experiments (273 (429 unzipped) bytes, gold)
+def p(t):
+ *r,d={n*66+l:(t)for n,t in enumerate(t)for l,t in enumerate(t)if t},
+ for n in d:i={n};r=[f for f in r if f==f-{n-66,n-1}or i.update(f)]+[i]
+ for f in r:
+  for n in f:
+   for i in f:
+    e=f
+    for e in 1//len([u for u in e if d[n]==d[u]])*r:
+     for o in f-{i}:
+      for u in[u for u in e if d[n]==d[u]==d[i]]:u+=(len([u for u in e if d[n]==d[u]==d[i]])^6)%6*(o-i);t[u//66][u%66],={d[u]for u in e}-{d[n]}
+ return t
+
+### ovs (tied, 273 (429 unzipped) bytes)
+def p(g):
+ *C,M={A*66+j:(g)for A,g in enumerate(g)for j,g in enumerate(g)if g},
+ for A in M:G={A};C=[D for D in C if D==D-{A-66,A-1}or G.update(D)]+[G]
+ for D in C:
+  for A in D:
+   for G in D:
+    I=D
+    for I in 1//len([V for V in I if M[A]==M[V]])*C:
+     for Q in D-{G}:
+      for V in[V for V in I if M[A]==M[V]==M[G]]:V+=(len([V for V in I if M[A]==M[V]==M[G]])^6)%6*(Q-G);g[V//66][V%66],={M[V]for V in I}-{M[A]}
+ return g
+
+## worse for compression, 312/378:
+
+def p(g):
+ e,*C=enumerate,;M={i*90+j:v for i,r in e(g)for j,v in e(r)if v}
+ for A in M:
+  G={A}
+  for D in*C,:
+   if{A-90,A-1}&D:C.remove(D);G|=D
+  C+=G,
+ [0for A in C for D in A for G in A for I in 1//sum(M[k]==M[D]for k in A)*C for Q in{G}^A if(E:=[k for k in I if M[D]==M[k]==M[G]])for V in E for W in[V+(len(E)^6)%6*(Q-G)]for g[W//90][W%90]in{*map(M.get,I)}-{M[D]}];return g
 
 ### joking (277 (439 unzipped) bytes)
 def p(g):
@@ -49,33 +69,6 @@ def p(g):
      for Q in D-{G}:
       for V in([V for V in I if M[A]==M[V]==M[G]]):V+=(len([V for V in I if M[A]==M[V]==M[G]])^6)%6*(Q-G);g[V//#[prev_vals[0]]##][V%#[prev_vals[0]]##],={M[V]for V in I}-{M[A]}
  return g
-
-### ovs (288 (390 unzipped) bytes)
-def p(g):
- *C,M={i*90+j:g for i,g in enumerate(g)for j,g in enumerate(g)if g},
- for A in M:
-  G={A}
-  for D in*C,:
-   if{A-90,A-1}&D:C.remove(D);G|=D
-  C+=G,
- for A in C:
-  for D in A:
-   for G in A:
-    for I in 1//sum(M[k]==M[D]for k in A)*C:
-     for Q in{G}^A:
-      for V in(E:=[k for k in I if M[D]==M[k]==M[G]]):V+=(len(E)^6)%6*(Q-G);g[V//90][V%90],={M[k]for k in I}-{M[D]}
- return g
-
-## worse for compression, 312/378:
-
-def p(g):
- e,*C=enumerate,;M={i*90+j:v for i,r in e(g)for j,v in e(r)if v}
- for A in M:
-  G={A}
-  for D in*C,:
-   if{A-90,A-1}&D:C.remove(D);G|=D
-  C+=G,
- [0for A in C for D in A for G in A for I in 1//sum(M[k]==M[D]for k in A)*C for Q in{G}^A if(E:=[k for k in I if M[D]==M[k]==M[G]])for V in E for W in[V+(len(E)^6)%6*(Q-G)]for g[W//90][W%90]in{*map(M.get,I)}-{M[D]}];return g
 
 ### combined (329 (475 unzipped) bytes)
 def p(g):
