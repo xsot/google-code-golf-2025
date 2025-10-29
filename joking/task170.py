@@ -1,4 +1,6 @@
-# zip fiddling
+exec(f"def p(r):e=r;[n:=0**e[o:=i-3][f:=t-3]-4{'for %s,r in enumerate(r)'*2}if r];{'*e,=filter(max,zip(*e[:o]));'*2}return[[r&e//-9{'for e,r in zip(e[::~len(e)//n],r[n+4+%s:])]'*2}"%(*'itfo',))
+
+## zips to 194
 def p(g):[(y:=r,x:=h)for r,g in enumerate(g)for h,g in enumerate(g)if g];s=0**g[y-3][x]-4;h=*filter(max,zip(*filter(max,zip(*g[:y-3])))),;return[[h and(g)for h,g in zip(h[::~len(h)//s],g[s-~x:])]for h,g in zip(h[::~len(h)//s],g[s-~y:])]
 
 ## zips about the same

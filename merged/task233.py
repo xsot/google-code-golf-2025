@@ -1,14 +1,14 @@
-# compression_experiments (281 (462 unzipped) vs 273 bytes for gold)
-def p(e):
- for r in 92*[e]:e=[[*r]for r in zip(*e[all(r==r[:12]for r in str(e[0]).split('0')):][::-1])]
- for r in 92*[[r[i:3+i]for r in r[f:3+f]]for f,p in enumerate(r[2:])for i,p in enumerate(p[2:])][::-1]:
-  for f,p in enumerate(e*({*sum(r,[])}^{0}>{2,0})):
-   for i,p in enumerate(p):
-    for o,p in enumerate(r*all((2*(2*e)[o+f])[n+i]==2*(2!=p)for o,p in enumerate(r)for n,p in enumerate(p))):e[o+f][i:3+i],*r=p,
-  r[:]=[[*r]for r in zip(*r[::-1])]
- return e
+# compression_experiments (280 (462 unzipped) vs 273 bytes for gold)
+def p(r):
+ for e in 92*[r]:r=[[*e]for e in zip(*r[all(e==e[:12]for e in str(r[0]).split('0')):][::-1])]
+ for e in 92*[[e[n:3+n]for e in e[u:3+u]]for u,p in enumerate(e[2:])for n,p in enumerate(p[2:])][::-1]:
+  for u,p in enumerate(r*({*sum(e,[])}^{0}>{2,0})):
+   for n,p in enumerate(p):
+    for m,p in enumerate(e*all((2*(2*r)[m+u])[o+n]==2*(2!=p)for m,p in enumerate(e)for o,p in enumerate(p))):r[m+u][n:3+n],*e=p,
+  e[:]=[[*e]for e in zip(*e[::-1])]
+ return r
 
-### joking (tied, 281 (462 unzipped) bytes)
+### joking (281 (462 unzipped) bytes)
 def p(g):
  for G in 92*[g]:g=[[*G]for G in zip(*g[all(G==G[:12]for G in str(g[0]).split('0')):][::-1])]
  for G in 92*[[G[x:3+x]for G in G[y:3+y]]for y,p in enumerate(G[2:])for x,p in enumerate(p[2:])][::-1]:

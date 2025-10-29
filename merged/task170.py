@@ -1,8 +1,7 @@
-# compression_experiments (194 (236 unzipped) vs 180 bytes for gold)
-def p(r):[(o:=i,f:=e)for i,r in enumerate(r)for e,r in enumerate(r)if r];n=0**r[o-3][f]-4;e=*filter(max,zip(*filter(max,zip(*r[:o-3])))),;return[[e and(r)for e,r in zip(e[::~len(e)//n],r[n-~f:])]for e,r in zip(e[::~len(e)//n],r[n-~o:])]
+# joking (193 vs 180 bytes for gold)
+exec(f"def p(r):e=r;[n:=0**e[o:=i-3][f:=t-3]-4{'for %s,r in enumerate(r)'*2}if r];{'*e,=filter(max,zip(*e[:o]));'*2}return[[r&e//-9{'for e,r in zip(e[::~len(e)//n],r[n+4+%s:])]'*2}"%(*'itfo',))
 
-### joking (195 (236 unzipped) bytes)
-# zip fiddling
+## zips to 194
 def p(g):[(y:=r,x:=h)for r,g in enumerate(g)for h,g in enumerate(g)if g];s=0**g[y-3][x]-4;h=*filter(max,zip(*filter(max,zip(*g[:y-3])))),;return[[h and(g)for h,g in zip(h[::~len(h)//s],g[s-~x:])]for h,g in zip(h[::~len(h)//s],g[s-~y:])]
 
 ## zips about the same
@@ -12,7 +11,10 @@ def p(g):[g and(y:=r,x:=h)for r,g in enumerate(g)for h,g in enumerate(g)];s=0**g
 ##
 def p(g):[#['g and','']##(#['y:=r,x:=h','x:=h,y:=r']##)for r,g in enumerate(g)for h,g in enumerate(g)#['if g'*(prev_vals[0]=='')]##];s=0**g[y-3][x]-4;h=*filter(max,zip(*filter(max,zip(*g[:y-3])))),;return[[h and#[' g ','(g)']##for h,g in zip(h[::~len(h)//s],g[s-~x:])]for h,g in zip(h[::~len(h)//s],g[s-~y:])]
 
-### ovs (197 (237 unzipped) bytes)
+### compression_experiments (194 (236 unzipped) bytes)
+def p(r):[(o:=i,f:=e)for i,r in enumerate(r)for e,r in enumerate(r)if r];n=0**r[o-3][f]-4;e=*filter(max,zip(*filter(max,zip(*r[:o-3])))),;return[[e and(r)for e,r in zip(e[::~len(e)//n],r[n-~f:])]for e,r in zip(e[::~len(e)//n],r[n-~o:])]
+
+### ovs (196 (237 unzipped) bytes)
 def p(g):[g and(y:=h,x:=r)for h,g in enumerate(g)for r,g in enumerate(g)];s=0**g[y-3][x]-4;h=*filter(max,zip(*filter(max,zip(*g[:y-3])))),;return[[h and g for h,g in zip(h[::~len(h)//s],g[s-~x:])]for h,g in zip(h[::~len(h)//s],g[s-~y:])]
 
 ## 204 without compression:
