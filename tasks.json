@@ -1,13 +1,13 @@
 {
     "task001": {
         "gold": 58,
-        "best": 61,
+        "best": 60,
         "solutions": {
             "att": {
-                "source": "cD1sYW1iZGEgYTpbW2QmZSBmb3IgZCBpbiBiIGZvciBlIGluIGNdZm9yIGIgaW4gYSBmb3IgYyBpbiBhXQ==",
-                "size_uncompressed": 61,
-                "compressed": "cD1sYW1iZGEgYTpbW2QmZSBmb3IgZCBpbiBiIGZvciBlIGluIGNdZm9yIGIgaW4gYSBmb3IgYyBpbiBhXQ==",
-                "size_compressed": 61,
+                "source": "cD1sYW1iZGEqYTpbKG1pbixwKVtzKjAhPTBdKHMsdClmb3IgcyBpbiBhWzBdZm9yIHQgaW4gYVstMV1d",
+                "size_uncompressed": 60,
+                "compressed": "cD1sYW1iZGEqYTpbKG1pbixwKVtzKjAhPTBdKHMsdClmb3IgcyBpbiBhWzBdZm9yIHQgaW4gYVstMV1d",
+                "size_compressed": 60,
                 "method": "none"
             },
             "joking": {

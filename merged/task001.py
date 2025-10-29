@@ -1,13 +1,13 @@
-# att (61 vs 58 bytes for gold)
+# att (60 vs 58 bytes for gold)
+p=lambda*a:[(min,p)[s*0!=0](s,t)for s in a[0]for t in a[-1]]
+
+### mwi (61 bytes)
 p=lambda a:[[d&e for d in b for e in c]for b in a for c in a]
 
-### mwi (tied, 61 bytes)
-p=lambda a:[[d&e for d in b for e in c]for b in a for c in a]
-
-### ovs (tied, 61 bytes)
+### ovs (61 bytes)
 p=lambda g:[[v&V for v in l for V in L]for l in g for L in g]
 
-### combined (tied, 61 bytes)
+### combined (61 bytes)
 p=lambda i:[[y&t for y in x for t in s]for x in i for s in i]
 
 ### joking (63 bytes)

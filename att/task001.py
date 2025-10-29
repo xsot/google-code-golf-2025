@@ -1,1 +1,1 @@
-p=lambda a:[[d&e for d in b for e in c]for b in a for c in a]
+p=lambda*a:[(min,p)[s*0!=0](s,t)for s in a[0]for t in a[-1]]
