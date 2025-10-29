@@ -98,7 +98,6 @@ def zip_src(src: bytes, method: str, window: int = None) -> bytes:
 
     len_before_escape = len(compressed)
     compressed = sanitize(compressed)
-    if max(compressed) < 128: header = header.replace(b"#coding:L1\n","")
 
     delim = b'"""' if compressed[-1:] != b'"' else b"'''"
 
@@ -121,6 +120,15 @@ def zip_src(src: bytes, method: str, window: int = None) -> bytes:
     # it seems that a window length of 512 is always enough to decode our solutions
     if window < 15:
         window = -9
+
+    if sum(c>127 for c in compressed) < 8:
+        header = header.replace(b"#coding:L1\n",b"")
+        l = b''
+        for c in compressed: l += b"\\x%0.2x"%c if c > 127 else bytes([c])
+        compressed = l
+        return header+b"\nexec(zlib.decompress(b" + \
+            delim + compressed + delim + \
+            (b',%d'%window if window<15 else b'')+b'))', stats
 
     return header+b"\nexec(zlib.decompress(bytes(" + \
         delim + compressed + delim + \
