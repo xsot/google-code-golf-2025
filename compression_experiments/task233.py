@@ -1,8 +1,8 @@
 def p(r):
- for e in 92*[r]:r=[[*e]for e in zip(*r[all(e==e[:12]for e in str(r[0]).split('0')):][::-1])]
- for e in 92*[[e[n:3+n]for e in e[u:3+u]]for u,p in enumerate(e[2:])for n,p in enumerate(p[2:])][::-1]:
-  for u,p in enumerate(r*({*sum(e,[])}^{0}>{2,0})):
-   for n,p in enumerate(p):
-    for m,p in enumerate(e*all((2*(2*r)[m+u])[o+n]==2*(2!=p)for m,p in enumerate(e)for o,p in enumerate(p))):r[m+u][n:3+n],*e=p,
+ for e in 92*[r]:r=[[*e]for e in zip(*r[('2, '*4in str(r[-1]))-2::-1])]
+ for e in 92*[[e[a:3+a]for e in e[t:3+t]]for t,p in enumerate(e[2:])for a,p in enumerate(p[2:])][::-1]:
+  for t,p in enumerate(r*({*sum(e,[])}^{0}>{2,0})):
+   for a,p in enumerate(p):
+    for n,p in enumerate(e*all((2*(2*r)[n+t])[i+a]==2*(2!=p)for n,p in enumerate(e)for i,p in enumerate(p))):r[n+t][a:3+a],*e=p,
   e[:]=[[*e]for e in zip(*e[::-1])]
  return r

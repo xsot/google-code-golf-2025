@@ -1,4 +1,4 @@
-# ovs (62 bytes, gold)
+# ovs (62 vs 61 bytes for gold)
 p=lambda a:[b[:4]+(a.pop()[:4]+c)[::-1]for*c,b in[*zip(*a,a)]]
 
 ##

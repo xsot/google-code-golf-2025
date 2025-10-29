@@ -400,7 +400,7 @@ e=range(11)
 p=lambda a:[[5*(a[i][j]==5)or sum((4==a[k+i//4][l+j//4])*a[k+i%4][l+j%4]for k in R for l in R)for j in e]for i in e]
 # 🥇 task 164: 32 bytes, gold, https://arcprize.org/play?task=6d0aefbc
 p=lambda a:[b+b[::-1]for b in a]
-# 🥈 task 165: 130 vs 127 bytes for gold, https://arcprize.org/play?task=6d58a25d
+# 🥉 task 165: 130 vs 127 bytes for gold, https://arcprize.org/play?task=6d58a25d
 def p(i):_,b,s={}.fromkeys(sum(i[::-1],[0]));return[[t[a]or(b in t[[*t[:a]+i,s].index(s):])*b for*t,in zip(*i)]for a in range(20)]
 # 🥉 task 166: 63 vs 61 bytes for gold, https://arcprize.org/play?task=6d75e8bb
 p=lambda a:[[~v*c*any(b)%10for v,c in zip(b,max(a))]for b in a]
@@ -524,7 +524,7 @@ p=lambda g:[l[::-1]+l for l in(g[::-1]+g)*2][:9]
 p=lambda i,k=18:~k*i or[[x.pop()or[0,*x][k%-2]%5&6-(5in x)for _ in i]for*x,in zip(*p(i,k-1))]
 # ❌ task 213: 90 vs 87 bytes for gold, https://arcprize.org/play?task=8e1813be
 p=lambda i:[*zip(*len(u:=[s for r in i if(s:=sum({*r}-{5}))])%len(i)*[u]or p([*zip(*i)]))]
-# 🥇 task 214: 62 bytes, gold, https://arcprize.org/play?task=8e5a5113
+# 🥈 task 214: 62 vs 61 bytes for gold, https://arcprize.org/play?task=8e5a5113
 p=lambda a:[b[:4]+(a.pop()[:4]+c)[::-1]for*c,b in[*zip(*a,a)]]
 # ❌ task 215: 45 vs 42 bytes for gold, https://arcprize.org/play?task=8eb1be9a
 p=lambda g:([max(g[::3]),*g[4:6]]*9)[:len(g)]
@@ -567,13 +567,13 @@ import re;p=lambda m:[m:=[*zip(*eval(re.sub("0(?=, 0.%s.5, 5)"%{len(m)*3},i,str(
 p=lambda a:[(r[:6]*4)[:len(r)*2]for r in a]
 # 💎 task 232: 57 bytes, gold, https://arcprize.org/play?task=97999447
 p=lambda i,e=0:i*0!=0and[p(y)or[e:=y-e,5][e<0]for y in i]
-# 🥈 task 233: 280 (462 unzipped) vs 273 bytes for gold, https://arcprize.org/play?task=97a05b5b
+# 💎 task 233: 271 (440 unzipped) bytes, gold, https://arcprize.org/play?task=97a05b5b
 def p(r):
- for e in 92*[r]:r=[[*e]for e in zip(*r[all(e==e[:12]for e in str(r[0]).split('0')):][::-1])]
- for e in 92*[[e[n:3+n]for e in e[u:3+u]]for u,p in enumerate(e[2:])for n,p in enumerate(p[2:])][::-1]:
-  for u,p in enumerate(r*({*sum(e,[])}^{0}>{2,0})):
-   for n,p in enumerate(p):
-    for m,p in enumerate(e*all((2*(2*r)[m+u])[o+n]==2*(2!=p)for m,p in enumerate(e)for o,p in enumerate(p))):r[m+u][n:3+n],*e=p,
+ for e in 92*[r]:r=[[*e]for e in zip(*r[('2, '*4in str(r[-1]))-2::-1])]
+ for e in 92*[[e[a:3+a]for e in e[t:3+t]]for t,p in enumerate(e[2:])for a,p in enumerate(p[2:])][::-1]:
+  for t,p in enumerate(r*({*sum(e,[])}^{0}>{2,0})):
+   for a,p in enumerate(p):
+    for n,p in enumerate(e*all((2*(2*r)[n+t])[i+a]==2*(2!=p)for n,p in enumerate(e)for i,p in enumerate(p))):r[n+t][a:3+a],*e=p,
   e[:]=[[*e]for e in zip(*e[::-1])]
  return r
 # 💎 task 234: 107 bytes, gold, https://arcprize.org/play?task=98cf29f8
