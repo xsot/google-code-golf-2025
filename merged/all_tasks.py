@@ -782,8 +782,8 @@ p=lambda a:[*zip(*[c[:-(w:=sum(c)//4)]+w*[8]+c for*c,in zip(*a)])]
 p=lambda m:[[r.pop(0)or r[4]|r[9]for _ in m]for r in m]
 # 🥇 task 322: 48 bytes, gold, https://arcprize.org/play?task=d037b0a7
 p=lambda a:[[*map(max,*a[:n]*2)]for n in(1,2,3)]
-# 🥉 task 323: 107 vs 102 bytes for gold, https://arcprize.org/play?task=d06dbe63
-p=lambda a,B=3:[[v|5*((b:=abs((B:=B-3)+str(a).find('8')))>~b%76in b'KHE"')for v in r]for r in a if[B:=B-2]]
+# 🥈 task 323: 104 vs 102 bytes for gold, https://arcprize.org/play?task=d06dbe63
+p=lambda a,B=0:[[v|5*((b:=abs(B+(B:=B-3)//39*2+str(a).find('8')))>~b%76in b'KHE"')for v in r]for r in a]
 # 💎 task 324: 227 (261 unzipped) bytes, gold, https://arcprize.org/play?task=d07ae81c
 def p(r):l,t,i,n=a=sorted({*sum(r,[])},key=sum(r,[]).count);return[[([a[l!=e!=a[~all({l,n}!={*s}!={t,i}for s in[*zip(*r)]+r)]]for z,s in enumerate(r)for u,o in enumerate(s)if o in(l,t)!=abs(u-m)==abs(z-f)]+[e])[0]for m,e in enumerate(s)]for f,s in enumerate(r)]
 # 💎 task 325: 140 bytes, gold, https://arcprize.org/play?task=d0f5fe59

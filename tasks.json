@@ -9283,7 +9283,7 @@
         "best": 117,
         "solutions": {
             "att": {
-                "source": "cD1sYW1iZGEgZzpnWyhUOj1bKnppcCgqW21hcChib29sLHN1bShnLGcqMCkpXSo5KV0pLmluZGV4KG1pbihULGtleT1ULmNvdW50KSkqMzpdWzozJWxlbihnKV1vclsqemlwKCpwKCgqemlwKCpnKSwpKSld",
+                "source": "cD1sYW1iZGEgZzpnWyhUOj1bKnppcCgqW21hcChib29sLHN1bShnLGcqMCkpXSo5KV0pLmluZGV4KG1pbihULGtleT1ULmNvdW50KSkqMzpdWzozJWxlbihnKV1vclsqemlwKCpwKCgqemlwKCpnKSwpKSldCgojIwpzPSdmb3IqYSxpbiBtYXAoemlwLCpbaXRlcihhKV0qMyknKjI7cD1ldmFsKGYibGFtYmRhIGE6W2Ege3N9XVsoYjo9W3N0cihhKS5jb3VudCgnMCcpe3N9XSkuaW5kZXgobWluKGIsa2V5PWIuY291bnQpKV0iKQo=",
                 "size_uncompressed": 117,
                 "compressed": "cD1sYW1iZGEgZzpnWyhUOj1bKnppcCgqW21hcChib29sLHN1bShnLGcqMCkpXSo5KV0pLmluZGV4KG1pbihULGtleT1ULmNvdW50KSkqMzpdWzozJWxlbihnKV1vclsqemlwKCpwKCgqemlwKCpnKSwpKSld",
                 "size_compressed": 117,
@@ -11324,13 +11324,13 @@
     },
     "task323": {
         "gold": 102,
-        "best": 107,
+        "best": 104,
         "solutions": {
             "att": {
-                "source": "cj1yYW5nZSgxMykKcD1sYW1iZGEgYTpbW2FbaV1bal18NSooKGI6PWFicyg0MSppKzMqaisyLXN0cihhKS5maW5kKCc4JykpKT5+YiU3NmluIGInS0hFIicpZm9yIGogaW4gcl1mb3IgaSBpbiByXQoKIyMKcD1sYW1iZGEgYTpbWzUqKChiOj1hYnMoNDEqaSszKmorMi1zdHIoYSkuZmluZCgnOCcpKSk+fmIlNzZpbiBiJ0tIRSInKXw4KihiPDEpZm9yIGogaW4gcl1mb3IgaSBpbiByXQ==",
-                "size_uncompressed": 112,
-                "compressed": "cj1yYW5nZSgxMykKcD1sYW1iZGEgYTpbW2FbaV1bal18NSooKGI6PWFicyg0MSppKzMqaisyLXN0cihhKS5maW5kKCc4JykpKT5+YiU3NmluIGInS0hFIicpZm9yIGogaW4gcl1mb3IgaSBpbiByXQ==",
-                "size_compressed": 112,
+                "source": "cD1sYW1iZGEgYSxCPTA6W1t2fDUqKChiOj1hYnMoQisoQjo9Qi0zKS8vMzkqMitzdHIoYSkuZmluZCgnOCcpKSk+fmIlNzZpbiBiJ0tIRSInKWZvciB2IGluIHJdZm9yIHIgaW4gYV0=",
+                "size_uncompressed": 104,
+                "compressed": "cD1sYW1iZGEgYSxCPTA6W1t2fDUqKChiOj1hYnMoQisoQjo9Qi0zKS8vMzkqMitzdHIoYSkuZmluZCgnOCcpKSk+fmIlNzZpbiBiJ0tIRSInKWZvciB2IGluIHJdZm9yIHIgaW4gYV0=",
+                "size_compressed": 104,
                 "method": "none"
             },
             "joking": {
