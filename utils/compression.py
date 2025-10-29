@@ -36,7 +36,10 @@ def compress(task_src: bytes, rand_passes = 0, pre_and_post = True) -> bytes:
             ("zlib", -9),
             ("zlib", -15),
             ("libdeflate", -15),
-            ("zopfli", None)
+            ("zopfli", 20),
+            ("zopfli", 40),
+            ("zopfli", 100),
+            ("zopfli", 200),
         ):
             task_src, stats = min((task_src, stats), compress_with_method(task_src, task_src_2, method, window, pre_and_post), key=lambda x:len(x[0]))
     return task_src, stats
@@ -63,7 +66,7 @@ def zip_src(src: bytes, method: str, window: int = None) -> bytes:
         header+=b",re"
         src=src[10:]
     if method == "zopfli":
-        iterations = 20 # this is enough to get us the best scores as of now
+        iterations = window
         compressed = zopfli.zlib.compress(src, numiterations=iterations, blocksplitting=False)
         window = -(((compressed[0] >> 4) & 0x0F) + 8)
         compressed = compressed[2:-4]
