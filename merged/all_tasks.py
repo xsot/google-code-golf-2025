@@ -1,5 +1,5 @@
-# 🥈 task 1: 60 vs 58 bytes for gold, https://arcprize.org/play?task=007bbfb7
-p=lambda*a:[(min,p)[s*0!=0](s,t)for s in a[0]for t in a[-1]]
+# 🥇 task 1: 58 bytes, gold, https://arcprize.org/play?task=007bbfb7
+p=lambda*a:[(*a,min,p)[2](s,t)for s in a[0]for t in a[-1]]
 # 💎 task 2: 88 bytes, gold, https://arcprize.org/play?task=00d62c1b
 p=lambda a,n=11:-n*a or[*map(lambda*b,d=0:[d:=c^c-0**n>>d&4for c in b][::-1],*p(a,n-1))]
 # 🥇 task 3: 58 bytes, gold, https://arcprize.org/play?task=017c7c7b

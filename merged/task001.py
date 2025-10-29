@@ -1,4 +1,7 @@
-# att (60 vs 58 bytes for gold)
+# xsot (58 bytes, gold)
+p=lambda*a:[(*a,min,p)[2](s,t)for s in a[0]for t in a[-1]]
+
+### att (60 bytes)
 p=lambda*a:[(min,p)[s*0!=0](s,t)for s in a[0]for t in a[-1]]
 
 ### mwi (61 bytes)
@@ -21,12 +24,3 @@ p=lambda*a:[s&t if a[1:]else p(s,t)for s in a[0]for t in a[-1]]
 
 ## doesn't work, splits up each list
 p=lambda a,s=[]:s*0!=0and[*map(p,s or a,[a]*9)]or a&s
-
-### xsot (71 bytes)
-p=lambda m,R=range(9):[[m[r//3][c//3]&m[r%3][c%3]for c in R]for r in R]
-
-##
-p=lambda m,R=range(9):[[m[r//3][c//3]and m[r%3][c%3]for c in R]for r in R]
-p=lambda m,R=range(9):[[m[r//3][c//3]*(m[r%3][c%3]>0)for c in R]for r in R]
-p=lambda m,R=range(9):[sum([m[r//3]*(m[r%3][c%3]>0)for c in R],[])for r in R]
-p=lambda m:[[m[r//3][c//3]*(m[r%3][c%3]>0)for c in range(9)]for r in range(9)]
