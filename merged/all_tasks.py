@@ -298,22 +298,22 @@ p=lambda a:[[sum({*b[c:c+3]}-{5})for c in(0,3,6)]for b in a[::3]]
 p=lambda a:[a:=[[*b[:[*b,1].index(~b[l:=len(a)]%5%3)],*b[l:],8,*[0]*l][l-1::-1]for*b,in zip(*a,*filter(any,a))]for _ in a][3]
 # 🥇 task 132: 86 bytes, gold, https://arcprize.org/play?task=56ff96f3
 p=lambda i,v=0:[i:=[[v|(v:=v^sum({*A}&{*y}))for A in i]for y in zip(*i)]for _ in i][1]
-# 💎 task 133: 276 (439 unzipped) bytes, gold, https://arcprize.org/play?task=57aa92db
-def	p(e):
-	*f,n={o*66+l:(e)for	o,e	in	enumerate(e)for	l,e	in	enumerate(e)if	e},
-	for	o	in	n:
-		u={o}
-		for	t	in*f,:
-			if{o-66,o-1}&t:f.remove(t);u|=t
-		f+=u,
-	for	t	in*f,:
-		for	o	in	t:
-			for	u	in	t:
-				i=t
-				for	i	in	1//len([r	for	r	in	i	if	n[o]==n[r]])*f:
-					for	a	in	t-{u}:
-						for	r	in([r	for	r	in	i	if	n[o]==n[r]==n[u]]):r+=(len([r	for	r	in	i	if	n[o]==n[r]==n[u]])^6)%6*(a-u);e[r//66][r%66],={n[r]for	r	in	i}-{n[o]}
-	return	e
+# 💎 task 133: 275 (439 unzipped) bytes, gold, https://arcprize.org/play?task=57aa92db
+def	p(n):
+	*f,e={u*66+o:(n)for	u,n	in	enumerate(n)for	o,n	in	enumerate(n)if	n},
+	for	u	in	e:
+		t={u}
+		for	m	in*f,:
+			if{u-66,u-1}&m:f.remove(m);t|=m
+		f+=t,
+	for	m	in*f,:
+		for	u	in	m:
+			for	t	in	m:
+				r=m
+				for	r	in	1//len([a	for	a	in	r	if	e[u]==e[a]])*f:
+					for	i	in	m-{t}:
+						for	a	in([a	for	a	in	r	if	e[u]==e[a]==e[t]]):a+=(len([a	for	a	in	r	if	e[u]==e[a]==e[t]])^6)%6*(i-t);n[a//66][a%66],={e[a]for	a	in	r}-{e[u]}
+	return	n
 # 💎 task 134: 123 bytes, gold, https://arcprize.org/play?task=5ad4f10b
 p=lambda g,D=10:[[D*(D!=v>0)for v in r]for r in('0, %g, 0'%D in'%s'%g)*g]or(h:=[*filter(any,zip(*p(g,D-.5)))])[::len(h)//3]
 # 🥇 task 135: 32 bytes, gold, https://arcprize.org/play?task=5bd6f4ac
