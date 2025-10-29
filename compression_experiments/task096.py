@@ -1,2 +1,2 @@
 import re
-def p(n):f={0:(a:=max(n:=re.sub(', ','',str(n+[*zip(*n)])),key=n.count),2)}|{(m:=len(re.findall(e+e+'([^]+)'+e+']+)'+e+'|$',n+n[::-1])[0]))-len(max(re.findall(e+'+',n)))*~(m>0)>>1:(e,m-1>>1)for e in{*n}-{a,*'([]+)'}};return[[int([a,*f[max(abs(e),abs(m))]][f[max(abs(e),abs(m))][1]<min(abs(e),abs(m))])for e in range(-max(f),max(f)+1)]for m in range(-max(f),max(f)+1)]
+def p(s):n={0:(m:=max(s:=re.sub(', ','',str(s+[*zip(*s)])),key=s.count),2)}|{(e:=len(re.findall(r+r+'([^]+)'+r+']+)'+r+'|$',s+s[::-1])[0]))-len(max(re.findall(r+'+',s)))*~(e>0)>>1:(r,e-1>>1)for r in{*s}-{m,*'([]+)'}};return[[int([m,*n[max(abs(r),abs(e))]][n[max(abs(r),abs(e))][1]<min(abs(r),abs(e))])for r in range(-max(n),max(n)+1)]for e in range(-max(n),max(n)+1)]

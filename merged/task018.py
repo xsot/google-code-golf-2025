@@ -1,5 +1,5 @@
-# compression_experiments (276 (402 unzipped) bytes, gold)
-def p(a):e={r*1j+o:a for r,a in enumerate(a)for o,a in enumerate(a)if a};[(m:={i},[m:={i}|m for i in[*e]*5for j in m if abs(i-j)<2],[*m][3:]and[5for n in[1,3,6,7]for f in e if all(sum(e[j]==e.get(o)for o in[*m,(j-i-n//4*(j-i).real*2)*1j**n+f])>1for j in m)for j in m if(a:=[[{j:0,(j-i-n//4*(j-i).real*2)*1j**n+f:e[j]}.get(r*1j+o,a)for o,a in enumerate(a)]for r,a in enumerate(a)])])for i in e];return a
+# compression_experiments (275 (402 unzipped) bytes, gold)
+def p(a):e={m*1j+f:a for m,a in enumerate(a)for f,a in enumerate(a)if a};[(l:={r},[l:={r}|l for r in[*e]*5for u in l if abs(r-u)<2],[*l][3:]and[5for i in[1,3,6,7]for n in e if all(sum(e[u]==e.get(f)for f in[*l,(u-r-i//4*(u-r).real*2)*1j**i+n])>1for u in l)for u in l if(a:=[[{u:0,(u-r-i//4*(u-r).real*2)*1j**i+n:e[u]}.get(m*1j+f,a)for f,a in enumerate(a)]for m,a in enumerate(a)])])for r in e];return a
 
 ### ovs (279 (402 unzipped) bytes)
 def p(g):G={i*1j+j:g for i,g in enumerate(g)for j,g in enumerate(g)if g};[(s:={J},[s:={J}|s for J in[*G]*5for x in s if abs(J-x)<2],[*s][3:]and[5for a in[1,3,6,7]for O in G if all(sum(G[x]==G.get(j)for j in[*s,(x-J-a//4*(x-J).real*2)*1j**a+O])>1for x in s)for x in s if(g:=[[{x:0,(x-J-a//4*(x-J).real*2)*1j**a+O:G[x]}.get(i*1j+j,g)for j,g in enumerate(g)]for i,g in enumerate(g)])])for J in G];return g
