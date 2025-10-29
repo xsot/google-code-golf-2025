@@ -717,8 +717,8 @@ def p(i,n=0):
 p=lambda a:eval("[[a\nfor a in a for _ in[*{*'%s'}][5:]]#"%a*2)
 # 🥉 task 290: 68 vs 67 bytes for gold, https://arcprize.org/play?task=b94a9452
 p=lambda i,r=[]:r*-1*-1or[p(x,sum({*r}or i,x*-1))for x in i if[x]>i]
-# 🥈 task 291: 62 vs 61 bytes for gold, https://arcprize.org/play?task=b9b7f026
-p=lambda i,n=1:len({x.count(n)for x in i})//3*[[n]]or p(i,n+1)
+# 💎 task 291: 59 bytes, gold, https://arcprize.org/play?task=b9b7f026
+p=lambda m,k=1:[*{r.count(k)for r in m},[k]][3:]or p(m,k+1)
 # 💎 task 292: 51 bytes, gold, https://arcprize.org/play?task=ba26e723
 p=lambda g,v=0:g*0!=0and[*map(p,g,b'\n'*7)]or-g%v
 # 🥈 task 293: 60 vs 59 bytes for gold, https://arcprize.org/play?task=ba97ae07
