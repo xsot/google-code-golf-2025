@@ -67,7 +67,7 @@ def compress_with_method(task_src: bytes, task_src_2: bytes, method: str, window
 def zip_src(src: bytes, method: str, window: int = None) -> bytes:
     # Save on import re
     header = b"#coding:L1\nimport zlib"
-    if src[:10]==b"import re\n":
+    if src[:9]==b"import re":
         header+=b",re"
         src=src[10:]
     if method == "zopfli":
