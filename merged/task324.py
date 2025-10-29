@@ -1,4 +1,7 @@
-# ovs (228 (261 unzipped) bytes, gold)
+# compression_experiments (227 (261 unzipped) bytes, gold)
+def p(r):l,t,i,n=a=sorted({*sum(r,[])},key=sum(r,[]).count);return[[([a[l!=e!=a[~all({l,n}!={*s}!={t,i}for s in[*zip(*r)]+r)]]for z,s in enumerate(r)for u,o in enumerate(s)if o in(l,t)!=abs(u-m)==abs(z-f)]+[e])[0]for m,e in enumerate(s)]for f,s in enumerate(r)]
+
+### ovs (228 (261 unzipped) bytes)
 def p(g):k,K,b,B=T=sorted({*sum(g,[])},key=sum(g,[]).count);return[[([T[k!=C!=T[~all({k,B}!={*r}!={K,b}for r in[*zip(*g)]+g)]]for y,r in enumerate(g)for x,c in enumerate(r)if c in(k,K)!=abs(x-X)==abs(y-Y)]+[C])[0]for X,C in enumerate(r)]for Y,r in enumerate(g)]
 
 ## 237 unzipped:

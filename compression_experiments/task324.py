@@ -1,0 +1,1 @@
+def p(r):l,t,i,n=a=sorted({*sum(r,[])},key=sum(r,[]).count);return[[([a[l!=e!=a[~all({l,n}!={*s}!={t,i}for s in[*zip(*r)]+r)]]for z,s in enumerate(r)for u,o in enumerate(s)if o in(l,t)!=abs(u-m)==abs(z-f)]+[e])[0]for m,e in enumerate(s)]for f,s in enumerate(r)]
