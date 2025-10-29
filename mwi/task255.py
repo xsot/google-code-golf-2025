@@ -8,3 +8,7 @@ def p(g):
   for x in range(30):
    for r in w:w*=all(r[x]%3<1for r in w);r[x]|=3*(len(w)>3or 3in r[x+1:])
  return[[c%10for c in r]for r in g]
+
+# versions that fail a few cases
+import re;p=lambda g:[g:=eval(re.sub(a,r"*([3]*len([\1])or[0.]),",str([*zip(*g[::-1])])))for a in["() 0(?=((,[^,]*){31}|, )[1-9]),"]*8+[r"(?=(?=(( 0,){4,}))(?:(?=\1)([^,]*,){30}){9,}[^(]*$)\1"]*8+["(3, 3, 3(, [03])+)(?=\))"]*8][-1]
+import re;p=lambda g,k=(32*3-1):-k*g or p(eval(re.sub(["(3, 3, 3(, [03])+)(?=\))",r"(?=(?=(( 0,){%d}))(?:(?=\1)([^,]*,){30}){9,}[^(]*$)\1"%(k//4-5),"() 0(?=((,[^,]*){31}|, )[1-9]),"][k//32],r"*([3]*len([\1])or[0.]),",str([*zip(*g[::-1])]))),k-1)
