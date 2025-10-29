@@ -9019,10 +9019,10 @@
                 "escape_cost": 0
             },
             "mwi": {
-                "source": "ZGVmIHAoZyk6CiBnPVtbZ1t5XVt4XSsxMCphbnkoc3VtKHNbeC0oeD4wKTp4KzJdKWZvciBzIGluIGdbeS0oeT4wKTp5KzJdKWZvciB4IGluIHJhbmdlKDMwKV1mb3IgeSBpbiByYW5nZSgzMCldCiBmb3IgeSBpbid5Jyo4OgogIGc9Km1hcChsaXN0LHppcCgqZ1s6Oi0xXSkpLDt3PVtyIGZvciByIGluIGcgaWZ7KnJbOjEwXX08PXswLDN9XQogIGZvciB4IGluIHJhbmdlKDMwKToKICAgZm9yIHIgaW4gdzp3Kj1hbGwoclt4XSUzPDFmb3IgciBpbiB3KTtyW3hdfD0zKihsZW4odyk+M29yIDNpbiByW3grMTpdKQogcmV0dXJuW1tjJTEwZm9yIGMgaW4gcl1mb3IgciBpbiBnXQ==",
-                "size_uncompressed": 325,
-                "compressed": "I2NvZGluZzpMMQppbXBvcnQgemxpYgpleGVjKHpsaWIuZGVjb21wcmVzcyhieXRlcygnZc7BagMhEAbge57CS8jobkDrpZiYFxnmIHQtAxtdTHKwafrs1UBYSq/f7z+/H1MUC2TpNiJ7xIyVkGkwWoVU4XI7Q0DeA5+0dDy8kYy5iCA4ifZ0D7V7fTl3LyF9TmC1pE71L23EC3d1p97baptV57DAzJfr+MULqIzO/WiScjwUj+nZSM9FwfGuEjqj6XH0dz3aB7UL/6f73bVXXFE+zDMkZNrao1kTeej27a2CeUpQ5Mm2zLao+WAcyY0o0/VWEmLcGt2bUfSY1m/RLycsIkwxIiksLTkpKQ==",
-                "size_compressed": 268,
+                "source": "aW1wb3J0IHJlO3A9bGFtYmRhIGc6W2c6PWV2YWwocmUuc3ViKGEsciIqKFszXSpsZW4oW1wxXSlvclswLl0pIixzdHIoWyp6aXAoKmdbOjotMV0pXSkpKWZvciBhIGluWyIoICkwKD89LCgoW14sXSosKXszMH0pPyBbMS05XSkiXSo0K1siICgoWzAzXSwgKXs5fTApKD89XCkpIl0qNCtbIiAoMCgsIC4pezN9fCguLCApezN9MCkoPz0oKCxbXixdKil7MjZ9KCwgMyl7NH0pK1teKF0qJCkiXSo4MCtbIigzLCAwKSg/PVswLCBdKjMpIl0qMjBdWy0xXQoKIyMKZGVmIHAoZyk6CiBnPVtbZ1t5XVt4XSsxMCphbnkoc3VtKHNbeC0oeD4wKTp4KzJdKWZvciBzIGluIGdbeS0oeT4wKTp5KzJdKWZvciB4IGluIHJhbmdlKDMwKV1mb3IgeSBpbiByYW5nZSgzMCldCiBmb3IgeSBpbid5Jyo4OgogIGc9Km1hcChsaXN0LHppcCgqZ1s6Oi0xXSkpLDt3PVtyIGZvciByIGluIGcgaWZ7KnJbOjEwXX08PXswLDN9XQogIGZvciB4IGluIHJhbmdlKDMwKToKICAgZm9yIHIgaW4gdzp3Kj1hbGwoclt4XSUzPDFmb3IgciBpbiB3KTtyW3hdfD0zKihsZW4odyk+M29yIDNpbiByW3grMTpdKQogcmV0dXJuW1tjJTEwZm9yIGMgaW4gcl1mb3IgciBpbiBnXQ==",
+                "size_uncompressed": 253,
+                "compressed": "I2NvZGluZzpMMQppbXBvcnQgemxpYgpleGVjKHpsaWIuZGVjb21wcmVzcyhieXRlcygnRYxVmgNhCASvwjoQZr7f1u0ghLi7e86+Lq/dVdUdTsazBcyaj5PnQXVYa1Sh/aDth+fmqjrAWTOfL2tYldkpo0bjQXOEWvRG45m63OhU5osZKu+6E+S2PjxkH58RUWs8gyp0R3qKQA5fnwVRS2IstI/uSK+gPrs3OjVOBT2Fj9dFE6D9/dHRB1+k/8+hQP7hHQ+YfyLxG0GUryTtw83xA4m0T0cqaAmNzz/tO/ehYxT4wtUJGMfPIzjTzNs7JywiTDEiKSwtOSkp",
+                "size_compressed": 252,
                 "method": "zopfli",
                 "window": -15,
                 "escape_cost": 0

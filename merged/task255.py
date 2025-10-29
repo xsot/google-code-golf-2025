@@ -13,7 +13,10 @@ def p(g):
  for S in[{0,3}]*8:g=[[g[y][~x]+10*any({*r[-2%(30-x):31-x]}-S for r in g[y+y%~y:y+2])for y in range(30)]for x in range(30)];g=[[r[x]%10|3*({*r[:10]}<=S)*(len(w:=[r[x]for r in g if{*r[:10]}<=S])>3!=S>={*w}or 3in r[x:])for x in range(30)]for r in g]
  return g
 
-### mwi (268 (325 unzipped) bytes)
+### mwi (252 (253 unzipped) bytes)
+import re;p=lambda g:[g:=eval(re.sub(a,r"*([3]*len([\1])or[0.])",str([*zip(*g[::-1])])))for a in["( )0(?=,(([^,]*,){30})? [1-9])"]*4+[" (([03], ){9}0)(?=\))"]*4+[" (0(, .){3}|(., ){3}0)(?=((,[^,]*){26}(, 3){4})+[^(]*$)"]*80+["(3, 0)(?=[0, ]*3)"]*20][-1]
+
+##
 def p(g):
  g=[[g[y][x]+10*any(sum(s[x-(x>0):x+2])for s in g[y-(y>0):y+2])for x in range(30)]for y in range(30)]
  for y in'y'*8:
