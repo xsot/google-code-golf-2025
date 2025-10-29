@@ -812,8 +812,8 @@ p=lambda a,n=10,d=0:~n*a or p([[b.pop()|(n%6*2in b)*(d:=d^4%(sum(c)|4))for c in 
 p=lambda i,k=3:-k*i or[[x.pop()or(sum(x)%8|1in x[:5])*8for _ in i]for*x,in zip(*p(i,k-1))]
 # 💎 task 337: 43 bytes, gold, https://arcprize.org/play?task=d511f180
 p=lambda x:x*-1and x^84%x%3*13or[*map(p,x)]
-# ❌ task 338: 68 vs 64 bytes for gold, https://arcprize.org/play?task=d5d6de2d
-p=lambda i,s=0:[(t:=1)*[(s:=t<y-s&6)*3>>(t:=y)for y in x]for x in i]
+# 🥉 task 338: 65 vs 64 bytes for gold, https://arcprize.org/play?task=d5d6de2d
+p=lambda i:[(t:=0)or[(i:=t**y==i)*3>>(t:=y)for y in x]for x in i]
 # 🥇 task 339: 37 bytes, gold, https://arcprize.org/play?task=d631b094
 p=lambda a:[[*filter(int,sum(a,[]))]]
 # 💎 task 340: 112 bytes, gold, https://arcprize.org/play?task=d687bc17
