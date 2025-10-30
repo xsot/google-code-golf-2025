@@ -1,5 +1,5 @@
-def p(f):
- o,n,d,e,a=[{r+m*20for m in range(len(f))for r in range(len(f[m]))if f[m][r]==b}for b in range(5)]
- for b in d:e|={b for b in d for m in n|e if abs(b-m)in[1,20]}
- for b in d:i={b}-a and{b-min(len({b+m*(g-2)for g in range(5)}&d)for m in[1,20])*(min(e)-max(e))}&d;a|=i;f=[[f[m][r]or r+m*20in(i and{b-min(len({b+m*(g-2)for g in range(5)}&d)for m in[1,20])*(min(e)-m)for m in n})for r in range(len(f[m]))]for m in range(len(f))]
- return f
+def p(e):
+ i,r,o,u,n=[{a+m*20for m,e in enumerate(e)for a,e in enumerate(e)if e==f}for f in range(5)]
+ for f in o:u|={f for f in o for m in r|u if abs(f-m)in(1,20)}
+ for f in o:b={f}-n and{f-min(len({f+m*(s-2)for s in range(5)}&o)for m in(1,20))*(min(u)-max(u))}&o;n|=b;e=[[e or a+m*20in(b and{f-min(len({f+m*(s-2)for s in range(5)}&o)for m in(1,20))*(min(u)-m)for m in r})for a,e in enumerate(e)]for m,e in enumerate(e)]
+ return e
