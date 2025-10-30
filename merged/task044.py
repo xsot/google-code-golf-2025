@@ -1,8 +1,8 @@
-# compression_experiments (213 (272 unzipped) vs 195 bytes for gold)
-p=lambda n:[n:=[[i^r*(1&(m:=m>>1)>>99or i==r)for i in i]for r in{*sum(n,[])}if bin(sum((sum(n,[])[i]==r)<<i+9for i in range(100)))in bin(m:=sum((sum(n,[])[i]<5in{*sum(n,[])[i//10*10:i]}&{*sum(n,[])[i:i//10*10+10]})<<i+100for i in range(50)))for i in n][::-1]for i in n][1]
+# compression_experiments (212 (268 unzipped) vs 195 bytes for gold)
+p=lambda f:[f:=[[m^n*(1&(s:=s>>1)>>99or m==n)for m in m]for n in{*sum(f,[])}if bin(sum((sum(f,[])[m]==n)<<m+9for m in range(100)))in bin(s:=sum((sum(f,[])[m]<5in{*sum(f,[])[m-m%10:m]}&{*sum(f,[])[m:m-m%10+10]})<<m+100for m in range(50)))for m in f][::-1]for m in f][1]
 
-### ovs (214 (272 unzipped) bytes)
-p=lambda i:[i:=[[J^c*(1&(w:=w>>1)>>99or J==c)for J in J]for c in{*sum(i,[])}if bin(sum((sum(i,[])[J]==c)<<J+9for J in range(100)))in bin(w:=sum((sum(i,[])[J]<5in{*sum(i,[])[J//10*10:J]}&{*sum(i,[])[J:J//10*10+10]})<<J+100for J in range(50)))for J in i][::-1]for J in i][1]
+### ovs (tied, 212 (268 unzipped) bytes)
+p=lambda i:[i:=[[J^c*(1&(w:=w>>1)>>99or J==c)for J in J]for c in{*sum(i,[])}if bin(sum((sum(i,[])[J]==c)<<J+9for J in range(100)))in bin(w:=sum((sum(i,[])[J]<5in{*sum(i,[])[J-J%10:J]}&{*sum(i,[])[J:J-J%10+10]})<<J+100for J in range(50)))for J in i][::-1]for J in i][1]
 
 ## 222/461
 def p(i):f=sum(i,[]);w=sum(2<<J for J in range(50)if f[J]<5in{*f[J//10*10:J]}&{*f[J:J//10*10+10]});i=[[J^c*(1&(w:=w>>1)or J==c)for J in J]for c in{*f}if bin(sum(512<<J for J in range(100)if f[J]==c))in bin(w<<100)for J in i][::-1];f=sum(i,[]);w=sum(2<<J for J in range(50)if f[J]<5in{*f[J//10*10:J]}&{*f[J:J//10*10+10]});i=[[J^c*(1&(w:=w>>1)or J==c)for J in J]for c in{*f}if bin(sum(512<<J for J in range(100)if f[J]==c))in bin(w<<100)for J in i][::-1];return i

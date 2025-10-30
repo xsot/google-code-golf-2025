@@ -85,8 +85,8 @@ p=lambda a,b=0:[[e|(b:=b^e)for e in r]for r in a]
 p=lambda g,Q=range(10):[g:=[[g[j][~i]|g[j-C-C][~i+C]*g[j-C][~i+C+C]%~(i>C<j)%9for j in Q]for i in Q]for C in[sum(b'%r'%g)//38%4]*4][3]
 # 🥇 task 43: 56 bytes, gold, https://arcprize.org/play?task=2281f1f4
 p=lambda a:[[c+b[-1]&2|b.pop(0)for c in a[0]]for*b,in a]
-# 🥈 task 44: 213 (272 unzipped) vs 195 bytes for gold, https://arcprize.org/play?task=228f6490
-p=lambda n:[n:=[[i^r*(1&(m:=m>>1)>>99or i==r)for i in i]for r in{*sum(n,[])}if bin(sum((sum(n,[])[i]==r)<<i+9for i in range(100)))in bin(m:=sum((sum(n,[])[i]<5in{*sum(n,[])[i//10*10:i]}&{*sum(n,[])[i:i//10*10+10]})<<i+100for i in range(50)))for i in n][::-1]for i in n][1]
+# 🥈 task 44: 212 (268 unzipped) vs 195 bytes for gold, https://arcprize.org/play?task=228f6490
+p=lambda f:[f:=[[m^n*(1&(s:=s>>1)>>99or m==n)for m in m]for n in{*sum(f,[])}if bin(sum((sum(f,[])[m]==n)<<m+9for m in range(100)))in bin(s:=sum((sum(f,[])[m]<5in{*sum(f,[])[m-m%10:m]}&{*sum(f,[])[m:m-m%10+10]})<<m+100for m in range(50)))for m in f][::-1]for m in f][1]
 # 🥇 task 45: 45 bytes, gold, https://arcprize.org/play?task=22eb0ac0
 p=lambda g:[10*r[:r[0]==r[9]]or r for r in g]
 # 🥇 task 46: 168 bytes, gold, https://arcprize.org/play?task=234bbc79
