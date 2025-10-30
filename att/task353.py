@@ -1,1 +1,1 @@
-p=lambda a,n=-3,i=0:n*a or 3in a[i]and p([*zip(a.pop(('4'in'%s'%a[:i])*i-1),*a[::-1])],n+1)or p(a,n,i+1)
+p=lambda a,n=-3:n*a or p([*zip(*[a.pop(sum(sum(a,r))==10)for r in a*1][::-1])],n+1)
