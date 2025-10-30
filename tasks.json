@@ -8663,8 +8663,8 @@
         "public_best": 64
     },
     "task245": {
-        "gold": 100,
-        "best": 101,
+        "gold": 98,
+        "best": 98,
         "solutions": {
             "joking": {
                 "source": "cD1sYW1iZGEgaSxrPTc6LWsqaSBvciBwKFsqbWFwKGxhbWJkYSpyLHc9MDpbW3YsdyUzXVsodzo9dik8PTJpbiBtYXgoaSxrZXk9YW55KV1mb3IgdiBpbiByXSwqaSldLGstMSkKCiMjCnA9bGFtYmRhIGksaz03Oi1rKmkgb3IgcChbKm1hcChsYW1iZGEqcix3PTA6W1t2LHclM11bKHc6PXYpPD0yaW57Km1heChpLGtleT1hbnkpfSZ7KnJ9XWZvciB2IGluIHJdLCppKV0say0xKQpwPWxhbWJkYSBpLGs9NzotayppIG9yIHAoW1t2JTIqdnx3JTNmb3Igdix3IGluIHppcChyLFswXSooMmlueyptYXgoaSxrZXk9YW55KX0meypyfSkrcildZm9yKnIsaW4gemlwKCppKV0say0xKQo=",
@@ -8674,10 +8674,10 @@
                 "method": "none"
             },
             "ovs": {
-                "source": "cD1sYW1iZGEgaSxrPTE1Oi1rKmkgb3IgcChbW3YlMip2fHclM2ZvciB2LHcgaW4gemlwKHIsWzBdKigyaW57Km1heChpLGtleT1hbnkpfSZ7KnJ9KStyKV1mb3IqcixpbiB6aXAoKmkpXVs6Oi0xXSxrLTEpCgojIyBmYWlscyBhIHNpbmdsZSBjYXNlOgoKcD1sYW1iZGEgaSxrPTE1Oi1rKmkgb3IgcChbKFswXSooMmlueyptYXgoaSxrZXk9YW55KX0meypyfSkrcilbOmxlbihyKV1mb3IqcixpbiB6aXAoKmkpXVs6Oi0xXSxrLTEpCg==",
-                "size_uncompressed": 117,
-                "compressed": "cD1sYW1iZGEgaSxrPTE1Oi1rKmkgb3IgcChbW3YlMip2fHclM2ZvciB2LHcgaW4gemlwKHIsWzBdKigyaW57Km1heChpLGtleT1hbnkpfSZ7KnJ9KStyKV1mb3IqcixpbiB6aXAoKmkpXVs6On4wXSxrLTEp",
-                "size_compressed": 117,
+                "source": "cD1sYW1iZGEgaSxrPTc6LWsqaSBvciBwKFsqbWFwKGxhbWJkYSpyLHc9MDpbW3clMyx3Oj12XVt2JTIrNT5zdW0oeyptYXgoaSl9KV1mb3IgdiBpbiByXSwqaSldLGstMSkKCiMjIGZhaWxzIGEgc2luZ2xlIGNhc2U6CgpwPWxhbWJkYSBpLGs9MTU6LWsqaSBvciBwKFsoWzBdKigyaW57Km1heChpLGtleT1hbnkpfSZ7KnJ9KStyKVs6bGVuKHIpXWZvcipyLGluIHppcCgqaSldWzo6LTFdLGstMSkK",
+                "size_uncompressed": 98,
+                "compressed": "cD1sYW1iZGEgaSxrPTc6LWsqaSBvciBwKFsqbWFwKGxhbWJkYSpyLHc9MDpbW3clMyx3Oj12XVt2JTIrNT5zdW0oeyptYXgoaSl9KV1mb3IgdiBpbiByXSwqaSldLGstMSk=",
+                "size_compressed": 98,
                 "method": "none"
             },
             "combined_solutions": {
