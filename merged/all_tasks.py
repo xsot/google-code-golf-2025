@@ -891,8 +891,8 @@ def p(a):
  return a
 # 🥇 task 372: 48 bytes, gold, https://arcprize.org/play?task=e98196ab
 p=lambda a:[b for*b,in map(map,[max]*5,a,a[6:])]
-# 🥉 task 373: 39 vs 38 bytes for gold, https://arcprize.org/play?task=e9afcf9a
-p=lambda a:[b:=[*map(max,a)]*3,b[::-1]]
+# 🥇 task 373: 38 bytes, gold, https://arcprize.org/play?task=e9afcf9a
+p=lambda m:[l:=min(zip(*m))*3,l[::-1]]
 # 🥈 task 374: 107 vs 106 bytes for gold, https://arcprize.org/play?task=ea32f347
 p=lambda g,l=128:-l*g or p([*zip(*(a:=eval(str(g).replace(l//12*"5, ",l//12*"4>>l%3,"))))][::-1],l-3+(g>a))
 # 🥇 task 375: 53 bytes, gold, https://arcprize.org/play?task=ea786f4a

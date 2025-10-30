@@ -1,1 +1,1 @@
-p=lambda m:[l:=[*zip(*m)][0]*3,l[::-1]]
+p=lambda m:[l:=min(zip(*m))*3,l[::-1]]

@@ -13181,7 +13181,7 @@
     },
     "task373": {
         "gold": 38,
-        "best": 39,
+        "best": 38,
         "solutions": {
             "att": {
                 "source": "cD1sYW1iZGEgYTpbYjo9WyptYXAobWF4LGEpXSozLGJbOjotMV1d",
@@ -13198,10 +13198,10 @@
                 "method": "none"
             },
             "xsot": {
-                "source": "cD1sYW1iZGEgbTpbbDo9Wyp6aXAoKm0pXVswXSozLGxbOjotMV1d",
-                "size_uncompressed": 39,
-                "compressed": "cD1sYW1iZGEgbTpbbDo9Wyp6aXAoKm0pXVswXSozLGxbOjp+MF1d",
-                "size_compressed": 39,
+                "source": "cD1sYW1iZGEgbTpbbDo9bWluKHppcCgqbSkpKjMsbFs6Oi0xXV0=",
+                "size_uncompressed": 38,
+                "compressed": "cD1sYW1iZGEgbTpbbDo9bWluKHppcCgqbSkpKjMsbFs6Oi0xXV0=",
+                "size_compressed": 38,
                 "method": "none"
             },
             "combined_solutions": {

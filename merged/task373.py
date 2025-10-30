@@ -1,10 +1,10 @@
-# att (39 vs 38 bytes for gold)
+# xsot (38 bytes, gold)
+p=lambda m:[l:=min(zip(*m))*3,l[::-1]]
+
+### att (39 bytes)
 p=lambda a:[b:=[*map(max,a)]*3,b[::-1]]
 
-### xsot (tied, 39 bytes)
-p=lambda m:[l:=[*zip(*m)][0]*3,l[::-1]]
-
-### combined (tied, 39 bytes)
+### combined (39 bytes)
 p=lambda a:[b:=[*map(max,a)]*3,b[::-1]]
 
 ### ovs (42 bytes)
