@@ -1,12 +1,29 @@
-# compression_experiments (245 (341 unzipped) bytes, gold)
-def	p(t):
-	f={r+d*1j:t[d][r]for	d	in	range(len(t))for	r	in	range(len(t))}
-	n,e=[d	for	d	in	f	if	f[d]==3]
-	i=[(n,e-n,1),(n,n-e,1)]
-	for*o,d,n,e	in	i:
-		if(d	in	f)*e%8:
-			if	f[d]==2:return[[(r+d*1jin	o)*3|t[d][r]for	r	in	range(len(t))]for	d	in	range(len(t))]
-			i+=[o+[d-f[d]//8*n,d-f[d]//8*n+r,r,~f[d]//8*e]for	r	in	f[d]//8*[n/1j,n*1j]or[n]]
+# compression_experiments (244 (319 unzipped) bytes, gold)
+def p(n):
+ r={e+u*1j:n for u,n in enumerate(n)for e,n in enumerate(n)};i,f=[u for u in r if r[u]==3]
+ o=[(i,f-i,1),(i,i-f,1)]
+ for*j,u,i,f in o:
+  if(u in r)*f%8:
+   if r[u]==2:return[[n|(e+u*1jin j)*3for e,n in enumerate(n)]for u,n in enumerate(n)]
+   t=r[u]//8;o+={(*j,u-t*i,u-t*i+i*1j**e,i*1j**e,~t*f)for e in(t,-t)}
+
+### ovs (246 (319 unzipped) bytes)
+def p(g):
+ M={D+y*1j:g for y,g in enumerate(g)for D,g in enumerate(g)};A,C=[y for y in M if M[y]==3]
+ S=[(A,C-A,1),(A,A-C,1)]
+ for*V,y,A,C in S:
+  if(y in M)*C%8:
+   if M[y]==2:return[[g|(D+y*1jin V)*3for D,g in enumerate(g)]for y,g in enumerate(g)]
+   t=M[y]//8;S+={(*V,y-t*A,y-t*A+A*1j**D,A*1j**D,~t*C)for D in(t,-t)}
+
+##
+def p(g):
+ M={A*1j+B:D for A,C in enumerate(g)for B,D in enumerate(C)};A,C=[y for y in M if M[y]==3];S=[(C+C-A,C-A,0,0),(A+A-C,A-C,0,0)]
+ for*V,y,A,C,G in S:
+  if(y in M)*16>G|C+13:
+   for y in(M[y]==2)*V:g[int(y.imag)][int(y.real)]=3
+   F=M[y]>7;y-=A*F;S+=[(y,*V,y+D,D,C+F,~-F*~G)for D in[A][F:]or[A*1j,A/1j]*G]
+ return g
 
 ### joking (247 (341 unzipped) bytes)
 def	p(g):
@@ -42,15 +59,6 @@ def p(g):
     break
    V=V|{(y,x)};y+=A;x+=B
  (C,D),(A,B)=[[A,B]for A,C in enumerate(g)for B,D in enumerate(C)if g[A][B]==3];H={(C,D),(A,B)};p(C+C-A,D+D-B,C-A,D-B,H,g);p(A+A-C,B+B-D,A-C,B-D,H,g);return g
-
-### ovs (277 (322 unzipped) bytes)
-def p(g):
- M={A*1j+B:D for A,C in enumerate(g)for B,D in enumerate(C)};A,C=[y for y in M if M[y]==3];S=[(C+C-A,C-A,0,0),(A+A-C,A-C,0,0)]
- for*V,y,A,C,G in S:
-  if(y in M)*16>G|C+13:
-   for y in(M[y]==2)*V:g[int(y.imag)][int(y.real)]=3
-   F=M[y]>7;y-=A*F;S+=[(y,*V,y+D,D,C+F,~-F*~G)for D in[A][F:]or[A*1j,A/1j]*G]
- return g
 
 ### combined (346 (479 unzipped) bytes)
 def p(g):
