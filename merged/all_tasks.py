@@ -145,8 +145,8 @@ def p(n):
    t=r[u]//8;o+={(*j,u-t*i,u-t*i+i*1j**e,i*1j**e,~t*f)for e in(t,-t)}
 # 🥇 task 67: 33 bytes, gold, https://arcprize.org/play?task=2dee498d
 p=lambda a:[b[:len(a)]for b in a]
-# 🥈 task 68: 115 vs 112 bytes for gold, https://arcprize.org/play?task=31aa019c
-p=lambda a:eval(f'[[[0,2,2,*a[1]][[*map("{a}".count,str(a))].count(1)]\nfor*a,in map(zip,a[:1]+a,a,a,a[1:]+a)]#'*2)
+# 💎 task 68: 104 bytes, gold, https://arcprize.org/play?task=31aa019c
+p=lambda a,k=7,q=0:-k*a or p([[[2*q,v][q:=sum(a,[]).count(v)<9-k]for v in r]for*r,in zip(*a)][::-1],k-2)
 # 🥇 task 69: 150 bytes, gold, https://arcprize.org/play?task=321b1fc6
 def p(g):E=range(10);f={*enumerate(sum(zip(*g*2),()))};return[[sum(V*(f>{(i+j*20-I+J,8)for J,V in f if V%8})for I,V in f if 8^V)for j in E]for i in E]
 # 🥉 task 70: 82 vs 78 bytes for gold, https://arcprize.org/play?task=32597951
