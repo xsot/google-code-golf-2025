@@ -1,4 +1,4 @@
-# att (121 vs 120 bytes for gold)
+# att (121 bytes, gold)
 p=lambda a,*n,d=0:[e for*b,c in zip(*n or p(a,*a),a)if c[0]if(d:=d+any(e:=[*map(lambda x,y:y*(x==y!=c[0]),a,a:=b)]))][:3]
 
 ### ovs (138 bytes)

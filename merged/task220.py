@@ -1,4 +1,4 @@
-# ovs (88 vs 87 bytes for gold)
+# ovs (88 bytes, gold)
 p=lambda i:exec("i[::-1]=map(lambda*x,s=0:[v|139%(s|-~s)>>(s:=v)for v in x],*i);"*4)or i
 
 ##

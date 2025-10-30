@@ -1,4 +1,4 @@
-# joking (104 vs 102 bytes for gold)
+# joking (104 bytes, gold)
 p=lambda a:[[*map(min,*[c for c in a if{*c}<=r])]for b in a if len(r:={*b,0})<3]or[*zip(*p([*zip(*a)]))]
 
 ##

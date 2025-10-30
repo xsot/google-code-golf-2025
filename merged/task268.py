@@ -1,4 +1,4 @@
-# compression_experiments (222 (278 unzipped) vs 218 bytes for gold)
+# compression_experiments (222 (278 unzipped) bytes, gold)
 def p(i):l,f=[(e:=r,o:=n)for r in range(len(i))for n in range(len(i))if i[r][n]][0];return i[e][o-2]and[*zip(*p([[*r]for r in zip(*i[::-1])]))][::-1]or[i for r in range(l+1,len(i))for n in({*range(f+2,o-1),e-r+f+2,o-2+r-e}&{*range(len(i))},range(f+1,o))[r<e]for i[r][n]in[4]][0]
 
 ### joking (224 (278 unzipped) bytes)

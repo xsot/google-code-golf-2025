@@ -1,4 +1,4 @@
-# ovs (88 vs 86 bytes for gold)
+# ovs (88 bytes, gold)
 p=lambda g:exec("g[:]=map(list,zip(*g[(8in g[-2])-2::-1]));"*40+"g[1][1]=max(g[0])")or g
 
 ##

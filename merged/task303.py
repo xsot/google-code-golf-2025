@@ -1,4 +1,4 @@
-# att (64 vs 62 bytes for gold)
+# att (64 bytes, gold)
 p=lambda a:[[d^2^2*any(b)*any(c)for*c,d in zip(*a,b)]for b in a]
 
 ### ovs (tied, 64 bytes)

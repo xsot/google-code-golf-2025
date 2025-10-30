@@ -1,4 +1,4 @@
-# joking (97 vs 96 bytes for gold)
+# joking (97 bytes, gold)
 import re;p=lambda i,*I:eval(re.sub("0, 0, 0(.{55})?"*3," 1,1,1\%d"*3%(1,2,3),str(I or p(i,*i))))
 
 ## alts

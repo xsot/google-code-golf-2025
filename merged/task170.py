@@ -1,4 +1,4 @@
-# joking (193 vs 180 bytes for gold)
+# joking (193 bytes, gold)
 exec(f"def p(r):e=r;[n:=0**e[o:=i-3][f:=t-3]-4{'for %s,r in enumerate(r)'*2}if r];{'*e,=filter(max,zip(*e[:o]));'*2}return[[r&e//-9{'for e,r in zip(e[::~len(e)//n],r[n+4+%s:])]'*2}"%(*'itfo',))
 
 ## zips to 194

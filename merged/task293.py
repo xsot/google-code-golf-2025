@@ -1,4 +1,4 @@
-# att (60 vs 59 bytes for gold)
+# att (60 bytes, gold)
 p=lambda a:[[d^c^b[0]or d for*_,c,d in zip(*a,b)]for b in a]
 
 ### combined (tied, 60 bytes)

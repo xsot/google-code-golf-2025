@@ -1,4 +1,4 @@
-# compression_experiments (211 (270 unzipped) vs 199 bytes for gold)
+# compression_experiments (211 (270 unzipped) bytes, gold)
 def	p(z):
 	t=min(sum(r:=z,[]),key=sum(r:=z,[]).count);o=len(r:=[r	for	r	in	zip(*r)if	t	in	r])
 	f=len(r:=[r	for	r	in	zip(*r)if	t	in	r])

@@ -1,4 +1,4 @@
-# joking (69 vs 66 bytes for gold)
+# joking (69 bytes, gold)
 p=lambda i:[[(y>>max(max(i)))%2*5for y in[x,x|6,x|8]]for x in[4,2,8]]
 
 ## experiments with recursion

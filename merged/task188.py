@@ -1,4 +1,4 @@
-# joking (63 vs 53 bytes for gold)
+# joking (63 bytes, gold)
 p=lambda a,s=4:a[:s]*(a[:s]*2==a)or[*zip(*p([*zip(*a)],~-s%5))]
 
 ##

@@ -1,4 +1,4 @@
-# mwi (235 (303 unzipped) vs 194 bytes for gold)
+# mwi (235 (303 unzipped) bytes, gold)
 def p(p):u=max(r:=sum(f:=p,[]),key=r.count);return[[[[u,f][f==n]for*i,f in zip(*p,i)if n in i]for i in p if n in i]for n in{*r}for e in range(52)for m in range(52)if[]<(i:=[p for p,f in zip(p,sum(zip(f,f),((),)*19)[e:])for p,f in zip(p,sum(zip(f,f),((),)*19)[m:])if p!=f==n!=u])==i[:1]*r.count(i[0])][0]
 
 ##

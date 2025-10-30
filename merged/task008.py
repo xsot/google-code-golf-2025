@@ -1,4 +1,4 @@
-# ovs (90 vs 84 bytes for gold)
+# ovs (90 bytes, gold)
 p=lambda g:exec('*G,f=0,\nfor r in g:M=max(r);f|=M;G[M-f&11-f:0]=r,\ng[:]=zip(*G);'*4)or g
 # M-f&11-f is 8 (could be any integer >= 3) for M=0, f=2; 0 for all other combinations
 

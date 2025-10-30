@@ -1,4 +1,4 @@
-# ovs (152 vs 149 bytes for gold)
+# ovs (152 bytes, gold)
 exec("p=lambda n:[[(a:=max(max(n)),5,5)[min(max(f-b,b-f,m-s,s-m)"+'for %s in range(10)%s'*4%(*'b s',"if n[b][s])%(3-(f', {a}, 0'*2in'%s'%n))]",*'m]f]'))
 
 ## (garry_moss)

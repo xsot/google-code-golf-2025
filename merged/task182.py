@@ -1,4 +1,4 @@
-# joking (186 vs 169 bytes for gold)
+# joking (186 bytes, gold)
 def p(g):
  R=F=sum(g,[])
  while C:=max(F):

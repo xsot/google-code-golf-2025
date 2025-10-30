@@ -1,4 +1,4 @@
-# ovs (91 vs 88 bytes for gold)
+# ovs (91 bytes, gold)
 def p(i,n=0):
  l=len(i)//2;*w,S,L=i
  for x in w[l-0**S[-l]:]:x[n]=x[~n]=L[l];n+=1

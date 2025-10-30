@@ -1,4 +1,4 @@
-# ovs (141 vs 137 bytes for gold)
+# ovs (141 bytes, gold)
 def p(a):r=range(len(a));*_,B,C=sorted(map(a.index,a));W=max(a[B]);return[[W>>max(i-B,B-i,abs(a[B].index(W)-j))%(C-B)*9for j in r]for i in r]
 
 ### att (143 bytes)

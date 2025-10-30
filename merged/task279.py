@@ -1,4 +1,4 @@
-# ovs (107 vs 106 bytes for gold)
+# ovs (107 bytes, gold)
 p=lambda g,f=18:~f*g or p([*map(lambda*r,a=0:[a:=9&b%(9|f//9%~5*~a-a+3)or(f<0)*9for b in r],*g[::-1])],f-1)
 
 ### joking (109 bytes)

@@ -1,4 +1,4 @@
-# joking (75 vs 74 bytes for gold)
+# joking (75 bytes, gold)
 p=lambda g:[[v+3-3*(c>[-v]*99<r[1:-1])for _,*c,_,v in zip(*g,r)]for r in g]
 
 ## recursive approach

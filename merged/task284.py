@@ -1,4 +1,4 @@
-# ovs (204 vs 201 bytes for gold)
+# ovs (204 bytes, gold)
 p=lambda i:[i:=[*zip(*len(l:=[n for n,y in E(m)if y])%2*i)]or[[(23//(X:=sum(l)-b-b)**2*9+(l[0]<=b<=l[1])>>a*a&1)*m[l[X<0]]for a,_ in E(i,-i.index(m))]for b,_ in E(m)]for E in[enumerate]*2if[m:=max(i)]][1]
 
 ### joking (205 bytes)

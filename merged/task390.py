@@ -1,4 +1,4 @@
-# joking (100 vs 98 bytes for gold)
+# joking (100 bytes, gold)
 import re
 p=lambda g,*G:eval(re.sub("([^2(]{9}2[^2]{9})",r"*[\1][::-1]","%s"%[*zip(*G or p(g,*g))]))
 

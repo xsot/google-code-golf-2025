@@ -1,4 +1,4 @@
-# att (101 vs 98 bytes for gold)
+# att (101 bytes, gold)
 p=lambda a:[sorted(range(10),key=lambda c:sum(e!=c in{*b}&{*d}for b in a for*d,e in zip(*a,b)))[8:9]]
 
 ### combined (tied, 101 bytes)

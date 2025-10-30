@@ -1,4 +1,4 @@
-# att (110 vs 108 bytes for gold)
+# att (110 bytes, gold)
 exec("p=lambda a,d=1:[i:="+'[b[1:-1]for*b,in zip(*'*2+"a)if d in b])if{d}<{*b}],0][d in sum(i,a)]or p(a,d+1)")
 
 ##

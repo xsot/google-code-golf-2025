@@ -1,4 +1,4 @@
-# joking (63 vs 61 bytes for gold)
+# joking (63 bytes, gold)
 # previous pysearch probably had any(row)&any(column)<1 and cell==8 cases included
 p=lambda a:[[~v*c*any(b)%10for v,c in zip(b,max(a))]for b in a]
 
