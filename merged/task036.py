@@ -1,13 +1,14 @@
-# att (86 vs 75 bytes for gold)
-p=lambda a,c=1,*n:(len(d:=[b for*b,in zip(*n or p(a,c,*a))if c in b])<6)*d or p(a,c+1)
-
-### ovs (tied, 86 bytes)
-p=lambda i,n=2,*t:t*(t==t[n%2:5])or p(i,n+1,*[x for x in zip(*n%2*t or i)if n//2in x])
+# ovs (82 vs 75 bytes for gold)
+p=lambda i,n=2,*t:t*(t==t[:5])or p(i,n+1,*zip(*[x for x in[i,t][n%2]if n//2in x]))
 
 ##
+p=lambda i,n=2,*t:t*(t==t[n%2:5])or p(i,n+1,*[x for x in zip(*n%2*t or i)if n//2in x])
 p=lambda i,n=1,w=0,*t:t*(t==t[w:5])or p(i,n+w,w^1,*[x for x in zip(*w*t or i)if n in x])
 p=lambda i,k=99,*r:-k*i or p([*zip(*i[~(a:={*sum(i,w:=i[-1]),*r}>{*w,*r})::-1])],k-1,*r,*a*w)
 p=lambda g:min([(h:=lambda g,k=-99:k*g or h([*zip(*g[C not in g[0]:][::-1])],k+1))(g)for C in{*sum(g,[])}],key=len)
+
+### att (86 bytes)
+p=lambda a,c=1,*n:(len(d:=[b for*b,in zip(*n or p(a,c,*a))if c in b])<6)*d or p(a,c+1)
 
 ### joking (88 bytes)
 # this is clearly not the right approach lol
