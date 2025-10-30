@@ -96,9 +96,15 @@ def test_task(task_name, src, subsets=('train', 'test', 'arc-gen')):
     for subset in subsets:
         for test_case in test_data[subset]:
             try:
+                
                 repr = lambda i:json.dumps(eval(str(i).replace("False","0").replace("True","1").replace(".0","")))
-                if not repr(submission(test_case['input'])) == repr(test_case['output']):
+                result = submission(test_case['input'])
+                if not repr(result) == repr(test_case['output']):
                     # incorrect result
+                    return False
+                if any(chr not in "[] () 0123456789 , . True False" for chr in str(result)):
+                    # guard against anything that might pass locally but not on server
+                    # for example, outputs containing -0.0
                     return False
             except KeyboardInterrupt as e:
                 # user interrupt

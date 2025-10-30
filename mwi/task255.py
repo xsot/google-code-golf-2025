@@ -1,3 +1,7 @@
+import re;p=lambda g,k=15:-k*g or p(eval(re.sub(*["\((%s|(0, )+3, 3, 3),?"%re.search(r"([ ,03]{61,})(.*\1){3}|$",g:=str([*zip(*g[::-1])]))[1],"(?=0((,[^,]*){31}|, )[1-9])",r"(*[3]*len([\1]),","1<"][k>9::2],g)),k-1)
+
+## MOST OF THESE SOLUTIONS FAIL ON THE SERVER, OUTPUT CANNOT CONTAIN -0.0
+
 import re;p=lambda g,k=15:-k*g or p(eval(re.sub(*["\((%s|(0, )+3, 3, 3),?"%re.search(r"([ ,03]{61,})(.*\1){3}|$",g:=str([*zip(*g[::-1])]))[1],"(?=0((,[^,]*){31}|, )[1-9])",r"(*[3]*len([\1]),","-."][k>9::2],g)),k-1)
 ##
 import re;p=lambda g,k=15:-k*g or p(eval(re.sub(*[["\((%s|(0, )+3, 3, 3),?"%(re.search(r"([ ,03]{61,})(.*\1){3}",g:=str([*zip(*g[::-1])]))or"__")[1],r"(*[3]*len([\1]),"],["(?=0((,[^,]*){31}|, )[1-9])","-."]][k>9],g)),k-1)
