@@ -1,4 +1,4 @@
-# att (62 bytes, gold)
+# att (62 vs 60 bytes for gold)
 p=lambda a,i=2:[p(b,4)for*b,in map(zip,a,a[i:])]or max(max(a))
 
 ##

@@ -1,4 +1,4 @@
-# ovs (90 vs 88 bytes for gold)
+# ovs (90 vs 87 bytes for gold)
 p=lambda i:[*zip(*len(u:=[s for r in i if(s:=sum({*r}-{5}))])%len(i)*[u]or p([*zip(*i)]))]
 
 ## 87 probably looks more like this:
