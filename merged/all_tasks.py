@@ -616,10 +616,8 @@ p=lambda g,v=0:g*0!=0and[*map(p,g,[-1,4]*9)]or-g//v&v
 p=lambda g:[[(i:=a&b)*0+max(v*(sum(g,g)[i-1:(i:=i+1)]==[v,v])for v in sum(g,[]))for a in b'[Z']for b in b'A[']
 # 🥈 task 254: 91 vs 84 bytes for gold, https://arcprize.org/play?task=a61f2674
 p=lambda i,r=[0]*9:[r:=[y or s>0and((x<i[8])is y)*2+1-any(r)for s,y in zip(x,r)]for x in i]
-# 💎 task 255: 227 (290 unzipped) bytes, gold, https://arcprize.org/play?task=a64e4611
-def p(g):
- for y in range(32):g=[[g[y][~x]+13*any({*r[-2%(30-x):31-x]}-{0,3}for r in g[y-1:y+2])for y in range(30)]for x in range(30)];g=[[r[x]%13|3*(len(w:=[r[x]for r in g if{*r[:10]}<={0,3}])>3!={*r[:10]}<={0,3}>={*w}or 3in r[x:]!={*r[:10]}<={0,3})for x in range(30)]for r in g]
- return g
+# 💎 task 255: 221 bytes, gold, https://arcprize.org/play?task=a64e4611
+import re;p=lambda g,k=15:-k*g or p(eval(re.sub(*[["\((%s|(0, )+3, 3, 3),?"%(re.search(r"([ ,03]{61,})(.*\1){3}",g:=str([*zip(*g[::-1])]))or"__")[1],r"(*[3]*len([\1]),"],["(?=0((,[^,]*){31}|, )[1-9])","-."]][k>9],g)),k-1)
 # 🥈 task 256: 96 vs 95 bytes for gold, https://arcprize.org/play?task=a65b410d
 def p(g):s=sum(m:=max(g))//2;i=s-~g.index(m);return[[2-((i:=i+i%~i)<s)+(i>s)]*i+r[i:]for r in g]
 # 💎 task 257: 68 bytes, gold, https://arcprize.org/play?task=a68b268e
