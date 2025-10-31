@@ -1,4 +1,4 @@
-# combined (40 bytes, gold)
+# combined (40 vs 39 bytes for gold)
 p=lambda i:[[0**i[0][0]+0**i[0][2]*3^2]]
 
 ### ovs (43 bytes)

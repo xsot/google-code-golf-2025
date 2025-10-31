@@ -1,4 +1,4 @@
-# ovs (84 bytes, gold)
+# ovs (84 vs 83 bytes for gold)
 p=lambda g:[max([[-x^-y<1and(x|y)for x,y in zip(b,a)]for a in g],key=all)for b in g]
 
 ### mwi (105 bytes)

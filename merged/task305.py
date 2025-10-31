@@ -1,4 +1,4 @@
-# ovs (57 bytes, gold)
+# ovs (57 vs 56 bytes for gold)
 p=lambda g:[([*{*g[0]}-{0}]*9)[y:y+16]for y in range(16)]
 
 ### joking (62 bytes)

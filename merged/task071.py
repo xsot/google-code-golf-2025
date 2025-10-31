@@ -1,4 +1,4 @@
-# ovs (104 bytes, gold)
+# ovs (104 vs 100 bytes for gold)
 p=lambda i:min([[sum({*t}&{*max(i,key=any)})for t in zip(x,(x*2)[~n::-1])]for x in i]for n in range(16))
 
 ### joking (133 bytes)
