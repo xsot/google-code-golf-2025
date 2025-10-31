@@ -1,10 +1,15 @@
 # 2025 Google Code Golf Championships
 Bronze Medalist submission to the [2025 Google Code Golf Championships](https://www.kaggle.com/competitions/google-code-golf-2025/overview), by team `ox jam! 🎤🐂🎸🐂🎷🐂🥁🐂🎹🐂`:
 
+
 **o**vs-code [🎤🐂](https://github.com/ovs-code)
+
 **x**sot / Wei Heng [🎸🐂](https://github.com/xsot)
+
 **j**oKing / GrayJoKing [🐂🎷](https://github.com/GrayJoKing)
+
 **a**ttinat / zacjl [🐂🥁](https://github.com/zacjl)
+
 **m**eWhenI [🎹🐂](https://github.com/MeWhenI)
 
 ### Project details
