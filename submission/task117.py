@@ -1,0 +1,1 @@
+p=lambda i:[i:=[*zip(*map(max,i,(i*2)[j*2::~0]+i[::~0]))]for j in b'	'*2if[x.count(max(i[j]))for x in i[j-1:j+2]]==[2,1,2]][1]

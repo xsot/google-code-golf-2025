@@ -1,0 +1,1 @@
+p=lambda a,n=44:a*(-3-n)or p([[d%~d&max(max(a))for d in c]for c in zip(*a[any(n*a[-1])-2::~0])],n-1)

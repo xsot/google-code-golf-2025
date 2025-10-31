@@ -1,0 +1,1 @@
+p=lambda i,e=0:i*0!=0and[p(y)or[e:=y-e,5][e<0]for y in i]

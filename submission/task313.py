@@ -1,0 +1,1 @@
+p=lambda g,s=[0]:s*-1*-1or[*map(p,g,(s+g)[1:3+len(s)//12]*10)]

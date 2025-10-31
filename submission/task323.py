@@ -1,0 +1,1 @@
+p=lambda a,B=0:[[v|5*((b:=abs(B+(B:=B-3)//39*2+str(a).find('8')))>~b%76in b'KHE"')for v in r]for r in a]

@@ -1,0 +1,1 @@
+p=lambda i,k=11,t=1:-k*i or p([(e:=1)*[e:=y%2*[y|(t:=t*16)|e,-y%5][k<1]for y in i]for i[::~0]in zip(*i)],k-1,0)

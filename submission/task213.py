@@ -1,0 +1,1 @@
+p=lambda i:[*zip(*len(u:=[s for r in i if(s:=sum({*r}-{5}))])%len(i)*[u]or p([*zip(*i)]))]

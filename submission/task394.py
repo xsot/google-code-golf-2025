@@ -1,0 +1,1 @@
+p=lambda i:[[v for y,v in zip(x,x[n:n*2]+x)if 1>y]for x in i if(n:=122%len(i))>0in x]

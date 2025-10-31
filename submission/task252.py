@@ -1,0 +1,1 @@
+p=lambda g,v=0:g*0!=0and[*map(p,g,[-1,4]*9)]or-g//v&v

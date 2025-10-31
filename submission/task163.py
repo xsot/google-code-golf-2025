@@ -1,0 +1,1 @@
+exec("p=lambda a:[[5*(a[i][j]==5)or sum((4==a[k+i//4][l+j//4])*a[k+i%4][l+j%4]"+'for %s in range(0,11,%s)%s'*4%(*'k4 l4)j1]i1]',))

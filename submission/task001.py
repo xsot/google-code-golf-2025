@@ -1,0 +1,1 @@
+p=lambda*a:[(*a,min,p)[2](s,t)for s in a[0]for t in a[-1]]

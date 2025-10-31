@@ -1,0 +1,1 @@
+p=lambda g:[[g[1][x]*sum(g[2][x:x+3])%13^8]*3for x in b'']

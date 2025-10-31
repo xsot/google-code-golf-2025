@@ -1,0 +1,1 @@
+p=lambda a:max([-(c:=sum(b:=[b[x%17:x%21]for b in a[x%19:x%22]],a).count)(0),c(2),c(1),b]for x in range(8**6))[3]

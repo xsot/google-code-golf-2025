@@ -1,0 +1,1 @@
+def p(i):*v,=map(max,*i);*_,f,r=sorted(map(v.index,v));N=len(v);return i[N:]and[*zip(*p([*zip(*i)]))]or[(v[:f]+v[f:2*r-f]*N)[:N]]*len(i)

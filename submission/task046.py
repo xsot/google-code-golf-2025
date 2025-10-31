@@ -1,0 +1,1 @@
+p=lambda i,n=3,Z=zip:[*Z(*[[y%~y&max({*p,*x,*q}-{5})for y in x*3][n:n+3]for*x,p,q in Z(*i,[[],*Z(*i)],[*Z(*i),[5]][1:])if any(x)or(n:=n-[*p,5].index(5)+q.index(5))*0])]

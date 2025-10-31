@@ -1,0 +1,1 @@
+p=lambda g,k=6,w=0:~k*g or[[a+[(0is a<w<=k)*max({*sum(g,r)}-{5}),0.][2>w]for a in r]for*r,in zip(*p(g,k-1))if[w:=w*2+any(r)]][::-1]

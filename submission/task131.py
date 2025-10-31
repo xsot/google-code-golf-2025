@@ -1,0 +1,1 @@
+p=lambda a:[a:=[[*b[:[*b,1].index(~b[l:=len(a)]%5%3)],*b[l:],8,*[0]*l][l-1::~0]for*b,in zip(*a,*filter(any,a))]for _ in a][3]

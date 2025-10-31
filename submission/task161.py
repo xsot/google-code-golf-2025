@@ -1,0 +1,1 @@
+p=lambda m:[[4//(C:=sum(m,m).count)(x)*x|4//C(i)*i for i in m[0]]for x,*_ in m]

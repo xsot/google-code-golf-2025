@@ -1,0 +1,1 @@
+p=lambda i,k=11,s=[0]*22:-k*i or p([s:=[[y%7*9%13%9,u*t%2<<k%4*3+6|y|u][k>0<y]for y,t,u in zip(x,[0]+x,s)]for*x,in zip(*i)][::~0],k-1)

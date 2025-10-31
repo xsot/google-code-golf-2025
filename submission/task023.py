@@ -1,0 +1,1 @@
+import re;p=lambda i,w=2:s!=(r:=re.sub((w%2*"5, "+"5(.%s)??")%{w*3%-7%len(i[0]*3)+2}*(3-w%2),r" 82,\81\ 12 \82, 82"[w::2],s,1))and p(eval(r))or w and p(i,w-1)if"5"in(s:=str(i))else i

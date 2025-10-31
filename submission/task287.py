@@ -1,0 +1,1 @@
+p=lambda*a:sum({*a[3:]}-{4})or[*map(p,*a+a,a[0][::~0])]

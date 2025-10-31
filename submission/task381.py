@@ -1,0 +1,1 @@
+p=lambda i,s=9:[[y|(sum(x)>(s:=s+y)>(x!=i[9])>y)*9for y in x]*(s:=1)for x in i]

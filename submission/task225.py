@@ -1,0 +1,1 @@
+p=eval(f'lambda i:[[([i[a][b]]*4+[i{" for i in i[a-3:a]+i[a+3:a:-1]for a in[b]"*2}if i])[-4]'+'for %c in range(6)]'*2%(98,97))

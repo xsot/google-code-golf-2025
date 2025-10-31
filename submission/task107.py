@@ -1,0 +1,1 @@
+def p(i):z=len({*str(i)})-5;r=range(5*z);return[[i[x//z][y//z]or(x-z*0**i[0][1]in[u:=y-z*0**i[1][0],z*2+~u])*2for y in r]for x in r]

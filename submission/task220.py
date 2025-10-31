@@ -1,0 +1,1 @@
+p=lambda i:exec("i[::-1]=map(lambda*x,s=0:[v|139%(s|-~s)>>(s:=v)for v in x],*i);"*4)or i

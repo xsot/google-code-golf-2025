@@ -1,0 +1,1 @@
+p=lambda i,c=50:[[y%~y&i[(c:=c-1)>>9][~c//5%-2]for y in x]for x in i]

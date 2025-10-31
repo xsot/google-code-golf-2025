@@ -1,0 +1,1 @@
+p=lambda a:[b[::~0]for b in a[::~0]]

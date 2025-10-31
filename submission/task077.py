@@ -1,0 +1,1 @@
+p=lambda i,k=7,*w:k and p([*map(p,i,[k>1]*99,[i*2]+i,i[1:]+[i*2],*w)],k-1)or((c:=w.count)(2)+c(4)>=2!=i)*4or i

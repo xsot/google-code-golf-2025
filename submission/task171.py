@@ -1,0 +1,1 @@
+p=lambda a:a*all(a[0])or p([*zip(*a[:0:-1],[8]*9)])

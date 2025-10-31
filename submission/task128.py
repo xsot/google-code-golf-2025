@@ -1,0 +1,1 @@
+p=lambda i,*n:n[-n.count(0):]+n or[*zip(*map(p,i,*i))][:15]

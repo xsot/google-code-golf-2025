@@ -1,0 +1,1 @@
+p=lambda g:exec("q=[]\nfor r in zip(*g):q+=q[::~0]*({*r}^{2}=={3}<{*q[-1]})or[[v or 3for v in r]]\ng[:]=q[9::~0];"*8)or g

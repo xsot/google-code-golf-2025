@@ -1,0 +1,1 @@
+p=lambda a,n=3,d=0:-n*a or p([[b.pop()|4*(n|2in b)*(d:=d^sum(c)&2)for c in a[::~0]]for*b,in zip(*a)],n-1)

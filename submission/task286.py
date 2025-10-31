@@ -1,0 +1,1 @@
+p=lambda i,k=39:-k*i or[[t:=y or sum({*t%8*sum(i,x)}-{t,8})for y in[8]+x][:0:-1]for*x,in zip(*p(i,k-1))]

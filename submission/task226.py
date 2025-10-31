@@ -1,0 +1,1 @@
+p=lambda i,y=0:[[v|-~int(a:=y*2/sum(c))*(a==(s:=s+v)*2/sum(r)>=v==a%1)for*c,v in zip(*i,r)]for r in i if[y:=y+r[s:=0]]]

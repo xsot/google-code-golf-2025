@@ -1,0 +1,1 @@
+p=lambda a,*n:[*zip(*map({}.fromkeys,n or p(a,*a)))]

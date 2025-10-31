@@ -1,0 +1,1 @@
+p=lambda a,n=10,d=0:~n*a or p([[b.pop()|(n%6*2in b)*(d:=d^4%(sum(c)|4))for c in a[::~0]]for*b,in zip(*a)],n-3)

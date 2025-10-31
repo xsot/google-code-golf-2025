@@ -1,0 +1,1 @@
+p=lambda a,n=7:-n*a[:3]or p([*zip(*a[1-any(a[0]):3+n])],n-1)

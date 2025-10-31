@@ -1,0 +1,1 @@
+p=lambda a:a[::~0]+a

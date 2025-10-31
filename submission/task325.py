@@ -1,0 +1,1 @@
+p=lambda i,z=8,*w:i[22:]and[[8*(a==b)for b in w]for a in w]or p([[s:=h and(z:=z*2)|s|h for h in[0]+x]for*x,in zip(*i[::~0])],*{*sum(i,[0])})

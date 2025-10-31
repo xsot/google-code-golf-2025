@@ -1,0 +1,1 @@
+p=lambda g,Q=range(10):[g:=[[g[j][~i]|g[j-C-C][~i+C]*g[j-C][~i+C+C]%~(i>C<j)%9for j in Q]for i in Q]for C in[sum(b'%r'%g)//38%4]*4][3]

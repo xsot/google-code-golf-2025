@@ -1,0 +1,1 @@
+p=lambda i,k=0,*s:[s+(s:=())for x in zip(*k or p(i,i))if-~-any(x)*(s:=(*map(max,s+x,x),))]+[s]

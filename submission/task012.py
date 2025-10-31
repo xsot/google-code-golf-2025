@@ -1,0 +1,1 @@
+import re;p=lambda i:exec(r'i[::-1]=zip(*eval(re.sub("(([^0]).{37}([^0]), )0(, 0.{31})0, 0,",r"\1\2\4\3,0,\2+",str(i))));'*8)or i

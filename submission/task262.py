@@ -1,0 +1,1 @@
+p=lambda i:[[~b//~a^2]*3for a,b,_ in i]

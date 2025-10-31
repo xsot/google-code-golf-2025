@@ -1,0 +1,1 @@
+p=lambda i,k=3:-k*i or[[k:=i[y!=8<<k]or y for y in i]for i[::~0]in zip(*p(i,k-1))]

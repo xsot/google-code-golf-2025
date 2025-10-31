@@ -1,0 +1,1 @@
+p=lambda g,l=128:-l*g or p([*zip(*(a:=eval(str(g).replace(l//12*"5, ",l//12*"4>>l%3,"))))][::~0],l-3+(g>a))

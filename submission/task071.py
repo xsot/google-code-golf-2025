@@ -1,0 +1,1 @@
+p=lambda i:min([[sum({*t}&{*max(i,key=any)})for t in zip(x,(x*2)[~n::~0])]for x in i]for n in range(16))

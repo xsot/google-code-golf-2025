@@ -1,0 +1,1 @@
+p=lambda i:('8'in str(j:=i[(u:=len(i[0])):]))*[[t*y/8for t in s for y in x]for s in i[:u]for x in j]or[*zip(*p([*zip(*j+i[:u])]))]

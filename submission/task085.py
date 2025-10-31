@@ -1,0 +1,1 @@
+p=lambda i:i*0!=0and[i:=[p(x),x][x!=i]for x in i]

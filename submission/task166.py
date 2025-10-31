@@ -1,0 +1,1 @@
+p=lambda a:[[~v*c*any(b)%10for v,c in zip(b,max(a))]for b in a]

@@ -1,0 +1,1 @@
+import re;p=lambda m:[m:=[*zip(*eval(re.sub("0(?=, 0.%s.5, 5)"%{len(m)*3},i,str(m)))[::~0])]for i in'1342'][3]
