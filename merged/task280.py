@@ -1,4 +1,4 @@
-# joking (168 bytes, gold)
+# joking (168 vs 145 bytes for gold)
 def p(a,n=3,i=0):
  for b in a:
   B=bytes(b+[0]).find;d=B(0,c:=B(b'\0')+1)+~c;i+=1

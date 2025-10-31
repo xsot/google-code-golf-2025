@@ -1,4 +1,4 @@
-# ovs (69 bytes, gold)
+# ovs (69 vs 67 bytes for gold)
 p=lambda g:[r[(n:=g.count(g[0])):9]+r[:1]+r[:n]for r in g*2][10-n:-n]
 
 ### mwi (73 bytes)

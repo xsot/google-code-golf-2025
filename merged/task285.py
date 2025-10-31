@@ -1,4 +1,4 @@
-# mwi (272 (431 unzipped) bytes, gold)
+# mwi (272 (431 unzipped) vs 226 bytes for gold)
 def	p(f):
 	for*i,in[[]]*8:
 		f=[i[::-1]for*i,in	zip(*f)]

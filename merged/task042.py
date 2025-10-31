@@ -1,4 +1,4 @@
-# joking (134 bytes, gold)
+# joking (134 vs 132 bytes for gold)
 p=lambda g,Q=range(10):[g:=[[g[j][~i]|g[j-C-C][~i+C]*g[j-C][~i+C+C]%~(i>C<j)%9for j in Q]for i in Q]for C in[sum(b'%r'%g)//38%4]*4][3]
 
 ### mwi (140 bytes)

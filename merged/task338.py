@@ -1,4 +1,4 @@
-# xsot (65 bytes, gold)
+# xsot (65 vs 62 bytes for gold)
 p=lambda i:[(t:=0)or[(i:=t**y==i)*3>>(t:=y)for y in x]for x in i]
 
 ##

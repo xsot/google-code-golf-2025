@@ -1,4 +1,4 @@
-# ovs (59 bytes, gold)
+# ovs (59 vs 57 bytes for gold)
 p=lambda i,*n:n[-n.count(0):]+n or[*zip(*map(p,i,*i))][:15]
 
 ##

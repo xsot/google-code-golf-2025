@@ -1,4 +1,4 @@
-# compression_experiments (270 (372 unzipped) bytes, gold)
+# compression_experiments (270 (372 unzipped) vs 266 bytes for gold)
 def	p(s):
 	*e,i,i=sorted({*sum(s,[])},key=sum(s,[]).count);e={u*1j+t:s	for	u,s	in	enumerate(s)for	t,s	in	enumerate(s)if	s	in	e};n={u	for	u	in	e	for	t	in	e	if	abs(u-t)==1}
 	for	u	in{*e}-n:

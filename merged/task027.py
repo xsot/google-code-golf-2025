@@ -1,4 +1,4 @@
-# joking (103 bytes, gold)
+# joking (103 vs 97 bytes for gold)
 p=lambda g,r=range(10):[[(g[i][j]^-g[C:=sum(map(max,*g,*zip(*g)))%2+~i][C+i-j])%3for j in r]for i in r]
 
 ### ovs (104 bytes)

@@ -1,4 +1,4 @@
-# joking (94 bytes, gold)
+# joking (94 vs 79 bytes for gold)
 # alt
 def p(g):A=len(g);B=range(2,A-2);return[[g[g[C][B]%5-3-C*2//A][0-B*2//A]for B in B]for C in B]
 

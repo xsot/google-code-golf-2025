@@ -1,4 +1,4 @@
-# ovs (81 bytes, gold)
+# ovs (81 vs 75 bytes for gold)
 p=lambda a,*A,d=0:[[c^(2%-~c|(d:=2&d-c%3))for c in b]for b in zip(*A or p(a,*a))]
 
 ##

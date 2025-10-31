@@ -1,4 +1,4 @@
-# att (131 bytes, gold)
+# att (131 vs 118 bytes for gold)
 r=3,2,1;p=lambda g:max(({*str(w:=[[max(g[A%10-y][A%11-x]for A in(a,a%119))for x in r]for y in r])}^{'0'},w)for a in range(6666))[1]
 
 ##

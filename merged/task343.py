@@ -1,4 +1,4 @@
-# joking (64 bytes, gold)
+# joking (64 vs 63 bytes for gold)
 p=lambda i:[(h[:8-2*(h[8:12]!=h[:4]!=h[4:8])]*3)[:15]for h in i]
 
 ## pattern size is either 3 or 4, reversing or not

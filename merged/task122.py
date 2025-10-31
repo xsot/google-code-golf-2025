@@ -1,4 +1,4 @@
-# ovs (71 bytes, gold)
+# ovs (71 vs 70 bytes for gold)
 p=lambda a:'3, 0'in'%s'%max(a)and[*map(p,a)]or a[:len(a)^1][-2:]+a[:-2]
 
 ### mwi (79 bytes)

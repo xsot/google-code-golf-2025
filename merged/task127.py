@@ -1,4 +1,4 @@
-# ovs (63 bytes, gold)
+# ovs (63 vs 57 bytes for gold)
 p=lambda a,q=3:a*-1and 5+a%5or a[1:]and[p(a[1])]*q+p(a[2:],4-q)
 
 ##

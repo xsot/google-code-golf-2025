@@ -1,4 +1,4 @@
-# joking (73 bytes, gold)
+# joking (73 vs 71 bytes for gold)
 p=lambda g,t=[],s=0:g*0!=0and[*map(p,g,(t+g)[:6]*3,[g[5]]*17)]or(t>g)*s|g
 
 ### ovs (76 bytes)

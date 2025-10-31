@@ -1,4 +1,4 @@
-# compression_experiments (212 (268 unzipped) bytes, gold)
+# compression_experiments (212 (268 unzipped) vs 195 bytes for gold)
 p=lambda f:[f:=[[m^n*(1&(s:=s>>1)>>99or m==n)for m in m]for n in{*sum(f,[])}if bin(sum((sum(f,[])[m]==n)<<m+9for m in range(100)))in bin(s:=sum((sum(f,[])[m]<5in{*sum(f,[])[m-m%10:m]}&{*sum(f,[])[m:m-m%10+10]})<<m+100for m in range(50)))for m in f][::-1]for m in f][1]
 
 ### ovs (tied, 212 (268 unzipped) bytes)

@@ -1,4 +1,4 @@
-# compression_experiments (227 (384 unzipped) bytes, gold)
+# compression_experiments (227 (384 unzipped) vs 221 bytes for gold)
 def	p(a):
 	r=[[*e]for	e	in	zip(*a)if	1in	e]
 	r=[[*e]for	e	in	zip(*r)if	1in	e]

@@ -1,4 +1,4 @@
-# joking (204 (299 unzipped) bytes, gold)
+# joking (204 (299 unzipped) vs 201 bytes for gold)
 p=lambda n:[1for l,s in enumerate(n)for d,s in enumerate(s)for y,s in enumerate(n)for t,s in enumerate(s)if((r:=[n[y-f//3][t-f%3]for f,s in enumerate(n[:9])])==r[::-1])*sum(r[4]*r[:4])*(r[4]==n[l-1][d-1]or sum(s==n[l-f//3][d-f%3]for f,s in enumerate(r))>7)for f,n[l-f//3][d-f%3]in enumerate(r)]and n
 
 ##

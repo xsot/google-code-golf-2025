@@ -1,4 +1,4 @@
-# att (94 bytes, gold)
+# att (94 vs 93 bytes for gold)
 def p(i):*h,=map(max,*i);H=h.index;j=H(1);return[[c*x[(j:=j%10+1)+~H(c)]for c in h]for x in i]
 
 ### ovs (97 bytes)

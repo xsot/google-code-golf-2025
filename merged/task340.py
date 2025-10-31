@@ -1,4 +1,4 @@
-# joking (112 bytes, gold)
+# joking (112 vs 111 bytes for gold)
 p=lambda i:[i:=[[sum({v,r[0]}&{*i[1],*r[~(j:=j%5%-3):]})for v in r][::-1]for*r,in zip(*i)if[j:=2]]for _ in i][3]
 
 ##

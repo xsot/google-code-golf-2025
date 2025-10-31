@@ -1,4 +1,4 @@
-# att (130 bytes, gold)
+# att (130 vs 112 bytes for gold)
 def p(i):_,b,s={}.fromkeys(sum(i[::-1],[0]));return[[t[a]or(b in t[[*t[:a]+i,s].index(s):])*b for*t,in zip(*i)]for a in range(20)]
 
 ### joking (136 bytes)

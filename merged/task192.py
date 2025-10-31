@@ -1,4 +1,4 @@
-# att (114 bytes, gold)
+# att (114 vs 99 bytes for gold)
 b=c='for*d,c,b,a in zip(b,c,z+a,a[1:]+z,a)]'
 *z,p=b,lambda a:eval('[[[sum({*d}&{b,c}),a][f"{a}, "*2in"%s"]'%a+b*2)
 

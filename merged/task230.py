@@ -1,4 +1,4 @@
-# ovs (110 bytes, gold)
+# ovs (110 vs 95 bytes for gold)
 import re;p=lambda m:[m:=[*zip(*eval(re.sub("0(?=, 0.%s.5, 5)"%{len(m)*3},i,str(m)))[::-1])]for i in'1342'][3]
 
 ##

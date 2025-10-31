@@ -1,4 +1,4 @@
-# joking (97 bytes, gold)
+# joking (97 vs 89 bytes for gold)
 p=lambda g,c=1:((f:=lambda g:[r for r in zip(*g)if c in r])(k:=f(g))==f(k[::-1]))*f(k)or p(g,c+1)
 
 ### ovs (tied, 97 bytes)

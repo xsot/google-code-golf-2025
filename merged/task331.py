@@ -1,4 +1,4 @@
-# ovs (83 bytes, gold)
+# ovs (83 vs 82 bytes for gold)
 p=lambda i,k=2:k//9*i or p(eval(str([*zip(*i[::-1])]).replace("1,","1,k|")),k*9%11)
 
 ### joking (84 bytes)

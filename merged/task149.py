@@ -1,4 +1,4 @@
-# joking (75 bytes, gold)
+# joking (75 vs 74 bytes for gold)
 p=lambda a:a[3:]and[p([*zip(*a[t:t+3])])for t in[0,4,8]]or 9<sum(sum(a,()))
 
 ### att (79 bytes)

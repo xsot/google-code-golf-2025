@@ -1,4 +1,4 @@
-# joking (91 bytes, gold)
+# joking (91 vs 90 bytes for gold)
 p=lambda i,k=23:-k*i or[[*map(max,x,84//len({*x,0})%6*[0]+x)]for*x,in zip(*p(i,k-1)[::-1])]
 
 ##

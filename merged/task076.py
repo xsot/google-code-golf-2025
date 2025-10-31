@@ -1,4 +1,4 @@
-# compression_experiments (269 (384 unzipped) bytes, gold)
+# compression_experiments (269 (384 unzipped) vs 258 bytes for gold)
 def	p(f):
 	r={min(n:={o*1j+t:u	for	o,u	in	enumerate(f)for	t,u	in	enumerate(u)if	u},key=n.get)};e=n;[abs(t-o)<2!=r.add(o)for	o	in[*e]*6for	t	in[*r]]
 	for	o,u	in	enumerate(f):

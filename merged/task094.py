@@ -1,4 +1,4 @@
-# joking (97 bytes, gold)
+# joking (97 vs 96 bytes for gold)
 p=lambda i,*h:[h:=[y+6%-y*(1<x.count(1)==h.count(h>[7])%5)for y in x]for x in zip(*h or p(i,*i))]
 
 ##

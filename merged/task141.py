@@ -1,4 +1,4 @@
-# att (93 bytes, gold)
+# att (93 vs 92 bytes for gold)
 p=eval("lambda a:[[max((x-i in(y-j,j-y))*b[y]"+"for %s,b in enumerate(a)%s"*4%(*'y x)j]i]',))
 
 ### joking (100 bytes)

@@ -1,4 +1,4 @@
-# ovs (100 bytes, gold)
+# ovs (100 vs 92 bytes for gold)
 p=lambda i,*I:[[W[b]|sum({*w[b:]}&{*w[:b]})for b in range(10)]for*W,w in zip(*I or p(zip(*i),*i),i)]
 
 ### combined (105 bytes)

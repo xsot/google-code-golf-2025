@@ -1,4 +1,4 @@
-# joking (104 bytes, gold)
+# joking (104 vs 101 bytes for gold)
 import re;p=lambda g,k=9:-k*g or p(eval(re.sub(r"(?<=(.).{28})(?=(.{29})+\1)0",r"\1",str(g)))[::-1],k-1)
 
 ##

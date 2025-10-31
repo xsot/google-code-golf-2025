@@ -1,4 +1,4 @@
-# ovs (63 bytes, gold)
+# ovs (63 vs 61 bytes for gold)
 p=lambda a:[b[::(n:=~a.index(min(a,key=set)))]for b in a][::-n]
 
 ### joking (64 bytes)

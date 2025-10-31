@@ -1,4 +1,4 @@
-# ovs (66 bytes, gold)
+# ovs (66 vs 65 bytes for gold)
 p=lambda a:[*zip(*[c[:-(w:=sum(c)//4)]+w*[8]+c for*c,in zip(*a)])]
 
 ### att (72 bytes)

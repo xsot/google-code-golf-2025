@@ -1,4 +1,4 @@
-# joking (63 bytes, gold)
+# joking (63 vs 62 bytes for gold)
 p=lambda a:[*zip(*[(max(sum(a,a)[x::3])for x in[7,8,9]*17)]*7)]
 
 ##

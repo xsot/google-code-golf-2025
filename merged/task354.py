@@ -1,4 +1,4 @@
-# joking (96 bytes, gold)
+# joking (96 vs 92 bytes for gold)
 p=lambda i:[i:=[[(y==5)*c[c[1]>0]or y for*c,y in zip([0]+x,*i,x)][::-1]for x in i]for x in i][9]
 
 ## some recursive experiments

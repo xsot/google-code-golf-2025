@@ -1,4 +1,4 @@
-# att (74 bytes, gold)
+# att (74 vs 70 bytes for gold)
 p=lambda a,n=6:~n*a or[[n%2|(n:=m)for m in a]for a[::-1]in zip(*p(a,n-2))]
 
 ### joking (81 bytes)

@@ -1,4 +1,4 @@
-# att (52 bytes, gold)
+# att (52 vs 51 bytes for gold)
 p=lambda a,*n:[*zip(*map({}.fromkeys,n or p(a,*a)))]
 
 ### combined (54 bytes)

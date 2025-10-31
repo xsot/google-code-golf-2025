@@ -1,4 +1,4 @@
-# ovs (108 bytes, gold)
+# ovs (108 vs 106 bytes for gold)
 import re;p=lambda i:exec(r'i[::-1]=zip(*eval(re.sub("([1-9])((.{32})+?[0, ]+)8",r"0\2\1",str(i))));'*4)or i
 
 ### joking (112 bytes)

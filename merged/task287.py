@@ -1,4 +1,4 @@
-# att (55 bytes, gold)
+# att (55 vs 53 bytes for gold)
 p=lambda*a:sum({*a[3:]}-{4})or[*map(p,*a+a,a[0][::-1])]
 
 ##

@@ -1,4 +1,4 @@
-# ovs (102 bytes, gold)
+# ovs (102 vs 90 bytes for gold)
 p=lambda g:[g:=[*zip(*[max(a*all(len({*r,0})<3for r in zip(b,a))for a in g)for b in g])]for _ in g][1]
 
 ##

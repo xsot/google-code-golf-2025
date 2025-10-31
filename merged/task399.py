@@ -1,4 +1,4 @@
-# att (63 bytes, gold)
+# att (63 vs 62 bytes for gold)
 p=lambda a:[*zip(*[iter(sum(sum(a,[]))//8*[1,0]+[0]*7)]*3)][:3]
 
 ### xsot (64 bytes)

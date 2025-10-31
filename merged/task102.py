@@ -1,4 +1,4 @@
-# joking (135 bytes, gold)
+# joking (135 vs 124 bytes for gold)
 exec("p=lambda i,n=12:[[i[a][b]or 2*any([n,*[2]*(n-2),n]==[sum(i[(a-k+s)%12][b-j:][:n])/5"+"for %s in range(n)%s"*6%(*'s]n j k)b]a]',))
 
 ##

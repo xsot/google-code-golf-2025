@@ -1,4 +1,4 @@
-# ovs (104 bytes, gold)
+# ovs (104 vs 103 bytes for gold)
 *z,p=[0]*9,eval('lambda a:[[a[1][1]or 8*any(sum(a,())[::2])'+'for*a,in map(zip,z+a+a,a+a,a[1:]+a+z)]'*2)
 
 ##

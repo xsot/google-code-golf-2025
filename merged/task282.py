@@ -1,4 +1,4 @@
-# joking (76 bytes, gold)
+# joking (76 vs 74 bytes for gold)
 p=lambda i,*x,c=0:[c|(c:=i)>>2|(i:=y)for y in x+x[7:]]or[*map(p,*map(p,*i))]
 
 ### att (83 bytes)

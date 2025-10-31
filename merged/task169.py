@@ -1,4 +1,4 @@
-# ovs (111 bytes, gold)
+# ovs (111 vs 108 bytes for gold)
 p=lambda i,k=11,t=1:-k*i or p([(e:=1)*[e:=y%2*[y|(t:=t*16)|e,-y%5][k<1]for y in i]for i[::-1]in zip(*i)],k-1,0)
 
 ### joking (113 bytes)

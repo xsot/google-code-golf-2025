@@ -1,4 +1,4 @@
-# ovs (92 bytes, gold)
+# ovs (92 vs 87 bytes for gold)
 p=lambda i,k=-3:i*k or[i:=[r.pop()|4*(k==2)|7*((k:=K)==1)for K in i]for*r,in zip(*p(i,k+1))]
 
 ##

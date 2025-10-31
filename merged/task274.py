@@ -1,4 +1,4 @@
-# joking (71 bytes, gold)
+# joking (71 vs 65 bytes for gold)
 p=lambda i:[(h:=[8for x in i if sum(x)==10]+[0]*5)[:3],h[5:2:-1],[0]*3]
 
 ##

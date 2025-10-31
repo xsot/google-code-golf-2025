@@ -1,4 +1,4 @@
-# att (48 bytes, gold)
+# att (48 vs 47 bytes for gold)
 p=lambda a:[b for*b,in map(map,[max]*5,a,a[6:])]
 
 ### ovs (tied, 48 bytes)

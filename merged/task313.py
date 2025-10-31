@@ -1,4 +1,4 @@
-# joking (62 bytes, gold)
+# joking (62 vs 61 bytes for gold)
 p=lambda g,s=[0]:s*-1*-1or[*map(p,g,(s+g)[1:3+len(s)//12]*10)]
 
 ##

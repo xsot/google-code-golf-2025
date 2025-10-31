@@ -1,4 +1,4 @@
-# joking (89 bytes, gold)
+# joking (89 vs 84 bytes for gold)
 p=lambda a,n=43:-n*a or[[14>>d&b.pop()or n<1for d in[0]+b[:0:-1]]for*b,in zip(*p(a,n-1))]
 
 ##

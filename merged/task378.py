@@ -1,4 +1,4 @@
-# ovs (138 bytes, gold)
+# ovs (138 vs 131 bytes for gold)
 import re;p=lambda i:exec(r"i[::-1]=zip(*eval(re.sub('0(?=(%s 0)*%s ., [^0]%s?%s (.))'%(('.%s.0,'%{3*len(i)},)*4),'\\2',str(i))));"*4)or i
 
 ##

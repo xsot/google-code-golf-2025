@@ -1,4 +1,4 @@
-# compression_experiments (244 (319 unzipped) bytes, gold)
+# compression_experiments (244 (319 unzipped) vs 237 bytes for gold)
 def p(n):
  r={e+u*1j:n for u,n in enumerate(n)for e,n in enumerate(n)};i,f=[u for u in r if r[u]==3]
  o=[(i,f-i,1),(i,i-f,1)]

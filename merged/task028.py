@@ -1,4 +1,4 @@
-# ovs (66 bytes, gold)
+# ovs (66 vs 63 bytes for gold)
 p=lambda g:[(sorted(g[j%8])[j%11:]*j)[-10:]for j in b'*"*""oowow']
 
 ### combined (70 bytes)

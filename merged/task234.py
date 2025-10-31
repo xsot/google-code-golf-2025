@@ -1,4 +1,4 @@
-# joking (107 bytes, gold)
+# joking (107 vs 106 bytes for gold)
 p=lambda i:[i:=[*zip(*[x for x in i[:1]*11+i if{sum(x),0}^{*x+max(i,key=any)}][:~len(i):-1])]for _ in i][3]
 
 ##

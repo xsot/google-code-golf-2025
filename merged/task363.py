@@ -1,4 +1,4 @@
-# mwi (204 bytes, gold)
+# mwi (204 vs 175 bytes for gold)
 def p(g):
  f=lambda C:{x+x//10*80for x in range(100)if C==g[x//10][x%10]};v=f(2)
  for y in f(0)|f(5):

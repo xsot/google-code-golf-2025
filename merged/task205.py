@@ -1,4 +1,4 @@
-# ovs (136 bytes, gold)
+# ovs (136 vs 134 bytes for gold)
 p=lambda a,n=91:-n*a or p([[[min(b+c,key=c.count)for*c,in a],A:=b][n>0]for*b,in zip(*a)][any(b'%c'%x*6in bytes(A)for x in A)-2::-1],n-1)
 
 ##

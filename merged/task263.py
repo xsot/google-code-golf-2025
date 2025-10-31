@@ -1,4 +1,4 @@
-# att (117 bytes, gold)
+# att (117 vs 106 bytes for gold)
 p=lambda g:g[(T:=[*zip(*[map(bool,sum(g,g*0))]*9)]).index(min(T,key=T.count))*3:][:3%len(g)]or[*zip(*p((*zip(*g),)))]
 
 ##

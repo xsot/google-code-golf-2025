@@ -1,4 +1,4 @@
-# ovs (188 bytes, gold)
+# ovs (188 vs 187 bytes for gold)
 def p(g):P=D=0;[g:=[[v*((P:=P or D*v)*D|(D:=D^(v==4))<1)for v in c]for*c,in zip(*g)if any(c)]for _ in g];A,*_,B=map(max,g);E=4,*[0]*len(g),4;return E,*zip(*([A]*9,*g,[B]*9)[::A==P or-1]),E
 
 ### joking (203 bytes)

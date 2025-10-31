@@ -1,4 +1,4 @@
-# joking (118 bytes, gold)
+# joking (118 vs 107 bytes for gold)
 p=lambda a,*b,n=-23:n*a or[[c,4-(sum(25>>e&n for e in b)>9)][9>>c&(n:=c!=4)]for c in b][::-1]or[*map(p,a,*p(a,n=n+1))]
 
 ### att (122 bytes)

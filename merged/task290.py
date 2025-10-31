@@ -1,4 +1,4 @@
-# ovs (68 bytes, gold)
+# ovs (68 vs 65 bytes for gold)
 p=lambda i,r=[]:r*-1*-1or[p(x,sum({*r}or i,x*-1))for x in i if[x]>i]
 
 ### combined (69 bytes)

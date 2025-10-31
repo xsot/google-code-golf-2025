@@ -1,4 +1,4 @@
-# joking (62 bytes, gold)
+# joking (62 vs 61 bytes for gold)
 p=lambda a,*n:[b for b in zip(*n or p(*a))for _ in"00"*any(b)]
 
 ### ovs (tied, 62 bytes)

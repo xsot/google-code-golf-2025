@@ -1,4 +1,4 @@
-# ovs (55 bytes, gold)
+# ovs (55 vs 54 bytes for gold)
 p=lambda m:[[r.pop(0)or r[4]|r[9]for _ in m]for r in m]
 
 ##

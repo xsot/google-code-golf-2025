@@ -46,11 +46,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 58,
         "public_best": 58
     },
     "task002": {
-        "gold": 88,
+        "gold": 86,
         "best": 88,
         "solutions": {
             "att": {
@@ -89,7 +89,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 86,
         "public_best": 88
     },
     "task003": {
@@ -118,7 +118,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 58,
         "public_best": 58
     },
     "task004": {
@@ -154,11 +154,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 73,
         "public_best": 73
     },
     "task005": {
-        "gold": 199,
+        "gold": 166,
         "best": 199,
         "solutions": {
             "joking": {
@@ -216,11 +216,11 @@
                 "escape_cost": 0
             }
         },
-        "public_gold": 2500,
-        "public_best": 218
+        "public_gold": 166,
+        "public_best": 199
     },
     "task006": {
-        "gold": 51,
+        "gold": 49,
         "best": 51,
         "solutions": {
             "att": {
@@ -252,11 +252,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 49,
         "public_best": 51
     },
     "task007": {
-        "gold": 63,
+        "gold": 62,
         "best": 63,
         "solutions": {
             "att": {
@@ -295,11 +295,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 65
+        "public_gold": 62,
+        "public_best": 63
     },
     "task008": {
-        "gold": 90,
+        "gold": 84,
         "best": 90,
         "solutions": {
             "att": {
@@ -324,11 +324,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 94
+        "public_gold": 84,
+        "public_best": 90
     },
     "task009": {
-        "gold": 109,
+        "gold": 95,
         "best": 109,
         "solutions": {
             "joking": {
@@ -353,11 +353,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 95,
         "public_best": 109
     },
     "task010": {
-        "gold": 67,
+        "gold": 66,
         "best": 67,
         "solutions": {
             "att": {
@@ -396,8 +396,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 72
+        "public_gold": 66,
+        "public_best": 67
     },
     "task011": {
         "gold": 114,
@@ -425,11 +425,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 125
+        "public_gold": 114,
+        "public_best": 114
     },
     "task012": {
-        "gold": 129,
+        "gold": 122,
         "best": 129,
         "solutions": {
             "joking": {
@@ -461,11 +461,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 132
+        "public_gold": 122,
+        "public_best": 129
     },
     "task013": {
-        "gold": 136,
+        "gold": 124,
         "best": 136,
         "solutions": {
             "joking": {
@@ -490,11 +490,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 146
+        "public_gold": 124,
+        "public_best": 136
     },
     "task014": {
-        "gold": 68,
+        "gold": 57,
         "best": 68,
         "solutions": {
             "att": {
@@ -519,11 +519,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 57,
         "public_best": 68
     },
     "task015": {
-        "gold": 92,
+        "gold": 87,
         "best": 92,
         "solutions": {
             "att": {
@@ -562,8 +562,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 106
+        "public_gold": 87,
+        "public_best": 92
     },
     "task016": {
         "gold": 43,
@@ -598,11 +598,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 44
+        "public_gold": 43,
+        "public_best": 43
     },
     "task017": {
-        "gold": 102,
+        "gold": 90,
         "best": 102,
         "solutions": {
             "att": {
@@ -634,7 +634,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 90,
         "public_best": 102
     },
     "task018": {
@@ -687,11 +687,11 @@
                 "escape_cost": 0
             }
         },
-        "public_gold": 2500,
-        "public_best": 323
+        "public_gold": 275,
+        "public_best": 275
     },
     "task019": {
-        "gold": 104,
+        "gold": 103,
         "best": 104,
         "solutions": {
             "att": {
@@ -723,11 +723,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 105
+        "public_gold": 103,
+        "public_best": 104
     },
     "task020": {
-        "gold": 139,
+        "gold": 133,
         "best": 139,
         "solutions": {
             "joking": {
@@ -752,8 +752,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 148
+        "public_gold": 133,
+        "public_best": 139
     },
     "task021": {
         "gold": 51,
@@ -795,11 +795,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 62
+        "public_gold": 51,
+        "public_best": 51
     },
     "task022": {
-        "gold": 95,
+        "gold": 91,
         "best": 95,
         "solutions": {
             "joking": {
@@ -838,8 +838,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 97
+        "public_gold": 91,
+        "public_best": 95
     },
     "task023": {
         "gold": 182,
@@ -874,8 +874,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 206
+        "public_gold": 182,
+        "public_best": 182
     },
     "task024": {
         "gold": 62,
@@ -903,11 +903,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 62,
         "public_best": 62
     },
     "task025": {
-        "gold": 134,
+        "gold": 127,
         "best": 134,
         "solutions": {
             "att": {
@@ -939,11 +939,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 151
+        "public_gold": 127,
+        "public_best": 134
     },
     "task026": {
-        "gold": 52,
+        "gold": 50,
         "best": 52,
         "solutions": {
             "att": {
@@ -968,11 +968,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 50,
         "public_best": 52
     },
     "task027": {
-        "gold": 103,
+        "gold": 97,
         "best": 103,
         "solutions": {
             "joking": {
@@ -997,11 +997,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 104
+        "public_gold": 97,
+        "public_best": 103
     },
     "task028": {
-        "gold": 66,
+        "gold": 63,
         "best": 66,
         "solutions": {
             "att": {
@@ -1026,11 +1026,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 70
+        "public_gold": 63,
+        "public_best": 66
     },
     "task029": {
-        "gold": 110,
+        "gold": 103,
         "best": 110,
         "solutions": {
             "att": {
@@ -1062,11 +1062,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 118
+        "public_gold": 103,
+        "public_best": 110
     },
     "task030": {
-        "gold": 94,
+        "gold": 93,
         "best": 94,
         "solutions": {
             "ovs": {
@@ -1091,8 +1091,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 97
+        "public_gold": 93,
+        "public_best": 94
     },
     "task031": {
         "gold": 45,
@@ -1127,7 +1127,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 45,
         "public_best": 45
     },
     "task032": {
@@ -1163,11 +1163,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 39,
         "public_best": 39
     },
     "task033": {
-        "gold": 73,
+        "gold": 71,
         "best": 73,
         "solutions": {
             "att": {
@@ -1199,11 +1199,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 76
+        "public_gold": 71,
+        "public_best": 73
     },
     "task034": {
-        "gold": 125,
+        "gold": 116,
         "best": 125,
         "solutions": {
             "joking": {
@@ -1228,8 +1228,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 129
+        "public_gold": 116,
+        "public_best": 125
     },
     "task035": {
         "gold": 82,
@@ -1264,11 +1264,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 87
+        "public_gold": 82,
+        "public_best": 82
     },
     "task036": {
-        "gold": 82,
+        "gold": 75,
         "best": 82,
         "solutions": {
             "joking": {
@@ -1307,11 +1307,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 90
+        "public_gold": 75,
+        "public_best": 82
     },
     "task037": {
-        "gold": 104,
+        "gold": 101,
         "best": 104,
         "solutions": {
             "joking": {
@@ -1336,8 +1336,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 109
+        "public_gold": 101,
+        "public_best": 104
     },
     "task038": {
         "gold": 51,
@@ -1365,7 +1365,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 51,
         "public_best": 51
     },
     "task039": {
@@ -1401,11 +1401,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 61
+        "public_gold": 60,
+        "public_best": 60
     },
     "task040": {
-        "gold": 69,
+        "gold": 63,
         "best": 69,
         "solutions": {
             "joking": {
@@ -1430,8 +1430,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 71
+        "public_gold": 63,
+        "public_best": 69
     },
     "task041": {
         "gold": 49,
@@ -1459,11 +1459,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 49,
         "public_best": 49
     },
     "task042": {
-        "gold": 134,
+        "gold": 132,
         "best": 134,
         "solutions": {
             "joking": {
@@ -1495,8 +1495,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 169
+        "public_gold": 132,
+        "public_best": 134
     },
     "task043": {
         "gold": 56,
@@ -1538,11 +1538,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 57
+        "public_gold": 56,
+        "public_best": 56
     },
     "task044": {
-        "gold": 212,
+        "gold": 195,
         "best": 212,
         "solutions": {
             "joking": {
@@ -1591,8 +1591,8 @@
                 "escape_cost": 0
             }
         },
-        "public_gold": 2500,
-        "public_best": 222
+        "public_gold": 195,
+        "public_best": 212
     },
     "task045": {
         "gold": 45,
@@ -1613,11 +1613,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 45,
         "public_best": 45
     },
     "task046": {
-        "gold": 168,
+        "gold": 166,
         "best": 168,
         "solutions": {
             "joking": {
@@ -1635,8 +1635,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 170
+        "public_gold": 166,
+        "public_best": 168
     },
     "task047": {
         "gold": 55,
@@ -1657,11 +1657,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 55,
         "public_best": 55
     },
     "task048": {
-        "gold": 118,
+        "gold": 92,
         "best": 118,
         "solutions": {
             "att": {
@@ -1693,7 +1693,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 92,
         "public_best": 118
     },
     "task049": {
@@ -1722,11 +1722,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 81,
         "public_best": 81
     },
     "task050": {
-        "gold": 84,
+        "gold": 83,
         "best": 84,
         "solutions": {
             "att": {
@@ -1758,8 +1758,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 91
+        "public_gold": 83,
+        "public_best": 84
     },
     "task051": {
         "gold": 111,
@@ -1787,8 +1787,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 115
+        "public_gold": 111,
+        "public_best": 111
     },
     "task052": {
         "gold": 40,
@@ -1837,8 +1837,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 41
+        "public_gold": 40,
+        "public_best": 40
     },
     "task053": {
         "gold": 21,
@@ -1873,11 +1873,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 21,
         "public_best": 21
     },
     "task054": {
-        "gold": 270,
+        "gold": 266,
         "best": 270,
         "solutions": {
             "joking": {
@@ -1926,8 +1926,8 @@
                 "escape_cost": 0
             }
         },
-        "public_gold": 2500,
-        "public_best": 283
+        "public_gold": 266,
+        "public_best": 270
     },
     "task055": {
         "gold": 77,
@@ -1962,8 +1962,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 95
+        "public_gold": 77,
+        "public_best": 77
     },
     "task056": {
         "gold": 40,
@@ -1991,11 +1991,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 40,
         "public_best": 40
     },
     "task057": {
-        "gold": 49,
+        "gold": 48,
         "best": 49,
         "solutions": {
             "att": {
@@ -2020,7 +2020,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 48,
         "public_best": 49
     },
     "task058": {
@@ -2049,11 +2049,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 114
+        "public_gold": 85,
+        "public_best": 85
     },
     "task059": {
-        "gold": 153,
+        "gold": 151,
         "best": 153,
         "solutions": {
             "att": {
@@ -2085,8 +2085,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 167
+        "public_gold": 151,
+        "public_best": 153
     },
     "task060": {
         "gold": 47,
@@ -2121,11 +2121,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 48
+        "public_gold": 47,
+        "public_best": 47
     },
     "task061": {
-        "gold": 63,
+        "gold": 62,
         "best": 63,
         "solutions": {
             "att": {
@@ -2157,7 +2157,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 62,
         "public_best": 63
     },
     "task062": {
@@ -2186,11 +2186,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 143
+        "public_gold": 121,
+        "public_best": 121
     },
     "task063": {
-        "gold": 75,
+        "gold": 74,
         "best": 75,
         "solutions": {
             "att": {
@@ -2236,11 +2236,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 74,
         "public_best": 75
     },
     "task064": {
-        "gold": 152,
+        "gold": 135,
         "best": 152,
         "solutions": {
             "att": {
@@ -2265,11 +2265,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 135,
         "public_best": 152
     },
     "task065": {
-        "gold": 84,
+        "gold": 82,
         "best": 84,
         "solutions": {
             "att": {
@@ -2287,11 +2287,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 91
+        "public_gold": 82,
+        "public_best": 84
     },
     "task066": {
-        "gold": 244,
+        "gold": 237,
         "best": 244,
         "solutions": {
             "joking": {
@@ -2340,8 +2340,8 @@
                 "escape_cost": 0
             }
         },
-        "public_gold": 2500,
-        "public_best": 275
+        "public_gold": 237,
+        "public_best": 244
     },
     "task067": {
         "gold": 33,
@@ -2376,11 +2376,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 33,
         "public_best": 33
     },
     "task068": {
-        "gold": 103,
+        "gold": 99,
         "best": 103,
         "solutions": {
             "att": {
@@ -2412,11 +2412,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 119
+        "public_gold": 99,
+        "public_best": 103
     },
     "task069": {
-        "gold": 150,
+        "gold": 143,
         "best": 150,
         "solutions": {
             "att": {
@@ -2457,11 +2457,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 159
+        "public_gold": 143,
+        "public_best": 150
     },
     "task070": {
-        "gold": 82,
+        "gold": 78,
         "best": 82,
         "solutions": {
             "joking": {
@@ -2486,7 +2486,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 78,
         "public_best": 82
     },
     "task071": {
@@ -2524,8 +2524,8 @@
                 "escape_cost": 0
             }
         },
-        "public_gold": 2500,
-        "public_best": 137
+        "public_gold": 104,
+        "public_best": 104
     },
     "task072": {
         "gold": 54,
@@ -2560,7 +2560,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 54,
         "public_best": 54
     },
     "task073": {
@@ -2596,7 +2596,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 46,
         "public_best": 46
     },
     "task074": {
@@ -2632,8 +2632,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 80
+        "public_gold": 77,
+        "public_best": 77
     },
     "task075": {
         "gold": 86,
@@ -2654,11 +2654,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 88
+        "public_gold": 86,
+        "public_best": 86
     },
     "task076": {
-        "gold": 269,
+        "gold": 258,
         "best": 269,
         "solutions": {
             "joking": {
@@ -2707,8 +2707,8 @@
                 "escape_cost": 0
             }
         },
-        "public_gold": 2500,
-        "public_best": 295
+        "public_gold": 258,
+        "public_best": 269
     },
     "task077": {
         "gold": 110,
@@ -2729,8 +2729,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 126
+        "public_gold": 110,
+        "public_best": 110
     },
     "task078": {
         "gold": 59,
@@ -2758,8 +2758,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 61
+        "public_gold": 59,
+        "public_best": 59
     },
     "task079": {
         "gold": 105,
@@ -2787,8 +2787,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 123
+        "public_gold": 105,
+        "public_best": 105
     },
     "task080": {
         "gold": 231,
@@ -2840,11 +2840,11 @@
                 "escape_cost": 0
             }
         },
-        "public_gold": 2500,
-        "public_best": 253
+        "public_gold": 231,
+        "public_best": 231
     },
     "task081": {
-        "gold": 83,
+        "gold": 81,
         "best": 83,
         "solutions": {
             "joking": {
@@ -2869,8 +2869,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 95
+        "public_gold": 81,
+        "public_best": 83
     },
     "task082": {
         "gold": 50,
@@ -2898,7 +2898,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 50,
         "public_best": 50
     },
     "task083": {
@@ -2934,7 +2934,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 40,
         "public_best": 40
     },
     "task084": {
@@ -2963,7 +2963,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 62,
         "public_best": 62
     },
     "task085": {
@@ -2992,8 +2992,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 56
+        "public_gold": 49,
+        "public_best": 49
     },
     "task086": {
         "gold": 151,
@@ -3037,8 +3037,8 @@
                 "escape_cost": 1
             }
         },
-        "public_gold": 2500,
-        "public_best": 172
+        "public_gold": 151,
+        "public_best": 151
     },
     "task087": {
         "gold": 36,
@@ -3073,11 +3073,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 36,
         "public_best": 36
     },
     "task088": {
-        "gold": 100,
+        "gold": 95,
         "best": 100,
         "solutions": {
             "att": {
@@ -3109,8 +3109,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 109
+        "public_gold": 95,
+        "public_best": 100
     },
     "task089": {
         "gold": 232,
@@ -3162,11 +3162,11 @@
                 "escape_cost": 0
             }
         },
-        "public_gold": 2500,
-        "public_best": 236
+        "public_gold": 232,
+        "public_best": 232
     },
     "task090": {
-        "gold": 153,
+        "gold": 147,
         "best": 153,
         "solutions": {
             "att": {
@@ -3198,8 +3198,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 160
+        "public_gold": 147,
+        "public_best": 153
     },
     "task091": {
         "gold": 62,
@@ -3220,8 +3220,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 63
+        "public_gold": 62,
+        "public_best": 62
     },
     "task092": {
         "gold": 86,
@@ -3256,8 +3256,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 93
+        "public_gold": 86,
+        "public_best": 86
     },
     "task093": {
         "gold": 98,
@@ -3285,11 +3285,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 100
+        "public_gold": 98,
+        "public_best": 98
     },
     "task094": {
-        "gold": 97,
+        "gold": 96,
         "best": 97,
         "solutions": {
             "joking": {
@@ -3314,11 +3314,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 96,
         "public_best": 97
     },
     "task095": {
-        "gold": 74,
+        "gold": 70,
         "best": 74,
         "solutions": {
             "att": {
@@ -3343,8 +3343,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 75
+        "public_gold": 70,
+        "public_best": 74
     },
     "task096": {
         "gold": 282,
@@ -3405,8 +3405,8 @@
                 "escape_cost": 0
             }
         },
-        "public_gold": 2500,
-        "public_best": 284
+        "public_gold": 282,
+        "public_best": 282
     },
     "task097": {
         "gold": 93,
@@ -3441,8 +3441,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 113
+        "public_gold": 93,
+        "public_best": 93
     },
     "task098": {
         "gold": 64,
@@ -3470,11 +3470,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 92
+        "public_gold": 64,
+        "public_best": 64
     },
     "task099": {
-        "gold": 103,
+        "gold": 93,
         "best": 103,
         "solutions": {
             "mwi": {
@@ -3506,11 +3506,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 116
+        "public_gold": 93,
+        "public_best": 103
     },
     "task100": {
-        "gold": 88,
+        "gold": 85,
         "best": 88,
         "solutions": {
             "att": {
@@ -3542,7 +3542,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 85,
         "public_best": 88
     },
     "task101": {
@@ -3595,11 +3595,11 @@
                 "escape_cost": 0
             }
         },
-        "public_gold": 2500,
-        "public_best": 281
+        "public_gold": 258,
+        "public_best": 258
     },
     "task102": {
-        "gold": 135,
+        "gold": 124,
         "best": 135,
         "solutions": {
             "joking": {
@@ -3626,8 +3626,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 170
+        "public_gold": 124,
+        "public_best": 135
     },
     "task103": {
         "gold": 29,
@@ -3662,7 +3662,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 29,
         "public_best": 29
     },
     "task104": {
@@ -3691,11 +3691,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 92
+        "public_gold": 84,
+        "public_best": 84
     },
     "task105": {
-        "gold": 139,
+        "gold": 124,
         "best": 139,
         "solutions": {
             "att": {
@@ -3734,8 +3734,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 153
+        "public_gold": 124,
+        "public_best": 139
     },
     "task106": {
         "gold": 55,
@@ -3763,8 +3763,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 75
+        "public_gold": 55,
+        "public_best": 55
     },
     "task107": {
         "gold": 132,
@@ -3792,8 +3792,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 176
+        "public_gold": 132,
+        "public_best": 132
     },
     "task108": {
         "gold": 46,
@@ -3821,8 +3821,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 58
+        "public_gold": 46,
+        "public_best": 46
     },
     "task109": {
         "gold": 77,
@@ -3850,8 +3850,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 82
+        "public_gold": 77,
+        "public_best": 77
     },
     "task110": {
         "gold": 84,
@@ -3886,8 +3886,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 89
+        "public_gold": 84,
+        "public_best": 84
     },
     "task111": {
         "gold": 60,
@@ -3908,11 +3908,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 60,
         "public_best": 60
     },
     "task112": {
-        "gold": 106,
+        "gold": 91,
         "best": 106,
         "solutions": {
             "ovs": {
@@ -3930,8 +3930,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 112
+        "public_gold": 91,
+        "public_best": 106
     },
     "task113": {
         "gold": 25,
@@ -3966,7 +3966,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 25,
         "public_best": 25
     },
     "task114": {
@@ -3988,11 +3988,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 65
+        "public_gold": 64,
+        "public_best": 64
     },
     "task115": {
-        "gold": 52,
+        "gold": 51,
         "best": 52,
         "solutions": {
             "att": {
@@ -4017,8 +4017,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 54
+        "public_gold": 51,
+        "public_best": 52
     },
     "task116": {
         "gold": 20,
@@ -4053,11 +4053,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 20,
         "public_best": 20
     },
     "task117": {
-        "gold": 130,
+        "gold": 115,
         "best": 130,
         "solutions": {
             "joking": {
@@ -4082,8 +4082,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 154
+        "public_gold": 115,
+        "public_best": 130
     },
     "task118": {
         "gold": 225,
@@ -4144,8 +4144,8 @@
                 "escape_cost": 0
             }
         },
-        "public_gold": 2500,
-        "public_best": 302
+        "public_gold": 225,
+        "public_best": 225
     },
     "task119": {
         "gold": 102,
@@ -4173,8 +4173,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 106
+        "public_gold": 102,
+        "public_best": 102
     },
     "task120": {
         "gold": 78,
@@ -4202,11 +4202,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 102
+        "public_gold": 78,
+        "public_best": 78
     },
     "task121": {
-        "gold": 88,
+        "gold": 86,
         "best": 88,
         "solutions": {
             "joking": {
@@ -4238,11 +4238,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 96
+        "public_gold": 86,
+        "public_best": 88
     },
     "task122": {
-        "gold": 71,
+        "gold": 70,
         "best": 71,
         "solutions": {
             "att": {
@@ -4274,11 +4274,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 82
+        "public_gold": 70,
+        "public_best": 71
     },
     "task123": {
-        "gold": 75,
+        "gold": 71,
         "best": 75,
         "solutions": {
             "ovs": {
@@ -4296,7 +4296,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 71,
         "public_best": 75
     },
     "task124": {
@@ -4332,11 +4332,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 100
+        "public_gold": 95,
+        "public_best": 95
     },
     "task125": {
-        "gold": 116,
+        "gold": 110,
         "best": 116,
         "solutions": {
             "joking": {
@@ -4375,8 +4375,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 141
+        "public_gold": 110,
+        "public_best": 116
     },
     "task126": {
         "gold": 54,
@@ -4404,11 +4404,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 54,
         "public_best": 54
     },
     "task127": {
-        "gold": 63,
+        "gold": 57,
         "best": 63,
         "solutions": {
             "att": {
@@ -4440,11 +4440,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 65
+        "public_gold": 57,
+        "public_best": 63
     },
     "task128": {
-        "gold": 59,
+        "gold": 57,
         "best": 59,
         "solutions": {
             "joking": {
@@ -4469,8 +4469,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 64
+        "public_gold": 57,
+        "public_best": 59
     },
     "task129": {
         "gold": 47,
@@ -4505,11 +4505,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 47,
         "public_best": 47
     },
     "task130": {
-        "gold": 65,
+        "gold": 61,
         "best": 65,
         "solutions": {
             "att": {
@@ -4541,11 +4541,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 61,
         "public_best": 65
     },
     "task131": {
-        "gold": 125,
+        "gold": 117,
         "best": 125,
         "solutions": {
             "att": {
@@ -4570,7 +4570,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 117,
         "public_best": 125
     },
     "task132": {
@@ -4599,7 +4599,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 86,
         "public_best": 86
     },
     "task133": {
@@ -4643,8 +4643,8 @@
                 "escape_cost": 0
             }
         },
-        "public_gold": 2500,
-        "public_best": 298
+        "public_gold": 273,
+        "public_best": 273
     },
     "task134": {
         "gold": 123,
@@ -4674,8 +4674,8 @@
                 "escape_cost": 0
             }
         },
-        "public_gold": 2500,
-        "public_best": 174
+        "public_gold": 123,
+        "public_best": 123
     },
     "task135": {
         "gold": 32,
@@ -4710,11 +4710,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 32,
         "public_best": 32
     },
     "task136": {
-        "gold": 97,
+        "gold": 94,
         "best": 97,
         "solutions": {
             "joking": {
@@ -4746,11 +4746,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 107
+        "public_gold": 94,
+        "public_best": 97
     },
     "task137": {
-        "gold": 141,
+        "gold": 137,
         "best": 141,
         "solutions": {
             "att": {
@@ -4775,11 +4775,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 137,
         "public_best": 141
     },
     "task138": {
-        "gold": 104,
+        "gold": 103,
         "best": 104,
         "solutions": {
             "att": {
@@ -4797,7 +4797,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 103,
         "public_best": 104
     },
     "task139": {
@@ -4833,8 +4833,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 100
+        "public_gold": 88,
+        "public_best": 88
     },
     "task140": {
         "gold": 36,
@@ -4869,11 +4869,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 36,
         "public_best": 36
     },
     "task141": {
-        "gold": 93,
+        "gold": 92,
         "best": 93,
         "solutions": {
             "att": {
@@ -4912,7 +4912,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 92,
         "public_best": 93
     },
     "task142": {
@@ -4948,11 +4948,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 40,
         "public_best": 40
     },
     "task143": {
-        "gold": 130,
+        "gold": 127,
         "best": 130,
         "solutions": {
             "mwi": {
@@ -4977,8 +4977,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 137
+        "public_gold": 127,
+        "public_best": 130
     },
     "task144": {
         "gold": 53,
@@ -5020,7 +5020,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 53,
         "public_best": 53
     },
     "task145": {
@@ -5049,8 +5049,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 191
+        "public_gold": 157,
+        "public_best": 157
     },
     "task146": {
         "gold": 58,
@@ -5078,7 +5078,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 58,
         "public_best": 58
     },
     "task147": {
@@ -5107,11 +5107,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 83
+        "public_gold": 72,
+        "public_best": 72
     },
     "task148": {
-        "gold": 124,
+        "gold": 118,
         "best": 124,
         "solutions": {
             "joking": {
@@ -5136,11 +5136,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 148
+        "public_gold": 118,
+        "public_best": 124
     },
     "task149": {
-        "gold": 75,
+        "gold": 74,
         "best": 75,
         "solutions": {
             "att": {
@@ -5179,8 +5179,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 79
+        "public_gold": 74,
+        "public_best": 75
     },
     "task150": {
         "gold": 30,
@@ -5208,11 +5208,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 30,
         "public_best": 30
     },
     "task151": {
-        "gold": 103,
+        "gold": 102,
         "best": 103,
         "solutions": {
             "joking": {
@@ -5230,11 +5230,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 108
+        "public_gold": 102,
+        "public_best": 103
     },
     "task152": {
-        "gold": 40,
+        "gold": 39,
         "best": 40,
         "solutions": {
             "att": {
@@ -5266,11 +5266,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 39,
         "public_best": 40
     },
     "task153": {
-        "gold": 131,
+        "gold": 118,
         "best": 131,
         "solutions": {
             "att": {
@@ -5311,11 +5311,11 @@
                 "escape_cost": 0
             }
         },
-        "public_gold": 2500,
-        "public_best": 153
+        "public_gold": 118,
+        "public_best": 131
     },
     "task154": {
-        "gold": 100,
+        "gold": 98,
         "best": 100,
         "solutions": {
             "joking": {
@@ -5347,8 +5347,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 112
+        "public_gold": 98,
+        "public_best": 100
     },
     "task155": {
         "gold": 18,
@@ -5383,11 +5383,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 18,
         "public_best": 18
     },
     "task156": {
-        "gold": 128,
+        "gold": 118,
         "best": 128,
         "solutions": {
             "joking": {
@@ -5419,11 +5419,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 156
+        "public_gold": 118,
+        "public_best": 128
     },
     "task157": {
-        "gold": 242,
+        "gold": 237,
         "best": 242,
         "solutions": {
             "joking": {
@@ -5472,8 +5472,8 @@
                 "escape_cost": 0
             }
         },
-        "public_gold": 2500,
-        "public_best": 246
+        "public_gold": 237,
+        "public_best": 242
     },
     "task158": {
         "gold": 260,
@@ -5543,11 +5543,11 @@
                 "escape_cost": 1
             }
         },
-        "public_gold": 2500,
-        "public_best": 269
+        "public_gold": 260,
+        "public_best": 260
     },
     "task159": {
-        "gold": 105,
+        "gold": 103,
         "best": 105,
         "solutions": {
             "mwi": {
@@ -5572,8 +5572,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 110
+        "public_gold": 103,
+        "public_best": 105
     },
     "task160": {
         "gold": 100,
@@ -5608,8 +5608,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 107
+        "public_gold": 100,
+        "public_best": 100
     },
     "task161": {
         "gold": 79,
@@ -5644,11 +5644,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 83
+        "public_gold": 79,
+        "public_best": 79
     },
     "task162": {
-        "gold": 97,
+        "gold": 96,
         "best": 97,
         "solutions": {
             "att": {
@@ -5694,8 +5694,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 101
+        "public_gold": 96,
+        "public_best": 97
     },
     "task163": {
         "gold": 130,
@@ -5730,8 +5730,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 136
+        "public_gold": 130,
+        "public_best": 130
     },
     "task164": {
         "gold": 32,
@@ -5766,11 +5766,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 32,
         "public_best": 32
     },
     "task165": {
-        "gold": 130,
+        "gold": 112,
         "best": 130,
         "solutions": {
             "att": {
@@ -5802,11 +5802,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 136
+        "public_gold": 112,
+        "public_best": 130
     },
     "task166": {
-        "gold": 63,
+        "gold": 61,
         "best": 63,
         "solutions": {
             "att": {
@@ -5838,8 +5838,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 65
+        "public_gold": 61,
+        "public_best": 63
     },
     "task167": {
         "gold": 70,
@@ -5860,11 +5860,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 72
+        "public_gold": 70,
+        "public_best": 70
     },
     "task168": {
-        "gold": 112,
+        "gold": 110,
         "best": 112,
         "solutions": {
             "joking": {
@@ -5889,11 +5889,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 117
+        "public_gold": 110,
+        "public_best": 112
     },
     "task169": {
-        "gold": 111,
+        "gold": 108,
         "best": 111,
         "solutions": {
             "att": {
@@ -5925,11 +5925,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 134
+        "public_gold": 108,
+        "public_best": 111
     },
     "task170": {
-        "gold": 193,
+        "gold": 163,
         "best": 193,
         "solutions": {
             "joking": {
@@ -5976,8 +5976,8 @@
                 "escape_cost": 0
             }
         },
-        "public_gold": 2500,
-        "public_best": 196
+        "public_gold": 163,
+        "public_best": 193
     },
     "task171": {
         "gold": 51,
@@ -6019,7 +6019,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 51,
         "public_best": 51
     },
     "task172": {
@@ -6055,11 +6055,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 20,
         "public_best": 20
     },
     "task173": {
-        "gold": 204,
+        "gold": 201,
         "best": 204,
         "solutions": {
             "joking": {
@@ -6099,11 +6099,11 @@
                 "escape_cost": 1
             }
         },
-        "public_gold": 2500,
-        "public_best": 228
+        "public_gold": 201,
+        "public_best": 204
     },
     "task174": {
-        "gold": 97,
+        "gold": 89,
         "best": 97,
         "solutions": {
             "joking": {
@@ -6135,11 +6135,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 89,
         "public_best": 97
     },
     "task175": {
-        "gold": 75,
+        "gold": 74,
         "best": 75,
         "solutions": {
             "mwi": {
@@ -6157,7 +6157,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 74,
         "public_best": 75
     },
     "task176": {
@@ -6186,8 +6186,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 74
+        "public_gold": 61,
+        "public_best": 61
     },
     "task177": {
         "gold": 51,
@@ -6222,7 +6222,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 51,
         "public_best": 51
     },
     "task178": {
@@ -6265,8 +6265,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 49
+        "public_gold": 47,
+        "public_best": 47
     },
     "task179": {
         "gold": 21,
@@ -6301,7 +6301,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 21,
         "public_best": 21
     },
     "task180": {
@@ -6337,8 +6337,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 81
+        "public_gold": 74,
+        "public_best": 74
     },
     "task181": {
         "gold": 67,
@@ -6373,11 +6373,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 67,
         "public_best": 67
     },
     "task182": {
-        "gold": 186,
+        "gold": 160,
         "best": 186,
         "solutions": {
             "joking": {
@@ -6402,11 +6402,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 187
+        "public_gold": 160,
+        "public_best": 186
     },
     "task183": {
-        "gold": 94,
+        "gold": 79,
         "best": 94,
         "solutions": {
             "joking": {
@@ -6424,11 +6424,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 79,
         "public_best": 94
     },
     "task184": {
-        "gold": 94,
+        "gold": 91,
         "best": 94,
         "solutions": {
             "combined_solutions": {
@@ -6446,11 +6446,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 101
+        "public_gold": 91,
+        "public_best": 94
     },
     "task185": {
-        "gold": 121,
+        "gold": 107,
         "best": 121,
         "solutions": {
             "att": {
@@ -6482,11 +6482,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 138
+        "public_gold": 107,
+        "public_best": 121
     },
     "task186": {
-        "gold": 61,
+        "gold": 60,
         "best": 61,
         "solutions": {
             "joking": {
@@ -6518,11 +6518,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 66
+        "public_gold": 60,
+        "public_best": 61
     },
     "task187": {
-        "gold": 88,
+        "gold": 83,
         "best": 88,
         "solutions": {
             "att": {
@@ -6554,11 +6554,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 106
+        "public_gold": 83,
+        "public_best": 88
     },
     "task188": {
-        "gold": 63,
+        "gold": 53,
         "best": 63,
         "solutions": {
             "att": {
@@ -6590,11 +6590,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 68
+        "public_gold": 53,
+        "public_best": 63
     },
     "task189": {
-        "gold": 111,
+        "gold": 95,
         "best": 111,
         "solutions": {
             "joking": {
@@ -6612,7 +6612,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 95,
         "public_best": 111
     },
     "task190": {
@@ -6648,11 +6648,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 112
+        "public_gold": 103,
+        "public_best": 103
     },
     "task191": {
-        "gold": 227,
+        "gold": 221,
         "best": 227,
         "solutions": {
             "joking": {
@@ -6701,11 +6701,11 @@
                 "escape_cost": 0
             }
         },
-        "public_gold": 2500,
-        "public_best": 250
+        "public_gold": 221,
+        "public_best": 227
     },
     "task192": {
-        "gold": 114,
+        "gold": 99,
         "best": 114,
         "solutions": {
             "att": {
@@ -6737,8 +6737,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 115
+        "public_gold": 99,
+        "public_best": 114
     },
     "task193": {
         "gold": 71,
@@ -6773,8 +6773,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 97
+        "public_gold": 71,
+        "public_best": 71
     },
     "task194": {
         "gold": 55,
@@ -6809,8 +6809,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 68
+        "public_gold": 55,
+        "public_best": 55
     },
     "task195": {
         "gold": 94,
@@ -6845,11 +6845,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 105
+        "public_gold": 94,
+        "public_best": 94
     },
     "task196": {
-        "gold": 106,
+        "gold": 105,
         "best": 106,
         "solutions": {
             "att": {
@@ -6881,8 +6881,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 112
+        "public_gold": 105,
+        "public_best": 106
     },
     "task197": {
         "gold": 54,
@@ -6917,11 +6917,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 54,
         "public_best": 54
     },
     "task198": {
-        "gold": 118,
+        "gold": 107,
         "best": 118,
         "solutions": {
             "att": {
@@ -6953,11 +6953,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 122
+        "public_gold": 107,
+        "public_best": 118
     },
     "task199": {
-        "gold": 84,
+        "gold": 77,
         "best": 84,
         "solutions": {
             "att": {
@@ -6989,8 +6989,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 87
+        "public_gold": 77,
+        "public_best": 84
     },
     "task200": {
         "gold": 84,
@@ -7018,11 +7018,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 86
+        "public_gold": 84,
+        "public_best": 84
     },
     "task201": {
-        "gold": 188,
+        "gold": 187,
         "best": 188,
         "solutions": {
             "joking": {
@@ -7058,11 +7058,11 @@
                 "escape_cost": 0
             }
         },
-        "public_gold": 2500,
-        "public_best": 208
+        "public_gold": 187,
+        "public_best": 188
     },
     "task202": {
-        "gold": 104,
+        "gold": 98,
         "best": 104,
         "solutions": {
             "att": {
@@ -7094,11 +7094,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 106
+        "public_gold": 98,
+        "public_best": 104
     },
     "task203": {
-        "gold": 67,
+        "gold": 64,
         "best": 67,
         "solutions": {
             "att": {
@@ -7123,7 +7123,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 64,
         "public_best": 67
     },
     "task204": {
@@ -7152,11 +7152,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 93,
         "public_best": 93
     },
     "task205": {
-        "gold": 136,
+        "gold": 134,
         "best": 136,
         "solutions": {
             "att": {
@@ -7190,11 +7190,11 @@
                 "escape_cost": 1
             }
         },
-        "public_gold": 2500,
-        "public_best": 170
+        "public_gold": 134,
+        "public_best": 136
     },
     "task206": {
-        "gold": 140,
+        "gold": 139,
         "best": 140,
         "solutions": {
             "joking": {
@@ -7219,8 +7219,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 156
+        "public_gold": 139,
+        "public_best": 140
     },
     "task207": {
         "gold": 74,
@@ -7262,11 +7262,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 81
+        "public_gold": 74,
+        "public_best": 74
     },
     "task208": {
-        "gold": 211,
+        "gold": 163,
         "best": 211,
         "solutions": {
             "joking": {
@@ -7324,8 +7324,8 @@
                 "escape_cost": 0
             }
         },
-        "public_gold": 2500,
-        "public_best": 225
+        "public_gold": 163,
+        "public_best": 211
     },
     "task209": {
         "gold": 247,
@@ -7368,8 +7368,8 @@
                 "escape_cost": 0
             }
         },
-        "public_gold": 2500,
-        "public_best": 292
+        "public_gold": 247,
+        "public_best": 247
     },
     "task210": {
         "gold": 20,
@@ -7404,7 +7404,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 20,
         "public_best": 20
     },
     "task211": {
@@ -7440,7 +7440,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 48,
         "public_best": 48
     },
     "task212": {
@@ -7469,11 +7469,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 117
+        "public_gold": 93,
+        "public_best": 93
     },
     "task213": {
-        "gold": 90,
+        "gold": 86,
         "best": 90,
         "solutions": {
             "att": {
@@ -7505,11 +7505,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 100
+        "public_gold": 86,
+        "public_best": 90
     },
     "task214": {
-        "gold": 62,
+        "gold": 61,
         "best": 62,
         "solutions": {
             "att": {
@@ -7534,11 +7534,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 61,
         "public_best": 62
     },
     "task215": {
-        "gold": 45,
+        "gold": 42,
         "best": 45,
         "solutions": {
             "att": {
@@ -7570,11 +7570,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 42,
         "public_best": 45
     },
     "task216": {
-        "gold": 113,
+        "gold": 111,
         "best": 113,
         "solutions": {
             "att": {
@@ -7606,7 +7606,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 111,
         "public_best": 113
     },
     "task217": {
@@ -7635,7 +7635,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 95,
         "public_best": 95
     },
     "task218": {
@@ -7664,11 +7664,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 56,
         "public_best": 56
     },
     "task219": {
-        "gold": 242,
+        "gold": 241,
         "best": 242,
         "solutions": {
             "att": {
@@ -7717,11 +7717,11 @@
                 "escape_cost": 1
             }
         },
-        "public_gold": 2500,
-        "public_best": 277
+        "public_gold": 241,
+        "public_best": 242
     },
     "task220": {
-        "gold": 88,
+        "gold": 82,
         "best": 88,
         "solutions": {
             "joking": {
@@ -7746,8 +7746,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 93
+        "public_gold": 82,
+        "public_best": 88
     },
     "task221": {
         "gold": 86,
@@ -7782,8 +7782,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 87
+        "public_gold": 86,
+        "public_best": 86
     },
     "task222": {
         "gold": 93,
@@ -7820,8 +7820,8 @@
                 "escape_cost": 0
             }
         },
-        "public_gold": 2500,
-        "public_best": 103
+        "public_gold": 93,
+        "public_best": 93
     },
     "task223": {
         "gold": 46,
@@ -7856,11 +7856,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 52
+        "public_gold": 46,
+        "public_best": 46
     },
     "task224": {
-        "gold": 131,
+        "gold": 114,
         "best": 131,
         "solutions": {
             "joking": {
@@ -7892,11 +7892,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 171
+        "public_gold": 114,
+        "public_best": 131
     },
     "task225": {
-        "gold": 126,
+        "gold": 123,
         "best": 126,
         "solutions": {
             "joking": {
@@ -7928,11 +7928,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 132
+        "public_gold": 123,
+        "public_best": 126
     },
     "task226": {
-        "gold": 119,
+        "gold": 117,
         "best": 119,
         "solutions": {
             "joking": {
@@ -7964,8 +7964,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 159
+        "public_gold": 117,
+        "public_best": 119
     },
     "task227": {
         "gold": 52,
@@ -8000,7 +8000,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 52,
         "public_best": 52
     },
     "task228": {
@@ -8036,8 +8036,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 119
+        "public_gold": 116,
+        "public_best": 116
     },
     "task229": {
         "gold": 73,
@@ -8072,11 +8072,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 73,
         "public_best": 73
     },
     "task230": {
-        "gold": 110,
+        "gold": 95,
         "best": 110,
         "solutions": {
             "joking": {
@@ -8108,8 +8108,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 114
+        "public_gold": 95,
+        "public_best": 110
     },
     "task231": {
         "gold": 43,
@@ -8144,7 +8144,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 43,
         "public_best": 43
     },
     "task232": {
@@ -8180,11 +8180,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 58
+        "public_gold": 57,
+        "public_best": 57
     },
     "task233": {
-        "gold": 271,
+        "gold": 261,
         "best": 271,
         "solutions": {
             "joking": {
@@ -8251,11 +8251,11 @@
                 "escape_cost": 0
             }
         },
-        "public_gold": 2500,
-        "public_best": 297
+        "public_gold": 261,
+        "public_best": 271
     },
     "task234": {
-        "gold": 107,
+        "gold": 106,
         "best": 107,
         "solutions": {
             "joking": {
@@ -8280,8 +8280,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 120
+        "public_gold": 106,
+        "public_best": 107
     },
     "task235": {
         "gold": 61,
@@ -8316,7 +8316,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 61,
         "public_best": 61
     },
     "task236": {
@@ -8352,11 +8352,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 54,
         "public_best": 54
     },
     "task237": {
-        "gold": 67,
+        "gold": 66,
         "best": 67,
         "solutions": {
             "att": {
@@ -8381,11 +8381,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 66,
         "public_best": 67
     },
     "task238": {
-        "gold": 201,
+        "gold": 195,
         "best": 201,
         "solutions": {
             "att": {
@@ -8443,8 +8443,8 @@
                 "escape_cost": 0
             }
         },
-        "public_gold": 2500,
-        "public_best": 223
+        "public_gold": 195,
+        "public_best": 201
     },
     "task239": {
         "gold": 99,
@@ -8479,11 +8479,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 99,
         "public_best": 99
     },
     "task240": {
-        "gold": 104,
+        "gold": 99,
         "best": 104,
         "solutions": {
             "joking": {
@@ -8508,8 +8508,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 106
+        "public_gold": 99,
+        "public_best": 104
     },
     "task241": {
         "gold": 21,
@@ -8544,7 +8544,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 21,
         "public_best": 21
     },
     "task242": {
@@ -8580,7 +8580,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 54,
         "public_best": 54
     },
     "task243": {
@@ -8623,11 +8623,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 79
+        "public_gold": 75,
+        "public_best": 75
     },
     "task244": {
-        "gold": 63,
+        "gold": 61,
         "best": 63,
         "solutions": {
             "att": {
@@ -8659,8 +8659,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 64
+        "public_gold": 61,
+        "public_best": 63
     },
     "task245": {
         "gold": 98,
@@ -8688,11 +8688,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 101
+        "public_gold": 98,
+        "public_best": 98
     },
     "task246": {
-        "gold": 105,
+        "gold": 104,
         "best": 105,
         "solutions": {
             "att": {
@@ -8724,7 +8724,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 104,
         "public_best": 105
     },
     "task247": {
@@ -8753,11 +8753,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 96
+        "public_gold": 92,
+        "public_best": 92
     },
     "task248": {
-        "gold": 74,
+        "gold": 67,
         "best": 74,
         "solutions": {
             "mwi": {
@@ -8782,7 +8782,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 67,
         "public_best": 74
     },
     "task249": {
@@ -8818,7 +8818,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 26,
         "public_best": 26
     },
     "task250": {
@@ -8861,11 +8861,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 121
+        "public_gold": 95,
+        "public_best": 95
     },
     "task251": {
-        "gold": 89,
+        "gold": 84,
         "best": 89,
         "solutions": {
             "att": {
@@ -8897,8 +8897,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 94
+        "public_gold": 84,
+        "public_best": 89
     },
     "task252": {
         "gold": 53,
@@ -8933,8 +8933,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 57
+        "public_gold": 53,
+        "public_best": 53
     },
     "task253": {
         "gold": 114,
@@ -8976,11 +8976,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 133
+        "public_gold": 114,
+        "public_best": 114
     },
     "task254": {
-        "gold": 91,
+        "gold": 81,
         "best": 91,
         "solutions": {
             "joking": {
@@ -9012,8 +9012,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 95
+        "public_gold": 81,
+        "public_best": 91
     },
     "task255": {
         "gold": 212,
@@ -9052,11 +9052,11 @@
                 "escape_cost": 1
             }
         },
-        "public_gold": 2500,
-        "public_best": 244
+        "public_gold": 212,
+        "public_best": 212
     },
     "task256": {
-        "gold": 96,
+        "gold": 95,
         "best": 96,
         "solutions": {
             "ovs": {
@@ -9074,7 +9074,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 95,
         "public_best": 96
     },
     "task257": {
@@ -9110,8 +9110,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 75
+        "public_gold": 68,
+        "public_best": 68
     },
     "task258": {
         "gold": 61,
@@ -9146,11 +9146,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 61,
         "public_best": 61
     },
     "task259": {
-        "gold": 85,
+        "gold": 83,
         "best": 85,
         "solutions": {
             "att": {
@@ -9175,7 +9175,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 83,
         "public_best": 85
     },
     "task260": {
@@ -9211,8 +9211,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 140
+        "public_gold": 130,
+        "public_best": 130
     },
     "task261": {
         "gold": 47,
@@ -9247,7 +9247,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 47,
         "public_best": 47
     },
     "task262": {
@@ -9283,11 +9283,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 39,
         "public_best": 39
     },
     "task263": {
-        "gold": 117,
+        "gold": 106,
         "best": 117,
         "solutions": {
             "att": {
@@ -9312,11 +9312,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 122
+        "public_gold": 106,
+        "public_best": 117
     },
     "task264": {
-        "gold": 190,
+        "gold": 178,
         "best": 190,
         "solutions": {
             "joking": {
@@ -9343,11 +9343,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 216
+        "public_gold": 178,
+        "public_best": 190
     },
     "task265": {
-        "gold": 118,
+        "gold": 104,
         "best": 118,
         "solutions": {
             "joking": {
@@ -9386,11 +9386,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 130
+        "public_gold": 104,
+        "public_best": 118
     },
     "task266": {
-        "gold": 99,
+        "gold": 88,
         "best": 99,
         "solutions": {
             "joking": {
@@ -9415,8 +9415,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 102
+        "public_gold": 88,
+        "public_best": 99
     },
     "task267": {
         "gold": 46,
@@ -9444,11 +9444,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 52
+        "public_gold": 46,
+        "public_best": 46
     },
     "task268": {
-        "gold": 222,
+        "gold": 190,
         "best": 222,
         "solutions": {
             "joking": {
@@ -9497,8 +9497,8 @@
                 "escape_cost": 0
             }
         },
-        "public_gold": 2500,
-        "public_best": 239
+        "public_gold": 190,
+        "public_best": 222
     },
     "task269": {
         "gold": 63,
@@ -9540,11 +9540,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 63,
         "public_best": 63
     },
     "task270": {
-        "gold": 117,
+        "gold": 115,
         "best": 117,
         "solutions": {
             "att": {
@@ -9576,7 +9576,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 115,
         "public_best": 117
     },
     "task271": {
@@ -9605,7 +9605,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 86,
         "public_best": 86
     },
     "task272": {
@@ -9648,11 +9648,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 95
+        "public_gold": 71,
+        "public_best": 71
     },
     "task273": {
-        "gold": 81,
+        "gold": 75,
         "best": 81,
         "solutions": {
             "joking": {
@@ -9684,11 +9684,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 116
+        "public_gold": 75,
+        "public_best": 81
     },
     "task274": {
-        "gold": 71,
+        "gold": 65,
         "best": 71,
         "solutions": {
             "joking": {
@@ -9713,11 +9713,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 65,
         "public_best": 71
     },
     "task275": {
-        "gold": 130,
+        "gold": 126,
         "best": 130,
         "solutions": {
             "ovs": {
@@ -9742,11 +9742,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 136
+        "public_gold": 126,
+        "public_best": 130
     },
     "task276": {
-        "gold": 38,
+        "gold": 37,
         "best": 38,
         "solutions": {
             "att": {
@@ -9778,7 +9778,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 37,
         "public_best": 38
     },
     "task277": {
@@ -9814,11 +9814,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 194
+        "public_gold": 155,
+        "public_best": 155
     },
     "task278": {
-        "gold": 116,
+        "gold": 104,
         "best": 116,
         "solutions": {
             "joking": {
@@ -9857,11 +9857,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 119
+        "public_gold": 104,
+        "public_best": 116
     },
     "task279": {
-        "gold": 107,
+        "gold": 106,
         "best": 107,
         "solutions": {
             "att": {
@@ -9893,11 +9893,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 113
+        "public_gold": 106,
+        "public_best": 107
     },
     "task280": {
-        "gold": 168,
+        "gold": 145,
         "best": 168,
         "solutions": {
             "att": {
@@ -9929,8 +9929,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 182
+        "public_gold": 145,
+        "public_best": 168
     },
     "task281": {
         "gold": 103,
@@ -9951,11 +9951,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 145
+        "public_gold": 103,
+        "public_best": 103
     },
     "task282": {
-        "gold": 76,
+        "gold": 74,
         "best": 76,
         "solutions": {
             "att": {
@@ -9987,8 +9987,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 83
+        "public_gold": 74,
+        "public_best": 76
     },
     "task283": {
         "gold": 72,
@@ -10023,11 +10023,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 94
+        "public_gold": 72,
+        "public_best": 72
     },
     "task284": {
-        "gold": 204,
+        "gold": 195,
         "best": 204,
         "solutions": {
             "joking": {
@@ -10052,11 +10052,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 228
+        "public_gold": 195,
+        "public_best": 204
     },
     "task285": {
-        "gold": 272,
+        "gold": 226,
         "best": 272,
         "solutions": {
             "joking": {
@@ -10114,8 +10114,8 @@
                 "escape_cost": 0
             }
         },
-        "public_gold": 2500,
-        "public_best": 296
+        "public_gold": 226,
+        "public_best": 272
     },
     "task286": {
         "gold": 104,
@@ -10157,11 +10157,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 111
+        "public_gold": 104,
+        "public_best": 104
     },
     "task287": {
-        "gold": 55,
+        "gold": 53,
         "best": 55,
         "solutions": {
             "att": {
@@ -10193,11 +10193,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 53,
         "public_best": 55
     },
     "task288": {
-        "gold": 91,
+        "gold": 86,
         "best": 91,
         "solutions": {
             "joking": {
@@ -10222,8 +10222,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 92
+        "public_gold": 86,
+        "public_best": 91
     },
     "task289": {
         "gold": 63,
@@ -10265,11 +10265,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 63,
         "public_best": 63
     },
     "task290": {
-        "gold": 68,
+        "gold": 65,
         "best": 68,
         "solutions": {
             "ovs": {
@@ -10287,8 +10287,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 69
+        "public_gold": 65,
+        "public_best": 68
     },
     "task291": {
         "gold": 59,
@@ -10316,8 +10316,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 62
+        "public_gold": 59,
+        "public_best": 59
     },
     "task292": {
         "gold": 51,
@@ -10352,11 +10352,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 57
+        "public_gold": 51,
+        "public_best": 51
     },
     "task293": {
-        "gold": 60,
+        "gold": 59,
         "best": 60,
         "solutions": {
             "att": {
@@ -10381,7 +10381,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 59,
         "public_best": 60
     },
     "task294": {
@@ -10410,8 +10410,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 76
+        "public_gold": 70,
+        "public_best": 70
     },
     "task295": {
         "gold": 54,
@@ -10439,11 +10439,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 54,
         "public_best": 54
     },
     "task296": {
-        "gold": 62,
+        "gold": 55,
         "best": 62,
         "solutions": {
             "ovs": {
@@ -10475,8 +10475,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 63
+        "public_gold": 55,
+        "public_best": 62
     },
     "task297": {
         "gold": 43,
@@ -10511,8 +10511,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 44
+        "public_gold": 43,
+        "public_best": 43
     },
     "task298": {
         "gold": 55,
@@ -10526,7 +10526,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 55,
         "public_best": 55
     },
     "task299": {
@@ -10548,7 +10548,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 54,
         "public_best": 54
     },
     "task300": {
@@ -10577,7 +10577,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 87,
         "public_best": 87
     },
     "task301": {
@@ -10613,11 +10613,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 31,
         "public_best": 31
     },
     "task302": {
-        "gold": 91,
+        "gold": 89,
         "best": 91,
         "solutions": {
             "ovs": {
@@ -10635,11 +10635,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 93
+        "public_gold": 89,
+        "public_best": 91
     },
     "task303": {
-        "gold": 64,
+        "gold": 62,
         "best": 64,
         "solutions": {
             "att": {
@@ -10678,7 +10678,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 62,
         "public_best": 64
     },
     "task304": {
@@ -10700,7 +10700,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 92,
         "public_best": 92
     },
     "task305": {
@@ -10729,8 +10729,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 62
+        "public_gold": 57,
+        "public_best": 57
     },
     "task306": {
         "gold": 63,
@@ -10758,8 +10758,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 75
+        "public_gold": 63,
+        "public_best": 63
     },
     "task307": {
         "gold": 46,
@@ -10794,11 +10794,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 52
+        "public_gold": 46,
+        "public_best": 46
     },
     "task308": {
-        "gold": 205,
+        "gold": 192,
         "best": 205,
         "solutions": {
             "joking": {
@@ -10845,11 +10845,11 @@
                 "escape_cost": 1
             }
         },
-        "public_gold": 2500,
-        "public_best": 242
+        "public_gold": 192,
+        "public_best": 205
     },
     "task309": {
-        "gold": 38,
+        "gold": 36,
         "best": 38,
         "solutions": {
             "att": {
@@ -10881,7 +10881,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 36,
         "public_best": 38
     },
     "task310": {
@@ -10917,8 +10917,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 81
+        "public_gold": 70,
+        "public_best": 70
     },
     "task311": {
         "gold": 32,
@@ -10953,7 +10953,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 32,
         "public_best": 32
     },
     "task312": {
@@ -10996,11 +10996,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 45
+        "public_gold": 44,
+        "public_best": 44
     },
     "task313": {
-        "gold": 62,
+        "gold": 61,
         "best": 62,
         "solutions": {
             "joking": {
@@ -11025,8 +11025,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 65
+        "public_gold": 61,
+        "public_best": 62
     },
     "task314": {
         "gold": 82,
@@ -11054,8 +11054,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 97
+        "public_gold": 82,
+        "public_best": 82
     },
     "task315": {
         "gold": 63,
@@ -11083,7 +11083,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 63,
         "public_best": 63
     },
     "task316": {
@@ -11105,8 +11105,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 72
+        "public_gold": 71,
+        "public_best": 71
     },
     "task317": {
         "gold": 43,
@@ -11141,8 +11141,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 59
+        "public_gold": 43,
+        "public_best": 43
     },
     "task318": {
         "gold": 54,
@@ -11177,11 +11177,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 54,
         "public_best": 54
     },
     "task319": {
-        "gold": 235,
+        "gold": 194,
         "best": 235,
         "solutions": {
             "att": {
@@ -11226,11 +11226,11 @@
                 "escape_cost": 0
             }
         },
-        "public_gold": 2500,
-        "public_best": 240
+        "public_gold": 194,
+        "public_best": 235
     },
     "task320": {
-        "gold": 66,
+        "gold": 65,
         "best": 66,
         "solutions": {
             "att": {
@@ -11255,11 +11255,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 72
+        "public_gold": 65,
+        "public_best": 66
     },
     "task321": {
-        "gold": 55,
+        "gold": 54,
         "best": 55,
         "solutions": {
             "ovs": {
@@ -11284,11 +11284,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 57
+        "public_gold": 54,
+        "public_best": 55
     },
     "task322": {
-        "gold": 48,
+        "gold": 45,
         "best": 48,
         "solutions": {
             "att": {
@@ -11327,11 +11327,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 45,
         "public_best": 48
     },
     "task323": {
-        "gold": 104,
+        "gold": 100,
         "best": 104,
         "solutions": {
             "att": {
@@ -11370,11 +11370,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 125
+        "public_gold": 100,
+        "public_best": 104
     },
     "task324": {
-        "gold": 227,
+        "gold": 216,
         "best": 227,
         "solutions": {
             "joking": {
@@ -11423,8 +11423,8 @@
                 "escape_cost": 0
             }
         },
-        "public_gold": 2500,
-        "public_best": 260
+        "public_gold": 216,
+        "public_best": 227
     },
     "task325": {
         "gold": 140,
@@ -11468,8 +11468,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 172
+        "public_gold": 140,
+        "public_best": 140
     },
     "task326": {
         "gold": 30,
@@ -11504,7 +11504,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 30,
         "public_best": 30
     },
     "task327": {
@@ -11526,7 +11526,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 67,
         "public_best": 67
     },
     "task328": {
@@ -11555,8 +11555,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 173
+        "public_gold": 158,
+        "public_best": 158
     },
     "task329": {
         "gold": 54,
@@ -11591,7 +11591,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 54,
         "public_best": 54
     },
     "task330": {
@@ -11636,11 +11636,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 135
+        "public_gold": 110,
+        "public_best": 110
     },
     "task331": {
-        "gold": 83,
+        "gold": 82,
         "best": 83,
         "solutions": {
             "joking": {
@@ -11665,8 +11665,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 86
+        "public_gold": 82,
+        "public_best": 83
     },
     "task332": {
         "gold": 58,
@@ -11701,11 +11701,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 61
+        "public_gold": 58,
+        "public_best": 58
     },
     "task333": {
-        "gold": 89,
+        "gold": 83,
         "best": 89,
         "solutions": {
             "att": {
@@ -11723,11 +11723,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 83,
         "public_best": 89
     },
     "task334": {
-        "gold": 69,
+        "gold": 65,
         "best": 69,
         "solutions": {
             "joking": {
@@ -11752,11 +11752,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 65,
         "public_best": 69
     },
     "task335": {
-        "gold": 110,
+        "gold": 105,
         "best": 110,
         "solutions": {
             "att": {
@@ -11788,11 +11788,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 113
+        "public_gold": 105,
+        "public_best": 110
     },
     "task336": {
-        "gold": 90,
+        "gold": 86,
         "best": 90,
         "solutions": {
             "att": {
@@ -11817,8 +11817,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 98
+        "public_gold": 86,
+        "public_best": 90
     },
     "task337": {
         "gold": 43,
@@ -11860,11 +11860,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 46
+        "public_gold": 43,
+        "public_best": 43
     },
     "task338": {
-        "gold": 65,
+        "gold": 62,
         "best": 65,
         "solutions": {
             "att": {
@@ -11896,8 +11896,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 71
+        "public_gold": 62,
+        "public_best": 65
     },
     "task339": {
         "gold": 37,
@@ -11932,11 +11932,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 37,
         "public_best": 37
     },
     "task340": {
-        "gold": 112,
+        "gold": 111,
         "best": 112,
         "solutions": {
             "joking": {
@@ -11961,11 +11961,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 122
+        "public_gold": 111,
+        "public_best": 112
     },
     "task341": {
-        "gold": 115,
+        "gold": 108,
         "best": 115,
         "solutions": {
             "joking": {
@@ -11997,11 +11997,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 137
+        "public_gold": 108,
+        "public_best": 115
     },
     "task342": {
-        "gold": 108,
+        "gold": 106,
         "best": 108,
         "solutions": {
             "joking": {
@@ -12026,11 +12026,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 112
+        "public_gold": 106,
+        "public_best": 108
     },
     "task343": {
-        "gold": 64,
+        "gold": 63,
         "best": 64,
         "solutions": {
             "joking": {
@@ -12048,7 +12048,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 63,
         "public_best": 64
     },
     "task344": {
@@ -12070,8 +12070,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 78
+        "public_gold": 74,
+        "public_best": 74
     },
     "task345": {
         "gold": 89,
@@ -12106,7 +12106,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 89,
         "public_best": 89
     },
     "task346": {
@@ -12149,8 +12149,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 68
+        "public_gold": 52,
+        "public_best": 52
     },
     "task347": {
         "gold": 50,
@@ -12185,11 +12185,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 50,
         "public_best": 50
     },
     "task348": {
-        "gold": 94,
+        "gold": 88,
         "best": 94,
         "solutions": {
             "att": {
@@ -12207,11 +12207,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 88,
         "public_best": 94
     },
     "task349": {
-        "gold": 203,
+        "gold": 172,
         "best": 203,
         "solutions": {
             "joking": {
@@ -12260,8 +12260,8 @@
                 "escape_cost": 0
             }
         },
-        "public_gold": 2500,
-        "public_best": 233
+        "public_gold": 172,
+        "public_best": 203
     },
     "task350": {
         "gold": 89,
@@ -12289,8 +12289,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 96
+        "public_gold": 89,
+        "public_best": 89
     },
     "task351": {
         "gold": 66,
@@ -12332,8 +12332,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 68
+        "public_gold": 66,
+        "public_best": 66
     },
     "task352": {
         "gold": 82,
@@ -12375,8 +12375,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 84
+        "public_gold": 82,
+        "public_best": 82
     },
     "task353": {
         "gold": 83,
@@ -12425,11 +12425,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 104
+        "public_gold": 83,
+        "public_best": 83
     },
     "task354": {
-        "gold": 96,
+        "gold": 92,
         "best": 96,
         "solutions": {
             "att": {
@@ -12468,11 +12468,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 92,
         "public_best": 96
     },
     "task355": {
-        "gold": 101,
+        "gold": 95,
         "best": 101,
         "solutions": {
             "att": {
@@ -12506,11 +12506,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 95,
         "public_best": 101
     },
     "task356": {
-        "gold": 100,
+        "gold": 92,
         "best": 100,
         "solutions": {
             "ovs": {
@@ -12535,11 +12535,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 105
+        "public_gold": 92,
+        "public_best": 100
     },
     "task357": {
-        "gold": 86,
+        "gold": 84,
         "best": 86,
         "solutions": {
             "ovs": {
@@ -12564,11 +12564,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 90
+        "public_gold": 84,
+        "public_best": 86
     },
     "task358": {
-        "gold": 91,
+        "gold": 90,
         "best": 91,
         "solutions": {
             "att": {
@@ -12593,8 +12593,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 97
+        "public_gold": 90,
+        "public_best": 91
     },
     "task359": {
         "gold": 64,
@@ -12615,7 +12615,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 64,
         "public_best": 64
     },
     "task360": {
@@ -12651,7 +12651,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 45,
         "public_best": 45
     },
     "task361": {
@@ -12713,11 +12713,11 @@
                 "escape_cost": 0
             }
         },
-        "public_gold": 2500,
-        "public_best": 195
+        "public_gold": 185,
+        "public_best": 185
     },
     "task362": {
-        "gold": 69,
+        "gold": 67,
         "best": 69,
         "solutions": {
             "mwi": {
@@ -12749,11 +12749,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 67,
         "public_best": 69
     },
     "task363": {
-        "gold": 204,
+        "gold": 175,
         "best": 204,
         "solutions": {
             "joking": {
@@ -12787,11 +12787,11 @@
                 "escape_cost": 1
             }
         },
-        "public_gold": 2500,
-        "public_best": 228
+        "public_gold": 175,
+        "public_best": 204
     },
     "task364": {
-        "gold": 134,
+        "gold": 133,
         "best": 134,
         "solutions": {
             "joking": {
@@ -12825,8 +12825,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 155
+        "public_gold": 133,
+        "public_best": 134
     },
     "task365": {
         "gold": 111,
@@ -12868,8 +12868,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 124
+        "public_gold": 111,
+        "public_best": 111
     },
     "task366": {
         "gold": 301,
@@ -12939,8 +12939,8 @@
                 "escape_cost": 0
             }
         },
-        "public_gold": 2500,
-        "public_best": 365
+        "public_gold": 301,
+        "public_best": 301
     },
     "task367": {
         "gold": 126,
@@ -12968,8 +12968,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 129
+        "public_gold": 126,
+        "public_best": 126
     },
     "task368": {
         "gold": 129,
@@ -13004,8 +13004,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 138
+        "public_gold": 129,
+        "public_best": 129
     },
     "task369": {
         "gold": 109,
@@ -13047,11 +13047,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 114
+        "public_gold": 109,
+        "public_best": 109
     },
     "task370": {
-        "gold": 227,
+        "gold": 159,
         "best": 227,
         "solutions": {
             "joking": {
@@ -13109,11 +13109,11 @@
                 "escape_cost": 0
             }
         },
-        "public_gold": 2500,
-        "public_best": 269
+        "public_gold": 159,
+        "public_best": 227
     },
     "task371": {
-        "gold": 109,
+        "gold": 102,
         "best": 109,
         "solutions": {
             "att": {
@@ -13145,11 +13145,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 102,
         "public_best": 109
     },
     "task372": {
-        "gold": 48,
+        "gold": 47,
         "best": 48,
         "solutions": {
             "att": {
@@ -13181,7 +13181,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 47,
         "public_best": 48
     },
     "task373": {
@@ -13217,11 +13217,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 39
+        "public_gold": 38,
+        "public_best": 38
     },
     "task374": {
-        "gold": 107,
+        "gold": 103,
         "best": 107,
         "solutions": {
             "joking": {
@@ -13262,8 +13262,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 112
+        "public_gold": 103,
+        "public_best": 107
     },
     "task375": {
         "gold": 53,
@@ -13291,7 +13291,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 53,
         "public_best": 53
     },
     "task376": {
@@ -13327,7 +13327,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 30,
         "public_best": 30
     },
     "task377": {
@@ -13363,11 +13363,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 57
+        "public_gold": 55,
+        "public_best": 55
     },
     "task378": {
-        "gold": 138,
+        "gold": 131,
         "best": 138,
         "solutions": {
             "joking": {
@@ -13401,11 +13401,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 144
+        "public_gold": 131,
+        "public_best": 138
     },
     "task379": {
-        "gold": 141,
+        "gold": 135,
         "best": 141,
         "solutions": {
             "xsot": {
@@ -13430,7 +13430,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 135,
         "public_best": 141
     },
     "task380": {
@@ -13466,7 +13466,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 27,
         "public_best": 27
     },
     "task381": {
@@ -13502,8 +13502,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 86
+        "public_gold": 79,
+        "public_best": 79
     },
     "task382": {
         "gold": 124,
@@ -13545,11 +13545,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 144
+        "public_gold": 124,
+        "public_best": 124
     },
     "task383": {
-        "gold": 121,
+        "gold": 120,
         "best": 121,
         "solutions": {
             "ovs": {
@@ -13567,11 +13567,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 120,
         "public_best": 121
     },
     "task384": {
-        "gold": 62,
+        "gold": 61,
         "best": 62,
         "solutions": {
             "att": {
@@ -13610,7 +13610,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 61,
         "public_best": 62
     },
     "task385": {
@@ -13646,11 +13646,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 25,
         "public_best": 25
     },
     "task386": {
-        "gold": 52,
+        "gold": 50,
         "best": 52,
         "solutions": {
             "att": {
@@ -13682,11 +13682,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 50,
         "public_best": 52
     },
     "task387": {
-        "gold": 205,
+        "gold": 192,
         "best": 205,
         "solutions": {
             "joking": {
@@ -13722,11 +13722,11 @@
                 "escape_cost": 0
             }
         },
-        "public_gold": 2500,
-        "public_best": 227
+        "public_gold": 192,
+        "public_best": 205
     },
     "task388": {
-        "gold": 62,
+        "gold": 61,
         "best": 62,
         "solutions": {
             "att": {
@@ -13765,7 +13765,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 61,
         "public_best": 62
     },
     "task389": {
@@ -13801,11 +13801,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 57,
         "public_best": 57
     },
     "task390": {
-        "gold": 100,
+        "gold": 98,
         "best": 100,
         "solutions": {
             "joking": {
@@ -13844,8 +13844,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 112
+        "public_gold": 98,
+        "public_best": 100
     },
     "task391": {
         "gold": 63,
@@ -13880,11 +13880,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 63,
         "public_best": 63
     },
     "task392": {
-        "gold": 152,
+        "gold": 135,
         "best": 152,
         "solutions": {
             "joking": {
@@ -13916,8 +13916,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 157
+        "public_gold": 135,
+        "public_best": 152
     },
     "task393": {
         "gold": 63,
@@ -13952,7 +13952,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 63,
         "public_best": 63
     },
     "task394": {
@@ -13988,8 +13988,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 92
+        "public_gold": 85,
+        "public_best": 85
     },
     "task395": {
         "gold": 53,
@@ -14031,7 +14031,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
+        "public_gold": 53,
         "public_best": 53
     },
     "task396": {
@@ -14080,11 +14080,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 188
+        "public_gold": 139,
+        "public_best": 139
     },
     "task397": {
-        "gold": 113,
+        "gold": 110,
         "best": 113,
         "solutions": {
             "joking": {
@@ -14116,11 +14116,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 125
+        "public_gold": 110,
+        "public_best": 113
     },
     "task398": {
-        "gold": 73,
+        "gold": 72,
         "best": 73,
         "solutions": {
             "att": {
@@ -14145,11 +14145,11 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 79
+        "public_gold": 72,
+        "public_best": 73
     },
     "task399": {
-        "gold": 63,
+        "gold": 62,
         "best": 63,
         "solutions": {
             "att": {
@@ -14181,8 +14181,8 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 64
+        "public_gold": 62,
+        "public_best": 63
     },
     "task400": {
         "gold": 66,
@@ -14224,7 +14224,7 @@
                 "method": "none"
             }
         },
-        "public_gold": 2500,
-        "public_best": 68
+        "public_gold": 66,
+        "public_best": 66
     }
 }

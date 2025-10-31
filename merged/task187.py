@@ -1,4 +1,4 @@
-# joking (88 bytes, gold)
+# joking (88 vs 83 bytes for gold)
 p=lambda i,k=7:-k*i or[*map(lambda*x,z=3:[z:=y|(y*z==6)or 2for y in x],*p(i,k-1)[::-1])]
 
 ### att (89 bytes)
